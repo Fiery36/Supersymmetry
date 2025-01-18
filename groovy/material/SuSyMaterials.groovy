@@ -1224,6 +1224,7 @@ class SuSyMaterials {
         public static Material AG50WExchangeResin;
         public static Material CuFormAG50WExchangeResin;
         public static Material TmFormAG50WExchangeResin;
+        public static Material PuroliteC160ExchangeResin;
         public static Material CuFormPuroliteC160ExchangeResin;
         public static Material LuFormPuroliteC160ExchangeResin;
 
