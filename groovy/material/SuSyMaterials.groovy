@@ -122,6 +122,7 @@ class SuSyMaterials {
 
         public static Material RoastedSperrylite;
         public static Material RoastedPetalite;
+        public static Material RoastedMonazite;
 
         // Ore Leach Residue
 
@@ -1210,6 +1211,88 @@ class SuSyMaterials {
         public static Material LithiumNitrate;
         public static Material LithiumNitrateSolution;
 
+        // Rare Earth Processing Materials
+
+        public static Material EthylHexylPhosphonicAcidMonoEthylHexylEster;
+        public static Material PotassiumChromate;
+        public static Material PotassiumChromateSolution;
+        public static Material AmmoniumCarbonate;
+        public static Material Dowex550AExchangeResin;
+        public static Material NitratedDowex550AExchangeResin;
+        public static Material SodiumAmalgam;
+        public static Material Isooctyl;
+        public static Material AG50WExchangeResin;
+        public static Material CuFormAG50WExchangeResin;
+        public static Material TmFormAG50WExchangeResin;
+        public static Material CuFormPuroliteC160ExchangeResin;
+        public static Material LuFormPuroliteC160ExchangeResin;
+
+        public static Material MonaziteLeech;
+        public static Material SiftedMonaziteLeech;
+        public static Material ThoriumFreeMonaziteLeech;
+        public static Material RareEarthFreeMonaziteLeech;
+        public static Material MonaziteWaste;
+        public static Material ThoriumHydroxidePrecipitate;
+        public static Material ThoriumHydroxide;
+        public static Material UranylHydroxidePrecipitate;
+        public static Material UranylHydroxide;
+
+        public static Material CeriumIVNitrate;
+        public static Material CeriumExtract;
+        public static Material CeriumOxide;
+        public static Material LanthanumCarbonate;
+        public static Material LanthanumOxide;
+        public static Material PraseodymiumAmmoniumDoubleNitrate;
+        public static Material PraseodymiumOxide;
+        public static Material NeodymiumAmmoniumDoubleNitrate;
+        public static Material DidymiumWaste;
+        public static Material EuropiumIISulfate;
+        public static Material EuropiumOxide;
+        public static Material SamariumAmalgam;
+        public static Material GadoliniumHydroxide;
+        public static Material GadoliniumOxide;
+        public static Material TerbiumCarbonate;
+        public static Material TerbiumOxide;
+        public static Material DysprosiumFluoride;
+        public static Material YttriumChloride;
+        public static Material YttriumSponge;
+        public static Material ErbiumDodecylSulfate;
+        public static Material ErbiumHydroxide;
+        public static Material ErbiumOxide;
+        public static Material HolmiumDodecylSulfate;
+        public static Material HolmiumHydroxide;
+        public static Material HolmiumOxide;
+        public static Material YtterbiumAmalgam;
+        public static Material ThuliumChloride;
+        public static Material ThuliumOxide;
+        public static Material LutetiumChloride;
+
+        public static Material MonaziticRareEarthHydroxides;
+        public static Material MonaziticRareEarthNitratesSolution;
+        public static Material MonazitiOxidizedRareEarthNitratesSolution;
+        public static Material MonaziticCeriumExtract;
+        public static Material MonaziticCeriumFreeRareEarthNitratesSolution;
+        public static Material MonaziticLREEConcentrate;
+        public static Material MonaziticD2EHPAExtract;
+        public static Material MonaziticMREEConcentrate;
+        public static Material MonaziticEHEHPAExtract;
+        public static Material MonaziticHREEConcentrate;
+        public static Material MonaziticLanthanumFreeLREEConcentrate;
+        public static Material MonaziticLREENitratesWaste;
+        public static Material MonaziticDidymiumHydroxide
+        public static Material MonaziticDidymiumAmmoniumDoubleNitrateSolution
+        public static Material MonaziticEuropiumFreeMREEConcentrate;
+        public static Material MonaziticSamariumFreeMREEConcentrate;
+        public static Material MonaziticGadoliniumFreeMREEConcentrate;
+        public static Material MonaziticTerbiumFreeMREEConcentrate;
+        public static Material MonaziticMREEProcessingWaste;
+        public static Material MonaziticHREEDoubleChromatesSolutino;
+        public static Material MonaziticYttriumFreeHREEConcentrate;
+        public static Material MonaziticErbiumFreeHREEConcentrate;
+        public static Material MonaziticHolmiumFreeHREEConcentrate;
+        public static Material MonaziticYtterbiumFreeHREEConcentrate;
+        public static Material MonaziticThuliumFreeHREEConcentrate;
+        public static Material MonaziticLutetiumFreeHREEConcentrate;
         // HP Materials
 
         public static Material HighPurityLithium;
