@@ -1219,6 +1219,9 @@ class SuSyMaterials {
         public static Material AmmoniumCarbonate;
         public static Material Dowex550AExchangeResin;
         public static Material NitratedDowex550AExchangeResin;
+        public static Material HydroxyisobutyricAcid;
+        public static Material SulfonicAcid;
+
         public static Material SodiumAmalgam;
         public static Material Isooctyl;
         public static Material AG50WExchangeResin;
@@ -1267,6 +1270,7 @@ class SuSyMaterials {
         public static Material ThuliumChloride;
         public static Material ThuliumOxide;
         public static Material LutetiumChloride;
+        public static Material LutetiumSponge;
 
         public static Material MonaziticRareEarthHydroxides;
         public static Material MonaziticRareEarthNitratesSolution;
@@ -1293,7 +1297,8 @@ class SuSyMaterials {
         public static Material MonaziticHolmiumFreeHREEConcentrate;
         public static Material MonaziticYtterbiumFreeHREEConcentrate;
         public static Material MonaziticThuliumFreeHREEConcentrate;
-        public static Material MonaziticLutetiumFreeHREEConcentrate;
+        public static Material MonaziticHREEWaste;
+
         // HP Materials
 
         public static Material HighPurityLithium;
