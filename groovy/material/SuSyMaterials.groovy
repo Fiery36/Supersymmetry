@@ -1241,6 +1241,13 @@ class SuSyMaterials {
         public static Material UranylHydroxidePrecipitate;
         public static Material UranylHydroxide;
 
+        public static Material SiftedBastnasiteDust;
+        public static Material ImpureBastnasiteSlurry;
+        public static Material BastnasiteSlurry;
+        public static Material FlotatedBastnasiteDust;
+        public static Material RoastedBastnasiteLeech;
+        public static Material ConcentratedBastnasite;
+
         public static Material CeriumIVNitrate;
         public static Material CeriumExtract;
         public static Material CeriumOxide;
@@ -1274,7 +1281,7 @@ class SuSyMaterials {
 
         public static Material MonaziticRareEarthHydroxides;
         public static Material MonaziticRareEarthNitratesSolution;
-        public static Material MonazitiOxidizedRareEarthNitratesSolution;
+        public static Material MonaziticOxidizedRareEarthNitratesSolution;
         public static Material MonaziticCeriumExtract;
         public static Material MonaziticCeriumFreeRareEarthNitratesSolution;
         public static Material MonaziticLREEConcentrate;
@@ -1291,13 +1298,40 @@ class SuSyMaterials {
         public static Material MonaziticGadoliniumFreeMREEConcentrate;
         public static Material MonaziticTerbiumFreeMREEConcentrate;
         public static Material MonaziticMREEProcessingWaste;
-        public static Material MonaziticHREEDoubleChromatesSolutino;
+        public static Material MonaziticHREEDoubleChromatesSolution;
         public static Material MonaziticYttriumFreeHREEConcentrate;
         public static Material MonaziticErbiumFreeHREEConcentrate;
         public static Material MonaziticHolmiumFreeHREEConcentrate;
         public static Material MonaziticYtterbiumFreeHREEConcentrate;
         public static Material MonaziticThuliumFreeHREEConcentrate;
         public static Material MonaziticHREEWaste;
+
+        public static Material BastnasiticRareEarthHydroxides;
+        public static Material BastnasiticRareEarthNitratesSolution;
+        public static Material BastnasiticOxidizedRareEarthNitratesSolution;
+        public static Material BastnasiticCeriumExtract;
+        public static Material BastnasiticCeriumFreeRareEarthNitratesSolution;
+        public static Material BastnasiticLREEConcentrate;
+        public static Material BastnasiticD2EHPAExtract;
+        public static Material BastnasiticMREEConcentrate;
+        public static Material BastnasiticEHEHPAExtract;
+        public static Material BastnasiticHREEConcentrate;
+        public static Material BastnasiticLanthanumFreeLREEConcentrate;
+        public static Material BastnasiticLREENitratesWaste;
+        public static Material BastnasiticDidymiumHydroxide
+        public static Material BastnasiticDidymiumAmmoniumDoubleNitrateSolution
+        public static Material BastnasiticEuropiumFreeMREEConcentrate;
+        public static Material BastnasiticSamariumFreeMREEConcentrate;
+        public static Material BastnasiticGadoliniumFreeMREEConcentrate;
+        public static Material BastnasiticTerbiumFreeMREEConcentrate;
+        public static Material BastnasiticMREEProcessingWaste;
+        public static Material BastnasiticHREEDoubleChromatesSolution;
+        public static Material BastnasiticYttriumFreeHREEConcentrate;
+        public static Material BastnasiticErbiumFreeHREEConcentrate;
+        public static Material BastnasiticHolmiumFreeHREEConcentrate;
+        public static Material BastnasiticYtterbiumFreeHREEConcentrate;
+        public static Material BastnasiticThuliumFreeHREEConcentrate;
+        public static Material BastnasiticHREEWaste;
 
         // HP Materials
 
