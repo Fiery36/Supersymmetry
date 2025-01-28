@@ -1246,7 +1246,7 @@ class SuSyMaterials {
         public static Material BastnasiteSlurry;
         public static Material FlotatedBastnasiteDust;
         public static Material RoastedBastnasiteLeech;
-        public static Material ConcentratedBastnasite;
+        public static Material ConcentratedBastnasiteLeech;
 
         public static Material CeriumIVNitrate;
         public static Material CeriumExtract;

@@ -260,7 +260,7 @@ def magmatic_hydrothermal_tier_4 = [
     'gregtech:ore_scheelite_0' : 1250,
     'gregtech:ore_wolframite_0' : 1000,
     //T4
-    //'susy:resource_block:7' : 10000,
+    'susy:resource_block:7' : 10000,
     'gregtech:ore_uraninite_0' : 500
 ];
 

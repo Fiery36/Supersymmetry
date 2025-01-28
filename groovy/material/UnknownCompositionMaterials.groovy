@@ -2076,5 +2076,35 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xffebbb)
                 .build();
+
+        SiftedBastnasiteDust = new Material.Builder(4518, SuSyUtility.susyId('sifted_bastnasite_dust'))
+                .dust()
+                .color(0xa6844e)
+                .build();
+
+        ImpureBastnasiteSlurry = new Material.Builder(4519, SuSyUtility.susyId('impure_bastnasite_slurry'))
+                .liquid()
+                .color()
+                .build();
+
+        BastnasiteSlurry = new Material.Builder(4520, SuSyUtility.susyId('bastnasite_slurry'))
+                .liquid()
+                .color()
+                .build();
+
+        FlotatedBastnasiteDust = new Material.Builder(4521, SuSyUtility.susyId('flotated_bastnasite_dust'))
+                .dust()
+                .color()
+                .build();
+
+        RoastedBastnasiteLeech = new Material.Builder(4522, SuSyUtility.susyId('roasted_bastnasite_leech'))
+                .liquid()
+                .color()
+                .build();
+
+        ConcentratedBastnasiteLeech = new MaterialBuilder(4523, SuSyUtility.susyId('concentrated_bastnasite_leech'))
+                .liquid()
+                .color()
+                .build()
     }
 }
