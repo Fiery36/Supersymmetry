@@ -2095,34 +2095,84 @@ public class UnknownCompositionMaterials {
                 .color(0xffebbb)
                 .build();
 
-        SiftedBastnasiteDust = new Material.Builder(4518, SuSyUtility.susyId('sifted_bastnasite_dust'))
+        SiftedBastnasite = new Material.Builder(4518, SuSyUtility.susyId("sifted_bastnasite"))
                 .dust()
-                .color(0xa6844e)
-                .build();
+                .color(0xab6113)
+                .build()
 
         ImpureBastnasiteSlurry = new Material.Builder(4519, SuSyUtility.susyId('impure_bastnasite_slurry'))
                 .liquid()
-                .color()
+                .color(0x7d6032)
                 .build();
 
         BastnasiteSlurry = new Material.Builder(4520, SuSyUtility.susyId('bastnasite_slurry'))
                 .liquid()
-                .color()
+                .color(0xa68042)
                 .build();
 
-        FlotatedBastnasiteDust = new Material.Builder(4521, SuSyUtility.susyId('flotated_bastnasite_dust'))
+        FlotatedBastnasite = new Material.Builder(4521, SuSyUtility.susyId('flotated_bastnasite'))
                 .dust()
-                .color()
+                .color(0xa86d2d)
                 .build();
 
-        RoastedBastnasiteLeech = new Material.Builder(4522, SuSyUtility.susyId('roasted_bastnasite_leech'))
+        RoastedBastnasiteLeach = new Material.Builder(4522, SuSyUtility.susyId('roasted_bastnasite_leach'))
                 .liquid()
-                .color()
+                .color(0x754c20)
                 .build();
 
-        ConcentratedBastnasiteLeech = new MaterialBuilder(4523, SuSyUtility.susyId('concentrated_bastnasite_leech'))
+        ConcentratedBastnasite = new Material.Builder(4523, SuSyUtility.susyId('concentrated_bastnasite'))
+                .dust()
+                .color(0xab6113)
+                .build()
+
+        BastnasiticRareEarthHydroxides = new Material.Builder(4524, SuSyUtility.susyId('bast_re_hydroxides'))
+                .dust()
+                .color(0x000000)
+                .build()
+
+        BastnasiticRareEarthNitratesSolution = new Material.Builder(4525, SuSyUtility.susyId('bast_re_nitrates_solution'))
                 .liquid()
-                .color()
+                .color(0x000000)
+                .build()
+
+        BastnasiticOxidizedRareEarthNitratesSolution = new Material.Builder(4526, SuSyUtility.susyId('bast_ox_re_nitrates_solution'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticCeriumExtract = new Material.Builder(4527, SuSyUtility.susyId('bast_cerium_extract'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticCeriumFreeRareEarthNitratesSolution = new Material.Builder(4528, SuSyUtility.susyId('bast_cefree_re_nitrates_solution'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticLREEConcentrate = new Material.Builder(4529, SuSyUtility.susyId('bast_lree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticD2EHPAExtract = new Material.Builder(4530, SuSyUtility.susyId('bast_d2ehpa_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticMREEConcentrate = new Material.Builder(4531, SuSyUtility.susyId('bast_mree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticEHEHPAExtract = new Material.Builder(4532, SuSyUtility.susyId('bast_ehehpa_extract'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticHREEConcentrate = new Material.Builder(4533, SuSyUtility.susyId('bast_hree_concentrate'))
+                .liquid()
+                .color(0x000000)
                 .build()
     }
 }

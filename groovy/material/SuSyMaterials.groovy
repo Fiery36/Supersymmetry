@@ -1251,7 +1251,6 @@ class SuSyMaterials {
         public static Material NitratedDowex550AExchangeResin;
         public static Material HydroxyisobutyricAcid;
         public static Material SulfonicAcid;
-
         public static Material SodiumAmalgam;
         public static Material Isooctyl;
         public static Material AG50WExchangeResin;
@@ -1261,26 +1260,25 @@ class SuSyMaterials {
         public static Material CuFormPuroliteC160ExchangeResin;
         public static Material LuFormPuroliteC160ExchangeResin;
 
-        public static Material MonaziteLeech;
-        public static Material SiftedMonaziteLeech;
-        public static Material ThoriumFreeMonaziteLeech;
-        public static Material RareEarthFreeMonaziteLeech;
+        public static Material MonaziteLeach;
+        public static Material SiftedMonaziteLeach;
+        public static Material ThoriumFreeMonaziteLeach;
+        public static Material RareEarthFreeMonaziteLeach;
         public static Material MonaziteWaste;
         public static Material ThoriumHydroxidePrecipitate;
         public static Material ThoriumHydroxide;
         public static Material UranylHydroxidePrecipitate;
         public static Material UranylHydroxide;
 
-        public static Material SiftedBastnasiteDust;
+        public static Material SiftedBastnasite;
         public static Material ImpureBastnasiteSlurry;
         public static Material BastnasiteSlurry;
-        public static Material FlotatedBastnasiteDust;
-        public static Material RoastedBastnasiteLeech;
-        public static Material ConcentratedBastnasiteLeech;
+        public static Material FlotatedBastnasite;
+        public static Material RoastedBastnasiteLeach;
+        public static Material ConcentratedBastnasite;
 
         public static Material CeriumIVNitrate;
-        public static Material CeriumExtract;
-        public static Material CeriumOxide;
+        public static Material CeriumIVOxide;
         public static Material LanthanumCarbonate;
         public static Material LanthanumOxide;
         public static Material PraseodymiumAmmoniumDoubleNitrate;

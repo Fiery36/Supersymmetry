@@ -3604,5 +3604,12 @@ public class FirstDegreeMaterials {
                 .components(LithiumNitrate * 2, Water * 1)
                 .colorAverage()
                 .build()
+
+        CeriumIVNitrate = new Material.Builder(8641, SuSyUtility.susyId('cerium_iv_nitrate'))
+                .dust()
+                .components(Cerium * 1, Nitrogen * 4, Oxygen * 12)
+                .colorAverage()
+                .build()
+        
     }
 }
