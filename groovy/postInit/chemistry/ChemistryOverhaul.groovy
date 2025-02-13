@@ -3861,7 +3861,7 @@ FLUID_HEATER.recipeBuilder()
         .circuitMeta(3)
         .fluidInputs(fluid('water') * 1000)
         .fluidOutputs(fluid('dense_steam') * 1000)
-        .duration(80)
+        .duration(20)
         .EUt(30)
         .buildAndRegister()
 
