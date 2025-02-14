@@ -2155,22 +2155,27 @@ public class UnknownCompositionMaterials {
                 .color(0x000000)
                 .build()
 
-        BastnasiticD2EHPAExtract = new Material.Builder(4530, SuSyUtility.susyId('bast_d2ehpa_concentrate'))
+        BastnasiticDEHPAExtract = new Material.Builder(4530, SuSyUtility.susyId('bast_dehpa_extract'))
                 .liquid()
                 .color(0x000000)
                 .build()
 
-        BastnasiticMREEConcentrate = new Material.Builder(4531, SuSyUtility.susyId('bast_mree_concentrate'))
+        BastnasiticRareEarthChloridesSolution = new Material.Builder(4531, SuSyUtility.susyId('bast_re_chlorides_solution'))
                 .liquid()
                 .color(0x000000)
                 .build()
 
-        BastnasiticEHEHPAExtract = new Material.Builder(4532, SuSyUtility.susyId('bast_ehehpa_extract'))
+        BastnasiticMREEConcentrate = new Material.Builder(4532, SuSyUtility.susyId('bast_mree_concentrate'))
                 .liquid()
                 .color(0x000000)
                 .build()
 
-        BastnasiticHREEConcentrate = new Material.Builder(4533, SuSyUtility.susyId('bast_hree_concentrate'))
+        BastnasiticEHEHPAExtract = new Material.Builder(4533, SuSyUtility.susyId('bast_ehehpa_extract'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticHREEConcentrate = new Material.Builder(4534, SuSyUtility.susyId('bast_hree_concentrate'))
                 .liquid()
                 .color(0x000000)
                 .build()

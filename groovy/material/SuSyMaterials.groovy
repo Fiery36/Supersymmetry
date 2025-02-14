@@ -1278,7 +1278,6 @@ class SuSyMaterials {
         public static Material ConcentratedBastnasite;
 
         public static Material CeriumIVNitrate;
-        public static Material CeriumIVOxide;
         public static Material LanthanumCarbonate;
         public static Material LanthanumOxide;
         public static Material PraseodymiumAmmoniumDoubleNitrate;
@@ -1313,7 +1312,8 @@ class SuSyMaterials {
         public static Material MonaziticCeriumExtract;
         public static Material MonaziticCeriumFreeRareEarthNitratesSolution;
         public static Material MonaziticLREEConcentrate;
-        public static Material MonaziticD2EHPAExtract;
+        public static Material MonaziticDEHPAExtract;
+        public static Material MonaziticRareEarthChloridesSolution;
         public static Material MonaziticMREEConcentrate;
         public static Material MonaziticEHEHPAExtract;
         public static Material MonaziticHREEConcentrate;
@@ -1340,7 +1340,8 @@ class SuSyMaterials {
         public static Material BastnasiticCeriumExtract;
         public static Material BastnasiticCeriumFreeRareEarthNitratesSolution;
         public static Material BastnasiticLREEConcentrate;
-        public static Material BastnasiticD2EHPAExtract;
+        public static Material BastnasiticDEHPAExtract;
+        public static Material BastnasiticRareEarthChloridesSolution;
         public static Material BastnasiticMREEConcentrate;
         public static Material BastnasiticEHEHPAExtract;
         public static Material BastnasiticHREEConcentrate;
