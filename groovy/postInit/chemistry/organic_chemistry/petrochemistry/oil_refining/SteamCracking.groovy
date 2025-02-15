@@ -10,7 +10,7 @@ crackables.each { _, crackable ->
 
         ROASTER.recipeBuilder()
             .fluidInputs(crackable.get(1000))
-            .fluidInputs(fluid('hot_hp_steam') * 1000)
+            .fluidInputs(fluid('dense_steam') * 1000)
             .fluidOutputs(crackable.getSteam(700))
             .duration(300)
             .EUt(Globals.voltAmps[1])
@@ -18,7 +18,7 @@ crackables.each { _, crackable ->
 
         CRACKER.recipeBuilder()
             .fluidInputs(crackable.get(1000))
-            .fluidInputs(fluid('hot_hp_steam') * 1000)
+            .fluidInputs(fluid('dense_steam') * 1000)
             .fluidOutputs(crackable.getSteam(1000))
             .duration(80)
             .EUt(Globals.voltAmps[2])
