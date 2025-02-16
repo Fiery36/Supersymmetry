@@ -3610,6 +3610,45 @@ public class FirstDegreeMaterials {
                 .components(Cerium * 1, Nitrogen * 4, Oxygen * 12)
                 .colorAverage()
                 .build()
-        
+                .setFormula("Ce(NO3)4", true)
+
+        EthylHexylPhosphonicAcidMonoEthylHexylEster = new Material.Builder(8642, SuSyUtility.susyId('ethylhexyl_phosphonic_acid_mono_ethylhexyl_ester_solution'))
+                .liquid()
+                .components(Carbon * 16, Hydrogen * 35, Oxygen * 3, Phosphorus)
+                .colorAverage()
+                .build()
+
+        AmmoniumCarbonate = new Material.Builder(8643, SuSyUtility.susyId('ammonium_carbonate'))
+                .dust()
+                .components(Nitrogen * 2, Hydrogen * 8, Oxygen * 3, Carbon)
+                .color(0xe3c3de)
+                .build()
+                .setFormula("(NH4)2CO3", true)
+
+        PotassiumChlorate = new Material.Builder(8644, SuSyUtility.susyId('potassium_chlorate'))
+                .dust()
+                .components(Potassium, Chlorine, Oxygen * 3)
+                .colorAverage()
+                .build()
+
+        LanthanumCarbonate = new Material.Builder(8645, SuSyUtility.susyId('lanthanum_carbonate'))
+                .dust()
+                .components(Lanthanum * 2, Carbon * 3, Oxygen * 9)
+                .color(0xbea779)
+                .build()
+                .setFormula("La2(CO3)3", true)
+
+        LanthanumOxide = new Material.Builder(8646, SuSyUtility.susyId('lanthanum_oxide'))
+                .dust()
+                .components(Lanthanum * 2, Oxygen * 3)
+                .color(0xe5e593)
+                .build()
+
+        PraseodymiumOxide = new Material.Builder(8647, SuSyUtility.susyId('praseodymium_oxide'))
+                .dust()
+                .components(Praseodymium * 2, Oxygen * 3)
+                .color(0xbff583)
+                .build()
+
     }
 }

@@ -2179,5 +2179,30 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0x000000)
                 .build()
+
+        BastnasiticLanthanumFreeLREEConcentrate = new Material.Builder(4535, SuSyUtility.susyId('bast_lafree_lree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticLanthanumFreeLREEHydroxides = new Material.Builder(4536, SuSyUtility.susyId('bast_lafree_lree_hydroxides'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticOxidisedLREEHydroxides = new Material.Builder(4537, SuSyUtility.susyId('bast_oxidised_lree_hydroxides'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticPraseodymiumFreeREEHydroxides = new Material.Builder(4538, SuSyUtility.susyId('bast_prfree_lree_hydroxides'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticLREEWaste = new Material.Builder(4539, SuSyUtility.susyId('bast_lree_waste'))
+                .liquid()
+                .color(0x000000)
+                .build()
     }
 }

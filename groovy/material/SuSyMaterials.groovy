@@ -1246,6 +1246,7 @@ class SuSyMaterials {
         public static Material EthylHexylPhosphonicAcidMonoEthylHexylEster;
         public static Material PotassiumChromate;
         public static Material PotassiumChromateSolution;
+        public static Material PotassiumChlorate;
         public static Material AmmoniumCarbonate;
         public static Material Dowex550AExchangeResin;
         public static Material NitratedDowex550AExchangeResin;
@@ -1280,10 +1281,7 @@ class SuSyMaterials {
         public static Material CeriumIVNitrate;
         public static Material LanthanumCarbonate;
         public static Material LanthanumOxide;
-        public static Material PraseodymiumAmmoniumDoubleNitrate;
         public static Material PraseodymiumOxide;
-        public static Material NeodymiumAmmoniumDoubleNitrate;
-        public static Material DidymiumWaste;
         public static Material EuropiumIISulfate;
         public static Material EuropiumOxide;
         public static Material SamariumAmalgam;
@@ -1318,14 +1316,15 @@ class SuSyMaterials {
         public static Material MonaziticEHEHPAExtract;
         public static Material MonaziticHREEConcentrate;
         public static Material MonaziticLanthanumFreeLREEConcentrate;
-        public static Material MonaziticLREENitratesWaste;
-        public static Material MonaziticDidymiumHydroxide
-        public static Material MonaziticDidymiumAmmoniumDoubleNitrateSolution
+        public static Material MonaziticLanthanumFreeLREEHydroxides;
+        public static Material MonaziticOxidisedLREEHydroxides;
+        public static Material MonaziticPraseodymiumFreeREEHydroxides;
+        public static Material MonaziticLREEWaste;
         public static Material MonaziticEuropiumFreeMREEConcentrate;
         public static Material MonaziticSamariumFreeMREEConcentrate;
         public static Material MonaziticGadoliniumFreeMREEConcentrate;
         public static Material MonaziticTerbiumFreeMREEConcentrate;
-        public static Material MonaziticMREEProcessingWaste;
+        public static Material MonaziticMREEWaste;
         public static Material MonaziticHREEDoubleChromatesSolution;
         public static Material MonaziticYttriumFreeHREEConcentrate;
         public static Material MonaziticErbiumFreeHREEConcentrate;
@@ -1346,14 +1345,15 @@ class SuSyMaterials {
         public static Material BastnasiticEHEHPAExtract;
         public static Material BastnasiticHREEConcentrate;
         public static Material BastnasiticLanthanumFreeLREEConcentrate;
-        public static Material BastnasiticLREENitratesWaste;
-        public static Material BastnasiticDidymiumHydroxide
-        public static Material BastnasiticDidymiumAmmoniumDoubleNitrateSolution
+        public static Material BastnasiticLanthanumFreeLREEHydroxides;
+        public static Material BastnasiticOxidisedLREEHydroxides;
+        public static Material BastnasiticPraseodymiumFreeREEHydroxides;
+        public static Material BastnasiticLREEWaste;
         public static Material BastnasiticEuropiumFreeMREEConcentrate;
         public static Material BastnasiticSamariumFreeMREEConcentrate;
         public static Material BastnasiticGadoliniumFreeMREEConcentrate;
         public static Material BastnasiticTerbiumFreeMREEConcentrate;
-        public static Material BastnasiticMREEProcessingWaste;
+        public static Material BastnasiticMREEWaste;
         public static Material BastnasiticHREEDoubleChromatesSolution;
         public static Material BastnasiticYttriumFreeHREEConcentrate;
         public static Material BastnasiticErbiumFreeHREEConcentrate;
