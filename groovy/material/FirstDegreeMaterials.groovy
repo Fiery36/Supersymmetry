@@ -3459,7 +3459,7 @@ public class FirstDegreeMaterials {
         Kovar = new Material.Builder(8619, SuSyUtility.susyId('kovar'))
                 .ingot()
                 .iconSet(SHINY)
-                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, DISABLE_DECOMPOSITION)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE)
                 .components(Iron * 2, Nickel * 1, Cobalt * 1)
                 .colorAverage()
                 .blastTemp(1723, GasTier.LOW, 120, 24)
