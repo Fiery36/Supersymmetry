@@ -65,6 +65,16 @@ for (combustible in combustibles()) {
         .duration(240)
         .EUt(Globals.voltAmps[1])
         .buildAndRegister()
+
+    EBF.recipeBuilder()
+        .inputs(ore('dustImpureCobaltOxide'))
+        .inputs(ore(combustible.name) * combustible.equivalent(1))
+        .chancedOutput(metaitem('dustCobalt'), 5000, 0)
+        .fluidOutputs(fluid('carbon_monoxide') * 1000)
+        .blastFurnaceTemp(1200)
+        .duration(240)
+        .EUt(Globals.voltAmps[1])
+        .buildAndRegister()
 }
 
 // Primitive ways for getting impure cobalt (cobalt matte) for Kovar.
