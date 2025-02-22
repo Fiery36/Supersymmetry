@@ -16,6 +16,9 @@ for (name in name_removals) {
 mods.jei.ingredient.yeet(
 	metaitem('steam_turbine.mv'),
 	metaitem('steam_turbine.hv'),
+	metaitem('combustion_engine.lv'),
+	metaitem('combustion_engine.mv'),
+	metaitem('combustion_engine.hv'),
 	metaitem('gas_turbine.lv'),
 	metaitem('gas_turbine.mv'),
 	metaitem('gas_turbine.hv'),
@@ -1211,10 +1214,6 @@ RecyclingHelper.addShaped("gregtech:sieve_distillation_tower", metaitem('sieve_d
 ])
 
 // COMBUSTION ENGINES
-
-// Basic Combustion Generator * 1
-mods.gregtech.assembler.removeByInput(30, [metaitem('hull.lv'), metaitem('springCopper'), metaitem('springSmallCopper'), metaitem('circuit.electronic'), metaitem('engine.spark_plug') * 4, metaitem('engine.piston') * 4, metaitem('engine.crankshaft'), metaitem('gearSteel') * 2, metaitem('pipeHugeFluidSteel')], null)
-
 
 recipemap('assembler').recipeBuilder()
 		.inputs(metaitem('hull.Lv'))
