@@ -8,17 +8,18 @@ def name_removals = [
 	'gregtech:gregtech.machine.fisher.mv',
 	'gregtech:gregtech.machine.fisher.hv',
 	'gregtech:gregtech.machine.fisher.ev',
+	'gregtech:gregtech.machine.combustion_generator.lv',
+	'gregtech:gregtech.machine.combustion_generator.mv',
+	'gregtech:gregtech.machine.combustion_generator.hv'
 ]
 
 for (name in name_removals) {
 	crafting.remove(name)
 }
+
 mods.jei.ingredient.yeet(
 	metaitem('steam_turbine.mv'),
 	metaitem('steam_turbine.hv'),
-	metaitem('combustion_generator.lv'),
-	metaitem('combustion_generator.mv'),
-	metaitem('combustion_generator.hv'),
 	metaitem('gas_turbine.lv'),
 	metaitem('gas_turbine.mv'),
 	metaitem('gas_turbine.hv'),
