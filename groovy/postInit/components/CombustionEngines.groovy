@@ -2,7 +2,7 @@ import globals.Globals;
 
 FORMINGPRESS = recipemap('forming_press')
 ASSEMBLER = recipemap('assembler')
-BENDER = recipe('bender')
+BENDER = recipemap('bender')
 
 FORMINGPRESS.recipeBuilder()
     .inputs(ore('dustAlumina') * 10)
@@ -38,7 +38,6 @@ ASSEMBLER.recipeBuilder()
 BENDER.recipeBuilder()
     .circuitMeta(16)
     .inputs(ore('stickLongStainlessSteel') * 2)
-    .inputs(ore('ringStainlessSteel') * 8)
     .outputs(metaitem('engine.crankshaft'))
     .duration(100)
     .EUt(Globals.voltAmps[3])

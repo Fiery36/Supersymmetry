@@ -1212,6 +1212,10 @@ RecyclingHelper.addShaped("gregtech:sieve_distillation_tower", metaitem('sieve_d
 
 // COMBUSTION ENGINES
 
+// Basic Combustion Generator * 1
+mods.gregtech.assembler.removeByInput(30, [metaitem('hull.lv'), metaitem('springCopper'), metaitem('springSmallCopper'), metaitem('circuit.electronic'), metaitem('engine.spark_plug') * 4, metaitem('engine.piston') * 4, metaitem('engine.crankshaft'), metaitem('gearSteel') * 2, metaitem('pipeHugeFluidSteel')], null)
+
+
 recipemap('assembler').recipeBuilder()
 		.inputs(metaitem('hull.Lv'))
 		.inputs(ore('springCopper'))
@@ -1246,7 +1250,7 @@ recipemap('assembler').recipeBuilder()
 		.inputs(metaitem('hull.Hv'))
 		.inputs(ore('springCopper'))
 		.inputs(ore('springSmallCopper'))
-		.inputs(ore('circuitMv'))
+		.inputs(ore('circuitHv'))
 		.inputs(metaitem('engine.spark_plug') * 4)
 		.inputs(metaitem('engine.piston') * 4)
 		.inputs(metaitem('engine.crankshaft'))
@@ -1256,7 +1260,3 @@ recipemap('assembler').recipeBuilder()
 		.EUt(30)
 		.duration(600)
 		.buildAndRegister()
-
-	metaitem('combustion_generator.lv'),
-	metaitem('combustion_generator.mv'),
-	metaitem('combustion_generator.hv'),
