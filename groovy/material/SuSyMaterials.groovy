@@ -1285,6 +1285,8 @@ class SuSyMaterials {
         public static Material EuropiumIISulfate;
         public static Material EuropiumOxide;
         public static Material SamariumAmalgam;
+        public static Material SamariumChloride;
+        public static Material SamariumOxide;
         public static Material GadoliniumHydroxide;
         public static Material GadoliniumOxide;
         public static Material TerbiumCarbonate;

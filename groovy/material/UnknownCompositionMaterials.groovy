@@ -2204,5 +2204,65 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0x000000)
                 .build()
+
+        BastnasiticEuropiumFreeMREEConcentrate = new Material.Builder(4540, SuSyUtility.susyId('bast_eufree_mree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticSamariumFreeMREEConcentrate = new Material.Builder(4541, SuSyUtility.susyId('bast_smfree_mree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticGadoliniumFreeMREEConcentrate = new Material.Builder(4542, SuSyUtility.susyId('bast_gdfree_mree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticTerbiumFreeMREEConcentrate = new Material.Builder(4543, SuSyUtility.susyId('bast_tbfree_mree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticMREEWaste = new Material.Builder(4544, SuSyUtility.susyId('bast_mree_waste'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticHREEDoubleChromatesSolution = new Material.Builder(4545, SuSyUtility.susyId('bast_hree_double_chromates_solution'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticYttriumFreeHREEConcentrate = new Material.Builder(4546, SuSyUtility.susyId('bast_yfree_hree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticErbiumFreeHREEConcentrate = new Material.Builder(4547, SuSyUtility.susyId('bast_erfree_hree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticHolmiumFreeHREEConcentrate = new Material.Builder(4548, SuSyUtility.susyId('bast_hofree_hree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticYtterbiumFreeHREEConcentrate = new Material.Builder(4549, SuSyUtility.susyId('bast_ybfree_hree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticThuliumFreeHREEConcentrate = new Material.Builder(4550, SuSyUtility.susyId('bast_tmfree_hree_concentrate'))
+                .liquid()
+                .color(0x000000)
+                .build()
+
+        BastnasiticHREEWaste = new Material.Builder(4551, SuSyUtility.susyId('bast_hree_waste'))
+                .liquid()
+                .color(0x000000)
+                .build()
     }
 }
