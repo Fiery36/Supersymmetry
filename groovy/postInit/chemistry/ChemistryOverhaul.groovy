@@ -661,7 +661,7 @@ BR.recipeBuilder()
 
 BR.recipeBuilder()
     .fluidInputs(fluid('diluted_calcium_chloride_solution') * 2000)
-    .fluidInputs(fluid('=sulfuric_acid') * 1000)
+    .fluidInputs(fluid('sulfuric_acid') * 1000)
     .fluidOutputs(fluid('hydrochloric_acid') * 2000)
     .outputs(metaitem('dustCalciumSulfate') * 6)
     .duration(60)
