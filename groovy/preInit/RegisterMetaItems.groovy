@@ -118,6 +118,10 @@ eventManager.listen {
         customMetaItems.addItem(300, "mylar")
         customMetaItems.addItem(301, "spinneret")
 
+        customMetaItems.addItem(400, "engine.spark_plug")
+        customMetaItems.addItem(401, "engine.piston")
+        customMetaItems.addItem(402, "engine.crankshaft")
+
         customMetaItems.addItem(1000, "chunk.magnetite")
         customMetaItems.addItem(1001, "hot_iron_rod")
         customMetaItems.addItem(1002, "voltaic_pile").setMaxStackSize(1);
