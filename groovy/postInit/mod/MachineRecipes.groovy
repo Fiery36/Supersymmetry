@@ -16,9 +16,9 @@ for (name in name_removals) {
 mods.jei.ingredient.yeet(
 	metaitem('steam_turbine.mv'),
 	metaitem('steam_turbine.hv'),
-	metaitem('combustion_engine.lv'),
-	metaitem('combustion_engine.mv'),
-	metaitem('combustion_engine.hv'),
+	metaitem('combustion_generator.lv'),
+	metaitem('combustion_generator.mv'),
+	metaitem('combustion_generator.hv'),
 	metaitem('gas_turbine.lv'),
 	metaitem('gas_turbine.mv'),
 	metaitem('gas_turbine.hv'),
