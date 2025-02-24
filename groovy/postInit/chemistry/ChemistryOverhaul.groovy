@@ -695,12 +695,12 @@ mods.gregtech.blender.removeByInput(8, [metaitem('dustSodaAsh')], [fluid('water'
 mods.gregtech.chemical_bath.removeByInput(540, [metaitem('gregtechfoodoption:chocolate_liquor_refined_crushed')], [fluid('gtfo_sodium_carbonate_solution') * 1000])
 
 CHEMICAL_BATH.recipeBuilder()
-        .inputs(metaitem('gregtechfoodoption:chocolate_liquor_refined_crushed'))
-        .notConsumable(fluid('soda_ash_solution') * 1000)
-        .outputs(metaitem('gregtechfoodoption:chocolate_liquor_dutched_crushed'))
-        .duration(160)
-        .EUt(540)
-        .buildAndRegister()
+    .inputs(metaitem('gregtechfoodoption:chocolate_liquor_refined_crushed'))
+    .notConsumable(fluid('soda_ash_solution') * 1000)
+    .outputs(metaitem('gregtechfoodoption:chocolate_liquor_dutched_crushed'))
+    .duration(160)
+    .EUt(540)
+    .buildAndRegister()
 
 // Leblanc process
 
