@@ -464,7 +464,7 @@ public class SecondDegreeMaterials {
                 .color(0x340959)
                 .build()
 
-        //FREE IDs: 13074
+        // FREE ID: 13074
 
         DilutedAmmoniumSulfateSolution = new Material.Builder(13075, SuSyUtility.susyId('diluted_ammonium_sulfate_solution'))
                 .liquid()
@@ -576,6 +576,7 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .flags(GENERATE_CATALYST_BED)
                 .build()
+                .setFormula('(Al2O3)(PtCl4)', true)
 
         CrudeManganeseIISulfateSolution = new Material.Builder(13093, SuSyUtility.susyId('crude_manganese_ii_sulfate_solution'))
                 .liquid()
@@ -719,8 +720,9 @@ public class SecondDegreeMaterials {
                 .liquid()
                 .components(Carbon * 2, Lithium * 2, Oxygen * 3, Water)
                 .colorAverage()
-                .build()
-                .setFormula("(C)(Li2CO3)(H2O)", true);
+                .build();
+
+        ImpureLithiumCarbonateSolution.setFormula("(C)(Li2CO3)(H2O)", true)
 
         LithiumCarbonateSolution = new Material.Builder(13116, SuSyUtility.susyId("lithium_carbonate_solution"))
                 .liquid()
@@ -733,27 +735,90 @@ public class SecondDegreeMaterials {
                 .gas(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .components(Argon, Hydrogen * 4, HydrogenChloride)
                 .colorAverage()
-                .build()
-                .setFormula("(Ar)(HCl)(H)", true);
+                .build();
+
+        AcidicArgonHydrogenMixture.setFormula("(Ar)(HCl)(H)", true);
 
         AmmoniacalArgonHydrogenMixture = new Material.Builder(13118, SuSyUtility.susyId("ammoniacal_argon_hydrogen_mixture"))
                 .gas()
                 .components(Argon, Hydrogen * 4, Ammonia)
                 .colorAverage()
-                .build()
-                .setFormula("(Ar)(NH3)(H)", true)
+                .build();
+
+        AmmoniacalArgonHydrogenMixture.setFormula("(Ar)(NH3)(H)", true);
 
         AcidicHydrogenVapor = new Material.Builder(13119, SuSyUtility.susyId("acidic_hydrogen_vapor"))
                 .gas()
                 .components(Hydrogen * 6, CarbonDioxide * 1)
                 .color(0x003c74)
-                .build()
-                .setFormula("(H)8(CO2)", true);
+                .build();
+
+        AcidicHydrogenVapor.setFormula("(H)8(CO2)", true);
 
         SodiumHydroxideMethanolSolution = new Material.Builder(13120, SuSyUtility.susyId("sodium_hydroxide_methanol_solution"))
                 .fluid()
                 .components(SodiumHydroxide, Methanol)
                 .colorAverage()
                 .build();
+
+        TetraamminepalladiumDichlorideSolution = new Material.Builder(13121, SuSyUtility.susyId("tetraamminepalladium_dichloride_solution"))
+                .fluid()
+                .components(Chlorine * 2, Hydrogen * 12, Nitrogen * 4, Palladium)
+                .colorAverage()
+                .build();
+
+        TetraamminepalladiumDichlorideSolution.setFormula("[Pd(NH3)4]Cl2", true)
+
+        // FREE ID: 13122-13129
+
+        HexachloroiridicAcidSolution = new Material.Builder(13130, SuSyUtility.susyId('hexachloroiridic_acid_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(HexachloroiridicAcid * 1, Water * 1)
+                .colorAverage()
+                .build();
+
+        HexachlororhodicAcidSolution = new Material.Builder(13131, SuSyUtility.susyId('hexachlororhodic_acid_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(Hydrogen * 3, Rhodium * 1, Chlorine * 6, Water * 1)
+                .colorAverage()
+                .build();
+
+        HexachlororuthenicAcidSolution = new Material.Builder(13132, SuSyUtility.susyId('hexachlororuthenic_acid_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(Hydrogen * 2, Ruthenium * 1, Chlorine * 6, Water * 1)
+                .colorAverage()
+                .build();
+
+        HexachlororuthenicAcidSolution.setFormula('(H2RuCl6)2(H2O)35', true)
+
+        IronIIChlorideSolution = new Material.Builder(13133, SuSyUtility.susyId('iron_ii_chloride_solution'))
+                .liquid()
+                .components(IronIIChloride, Water)
+                .colorAverage()
+                .build();
+
+        // FREE ID: 13134
+
+        PotassiumPersulfateSolution = new Material.Builder(13135, SuSyUtility.susyId('potassium_persulfate_solution'))
+                .fluid()
+                .components(PotassiumPersulfate * 1, Water * 1)
+                .colorAverage()
+                .build();
+
+        PotassiumPersulfateSolution.setFormula("(K2S2O8)(H2O)", true)
+
+        SodiumHydrosulfideSolution = new Material.Builder(13136, SuSyUtility.susyId('sodium_hydrosulfide_solution'))
+                .fluid()
+                .components(SodiumHydrosulfide * 1, Water * 2)
+                .colorAverage()
+                .build();
+
+        CobaltSulfateSolution = new Material.Builder(13137, SuSyUtility.susyId("cobalt_sulfate_solution"))
+                .fluid()
+                .components(Cobalt * 1, Sulfur * 1, Oxygen * 4, Water * 1)
+                .colorAverage()
+                .build();
+
+        CobaltSulfateSolution.setFormula("(CoSO4)(H2O)", true)
     }
 }
