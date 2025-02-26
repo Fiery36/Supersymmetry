@@ -105,7 +105,7 @@ DT.recipeBuilder() // Mwt: 24.533
     .fluidInputs(fluid('catalytic_overheads') * 1000)
     .fluidOutputs(fluid('catalytic_olefin_rich_mixture') * 830)
     .fluidOutputs(fluid('hydrogen') * 170)
-    .duration(100)
+    .duration(20)
     .EUt(30)
     .buildAndRegister()
 
