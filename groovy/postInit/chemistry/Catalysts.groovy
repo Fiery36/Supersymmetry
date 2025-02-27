@@ -87,7 +87,7 @@ DISTILLERY.recipeBuilder()
 // Isomerization catalysts
 
 BR.recipeBuilder()
-    .inputs(ore('dustSupportedPlatinum') * 5)
+    .inputs(ore('dustSupportedPlatinum'))
     .fluidInputs(fluid('hydrogen_chloride') * 100)
     .outputs(metaitem('dustChloridedAlumina'))
     .duration(100)
