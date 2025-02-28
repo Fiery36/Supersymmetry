@@ -3598,7 +3598,7 @@ public class FirstDegreeMaterials {
                 .color(0xbb7694)
                 .build()
 
-        //Free ID: 3637
+        // FREE ID: 8637
         // 8638: Co3O4
 
         LithiumNitrate = new Material.Builder(8639, SuSyUtility.susyId('lithium_nitrate'))
