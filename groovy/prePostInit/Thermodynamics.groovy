@@ -87,7 +87,7 @@ def Coolants = [
 
 def CryoHydrogen = new ICryoGas('hydrogen', 'hot_hp_hydrogen', 'hp_hydrogen', 'cold_hp_hydrogen', 'liquid_hydrogen');
 CryoHydrogen.setEUt(240);
-CryoHydrogen.setDuration(20);
+CryoHydrogen.setDuration(100);
 CryoHydrogen.setPowerHX(100);
 CryoHydrogen.setDurationHX(5);
 CryoHydrogen.setDurationRadiator(200);
@@ -95,7 +95,7 @@ CryoHydrogen.setTemperature(14);
 
 def CryoOxygen = new ICryoGas('oxygen', 'hot_hp_oxygen', 'hp_oxygen', 'cold_hp_oxygen', 'liquid_oxygen');
 CryoOxygen.setEUt(30);
-CryoOxygen.setDuration(20);
+CryoOxygen.setDuration(100);
 CryoOxygen.setPowerHX(100);
 CryoOxygen.setDurationHX(5);
 CryoOxygen.setDurationRadiator(200);
@@ -103,7 +103,7 @@ CryoOxygen.setTemperature(90);
 
 def CryoHelium = new ICryoGas('helium', 'hot_hp_helium', 'hp_helium', 'cold_hp_helium', 'liquid_helium');
 CryoHelium.setEUt(720);
-CryoHelium.setDuration(20);
+CryoHelium.setDuration(100);
 CryoHelium.setPowerHX(100);
 CryoHelium.setDurationHX(5);
 CryoHelium.setDurationRadiator(200);
@@ -111,7 +111,7 @@ CryoHelium.setTemperature(4);
 
 def CryoNeon = new ICryoGas('neon', 'hot_hp_neon', 'hp_neon', 'cold_hp_neon', 'liquid_neon');
 CryoNeon.setEUt(240);
-CryoNeon.setDuration(20);
+CryoNeon.setDuration(100);
 CryoNeon.setPowerHX(100);
 CryoNeon.setDurationHX(5);
 CryoNeon.setDurationRadiator(200);
@@ -119,7 +119,7 @@ CryoNeon.setTemperature(27);
 
 def CryoArgon = new ICryoGas('argon', 'hot_hp_argon', 'hp_argon', 'cold_hp_argon', 'liquid_argon');
 CryoArgon.setEUt(120);
-CryoArgon.setDuration(20);
+CryoArgon.setDuration(100);
 CryoArgon.setPowerHX(100);
 CryoArgon.setDurationHX(5);
 CryoArgon.setDurationRadiator(200);
@@ -127,7 +127,7 @@ CryoArgon.setTemperature(87);
 
 def CryoKrypton = new ICryoGas('krypton', 'hot_hp_krypton', 'hp_krypton', 'cold_hp_krypton', 'liquid_krypton');
 CryoKrypton.setEUt(120);
-CryoKrypton.setDuration(20);
+CryoKrypton.setDuration(100);
 CryoKrypton.setPowerHX(100);
 CryoKrypton.setDurationHX(5);
 CryoKrypton.setDurationRadiator(200);
@@ -135,7 +135,7 @@ CryoKrypton.setTemperature(120);
 
 def CryoXenon = new ICryoGas('xenon', 'hot_hp_xenon', 'hp_xenon', 'cold_hp_xenon', 'liquid_xenon');
 CryoXenon.setEUt(120);
-CryoXenon.setDuration(20);
+CryoXenon.setDuration(100);
 CryoXenon.setPowerHX(100);
 CryoXenon.setDurationHX(5);
 CryoXenon.setDurationRadiator(200);
@@ -143,7 +143,7 @@ CryoXenon.setTemperature(165);
 
 def CryoAir = new ICryoGas('air', 'hot_hp_air', 'hp_air', 'cold_hp_air', 'liquid_air');
 CryoAir.setEUt(30);
-CryoAir.setDuration(20);
+CryoAir.setDuration(100);
 CryoAir.setPowerHX(100);
 CryoAir.setDurationHX(5);
 CryoAir.setDurationRadiator(200);
@@ -159,7 +159,7 @@ CryoDecarburizedAir.setTemperature(80);
 
 def CryoNitrogen = new ICryoGas('nitrogen', 'hot_hp_nitrogen', 'hp_nitrogen', 'cold_hp_nitrogen', 'liquid_nitrogen');
 CryoNitrogen.setEUt(60);
-CryoNitrogen.setDuration(20);
+CryoNitrogen.setDuration(100);
 CryoNitrogen.setPowerHX(100);
 CryoNitrogen.setDurationHX(5);
 CryoNitrogen.setDurationRadiator(200);
@@ -167,7 +167,7 @@ CryoNitrogen.setTemperature(77);
 
 def CryoNetherAir = new ICryoGas('nether_air', 'hot_hp_nether_air', 'hp_nether_air', 'cold_hp_nether_air', 'liquid_nether_air');
 CryoNetherAir.setEUt(60);
-CryoNetherAir.setDuration(20);
+CryoNetherAir.setDuration(100);
 CryoNetherAir.setPowerHX(100);
 CryoNetherAir.setDurationHX(5);
 CryoNetherAir.setDurationRadiator(200);
@@ -175,7 +175,7 @@ CryoNetherAir.setTemperature(80);
 
 def CryoNaturalGas = new ICryoGas('natural_gas', 'hot_hp_natural_gas', 'hp_natural_gas', 'cold_hp_natural_gas', 'liquid_natural_gas');
 CryoNaturalGas.setEUt(60);
-CryoNaturalGas.setDuration(20);
+CryoNaturalGas.setDuration(100);
 CryoNaturalGas.setPowerHX(100);
 CryoNaturalGas.setDurationHX(5);
 CryoNaturalGas.setDurationRadiator(200);
@@ -183,7 +183,7 @@ CryoNaturalGas.setTemperature(80);
 
 def CryoPetroleumGas = new ICryoGas('fuel_gas', 'hot_hp_fuel_gas', 'hp_fuel_gas', 'cold_hp_fuel_gas', 'lpg');
 CryoNaturalGas.setEUt(60);
-CryoNaturalGas.setDuration(20);
+CryoNaturalGas.setDuration(100);
 CryoNaturalGas.setPowerHX(100);
 CryoNaturalGas.setDurationHX(5);
 CryoNaturalGas.setDurationRadiator(200);
@@ -191,7 +191,7 @@ CryoNaturalGas.setTemperature(80);
 
 def CryoMethane = new ICryoGas('methane', 'hot_hp_methane', 'hp_methane', 'cold_hp_methane', 'liquid_methane');
 CryoMethane.setEUt(60);
-CryoMethane.setDuration(20);
+CryoMethane.setDuration(100);
 CryoMethane.setPowerHX(100);
 CryoMethane.setDurationHX(5);
 CryoMethane.setDurationRadiator(200);
