@@ -480,6 +480,10 @@ class ChangeFlags {
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(GraniteTailings, GraniteTailings, GraniteTailings, GraniteTailings);
 
+        oreProp = Uraninite.getProperty(PropertyKey.ORE);
+        oreProp.getOreByProducts().clear();
+        oreProp.setOreByProducts(GraniteTailings, GraniteTailings, GraniteTailings, GraniteTailings);
+
         oreProp = Wulfenite.getProperty(PropertyKey.ORE);
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(GraniteTailings, GraniteTailings, GraniteTailings, GraniteTailings);
@@ -746,6 +750,9 @@ class ChangeFlags {
         oreProp.setDirectSmeltResult(null);
 
         oreProp = Powellite.getProperty(PropertyKey.ORE);
+        oreProp.setDirectSmeltResult(null);
+
+        oreProp = Uraninite.getProperty(PropertyKey.ORE);
         oreProp.setDirectSmeltResult(null);
 
         oreProp = Magnesite.getProperty(PropertyKey.ORE);
