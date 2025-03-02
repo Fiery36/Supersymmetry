@@ -1362,13 +1362,7 @@ public class FirstDegreeMaterials {
                 .color(0x38393b)
                 .build();
 
-        SulfuricPGMSolution = new Material.Builder(8297, SuSyUtility.susyId('sulfuric_pgm_solution'))
-                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(SulfuricAcid * 3, HydrochloricAcid * 12, Water * 8)
-                .colorAverage()
-                .build();
-
-        SulfuricPGMSolution.setFormula("(?)(H2SO4)3(HCl)12(H2O)8", true)
+        // FREE ID: 8297
 
         PGMSolution = new Material.Builder(8298, SuSyUtility.susyId('pgm_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -3598,6 +3592,7 @@ public class FirstDegreeMaterials {
                 .color(0xbb7694)
                 .build()
 
+        // FREE ID: 8637
         // 8638: Co3O4
 
         LithiumNitrate = new Material.Builder(8639, SuSyUtility.susyId('lithium_nitrate'))
