@@ -1296,22 +1296,16 @@ class SuSyMaterials {
         // Rare Earth Processing Materials
 
         public static Material EthylHexylPhosphonicAcidMonoEthylHexylEster;
+        public static Material RareEarthExtractionMixture;
         public static Material PotassiumChromate;
         public static Material PotassiumChromateSolution;
         public static Material PotassiumChlorate;
         public static Material AmmoniumCarbonate;
-        public static Material Dowex550AExchangeResin;
-        public static Material NitratedDowex550AExchangeResin;
         public static Material HydroxyisobutyricAcid;
         public static Material SulfonicAcid;
         public static Material SodiumAmalgam;
-        public static Material Isooctyl;
-        public static Material AG50WExchangeResin;
-        public static Material CuFormAG50WExchangeResin;
-        public static Material TmFormAG50WExchangeResin;
-        public static Material PuroliteC160ExchangeResin;
-        public static Material CuFormPuroliteC160ExchangeResin;
-        public static Material LuFormPuroliteC160ExchangeResin;
+        public static Material Isooctanol;
+        public static Material CopperChlorideSolution;
 
         public static Material MonaziteLeach;
         public static Material SiftedMonaziteLeach;
@@ -1332,18 +1326,20 @@ class SuSyMaterials {
 
         public static Material CeriumIVNitrate;
         public static Material LanthanumCarbonate;
+        public static Material LanthanumChloride;
         public static Material LanthanumOxide;
         public static Material PraseodymiumOxide;
         public static Material EuropiumIISulfate;
         public static Material EuropiumOxide;
         public static Material SamariumAmalgam;
         public static Material SamariumChloride;
-        public static Material SamariumOxide;
+        public static Material SamariumFluoride;
         public static Material GadoliniumHydroxide;
         public static Material GadoliniumOxide;
         public static Material TerbiumCarbonate;
         public static Material TerbiumOxide;
         public static Material DysprosiumFluoride;
+        public static Material YttriumChlorideSolution;
         public static Material YttriumChloride;
         public static Material YttriumSponge;
         public static Material ErbiumDodecylSulfate;
@@ -1353,8 +1349,12 @@ class SuSyMaterials {
         public static Material HolmiumHydroxide;
         public static Material HolmiumOxide;
         public static Material YtterbiumAmalgam;
+        public static Material YtterbiumChloride;
+        public static Material YtterbiumFluoride;
+        public static Material ThuliumChlorideSolution;
         public static Material ThuliumChloride;
-        public static Material ThuliumOxide;
+        public static Material ThuliumSponge;
+        public static Material LutetiumChlorideSolution;
         public static Material LutetiumChloride;
         public static Material LutetiumSponge;
 
@@ -1379,7 +1379,7 @@ class SuSyMaterials {
         public static Material MonaziticGadoliniumFreeMREEConcentrate;
         public static Material MonaziticTerbiumFreeMREEConcentrate;
         public static Material MonaziticMREEWaste;
-        public static Material MonaziticHREEDoubleChromatesSolution;
+        public static Material MonaziticHREEDoubleChromates;
         public static Material MonaziticYttriumFreeHREEConcentrate;
         public static Material MonaziticErbiumFreeHREEConcentrate;
         public static Material MonaziticHolmiumFreeHREEConcentrate;
@@ -1408,13 +1408,42 @@ class SuSyMaterials {
         public static Material BastnasiticGadoliniumFreeMREEConcentrate;
         public static Material BastnasiticTerbiumFreeMREEConcentrate;
         public static Material BastnasiticMREEWaste;
-        public static Material BastnasiticHREEDoubleChromatesSolution;
+        public static Material BastnasiticHREEDoubleChromates;
         public static Material BastnasiticYttriumFreeHREEConcentrate;
         public static Material BastnasiticErbiumFreeHREEConcentrate;
         public static Material BastnasiticHolmiumFreeHREEConcentrate;
         public static Material BastnasiticYtterbiumFreeHREEConcentrate;
         public static Material BastnasiticThuliumFreeHREEConcentrate;
         public static Material BastnasiticHREEWaste;
+
+        public static Material XenotimicRareEarthHydroxides;
+        public static Material XenotimicRareEarthNitratesSolution;
+        public static Material XenotimicOxidizedRareEarthNitratesSolution;
+        public static Material XenotimicCeriumExtract;
+        public static Material XenotimicCeriumFreeRareEarthNitratesSolution;
+        public static Material XenotimicLREEConcentrate;
+        public static Material XenotimicDEHPAExtract;
+        public static Material XenotimicRareEarthChloridesSolution;
+        public static Material XenotimicMREEConcentrate;
+        public static Material XenotimicEHEHPAExtract;
+        public static Material XenotimicHREEConcentrate;
+        public static Material XenotimicLanthanumFreeLREEConcentrate;
+        public static Material XenotimicLanthanumFreeLREEHydroxides;
+        public static Material XenotimicOxidisedLREEHydroxides;
+        public static Material XenotimicPraseodymiumFreeREEHydroxides;
+        public static Material XenotimicLREEWaste;
+        public static Material XenotimicEuropiumFreeMREEConcentrate;
+        public static Material XenotimicSamariumFreeMREEConcentrate;
+        public static Material XenotimicGadoliniumFreeMREEConcentrate;
+        public static Material XenotimicTerbiumFreeMREEConcentrate;
+        public static Material XenotimicMREEWaste;
+        public static Material XenotimicHREEDoubleChromates;
+        public static Material XenotimicYttriumFreeHREEConcentrate;
+        public static Material XenotimicErbiumFreeHREEConcentrate;
+        public static Material XenotimicHolmiumFreeHREEConcentrate;
+        public static Material XenotimicYtterbiumFreeHREEConcentrate;
+        public static Material XenotimicThuliumFreeHREEConcentrate;
+        public static Material XenotimicHREEWaste;
 
         // HP Materials
 

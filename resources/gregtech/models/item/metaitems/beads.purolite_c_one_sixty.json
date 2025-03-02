@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "gregtech:items/metaitems/beads.purolite_c_one_sixty"
-  }
-}

@@ -114,6 +114,11 @@ eventManager.listen {
         customMetaItems.addItem(253, "beads.loaded_rhenium_anion_exchange");
         customMetaItems.addItem(254, "beads.strong_basic_anion_exchange");
         customMetaItems.addItem(255, "beads.loaded_uranium_anion_exchange");
+        customMetaItems.addItem(256, "beads.rare_earth_cation_exchange")
+        customMetaItems.addItem(257, "beads.loaded_thulium_cation_exchange")
+        customMetaItems.addItem(258, "beads.loaded_lutetium_cation_exchange")
+        customMetaItems.addItem(259, "beads.loaded_gadolinium_anion_exchange")
+        customMetaItems.addItem(260, "beads.chlorinated_strong_basic_anion_exchange")
 
         customMetaItems.addItem(300, "mylar")
         customMetaItems.addItem(301, "spinneret")
@@ -298,6 +303,8 @@ eventManager.listen {
         customMetaItems.addItem(6210, "sponge.ruthenium")
         customMetaItems.addItem(6211, "sponge.rhodium")
         customMetaItems.addItem(6212, "sponge.iridium")
+        customMetaItems.addItem(6213, "sponge.yttrium")
+        customMetaItems.addItem(6214, "sponge.dysprosium")
 
         // Anode slimes 6300-6400
         customMetaItems.addItem(6300, "anode_slime.gold")
