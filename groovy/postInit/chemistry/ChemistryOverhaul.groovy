@@ -681,7 +681,7 @@ DISTILLERY.recipeBuilder()
     .fluidOutputs(fluid('water') * 2000)
     .outputs(metaitem('dustCalciumChloride') * 3)
     .EUt(30)
-    .duration(320)
+    .duration(160)
     .buildAndRegister()
 
 // Soda Ash
