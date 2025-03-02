@@ -815,7 +815,7 @@ public class SecondDegreeMaterials {
 
         CobaltSulfateSolution = new Material.Builder(13137, SuSyUtility.susyId("cobalt_sulfate_solution"))
                 .fluid()
-                .components(Cobalt * 1, Sulfur * 1, Oxygen * 4, Water * 1)
+                .components(CobaltSulfate, Water * 1)
                 .colorAverage()
                 .build();
 
