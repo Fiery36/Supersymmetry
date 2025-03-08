@@ -466,7 +466,7 @@ public class SecondDegreeMaterials {
 
         DilutedSodiumChlorateSolution = new Material.Builder(13074, SuSyUtility.susyId('diluted_sodium_chlorate_solution'))
                 .liquid()
-                .color(0x315fe8)
+                .color(0x5f81e8)
                 .build()
 
         DilutedSodiumChlorateSolution.setFormula('(H2O)2(NaClO3)', true);
