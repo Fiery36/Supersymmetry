@@ -1407,6 +1407,7 @@ class SuSyMaterials {
         public static Material DilutedIronIIIChlorideSolution;
         public static Material SodiumPerchlorateSolution;
         public static Material SodiumChlorateSolution;
+        public static Material DilutedSodiumChlorateSolution;
         public static Material DilutedAniline;
         public static Material ChloroauricAcidSolution;
         public static Material ZincChlorideSolution;

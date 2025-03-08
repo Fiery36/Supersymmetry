@@ -464,7 +464,12 @@ public class SecondDegreeMaterials {
                 .color(0x340959)
                 .build()
 
-        // FREE ID: 13074
+        DilutedSodiumChlorateSolution = new Material.Builder(13074, SuSyUtility.susyId('diluted_sodium_chlorate_solution'))
+                .liquid()
+                .color(0x315fe8)
+                .build()
+
+        DilutedSodiumChlorateSolution.setFormula('(H2O)2(NaClO3)', true);
 
         DilutedAmmoniumSulfateSolution = new Material.Builder(13075, SuSyUtility.susyId('diluted_ammonium_sulfate_solution'))
                 .liquid()
