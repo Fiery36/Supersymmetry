@@ -469,7 +469,7 @@ public class SecondDegreeMaterials {
                 .color(0x5f81e8)
                 .build()
 
-        DilutedSodiumChlorateSolution.setFormula('(H2O)2(NaClO3)', true);
+        DilutedSodiumChlorateSolution.setFormula('(NaClO3)(H2O)2', true);
 
         DilutedAmmoniumSulfateSolution = new Material.Builder(13075, SuSyUtility.susyId('diluted_ammonium_sulfate_solution'))
                 .liquid()
