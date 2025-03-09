@@ -196,9 +196,9 @@ crafting.shapelessBuilder()
     .output(item('susy:susy_armor', 5).withNbt(['oxygen': 1200.0D]))
     .input(item('susy:susy_armor', 5).mark('tank')) 
     .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
-        .transform({ _ -> metaitem('large_fluid_cell.steel')}))
+    .transform({ _ -> metaitem('large_fluid_cell.steel')}))
     .recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
+    output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
     }.register()
 
 ASSEMBLER.recipeBuilder()
@@ -235,9 +235,9 @@ crafting.shapelessBuilder()
     .input(item('susy:susy_armor', 8).mark('tank')) 
     .input(metaitem('dustLithiumHydroxide'))
     .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
-        .transform({ _ -> metaitem('large_fluid_cell.steel')}))
+    .transform({ _ -> metaitem('large_fluid_cell.steel')}))
     .recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
+    output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
     }.register()
 
 CVD.recipeBuilder()
@@ -261,9 +261,9 @@ crafting.shapelessBuilder()
     .output(item('susy:susy_armor', 10).withNbt(['oxygen': 1200.0D]))
     .input(item('susy:susy_armor', 10).mark('tank')) 
     .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
-        .transform({ _ -> metaitem('large_fluid_cell.steel')}))
+    .transform({ _ -> metaitem('large_fluid_cell.steel')}))
     .recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
+    output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
     }.register()
 
 // Rebreather tanks can be upgraded too.
@@ -348,6 +348,7 @@ ASSEMBLER.recipeBuilder()
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
+//Industrial Concrete
 FLUID_SOLIDIFIER.recipeBuilder()
     .inputs(ore('frameGtSteel'))
     .fluidInputs(fluid('concrete') * 576)
@@ -355,3 +356,7 @@ FLUID_SOLIDIFIER.recipeBuilder()
     .duration(100)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
+
+// Concrete Dust * 1 (remove Industrial Concrete recycling)
+mods.gregtech.macerator.removeByInput(2, [item('susy:susy_stone_smooth', 9)], null)
+
