@@ -1306,7 +1306,6 @@ mods.gregtech.alloy_blast_smelter.removeByInput(120, [metaitem('dustNickel'), me
 mods.gregtech.alloy_blast_smelter.removeByInput(7680, [metaitem('dustYttrium'), metaitem('dustBarium') * 2, metaitem('dustCopper') * 3, metaitem('circuit.integrated').withNbt(["Configuration": 14])], [fluid('oxygen') * 7000, fluid('argon') * 650])
 // Molten Yttrium Barium Cuprate * 1872
 mods.gregtech.alloy_blast_smelter.removeByInput(7680, [metaitem('dustYttrium'), metaitem('dustBarium') * 2, metaitem('dustCopper') * 3, metaitem('circuit.integrated').withNbt(["Configuration": 4])], [fluid('oxygen') * 7000])
-
 // Molten Mercury Barium Calcium Cuprate * 2304
 mods.gregtech.alloy_blast_smelter.removeByInput(480, [metaitem('dustBarium') * 2, metaitem('dustCalcium') * 2, metaitem('dustCopper') * 3, metaitem('circuit.integrated').withNbt(["Configuration": 5])], [fluid('mercury') * 1000, fluid('oxygen') * 8000])
 // Molten Mercury Barium Calcium Cuprate * 2304
@@ -1319,6 +1318,34 @@ mods.gregtech.alloy_blast_smelter.removeByInput(7680, [metaitem('dustIndium') * 
 mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustSamarium'), metaitem('dustIron'), metaitem('dustArsenic'), metaitem('circuit.integrated').withNbt(["Configuration": 14])], [fluid('oxygen') * 1000, fluid('helium') * 400])
 // Molten Samarium Iron Arsenic Oxide * 576
 mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustSamarium'), metaitem('dustIron'), metaitem('dustArsenic'), metaitem('circuit.integrated').withNbt(["Configuration": 4])], [fluid('oxygen') * 1000])
+// Molten Maraging Steel 300 * 3456
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustIron') * 16, metaitem('dustTitanium'), metaitem('dustAluminium'), metaitem('dustNickel') * 4, metaitem('dustCobalt') * 2, metaitem('circuit.integrated').withNbt(['Configuration': 15])], [fluid('argon') * 1200 * 1200])
+// Molten Maraging Steel 300 * 3456
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustIron') * 16, metaitem('dustTitanium'), metaitem('dustAluminium'), metaitem('dustNickel') * 4, metaitem('dustCobalt') * 2, metaitem('circuit.integrated').withNbt(['Configuration': 5])], null)
+// Molten Hastelloy-C276 * 4320
+mods.gregtech.alloy_blast_smelter.removeByInput(120, [metaitem('dustNickel') * 12, metaitem('dustMolybdenum') * 8, metaitem('dustChrome') * 7, metaitem('dustTungsten'), metaitem('dustCobalt'), metaitem('dustCopper'), metaitem('circuit.integrated').withNbt(['Configuration': 16])], [fluid('helium') * 3000 * 3000])
+// Molten Hastelloy-C276 * 4320
+mods.gregtech.alloy_blast_smelter.removeByInput(120, [metaitem('dustNickel') * 12, metaitem('dustMolybdenum') * 8, metaitem('dustChrome') * 7, metaitem('dustTungsten'), metaitem('dustCobalt'), metaitem('dustCopper'), metaitem('circuit.integrated').withNbt(['Configuration': 6])], null)
+// Molten Hastelloy-X * 2736
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustNickel') * 8, metaitem('dustIron') * 3, metaitem('dustTungsten') * 4, metaitem('dustMolybdenum') * 2, metaitem('dustChrome'), metaitem('dustNiobium'), metaitem('circuit.integrated').withNbt(['Configuration': 16])], [fluid('argon') * 950 * 950])
+// Molten Hastelloy-X * 2736
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustNickel') * 8, metaitem('dustIron') * 3, metaitem('dustTungsten') * 4, metaitem('dustMolybdenum') * 2, metaitem('dustChrome'), metaitem('dustNiobium'), metaitem('circuit.integrated').withNbt(['Configuration': 6])], null)
+// Molten Incoloy-MA956 * 1872
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustVanadiumSteel') * 4, metaitem('dustManganese') * 2, metaitem('dustAluminium') * 5, metaitem('dustYttrium') * 2, metaitem('circuit.integrated').withNbt(['Configuration': 14])], [fluid('helium') * 1300 * 1300])
+// Molten Incoloy-MA956 * 1872
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustVanadiumSteel') * 4, metaitem('dustManganese') * 2, metaitem('dustAluminium') * 5, metaitem('dustYttrium') * 2, metaitem('circuit.integrated').withNbt(['Configuration': 4])], null)
+// Molten Watertight Steel * 2160
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustIron') * 7, metaitem('dustAluminium') * 4, metaitem('dustNickel') * 2, metaitem('dustChrome'), metaitem('dustSulfur'), metaitem('circuit.integrated').withNbt(['Configuration': 15])], [fluid('helium') * 1500 * 1500])
+// Molten Watertight Steel * 2160
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustIron') * 7, metaitem('dustAluminium') * 4, metaitem('dustNickel') * 2, metaitem('dustChrome'), metaitem('dustSulfur'), metaitem('circuit.integrated').withNbt(['Configuration': 5])], null)
+// Molten Stellite-100 * 1440
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustIron') * 4, metaitem('dustChrome') * 3, metaitem('dustTungsten') * 2, metaitem('dustMolybdenum'), metaitem('circuit.integrated').withNbt(['Configuration': 14])], [fluid('argon') * 500 * 500])
+// Molten Stellite-100 * 1440
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustIron') * 4, metaitem('dustChrome') * 3, metaitem('dustTungsten') * 2, metaitem('dustMolybdenum'), metaitem('circuit.integrated').withNbt(['Configuration': 4])], null)
+// Molten Zeron-100 * 2304
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustIron') * 10, metaitem('dustNickel') * 2, metaitem('dustTungsten') * 2, metaitem('dustNiobium'), metaitem('dustCobalt'), metaitem('circuit.integrated').withNbt(['Configuration': 15])], [fluid('helium') * 1600 * 1600])
+// Molten Zeron-100 * 2304
+mods.gregtech.alloy_blast_smelter.removeByInput(1920, [metaitem('dustIron') * 10, metaitem('dustNickel') * 2, metaitem('dustTungsten') * 2, metaitem('dustNiobium'), metaitem('dustCobalt'), metaitem('circuit.integrated').withNbt(['Configuration': 5])], null)
 
 // NAND Chip * 8
 mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.good'), metaitem('plate.simple_system_on_chip'), metaitem('boltRedAlloy') * 2, metaitem('wireFineTin') * 2], [fluid('soldering_alloy') * 72])
