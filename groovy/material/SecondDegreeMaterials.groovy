@@ -567,7 +567,7 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        AlluvialPlatinumMotherLiquor.setFormula('(H2PdCl4)(ZnCl2)(HCl)4(H2O)14', true)
+        AlluvialDivalentPalladiumSolution.setFormula('(H2PdCl4)(ZnCl2)(HCl)4(H2O)14', true)
 
         PlatinumPrecursorSolution = new Material.Builder(13091, SuSyUtility.susyId('platinum_precursor_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
