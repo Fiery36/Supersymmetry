@@ -768,11 +768,11 @@ public class SecondDegreeMaterials {
 
         TetraamminepalladiumDichlorideSolution = new Material.Builder(13121, SuSyUtility.susyId("tetraamminepalladium_dichloride_solution"))
                 .fluid()
-                .components(Chlorine * 2, Hydrogen * 12, Nitrogen * 4, Palladium)
+                .components(Chlorine * 2, Hydrogen * 12, Nitrogen * 4, Palladium, Water)
                 .colorAverage()
                 .build();
 
-        TetraamminepalladiumDichlorideSolution.setFormula("[Pd(NH3)4]Cl2", true)
+        TetraamminepalladiumDichlorideSolution.setFormula("([Pd(NH3)4]Cl2)(H2O)", true)
 
         // FREE ID: 13122-13129
 
@@ -787,6 +787,8 @@ public class SecondDegreeMaterials {
                 .components(Hydrogen * 3, Rhodium * 1, Chlorine * 6, Water * 1)
                 .colorAverage()
                 .build();
+
+        HexachlororhodicAcidSolution.setFormula("(H3RhCl6)(H2O)", true);
 
         HexachlororuthenicAcidSolution = new Material.Builder(13132, SuSyUtility.susyId('hexachlororuthenic_acid_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))

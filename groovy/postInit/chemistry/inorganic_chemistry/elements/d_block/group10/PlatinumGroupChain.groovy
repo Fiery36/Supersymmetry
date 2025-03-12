@@ -118,7 +118,7 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
 
     REACTION_FURNACE.recipeBuilder()
         .inputs(ore('dustDiamminedichloropalladium') * 11)
-        .fluidInputs(fluid('hydrogen') * 4000)
+        .fluidInputs(fluid('hydrogen') * 2000)
         .outputs(metaitem('dustPalladium'))
         .fluidOutputs(fluid('ammonia') * 2000)
         .fluidOutputs(fluid('hydrogen_chloride') * 2000)
@@ -220,7 +220,7 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
 
         REACTION_FURNACE.recipeBuilder()
             .inputs(ore('dustAmmoniumHexachlororuthenate') * 17)
-            .fluidInputs(fluid('hydrogen') * 3000)
+            .fluidInputs(fluid('hydrogen') * 6000)
             .outputs(metaitem('sponge.ruthenium'))
             .fluidOutputs(fluid('ammonia') * 2000)
             .fluidOutputs(fluid('hydrogen_chloride') * 6000)
@@ -240,10 +240,10 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
 
         BR.recipeBuilder()
             .fluidInputs(fluid('osmium_tetroxide') * 2000)
-            .fluidInputs(fluid('potassium_hydroxide_solution') * 5000)
+            .fluidInputs(fluid('potassium_hydroxide_solution') * 2000)
             .fluidInputs(fluid('ethanol') * 1000)
             .outputs(metaitem('dustPotassiumOsmate') * 26)
-            .fluidOutputs(fluid('wastewater') * 1000)
+            .fluidOutputs(fluid('wastewater') * 3000)
             .duration(20)
             .EUt(Globals.voltAmps[2])
             .buildAndRegister()
@@ -392,7 +392,7 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
             .EUt(Globals.voltAmps[2])
             .buildAndRegister()
 
-        // Pd(NH3)4Cl2(H2O) + 2HCl + H2O -> 2NH4Cl(H2O) + Pd(NH3)2Cl2
+        // Pd(NH3)4Cl2.H2O + 2HCl + H2O -> 2(NH4Cl.H2O) + Pd(NH3)2Cl2
 
         BR.recipeBuilder()
             .fluidInputs(fluid('tetraamminepalladium_dichloride_solution') * 1000)
@@ -484,7 +484,7 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
             .EUt(Globals.voltAmps[2])
             .buildAndRegister()
 
-        // (NH4)3RhCl6 + 1.5H2 -> (NH4)3(IrCl6) + 3NH3 + 6HCl
+        // (NH4)3RhCl6 + 1.5H2 -> Rh + 3NH3 + 6HCl
 
         REACTION_FURNACE.recipeBuilder()
             .inputs(ore('dustAmmoniumHexachlororhodate') * 21)
