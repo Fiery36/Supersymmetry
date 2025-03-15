@@ -493,7 +493,7 @@ public class FirstDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        DilutedSaltwater = new Material.Builder(8158, SuSyUtility.susyId('diluted_saltwater'))
+        DilutedSaltWater = new Material.Builder(8158, SuSyUtility.susyId('diluted_salt_water'))
                 .liquid()
                 .components(Salt, Water * 2)
                 .color(0x3d61b8)
