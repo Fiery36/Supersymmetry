@@ -1969,11 +1969,11 @@ public class FirstDegreeMaterials {
                 .colorAverage()
                 .build()
 
-        RutheniumIVOxide = new Material.Builder(8390, SuSyUtility.susyId('ruthenium_iv_oxide'))
+        RutheniumIIIChloride = new Material.Builder(8390, SuSyUtility.susyId('ruthenium_iii_chloride'))
                 .dust()
-                .components(Ruthenium, Oxygen * 2)
+                .components(Ruthenium, Chlorine * 3)
                 .colorAverage()
-                .build()
+                .build();
 
         BismuthIridate = new Material.Builder(8391, SuSyUtility.susyId('bismuth_iridate'))
                 .dust()
