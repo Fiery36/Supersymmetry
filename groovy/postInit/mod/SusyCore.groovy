@@ -359,4 +359,6 @@ FLUID_SOLIDIFIER.recipeBuilder()
 
 // Concrete Dust * 1 (remove Industrial Concrete recycling)
 mods.gregtech.macerator.removeByInput(2, [item('susy:susy_stone_smooth', 9)], null)
+// Concrete Dust * 1
+mods.gregtech.macerator.removeByInput(2, [item('susy:susy_stone_cobble', 9)], null)
 
