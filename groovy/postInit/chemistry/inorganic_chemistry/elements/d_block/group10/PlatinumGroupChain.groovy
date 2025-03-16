@@ -236,14 +236,14 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
             .buildAndRegister()
 
         // Osmium adsorption
-        // 2OsO4 + C2H5OH + 5KOH -> CH3CO2K + 2K2[OsO2(OH)4]
+        // 2OsO4 + C2H5OH + 5KOH -> CH3COOK + 2K2[OsO2(OH)4]
 
         BR.recipeBuilder()
             .fluidInputs(fluid('osmium_tetroxide') * 2000)
-            .fluidInputs(fluid('potassium_hydroxide_solution') * 2000)
+            .fluidInputs(fluid('potassium_hydroxide_solution') * 5000)
             .fluidInputs(fluid('ethanol') * 1000)
             .outputs(metaitem('dustPotassiumOsmate') * 26)
-            .fluidOutputs(fluid('wastewater') * 3000)
+            .fluidOutputs(fluid('wastewater') * 5000) //CH3COOK.5H2O
             .duration(20)
             .EUt(Globals.voltAmps[2])
             .buildAndRegister()
