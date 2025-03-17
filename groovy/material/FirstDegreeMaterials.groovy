@@ -3375,11 +3375,11 @@ public class FirstDegreeMaterials {
 
         SodiumSeleniteSolution = new Material.Builder(8606, SuSyUtility.susyId('sodium_selenite_solution'))
                 .liquid()
-                .components(Sodium * 2, Selenium, Oxygen * 3, Water)
+                .components(Sodium * 2, Selenium, Oxygen * 3, Water * 4)
                 .color(0x96a67c)
                 .build()
 
-        SodiumSeleniteSolution.setFormula("(Na2SeO3)(H2O)", true);
+        SodiumSeleniteSolution.setFormula("(Na2SeO3)(H2O)4", true);
 
         HydrogenSelenide = new Material.Builder(8607, SuSyUtility.susyId('hydrogen_selenide'))
                 .gas()
