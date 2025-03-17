@@ -48,6 +48,7 @@ EBF.recipeBuilder()
         .chancedOutput(metaitem('dustGraniticMineralSand'), 1400, 0) // 0.07 * 6 Fe in, 0.42 Fe out as 0.14 Fe3O4
         .fluidOutputs(fluid('sulfur_dioxide') * 420) // Assumed Fe present as pyrrhotite (~FeS)
         .duration(200)
+        .blastFurnaceTemp(1200)
         .EUt(Globals.voltAmps[2])
         .buildAndRegister()
 
