@@ -148,7 +148,7 @@ ROASTER.recipeBuilder()
 
 ELECTROLYTIC_CELL.recipeBuilder()
         .fluidInputs(fluid('chalcogen_free_copper_leach') * 810)
-        .inputs(ore('plateCopper'))
+        .notConsumable(ore('plateCopper'))
         .notConsumable(ore('plateStainlessSteel'))
         .fluidInputs(fluid('water') * 185)
         .fluidOutputs(fluid('sulfuric_acid') * 1375)
