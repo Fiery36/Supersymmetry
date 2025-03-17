@@ -793,7 +793,7 @@ class SuSyMaterials {
         public static Material SodiumBromide;
         public static Material HydrogenChloride;
         public static Material HydrogenFluoride;
-        public static Material DilutedSaltwater;
+        public static Material DilutedSaltWater;
         public static Material SodiumHydroxideSolution;
         public static Material IronIIIChlorideSolution;
         public static Material DilutedSaltpeterSolution;
@@ -1049,6 +1049,7 @@ class SuSyMaterials {
         public static Material BariumCarbonate;
         public static Material LeadOxide;
         public static Material TantalumNitride;
+        public static Material RutheniumIIIChloride;
         public static Material BismuthIridate;
         public static Material IridiumTrichloride;
         public static Material SodiumBismuthate;
