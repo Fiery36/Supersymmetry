@@ -788,7 +788,7 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        HexachlororhodicAcidSolution.setFormula("(H3RhCl6)(H2O)17.6", true);
+        HexachlororhodicAcidSolution.setFormula("(H3RhCl6)5(H2O)88", true);
 
         HexachlororuthenicAcidSolution = new Material.Builder(13132, SuSyUtility.susyId('hexachlororuthenic_acid_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -796,7 +796,7 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        HexachlororuthenicAcidSolution.setFormula('(H2RuCl6)(H2O)17.5', true)
+        HexachlororuthenicAcidSolution.setFormula('(H2RuCl6)2(H2O)35', true)
 
         IronIIChlorideSolution = new Material.Builder(13133, SuSyUtility.susyId('iron_ii_chloride_solution'))
                 .liquid()
