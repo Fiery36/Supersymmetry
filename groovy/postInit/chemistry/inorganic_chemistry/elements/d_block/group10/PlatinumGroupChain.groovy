@@ -252,7 +252,7 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
         // K2[OsO2(OH)4] + 3H2 → Os + 2KOH + 4H2O
 
         REACTION_FURNACE.recipeBuilder()
-            .inputs(ore('dustPotassiumOsmate') * 26)
+            .inputs(ore('dustPotassiumOsmate') * 13)
             .fluidInputs(fluid('hydrogen') * 6000)
             .outputs(metaitem('sponge.osmium'))
             .outputs(metaitem('dustPotassiumHydroxide') * 6)
