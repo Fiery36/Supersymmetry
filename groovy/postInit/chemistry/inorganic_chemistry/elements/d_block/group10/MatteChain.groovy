@@ -147,11 +147,12 @@ ROASTER.recipeBuilder()
 // Copper electrowinning
 
 ELECTROLYTIC_CELL.recipeBuilder()
-        .fluidInputs(fluid('chalcogen_free_copper_leach') * 810)
-        .inputs(ore('plateCopper'))
+        .fluidInputs(fluid('chalcogen_free_copper_leach') * 810) // Carries 0.995 CuSO4, 0.386 H2SO4 in 810L of H2O => 1381L H2SO4
+        .notConsumable(ore('plateCopper'))
         .notConsumable(ore('plateStainlessSteel'))
         .fluidInputs(fluid('water') * 185)
-        .fluidOutputs(fluid('sulfuric_acid') * 1375)
+        .fluidOutputs(fluid('sulfuric_acid') * 1381)
+        .fluidOutputs(fluid('oxygen') * 185)
         .outputs(metaitem('dustCopper'))
         .duration(200)
         .EUt(Globals.voltAmps[2])
