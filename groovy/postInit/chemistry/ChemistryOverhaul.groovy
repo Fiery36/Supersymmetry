@@ -190,7 +190,7 @@ FLUIDIZEDBR.recipeBuilder()
     .buildAndRegister()
 
 FLUIDIZEDBR.recipeBuilder()
-    .notConsumable(metaitem('dustRutheniumIvOxide'))
+    .notConsumable(ore('dustRutheniumIvOxide'))
     .fluidInputs(fluid('hydrogen_chloride') * 1000)
     .fluidInputs(fluid('oxygen') * 500)
     .fluidOutputs(fluid('chlorine') * 1000)
