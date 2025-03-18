@@ -36,7 +36,7 @@ EBF.recipeBuilder()
         .inputs(ore('dustFlotatedPentlandite') * 6)
         .outputs(metaitem('dustGreenMatte') * 6)
         .duration(20)
-        .blastFurnaceTemp(2700)
+        .blastFurnaceTemp(2500)
         .EUt(Globals.voltAmps[2])
         .buildAndRegister()
 
