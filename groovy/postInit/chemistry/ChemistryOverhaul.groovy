@@ -3974,6 +3974,6 @@ MIXER.recipeBuilder()
     .fluidInputs(fluid('water') * 2000)
     .fluidOutputs(fluid('iron_ii_chloride_solution') * 2000)
     .duration(20)
-    .EUt(Globals.voltAmps[1])
+    .EUt(30)
     .buildAndRegister()
 
