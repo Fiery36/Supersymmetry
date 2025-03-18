@@ -539,7 +539,7 @@ class SuSyMaterials {
         public static Material PGMFreeCopperLeach;
         public static Material PGMConcentrate;
         public static Material SulfidicCopperLeach;
-        public static Material ChalcogenFreeCopperLeach; 
+        public static Material ChalcogenFreeCopperLeach;
         public static Material MixedChalcogenDioxide;
         public static Material CopperSelenideTelluride;
         public static Material NickelExtractionMixture;
@@ -1264,7 +1264,8 @@ class SuSyMaterials {
         public static Material LeadFreeSolder;
         public static Material CryogenicSolder;
         public static Material SeleniumDioxide;
-        public static Material CobaltSulfateSolution; 
+        public static Material CobaltSulfateSolution;
+        public static Material DilutedAmmoniumChlorideSolution;
         public static Material Kovar;
         public static Material ImpureLithiumCarbonate;
         public static Material WashedGraphene;

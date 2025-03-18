@@ -768,11 +768,11 @@ public class SecondDegreeMaterials {
 
         TetraamminepalladiumDichlorideSolution = new Material.Builder(13121, SuSyUtility.susyId("tetraamminepalladium_dichloride_solution"))
                 .fluid()
-                .components(Chlorine * 2, Hydrogen * 12, Nitrogen * 4, Palladium, Water)
+                .components(Chlorine * 2, Hydrogen * 12, Nitrogen * 4, Palladium, Water * 4)
                 .colorAverage()
                 .build();
 
-        TetraamminepalladiumDichlorideSolution.setFormula("([Pd(NH3)4]Cl2)(H2O)", true)
+        TetraamminepalladiumDichlorideSolution.setFormula("([Pd(NH3)4]Cl2)(H2O)4", true)
 
         // FREE ID: 13122-13129
 
@@ -827,5 +827,11 @@ public class SecondDegreeMaterials {
                 .build();
 
         CobaltSulfateSolution.setFormula("(CoSO4)(H2O)", true)
+
+        DilutedAmmoniumChlorideSolution = new Material.Builder(13138, SuSyUtility.susyId('diluted_ammonium_chloride_solution'))
+                .liquid()
+                .components(AmmoniumChloride * 1, Water * 2)
+                .colorAverage()
+                .build();
     }
 }
