@@ -2,6 +2,7 @@
 
 susy.material.dichlorobenzene=1,4-Dichlorobenzene
 susy.material.ammonium_chloride_solution=Ammonium Chloride Solution
+susy.material.diluted_ammonium_chloride_solution=Diluted Ammonium Chloride Solution
 susy.material.crude_styrene=Crude Styrene
 susy.material.hydrogen_chloride=Hydrogen Chloride
 susy.material.hydrogen_fluoride=Hydrogen Fluoride
@@ -474,7 +475,7 @@ susy.material.radioactive_runoff=Radioactive Runoff
 
 susy.material.wustite_catalyst=Wustite Catalyst
 susy.material.palladium_chloride=Palladium Chloride
-susy.material.hexachloroiridic_acid=Hexachloroiridic Acid
+susy.material.hexachloroiridic_acid=Hexachloroiridic(IV) Acid
 susy.material.potassium_iodide=Potassium Iodide
 susy.material.iridium_iodide=Iridium Iodide
 susy.material.potassium_trichloride=Potassium Trichloride
@@ -2161,7 +2162,7 @@ susy.material.os_ru_solution=Osmium-Ruthenium Solution
 susy.material.reduced_gold_free_pgm_solution=Reduced Gold-Free PGM Solution
 susy.material.hexachloroiridic_acid_solution=Hexachloroiridic(IV) Acid Solution
 susy.material.hexachlororhodic_acid_solution=Hexachlororhodic(III) Acid Solution
-susy.material.hexachlororuthenic_acid_solution=Hexachlororuthenic Acid Solution
+susy.material.hexachlororuthenic_acid_solution=Hexachlororuthenic(IV) Acid Solution
 susy.material.ammonium_hexachlororuthenate=Ammonium Hexachlororuthenate(IV)
 susy.material.tetraamminepalladium_dichloride_solution=Tetraamminepalladium Dichloride Solution
 susy.material.potassium_persulfate_solution=Potassium Persulfate Solution
