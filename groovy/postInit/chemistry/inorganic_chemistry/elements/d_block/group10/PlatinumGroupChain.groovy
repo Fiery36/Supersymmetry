@@ -204,11 +204,11 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
             .buildAndRegister()
 
         // Ruthenium precipitation
-        // H3RuCl6 + 3NH3 -> (NH4)3RuCl6
+        // H3RuCl6 + 2NH3 -> (NH4)2[RuCl6]
 
         BR.recipeBuilder()
             .fluidInputs(fluid('hexachlororuthenic_acid_solution') * 690)
-            .fluidInputs(fluid('ammonium_chloride_solution') * 450)
+            .fluidInputs(fluid('ammonium_chloride_solution') * 300)
             .fluidOutputs(fluid('distilled_water') * 60)
             .chancedOutput(metaitem('dustAmmoniumHexachlororuthenate') * 17, 1500, 0)
             .fluidOutputs(fluid('hydrochloric_acid') * 510)
@@ -216,11 +216,11 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
             .EUt(Globals.voltAmps[1])
             .buildAndRegister()
 
-        // 2(NH3)3RuCl6 + 3H2 -> 2Ru + 3NH3 + 12HCl 
+        // (NH4)2[RuCl6] + 2H2 -> Ru + 2NH3 + 6HCl 
 
         REACTION_FURNACE.recipeBuilder()
             .inputs(ore('dustAmmoniumHexachlororuthenate') * 17)
-            .fluidInputs(fluid('hydrogen') * 6000)
+            .fluidInputs(fluid('hydrogen') * 4000)
             .outputs(metaitem('sponge.ruthenium'))
             .fluidOutputs(fluid('ammonia') * 2000)
             .fluidOutputs(fluid('hydrogen_chloride') * 6000)
