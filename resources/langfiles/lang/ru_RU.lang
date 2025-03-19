@@ -1414,7 +1414,7 @@ susy.material.saturated_potassium_molecular_sieve=Молекулярное си�
 susy.material.saturated_cesium_molecular_sieve=Молекулярное сито, насыщенное цезием
 susy.material.titanyl_sulfate_solution=Раствор сульфата титанила
 susy.material.acidic_wastewater=Кислые сточные воды
-susy.material.sodium_borohydride=Sodium Borohydride 
+susy.material.sodium_borohydride=Борогидрид натрия 
 susy.material.sodium_hydride=Гидрид натрия
 susy.material.ultramafic_tailing_slurry=Ультраосновной хвостовой шлам
 susy.material.rutile_slurry=Рутиловый шлам
@@ -2577,7 +2577,7 @@ metaitem.crucible.graphite.name=Графитовый тигель
 
 metaitem.vti_rich_pig_iron.name=Чугун с высоким содержанием ванадия и титана
 metaitem.vt_slag.name=Шлак с высоким содержанием ванадия/титана
-metaitem.white_matte.name=White Matte
+metaitem.white_matte.name=Белая творожная масса
 metaitem.sponge.titanium.name=Титановая губка
 metaitem.sponge.titanium.crude.name=Сырая титановая губка
 metaitem.sponge.platinum.name=Платиновая губка
