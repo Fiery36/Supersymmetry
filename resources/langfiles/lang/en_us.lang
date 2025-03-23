@@ -1098,6 +1098,9 @@ susy.material.hydrothermal_deposit=Hydrothermal Deposit
 susy.material.alluvial_deposit=Alluvial Deposit
 susy.material.magmatic_hydrothermal_deposit=Magmatic Hydrothermal Deposit
 susy.material.coal_deposit=Coal Deposit
+item.susy.material.native_copper_deposit=Native Copper Deposit
+item.susy.material.anthracite_deposit=Anthracite Deposit
+item.susy.material.lignite_deposit=Lignite Deposit
 
 susy.material.corundum=Corundum
 susy.material.tourmaline=Tourmaline
