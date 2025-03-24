@@ -62,11 +62,13 @@ Agradecimentos especiais aos nossos voluntários:
 - trainvoi • Pesquisa
 - ZombieZilla • Pesquisa
 - Tian-mi • Tradução para Chinês (Mandarim)
-- Roque_Crafter • Tradução para Português (Oláá)
+- RoqueSystem.exe (Roque_Crafter) • Tradução para Português (Oláá)
 - Lavinia • Texturas
 - kubuus • Tradução para Polaco
 - Whatsapp • Estruturas, texturas e *feedback*
 - Science Demon • Trabalho no *Livro de tarefas*, tradução para Alemão e *bug fixing*
+- Siryeet3000 • Estruturas
+- Celeryman • Estruturas
 
 ## Construção do *pack*
 Vais precisar dos requerimentos python3 e python instalados para rodar o *script* de construção *main.py*.
