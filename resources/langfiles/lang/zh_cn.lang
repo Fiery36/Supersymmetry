@@ -1098,9 +1098,9 @@ susy.material.hydrothermal_deposit=热液岩矿床
 susy.material.alluvial_deposit=冲积岩矿床
 susy.material.magmatic_hydrothermal_deposit=岩浆热液岩矿床
 susy.material.coal_deposit=煤矿床
-item.susy.material.native_copper_deposit=天然铜矿床
-item.susy.material.anthracite_deposit=无烟煤矿床
-item.susy.material.lignite_deposit=褐煤矿床
+susy.material.native_copper_deposit=天然铜矿床
+susy.material.anthracite_deposit=无烟煤矿床
+susy.material.lignite_deposit=褐煤矿床
 
 susy.material.corundum=刚玉
 susy.material.tourmaline=电气石
