@@ -2018,7 +2018,6 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xc8cca1)
                 .build();
-      
 
         //FREE ID: 4427
 
@@ -2078,6 +2077,8 @@ public class UnknownCompositionMaterials {
                 .color(0xe60e0e)
                 .components(Nickel * 1, Cobalt * 1, Sulfur, Oxygen * 4)
                 .build();
+
+        NickelCobaltSulfate.setFormula('(Ni,Co)(SO4)', true)
 
         NickelCobaltSulfateSolution = new Material.Builder(4439, SuSyUtility.susyId("nickel_cobalt_sulfate_solution"))
                 .fluid()
