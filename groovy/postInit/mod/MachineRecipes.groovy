@@ -911,12 +911,6 @@ RecyclingHelper.addShaped("gregtech:dumper", metaitem('dumper'), [
 		[metaitem('plateSteel'), metaitem('plateSteel'), metaitem('plateSteel')]
 ])
 
-/*RecyclingHelper.addShaped("gregtech:ocean_pumper", metaitem('ocean_pumper'), [
-		[metaitem('stickLongAluminium'), metaitem('electric.pump.mv'), metaitem('stickLongAluminium')],
-		[ore('circuitMv'), metaitem('hull.mv'), ore('circuitMv')],
-		[metaitem('cableGtSingleCopper'), metaitem('electric.pump.mv'), metaitem('cableGtSingleCopper')]
-*/
-
 RecyclingHelper.addShaped("gregtech:coking_tower", metaitem('coking_tower'), [
 		[metaitem('pipeHugeFluidSteel'), pumps[3], metaitem('pipeHugeFluidSteel')],
 		[circuits[3], hulls[3], circuits[3]],
@@ -1204,8 +1198,6 @@ RecyclingHelper.addShaped('gregtech:large_fluid_pump', metaitem('large_fluid_pum
 		[metaitem('cableGtQuadrupleTin'), metaitem('hull.lv'), metaitem('cableGtQuadrupleTin')],
 		[metaitem('rotorBronze'), ore('circuitLv'), metaitem('rotorBronze')]
 ])
-
-crafting.addShapeless("gregtech:ocean_pumper_switching", metaitem('large_fluid_pump'), [metaitem('ocean_pumper')]);
 
 RecyclingHelper.addShaped("gregtech:sieve_distillation_tower", metaitem('sieve_distillation_tower'), [
 	[metaitem('frameStainlessSteel'),ore('circuitHv'),metaitem('frameStainlessSteel')],

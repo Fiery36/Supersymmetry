@@ -97,7 +97,7 @@ for (residue in residues) {
         .fluidInputs(fluid('oxygen') * 20)
         .outputs(metaitem('dustCarbonBlack') * 30)
         .fluidOutputs(fluid('flue_gas') * 1000)
-        .duration(200)
+        .duration(80)
         .EUt(120)
         .buildAndRegister()
 
@@ -107,7 +107,7 @@ for (residue in residues) {
         .fluidInputs(fluid('oxygen') * 70)
         .outputs(metaitem('dustCarbonBlack') * 30)
         .fluidOutputs(fluid('carbon_dioxide') * 10000)
-        .duration(200)
+        .duration(100)
         .EUt(120)
         .buildAndRegister()
 }
