@@ -1674,7 +1674,7 @@ public class FirstDegreeMaterials {
 
         SodiumSulfateAcetoneSolution = new Material.Builder(8345, SuSyUtility.susyId('sodium_sulfate_acetone_solution'))
                 .liquid()
-                .components(Sodium * 12, Sulfur * 6, Oxygen * 24, Acetone, Water * 9)
+                .components(SodiumSulfate * 6, Oxygen * 24, Acetone, Water * 9)
                 .color(0x2c733a)
                 .build();
 
@@ -2228,6 +2228,8 @@ public class FirstDegreeMaterials {
                 .components(Chrome * 4, Sulfur * 6, Oxygen * 24, Acetone, Water * 9)
                 .color(0x2c733a)
                 .build();
+
+        ChromiumSulfateSolution.setFormula("(Cr2(SO4)3)2(C3H6O)z", true)
 
         MustardGas = new Material.Builder(8427, SuSyUtility.susyId('mustard_gas'))
                 .liquid()
