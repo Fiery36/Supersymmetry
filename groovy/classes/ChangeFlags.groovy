@@ -211,6 +211,8 @@ class ChangeFlags {
         setupSlurries(Arsenopyrite)
         Pentlandite.addFlags("generate_sifted", "generate_flotated");
 		setupSlurries(Pentlandite)
+        Bastnasite.addFlags("generate_sifted", "generate_flotated");
+        setupSlurries(Bastnasite)
 
         setupFluidType(PolyvinylAcetate, FluidStorageKeys.LIQUID, 385)
 

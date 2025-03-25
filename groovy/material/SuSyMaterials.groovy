@@ -1297,15 +1297,15 @@ class SuSyMaterials {
 
         public static Material EthylHexylPhosphonicAcidMonoEthylHexylEster;
         public static Material RareEarthExtractionMixture;
-        public static Material PotassiumChromate;
-        public static Material PotassiumChromateSolution;
+        public static Material RareEarthSeparationMixture;
         public static Material PotassiumChlorate;
         public static Material AmmoniumCarbonate;
-        public static Material HydroxyisobutyricAcid;
-        public static Material SulfonicAcid;
+        public static Material AmmoniumCarbonateSolution;
         public static Material SodiumAmalgam;
-        public static Material Isooctanol;
         public static Material CopperChlorideSolution;
+        public static Material PhosphorousAcid;
+        public static Material PhosphorousAcidSolution;
+        public static Material EthylHexylPhosphonicAcidSolution;
 
         public static Material MonaziteLeach;
         public static Material SiftedMonaziteLeach;
@@ -1323,6 +1323,13 @@ class SuSyMaterials {
         public static Material FlotatedBastnasite;
         public static Material RoastedBastnasiteLeach;
         public static Material ConcentratedBastnasite;
+
+        public static Material RoastedXenotime;
+        public static Material XenotimeSlurry;
+        public static Material XenotimeResidue;
+        public static Material CrudeXenotimeNitrateSolution;
+        public static Material XenotimePhosphateWaste;
+        public static Material XenotimeTailing;
 
         public static Material CeriumIVNitrate;
         public static Material LanthanumCarbonate;
@@ -1416,7 +1423,6 @@ class SuSyMaterials {
         public static Material BastnasiticThuliumFreeHREEConcentrate;
         public static Material BastnasiticHREEWaste;
 
-        public static Material XenotimicRareEarthHydroxides;
         public static Material XenotimicRareEarthNitratesSolution;
         public static Material XenotimicOxidizedRareEarthNitratesSolution;
         public static Material XenotimicCeriumExtract;

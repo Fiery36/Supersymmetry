@@ -3669,7 +3669,7 @@ public class FirstDegreeMaterials {
                 .build()
                 .setFormula("Ce(NO3)4", true)
 
-        EthylHexylPhosphonicAcidMonoEthylHexylEster = new Material.Builder(8649, SuSyUtility.susyId('ethylhexyl_phosphonic_acid_mono_ethylhexyl_ester_solution'))
+        EthylHexylPhosphonicAcidMonoEthylHexylEster = new Material.Builder(8649, SuSyUtility.susyId('ethylhexyl_phosphonic_acid_mono_ethylhexyl_ester'))
                 .liquid()
                 .components(Carbon * 16, Hydrogen * 35, Oxygen * 3, Phosphorus)
                 .colorAverage()
@@ -3682,11 +3682,6 @@ public class FirstDegreeMaterials {
                 .build()
                 .setFormula("(NH4)2CO3", true)
 
-        PotassiumChlorate = new Material.Builder(8651, SuSyUtility.susyId('potassium_chlorate'))
-                .dust()
-                .components(Potassium, Chlorine, Oxygen * 3)
-                .colorAverage()
-                .build()
 
         SodiumAmalgam = new Material.Builder(8652, SuSyUtility.susyId('sodium_amalgam'))
                 .liquid(new FluidBuilder().temperature(363))
@@ -3873,19 +3868,6 @@ public class FirstDegreeMaterials {
                 .color(0x8ed9ed)
                 .build()
 
-        SodiumChromateSolution = new Material.Builder(8681, SuSyUtility.susyId('potassium_chromate_solution'))
-                .liquid()
-                .components(Potassium, Chrome, Oxygen * 4, Water)
-                .color(0xa4a839)
-                .build();
-
-        Isooctanol = new Material.Builder(8682, SuSyUtility.susyId('isooctanol'))
-                .liquid()
-                .components(Carbon * 9, Hydrogen * 18, Oxygen)
-                .color(0x81debd)
-                .build()
-                .setFormula('C9H17OH', true)
-
         CopperChlorideSolution = new Material.Builder(8683, SuSyUtility.susyId('copper_chloride_solution'))
                 .liquid()
                 .components(Copper, Chlorine * 2, Water)
@@ -3898,5 +3880,45 @@ public class FirstDegreeMaterials {
                 .components(Lanthanum, Chlorine * 3)
                 .colorAverage()
                 .build()
+
+        ThoriumHydroxide = new Material.Builder(8685, SuSyUtility.susyId('thorium_hydroxide'))
+                .dust()
+                .components(Thorium, Hydrogen * 3, Oxygen * 3)
+                .colorAverage()
+                .build()
+                .setFormula('Th(OH)3', true)
+
+        UranylHydroxide = new Material.Builder(8686, SuSyUtility.susyId('uranyl_hydroxide'))
+                .dust()
+                .components(Uranium238, Hydrogen * 2, Oxygen * 4)
+                .colorAverage()
+                .build()
+                .setFormula('UO2(OH)2', true)
+
+        AmmoniumCarbonateSolution = new Material.Builder(8687, SuSyUtility.susyId('ammonium_carbonate_solution'))
+                .liquid()
+                .components(Nitrogen * 2, Hydrogen * 8, Carbon, Oxygen * 3, Water)
+                .color(0x849697)
+                .build()
+                .setFormula('(NH4)2CO3', true)
+
+        EthylHexylPhosphonicAcidSolution = new Material.Builder(8688, SuSyUtility.susyId('ethylhexyl_phosphonic_acid_solution'))
+                .liquid()
+                .components(Carbon * 16, Hydrogen * 35, Oxygen * 3, Phosphorus, Water)
+                .colorAverage()
+                .build()
+
+        PhosphorousAcidSolution = new Material.Builder(8689, SuSyUtility.susyId('phosphorous_acid_solution'))
+                .liquid()
+                .components(Phosphorus, Oxygen * 3, Hydrogen * 3, HydrogenChloride * 3)
+                .colorAverage()
+                .build()
+
+        PhosphorousAcid = new Material.Builder(8690, SuSyUtility.susyId('phosphorous_acid'))
+                .liquid()
+                .components(Phosphorus, Hydrogen * 3, Oxygen * 3)
+                .colorAverage()
+                .build()
+                .setFormula('H3PO3', true)
     }
 }
