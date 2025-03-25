@@ -65,7 +65,7 @@ BCR.recipeBuilder()
     .buildAndRegister()
 
 DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid(' ') * 1000)
+    .fluidInputs(fluid('ammonium_chloride_solution') * 1000)
     .outputs(metaitem('dustAmmoniumChloride') * 6)
     .fluidOutputs(fluid('water') * 1000)
     .duration(120)
