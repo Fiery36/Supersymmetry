@@ -833,5 +833,20 @@ public class SecondDegreeMaterials {
                 .components(AmmoniumChloride * 1, Water * 2)
                 .colorAverage()
                 .build();
+
+        SodiumSulfateAcetoneSolution = new Material.Builder(13139, SuSyUtility.susyId('sodium_sulfate_acetone_solution'))
+                .liquid()
+                .components(SodiumSulfate * 6, Acetone, Water * 9)
+                .color(0x2c733a)
+                .build();
+
+        ChromiumSulfateSolution = new Material.Builder(13140, SuSyUtility.susyId('chromium_sulfate_solution'))
+                .liquid()
+                .components(Chrome * 4, Sulfur * 6, Oxygen * 24, Acetone, Water * 9)
+                .color(0x2c733a)
+                .build();
+
+        ChromiumSulfateSolution.setFormula("(Cr2(SO4)3)2(C3H6O)z", true)
+
     }
 }

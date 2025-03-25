@@ -1672,11 +1672,7 @@ public class FirstDegreeMaterials {
                 .color(0xb3c99)
                 .build();
 
-        SodiumSulfateAcetoneSolution = new Material.Builder(8345, SuSyUtility.susyId('sodium_sulfate_acetone_solution'))
-                .liquid()
-                .components(Sodium * 12, Sulfur * 6, Oxygen * 24, Acetone, Water * 9)
-                .color(0x2c733a)
-                .build();
+        //FREE IDs: 8345
 
         LeadFreeSolder = new Material.Builder(8346, SuSyUtility.susyId('lead_free_solder'))
                 .ingot().liquid(new FluidBuilder().temperature(411))
@@ -2223,11 +2219,7 @@ public class FirstDegreeMaterials {
                 .color(0xe8c3a5)
                 .build();
 
-        ChromiumSulfateSolution = new Material.Builder(8426, SuSyUtility.susyId('chromium_sulfate_solution'))
-                .liquid()
-                .components(Chrome * 4, Sulfur * 6, Oxygen * 24, Acetone, Water * 9)
-                .color(0x2c733a)
-                .build();
+        //FREE IDs: 8426
 
         MustardGas = new Material.Builder(8427, SuSyUtility.susyId('mustard_gas'))
                 .liquid()
