@@ -847,7 +847,10 @@ public class UnknownCompositionMaterials {
                 .iconSet(DULL)
                 .build()
 
-        // FREE ID: 4161
+        ImpureUranylSulfateSolution = new Material.Builder(4161, SuSyUtility.susyId('impure_uranyl_sulfate_solution'))
+                .liquid()
+                .color(0x9c8f30)
+                .build();
 
         ZincLeach = new Material.Builder(4162, SuSyUtility.susyId('zinc_leach'))
                 .liquid()

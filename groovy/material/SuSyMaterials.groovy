@@ -348,6 +348,7 @@ class SuSyMaterials {
         public static Material ImpureUranylCarbonateSolution;
         public static Material UranylCarbonateSolution;
         public static Material UranylSulfateSolution;
+        public static Material ImpureUranylSulfateSolution;
         public static Material TetraethylleadSludge;
         public static Material Oxygenates;
         public static Material Antioxidants;
