@@ -216,7 +216,7 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
             .EUt(Globals.voltAmps[1])
             .buildAndRegister()
 
-        // (NH4)3[RuCl6] + 1.5H2 -> Ru + 2NH3 + 6HCl 
+        // (NH4)3[RuCl6] + 1.5H2 -> Ru + 3NH3 + 6HCl 
 
         REACTION_FURNACE.recipeBuilder()
             .inputs(ore('dustAmmoniumHexachlororuthenate') * 22)
