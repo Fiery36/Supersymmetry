@@ -846,7 +846,7 @@ public class SecondDegreeMaterials {
                 .color(0x2c733a)
                 .build();
 
-        ChromiumSulfateSolution.setFormula("(Cr2(SO4)3)2(C3H6O)z", true)
+        ChromiumSulfateSolution.setFormula("(Cr2(SO4)3)2(C3H6O)(H2O)9", true)
 
     }
 }

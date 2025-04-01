@@ -151,7 +151,6 @@ DISTILLERY.recipeBuilder()
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
 
-
 LCR.recipeBuilder()
     .fluidInputs(fluid('methanol') * 1000)
     .fluidInputs(fluid('carbon_monoxide') * 1000)

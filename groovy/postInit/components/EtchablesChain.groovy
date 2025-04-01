@@ -191,7 +191,6 @@ new Etchant("hydrofluoric_acid", "silicon", 40, 500)
 
 new PDopant("dustHighPurityBoron", 1)
 new PDopant("dustHighPurityGallium", 2)
-new PDopant("dustHighPurityAluminium", 2)
 new PDopant("dustTinyHighPurityIndium", 1)
 
 new NDopant("dustHighPurityAntimony", 1)

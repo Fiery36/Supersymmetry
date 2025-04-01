@@ -1029,6 +1029,8 @@ public class FirstDegreeMaterials {
                 .color(0x879e21)
                 .build()
 
+        // FREE IDs: 8245-8246
+
         SulfidicSilverCyanideSolution = new Material.Builder(8247, SuSyUtility.susyId('sulfidic_silver_cyanide_solution'))
                 .liquid()
                 .components(Silver * 2, Carbon * 4, Nitrogen * 4, Sodium * 4, Sulfur, Water * 8)
@@ -1672,7 +1674,7 @@ public class FirstDegreeMaterials {
                 .color(0xb3c99)
                 .build();
 
-        //FREE IDs: 8345
+        // FREE ID: 8345
 
         LeadFreeSolder = new Material.Builder(8346, SuSyUtility.susyId('lead_free_solder'))
                 .ingot().liquid(new FluidBuilder().temperature(411))
@@ -1969,7 +1971,7 @@ public class FirstDegreeMaterials {
                 .dust()
                 .components(Ruthenium, Chlorine * 3)
                 .colorAverage()
-                .build();
+                .build()
 
         BismuthIridate = new Material.Builder(8391, SuSyUtility.susyId('bismuth_iridate'))
                 .dust()
@@ -2219,7 +2221,7 @@ public class FirstDegreeMaterials {
                 .color(0xe8c3a5)
                 .build();
 
-        //FREE IDs: 8426
+        // FREE ID: 8426
 
         MustardGas = new Material.Builder(8427, SuSyUtility.susyId('mustard_gas'))
                 .liquid()
