@@ -1308,6 +1308,20 @@ crafting.replaceShaped('gregtech:lv_power_unit_lead_acid', metaitem('power_unit.
         [ore('plateSteel'), metaitem('battery.lead_acid'), ore('plateSteel')]
 ])
 
+// NightVision Goggles with other batteries
+
+crafting.addShaped('gregtech:nightvision_lithium', metaitem('nightvision_goggles').withNbt([MaxCharge: 120000L]), [
+    [ore('circuitUlv'), metaitem('screwSteel'), ore('circuitUlv')],
+    [metaitem('ringRubber'), metaitem('battery.re.lv.lithium'), metaitem('ringRubber')],
+    [metaitem('lensGlass'), ore('toolScrewdriver'), metaitem('lensGlass')]
+])
+
+crafting.addShaped('gregtech:nightvision_cadmium', metaitem('nightvision_goggles').withNbt([MaxCharge: 100000L]), [
+[ore('circuitUlv'), metaitem('screwSteel'), ore('circuitUlv')],
+    [metaitem('ringRubber'), metaitem('battery.re.lv.cadmium'), metaitem('ringRubber')],
+    [metaitem('lensGlass'), ore('toolScrewdriver'), metaitem('lensGlass')]
+])
+
 // Stone oredict stuff
 
 // Stone Dust * 1
