@@ -1,5 +1,5 @@
 import globals.Globals
-import globals.RecyclingHelper
+import postInit.utils.RecyclingHelper
 import gregtech.api.recipes.ingredients.nbtmatch.*
 
 ASSEMBLER = recipemap('assembler')
