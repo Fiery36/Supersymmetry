@@ -246,20 +246,20 @@ moddedRecipes() {
 		add("battery", it("draconicevolution:draconic_energy_core"), 32e6 * energy_unit_FE);
 	}
 	if (hasmod("gregtech")) {
-		!add("circuitMat", <item>,				baseCmp,	advCmp,		memory,		-size,		gain,		cap);
+		!add("circuitMat", <item>, baseCmp, advCmp, memory, -size, gain, cap);
 		!Replace Redstone dust, block and torch
-		add("circuitMat", ore("wireGtSingleRedAlloy"),		2,		0,		0,		-2,		1,		8); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
-		!add("circuitMat", ore("wireGtDoubleRedAlloy"),		4,		0,		0,		-4,		2,		16); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
-		add("circuitMat", ore("wireGtQuadrupleRedAlloy"),	8,		0,		0,		-8,		4,		24); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
-		!add("circuitMat", ore("wireGtOctalRedAlloy"),		16,		0,		0,		-16,		8,		32); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
-		!add("circuitMat", ore("wireGtHexRedAlloy"),		32,		0,		0,		-32,		16,		64); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		add("circuitMat", ore("wireGtSingleRedAlloy"), 2, 0, 0, -2, 1, 8); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		!add("circuitMat", ore("wireGtDoubleRedAlloy"), 4, 0, 0, -4, 2, 16); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		add("circuitMat", ore("wireGtQuadrupleRedAlloy"), 8, 0, 0, -8, 4, 24); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		!add("circuitMat", ore("wireGtOctalRedAlloy"), 16, 0, 0, -16, 8, 32); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		!add("circuitMat", ore("wireGtHexRedAlloy"), 32, 0, 0, -32, 16, 64); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
 		!Replace Quartz
-		add("circuitMat", ore("plateCertusQuartz"),			0,		4,		0,		-4,		2,		8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
-		add("circuitMat", ore("plateQuartzite"),			0,		4,		0,		-4,		2,		8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
-		add("circuitMat", ore("plateNetherQuartz"),			0,		4,		0,		-4,		2,		8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
+		add("circuitMat", ore("plateCertusQuartz"), 0, 4, 0, -4, 2, 8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
+		add("circuitMat", ore("plateQuartzite"), 0, 4, 0, -4, 2, 8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
+		add("circuitMat", ore("plateNetherQuartz"), 0, 4, 0, -4, 2, 8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
 		!Replace OP chips
-		add("circuitMat", ore("circuitLv"),				24,		32,		0,		-6,		0,		4); !LV circuit
-		add("circuitMat", ore("circuitMv"),				48,		64,		0,		-10,		0,		10); !MV circuit
+		add("circuitMat", ore("circuitLv"), 	24, 32, 0, -6, 0, 4); !LV circuit
+		add("circuitMat", ore("circuitMv"), 	48, 64, 0, -10, 0, 10); !MV circuit
 		!Replace Iron nugget, ingot, block
 		!Replace Glowstone dust and block
 		!Replace OP Capacitor
