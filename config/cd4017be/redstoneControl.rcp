@@ -87,7 +87,7 @@ INIT() {
 	!add("circuitMat", ore("blockIron"),      0,  0, 48, -30,  0,  0); !1.6  mem/size, 5.33 mem/ing
 	!add("circuitMat", ore("dustGlowstone"),  0,  0,  0,  -1,  2,  1); !2.0 gain/size, 2.0  gain/it
 	!add("circuitMat", it("minecraft:glowstone"),0,0, 0,  -2,  5,  2); !2.5 gain/size, 1.25 gain/it
-	add("circuitMat", it("minecraft:redstone_torch"),3,0,0,-2,1,  4); !1.5 cmp/size, 0.33 gain/cmp, 3.0 cmp/it
+	!add("circuitMat", it("minecraft:redstone_torch"),3,0,0,-2,1,  4); !1.5 cmp/size, 0.33 gain/cmp, 3.0 cmp/it
 	add("circuitMat", it("minecraft:repeater"),8,0,  1,  -4,  2,  8); !2.0 cmp/size, 0.25 gain/cmp, 2.67 cmp/it(rs)
 	add("circuitMat", it("minecraft:comparator"),0,8,0,  -4,  2,  8); !2.0 cmp/size, 0.25 gain/cmp, 8.0 cmp/it(qu)
 	add("circuitMat", it("tile.logic_comb"),24,  0,  0,  -8,  4, 16); !3.0 cmp/size, 0.17 gain/cmp, 3.4 cmp/it(rs)
@@ -246,20 +246,20 @@ moddedRecipes() {
 		add("battery", it("draconicevolution:draconic_energy_core"), 32e6 * energy_unit_FE);
 	}
 	if (hasmod("gregtech")) {
-		!Replace Redstone dust and block
-		add("circuitMat", ore("wireGtSingleRedAlloy"),		 2, 0, 0,  -2,  1,  8); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
-		!add("circuitMat", ore("wireGtDoubleRedAlloy"),		 4, 0, 0,  -4,  2, 16); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
-		add("circuitMat", ore("wireGtQuadrupleRedAlloy"),	 8, 0, 0,  -8,  4, 24); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
-		!add("circuitMat", ore("wireGtOctalRedAlloy"),		16, 0, 0, -16,  8, 32); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
-		!add("circuitMat", ore("wireGtHexRedAlloy"),			32, 0, 0, -32, 16, 64); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		!add("circuitMat", <item>,				baseCmp,	advCmp,		memory,		-size,		gain,		cap);
+		!Replace Redstone dust, block and torch
+		add("circuitMat", ore("wireGtSingleRedAlloy"),		2,		0,		0,		-2,		1,		8); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		!add("circuitMat", ore("wireGtDoubleRedAlloy"),		4,		0,		0,		-4,		2,		16); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		add("circuitMat", ore("wireGtQuadrupleRedAlloy"),	8,		0,		0,		-8,		4,		24); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		!add("circuitMat", ore("wireGtOctalRedAlloy"),		16,		0,		0,		-16,		8,		32); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
+		!add("circuitMat", ore("wireGtHexRedAlloy"),		32,		0,		0,		-32,		16,		64); !1.0 cmp/size, 0.5 gain/cmp, 2.0 cmp/it
 		!Replace Quartz
-		add("circuitMat", ore("plateCertusQuartz"),			0, 4, 0, -4, 2, 8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
-		add("circuitMat", ore("plateQuartzite"),			0, 4, 0, -4, 2, 8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
-		add("circuitMat", ore("plateNetherQuartz"),			0, 4, 0, -4, 2, 8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
+		add("circuitMat", ore("plateCertusQuartz"),			0,		4,		0,		-4,		2,		8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
+		add("circuitMat", ore("plateQuartzite"),			0,		4,		0,		-4,		2,		8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
+		add("circuitMat", ore("plateNetherQuartz"),			0,		4,		0,		-4,		2,		8); !1.0  cmp/size, 0.5 gain/cmp, 4.0  cmp/it
 		!Replace OP chips
-		add("circuitMat", ore("circuitLv"),					1, 3, 0, -1, 0, 4); !LV circuit
-		add("circuitMat", ore("circuitMv"),					3, 7, 0, -2, 0, 10); !MV circuit
-		add("circuitMat", ore("circuitHv"),					12, 16, 0, -4, 0, 28); !HV circuit
+		add("circuitMat", ore("circuitLv"),				24,		32,		0,		-6,		0,		4); !LV circuit
+		add("circuitMat", ore("circuitMv"),				48,		64,		0,		-10,		0,		10); !MV circuit
 		!Replace Iron nugget, ingot, block
 		!Replace Glowstone dust and block
 		!Replace OP Capacitor
