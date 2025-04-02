@@ -1296,7 +1296,7 @@ crafting.shapedBuilder()
         [ore('cableGtSingleTin'), ore('plateSteel'), ore('cableGtSingleTin')]
 	])
 	.recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("Charge", inputs['battery'].getTagCompound().getDouble("Charge"))
+        output.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
     }
 	.register()
 	
@@ -1311,7 +1311,7 @@ crafting.shapedBuilder()
         [ore('plateSteel'), metaitem('battery.lead_acid').mark('battery'), ore('plateSteel')]
 	])
 	.recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("Charge", inputs['battery'].getTagCompound().getDouble("Charge"))
+        output.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
     }
 	.register()
 
@@ -1326,7 +1326,7 @@ crafting.shapedBuilder()
         [ore('plateSteel'), metaitem('battery.lead_acid').mark('battery'), ore('plateSteel')]
 	])
     .recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("Charge", inputs['battery'].getTagCompound().getDouble("Charge"))
+        output.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
     }
 	.register()
 
@@ -1341,7 +1341,7 @@ crafting.shapedBuilder()
 		[metaitem('lensGlass'), ore('toolScrewdriver'), metaitem('lensGlass')]
 	])
 	.recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("Charge", inputs['battery'].getTagCompound().getDouble("Charge"))
+        ooutput.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
     }
 	.register()
 
@@ -1354,7 +1354,7 @@ crafting.shapedBuilder()
 		[metaitem('lensGlass'), ore('toolScrewdriver'), metaitem('lensGlass')]
 	])
 	.recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("Charge", inputs['battery'].getTagCompound().getDouble("Charge"))
+        output.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
     }
 	.register()
 
