@@ -41,7 +41,7 @@ for (fuel in sintering_fuels) {
     }
 }
 
-    BR.recipeBuilder()
+BR.recipeBuilder()
     .inputs(ore('dustSodiumChromateMixture') * 10)
     .fluidInputs(fluid('distilled_water') * 8000)
     .outputs(metaitem('dustIronIiiOxide') * 10)
