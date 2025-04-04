@@ -222,7 +222,7 @@ moddedRecipes() {
 	}
 	if (hasmod("opencomputers")) {
 		add("shaped", it("tile.oc_adapter"), "5 3/014/523", it("opencomputers:card"):6, it("opencomputers:material"):11, it("opencomputers:component"):6, it("tile.processor2"), it("opencomputers:card"):4, it("item.wire_e"));
-		add("battery", it("opencomputers:capacitor"), 1600 * energy_unit_OC); !CAPACITOR
+		!add("battery", it("opencomputers:capacitor"), 1600 * energy_unit_OC); !CAPACITOR
 		!add("circuitMat", it("opencomputers:material"):6, 3, 0, 0, -2, 1, 3); !transistor
 		!add("circuitMat", it("opencomputers:material"):7, 1, 3, 0, -1, 0, 4); !chip T1
 		!add("circuitMat", it("opencomputers:material"):8, 3, 7, 0, -2, 0, 10); !chip T2
@@ -267,6 +267,7 @@ moddedRecipes() {
 		add("circuitMat", it("cd4017be_lib:m"):405,	0,  0, 4, -4, 0, 0); !1 mem/size
 		!Replace OC Capacitor
 		add("battery", ore("componentCapacitor"), 32 * energy_unit_GT);
+		add("circuitMat", ore("componentCapacitor"), 0, 0, 0, -8, 1, 32* energy_unit_GT);
 		!Replace OC Transistor
 		add("circuitMat", ore("componentTransistor"), 16, 24, 0, -4, 1, 3);
 	}
