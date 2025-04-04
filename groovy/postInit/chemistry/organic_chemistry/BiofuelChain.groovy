@@ -185,7 +185,6 @@ alcohols.forEach { alcohol ->
         .duration(tpbb)
         .EUt(30)
         .buildAndRegister()
-}
 
 // tick per 1/4 bucket of n-paraffin
 int tpbnp = 20
