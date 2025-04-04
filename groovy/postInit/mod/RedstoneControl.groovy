@@ -65,6 +65,12 @@ crafting.replaceShaped('cd4017be_lib:rs_ctr/wire', item('rs_ctr:wire') * 8, [
         [metaitem('wireFineRedAlloy'), metaitem('wireFineRedAlloy'), metaitem('wireFineRedAlloy')]
 ])
 
+crafting.replaceShaped('cd4017be_lib:rs_ctr/wire_e', item('rs_ctr:wire_e'), [
+        [null, null, null],
+        [item('rs_ctr:wire'), item('gregtech:meta_foil', 41), item('rs_ctr:wire')],
+        [null, null, null]
+])
+
 crafting.replaceShaped('cd4017be_lib:rs_ctr/wireless', item('rs_ctr:wireless'), [
         [null, null, null],
         [item('rs_ctr:wire'), ore('circuitLv'), metaitem('sensor.hv')],
