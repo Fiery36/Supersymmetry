@@ -1,6 +1,5 @@
-import globals.Globals
 import globals.GroovyUtils
-import globals.RecyclingHelper
+import postInit.utils.RecyclingHelper
 import gregtech.common.blocks.MetaBlocks
 import gregtech.common.blocks.MetaBlocks.*
 import net.minecraft.init.Blocks
@@ -290,7 +289,7 @@ for (fluid in fluid_removals) {
 //ADDITIONS
 
 //CONSUMES IRON BUCKET ONLY BECAUSE THE OUTPUT IS IN AN IRON BUCKET
-crafting.addShapeless('gregtech:salt_water_bucket', item('forge:bucketfilled').withNbt(["FluidName": "salt_water", "Amount": 1000]), [item('minecraft:water_bucket').noreturn(), metaitem('dustSalt'), metaitem('dustSalt')])
+crafting.addShapeless('gregtech:salt_water_bucket', item('forge:bucketfilled').withNbt(["FluidName": "salt_water", "Amount": 1000]), [item('minecraft:water_bucket').noReturn(), metaitem('dustSalt'), metaitem('dustSalt')])
 
 RecyclingHelper.replaceShaped('gregtech:large_steel_boiler', metaitem('large_boiler.steel'), [
     [ore('cableGtSingleCopper'), ore('circuitMv'), ore('cableGtSingleCopper')],
@@ -970,27 +969,27 @@ RecyclingHelper.handleRecycling(metaitem('drum.uhmwpe'), [metaitem('plateUltraHi
 
 // ModHandler.addShapelessNBTClearingRecipe() is not reloadable, just using these seems fine, and we indeed have tooltips.
 crafting.addShapeless("drum_nbt_lead", metaitem('drum.lead'), [
-        metaitem('drum.lead').noreturn()
+        metaitem('drum.lead').noReturn()
 ]);
 
 crafting.addShapeless("drum_nbt_brass", metaitem('drum.brass'), [
-        metaitem('drum.brass').noreturn()
+        metaitem('drum.brass').noReturn()
 ]);
 
 crafting.addShapeless("drum_nbt_pe", metaitem('drum.pe'), [
-        metaitem('drum.pe').noreturn()
+        metaitem('drum.pe').noReturn()
 ]);
 
 crafting.addShapeless("drum_nbt_pp", metaitem('drum.pp'), [
-        metaitem('drum.pp').noreturn()
+        metaitem('drum.pp').noReturn()
 ]);
 
 crafting.addShapeless("drum_nbt_ptfe", metaitem('drum.ptfe'), [
-        metaitem('drum.ptfe').noreturn()
+        metaitem('drum.ptfe').noReturn()
 ]);
 
 crafting.addShapeless("drum_nbt_uhmwpe", metaitem('drum.uhmwpe'), [
-        metaitem('drum.uhmwpe').noreturn()
+        metaitem('drum.uhmwpe').noReturn()
 ]);
 
 ASSEMBLER.recipeBuilder()
