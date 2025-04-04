@@ -27,7 +27,6 @@ panel_sync_dst_max = 18.0; !Distance from Control Panel above which it stops sen
 energy_unit_FE = 100; !Forge Energy 
 energy_unit_EU = 400; !Industrialcraft
 energy_unit_OC = 1000; !OpenComputers
-energy_unit_GT = 25; !GregTech
 
 !All energy values in internal units:
 energy_item_translocator_op = 100; !energy consumed by the Item Translocator per clock pulse.
@@ -266,8 +265,8 @@ moddedRecipes() {
 		add("circuitMat", it("cd4017be_lib:m"):404,	0,  0, 1, -1, 0, 0); !1 mem/size
 		add("circuitMat", it("cd4017be_lib:m"):405,	0,  0, 4, -4, 0, 0); !1 mem/size
 		!Replace OC Capacitor
-		add("battery", ore("componentCapacitor"), 640000 * energy_unit_GT);
-		add("circuitMat", ore("componentCapacitor"), 0, 0, 0, -8, 1, 64000 * energy_unit_GT);
+		add("battery", ore("componentCapacitor"), 4000 * energy_unit_EU);
+		add("circuitMat", ore("componentCapacitor"), 0, 0, 0, -8, 1, 400 * energy_unit_EU);
 		!Replace OC Transistor
 		add("circuitMat", ore("componentTransistor"), 16, 24, 0, -4, 1, 3);
 	}
