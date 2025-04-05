@@ -3940,15 +3940,6 @@ BR.recipeBuilder()
         .EUt(30)
         .buildAndRegister()
 
-
-
-    .inputs(metaitem('dustIronIiiHydroxide') * 7)
-    .fluidInputs(fluid('nitric_acid') * 3000)
-    .fluidOutputs(fluid('iron_iii_nitrate_solution') * 3000)
-    .duration(100)
-    .EUt(30)
-    .buildAndRegister()
-
 // Diluted NaClO3
 
 MIXER.recipeBuilder()
