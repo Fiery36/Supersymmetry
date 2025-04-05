@@ -14,7 +14,7 @@ ION_EXCHANGE.recipeBuilder()
         .outputs(metaitem('beads.rare_earth_cation_exchange'))
         .fluidOutputs(fluid('lutetium_chloride_solution'))
         .duration(20)
-        .EUt(1)
+        .EUt(7)
         .buildAndRegister()
 
 DISTILLERY.recipeBuilder()

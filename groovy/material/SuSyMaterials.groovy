@@ -1314,13 +1314,10 @@ class SuSyMaterials {
         public static Material MonaziteWaste;
         public static Material ThoriumHydroxidePrecipitate;
         public static Material ThoriumHydroxide;
+        public static Material ThoriumDioxide;
         public static Material UranylHydroxidePrecipitate;
         public static Material UranylHydroxide;
 
-        public static Material SiftedBastnasite;
-        public static Material ImpureBastnasiteSlurry;
-        public static Material BastnasiteSlurry;
-        public static Material FlotatedBastnasite;
         public static Material RoastedBastnasiteLeach;
         public static Material ConcentratedBastnasite;
 
@@ -1332,19 +1329,25 @@ class SuSyMaterials {
         public static Material XenotimeTailing;
 
         public static Material CeriumIVNitrate;
+        public static Material CeriumFluoride;
         public static Material LanthanumCarbonate;
         public static Material LanthanumChloride;
+        public static Material LanthanumFluoride;
         public static Material LanthanumOxide;
         public static Material PraseodymiumOxide;
+        public static Material PraseodymiumFluoride;
+        public static Material NeodymiumFluoride;
         public static Material EuropiumIISulfate;
         public static Material EuropiumOxide;
+        public static Material EuropiumFluoride;
         public static Material SamariumAmalgam;
         public static Material SamariumChloride;
-        public static Material SamariumFluoride;
         public static Material GadoliniumHydroxide;
         public static Material GadoliniumOxide;
+        public static Material GadoliniumFluoride
         public static Material TerbiumCarbonate;
         public static Material TerbiumOxide;
+        public static Material TerbiumFluoride;
         public static Material DysprosiumFluoride;
         public static Material YttriumChlorideSolution;
         public static Material YttriumChloride;
@@ -1352,18 +1355,17 @@ class SuSyMaterials {
         public static Material ErbiumDodecylSulfate;
         public static Material ErbiumHydroxide;
         public static Material ErbiumOxide;
+        public static Material ErbiumFluoride;
         public static Material HolmiumDodecylSulfate;
         public static Material HolmiumHydroxide;
         public static Material HolmiumOxide;
+        public static Material HolmiumFluoride
         public static Material YtterbiumAmalgam;
         public static Material YtterbiumChloride;
-        public static Material YtterbiumFluoride;
         public static Material ThuliumChlorideSolution;
         public static Material ThuliumChloride;
-        public static Material ThuliumSponge;
         public static Material LutetiumChlorideSolution;
         public static Material LutetiumChloride;
-        public static Material LutetiumSponge;
 
         public static Material MonaziticRareEarthHydroxides;
         public static Material MonaziticRareEarthNitratesSolution;

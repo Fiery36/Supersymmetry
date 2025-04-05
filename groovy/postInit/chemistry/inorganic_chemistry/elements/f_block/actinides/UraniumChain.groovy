@@ -258,3 +258,5 @@ REACTION_FURNACE.recipeBuilder()
     .EUt(3840)
     .duration(80)
     .buildAndRegister()
+
+// From Monazite Processing

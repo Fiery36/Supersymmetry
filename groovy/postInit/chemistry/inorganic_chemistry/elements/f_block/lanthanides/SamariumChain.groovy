@@ -5,7 +5,7 @@ import gregtech.api.unification.material.MarkerMaterials;
 import static gregtech.api.unification.ore.OrePrefix.dye;
 
 BR = recipemap('batch_reactor')
-CSTR = recipemap('continuous_stirred_tank_reactor')
+REACTION_FURNACE = recipemap('reaction_furnace')
 
 BR.recipeBuilder()
         .fluidInputs(fluid('samarium_amalgam') * 1000)
@@ -19,12 +19,11 @@ BR.recipeBuilder()
         .EUt(Globals.voltAmps[2])
         .buildAndRegister()
 
-BR.recipeBuilder()
+REACTION_FURNACE.recipeBuilder()
         .inputs(ore('dustSamariumChloride') * 4)
-        .fluidInputs(fluid('potassium_fluoride_solution') * 3000)
-        .outputs(metaitem('dustSamariumFluoride') * 4)
-        .fluidOutputs(fluid('potassium_chloride_solution') * 3000)
-        .duration(80)
-        .EUt(Globals.voltAmps[1])
+        .inputs(ore('dustLanthanum'))
+        .outputs(metaitem('dustSamarium'))
+        .outputs(metaitem('dustLanthanumChloride') * 4)
+        .duration(20)
+        .EUt(1)
         .buildAndRegister()
-
