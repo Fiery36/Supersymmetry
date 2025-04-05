@@ -23,9 +23,9 @@ if [[ FORGEJAR == "cleanroom"* ]]; then
 fi
 
 
-if [[ -f MISSING_MODS.txt ]]; then
-    echo "Missing mods:"
-    cat MISSING_MODS.txt
+if [[ -f missing_mods.txt ]]; then
+    echo "missing mods:"
+    cat missing_mods.txt
     echo "please install these from the website, or get them from your client"
     echo "delete the missing_mods.txt file to continue"
     exit 1

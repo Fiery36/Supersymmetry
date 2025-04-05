@@ -96,14 +96,16 @@ def export_server_pack():
     shutil.copy("LICENSE", "build/server/LICENSE")
 
     os.chdir("build/server")
+    print("downloading the mods, might take some time")
     download_result = subprocess.run(['java', '-jar', 'packwiz-installer-bootstrap.jar', '-s', 'server', '../../pack.toml'], check=True,stdout=subprocess.PIPE,text=True)
+    print(f"{download_result.stdout}") # im not sure if there is a way to print its stdout while its working without making a separate thread and needlessly complicating the process
 
     missing_mods_list:Optional[str] = None
 
     if str("Failed") in download_result.stdout:
         not_downloaded = cfThirdPartyList.get_broken_from_log(download_result.stdout,basePath+"/mods")
         if not_downloaded:
-            print("the following mods failed to download automatically: ")
+            print("\nthe following mods failed to download automatically: ")
             missing_mods_list=""
             for mod,(project_id,file_id) in not_downloaded.items():
                 print(f" - {mod}")
@@ -112,7 +114,7 @@ def export_server_pack():
                 if out:
                     name, url = out
                     missing_mods_list+=f"{name} : {url}\n"
-            print("please download these manually and put them into ./mods folder!")
+            print("please download these manually and put them into ./mods folder before running the server itself\n")
 
 
     with zipfile.ZipFile(server_pack, 'w') as zipf:
