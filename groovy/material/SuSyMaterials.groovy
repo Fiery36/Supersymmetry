@@ -990,7 +990,6 @@ class SuSyMaterials {
         public static Material BerylliumHydroxide;
         public static Material BerylliumOxide;
         public static Material BerylliumChloride;
-        public static Material SulfuricPGMSolution;
         public static Material PGMSolution;
         public static Material SulfurTrioxideReactionMixture;
         public static Material CalciumMetasilicate;
@@ -1569,6 +1568,7 @@ class SuSyMaterials {
         public static Material DilutedIronIIIChlorideSolution;
         public static Material SodiumPerchlorateSolution;
         public static Material SodiumChlorateSolution;
+        public static Material DilutedSodiumChlorateSolution;
         public static Material DilutedAniline;
         public static Material ChloroauricAcidSolution;
         public static Material ZincChlorideSolution;

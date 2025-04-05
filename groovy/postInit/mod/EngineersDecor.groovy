@@ -8,7 +8,7 @@ def name_removals = [
 		"engineersdecor:alternative/small_block_breaker_recipe_standalone",
 		"engineersdecor:alternative/small_tree_cutter_recipe_standalone",
 		"engineersdecor:alternative/small_waste_incinerator_recipe_standalone",
-		"engineersdecor:alternative/small_solar_panel_standalone",
+		"engineersdecor:alternative/small_solar_panel_recipe_standalone",
 		"engineersdecor:alternative/small_mineral_smelter_recipe_standalone",
 		"engineersdecor:alternative/straight_pipe_valve_recipe_standalone",
 		"engineersdecor:alternative/straight_pipe_valve_redstone_recipe_standalone",

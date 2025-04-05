@@ -57,7 +57,7 @@ public class FirstDegreeMaterials {
         HighPurityCarbon = generatePurifiedElement(Carbon, 8003, false, false)
         HighPuritySodium = generatePurifiedElement(Sodium, 8004, false, false)
         HighPurityMagnesium = generatePurifiedElement(Magnesium, 8005, false, false)
-        HighPurityAluminium = generatePurifiedElement(Aluminium, 8006, false, false)
+        HighPurityAluminium = generatePurifiedElement(Aluminium, 8006, false, true)
         HighPuritySilicon = generatePurifiedElement(Silicon, 8007, true, false)
         HighPurityPhosphorus = generatePurifiedElement(Phosphorus, 8008, true, true)
         HighPuritySulfur = generatePurifiedElement(Sulfur, 8009, false, false)
@@ -662,7 +662,7 @@ public class FirstDegreeMaterials {
                 .build()
 
         EnargiteSulfideLeachSolution = new Material.Builder(8187, SuSyUtility.susyId('enargite_sulfide_leach_solution'))
-                .liquid()
+                .liquid(new FluidBuilder().temperature(368))
                 .components(Sodium * 3, Arsenic, Sulfur * 4, Water)
                 .flags(DISABLE_DECOMPOSITION)
                 .colorAverage()
@@ -670,7 +670,7 @@ public class FirstDegreeMaterials {
                 .setFormula("(Na3AsS4)(H2O)", true)
 
         CobaltiteLeachSolution = new Material.Builder(8188, SuSyUtility.susyId('cobaltite_leach_solution'))
-                .liquid()
+                .liquid(new FluidBuilder().temperature(343))
                 .components(Cobalt * 3, Nitrogen * 6, Oxygen * 30, Hydrogen * 9, Arsenic * 3, Water * 3)
                 .flags(DISABLE_DECOMPOSITION)
                 .colorAverage()
@@ -1362,13 +1362,7 @@ public class FirstDegreeMaterials {
                 .color(0x38393b)
                 .build();
 
-        SulfuricPGMSolution = new Material.Builder(8297, SuSyUtility.susyId('sulfuric_pgm_solution'))
-                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(SulfuricAcid * 3, HydrochloricAcid * 12, Water * 8)
-                .colorAverage()
-                .build();
-
-        SulfuricPGMSolution.setFormula("(?)(H2SO4)3(HCl)12(H2O)8", true)
+        // FREE ID: 8297
 
         PGMSolution = new Material.Builder(8298, SuSyUtility.susyId('pgm_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -1551,7 +1545,7 @@ public class FirstDegreeMaterials {
         ChromiumIIIHydroxide.setFormula("Cr(OH)3", true)
 
         DisassociatedAmmoniumFluoride = new Material.Builder(8325, SuSyUtility.susyId('disassociated_ammonium_fluoride'))
-                .gas(new FluidBuilder().temperature(1200))
+                .gas(new FluidBuilder().temperature(373))
                 
                 .components(Ammonia, HydrogenFluoride)
                 .colorAverage()
@@ -3598,6 +3592,7 @@ public class FirstDegreeMaterials {
                 .color(0xbb7694)
                 .build()
 
+        // FREE ID: 8637
         // 8638: Co3O4
 
         LithiumNitrate = new Material.Builder(8639, SuSyUtility.susyId('lithium_nitrate'))

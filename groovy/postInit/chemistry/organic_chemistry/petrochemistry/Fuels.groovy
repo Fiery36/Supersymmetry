@@ -608,7 +608,15 @@ GasolineFeedstocks.each { key, val ->
         .fluidInputs(fluid(key) * 1000)
         .fluidOutputs(fluid('gasoline') * ((int)(1000 * val)))
         .circuitMeta(10)
-        .duration(2)
+        .duration(4)
+        .EUt(120)
+        .buildAndRegister()
+
+    MIXER.recipeBuilder()
+        .fluidInputs(fluid(key) * 10000)
+        .fluidOutputs(fluid('gasoline') * ((int)(10000 * val)))
+        .circuitMeta(11)
+        .duration(40)
         .EUt(120)
         .buildAndRegister()
 }
