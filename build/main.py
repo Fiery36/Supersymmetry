@@ -7,10 +7,9 @@ import os
 import sys
 import shutil
 import subprocess
+from typing import Optional
+import cfThirdPartyList
 import zipfile
-
-import requests
-
 # Used to run questbook.py
 import questbook
 
@@ -97,7 +96,24 @@ def export_server_pack():
     shutil.copy("LICENSE", "build/server/LICENSE")
 
     os.chdir("build/server")
-    subprocess.run(['java', '-jar', 'packwiz-installer-bootstrap.jar', '-s', 'server', '../../pack.toml'], check=True)
+    download_result = subprocess.run(['java', '-jar', 'packwiz-installer-bootstrap.jar', '-s', 'server', '../../pack.toml'], check=True,stdout=subprocess.PIPE,text=True)
+
+    missing_mods_list:Optional[str] = None
+
+    if str("Failed") in download_result.stdout:
+        not_downloaded = cfThirdPartyList.get_broken_from_log(download_result.stdout,basePath+"/mods")
+        if not_downloaded:
+            print("the following mods failed to download automatically: ")
+            missing_mods_list=""
+            for mod,(project_id,file_id) in not_downloaded.items():
+                print(f" - {mod}")
+                
+                out = cfThirdPartyList.cf_file_meta(project_id,file_id)
+                if out:
+                    name, url = out
+                    missing_mods_list+=f"{name} : {url}\n"
+            print("please download these manually and put them into ./mods folder!")
+
 
     with zipfile.ZipFile(server_pack, 'w') as zipf:
         for folder in ['config', 'groovy', 'libraries', 'mods', 'structures']:
@@ -109,6 +125,8 @@ def export_server_pack():
 
         for file in ['launch.sh', 'forge-1.12.2-14.23.5.2860.jar', 'LICENSE', 'minecraft_server.1.12.2.jar']:
             zipf.write(file, file)
+        if missing_mods_list:
+            zipf.writestr("missing_mods.txt",missing_mods_list)
 
     os.chdir("../..")
     shutil.move(f"build/server/{server_pack}", f"buildOut/{server_pack}")

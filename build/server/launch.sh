@@ -21,6 +21,16 @@ if [[ FORGEJAR == "cleanroom"* ]]; then
         echo "java version is not 1.8, please make sure you know what you are doing!!!"
     fi
 fi
-echo "$JAVA_CMD $PARAMS"
 
+
+if [[ -f MISSING_MODS.txt ]]; then
+    echo "Missing mods:"
+    cat MISSING_MODS.txt
+    echo "please install these from the website, or get them from your client"
+    echo "delete the missing_mods.txt file to continue"
+    exit 1
+fi
+
+
+echo "$JAVA_CMD $PARAMS"
 $JAVA_CMD $PARAMS
