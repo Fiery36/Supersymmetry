@@ -8,20 +8,6 @@ import requests
 from collections import defaultdict
 from datetime import datetime
 
-# GitHub API configuration
-# NOTE: These will need to be set as GitHub secrets and passed to the script
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-GITHUB_REPO = "SymmetricDevs/Supersymmetry"  # Format: owner/repo
-GITHUB_ORG = os.environ.get("GITHUB_ORGANIZATION", "SymmetricDevs")  # Default organization
-
-# Find the latest tag (excluding "latest")
-def get_latest_tag():
-    tags = subprocess.check_output(["git", "tag", "-l", "--sort=-v:refname"]).decode().strip().split("\n")
-    for tag in tags:
-        if tag != "latest":
-            return tag
-    return None
-
 # Extract current version from the most recent commit or newest tag
 def get_current_version():
     # Try to get from the current tag if we're on a tag
@@ -34,6 +20,22 @@ def get_current_version():
     
     # If no tag, try to extract from a version file or use a timestamp
     return f"next-{datetime.now().strftime('%Y%m%d')}"
+
+# GitHub API configuration
+# NOTE: These will need to be set as GitHub secrets and passed to the script
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+GITHUB_REPO = "SymmetricDevs/Supersymmetry"  # Format: owner/repo
+GITHUB_ORG = os.environ.get("GITHUB_ORGANIZATION", "SymmetricDevs")  # Default organization
+VERSION = os.environ.get("VERSION", get_current_version())
+
+# Find the latest tag (excluding "latest")
+def get_latest_tag():
+    tags = subprocess.check_output(["git", "tag", "-l", "--sort=-v:refname"]).decode().strip().split("\n")
+    for tag in tags:
+        if tag != "latest":
+            return tag
+    return None
+
 
 # Get mod details from toml file
 def parse_mod_file(file_path):
@@ -427,7 +429,7 @@ def generate_full_changelog():
         return "No previous tag found to compare against."
     
     # Get current version
-    current_version = get_current_version()
+    current_version = VERSION
     
     # Generate mod changes section and get SusyCore versions
     mod_changes, susy_old_version, susy_new_version = generate_mod_changelog()
