@@ -3507,7 +3507,7 @@ public class FirstDegreeMaterials {
                 .build()
                 .setFormula("(Ar)(H)", true)
 
-        IncoloyTwenty = new Material.Builder(8627, SuSyUtility.susyId("incoloy_twenty"))
+        Incoloy20 = new Material.Builder(8627, SuSyUtility.susyId("incoloy_20"))
                 .ingot().liquid(new FluidBuilder().temperature(1675))
                 .iconSet(SHINY)
                 .components(Iron * 12, Nickel * 8, Chrome * 12, Manganese, Copper * 2, Niobium, Tantalum, Molybdenum * 2)
@@ -3516,7 +3516,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
                 .build();
 
-        IncoloyEightTwoFive = new Material.Builder(8628, SuSyUtility.susyId("incoloy_eight_two_five"))
+        Incoloy825 = new Material.Builder(8628, SuSyUtility.susyId("incoloy_825"))
                 .ingot().liquid(new FluidBuilder().temperature(1675))
                 .iconSet(SHINY)
                 .flags(GENERATE_PLATE, GENERATE_ROD)
@@ -3525,7 +3525,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
                 .build();
 
-        IncoloyNineZeroEight = new Material.Builder(8629, SuSyUtility.susyId("incoloy_nine_zero_eight"))
+        Incoloy908 = new Material.Builder(8629, SuSyUtility.susyId("incoloy_908"))
                 .ingot().liquid(new FluidBuilder().temperature(1685))
                 .iconSet(SHINY)
                 .flags(GENERATE_PLATE, GENERATE_ROD)
@@ -3534,7 +3534,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
                 .build();
 
-        ReneN = new Material.Builder(8630, SuSyUtility.susyId("rene"))
+        ReneN5 = new Material.Builder(8630, SuSyUtility.susyId("rene_n_5"))
                 .ingot().liquid(new FluidBuilder().temperature(1780))
                 .iconSet(SHINY)
                 .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_ROTOR)
@@ -3543,7 +3543,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
                 .build();
 
-        MonelFiveHundred = new Material.Builder(8631, SuSyUtility.susyId("monel"))
+        Monel500 = new Material.Builder(8631, SuSyUtility.susyId("monel_500"))
                 .ingot().liquid(new FluidBuilder().temperature(1625))
                 .iconSet(SHINY)
                 .flags(GENERATE_PLATE, GENERATE_ROD)
@@ -3561,7 +3561,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(3800, GasTier.HIGH, GTValues.VA[GTValues.EV])
                 .build();
 
-        StelliteSix = new Material.Builder(8633, SuSyUtility.susyId("stellite_six"))
+        Stellite6 = new Material.Builder(8633, SuSyUtility.susyId("stellite_6"))
                 .ingot().liquid(new FluidBuilder().temperature(1630))
                 .iconSet(SHINY)
                 .flags(GENERATE_PLATE, GENERATE_ROD)
@@ -3570,7 +3570,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
                 .build();
 
-        HSLAEightyX = new Material.Builder(8634, SuSyUtility.susyId("hsla_eighty_x"))
+        HSLA80X = new Material.Builder(8634, SuSyUtility.susyId("hsla_80_x"))
                 .ingot().liquid(new FluidBuilder().temperature(1770))
                 .iconSet(SHINY)
                 .flags(GENERATE_PLATE, GENERATE_ROD)
@@ -3579,7 +3579,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(2600, GasTier.MID, GTValues.VA[GTValues.HV])
                 .build();
 
-        HSLAEightyX.setFormula("Fe99Mn", true)
+        HSLA80X.setFormula("Fe99Mn", true)
 
         FoodGradeStainlessSteel = new Material.Builder(8635, SuSyUtility.susyId("food_grade_stainless_steel"))
                 .ingot().liquid(new FluidBuilder().temperature(1780))
