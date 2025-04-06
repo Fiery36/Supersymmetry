@@ -1,14 +1,19 @@
 name: Generate Modpack Changelog
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+  push:
+    tags:
+      - '*'
+    paths:
+      - 'mods/**'
 
 jobs:
   generate-changelog:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           
@@ -20,19 +25,19 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install toml
+          pip install toml requests
           
-      - name: Generate Changelog
+      - name: Run changelog script
         id: changelog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ORGANIZATION: "SymmetricDevs"
         run: |
+          chmod +x .github/scripts/generate_changelog.py
           python .github/scripts/generate_changelog.py
           
-      - name: Create changelog file
-        run: |
-          echo "${{ steps.changelog.outputs.changelog }}" > modpack-changelog.md
-          
       - name: Upload changelog artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: modpack-changelog
           path: modpack-changelog.md
