@@ -10,7 +10,7 @@ import gregtech.api.fluids.FluidBuilder;
 import gregtech.api.fluids.store.FluidStorageKeys;
 import gregtech.api.fluids.store.FluidStorage;
 import gregtech.api.unification.material.properties.*
-
+import gregtech.api.GTValues;
 import supersymmetry.api.util.SuSyUtility;
 
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
@@ -3463,7 +3463,7 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, DISABLE_DECOMPOSITION)
                 .components(Iron * 2, Nickel * 1, Cobalt * 1)
                 .colorAverage()
-                .blastTemp(1723, GasTier.LOW, 120, 24)
+                .blastTemp(1723, GasTier.LOW)
                 .build();
 
         Kovar.setFormula("Fe10Ni5Co3", true)
@@ -3511,9 +3511,10 @@ public class FirstDegreeMaterials {
                 .ingot().liquid(new FluidBuilder().temperature(1675))
                 .iconSet(SHINY)
                 .components(Iron * 12, Nickel * 8, Chrome * 12, Manganese, Copper * 2, Niobium, Tantalum, Molybdenum * 2)
+                .flags(GENERATE_PLATE, GENERATE_ROD)
                 .colorAverage()
-                .flags(GENERATE_ROD, GENERATE_PLATE)
-                .build()
+                .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
 
         IncoloyEightTwoFive = new Material.Builder(8628, SuSyUtility.susyId("incoloy_eight_two_five"))
                 .ingot().liquid(new FluidBuilder().temperature(1675))
@@ -3521,7 +3522,8 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROD)
                 .components(Iron * 9, Nickel * 16, Chrome * 7, Manganese, Copper * 2, Aluminium, Titanium, Molybdenum * 2)
                 .colorAverage()
-                .build()
+                .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
 
         IncoloyNineZeroEight = new Material.Builder(8629, SuSyUtility.susyId("incoloy_nine_zero_eight"))
                 .ingot().liquid(new FluidBuilder().temperature(1685))
@@ -3529,7 +3531,8 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROD)
                 .components(Iron * 20, Nickel * 30, Cobalt, Chrome * 3, Aluminium, Titanium * 2, Tungsten, Niobium * 2)
                 .colorAverage()
-                .build()
+                .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
 
         ReneN = new Material.Builder(8630, SuSyUtility.susyId("rene"))
                 .ingot().liquid(new FluidBuilder().temperature(1780))
@@ -3537,7 +3540,8 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_ROTOR)
                 .components(Nickel * 22, Cobalt * 4, Chrome * 3, Aluminium * 3, Tungsten * 2, Hafnium, Rhenium * 2, Tantalum * 3)
                 .colorAverage()
-                .build()
+                .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
 
         MonelFiveHundred = new Material.Builder(8631, SuSyUtility.susyId("monel"))
                 .ingot().liquid(new FluidBuilder().temperature(1625))
@@ -3545,7 +3549,8 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROD)
                 .components(Nickel * 23, Manganese * 2, Copper * 10, Aluminium * 4, Titanium)
                 .colorAverage()
-                .build()
+                .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
 
         StelliteJ = new Material.Builder(8632, SuSyUtility.susyId("stellite_j"))
                 .ingot().liquid(new FluidBuilder().temperature(1575))
@@ -3553,7 +3558,8 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROD)
                 .components(Iron * 2, Nickel * 2, Cobalt * 15, Chrome * 13, Manganese, Tungsten * 7)
                 .colorAverage()
-                .build()
+                .blastTemp(3800, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
 
         StelliteSix = new Material.Builder(8633, SuSyUtility.susyId("stellite_six"))
                 .ingot().liquid(new FluidBuilder().temperature(1630))
@@ -3561,7 +3567,8 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROD)
                 .components(Nickel, Cobalt * 24, Chrome * 10, Manganese, Tungsten * 3, Molybdenum)
                 .colorAverage()
-                .build()
+                .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
 
         HSLAEightyX = new Material.Builder(8634, SuSyUtility.susyId("hsla_eighty_x"))
                 .ingot().liquid(new FluidBuilder().temperature(1770))
@@ -3569,8 +3576,10 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_PLATE, GENERATE_ROD)
                 .components(Iron * 39, Manganese)
                 .colorAverage()
-                .build()
-                .setFormula("Fe99Mn", true)
+                .blastTemp(2600, GasTier.MID, GTValues.VA[GTValues.HV])
+                .build();
+
+        HSLAEightyX.setFormula("Fe99Mn", true)
 
         FoodGradeStainlessSteel = new Material.Builder(8635, SuSyUtility.susyId("food_grade_stainless_steel"))
                 .ingot().liquid(new FluidBuilder().temperature(1780))
@@ -3578,6 +3587,7 @@ public class FirstDegreeMaterials {
                 .flags(GENERATE_ROD, GENERATE_PLATE, GENERATE_RING, GENERATE_LONG_ROD)
                 .components(Iron * 24, Nickel * 5, Chrome * 8, Manganese, Molybdenum * 2)
                 .colorAverage()
+                .blastTemp(2600, GasTier.MID, GTValues.VA[GTValues.HV])
                 .build()
 
         CobaltSulfate = new Material.Builder(8636, SuSyUtility.susyId('cobalt_sulfate'))
