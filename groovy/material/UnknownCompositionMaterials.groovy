@@ -2293,6 +2293,7 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xf6f6ef)
                 .build();
+
         DistilledNParaffin = new Material.Builder(4516, SuSyUtility.susyId('distilled_n_paraffin'))
                 .liquid()
                 .color(0xeff6f6)
@@ -2301,6 +2302,44 @@ public class UnknownCompositionMaterials {
         IsomerizedParaffin = new Material.Builder(4517, SuSyUtility.susyId('isomerized_paraffin'))
                 .liquid()
                 .color(0xffebbb)
+                .build();
+
+        NitrogenOxides = new Material.Builder(4518, SuSyUtility.susyId('nitrogen_oxides'))
+                .gas()
+                .components(NitricOxide, NitrogenDioxide)
+                .colorAverage()
+                .build();
+
+        NitrogenOxides.setFormula('NOx', true)
+
+        HotNitrogenOxides = new Material.Builder(4519, SuSyUtility.susyId('hot_nitrogen_oxides'))
+                .gas(new FluidBuilder().temperature(1300))
+                .components(NitrogenOxides)
+                .colorAverage()
+                .build();
+
+        NitrogenOxidesRichAir = new Material.Builder(4520, SuSyUtility.susyId('nitrogen_oxides_rich_air'))
+                .gas()
+                .components(NitrogenOxides * 2, Oxygen, Air * 10)
+                .colorAverage()
+                .build();
+
+        HotNitrogenOxidesRichAir = new Material.Builder(4521, SuSyUtility.susyId('hot_nitrogen_oxides_rich_air'))
+                .gas(new FluidBuilder().temperature(1300))
+                .components(NitrogenOxidesRichAir)
+                .colorAverage()
+                .build();
+
+        NitrogenDioxideRichAir = new Material.Builder(4522, SuSyUtility.susyId('nitrogen_dioxide_rich_air'))
+                .gas(new FluidBuilder().temperature(500))
+                .components(NitrogenDioxide, Air * 5)
+                .colorAverage()
+                .build();
+
+        NitricOxideRichAir = new Material.Builder(4523, SuSyUtility.susyId('nitric_oxide_rich_air'))
+                .gas()
+                .components(NitricOxide, Air * 15)
+                .colorAverage()
                 .build();
     }
 }
