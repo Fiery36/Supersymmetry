@@ -169,7 +169,7 @@ CRYSTALLIZER.recipeBuilder()
     .fluidInputs(fluid('impure_nickel_sulfate_solution') * 1000)
     .fluidOutputs(fluid('wastewater') * 2000)
     .outputs(metaitem('dustNickelCobaltSulfate') * 6)
-    .duration(400)
+    .duration(200)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
 
