@@ -1,12 +1,7 @@
 name: Generate Modpack Changelog
 
 on:
-  workflow_dispatch:
-  push:
-    tags:
-      - '*'
-    paths:
-      - 'mods/**'
+  workflow_dispatch
 
 jobs:
   generate-changelog:
