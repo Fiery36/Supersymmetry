@@ -2513,7 +2513,9 @@ metaitem.baserutheniumtriniumamericiumneutronate.name=Base Ruthenium Trinium Ame
 metaitem.alternator.stator.name=Alternator Stator
 metaitem.alternator.rotor.name=Alternator Rotor
 metaitem.raw_diamond.name=Raw Diamond
-metaitem.cellulose_acetate_mesh.name=Cellulose Acetate Mesh
+metaitem.mesh.cellulose_acetate.name=Cellulose Acetate Mesh
+metaitem.mesh.platinum.name=Platinum Mesh
+metaitem.mesh.platinum_rhodium.name=Platinum-Rhodium Mesh
 
 metaitem.shape.mold.crucible.name=Mold (Crucible)
 metaitem.crucible.boron.nitride.name=Pyrolytic Boron Nitride Crucible

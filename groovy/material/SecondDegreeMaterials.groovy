@@ -852,7 +852,7 @@ public class SecondDegreeMaterials {
         PlatinumRhodium = new Material.Builder(13141, SuSyUtility.susyId('platinum_rhodium'))
                 .dust()
                 .components(Platinum * 9, Rhodium)
-                .colorAverage()
+                .color(0xffe1c8)
                 .flags(GENERATE_FINE_WIRE)
                 .blastTemp(1700, GasTier.MID)
                 .build()

@@ -1905,7 +1905,7 @@ DRYER.recipeBuilder()
 
 ASSEMBLER.recipeBuilder()
     .inputs(ore('threadCelluloseAcetate') * 16)
-    .outputs(metaitem('cellulose_acetate_mesh'))
+    .outputs(metaitem('mesh.cellulose_acetate'))
     .EUt(120)
     .duration(160)
     .buildAndRegister()
