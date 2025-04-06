@@ -22,26 +22,25 @@ import static gregtech.api.fluids.FluidConstants.*;
 
 
 public class FirstDegreeMaterials {
-        
-        private static Material generatePurifiedElement(Material material, int id, boolean generateLiquid, boolean generateIngot) {
-                def color = material.materialRGB
-                def builder = new Material.Builder(id, SuSyUtility.susyId('high_purity_' + material.toString()))
-                        .dust()
-                        .iconSet(SHINY)
-                        .flags(DISABLE_DECOMPOSITION)
-                        .color(color)
-                        .components(material)
+    private static Material generatePurifiedElement(Material material, int id, boolean generateLiquid, boolean generateIngot) {
+        def color = material.materialRGB
+        def builder = new Material.Builder(id, SuSyUtility.susyId('high_purity_' + material.toString()))
+            .dust()
+            .iconSet(SHINY)
+            .flags(DISABLE_DECOMPOSITION)
+            .color(color)
+            .components(material)
 
-                if (generateLiquid) {
-                        builder.liquid(new FluidBuilder().temperature(determineTemperatureLiquid(material)))
-                }
-        
-                if (generateIngot) {
-                        builder.ingot()
-                }
-        
-                return builder.build()
+        if (generateLiquid) {
+            builder.liquid(new FluidBuilder().temperature(determineTemperatureLiquid(material)))
         }
+
+        if (generateIngot) {
+            builder.ingot()
+        }
+
+        return builder.build()
+    }
 
 
 

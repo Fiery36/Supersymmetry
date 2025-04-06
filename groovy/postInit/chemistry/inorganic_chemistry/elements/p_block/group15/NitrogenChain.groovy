@@ -1,3 +1,5 @@
+import globals.Globals
+
 ASSEMBLER = recipemap('assembler')
 PSA = recipemap('pressure_swing_adsorption')
 AUTOCLAVE = recipemap('autoclave')
@@ -71,22 +73,6 @@ MIXER.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
-ROASTER.recipeBuilder()
-    .fluidInputs(fluid('monoxide_rich_syngas') * 1000)
-    .inputs(ore('dustIronIiiOxide') * 5)
-    .outputs(metaitem('dustWustiteCatalyst') * 5)
-    .duration(400)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister()
-
-ROASTER.recipeBuilder()
-    .fluidInputs(fluid('hydrogen_rich_syngas') * 1000)
-    .inputs(ore('dustIronIiiOxide') * 5)
-    .outputs(metaitem('dustWustiteCatalyst') * 5)
-    .duration(400)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister()
-
 DISTILLATION_TOWER.recipeBuilder()
     .fluidInputs(fluid('ammonia_solution') * 1000)
     .fluidOutputs(fluid('water') * 1000)
@@ -98,6 +84,7 @@ DISTILLATION_TOWER.recipeBuilder()
 //Ostwald Process
 
 REACTION_FURNACE.recipeBuilder()
+    .notConsumable(ore('catalystBedPlatinum'))
     .fluidInputs(fluid('ammonia') * 5000)
     .fluidInputs(fluid('hot_hp_oxygen') * 10000)
     .fluidOutputs(fluid('nitric_oxide') * 4000)
@@ -118,7 +105,7 @@ REACTION_FURNACE.recipeBuilder()
     .buildAndRegister()
 
 RADIATOR.recipeBuilder()
-    .fluidOutputs(fluid('hot_nitrogen_oxides') * 1000)
+    .fluidInputs(fluid('hot_nitrogen_oxides') * 1000)
     .fluidOutputs(fluid('nitrogen_oxides') * 1000)
     .duration(20)
     .buildAndRegister();
@@ -141,7 +128,7 @@ REACTION_FURNACE.recipeBuilder()
     .buildAndRegister()
 
 RADIATOR.recipeBuilder()
-    .fluidOutputs(fluid('hot_nitrogen_oxides_rich_air') * 1000)
+    .fluidInputs(fluid('hot_nitrogen_oxides_rich_air') * 1000)
     .fluidOutputs(fluid('nitrogen_oxides_rich_air') * 1000) 
     .duration(20)
     .buildAndRegister();

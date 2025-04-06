@@ -593,8 +593,14 @@ class SuSyMaterials {
         public static Material NeutralizedNParaffin;
         public static Material DistilledNParaffin;
         public static Material IsomerizedParaffin;
-        public static Material SodiumHydroxideMethanolSolution;
         public static Material DiisobutyleneMixture;
+        public static Material SodiumHydroxideMethanolSolution;
+        public static Material NitrogenOxides;
+        public static Material HotNitrogenOxides;
+        public static Material NitrogenOxidesRichAir;
+        public static Material HotNitrogenOxidesRichAir;
+        public static Material NitrogenDioxideRichAir;
+        public static Material NitricOxideRichAir;
 
         // Petrochem Materials
 
@@ -1917,6 +1923,7 @@ class SuSyMaterials {
         public static Material OneBromohexane;
         public static Material DiNHexylsulfide;
         public static Material Isopropylamine;
+        public static Material PlatinumRhodium;
 
         // Third Degree Materials
 
