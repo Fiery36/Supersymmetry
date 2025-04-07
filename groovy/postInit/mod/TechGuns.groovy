@@ -1126,7 +1126,7 @@ crafting.replaceShapeless("techguns:pistol_ammo_default", item('techguns:pistol'
 	item('techguns:itemshared', 11)
 ]);
 
-crafting.replaceShapeless("techguns:pistol_ammo_default_ammo_incendiary", item('techguns:pistol').withNbt([ammovariant: 'incendiary', ammo: 18]), [
+crafting.replaceShapeless("techguns:pistol_ammo_incendiary", item('techguns:pistol').withNbt([ammovariant: 'incendiary', ammo: 18]), [
 	item('techguns:pistol:*'), 
 	item('techguns:itemshared', 113)
 ]);
