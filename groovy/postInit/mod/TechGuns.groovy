@@ -563,6 +563,20 @@ Globals.solders.each { key, val ->
 
 	recipemap('weapons_factory').recipeBuilder()
 		.inputs([
+			item('techguns:itemshared', 38),
+			item('techguns:itemshared', 33),
+			item('techguns:itemshared', 42),
+			ore('plateGlass') * 2,
+			ore('ringIron')
+		])
+		.fluidInputs(fluid(key) * val)
+		.outputs(item('techguns:boltaction'))
+		.duration(20)
+		.EUt(Globals.voltAmps[1])
+		.buildAndRegister();
+
+	recipemap('weapons_factory').recipeBuilder()
+		.inputs([
 				metaitem('gun.barrel.steel'),
 				item('techguns:itemshared', 34),
 				item('techguns:itemshared', 42),
