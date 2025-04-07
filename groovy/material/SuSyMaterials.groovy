@@ -1281,7 +1281,7 @@ class SuSyMaterials {
         public static Material Monel500;
         public static Material StelliteJ;
         public static Material Stellite6;
-        public static Material HSLA80X;
+        public static Material HSLA980X;
         public static Material FoodGradeStainlessSteel;
         public static Material CobaltSulfate;
         public static Material LithiumNitrate;

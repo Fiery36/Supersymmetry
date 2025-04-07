@@ -3570,7 +3570,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
                 .build();
 
-        HSLA80X = new Material.Builder(8634, SuSyUtility.susyId("hsla_80_x"))
+        HSLA980X = new Material.Builder(8634, SuSyUtility.susyId("hsla_980_x"))
                 .ingot().liquid(new FluidBuilder().temperature(1770))
                 .iconSet(SHINY)
                 .flags(GENERATE_PLATE, GENERATE_ROD)

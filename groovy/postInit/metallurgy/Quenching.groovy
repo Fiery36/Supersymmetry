@@ -155,7 +155,7 @@ def fluidMap = [
         'molten.monel_500':'Monel500',
         'molten.stellite_j':'StelliteJ',
         'molten.stellite_6':'Stellite6',
-        'molten.hsla_80_x':'Hsla80X',
+        'molten.hsla_980_x':'Hsla980X',
         'molten.food_grade_stainless_steel':'FoodGradeStainlessSteel'
 ]
 
