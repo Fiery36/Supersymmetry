@@ -640,7 +640,7 @@ Globals.solders.each { key, val ->
 	recipemap('weapons_factory').recipeBuilder()
 			.inputs([
 					metaitem('gun.barrel.steel') * 2,
-					item('techguns:itemshared', 34),
+					item('techguns:itemshared', 33),
 					item('techguns:itemshared', 42),
 					ore('springSmallSteel'),
 					item('techguns:itemshared', 2)
