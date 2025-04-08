@@ -227,7 +227,7 @@ ASSEMBLER.recipeBuilder()
 //Black Insulated Wire
 crafting.addShapeless(item('projectred-transmission:wire:16'), [ore('cableGtSingleRedAlloy')]);
 
-def dyes = [
+def chemical_dyes = [
     'dye_white',
     'dye_orange',
     'dye_magenta',
@@ -235,8 +235,8 @@ def dyes = [
     'dye_yellow',
     'dye_lime',
     'dye_pink',
-    'dye_grey',
-    'dye_light_grey',
+    'dye_gray',
+    'dye_light_gray',
     'dye_cyan',
     'dye_purple',
     'dye_blue',
@@ -245,33 +245,34 @@ def dyes = [
     'dye_red',
     'dye_black'
 ]
+
 for (i = 0; i < 15; i++) {
-	CHEMICAL_BATH.recipeBuilder()
-		.inputs(ore('projredInsulatedWire'))
-		.fluidInputs(fluid(dyes[i]) * 18)
-		.outputs(item('projectred-transmission:wire', [i+1]))
-		.duration(20)
-		.EUt(7)
-		.buildAndRegister();
-	CHEMICAL_BATH.recipeBuilder()
-		.inputs(ore('projredBundledCable'))
-		.fluidInputs(fluid(dyes[i]) * 18)
-		.outputs(item('projectred-transmission:wire', [i+18]))
-		.duration(20)
-		.EUt(7)
-		.buildAndRegister();
-	CHEMICAL_BATH.recipeBuilder()
-		.inputs(ore('projredBundledCable'))
-		.fluidInputs(fluid('acetone') * 100)
-		.outputs(item('projectred-transmission:wire', 17))
-		.duration(20)
-		.EUt(7)
-		.buildAndRegister();
-	CHEMICAL_BATH.recipeBuilder()
-		.inputs(ore('projredInsFrameWire'))
-		.fluidInputs(fluid(dyes[i]) * 18)
-		.outputs(item('projectred-transmission:framed_wire', [i+1]))
-		.duration(20)
-		.EUt(7)
-		.buildAndRegister();
+    CHEMICAL_BATH.recipeBuilder()
+        .inputs(ore('projredInsulatedWire'))
+        .fluidInputs(fluid(chemical_dyes[i]) * 18)
+        .outputs(item('projectred-transmission:wire', i+1))
+        .duration(20)
+        .EUt(7)
+        .buildAndRegister();
+    CHEMICAL_BATH.recipeBuilder()
+        .inputs(item('projectred-transmission:wire', i+18))
+        .fluidInputs(fluid('acetone') * 100)
+        .outputs(item('projectred-transmission:wire:17'))
+        .duration(20)
+        .EUt(7)
+        .buildAndRegister();
+    CHEMICAL_BATH.recipeBuilder()
+        .inputs(ore('projredBundledCable'))
+        .fluidInputs(fluid(chemical_dyes[i]) * 18)
+        .outputs(item('projectred-transmission:wire', i+18))
+        .duration(20)
+        .EUt(7)
+        .buildAndRegister();
+    CHEMICAL_BATH.recipeBuilder()
+        .inputs(ore('projredInsFramedWire'))
+        .fluidInputs(fluid(chemical_dyes[i]) * 18)
+        .outputs(item('projectred-transmission:framed_wire', i+1))
+        .duration(20)
+        .EUt(7)
+        .buildAndRegister();
 }
