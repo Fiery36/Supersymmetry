@@ -5,28 +5,28 @@ CHEMICAL_BATH = recipemap('chemical_bath')
 log.infoMC("Running projectRed.groovy...")
 
 mods.jei.ingredient.yeet(
-	item('projectred-core:resource_item', 104),			//Electrotine Alloy Ingot
-	item('projectred-core:resource_item', 105),			//Electrotine
-	item('projectred-core:resource_item', 202),			//Peridot
-	item('projectred-core:resource_item', 250),			//Sandy Coal Compound
-	item('projectred-core:resource_item', 251),			//Red Iron Compound
-	item('projectred-core:resource_item', 252),			//Electrotine Iron Compound
-	item('projectred-core:resource_item', 300),			//Silicon
-	item('projectred-core:resource_item', 310),			//Red Silicon Compound
-	item('projectred-core:resource_item', 311),			//Glowing Silicon Compound
-	item('projectred-core:resource_item', 312),			//Electrotine Silicon Compound
-	item('projectred-core:resource_item', 342),			//Electro Silicon
-	item('projectred-core:resource_item', 400),			//Electro Silicon
-	item('projectred-core:resource_item', 401),			//Iron Coil
-	item('projectred-core:resource_item', 402),			//Gold Coil
-	item('projectred-core:resource_item', 410),			//Motor
-	item('projectred-core:resource_item', 421),			//Sail
-	item('projectred-core:resource_item', 600),			//Null-Logic Routing Chip
-	item('projectred-core:drawplate'),					//Draw Plate
-	item('projectred-core:multimeter'),					//Multimeter
-	item('projectred-integration:gate', 34),			//IC Gate
-	item('projectred-transmission:wire', 34),			//Low Load Power Line
-	item('projectred-transmission:framed_wire', 34),	//Framed Low Load Power Line
+    item('projectred-core:resource_item', 104),         //Electrotine Alloy Ingot
+    item('projectred-core:resource_item', 105),         //Electrotine
+    item('projectred-core:resource_item', 202),         //Peridot
+    item('projectred-core:resource_item', 250),         //Sandy Coal Compound
+    item('projectred-core:resource_item', 251),         //Red Iron Compound
+    item('projectred-core:resource_item', 252),         //Electrotine Iron Compound
+    item('projectred-core:resource_item', 300),         //Silicon
+    item('projectred-core:resource_item', 310),         //Red Silicon Compound
+    item('projectred-core:resource_item', 311),         //Glowing Silicon Compound
+    item('projectred-core:resource_item', 312),         //Electrotine Silicon Compound
+    item('projectred-core:resource_item', 342),         //Electro Silicon
+    item('projectred-core:resource_item', 400),         //Electro Silicon
+    item('projectred-core:resource_item', 401),         //Iron Coil
+    item('projectred-core:resource_item', 402),         //Gold Coil
+    item('projectred-core:resource_item', 410),         //Motor
+    item('projectred-core:resource_item', 421),         //Sail
+    item('projectred-core:resource_item', 600),         //Null-Logic Routing Chip
+    item('projectred-core:drawplate'),                  //Draw Plate
+    item('projectred-core:multimeter'),                 //Multimeter
+    item('projectred-integration:gate', 34),            //IC Gate
+    item('projectred-transmission:wire', 34),           //Low Load Power Line
+    item('projectred-transmission:framed_wire', 34),    //Framed Low Load Power Line
 )
 
 def name_removals = [
@@ -61,168 +61,168 @@ crafting.replaceShapeless("projectred-transmission:red_alloy_wire", item('projec
 furnace.removeByOutput(item('projectred-core:resource_item'))
 
 crafting.addShaped("projectred-core:circuit_plate", item('projectred-core:resource_item'), [
-	[ore('wireFineRedAlloy'), ore('wireFineRedAlloy'), ore('wireFineRedAlloy')],
-	[ore('plateStone'), ore('plateStone'), ore('plateStone')],
-	[null, null, null]
+    [ore('wireFineRedAlloy'), ore('wireFineRedAlloy'), ore('wireFineRedAlloy')],
+    [ore('plateStone'), ore('plateStone'), ore('plateStone')],
+    [null, null, null]
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(ore('wireFineRedAlloy') * 3, ore('plateStone') * 3)
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(ore('wireFineRedAlloy') * 3, ore('plateStone') * 3)
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 
 // Conductive Plate
 crafting.replaceShaped("projectred-core:parts/conductive_plate", item('projectred-core:resource_item:1'), [
-	[null, ore('plateRedAlloy'), null],
-	[null, item('projectred-core:resource_item'), null],
-	[null, ore('craftingToolScrewdriver'), null]
+    [null, ore('plateRedAlloy'), null],
+    [null, item('projectred-core:resource_item'), null],
+    [null, ore('craftingToolScrewdriver'), null]
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(ore('plateRedAlloy'), item('projectred-core:resource_item'))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item:1'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(ore('plateRedAlloy'), item('projectred-core:resource_item'))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item:1'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Wired Plate
 crafting.replaceShaped("projectred-core:parts/wired_plate", item('projectred-core:resource_item:2'), [
-	[null, ore('plateRedAlloy'), null],
-	[null, item('projectred-core:resource_item'), null],
-	[null, ore('craftingToolScrewdriver'), null]
+    [null, ore('plateRedAlloy'), null],
+    [null, item('projectred-core:resource_item'), null],
+    [null, ore('craftingToolScrewdriver'), null]
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(ore('wireGtSingleRedAlloy'), item('projectred-core:resource_item'))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item:2'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(ore('wireGtSingleRedAlloy'), item('projectred-core:resource_item'))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item:2'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Bundled Plate
 crafting.replaceShaped("projectred-transmission:bundled_plate", item('projectred-core:resource_item:3'), [
-	[null, ore('projredBundledCable'), null],
-	[null, item('projectred-core:resource_item'), null],
-	[null, ore('craftingToolScrewdriver'), null]
+    [null, ore('projredBundledCable'), null],
+    [null, item('projectred-core:resource_item'), null],
+    [null, ore('craftingToolScrewdriver'), null]
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(item('projectred-core:resource_item'), ore('projredBundledCable'))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item:3'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(item('projectred-core:resource_item'), ore('projredBundledCable'))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item:3'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Platformed Plate
 crafting.replaceShaped("projectred-core:parts/platformed_plate", item('projectred-core:resource_item:4'), [
-	[null, item('projectred-core:resource_item'), null],
-	[item('projectred-core:resource_item:2'), ore('frameGtWood'), item('projectred-core:resource_item:2')],
-	[item('projectred-core:resource_item'), ore('craftingToolScrewdriver'), item('projectred-core:resource_item')]
+    [null, item('projectred-core:resource_item'), null],
+    [item('projectred-core:resource_item:2'), ore('frameGtWood'), item('projectred-core:resource_item:2')],
+    [item('projectred-core:resource_item'), ore('craftingToolScrewdriver'), item('projectred-core:resource_item')]
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(item('projectred-core:resource_item') * 3, item('projectred-core:resource_item', 2) * 2, ore('frameGtWood'))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item:4'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(item('projectred-core:resource_item') * 3, item('projectred-core:resource_item', 2) * 2, ore('frameGtWood'))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item:4'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Anode
 crafting.replaceShaped("projectred-core:parts/anode", item('projectred-core:resource_item:10'), [
-	[null, ore('plateRedstone'), null],
-	[null, item('projectred-core:resource_item'), null],
-	[null, ore('craftingToolScrewdriver'), null]
+    [null, ore('plateRedstone'), null],
+    [null, item('projectred-core:resource_item'), null],
+    [null, ore('craftingToolScrewdriver'), null]
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(item('projectred-core:resource_item'), ore('plateRedstone'))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item:10'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(item('projectred-core:resource_item'), ore('plateRedstone'))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item:10'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Cathode
 crafting.replaceShaped("projectred-core:parts/cathode", item('projectred-core:resource_item:11'), [
-	[null, ore('boltRedAlloy'), null],
-	[null, item('projectred-core:resource_item'), null],
-	[null, ore('craftingToolScrewdriver'), null]
+    [null, ore('boltRedAlloy'), null],
+    [null, item('projectred-core:resource_item'), null],
+    [null, ore('craftingToolScrewdriver'), null]
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(item('projectred-core:resource_item'), ore('boltRedAlloy'))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item:11'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(item('projectred-core:resource_item'), ore('boltRedAlloy'))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item:11'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Pointer
 crafting.replaceShaped("projectred-core:parts/pointer", item('projectred-core:resource_item:12'), [
-	[null, ore('circuitUlv'), null],
-	[null, item('projectred-core:resource_item:11'), null],
-	[null, ore('craftingToolScrewdriver'), null]
+    [null, ore('circuitUlv'), null],
+    [null, item('projectred-core:resource_item:11'), null],
+    [null, ore('craftingToolScrewdriver'), null]
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(ore('circuitUlv'), item('projectred-core:resource_item'))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item:12'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(ore('circuitUlv'), item('projectred-core:resource_item'))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item:12'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Bus Input Panel
 crafting.replaceShaped("projectred-integration:bus_input_panel", item('projectred-integration:gate:30'), [
-	[item('projectred-core:resource_item:3'), ore('craftingToolScrewdriver'), item('projectred-core:resource_item:3')],
-	[item('projectred-core:resource_item:3'), metaitem('cover.screen'), item('projectred-core:resource_item:3')],
-	[item('projectred-core:resource_item:3'), ore('circuitLv'), item('projectred-core:resource_item:3')],
+    [item('projectred-core:resource_item:3'), ore('craftingToolScrewdriver'), item('projectred-core:resource_item:3')],
+    [item('projectred-core:resource_item:3'), metaitem('cover.screen'), item('projectred-core:resource_item:3')],
+    [item('projectred-core:resource_item:3'), ore('circuitLv'), item('projectred-core:resource_item:3')],
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(item('projectred-core:resource_item:3') * 6, metaitem('cover.screen'), metaitem('cover.screen'))
-	.circuitMeta(7)
-	.outputs(item('projectred-integration:gate:30'))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(item('projectred-core:resource_item:3') * 6, metaitem('cover.screen'), metaitem('cover.screen'))
+    .circuitMeta(7)
+    .outputs(item('projectred-integration:gate:30'))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Infused Silicon
 furnace.removeByOutput(item('projectred-core:resource_item:320'))
 
 CHEMICAL_BATH.recipeBuilder()
-	.inputs(metaitem('plate.integrated_logic_circuit'))
-	.fluidInputs(fluid('redstone') * 1152)
-	.outputs(item('projectred-core:resource_item:320'))
-	.duration(400)
-	.EUt(6)
-	.buildAndRegister();
+    .inputs(metaitem('plate.integrated_logic_circuit'))
+    .fluidInputs(fluid('redstone') * 1152)
+    .outputs(item('projectred-core:resource_item:320'))
+    .duration(400)
+    .EUt(6)
+    .buildAndRegister();
 
 // Energized Silicon
 furnace.removeByOutput(item('projectred-core:resource_item:341'))
 
 CHEMICAL_BATH.recipeBuilder()
-	.inputs(metaitem('plate.integrated_logic_circuit'))
-	.fluidInputs(fluid('glowstone') * 1152)
-	.outputs(item('projectred-core:resource_item:341'))
-	.duration(400)
-	.EUt(6)
-	.buildAndRegister();
+    .inputs(metaitem('plate.integrated_logic_circuit'))
+    .fluidInputs(fluid('glowstone') * 1152)
+    .outputs(item('projectred-core:resource_item:341'))
+    .duration(400)
+    .EUt(6)
+    .buildAndRegister();
 
 // Silicon Chip
 ASSEMBLER.recipeBuilder()
-	.inputs(item('projectred-core:resource_item') * 3, item('projectred-core:resource_item', 320))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item', 20))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(item('projectred-core:resource_item') * 3, item('projectred-core:resource_item', 320))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item', 20))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 // Energized Silicon Chip
 ASSEMBLER.recipeBuilder()
-	.inputs(item('projectred-core:resource_item') * 3, item('projectred-core:resource_item', 341))
-	.circuitMeta(7)
-	.outputs(item('projectred-core:resource_item', 21))
-	.duration(100).EUt(VA[LV])
-	.buildAndRegister()
+    .inputs(item('projectred-core:resource_item') * 3, item('projectred-core:resource_item', 341))
+    .circuitMeta(7)
+    .outputs(item('projectred-core:resource_item', 21))
+    .duration(100).EUt(VA[LV])
+    .buildAndRegister()
 
 //Black Insulated Wire
 crafting.addShapeless(item('projectred-transmission:wire:16'), [ore('cableGtSingleRedAlloy')]);
