@@ -54,6 +54,7 @@ def name_removals = [
   'projectred-transmission:insulated/lime_insulated_wire',
   'projectred-transmission:insulated/purple_insulated_wire'
 ];
+
 for (name in name_removals) {
   crafting.remove(name)
 }
