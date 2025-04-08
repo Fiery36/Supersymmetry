@@ -66,6 +66,14 @@ crafting.addShaped("projectred-core:circuit_plate", item('projectred-core:resour
 	[null, null, null]
 ])
 
+ASSEMBLER.recipeBuilder()
+	.inputs(ore('wireFineRedAlloy') * 3, ore('plateStone') * 3)
+	.circuitMeta(7)
+	.outputs(item('projectred-core:resource_item'))
+	.duration(100).EUt(VA[LV])
+	.buildAndRegister()
+
+
 // Conductive Plate
 crafting.replaceShaped("projectred-core:parts/conductive_plate", item('projectred-core:resource_item:1'), [
 	[null, ore('plateRedAlloy'), null],
@@ -74,7 +82,7 @@ crafting.replaceShaped("projectred-core:parts/conductive_plate", item('projectre
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(metaitem('plateRedAlloy'), item('projectred-core:resource_item'))
+	.inputs(ore('plateRedAlloy'), item('projectred-core:resource_item'))
 	.circuitMeta(7)
 	.outputs(item('projectred-core:resource_item:1'))
 	.duration(100).EUt(VA[LV])
@@ -88,7 +96,7 @@ crafting.replaceShaped("projectred-core:parts/wired_plate", item('projectred-cor
 ])
 
 ASSEMBLER.recipeBuilder()
-	.inputs(metaitem('wireGtSingleRedAlloy'), item('projectred-core:resource_item'))
+	.inputs(ore('wireGtSingleRedAlloy'), item('projectred-core:resource_item'))
 	.circuitMeta(7)
 	.outputs(item('projectred-core:resource_item:2'))
 	.duration(100).EUt(VA[LV])
@@ -111,7 +119,7 @@ ASSEMBLER.recipeBuilder()
 // Platformed Plate
 crafting.replaceShaped("projectred-core:parts/platformed_plate", item('projectred-core:resource_item:4'), [
 	[null, item('projectred-core:resource_item'), null],
-	[item('projectred-core:resource_item:2'), ore('frameWood'), item('projectred-core:resource_item:2')],
+	[item('projectred-core:resource_item:2'), ore('frameGtWood'), item('projectred-core:resource_item:2')],
 	[item('projectred-core:resource_item'), ore('craftingToolScrewdriver'), item('projectred-core:resource_item')]
 ])
 
