@@ -1060,9 +1060,9 @@ crafting.addShaped("heavy_cloth", item('techguns:itemshared:60')*6, [
 ]);
 
 crafting.addShaped("techguns_iron_receiver", item('techguns:itemshared:33'), [
-		[ore('plateIron'), ore('plateIron'), ore('plateIron')],
-		[ore('craftingToolScrewdriver'), ore('boltIron'), ore('stickIron')],
-		[null, ore('screwIron'), ore('screwIron')]
+		[item('minecraft:iron_block'), ore('springSmallIron'), ore('gearSmallIron')],
+		[ore('craftingToolFile'), ore('boltIron'), ore('boltIron')],
+		[null, null, ore('craftingToolHardHammer')]
 ]);
 
 crafting.replaceShaped("techguns:t1_combat_helmet", item('techguns:t1_combat_helmet'), [
