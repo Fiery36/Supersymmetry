@@ -348,14 +348,20 @@ crafting.replaceShaped("techguns:item_bunkerdoor", item('techguns:item_bunkerdoo
 crafting.replaceShaped("techguns:revolver", item('techguns:revolver'), [
 	[ore('craftingToolHardHammer'), ore('plateIron'), ore('springSmallIron')],
 	[item('techguns:itemshared', 38), ore('gearSmallIron'), ore('boltIron')],
-	[ore('craftingToolFile'), item('techguns:itemshared', 42), ore('craftingToolScrewdriver')]
+	[ore('craftingToolFile'), item('techguns:itemshared', 42), item('techguns:itemshared', 1)]
 ])
 
 crafting.replaceShaped("techguns:boltaction", item('techguns:boltaction'), [
-	[null, ore('craftingToolWrench'), null],
+	[null, ore('craftingToolWrench'), item('techguns:itemshared', 3)],
 	[ore('plateGlass'), ore('ringIron'), ore('plateGlass')],
 	[item('techguns:itemshared', 38), item('techguns:itemshared', 33), item('techguns:itemshared', 42)]
 ])
+
+crafting.addShaped("tg_sawoff", item('techguns:sawedoff'), [
+		[ore('springSmallSteel'), metaitem('gun.barrel.steel'), null],
+		[metaitem('gun.barrel.steel'), item('techguns:itemshared', 33), item('techguns:itemshared', 2)],
+		[null, item('techguns:itemshared', 2), item('techguns:itemshared', 42)]
+]);
 
 crafting.replaceShaped("techguns:pistolrounds", item('techguns:itemshared', 1) * 4, [
 	[ore('plateBrass'), ore('gunpowder'), ore('roundLead')],
@@ -377,12 +383,6 @@ crafting.replaceShapeless("techguns:sandbags", item('techguns:sandbags') * 8, [
 	ore('sand'),
 	ore('sand')
 ])
-
-crafting.addShaped("tg_sawoff", item('techguns:sawedoff'), [
-		[metaitem('gun.barrel.steel'), ore('springSmallSteel'), metaitem('gun.barrel.steel')],
-		[item('techguns:itemshared', 33), item('techguns:itemshared', 2), item('techguns:itemshared', 42)],
-		[null, null, null]
-]);
 
 mods.gregtech.assembler.recipeBuilder()
 	.inputs(metaitem('hull.lv'))
@@ -553,7 +553,8 @@ Globals.solders.each { key, val ->
 			ore('plateIron'),
 			ore('gearSmallIron'),
 			ore('boltIron'),
-			ore('springSmallIron')
+			ore('springSmallIron'),
+			item('techguns:itemshared', 1)
 		])
 		.fluidInputs(fluid(key) * val)
 		.outputs(item('techguns:revolver'))
@@ -567,7 +568,8 @@ Globals.solders.each { key, val ->
 			item('techguns:itemshared', 33),
 			item('techguns:itemshared', 42),
 			ore('plateGlass') * 2,
-			ore('ringIron')
+			ore('ringIron'),
+			item('techguns:itemshared', 3)
 		])
 		.fluidInputs(fluid(key) * val)
 		.outputs(item('techguns:boltaction'))
@@ -643,7 +645,8 @@ Globals.solders.each { key, val ->
 				item('techguns:itemshared', 43),
 				ore('stickSteel'),
 				ore('springSmallSteel'),
-				ore('plateSteel') * 4
+				ore('plateSteel') * 4,
+				item('techguns:itemshared', 2) * 8
 		])
 		.fluidInputs(fluid(key) * val)
 		.outputs(item('techguns:combatshotgun'))
@@ -657,7 +660,7 @@ Globals.solders.each { key, val ->
 					item('techguns:itemshared', 33),
 					item('techguns:itemshared', 42),
 					ore('springSmallSteel'),
-					item('techguns:itemshared', 2)
+					item('techguns:itemshared', 2) * 2
 			])
 			.fluidInputs(fluid(key) * val)
 			.outputs(item('techguns:sawedoff'))
