@@ -5,8 +5,14 @@ CHEMICAL_BATH = recipemap('chemical_bath')
 log.infoMC("Running projectRed.groovy...")
 
 mods.jei.ingredient.yeet(
+    item('projectred-core:resource_item', 100),         //Copper Ingot
+    item('projectred-core:resource_item', 101),         //Tin Ingot
+    item('projectred-core:resource_item', 102),         //Silver Ingot
+    item('projectred-core:resource_item', 103),         //Red Alloy Ingot
     item('projectred-core:resource_item', 104),         //Electrotine Alloy Ingot
     item('projectred-core:resource_item', 105),         //Electrotine
+    item('projectred-core:resource_item', 200),         //Ruby
+    item('projectred-core:resource_item', 201),         //Sapphire
     item('projectred-core:resource_item', 202),         //Peridot
     item('projectred-core:resource_item', 250),         //Sandy Coal Compound
     item('projectred-core:resource_item', 251),         //Red Iron Compound
