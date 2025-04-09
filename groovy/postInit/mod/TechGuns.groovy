@@ -74,6 +74,8 @@ def name_removals = [
 	"techguns:pistol",
 	"techguns:pistol_alt",
 	"techguns:combatshotgun",
+	"techguns:combatshotgun_ammo_default",
+	"techguns:combatshotgun_ammo_incendiary",
 	"techguns:goldenrevolver",
 	"techguns:mac10",
 	"techguns:mac10_alt",
@@ -89,6 +91,8 @@ def name_removals = [
 	"techguns:aug",
 	"techguns:aug_alt",
 	"techguns:sawedoff",
+	"techguns:sawedoff_ammo_default",
+	"techguns:sawedoff_ammo_incendiary",
 	"techguns:netherblaster",
 	"techguns:biogun",
 	"techguns:biogun_alt",
@@ -1148,16 +1152,6 @@ crafting.replaceShapeless("techguns:pistol_ammo_incendiary", item('techguns:pist
 	item('techguns:itemshared', 113)
 ]);
 
-crafting.replaceShapeless("techguns:sawedoff_ammo_default", item('techguns:sawedoff'), [
-	item('techguns:sawedoff:*'), 
-	item('techguns:itemshared', 2)
-]);
-
-crafting.replaceShapeless("techguns:sawedoff_ammo_incendiary", item('techguns:sawedoff').withNbt([ammovariant: 'incendiary', ammo: 2]), [
-	item('techguns:sawedoff:*'), 
-	item('techguns:itemshared', 106)
-]);
-
 crafting.replaceShapeless("techguns:ak47_ammo_default", item('techguns:ak47'), [
 	item('techguns:ak47:*'), 
 	item('techguns:itemshared', 13)
@@ -1168,6 +1162,87 @@ crafting.replaceShapeless("techguns:ak47_ammo_incendiary", item('techguns:ak47')
 	item('techguns:itemshared', 115)
 ]);
 
+//Shotgun reloading recipes 
+
+crafting.shapelessBuilder()
+	.name('techguns:sawedoff_ammo_default') 
+	.output(item('techguns:sawedoff').withNbt([ammovariant: 'default', ammo: 2])) 
+	.input(item('techguns:sawedoff:*').mark('ammo'))
+	.input(item('techguns:itemshared', 2))
+	.recipeFunction { output, inputs, info -> 
+		if (!output.hasTagCompound()) { 
+            output.setTagCompound(new net.minecraft.nbt.NBTTagCompound())
+   		}
+        if (inputs['ammo'].getTagCompound().getString("ammovariant") == 'incendiary') {            
+            output.getTagCompound().setShort("ammo", (short) 1) 
+   		}
+		else {
+			short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
+    		short newAmmo = (short) Math.min(currentAmmo + 1, 2)        
+    		output.getTagCompound().setShort("ammo", (short) newAmmo)
+		}
+    }
+	.register()
+
+crafting.shapelessBuilder()
+    .name('techguns:sawedoff_ammo_incendiary')
+    .output(item('techguns:sawedoff').withNbt([ammovariant: 'incendiary', ammo: 2])) 
+    .input(item('techguns:sawedoff:*').mark('ammo'))  
+    .input(item('techguns:itemshared', 106)) 
+    .recipeFunction { output, inputs, info ->
+		if (!output.hasTagCompound()) { 
+            output.setTagCompound(new net.minecraft.nbt.NBTTagCompound()) 
+   		}
+		if (inputs['ammo'].getTagCompound().getString("ammovariant") != 'incendiary') {
+            output.getTagCompound().setShort("ammo", (short) 1) 
+   		}
+		else {
+			short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
+    		short newAmmo = (short) Math.min(currentAmmo + 1, 2)        
+    		output.getTagCompound().setShort("ammo", (short) newAmmo)
+		}
+    }
+    .register()  
+
+crafting.shapelessBuilder()
+	.name('techguns:combatshotgun_ammo_default') 
+	.output(item('techguns:combatshotgun').withNbt([ammovariant: 'default', ammo: 8])) 
+	.input(item('techguns:combatshotgun:*').mark('ammo')) 
+	.input(item('techguns:itemshared', 2))
+	.recipeFunction { output, inputs, info -> 
+		if (!output.hasTagCompound()) { 
+            output.setTagCompound(new net.minecraft.nbt.NBTTagCompound()) 
+   		}
+		if (inputs['ammo'].getTagCompound().getString("ammovariant") == 'incendiary') {
+            output.getTagCompound().setShort("ammo", (short) 1) 
+   		}
+		else {
+			short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
+    		short newAmmo = (short) Math.min(currentAmmo + 1, 8)        
+    		output.getTagCompound().setShort("ammo", (short) newAmmo)
+		}
+    }
+	.register()
+
+crafting.shapelessBuilder()
+	.name('techguns:combatshotgun_ammo_incendiary') 
+	.output(item('techguns:combatshotgun').withNbt([ammovariant: 'incendiary', ammo: 8]))
+	.input(item('techguns:combatshotgun:*').mark('ammo')) 
+	.input(item('techguns:itemshared', 106))
+	.recipeFunction { output, inputs, info -> 
+		if (!output.hasTagCompound()) { 
+            output.setTagCompound(new net.minecraft.nbt.NBTTagCompound()) 
+   		}
+		if (inputs['ammo'].getTagCompound().getString("ammovariant") != 'incendiary') {
+            output.getTagCompound().setShort("ammo", (short) 1) 
+   		}
+		else {
+			short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
+    		short newAmmo = (short) Math.min(currentAmmo + 1, 8)        
+    		output.getTagCompound().setShort("ammo", (short) newAmmo)
+		}
+    }
+	.register()
 
 //--------------------GregTech machines only recipes--------------------
 
