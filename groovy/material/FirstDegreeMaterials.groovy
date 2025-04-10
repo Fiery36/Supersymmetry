@@ -3566,7 +3566,7 @@ public class FirstDegreeMaterials {
         HSLAEightyX = new Material.Builder(8634, SuSyUtility.susyId("hsla_eighty_x"))
                 .ingot().liquid(new FluidBuilder().temperature(1770))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_FRAME)
                 .components(Iron * 39, Manganese)
                 .colorAverage()
                 .build()
