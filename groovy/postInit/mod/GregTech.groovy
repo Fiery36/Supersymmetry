@@ -1294,11 +1294,14 @@ crafting.shapedBuilder()
         [ore('stickSteelMagnetic'), metaitem('battery.lead_acid').mark('battery'), ore('stickSteelMagnetic')],
         [ore('cableGtSingleTin'), ore('plateSteel'), ore('cableGtSingleTin')]
 	])
-	.recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
-    }
+        .recipeFunction { output, inputs, info -> 
+                def batteryTag = inputs['battery']?.getTagCompound()
+                if (batteryTag != null) {
+                        output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
+                }
+        }
 	.register()
-	
+
 // Power Unit with Lead Acid Battery
 
 crafting.shapedBuilder()
@@ -1310,23 +1313,29 @@ crafting.shapedBuilder()
         [ore('plateSteel'), metaitem('battery.lead_acid').mark('battery'), ore('plateSteel')]
 	])
 	.recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
-    }
+                def batteryTag = inputs['battery']?.getTagCompound()
+                if (batteryTag != null) {
+                        output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
+                }
+        }
 	.register()
 
 // Prospector's Scanner with Lead Acid battery
 
 crafting.shapedBuilder()
-    .name("gregtech:prospector_lead_acid")
-    .output(metaitem('prospector.lv').withNbt(['MaxCharge': 120000L]))
-	.shape([
-		[metaitem('emitter.lv'), ore('plateSteel'), metaitem('sensor.lv')],
+        .name("gregtech:prospector_lead_acid")
+        .output(metaitem('prospector.lv').withNbt(['MaxCharge': 120000L]))
+        .shape([
+	[metaitem('emitter.lv'), ore('plateSteel'), metaitem('sensor.lv')],
         [ore('circuitLv'), ore('plateGlass'), ore('circuitLv')],
         [ore('plateSteel'), metaitem('battery.lead_acid').mark('battery'), ore('plateSteel')]
 	])
-    .recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
-    }
+	.recipeFunction { output, inputs, info -> 
+                def batteryTag = inputs['battery']?.getTagCompound()
+                if (batteryTag != null) {
+                        output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
+                }
+        }
 	.register()
 
 // NightVision Goggles with other batteries
@@ -1340,8 +1349,11 @@ crafting.shapedBuilder()
 		[metaitem('lensGlass'), ore('toolScrewdriver'), metaitem('lensGlass')]
 	])
 	.recipeFunction { output, inputs, info -> 
-        ooutput.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
-    }
+                def batteryTag = inputs['battery']?.getTagCompound()
+                if (batteryTag != null) {
+                        output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
+                }
+        }
 	.register()
 
 crafting.shapedBuilder()
@@ -1353,8 +1365,11 @@ crafting.shapedBuilder()
 		[metaitem('lensGlass'), ore('toolScrewdriver'), metaitem('lensGlass')]
 	])
 	.recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setLong("Charge", inputs['battery'].getTagCompound().getLong("Charge"))
-    }
+                def batteryTag = inputs['battery']?.getTagCompound()
+                if (batteryTag != null) {
+                        output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
+                }
+        }
 	.register()
 
 // Stone oredict stuff
