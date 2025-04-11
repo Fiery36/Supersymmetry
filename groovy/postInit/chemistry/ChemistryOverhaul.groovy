@@ -3994,3 +3994,14 @@ MIXER.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
+// Potassium Iodine
+
+BR.recipeBuilder()
+    .inputs(ore('dustIodine') * 6)
+    .inputs(ore('dustPotassiumHydroxide') * 18)
+    .fluidInputs(fluid('gtfo_heated_water') * 2000)
+    .outputs(ore('dustPotassiumIodate') * 5)
+    .fluidOutputs(fluid('potassium_iodine_solution') * 5000)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister()
