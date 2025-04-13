@@ -3951,5 +3951,19 @@ public class FirstDegreeMaterials {
                 .components(Holmium, Fluorine * 3)
                 .colorAverage()
                 .build()
+
+        PraseodymiumIVHydroxide = new Material.Builder(8697, SuSyUtility.susyId('praseodymium_hydroxide'))
+                .dust()
+                .components(Praseodymium, Oxygen * 4, Hydrogen * 4)
+                .color(0x67ba49)
+                .build()
+                .setFormula('Pr(OH)4', true)
+
+        NeodymiumHydroxide = new Material.Builder(8698, SuSyUtility.susyId('neodymium_hydroxide'))
+                .dust()
+                .components(Neodymium, Oxygen * 3, Hydrogen * 3)
+                .color(0xbd8be0)
+                .build()
+                .setFormula('Nd(OH)3', true)
     }
 }

@@ -1336,8 +1336,10 @@ class SuSyMaterials {
         public static Material LanthanumChloride;
         public static Material LanthanumFluoride;
         public static Material LanthanumOxide;
+        public static Material PraseodymiumIVHydroxide;
         public static Material PraseodymiumOxide;
         public static Material PraseodymiumFluoride;
+        public static Material NeodymiumHydroxide;
         public static Material NeodymiumFluoride;
         public static Material EuropiumIISulfate;
         public static Material EuropiumOxide;
