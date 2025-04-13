@@ -376,7 +376,7 @@ ASSEMBLER.recipeBuilder()
 
 RecyclingHelper.addShaped("gregtech:steam_pump", metaitem('susy:pump.steam'), [
     [ore('screwBronze'), ore('rotorBronze'), ore('ringIron')],
-    [ore('toolScrewdriver'), ore('pipeTinyFluidBronze'), ore('toolWrench')],
+    [ore('craftingToolScrewdriver'), ore('pipeTinyFluidBronze'), ore('craftingToolWrench')],
     [ore('ringIron'), metaitem('steam.motor'), ore('pipeTinyFluidBronze')]
 ])
 
