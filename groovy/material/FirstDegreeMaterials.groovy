@@ -3579,7 +3579,7 @@ public class FirstDegreeMaterials {
                 .blastTemp(2600, GasTier.MID, GTValues.VA[GTValues.HV])
                 .build();
 
-        HSLA80X.setFormula("Fe99Mn", true)
+        HSLA980X.setFormula("Fe99Mn", true)
 
         FoodGradeStainlessSteel = new Material.Builder(8635, SuSyUtility.susyId("food_grade_stainless_steel"))
                 .ingot().liquid(new FluidBuilder().temperature(1780))
