@@ -1071,7 +1071,7 @@ crafting.addShaped("heavy_cloth", item('techguns:itemshared:60')*6, [
 
 crafting.addShaped("techguns_iron_receiver", item('techguns:itemshared:33'), [
 		[ore('plateIron'), ore('plateIron'), ore('plateIron')],
-		[ore('craftingToolScrewdriver'), ore('boltIron'), ore('stickIron')],
+		[ore('craftingToolScrewdriver'), ore('stickLongIron'), ore('springIron')],
 		[null, ore('screwIron'), ore('screwIron')]
 ]);
 
