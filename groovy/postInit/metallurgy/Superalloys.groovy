@@ -268,7 +268,7 @@ RecyclingHelper.replaceShaped('gcym:casing_corrosion_proof', item('gcym:large_mu
         [ore('plateIncoloy825'), ore('craftingToolWrench'), ore('plateIncoloy825')]])
 
 ASSEMBLER.recipeBuilder()
-        .circuitMeta(8)
+        .circuitMeta(7)
         .inputs(ore('frameGtHsla980X'))
         .inputs(ore('plateIncoloy825') * 4)
         .inputs(ore('plateReneN5') * 2)
@@ -284,7 +284,7 @@ RecyclingHelper.replaceShaped('gcym:casing_vibration_safe', item('gcym:large_mul
         [ore('plateStelliteJ'), ore('craftingToolWrench'), ore('plateStelliteJ')]])
 
 ASSEMBLER.recipeBuilder()
-        .circuitMeta(7)
+        .circuitMeta(8)
         .inputs(ore('frameGtHsla980X'))
         .inputs(ore('plateStelliteJ') * 4)
         .inputs(ore('plateIncoloy825') * 2)
