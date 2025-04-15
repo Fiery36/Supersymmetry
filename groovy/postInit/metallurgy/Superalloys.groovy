@@ -268,7 +268,7 @@ RecyclingHelper.replaceShaped('gcym:casing_corrosion_proof', item('gcym:large_mu
         [metaitem('plateIncoloyEightTwoFive'), ore('craftingToolWrench'), metaitem('plateIncoloyEightTwoFive')]])
 
 ASSEMBLER.recipeBuilder()
-        .circuitMeta(7)
+        .circuitMeta(8)
         .inputs(ore('frameGtHslaEightyX'))
         .inputs(ore('plateIncoloyEightTwoFive') * 4)
         .inputs(ore('plateRene') * 2)
