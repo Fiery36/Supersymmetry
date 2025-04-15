@@ -202,13 +202,13 @@ mods.gregtech.assembler.removeByInput(16, [metaitem('plateTitaniumTungstenCarbid
 
 // Secure Maceration Casing
 RecyclingHelper.replaceShaped('gcym:casing_large_macerator', item('gcym:large_multiblock_casing') * 2, [
-        [metaitem('plateStelliteJ'), ore('craftingToolHardHammer'), metaitem('plateStelliteJ')],
-        [metaitem('plateStelliteJ'), ore('frameGtHslaEightyX'), metaitem('plateStelliteJ')],
-        [metaitem('plateStelliteJ'), ore('craftingToolWrench'), metaitem('plateStelliteJ')]])
+        [ore('plateStelliteJ'), ore('craftingToolHardHammer'), ore('plateStelliteJ')],
+        [ore('plateStelliteJ'), ore('frameGtHsla980X'), ore('plateStelliteJ')],
+        [ore('plateStelliteJ'), ore('craftingToolWrench'), ore('plateStelliteJ')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(6)
-        .inputs(ore('frameGtHslaEightyX'))
+        .inputs(ore('frameGtHsla980X'))
         .inputs(ore('plateStelliteJ') * 6)
         .outputs(item('gcym:large_multiblock_casing') * 2)
         .duration(50)
@@ -217,9 +217,9 @@ ASSEMBLER.recipeBuilder()
 
 // High Temperature Casing
 RecyclingHelper.replaceShaped('gcym:casing_high_temperature', item('gcym:large_multiblock_casing', 1) * 2, [
-        [metaitem('plateTitanium'), ore('craftingToolHardHammer'), metaitem('plateTitanium')],
-        [metaitem('plateTitaniumCarbide'), metaitem('frameTungstenCarbide'), metaitem('plateTitaniumCarbide')],
-        [metaitem('plateTitanium'), ore('craftingToolWrench'), metaitem('plateTitanium')]])
+        [ore('plateTitanium'), ore('craftingToolHardHammer'), ore('plateTitanium')],
+        [ore('plateTitaniumCarbide'), metaitem('frameTungstenCarbide'), ore('plateTitaniumCarbide')],
+        [ore('plateTitanium'), ore('craftingToolWrench'), ore('plateTitanium')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(7)
@@ -233,14 +233,14 @@ ASSEMBLER.recipeBuilder()
 
 // Large-Scale Assembler Casing
 RecyclingHelper.replaceShaped('gcym:casing_large_assembler', item('gcym:large_multiblock_casing', 2) * 2, [
-        [metaitem('plateHslaEightyX'), ore('craftingToolHardHammer'), metaitem('plateHslaEightyX')],
-        [metaitem('plateHslaEightyX'), ore('frameGtHslaEightyX'), metaitem('plateHslaEightyX')],
-        [metaitem('plateHslaEightyX'), ore('craftingToolWrench'), metaitem('plateHslaEightyX')]])
+        [ore('plateHsla980X'), ore('craftingToolHardHammer'), ore('plateHsla980X')],
+        [ore('plateHsla980X'), ore('frameGtHsla980X'), ore('plateHsla980X')],
+        [ore('plateHsla980X'), ore('craftingToolWrench'), ore('plateHsla980X')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(6)
         .inputs(ore('frameGtHslaEightyX'))
-        .inputs(ore('plateHslaEightyX') * 6)
+        .inputs(ore('plateHsla980X') * 6)
         .outputs(item('gcym:large_multiblock_casing', 2) * 2)
         .duration(50)
         .EUt(16)
@@ -248,14 +248,14 @@ ASSEMBLER.recipeBuilder()
 
 // Stress Proof Casing
 RecyclingHelper.replaceShaped('gcym:casing_stress_proof', item('gcym:large_multiblock_casing', 3) * 2, [
-        [metaitem('plateIncoloyNineZeroEight'), ore('craftingToolHardHammer'), metaitem('plateIncoloyNineZeroEight')],
-        [metaitem('plateIncoloyNineZeroEight'), ore('frameGtHslaEightyX'), metaitem('plateIncoloyNineZeroEight')],
-        [metaitem('plateIncoloyNineZeroEight'), ore('craftingToolWrench'), metaitem('plateIncoloyNineZeroEight')]])
+        [ore('plateIncoloy908'), ore('craftingToolHardHammer'), ore('plateIncoloy908')],
+        [ore('plateIncoloy908'), ore('frameGtHsla980X'), ore('plateIncoloy908')],
+        [ore('plateIncoloy908'), ore('craftingToolWrench'), ore('plateIncoloy908')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(6)
-        .inputs(ore('frameGtHslaEightyX'))
-        .inputs(ore('plateIncoloyNineZeroEight') * 6)
+        .inputs(ore('frameGtHsla980X'))
+        .inputs(ore('plateIncoloy908') * 6)
         .outputs(item('gcym:large_multiblock_casing', 3) * 2)
         .duration(50)
         .EUt(16)
@@ -263,15 +263,15 @@ ASSEMBLER.recipeBuilder()
 
 // Corrosion Proof Casing
 RecyclingHelper.replaceShaped('gcym:casing_corrosion_proof', item('gcym:large_multiblock_casing', 4) * 2, [
-        [metaitem('plateIncoloyEightTwoFive'), ore('craftingToolHardHammer'), metaitem('plateIncoloyEightTwoFive')],
-        [metaitem('plateRene'), ore('frameGtHslaEightyX'), metaitem('plateRene')],
-        [metaitem('plateIncoloyEightTwoFive'), ore('craftingToolWrench'), metaitem('plateIncoloyEightTwoFive')]])
+        [ore('plateIncoloy825'), ore('craftingToolHardHammer'), ore('plateIncoloy825')],
+        [ore('plateReneN5'), ore('frameGtHsla980X'), ore('plateReneN5')],
+        [ore('plateIncoloy825'), ore('craftingToolWrench'), ore('plateIncoloy825')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(8)
-        .inputs(ore('frameGtHslaEightyX'))
-        .inputs(ore('plateIncoloyEightTwoFive') * 4)
-        .inputs(ore('plateRene') * 2)
+        .inputs(ore('frameGtHsla980X'))
+        .inputs(ore('plateIncoloy825') * 4)
+        .inputs(ore('plateReneN5') * 2)
         .outputs(item('gcym:large_multiblock_casing', 4) * 2)
         .duration(50)
         .EUt(16)
@@ -279,15 +279,15 @@ ASSEMBLER.recipeBuilder()
 
 // Vibration-Safe Casing
 RecyclingHelper.replaceShaped('gcym:casing_vibration_safe', item('gcym:large_multiblock_casing', 5) * 2, [
-        [metaitem('plateStelliteJ'), ore('craftingToolHardHammer'), metaitem('plateStelliteJ')],
-        [metaitem('plateIncoloyEightTwoFive'), ore('frameGtHslaEightyX'), metaitem('plateIncoloyEightTwoFive')],
-        [metaitem('plateStelliteJ'), ore('craftingToolWrench'), metaitem('plateStelliteJ')]])
+        [ore('plateStelliteJ'), ore('craftingToolHardHammer'), ore('plateStelliteJ')],
+        [ore('plateIncoloy825'), ore('frameGtHsla980X'), ore('plateIncoloy825')],
+        [ore('plateStelliteJ'), ore('craftingToolWrench'), ore('plateStelliteJ')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(7)
-        .inputs(ore('frameGtHslaEightyX'))
+        .inputs(ore('frameGtHsla980X'))
         .inputs(ore('plateStelliteJ') * 4)
-        .inputs(ore('plateIncoloyEightTwoFive') * 2)
+        .inputs(ore('plateIncoloy825') * 2)
         .outputs(item('gcym:large_multiblock_casing', 5) * 2)
         .duration(50)
         .EUt(16)
@@ -295,14 +295,14 @@ ASSEMBLER.recipeBuilder()
 
 // Watertight Casing
 RecyclingHelper.replaceShaped('gcym:casing_watertight', item('gcym:large_multiblock_casing', 6) * 2, [
-        [metaitem('plateIncoloyEightTwoFive'), ore('craftingToolHardHammer'), metaitem('plateIncoloyEightTwoFive')],
-        [metaitem('plateIncoloyEightTwoFive'), ore('frameGtHslaEightyX'), metaitem('plateIncoloyEightTwoFive')],
-        [metaitem('plateIncoloyEightTwoFive'), ore('craftingToolWrench'), metaitem('plateIncoloyEightTwoFive')]])
+        [ore('plateIncoloy825'), ore('craftingToolHardHammer'), ore('plateIncoloy825')],
+        [ore('plateIncoloy825'), ore('frameGtHsla980X'), ore('plateIncoloy825')],
+        [ore('plateIncoloy825'), ore('craftingToolWrench'), ore('plateIncoloy825')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(6)
-        .inputs(ore('frameGtHslaEightyX'))
-        .inputs(ore('plateIncoloyEightTwoFive') * 6)
+        .inputs(ore('frameGtHsla980X'))
+        .inputs(ore('plateIncoloy825') * 6)
         .outputs(item('gcym:large_multiblock_casing', 6) * 2)
         .duration(50)
         .EUt(16)
@@ -310,15 +310,15 @@ ASSEMBLER.recipeBuilder()
 
 // Shock Proof Cutting Casing
 RecyclingHelper.replaceShaped('gcym:casing_large_cutter', item('gcym:large_multiblock_casing', 7) * 2, [
-        [metaitem('plateStelliteJ'), ore('craftingToolHardHammer'), metaitem('plateStelliteJ')],
-        [metaitem('plateIncoloyNineZeroEight'), ore('frameGtHslaEightyX'), metaitem('plateIncoloyNineZeroEight')],
-        [metaitem('plateStelliteJ'), ore('craftingToolWrench'), metaitem('plateStelliteJ')]])
+        [ore('plateStelliteJ'), ore('craftingToolHardHammer'), ore('plateStelliteJ')],
+        [ore('plateIncoloy908'), ore('frameGtHsla980X'), ore('plateIncoloy908')],
+        [ore('plateStelliteJ'), ore('craftingToolWrench'), ore('plateStelliteJ')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(7)
-        .inputs(ore('frameGtHslaEightyX'))
+        .inputs(ore('frameGtHsla980X'))
         .inputs(ore('plateStelliteJ') * 4)
-        .inputs(ore('plateIncoloyNineZeroEight') * 2)
+        .inputs(ore('plateIncoloy908') * 2)
         .outputs(item('gcym:large_multiblock_casing', 7) * 2)
         .duration(50)
         .EUt(16)
@@ -326,14 +326,14 @@ ASSEMBLER.recipeBuilder()
 
 // Nonconducting Casing
 RecyclingHelper.replaceShaped('gcym:casing_nonconducting', item('gcym:large_multiblock_casing', 8) * 2, [
-        [metaitem('plateStelliteSix'), ore('craftingToolHardHammer'), metaitem('plateStelliteSix')],
-        [metaitem('plateStelliteSix'), ore('frameGtHslaEightyX'), metaitem('plateStelliteSix')],
-        [metaitem('plateStelliteSix'), ore('craftingToolWrench'), metaitem('plateStelliteSix')]])
+        [ore('plateStellite6'), ore('craftingToolHardHammer'), ore('plateStellite6')],
+        [ore('plateStellite6'), ore('frameGtHsla980X'), ore('plateStellite6')],
+        [ore('plateStellite6'), ore('craftingToolWrench'), ore('plateStellite6')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(6)
-        .inputs(ore('frameGtHslaEightyX'))
-        .inputs(ore('plateStelliteSix') * 6)
+        .inputs(ore('frameGtHsla980X'))
+        .inputs(ore('plateStellite6') * 6)
         .outputs(item('gcym:large_multiblock_casing:', 8) * 2)
         .duration(50)
         .EUt(16)
@@ -341,14 +341,14 @@ ASSEMBLER.recipeBuilder()
 
 // Reaction-Safe Mixing Casing
 RecyclingHelper.replaceShaped('gcym:casing_large_mixer', item('gcym:large_multiblock_casing', 9) * 2, [
-        [metaitem('plateIncoloyTwenty'), ore('craftingToolHardHammer'), metaitem('plateIncoloyTwenty')],
-        [metaitem('plateIncoloyTwenty'), ore('frameGtHslaEightyX'), metaitem('plateIncoloyTwenty')],
-        [metaitem('plateIncoloyTwenty'), ore('craftingToolWrench'), metaitem('plateIncoloyTwenty')]])
+        [ore('plateIncoloy20'), ore('craftingToolHardHammer'), ore('plateIncoloy20')],
+        [ore('plateIncoloy20'), ore('frameGtHsla980X'), ore('plateIncoloy20')],
+        [ore('plateIncoloy20'), ore('craftingToolWrench'), ore('plateIncoloy20')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(6)
-        .inputs(ore('frameGtHslaEightyX'))
-        .inputs(ore('plateIncoloyTwenty') * 6)
+        .inputs(ore('frameGtHsla980X'))
+        .inputs(ore('plateIncoloy20') * 6)
         .outputs(item('gcym:large_multiblock_casing', 9) * 2)
         .duration(50)
         .EUt(16)
@@ -356,15 +356,15 @@ ASSEMBLER.recipeBuilder()
 
 // Laser-Safe Engraving Casing
 RecyclingHelper.replaceShaped('gcym:casing_large_engraver', item('gcym:large_multiblock_casing', 10) * 2, [
-        [metaitem('plateRene'), ore('craftingToolHardHammer'), metaitem('plateRene')],
-        [metaitem('plateHslaEightyX'), ore('frameGtHslaEightyX'), metaitem('plateHslaEightyX')],
-        [metaitem('plateRene'), ore('craftingToolWrench'), metaitem('plateRene')]])
+        [ore('plateReneN5'), ore('craftingToolHardHammer'), ore('plateReneN5')],
+        [ore('plateHsla980X'), ore('frameGtHsla980X'), ore('plateHsla980X')],
+        [ore('plateReneN5'), ore('craftingToolWrench'), ore('plateReneN5')]])
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(7)
-        .inputs(ore('frameGtHslaEightyX'))
-        .inputs(ore('plateRene') * 4)
-        .inputs(ore('plateHslaEightyX') * 2)
+        .inputs(ore('frameGtHsla980X'))
+        .inputs(ore('plateReneN5') * 4)
+        .inputs(ore('plateHsla980X') * 2)
         .outputs(item('gcym:large_multiblock_casing', 10) * 2)
         .duration(50)
         .EUt(16)
