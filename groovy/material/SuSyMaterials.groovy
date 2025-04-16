@@ -1293,6 +1293,7 @@ class SuSyMaterials {
         public static Material AmmoniumHexachloroiridate;
         public static Material PotassiumOsmate;
         public static Material SodiumHydrosulfide;
+        public static Material PotassiumIodate;
 
         // HP Materials
 

@@ -3660,5 +3660,11 @@ public class FirstDegreeMaterials {
                 .components(Sodium, Sulfur, Hydrogen)
                 .colorAverage()
                 .build();
+
+        PotassiumIodate = new Material.Builder(8648, SuSyUtility.susyId('potassium_iodate'))
+                .dust()
+                .components(Potassium, Iodine, Oxygen * 3)
+                .colorAverage()
+                .build();
     }
 }
