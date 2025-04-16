@@ -3573,7 +3573,7 @@ public class FirstDegreeMaterials {
         HSLA980X = new Material.Builder(8634, SuSyUtility.susyId("hsla_980_x"))
                 .ingot().liquid(new FluidBuilder().temperature(1770))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_FRAME)
                 .components(Iron * 39, Manganese)
                 .colorAverage()
                 .blastTemp(2600, GasTier.MID, GTValues.VA[GTValues.HV])
