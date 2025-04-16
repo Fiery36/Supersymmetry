@@ -1890,7 +1890,7 @@ RecyclingHelper.handleRecycling(metaitem('wing.small'), [
 
 // Small turbojet
 ASSEMBLER.recipeBuilder()
-        .inputs(metaitem('rotorRene') * 4)
+        .inputs(metaitem('rotorReneN5') * 4)
         .inputs(ore('stickLongTitanium'))
         .inputs(ore('plateTitanium') * 2)
         .inputs(ore('boltTitanium') * 4)
@@ -1902,7 +1902,7 @@ ASSEMBLER.recipeBuilder()
         .buildAndRegister();
 
 RecyclingHelper.handleRecycling(metaitem('turbojet.small'), [
-        metaitem('rotorRene') * 4,
+        metaitem('rotorReneN5') * 4,
         ore('stickLongTitanium'),
         ore('plateTitanium') * 2,
         ore('boltTitanium') * 4,
