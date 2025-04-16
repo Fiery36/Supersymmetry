@@ -11,182 +11,182 @@ LATHE = recipemap('lathe')
 CHEMICAL_BATH = recipemap('chemical_bath')
 
 def name_removals = [
-	"techguns:basicmachine_0_ammo_press",
-	"techguns:basicmachine_1_metal_press_alt",
-	"techguns:basicmachine_1_metal_press",
-	"techguns:basicmachine_2_chem_lab",
-	"techguns:basicmachine_3_turret",
-	"techguns:simplemachine2_8_grinder",
-	"techguns:simplemachine_11_blast_furnace",
-	"techguns:simplemachine_10_charging_station",
-	"techguns:multiblockmachine_0_fabricator_housing",
-	"techguns:multiblockmachine_1_fabricator_glass",
-	"techguns:multiblockmachine_2_fabricator_controller",
-	"techguns:multiblockmachine_3_reactionchamber_housing",
-	"techguns:multiblockmachine_4_reactionchamber_glass",
-	"techguns:multiblockmachine_5_reactionchamber_controller",
-	"techguns:oredrill_0_frame",
-	"techguns:oredrill_1_scaffold",
-	"techguns:oredrill_2_rod",
-	"techguns:oredrill_3_engine",
-	"techguns:oredrill_4_controller",
-	"techguns:itemshared_1_pistolrounds",
-	"techguns:itemshared_2_shotgunrounds",
-	"techguns:itemshared_7_rocket",
-	"techguns:itemshared_10_smgmagazineempty",
-	"techguns:itemshared_12_pistolmagazineempty",
-	"techguns:itemshared_14_assaultriflemagazineempty",
-	"techguns:itemshared_16_lmgmagazineempty",
-	"techguns:itemshared_18_minigundrumempty",
-	"techguns:itemshared_20_as50magazineempty",
-	"techguns:itemshared_22_advancedmagazineempty",
-	"techguns:itemshared_26_biotankempty",
-	"techguns:itemshared_28_fueltankempty",
-	"techguns:itemshared_33_ironreceiver",
-	"techguns:itemshared_34_steelreceiver",
-	"techguns:itemshared_35_obsidiansteelreceiver",
-	"techguns:itemshared_36_carbonreceiver",
-	"techguns:itemshared_38_ironbarrel",
-	"techguns:itemshared_39_obsidiansteelbarrel",
-	"techguns:itemshared_43_plasticstock",
-	"techguns:itemshared_61_biomass",
-	"techguns:itemshared_62_copperwire",
-	"techguns:itemshared_65_circuitboard",
-	"techguns:itemshared_66_circuitboardelite",
-	"techguns:itemshared_68_coil",
-	"techguns:itemshared_70_electricengine",
-	"techguns:itemshared_72_pumpmechanism",
-	"techguns:itemshared_103_quartzrod",
-	"techguns:itemshared_103_quartzrod_alt",
-	"techguns:itemshared_104_rcheatray",
-	"techguns:itemshared_117_rocket_nuke",
-	"techguns:itemshared_118_tacticalnukewarhead",
-	"techguns:itemshared_134_oredrillsmall_steel",
-	"techguns:itemshared_135_oredrillsmall_obsidiansteel",
-	"techguns:itemshared_136_oredrillsmall_carbon",
-	"techguns:itemshared_137_oredrillmedium_steel",
-	"techguns:itemshared_138_oredrillmedium_obsidiansteel",
-	"techguns:itemshared_139_oredrillmedium_carbon",
-	"techguns:itemshared_140_oredrilllarge_steel",
-	"techguns:itemshared_141_oredrilllarge_obsidiansteel",
-	"techguns:itemshared_142_oredrilllarge_carbon",
-	"techguns:itemshared_146_infusionbag",
-	"techguns:thompson",
-	"techguns:thompson_alt",
-	"techguns:ak47",
-	"techguns:ak47_alt",
-	"techguns:m4",
-	"techguns:m4_alt",
-	"techguns:m4_infiltrator",
-	"techguns:m4_infiltrator_alt",
-	"techguns:pistol",
-	"techguns:pistol_alt",
-	"techguns:combatshotgun",
-	"techguns:combatshotgun_ammo_default",
-	"techguns:combatshotgun_ammo_incendiary",
-	"techguns:boltaction_ammo_default",
-	"techguns:boltaction_ammo_incendiary",
-	"techguns:revolver_ammo_default",
-	"techguns:revolver_ammo_incendiary",
-	"techguns:goldenrevolver",
-	"techguns:mac10",
-	"techguns:mac10_alt",
-	"techguns:flamethrower",
-	"techguns:flamethrower_alt",
-	"techguns:fraggrenade",
-	"techguns:rocketlauncher",
-	"techguns:rocketlauncher_alt",
-	"techguns:guidedmissilelauncher",
-	"techguns:guidedmissilelauncher_alt",
-	"techguns:grimreaper",
-	"techguns:grenadelauncher",
-	"techguns:aug",
-	"techguns:aug_alt",
-	"techguns:sawedoff_ammo_default",
-	"techguns:sawedoff_ammo_incendiary",
-	"techguns:netherblaster",
-	"techguns:biogun",
-	"techguns:biogun_alt",
-	"techguns:teslagun",
-	"techguns:teslagun_alt",
-	"techguns:lmg",
-	"techguns:lmg_alt",
-	"techguns:minigun",
-	"techguns:minigun_alt",
-	"techguns:as50",
-	"techguns:as50_alt",
-	"techguns:vector",
-	"techguns:vector_alt",
-	"techguns:scar",
-	"techguns:scar_alt",
-	"techguns:lasergun",
-	"techguns:lasergun_alt",
-	"techguns:blasterrifle",
-	"techguns:blasterrifle_alt",
-	"techguns:sonicshotgun",
-	"techguns:sonicshotgun_alt",
-	"techguns:pdw",
-	"techguns:pdw_alt",
-	"techguns:pulserifle",
-	"techguns:pulserifle_alt",
-	"techguns:mibgun",
-	"techguns:mibgun_alt",
-	"techguns:powerhammer",
-	"techguns:powerhammer_alt",
-	"techguns:chainsaw",
-	"techguns:chainsaw_alt",
-	"techguns:nucleardeathray",
-	"techguns:nucleardeathray_alt",
-	"techguns:gaussrifle",
-	"techguns:gaussrifle_alt",
-	"techguns:miningdrill",
-	"techguns:miningdrill_alt",
-	"techguns:tfg",
-	"techguns:tfg_alt",
-	"techguns:laserpistol",
-	"techguns:laserpistol_alt",
-	"techguns:compressedairtankempty",
-	"techguns:compressedairtankempty_alt",
-	"techguns:simplemachine_8_camo_bench",
-	"techguns:simplemachine_9_upgrade_bench",
-	"techguns:simplemachine2_9_armor_bench",
-	"techguns:itemshared_60_heavycloth",
-	"techguns:t2_commando_helmet",
-	"techguns:t2_commando_chestplate",
-	"techguns:t2_commando_leggings",
-	"techguns:t2_commando_boots",
-	"techguns:t2_combat_helmet",
-	"techguns:t2_combat_chestplate",
-	"techguns:t2_combat_leggings",
-	"techguns:t2_combat_boots",
-	"techguns:t3_exo_helmet",
-	"techguns:t3_exo_chestplate",
-	"techguns:t3_exo_leggings",
-	"techguns:t3_exo_boots",
-	"techguns:t3_miner_helmet",
-	"techguns:t3_miner_chestplate",
-	"techguns:t3_miner_leggings",
-	"techguns:t3_miner_boots",
-	"techguns:t4_praetor_helmet",
-	"techguns:t4_praetor_chestplate",
-	"techguns:t4_praetor_leggings",
-	"techguns:t4_praetor_boots",
-	"techguns:hazmat_helmet",
-	"techguns:hazmat_chestplate",
-	"techguns:hazmat_leggings",
-	"techguns:hazmat_boots",
-	"techguns:itemshared_147_upgrade_protection_1",
-	"techguns:itemshared_150_upgrade_protection_2",
-	"techguns:itemshared_153_upgrade_protection_3",
-	"techguns:itemshared_148_upgrade_projectile_protection_1",
-	"techguns:itemshared_151_upgrade_projectile_protection_2",
-	"techguns:itemshared_154_upgrade_projectile_protection_3",
-	"techguns:itemshared_149_upgrade_blast_protection_1",
-	"techguns:itemshared_152_upgrade_blast_protection_2",
-	"techguns:itemshared_155_upgrade_blast_protection_3",
-	"techguns:itemshared_86_nuggetcopper",
-	"techguns:itemshared_87_nuggetlead",
-	"techguns:itemshared_88_nuggetsteel"
+    "techguns:basicmachine_0_ammo_press",
+    "techguns:basicmachine_1_metal_press_alt",
+    "techguns:basicmachine_1_metal_press",
+    "techguns:basicmachine_2_chem_lab",
+    "techguns:basicmachine_3_turret",
+    "techguns:simplemachine2_8_grinder",
+    "techguns:simplemachine_11_blast_furnace",
+    "techguns:simplemachine_10_charging_station",
+    "techguns:multiblockmachine_0_fabricator_housing",
+    "techguns:multiblockmachine_1_fabricator_glass",
+    "techguns:multiblockmachine_2_fabricator_controller",
+    "techguns:multiblockmachine_3_reactionchamber_housing",
+    "techguns:multiblockmachine_4_reactionchamber_glass",
+    "techguns:multiblockmachine_5_reactionchamber_controller",
+    "techguns:oredrill_0_frame",
+    "techguns:oredrill_1_scaffold",
+    "techguns:oredrill_2_rod",
+    "techguns:oredrill_3_engine",
+    "techguns:oredrill_4_controller",
+    "techguns:itemshared_1_pistolrounds",
+    "techguns:itemshared_2_shotgunrounds",
+    "techguns:itemshared_7_rocket",
+    "techguns:itemshared_10_smgmagazineempty",
+    "techguns:itemshared_12_pistolmagazineempty",
+    "techguns:itemshared_14_assaultriflemagazineempty",
+    "techguns:itemshared_16_lmgmagazineempty",
+    "techguns:itemshared_18_minigundrumempty",
+    "techguns:itemshared_20_as50magazineempty",
+    "techguns:itemshared_22_advancedmagazineempty",
+    "techguns:itemshared_26_biotankempty",
+    "techguns:itemshared_28_fueltankempty",
+    "techguns:itemshared_33_ironreceiver",
+    "techguns:itemshared_34_steelreceiver",
+    "techguns:itemshared_35_obsidiansteelreceiver",
+    "techguns:itemshared_36_carbonreceiver",
+    "techguns:itemshared_38_ironbarrel",
+    "techguns:itemshared_39_obsidiansteelbarrel",
+    "techguns:itemshared_43_plasticstock",
+    "techguns:itemshared_61_biomass",
+    "techguns:itemshared_62_copperwire",
+    "techguns:itemshared_65_circuitboard",
+    "techguns:itemshared_66_circuitboardelite",
+    "techguns:itemshared_68_coil",
+    "techguns:itemshared_70_electricengine",
+    "techguns:itemshared_72_pumpmechanism",
+    "techguns:itemshared_103_quartzrod",
+    "techguns:itemshared_103_quartzrod_alt",
+    "techguns:itemshared_104_rcheatray",
+    "techguns:itemshared_117_rocket_nuke",
+    "techguns:itemshared_118_tacticalnukewarhead",
+    "techguns:itemshared_134_oredrillsmall_steel",
+    "techguns:itemshared_135_oredrillsmall_obsidiansteel",
+    "techguns:itemshared_136_oredrillsmall_carbon",
+    "techguns:itemshared_137_oredrillmedium_steel",
+    "techguns:itemshared_138_oredrillmedium_obsidiansteel",
+    "techguns:itemshared_139_oredrillmedium_carbon",
+    "techguns:itemshared_140_oredrilllarge_steel",
+    "techguns:itemshared_141_oredrilllarge_obsidiansteel",
+    "techguns:itemshared_142_oredrilllarge_carbon",
+    "techguns:itemshared_146_infusionbag",
+    "techguns:thompson",
+    "techguns:thompson_alt",
+    "techguns:ak47",
+    "techguns:ak47_alt",
+    "techguns:m4",
+    "techguns:m4_alt",
+    "techguns:m4_infiltrator",
+    "techguns:m4_infiltrator_alt",
+    "techguns:pistol",
+    "techguns:pistol_alt",
+    "techguns:combatshotgun",
+    "techguns:combatshotgun_ammo_default",
+    "techguns:combatshotgun_ammo_incendiary",
+    "techguns:boltaction_ammo_default",
+    "techguns:boltaction_ammo_incendiary",
+    "techguns:revolver_ammo_default",
+    "techguns:revolver_ammo_incendiary",
+    "techguns:goldenrevolver",
+    "techguns:mac10",
+    "techguns:mac10_alt",
+    "techguns:flamethrower",
+    "techguns:flamethrower_alt",
+    "techguns:fraggrenade",
+    "techguns:rocketlauncher",
+    "techguns:rocketlauncher_alt",
+    "techguns:guidedmissilelauncher",
+    "techguns:guidedmissilelauncher_alt",
+    "techguns:grimreaper",
+    "techguns:grenadelauncher",
+    "techguns:aug",
+    "techguns:aug_alt",
+    "techguns:sawedoff_ammo_default",
+    "techguns:sawedoff_ammo_incendiary",
+    "techguns:netherblaster",
+    "techguns:biogun",
+    "techguns:biogun_alt",
+    "techguns:teslagun",
+    "techguns:teslagun_alt",
+    "techguns:lmg",
+    "techguns:lmg_alt",
+    "techguns:minigun",
+    "techguns:minigun_alt",
+    "techguns:as50",
+    "techguns:as50_alt",
+    "techguns:vector",
+    "techguns:vector_alt",
+    "techguns:scar",
+    "techguns:scar_alt",
+    "techguns:lasergun",
+    "techguns:lasergun_alt",
+    "techguns:blasterrifle",
+    "techguns:blasterrifle_alt",
+    "techguns:sonicshotgun",
+    "techguns:sonicshotgun_alt",
+    "techguns:pdw",
+    "techguns:pdw_alt",
+    "techguns:pulserifle",
+    "techguns:pulserifle_alt",
+    "techguns:mibgun",
+    "techguns:mibgun_alt",
+    "techguns:powerhammer",
+    "techguns:powerhammer_alt",
+    "techguns:chainsaw",
+    "techguns:chainsaw_alt",
+    "techguns:nucleardeathray",
+    "techguns:nucleardeathray_alt",
+    "techguns:gaussrifle",
+    "techguns:gaussrifle_alt",
+    "techguns:miningdrill",
+    "techguns:miningdrill_alt",
+    "techguns:tfg",
+    "techguns:tfg_alt",
+    "techguns:laserpistol",
+    "techguns:laserpistol_alt",
+    "techguns:compressedairtankempty",
+    "techguns:compressedairtankempty_alt",
+    "techguns:simplemachine_8_camo_bench",
+    "techguns:simplemachine_9_upgrade_bench",
+    "techguns:simplemachine2_9_armor_bench",
+    "techguns:itemshared_60_heavycloth",
+    "techguns:t2_commando_helmet",
+    "techguns:t2_commando_chestplate",
+    "techguns:t2_commando_leggings",
+    "techguns:t2_commando_boots",
+    "techguns:t2_combat_helmet",
+    "techguns:t2_combat_chestplate",
+    "techguns:t2_combat_leggings",
+    "techguns:t2_combat_boots",
+    "techguns:t3_exo_helmet",
+    "techguns:t3_exo_chestplate",
+    "techguns:t3_exo_leggings",
+    "techguns:t3_exo_boots",
+    "techguns:t3_miner_helmet",
+    "techguns:t3_miner_chestplate",
+    "techguns:t3_miner_leggings",
+    "techguns:t3_miner_boots",
+    "techguns:t4_praetor_helmet",
+    "techguns:t4_praetor_chestplate",
+    "techguns:t4_praetor_leggings",
+    "techguns:t4_praetor_boots",
+    "techguns:hazmat_helmet",
+    "techguns:hazmat_chestplate",
+    "techguns:hazmat_leggings",
+    "techguns:hazmat_boots",
+    "techguns:itemshared_147_upgrade_protection_1",
+    "techguns:itemshared_150_upgrade_protection_2",
+    "techguns:itemshared_153_upgrade_protection_3",
+    "techguns:itemshared_148_upgrade_projectile_protection_1",
+    "techguns:itemshared_151_upgrade_projectile_protection_2",
+    "techguns:itemshared_154_upgrade_projectile_protection_3",
+    "techguns:itemshared_149_upgrade_blast_protection_1",
+    "techguns:itemshared_152_upgrade_blast_protection_2",
+    "techguns:itemshared_155_upgrade_blast_protection_3",
+    "techguns:itemshared_86_nuggetcopper",
+    "techguns:itemshared_87_nuggetlead",
+    "techguns:itemshared_88_nuggetsteel"
 ]
 
 for (name in name_removals) {
@@ -395,21 +395,21 @@ crafting.replaceShaped("techguns:item_bunkerdoor", item('techguns:item_bunkerdoo
 ])
 
 crafting.replaceShaped("techguns:revolver", item('techguns:revolver'), [
-	[ore('craftingToolHardHammer'), ore('plateIron'), ore('springSmallIron')],
-	[item('techguns:itemshared', 38), ore('gearSmallIron'), ore('boltIron')],
-	[ore('craftingToolFile'), item('techguns:itemshared', 42), item('techguns:itemshared', 1)]
+    [ore('craftingToolHardHammer'), ore('plateIron'), ore('springSmallIron')],
+    [item('techguns:itemshared', 38), ore('gearSmallIron'), ore('boltIron')],
+    [ore('craftingToolFile'), item('techguns:itemshared', 42), item('techguns:itemshared', 1)]
 ])
 
 crafting.replaceShaped("techguns:boltaction", item('techguns:boltaction'), [
-	[null, ore('craftingToolWrench'), item('techguns:itemshared', 3)],
-	[ore('plateGlass'), ore('ringIron'), ore('plateGlass')],
-	[item('techguns:itemshared', 38), item('techguns:itemshared', 33), item('techguns:itemshared', 42)]
+    [null, ore('craftingToolWrench'), item('techguns:itemshared', 3)],
+    [ore('plateGlass'), ore('ringIron'), ore('plateGlass')],
+    [item('techguns:itemshared', 38), item('techguns:itemshared', 33), item('techguns:itemshared', 42)]
 ])
 
 crafting.replaceShaped("techguns:sawedoff", item('techguns:sawedoff'), [
-		[ore('springSmallSteel'), metaitem('gun.barrel.steel'), null],
-		[metaitem('gun.barrel.steel'), item('techguns:itemshared', 33), item('techguns:itemshared', 2)],
-		[null, item('techguns:itemshared', 2), item('techguns:itemshared', 42)]
+        [ore('springSmallSteel'), metaitem('gun.barrel.steel'), null],
+        [metaitem('gun.barrel.steel'), item('techguns:itemshared', 33), item('techguns:itemshared', 2)],
+        [null, item('techguns:itemshared', 2), item('techguns:itemshared', 42)]
 ]);
 
 crafting.replaceShaped("techguns:pistolrounds", item('techguns:itemshared', 1) * 4, [
@@ -593,18 +593,18 @@ Globals.solders.each { key, val ->
         .EUt(Globals.voltAmps[1])
         .buildAndRegister();
 
-	WEAPONS_FACTORY.recipeBuilder()
+    WEAPONS_FACTORY.recipeBuilder()
         .inputs(item('techguns:itemshared', 38))
         .inputs(item('techguns:itemshared', 33))
         .inputs(item('techguns:itemshared', 42))
         .inputs(ore('plateGlass') * 2)
         .inputs(ore('ringIron'))
         .inputs(item('techguns:itemshared', 3))
-		.fluidInputs(fluid(key) * val)
-		.outputs(item('techguns:boltaction'))
-		.duration(20)
-		.EUt(Globals.voltAmps[1])
-		.buildAndRegister();
+        .fluidInputs(fluid(key) * val)
+        .outputs(item('techguns:boltaction'))
+        .duration(20)
+        .EUt(Globals.voltAmps[1])
+        .buildAndRegister();
 
     WEAPONS_FACTORY.recipeBuilder()
         .inputs(metaitem('gun.barrel.steel'))
@@ -1047,9 +1047,9 @@ crafting.addShaped("heavy_cloth", item('techguns:itemshared:60')*6, [
 ]);
 
 crafting.addShaped("techguns_iron_receiver", item('techguns:itemshared:33'), [
-		[ore('plateIron'), ore('plateIron'), ore('plateIron')],
-		[ore('craftingToolScrewdriver'), ore('stickLongIron'), ore('springIron')],
-		[null, ore('screwIron'), ore('screwIron')]
+        [ore('plateIron'), ore('plateIron'), ore('plateIron')],
+        [ore('craftingToolScrewdriver'), ore('stickLongIron'), ore('springIron')],
+        [null, ore('screwIron'), ore('screwIron')]
 ]);
 
 crafting.replaceShaped("techguns:t1_combat_helmet", item('techguns:t1_combat_helmet'), [
@@ -1108,8 +1108,8 @@ crafting.replaceShapeless("techguns:pistol_ammo_default", item('techguns:pistol'
 ]);
 
 crafting.replaceShapeless("techguns:pistol_ammo_incendiary", item('techguns:pistol').withNbt([ammovariant: 'incendiary', ammo: 18]), [
-	item('techguns:pistol:*'), 
-	item('techguns:itemshared', 113)
+    item('techguns:pistol:*'), 
+    item('techguns:itemshared', 113)
 ]);
 
 crafting.replaceShapeless("techguns:ak47_ammo_default", item('techguns:ak47'), [
@@ -1123,23 +1123,23 @@ crafting.replaceShapeless("techguns:ak47_ammo_incendiary", item('techguns:ak47')
 ]);
 
 crafting.addShapeless("techguns:boltaction_ammo1", item('techguns:boltaction').withNbt([ammovariant: 'incendiary', ammo: 6]), [
-	item('techguns:boltaction:*'), 
-	item('techguns:itemshared', 110)
+    item('techguns:boltaction:*'), 
+    item('techguns:itemshared', 110)
 ]);
 
 crafting.addShapeless("techguns:boltaction_ammo2", item('techguns:boltaction'), [
-	item('techguns:boltaction:*'), 
-	item('techguns:itemshared', 3)
+    item('techguns:boltaction:*'), 
+    item('techguns:itemshared', 3)
 ]);
 
 crafting.addShapeless("techguns:revolver_ammo1", item('techguns:revolver').withNbt([ammovariant: 'incendiary', ammo: 6]), [
-	item('techguns:revolver:*'), 
-	item('techguns:itemshared', 109)
+    item('techguns:revolver:*'), 
+    item('techguns:itemshared', 109)
 ]);
 
 crafting.addShapeless("techguns:revolver_ammo2", item('techguns:revolver'), [
-	item('techguns:revolver:*'), 
-	item('techguns:itemshared', 1)
+    item('techguns:revolver:*'), 
+    item('techguns:itemshared', 1)
 ]);
 
 //Shotgun reloading recipes 
@@ -1150,80 +1150,80 @@ crafting.shapelessBuilder()
     .input(item('techguns:sawedoff:*').mark('ammo'))  
     .input(item('techguns:itemshared', 106)) 
     .recipeFunction { output, inputs, info ->
-		if (!output.hasTagCompound()) { 
+        if (!output.hasTagCompound()) { 
             output.setTagCompound(new net.minecraft.nbt.NBTTagCompound()) 
-   		}
-		if (inputs['ammo'].getTagCompound().getString("ammovariant") != 'incendiary') {
+        }
+        if (inputs['ammo'].getTagCompound().getString("ammovariant") != 'incendiary') {
             output.getTagCompound().setShort("ammo", (short) 1) 
-   		}
-		else {
-			short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
-    		short newAmmo = (short) Math.min(currentAmmo + 1, 2)        
-    		output.getTagCompound().setShort("ammo", (short) newAmmo)
-		}
+        }
+        else {
+            short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
+            short newAmmo = (short) Math.min(currentAmmo + 1, 2)        
+            output.getTagCompound().setShort("ammo", (short) newAmmo)
+        }
     }
     .register()  
 
 
 crafting.shapelessBuilder()
-	.name('techguns:sawedoff_ammo2') 
-	.output(item('techguns:sawedoff').withNbt([ammovariant: 'default', ammo: 2])) 
-	.input(item('techguns:sawedoff:*').mark('ammo'))
-	.input(item('techguns:itemshared', 2))
-	.recipeFunction { output, inputs, info -> 
-		if (!output.hasTagCompound()) { 
+    .name('techguns:sawedoff_ammo2') 
+    .output(item('techguns:sawedoff').withNbt([ammovariant: 'default', ammo: 2])) 
+    .input(item('techguns:sawedoff:*').mark('ammo'))
+    .input(item('techguns:itemshared', 2))
+    .recipeFunction { output, inputs, info -> 
+        if (!output.hasTagCompound()) { 
             output.setTagCompound(new net.minecraft.nbt.NBTTagCompound())
-   		}
+        }
         if (inputs['ammo'].getTagCompound().getString("ammovariant") == 'incendiary') {            
             output.getTagCompound().setShort("ammo", (short) 1) 
-   		}
-		else {
-			short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
-    		short newAmmo = (short) Math.min(currentAmmo + 1, 2)        
-    		output.getTagCompound().setShort("ammo", (short) newAmmo)
-		}
+        }
+        else {
+            short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
+            short newAmmo = (short) Math.min(currentAmmo + 1, 2)        
+            output.getTagCompound().setShort("ammo", (short) newAmmo)
+        }
     }
-	.register()
+    .register()
 
 crafting.shapelessBuilder()
-	.name('techguns:combatshotgun_ammo_default') 
-	.output(item('techguns:combatshotgun').withNbt([ammovariant: 'default', ammo: 8])) 
-	.input(item('techguns:combatshotgun:*').mark('ammo')) 
-	.input(item('techguns:itemshared', 2))
-	.recipeFunction { output, inputs, info -> 
-		if (!output.hasTagCompound()) { 
+    .name('techguns:combatshotgun_ammo_default') 
+    .output(item('techguns:combatshotgun').withNbt([ammovariant: 'default', ammo: 8])) 
+    .input(item('techguns:combatshotgun:*').mark('ammo')) 
+    .input(item('techguns:itemshared', 2))
+    .recipeFunction { output, inputs, info -> 
+        if (!output.hasTagCompound()) { 
             output.setTagCompound(new net.minecraft.nbt.NBTTagCompound()) 
-   		}
-		if (inputs['ammo'].getTagCompound().getString("ammovariant") == 'incendiary') {
+        }
+        if (inputs['ammo'].getTagCompound().getString("ammovariant") == 'incendiary') {
             output.getTagCompound().setShort("ammo", (short) 1) 
-   		}
-		else {
-			short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
-    		short newAmmo = (short) Math.min(currentAmmo + 1, 8)        
-    		output.getTagCompound().setShort("ammo", (short) newAmmo)
-		}
+        }
+        else {
+            short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
+            short newAmmo = (short) Math.min(currentAmmo + 1, 8)        
+            output.getTagCompound().setShort("ammo", (short) newAmmo)
+        }
     }
-	.register()
+    .register()
 
 crafting.shapelessBuilder()
-	.name('techguns:combatshotgun_ammo_incendiary') 
-	.output(item('techguns:combatshotgun').withNbt([ammovariant: 'incendiary', ammo: 8]))
-	.input(item('techguns:combatshotgun:*').mark('ammo')) 
-	.input(item('techguns:itemshared', 106))
-	.recipeFunction { output, inputs, info -> 
-		if (!output.hasTagCompound()) { 
+    .name('techguns:combatshotgun_ammo_incendiary') 
+    .output(item('techguns:combatshotgun').withNbt([ammovariant: 'incendiary', ammo: 8]))
+    .input(item('techguns:combatshotgun:*').mark('ammo')) 
+    .input(item('techguns:itemshared', 106))
+    .recipeFunction { output, inputs, info -> 
+        if (!output.hasTagCompound()) { 
             output.setTagCompound(new net.minecraft.nbt.NBTTagCompound()) 
-   		}
-		if (inputs['ammo'].getTagCompound().getString("ammovariant") != 'incendiary') {
+        }
+        if (inputs['ammo'].getTagCompound().getString("ammovariant") != 'incendiary') {
             output.getTagCompound().setShort("ammo", (short) 1) 
-   		}
-		else {
-			short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
-    		short newAmmo = (short) Math.min(currentAmmo + 1, 8)        
-    		output.getTagCompound().setShort("ammo", (short) newAmmo)
-		}
+        }
+        else {
+            short currentAmmo = inputs['ammo'].getTagCompound().getShort("ammo")
+            short newAmmo = (short) Math.min(currentAmmo + 1, 8)        
+            output.getTagCompound().setShort("ammo", (short) newAmmo)
+        }
     }
-	.register()
+    .register()
 
 //--------------------GregTech machines only recipes--------------------
 
