@@ -1,5 +1,4 @@
 import gregtech.loaders.recipe.RecyclingRecipes
-import gregtech.api.unification.ore.OrePrefix
 
 ARC_FURNACE = recipemap('arc_furnace')
 MACERATOR = recipemap('macerator')
@@ -20,5 +19,4 @@ recyclingRecipeMaps.each { map ->
 }
 
 // Reloads every recycling recipes
-OrePrefix.runMaterialHandlers()
 RecyclingRecipes.init()
