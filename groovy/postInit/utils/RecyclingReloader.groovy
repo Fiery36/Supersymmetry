@@ -1,9 +1,5 @@
-import gregtech.api.unification.OreDictUnifier
-import gregtech.api.unification.material.properties.PropertyKey
-import gregtech.api.unification.ore.OrePrefix
-import gregtech.core.unification.material.internal.MaterialRegistryManager
 import gregtech.loaders.recipe.RecyclingRecipes
-import gregtech.loaders.recipe.handlers.RecyclingRecipeHandler
+import gregtech.api.unification.ore.OrePrefix
 
 ARC_FURNACE = recipemap('arc_furnace')
 MACERATOR = recipemap('macerator')
@@ -24,14 +20,5 @@ recyclingRecipeMaps.each { map ->
 }
 
 // Reloads every recycling recipes
-MaterialRegistryManager.getInstance().getRegisteredMaterials().each { mat ->
-    if (mat.hasProperty(PropertyKey.DUST) && !mat.hasFlag('no_unification')) {
-        OrePrefix.values().each { ore ->
-            if (!OreDictUnifier.get(ore, mat).isEmpty()) {
-                RecyclingRecipeHandler.processCrushing(ore, mat, mat.getProperty(PropertyKey.DUST))
-            }
-        }
-    }
-}
-
+OrePrefix.runMaterialHandlers()
 RecyclingRecipes.init()
