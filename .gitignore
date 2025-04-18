@@ -99,3 +99,6 @@ visualores/
 .idea/workspace.xml
 servers.dat
 mods/*.jar
+/mods/1.12.2/*.jar
+/mods/memory_repo
+/resourcepacks
