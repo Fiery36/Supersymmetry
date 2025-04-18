@@ -275,7 +275,7 @@ ASSEMBLER.recipeBuilder()
     .EUt(491520)
     .buildAndRegister();
 
-assembly_line.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickLongSamariumAlloyMagnetic'))
     .inputs(ore('stickLongHsss') * 2)
     .inputs(ore('ringHsss') * 2)
@@ -289,7 +289,7 @@ assembly_line.recipeBuilder()
     .EUt(6000)
     .buildAndRegister();
 
-assembly_line.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickLongSamariumAlloyMagnetic'))
     .inputs(ore('stickLongOsmiridium') * 4)
     .inputs(ore('ringOsmiridium') * 4)
@@ -304,7 +304,7 @@ assembly_line.recipeBuilder()
     .EUt(24000)
     .buildAndRegister();
 
-assembly_line.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickLongSamariumAlloyMagnetic'))
     .inputs(ore('stickLongTritanium') * 4)
     .inputs(ore('ringTritanium') * 4)
@@ -386,6 +386,41 @@ POLARIZER.recipeBuilder()
 POLARIZER.recipeBuilder()
     .inputs(ore('plateTreatedNeodymiumAlloy'))
     .outputs(metaitem('plateNeodymiumAlloyMagnetic'))
+    .duration(150)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('stickLongAlnico'))
+    .outputs(metaitem('stickLongAlnicoMagnetic'))
+    .duration(150)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('stickAlnico'))
+    .outputs(metaitem('stickAlnicoMagnetic'))
+    .duration(75)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('ringAlnico'))
+    .outputs(metaitem('ringAlnicoMagnetic'))
+    .duration(40)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('ingotAlnico'))
+    .outputs(metaitem('ingotAlnicoMagnetic'))
+    .duration(150)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('plateAlnico'))
+    .outputs(metaitem('plateAlnicoMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
