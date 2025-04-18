@@ -494,7 +494,6 @@ class SuSyMaterials {
         public static Material AcrylicPhotoemulsion;
         public static Material TreatedCollagen;
         public static Material ImpureThalliumSulfateSolution;
-        public static Material ImpureCobaltSulfateSolution;
         public static Material ImpureCadmiumSulfateSolution;
         public static Material TannicAcidSolution;
         public static Material GermaniumRichOxide;
@@ -1266,6 +1265,7 @@ class SuSyMaterials {
         public static Material CryogenicSolder;
         public static Material SeleniumDioxide;
         public static Material CobaltSulfateSolution;
+        public static Material HighPurityCobaltSulfateSolution;
         public static Material DilutedAmmoniumChlorideSolution;
         public static Material Kovar;
         public static Material ImpureLithiumCarbonate;

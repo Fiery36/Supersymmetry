@@ -774,6 +774,18 @@ public class SecondDegreeMaterials {
 
         TetraamminepalladiumDichlorideSolution.setFormula("([Pd(NH3)4]Cl2)(H2O)4", true)
 
+        CobaltSulfateSolution = new Material.Builder(13122, SuSyUtility.susyId("cobalt_sulfate_solution"))
+                .fluid()
+                .components(CobaltSulfate, Water)
+                .colorAverage()
+                .build();
+
+        HighPurityCobaltSulfateSolution = new Material.Builder(13123, SuSyUtility.susyId("high_purity_cobalt_sulfate_solution"))
+                .fluid()
+                .components(CobaltSulfate, Water)
+                .colorAverage()
+                .build();
+
         // FREE ID: 13122-13129
 
         HexachloroiridicAcidSolution = new Material.Builder(13130, SuSyUtility.susyId('hexachloroiridic_acid_solution'))

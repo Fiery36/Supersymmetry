@@ -12,6 +12,8 @@ AUTOCLAVE = recipemap('autoclave')
 ION_EXCHANGE = recipemap('ion_exchange_column')
 FBR = recipemap('fixed_bed_reactor')
 LCR = recipemap('large_chemical_reactor')
+ALLOY_SMELTER = recipemap('alloy_smelter')
+
 
 // Alumina supports
 

@@ -2683,13 +2683,7 @@ public class FirstDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        CobaltSulfateSolution = new Material.Builder(8497, SuSyUtility.susyId("cobalt_sulfate_solution"))
-                .fluid()
-                .components(Cobalt, Sulfur, Oxygen * 4)
-                .colorAverage()
-                .build();
-
-        CobaltSulfateSolution.setFormula("(CoSO4)(H2O)", true)
+        // FREE ID: 8497
 
         NickelSulfate = new Material.Builder(8498, SuSyUtility.susyId('nickel_sulfate'))
                 .dust()
@@ -3308,15 +3302,7 @@ public class FirstDegreeMaterials {
 
         ThalliumSulfateSolution.setFormula("(Tl2SO4)(H2O)", true)
 
-        ImpureCobaltSulfateSolution = new Material.Builder(8597, SuSyUtility.susyId("impure_cobalt_sulfate_solution"))
-                .liquid()
-                .components(Cobalt, Sulfur, Oxygen * 4, Water)
-                .colorAverage()
-                .build();
-
-        ImpureCobaltSulfateSolution.setFormula("(CoSO4)(?)(H2O)", true)
-
-        //FREE ID: 8598
+        //FREE ID: 8597-8598
 
         PurifiedCadmiumSolution = new Material.Builder(8599, SuSyUtility.susyId('purified_cadmium_solution'))
                 .liquid()
