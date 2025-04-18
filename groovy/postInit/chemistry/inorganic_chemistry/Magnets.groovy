@@ -69,7 +69,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
 
 ABS.recipeBuilder()
         .inputs(ore('dustSamarium'))
-        .inputs(ore('dustCobalt') * 5)
+        .inputs(ore('dustHighPurityCobalt') * 5)
         .fluidInputs(fluid('argon') * 300)
         .fluidOutputs(fluid('samarium_alloy') * 864)
         .blastFurnaceTemp(1800)

@@ -1021,7 +1021,7 @@ class SuSyMaterials {
         public static Material SaltyArsenicPentoxide;
         public static Material TinIVOxide;
         public static Material AntimonyVOxide;
-        public static Material ImpureCobaltOxide
+        public static Material CobaltOxide;
         public static Material CrudeTin;
         public static Material LeachedCassiteriteConcentrate;
         public static Material AmmoniumTungstateSolution;
@@ -1081,6 +1081,7 @@ class SuSyMaterials {
         public static Material DilutedSodiumHydroxideSolution;
         public static Material ZirconiumDioxide;
         public static Material Oleum;
+        public static Material HighPurityCobaltOxide;
         public static Material ChromiumSulfateSolution;
         public static Material Dichlorosilane;
         public static Material Chlorosilane;

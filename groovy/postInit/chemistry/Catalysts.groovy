@@ -379,7 +379,7 @@ LCR.recipeBuilder()
         .buildAndRegister()
 
     BR.recipeBuilder()
-        .inputs(ore('dustCobaltOxide') * 2)
+        .inputs(ore('dustHighPurityCobaltOxide') * 2)
         .fluidInputs(fluid('nitric_acid') * 2000)
         .fluidOutputs(fluid('cobalt_nitrate_solution') * 1000)
         .duration(60)
@@ -505,6 +505,7 @@ ROASTER.recipeBuilder()
     .buildAndRegister()
 
 //RuO2
+
 ROASTER.recipeBuilder()
     .inputs(ore('dustRuthenium'))
     .fluidInputs(fluid('chlorine') * 3000)
@@ -520,4 +521,24 @@ ROASTER.recipeBuilder()
     .fluidOutputs(fluid('chlorine') * 3000)
     .duration(200)
     .EUt(480)
+    .buildAndRegister()
+
+// Dicobalt Octacarbonyl
+
+ROASTER.recipeBuilder()
+    .inputs(ore('dustAnyPurityCobalt') * 2)
+    .fluidInputs(fluid('carbon_monoxide') * 8000)
+    .outputs(metaitem('dustDicobaltOctacarbonyl') * 18)
+    .duration(200)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
+// Impregnated Alumina Catalyst
+
+ALLOY_SMELTER.recipeBuilder()
+    .inputs(ore('dustSilicaGel') * 3)
+    .inputs(ore('dustAlumina') * 5)
+    .outputs(metaitem('dustImpregnatedAluminaCatalyst') * 8)
+    .duration(200)
+    .EUt(Globals.voltAmps[1])
     .buildAndRegister()
