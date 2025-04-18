@@ -1296,6 +1296,7 @@ class SuSyMaterials {
         public static Material PotassiumIodate;
         public static Material Alnico;
         public static Material AlnicoMagnetic;
+        public static Material Mica;
 
         // HP Materials
 

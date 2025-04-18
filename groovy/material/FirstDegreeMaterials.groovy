@@ -1035,6 +1035,7 @@ public class FirstDegreeMaterials {
                 .color(0xb2d8ed)
                 .iconSet(METALLIC)
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
+                .blast(b -> b.temp(1600, GasTier.LOW).blastStats(480, 200))
                 .build()
 
         AlnicoMagnetic = new Material.Builder(8246, SuSyUtility.susyId('alnico_magnetic'))
@@ -1381,7 +1382,15 @@ public class FirstDegreeMaterials {
                 .color(0x38393b)
                 .build();
 
-        // FREE ID: 8297
+        Mica = new Material.Builder(8297, SuSyUtility.susyId('mica'))
+                .dust()
+                .components(Potassium, Aluminium * 3, Silicon * 3 Oxygen * 12, Hydrogen * 2)
+                .color(0xe8e7ba)
+                .flags(GENERATE_PLATE, NO_UNIFICATION)
+                .iconSet(SAND)
+                .build();
+
+        Mica.setFormula("KAl2(AlSi3O10)(OH)2", true)
 
         PGMSolution = new Material.Builder(8298, SuSyUtility.susyId('pgm_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))

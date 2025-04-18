@@ -1,3 +1,5 @@
+ASSEMBLER = recipemap('assembler')
+
 // LV Electric Motor * 1
 mods.gregtech.assembler.removeByInput(30, [metaitem('cableGtSingleTin') * 2, metaitem('stickIron') * 2, metaitem('stickIronMagnetic'), metaitem('wireGtSingleCopper') * 4], null)
 // LV Electric Motor * 1
@@ -27,34 +29,109 @@ mods.gregtech.assembly_line.removeByInput(24000, [metaitem('stickLongSamariumMag
 // UV Electric Motor * 1
 mods.gregtech.assembly_line.removeByInput(100000, [metaitem('stickLongSamariumMagnetic'), metaitem('stickLongTritanium') * 4, metaitem('ringTritanium') * 4, metaitem('roundTritanium') * 8, metaitem('wireFineAmericium') * 64, metaitem('wireFineAmericium') * 64, metaitem('cableGtSingleYttriumBariumCuprate') * 2], [fluid('soldering_alloy') * 576, fluid('lubricant') * 1000, fluid('naquadria') * 576])
 
+crafting.removeByOutput(metaitem('electric.motor.lv'))
+
+crafting.addShapeless('commutator', metaitem('commutator'), [
+    metaitem('plateCopper'), metaitem('plateStone'), metaitem('rubber_drop'), ore('toolWireCutter')
+])
+
+crafting.addShapeless('brush.unfired', metaitem('unfired_brush'), [
+    metaitem('dustGraphite'), metaitem('rubber_drop'), ore('toolHammer')
+])
+
+furnace.add(metaitem('brush.unfired'), metaitem('brush'))
+
+crafting.addShaped('susy:electric_motor_lv', metaitem('electric.motor.lv'), [
+    [metaitem('plateSteelMagnetic'), metaitem('wireGtSingleCopper'), metaitem('cableGtSingleTin')],
+    [metaitem('brush'), metaitem('stickSteel'), metaitem('wireGtSingleCopper')],
+    [metaitem('commutator'), metaitem('brush'), metaitem('plateSteelMagnetic')]
+])
+
+crafting.addShaped('susy:electric_motor_mv', metaitem('electric.motor.mv'), [
+    [metaitem('plateSteelMagnetic'), metaitem('wireGtDoubleCupronickel'), metaitem('cableGtSingleCopper')],
+    [metaitem('brush'), metaitem('stickAluminium'), metaitem('wireGtDoubleCupronickel')],
+    [metaitem('commutator'), metaitem('brush'), metaitem('plateSteelMagnetic')]
+])
+
+crafting.addShaped('susy:electric_motor_hv', metaitem('electric.motor.hv'), [
+    [metaitem('plateAlnicoMagnetic'), metaitem('wireGtDoubleElectrum'), metaitem('cableGtDoubleSilver')],
+    [metaitem('brush'), metaitem('stickStainlessSteel'), metaitem('wireGtDoubleElectrum')],
+    [metaitem('commutator'), metaitem('brush'), metaitem('plateAlnicoMagnetic')]
+])
+
 crafting.replaceShaped('gregtech:electric_motor_ev', metaitem('electric.motor.ev'), [
-        [metaitem('cableGtDoubleAluminium'), metaitem('wireGtDoubleKanthal'), metaitem('stickTitanium')],
-        [metaitem('wireGtDoubleKanthal'), metaitem('stickSteelMagnetic'), metaitem('wireGtDoubleKanthal')],
-        [metaitem('stickTitanium'), metaitem('wireGtDoubleKanthal'), metaitem('cableGtDoubleAluminium')]
+    [metaitem('plateAlnicoMagnetic'), metaitem('wireGtDoubleKanthal'), metaitem('cableGtDoubleAluminium')],
+    [metaitem('brush'), metaitem('stickTitanium'), metaitem('wireGtDoubleKanthal')],
+    [metaitem('commutator'), metaitem('brush'), metaitem('plateAlnicoMagnetic')]
 ])
 
 crafting.replaceShaped('gregtech:electric_motor_iv', metaitem('electric.motor.iv'), [
-        [metaitem('cableGtDoubleTungsten'), metaitem('wireGtDoubleGraphene'), metaitem('stickTungstenSteel')],
-        [metaitem('wireGtDoubleGraphene'), metaitem('stickNeodymiumAlloyMagnetic'), metaitem('wireGtDoubleGraphene')],
-        [metaitem('stickTungstenSteel'), metaitem('wireGtDoubleGraphene'), metaitem('cableGtDoubleTungsten')]
+    [metaitem('cableGtDoubleTungsten'), metaitem('wireGtDoubleGraphene'), metaitem('stickTungstenSteel')],
+    [metaitem('wireGtDoubleGraphene'), metaitem('stickNeodymiumAlloyMagnetic'), metaitem('wireGtDoubleGraphene')],
+    [metaitem('stickTungstenSteel'), metaitem('wireGtDoubleGraphene'), metaitem('cableGtDoubleTungsten')]
 ])
 
-mods.gregtech.assembler.recipeBuilder()
-        .inputs(ore('cableGtDoubleAluminium') * 2)
-        .inputs(ore('stickTitanium') * 2)
-        .inputs(ore('stickSteelMagnetic') * 1)
-        .inputs(ore('wireGtDoubleKanthal') * 4)
-        .outputs(metaitem('electric.motor.ev'))
-        .duration(100)
-        .EUt(30)
-        .buildAndRegister();
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('plateCopper'))
+    .inputs(ore('plateMica'))
+    .fluidInputs(fluid('glue') * 100)
+    .outputs(metaitem('commutator') * 4)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
 
-mods.gregtech.assembler.recipeBuilder()
-        .inputs(ore('cableGtDoubleTungsten') * 2)
-        .inputs(ore('stickTungstenSteel') * 2)
-        .inputs(ore('stickNeodymiumAlloyMagnetic') * 1)
-        .inputs(ore('wireGtDoubleGraphene') * 4)
-        .outputs(metaitem('electric.motor.iv'))
-        .duration(100)
-        .EUt(30)
-        .buildAndRegister();
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('dustGraphite'))
+    .fluidInputs(fluid('glue') * 100)
+    .outputs(metaitem('unfired_brush') * 2)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtSingleTin'))
+    .inputs(ore('stickSteel'))
+    .inputs(ore('plateSteelMagnetic') * 2)
+    .inputs(ore('wireGtSingleCopper') * 2)
+    .inputs(metaitem('commutator'))
+    .inputs(metaitem('brush') * 2)
+    .outputs(metaitem('electric.motor.lv'))
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtSingleCopper'))
+    .inputs(ore('stickAluminium'))
+    .inputs(ore('plateSteelMagnetic') * 2)
+    .inputs(ore('wireGtDoubleCupronickel') * 2)
+    .inputs(metaitem('commutator'))
+    .inputs(metaitem('brush') * 2)
+    .outputs(metaitem('electric.motor.mv'))
+    .duration(100)
+    .EUt(120)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtDoubleSilver'))
+    .inputs(ore('stickStainlessSteel'))
+    .inputs(ore('plateAlnicoMagnetic') * 2)
+    .inputs(ore('wireGtDoubleElectrum') * 2)
+    .inputs(metaitem('commutator'))
+    .inputs(metaitem('brush') * 2)
+    .outputs(metaitem('electric.motor.hv'))
+    .duration(100)
+    .EUt(480)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtDoubleAluminium'))
+    .inputs(ore('stickTitanium'))
+    .inputs(ore('plateAlnicoMagnetic') * 2)
+    .inputs(ore('wireGtDoubleKanthal') * 2)
+    .inputs(metaitem('commutator'))
+    .inputs(metaitem('brush') * 2)
+    .outputs(metaitem('electric.motor.ev'))
+    .duration(100)
+    .EUt(1920)
+    .buildAndRegister();

@@ -40,12 +40,9 @@ eventManager.listen {
         customMetaItems.addItem(151, "slaked_lime")
         customMetaItems.addItem(152, "sand.dust")
         customMetaItems.addItem(153, "native_copper")
-
         customMetaItems.addItem(154, "washed_rotten_flesh");
-
         customMetaItems.addItem(155, "sugar_cane_dust");
-
-        // FREE ID: 156
+        
         customMetaItems.addItem(157, "hydrocracking_catalyst")
         customMetaItems.addItem(158, "paraffin_wax");
         customMetaItems.addItem(159, "spent_cracking_catalyst");
@@ -107,6 +104,10 @@ eventManager.listen {
         customMetaItems.addItem(212, "drone.lv").setMaxStackSize(1).addComponents(ElectricStats.createRechargeableBattery(10000, GTValues.LV)).setModelAmount(8).setCreativeTabs(GregTechAPI.TAB_GREGTECH_TOOLS);
         customMetaItems.addItem(213, "glass_fibers")
         customMetaItems.addItem(214, "epoxy_lamina")
+
+        customMetaItems.addItem(215, "commutator")
+        customMetaItems.addItem(216, "brush.unfired")
+        customMetaItems.addItem(217, "brush")
 
         customMetaItems.addItem(250, "beads.amberlyst_ch");
         customMetaItems.addItem(251, "beads.strong_acidic_cation_exchange");
