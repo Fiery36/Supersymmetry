@@ -1770,11 +1770,7 @@ public class FirstDegreeMaterials {
                 .build();
 
 
-        CobaltOxide = new Material.Builder(8360, SuSyUtility.susyId('cobalt_oxide'))
-                .dust()
-                .components(Cobalt, Oxygen)
-                .color(0xd6e600)
-                .build();
+        // FREE ID: 8360
 
         CrudeTin = new Material.Builder(8361, SuSyUtility.susyId('crude_tin'))
                 .liquid(new FluidBuilder().temperature(600))
@@ -1787,7 +1783,7 @@ public class FirstDegreeMaterials {
                 .dust()
                 .components(Cassiterite)
                 .colorAverage()
-                .iconSet(DULL)f
+                .iconSet(DULL)
                 .build();
 
         AmmoniumTungstateSolution = new Material.Builder(8363, SuSyUtility.susyId('ammonium_tungstate_solution'))

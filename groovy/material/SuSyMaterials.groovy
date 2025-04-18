@@ -1021,7 +1021,6 @@ class SuSyMaterials {
         public static Material SaltyArsenicPentoxide;
         public static Material TinIVOxide;
         public static Material AntimonyVOxide;
-        public static Material CobaltOxide;
         public static Material CrudeTin;
         public static Material LeachedCassiteriteConcentrate;
         public static Material AmmoniumTungstateSolution;
