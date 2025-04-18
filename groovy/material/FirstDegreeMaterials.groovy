@@ -1029,7 +1029,24 @@ public class FirstDegreeMaterials {
                 .color(0x879e21)
                 .build()
 
-        // FREE IDs: 8245-8246
+        Alnico = new Material.Builder(8245, SuSyUtility.susyId('alnico'))
+                .dust().ingot().liquid(new FluidBuilder().temperature(1600))
+                .components(Aluminium * 5, Nickel * 4, Cobalt * 3, Copper, Iron * 11)
+                .color(0xb2d8ed)
+                .iconSet(METALLIC)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
+                .build()
+
+        AlnicoMagnetic = new Material.Builder(8246, SuSyUtility.susyId('alnico_magnetic'))
+                .ingot()
+                .iconSet(MAGNETIC)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION, IS_MAGNETIC)
+                .color(0xb2d8ed)
+                .components(Alnico)
+                .ingotSmeltInto(Alnico)
+                .arcSmeltInto(Alnico)
+                .macerateInto(Alnico)
+                .build()
 
         SulfidicSilverCyanideSolution = new Material.Builder(8247, SuSyUtility.susyId('sulfidic_silver_cyanide_solution'))
                 .liquid()

@@ -2224,6 +2224,8 @@ susy.material.dehexanized_naphtha=Dehexanized Naphtha
 susy.material.sodium_hydrosulfide=Sodium Hydrosulfide
 susy.material.sodium_hydrosulfide_solution=Sodium Hydrosulfide Solution
 susy.material.potassium_iodate=Potassium Iodate
+susy.material.alnico=Alnico
+susy.material.alnico_magnetic=Magnetic Alnico
 
 # Isotopes
 
