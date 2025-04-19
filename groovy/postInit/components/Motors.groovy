@@ -31,6 +31,8 @@ mods.gregtech.assembly_line.removeByInput(100000, [metaitem('stickLongSamariumMa
 
 crafting.removeByOutput(metaitem('electric.motor.lv'))
 
+// Brushed DC Motors (LV-EV)
+
 crafting.addShapeless('commutator', metaitem('commutator'), [
     metaitem('plateCopper'), metaitem('plateStone'), metaitem('rubber_drop'), ore('toolWireCutter')
 ])
@@ -109,7 +111,7 @@ ASSEMBLER.recipeBuilder()
     .inputs(metaitem('brush') * 2)
     .outputs(metaitem('electric.motor.mv'))
     .duration(100)
-    .EUt(120)
+    .EUt(30)
     .buildAndRegister();
 
 ASSEMBLER.recipeBuilder()
@@ -121,7 +123,7 @@ ASSEMBLER.recipeBuilder()
     .inputs(metaitem('brush') * 2)
     .outputs(metaitem('electric.motor.hv'))
     .duration(100)
-    .EUt(480)
+    .EUt(30)
     .buildAndRegister();
 
 ASSEMBLER.recipeBuilder()
@@ -133,5 +135,119 @@ ASSEMBLER.recipeBuilder()
     .inputs(metaitem('brush') * 2)
     .outputs(metaitem('electric.motor.ev'))
     .duration(100)
-    .EUt(1920)
+    .EUt(30)
+    .buildAndRegister();
+
+// Brushless DC Motors
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtSingleTin') * 2)
+    .inputs(ore('stickLongSteel'))
+    .inputs(ore('plateSteelMagnetic') * 3)
+    .inputs(ore('wireGtSingleCopper') * 4)
+    .inputs(ore('componentTransistor') * 3)
+    .inputs(ore('circuitLv'))
+    .inputs(metaitem('circuit_board.basic'))
+    .outputs(metaitem('electric.motor.lv') * 6)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtSingleCopper') * 2)
+    .inputs(ore('stickLongAluminium'))
+    .inputs(ore('plateSteelMagnetic') * 3)
+    .inputs(ore('wireGtDoubleCupronickel') * 4)
+    .inputs(metaitem('plate.ultra_low_power_integrated_circuit'))
+    .inputs(ore('circuitMv'))
+    .inputs(metaitem('circuit_board.good'))
+    .outputs(metaitem('electric.motor.mv') * 6)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtDoubleSilver') * 2)
+    .inputs(ore('stickLongStainlessSteel'))
+    .inputs(ore('plateAlnicoMagnetic') * 3)
+    .inputs(ore('wireGtDoubleElectrum') * 4)
+    .inputs(metaitem('plate.low_power_integrated_circuit'))
+    .inputs(ore('circuitHv'))
+    .inputs(metaitem('circuit_board.plastic'))
+    .outputs(metaitem('electric.motor.hv') * 6)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtDoubleAluminium') * 2)
+    .inputs(ore('stickLongTitanium'))
+    .inputs(ore('plateAlnicoMagnetic') * 3)
+    .inputs(ore('wireGtDoubleKanthal') * 4)
+    .inputs(metaitem('plate.power_integrated_circuit'))
+    .inputs(ore('circuitEv'))
+    .inputs(metaitem('circuit_board.advanced'))
+    .outputs(metaitem('electric.motor.ev') * 6)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtDoubleTungsten') * 2)
+    .inputs(ore('stickLongTungstenSteel'))
+    .inputs(ore('plateAlnicoMagnetic') * 3)
+    .inputs(ore('wireGtDoubleGraphene') * 4)
+    .inputs(metaitem('plate.high_power_integrated_circuit'))
+    .inputs(ore('circuitIv'))
+    .inputs(metaitem('circuit_board.elite'))
+    .outputs(metaitem('electric.motor.iv') * 6)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
+// TEMPORARY: TO BE MODIFIED LATER
+
+ASSEMBLY_LINE.recipeBuilder()
+    .inputs(ore('stickLongSamariumAlloyMagnetic'))
+    .inputs(ore('stickLongHsss') * 2)
+    .inputs(ore('ringHsss') * 2)
+    .inputs(ore('roundHsss') * 4)
+    .inputs(ore('wireFineRuridit') * 64)
+    .inputs(ore('cableGtSingleNiobiumTitanium') * 2)
+    .fluidInputs(fluid('soldering_alloy') * 144)
+    .fluidInputs(fluid('lubricant') * 250)
+    .outputs(metaitem('electric.motor.luv'))
+    .duration(600)
+    .EUt(6000)
+    .buildAndRegister();
+
+ASSEMBLY_LINE.recipeBuilder()
+    .inputs(ore('stickLongSamariumAlloyMagnetic'))
+    .inputs(ore('stickLongOsmiridium') * 4)
+    .inputs(ore('ringOsmiridium') * 4)
+    .inputs(ore('roundOsmiridium') * 8)
+    .inputs(ore('wireFineEuropium') * 64)
+    .inputs(ore('wireFineEuropium') * 32)
+    .inputs(ore('cableGtSingleVanadiumGallium') * 2)
+    .fluidInputs(fluid('soldering_alloy') * 288)
+    .fluidInputs(fluid('lubricant') * 500)
+    .outputs(metaitem('electric.motor.zpm'))
+    .duration(600)
+    .EUt(24000)
+    .buildAndRegister();
+
+ASSEMBLY_LINE.recipeBuilder()
+    .inputs(ore('stickLongSamariumAlloyMagnetic'))
+    .inputs(ore('stickLongTritanium') * 4)
+    .inputs(ore('ringTritanium') * 4)
+    .inputs(ore('roundTritanium') * 8)
+    .inputs(ore('wireFineAmericium') * 64)
+    .inputs(ore('wireFineAmericium') * 64)
+    .inputs(ore('cableGtSingleYttriumBariumCuprate') * 2)
+    .fluidInputs(fluid('soldering_alloy') * 576)
+    .fluidInputs(fluid('lubricant') * 1000)
+    .fluidInputs(fluid('naquadria') * 576)
+    .outputs(metaitem('electric.motor.uv'))
+    .duration(600)
+    .EUt(100000)
     .buildAndRegister();
