@@ -4079,3 +4079,13 @@ MIXER.recipeBuilder()
         .duration(80)
         .EUt(30)
         .buildAndRegister()
+
+// Copper Chloride Solution
+
+MIXER.recipeBuilder()
+        .inputs(ore('dusCopperIiChloride') * 3)
+        .fluidInputs(fluid('water') * 1000)
+        .fluidOutputs(fluid('copper_chloride_solution') * 1000)
+        .duration(80)
+        .EUt(30)
+        .buildAndRegister()
