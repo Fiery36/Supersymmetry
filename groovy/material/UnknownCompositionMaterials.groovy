@@ -2840,5 +2840,20 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xb0a763)
                 .build()
+
+        BastnasiticFilteredMREEWaste = new Material.Builder(4623, SuSyUtility.susyId('bast_filtered_mree_waste'))
+                .liquid()
+                .color(0xd45b00)
+                .build()
+
+        MonaziticFilteredMREEWaste = new Material.Builder(4624, SuSyUtility.susyId('mona_filtered_mree_waste'))
+                .liquid()
+                .color(0xd45b00)
+                .build()
+
+        XenotimicFilteredMREEWaste = new Material.Builder(4625, SuSyUtility.susyId('xeno_filtered_mree_waste'))
+                .liquid()
+                .color(0xd45b00)
+                .build()
     }
 }

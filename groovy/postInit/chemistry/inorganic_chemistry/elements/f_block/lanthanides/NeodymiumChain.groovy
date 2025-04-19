@@ -4,8 +4,17 @@ import static gregtech.api.unification.material.Materials.*;
 import gregtech.api.unification.material.MarkerMaterials;
 import static gregtech.api.unification.ore.OrePrefix.dye;
 
+ROASTER = recipemap('roaster')
 BR = recipemap('batch_reactor')
 REACTION_FURNACE = recipemap('reaction_furnace')
+
+ROASTER.recipeBuilder()
+        .inputs(ore('dustNeodymiumHydroxide') * 14)
+        .outputs(metaitem('dustNeodymiumOxide') * 5)
+        .fluidOutputs(fluid('dense_steam') * 3000)
+        .duration(160)
+        .EUt(480)
+        .buildAndRegister()
 
 BR.recipeBuilder()
         .inputs(ore('dustNeodymiumOxide') * 5)

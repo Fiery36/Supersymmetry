@@ -4061,3 +4061,21 @@ BR.recipeBuilder()
         .duration(120)
         .EUt(7)
         .buildAndRegister()
+
+// Sodium Chromate distillation and solution
+
+DISTILLERY.recipeBuilder()
+        .fluidInputs(fluid('sodium_chromate_solution') * 1000)
+        .outputs(metaitem('dustSodiumChromate') * 7)
+        .fluidOutputs(fluid('water') * 1000)
+        .duration(80)
+        .EUt(30)
+        .buildAndRegister()
+
+MIXER.recipeBuilder()
+        .fluidInputs(fluid('water') * 1000)
+        .inputs(metaitem('dustSodiumChromate') * 7)
+        .fluidOutputs(fluid('sodium_chromate_solution') * 1000)
+        .duration(80)
+        .EUt(30)
+        .buildAndRegister()

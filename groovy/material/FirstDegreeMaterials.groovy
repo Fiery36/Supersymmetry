@@ -1674,7 +1674,11 @@ public class FirstDegreeMaterials {
                 .color(0xb3c99)
                 .build();
 
-        // FREE ID: 8345
+        SodiumChromate = new Material.Builder(8345, SuSyUtility.susyId('sodium_chromate'))
+                .dust()
+                .components(Sodium * 2, Chrome, Oxygen * 4)
+                .color(0xfad83e)
+                .build();
 
         LeadFreeSolder = new Material.Builder(8346, SuSyUtility.susyId('lead_free_solder'))
                 .ingot().liquid(new FluidBuilder().temperature(411))
@@ -3693,7 +3697,7 @@ public class FirstDegreeMaterials {
 
         PraseodymiumOxide = new Material.Builder(8655, SuSyUtility.susyId('praseodymium_oxide'))
                 .dust()
-                .components(Praseodymium * 2, Oxygen * 3)
+                .components(Praseodymium, Oxygen * 2)
                 .color(0xbff583)
                 .build()
 
@@ -3711,7 +3715,7 @@ public class FirstDegreeMaterials {
 
         SamariumAmalgam = new Material.Builder(8658, SuSyUtility.susyId('samarium_amalgam'))
                 .liquid(new FluidBuilder().temperature(363))
-                .components(Samarium, Mercury, Sodium * 3)
+                .components(Samarium, Mercury)
                 .color(0x80324c)
                 .build()
 
@@ -3808,7 +3812,7 @@ public class FirstDegreeMaterials {
 
         YtterbiumAmalgam = new Material.Builder(8673, SuSyUtility.susyId('ytterbium_amalgam'))
                 .liquid(new FluidBuilder().temperature(363))
-                .components(Ytterbium, Sodium * 3, Mercury)
+                .components(Ytterbium, Mercury)
                 .color(0x8a3264)
                 .build()
                 .setFormula("Na3Hg(Yb)", true)
@@ -3918,7 +3922,7 @@ public class FirstDegreeMaterials {
 
         PraseodymiumFluoride = new Material.Builder(8691, SuSyUtility.susyId('praseodymium_fluoride'))
                 .dust()
-                .components(Praseodymium, Fluorine * 3)
+                .components(Praseodymium, Fluorine * 4)
                 .colorAverage()
                 .build()
 

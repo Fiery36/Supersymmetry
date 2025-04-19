@@ -1113,6 +1113,7 @@ class SuSyMaterials {
         public static Material PhosphoricAcidSilicaGel;
         public static Material SodiumChromateMixture;
         public static Material SodiumChromateSolution;
+        public static Material SodiumChromate;
         public static Material LeadChloride;
         public static Material SodiumVanadateSolution;
         public static Material AmmoniumMetavanadate;
@@ -1392,6 +1393,7 @@ class SuSyMaterials {
         public static Material MonaziticGadoliniumFreeMREEConcentrate;
         public static Material MonaziticTerbiumFreeMREEConcentrate;
         public static Material MonaziticMREEWaste;
+        public static Material MonaziticFilteredMREEWaste;
         public static Material MonaziticHREEDoubleChromates;
         public static Material MonaziticYttriumFreeHREEConcentrate;
         public static Material MonaziticErbiumFreeHREEConcentrate;
@@ -1421,6 +1423,7 @@ class SuSyMaterials {
         public static Material BastnasiticGadoliniumFreeMREEConcentrate;
         public static Material BastnasiticTerbiumFreeMREEConcentrate;
         public static Material BastnasiticMREEWaste;
+        public static Material BastnasiticFilteredMREEWaste;
         public static Material BastnasiticHREEDoubleChromates;
         public static Material BastnasiticYttriumFreeHREEConcentrate;
         public static Material BastnasiticErbiumFreeHREEConcentrate;
@@ -1449,6 +1452,7 @@ class SuSyMaterials {
         public static Material XenotimicGadoliniumFreeMREEConcentrate;
         public static Material XenotimicTerbiumFreeMREEConcentrate;
         public static Material XenotimicMREEWaste;
+        public static Material XenotimicFilteredMREEWaste;
         public static Material XenotimicHREEDoubleChromates;
         public static Material XenotimicYttriumFreeHREEConcentrate;
         public static Material XenotimicErbiumFreeHREEConcentrate;
