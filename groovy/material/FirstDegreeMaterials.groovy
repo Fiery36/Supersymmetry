@@ -1384,7 +1384,7 @@ public class FirstDegreeMaterials {
 
         Mica = new Material.Builder(8297, SuSyUtility.susyId('mica'))
                 .dust()
-                .components(Potassium, Aluminium * 3, Silicon * 3 Oxygen * 12, Hydrogen * 2)
+                .components(Potassium, Aluminium * 3, Silicon * 3, Oxygen * 12, Hydrogen * 2)
                 .color(0xe8e7ba)
                 .flags(GENERATE_PLATE, NO_UNIFICATION)
                 .iconSet(SAND)

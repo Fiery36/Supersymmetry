@@ -20,6 +20,7 @@ mods.gregtech.assembly_line.removeByInput(24000, [metaitem('stickLongSamariumMag
 mods.gregtech.assembly_line.removeByInput(100000, [metaitem('stickLongSamariumMagnetic'), metaitem('stickLongTritanium') * 4, metaitem('ringTritanium') * 4, metaitem('roundTritanium') * 8, metaitem('wireFineAmericium') * 64, metaitem('wireFineAmericium') * 64, metaitem('cableGtSingleYttriumBariumCuprate') * 2], [fluid('soldering_alloy') * 576, fluid('lubricant') * 1000, fluid('naquadria') * 576])
 
 crafting.removeByOutput(metaitem('electric.motor.lv'))
+crafting.removeByOutput(metaitem('electric.motor.iv'))
 
 // Brushed DC Motors (LV-EV)
 
@@ -27,7 +28,7 @@ crafting.addShapeless('commutator', metaitem('commutator'), [
     metaitem('plateCopper'), metaitem('plateStone'), metaitem('rubber_drop'), ore('toolWireCutter')
 ])
 
-crafting.addShapeless('brush.unfired', metaitem('unfired_brush'), [
+crafting.addShapeless('brush.unfired', metaitem('brush.unfired'), [
     metaitem('dustGraphite'), metaitem('rubber_drop'), ore('toolHammer')
 ])
 
@@ -75,7 +76,15 @@ ASSEMBLER.recipeBuilder()
 ASSEMBLER.recipeBuilder()
     .inputs(ore('dustGraphite'))
     .fluidInputs(fluid('glue') * 100)
-    .outputs(metaitem('unfired_brush') * 2)
+    .outputs(metaitem('brush.unfired') * 2)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('dustMica'))
+    .fluidInputs(fluid('glue') * 100)
+    .outputs(metaitem('plateMica'))
     .duration(100)
     .EUt(30)
     .buildAndRegister();
