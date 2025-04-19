@@ -9,6 +9,17 @@ ASSEMBLER = recipemap('assembler')
 POLARIZER = recipemap('polarizer')
 ASSEMBLY_LINE = recipemap('assembly_line')
 
+// Extreme Voltage Coil * 1
+mods.gregtech.assembler.removeByInput(1920, [metaitem('stickNeodymiumMagnetic'), metaitem('wireFineTungstenSteel') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+// Insane Voltage Coil * 1
+mods.gregtech.assembler.removeByInput(7680, [metaitem('stickNeodymiumMagnetic'), metaitem('wireFineIridium') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+// Ludicrous Voltage Coil * 1
+mods.gregtech.assembler.removeByInput(30720, [metaitem('stickSamariumMagnetic'), metaitem('wireFineOsmiridium') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+// Zero Point Module Voltage Coil * 1
+mods.gregtech.assembler.removeByInput(122880, [metaitem('stickSamariumMagnetic'), metaitem('wireFineEuropium') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+// Ultimate Voltage Coil * 1
+mods.gregtech.assembler.removeByInput(491520, [metaitem('stickSamariumMagnetic'), metaitem('wireFineTritanium') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+
 //ALNICO
 
 MIXER.recipeBuilder()

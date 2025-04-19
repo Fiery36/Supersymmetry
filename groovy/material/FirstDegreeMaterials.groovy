@@ -1035,7 +1035,7 @@ public class FirstDegreeMaterials {
                 .color(0xb2d8ed)
                 .iconSet(METALLIC)
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
-                .blast(b -> b.temp(1600, GasTier.LOW).blastStats(480, 200))
+                .blastTemp(1600, GasTier.LOW, 480, 200)
                 .build()
 
         AlnicoMagnetic = new Material.Builder(8246, SuSyUtility.susyId('alnico_magnetic'))

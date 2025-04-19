@@ -42,6 +42,8 @@ eventManager.listen {
         customMetaItems.addItem(153, "native_copper")
         customMetaItems.addItem(154, "washed_rotten_flesh");
         customMetaItems.addItem(155, "sugar_cane_dust");
+
+        // FREE ID: 156
         
         customMetaItems.addItem(157, "hydrocracking_catalyst")
         customMetaItems.addItem(158, "paraffin_wax");
