@@ -1,5 +1,3 @@
-import globals.Globals
-
 def name_removals = [
     'quark:arrow_explosive',
     'minecraft:chest',
@@ -33,10 +31,10 @@ def chestVariants = [
 chestVariants.each { chest ->
     planks = chest.vanilla | chest.chisel | chest.vertical
 
-crafting.addShaped(chest.name, item('quark:custom_chest', chest.meta), [
-    [planks, planks, planks],
-    [planks, null, planks],
-    [planks, planks, planks]])
+    crafting.addShaped(chest.name, item('quark:custom_chest', chest.meta), [
+        [planks, planks, planks],
+        [planks, null, planks],
+        [planks, planks, planks]])
 }
 
 
