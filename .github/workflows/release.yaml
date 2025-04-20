@@ -81,7 +81,7 @@ jobs:
         with:
           file_path: "buildOut/supersymmetry-${{steps.get-version.outputs.result}}.zip"
           game_endpoint: "minecraft"
-          game_versions: "1.12.2,Forge"
+          game_versions: "Minecraft 1.12:1.12.2"
           project_id: "849321"
           token: "${{ secrets.CFAPIKEY }}"
           changelog: "${{ steps.extract_changelog.outputs.changelog }}"
