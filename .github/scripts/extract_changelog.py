@@ -1,6 +1,19 @@
 import sys
 import re
 import os
+import uuid
+
+def set_output(name, value):
+    with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+        print(f'{name}={value}', file=fh)
+
+
+def set_multiline_output(name, value):
+    with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+        delimiter = uuid.uuid1()
+        print(f'{name}<<{delimiter}', file=fh)
+        print(value, file=fh)
+        print(delimiter, file=fh)
 
 def extract_changelog_section(changelog_path, version):
     try:
@@ -37,3 +50,4 @@ if __name__ == "__main__":
     changelog_section = extract_changelog_section(changelog_path, version)
     changelog_section += "\nDownload the server and client on [GitHub](https://github.com/SymmetricDevs/Supersymmetry/releases/tag/{version})!"
     print(changelog_section)
+    set_multiline_output("changelog", changelog_section)
