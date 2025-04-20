@@ -52,12 +52,12 @@ jobs:
         id: check-tag
         uses: mukunku/tag-exists-action@v1.6.0
         with: 
-          tag: "v${{ steps.get-version.outputs.result }}"
+          tag: "${{ steps.get-version.outputs.result }}"
 
       - name: If so, fail workflow
         if: steps.check-tag.outputs.exists == 'true'
         run: |
-          echo "Error: Tag v${{ steps.get-version.outputs.result }} already exists! Please update pack.toml to change the version number."
+          echo "Error: Tag ${{ steps.get-version.outputs.result }} already exists! Please update pack.toml to change the version number."
           exit 1
 
       - name: Rename file
@@ -69,6 +69,8 @@ jobs:
 
       - name: Extract changelog for version
         id: extract-changelog
+        env:
+          VERSION: ${{ steps.get-version.outputs.result }}
         run: |
           chmod +x .github/scripts/extract_changelog.py
           python .github/scripts/extract_changelog.py

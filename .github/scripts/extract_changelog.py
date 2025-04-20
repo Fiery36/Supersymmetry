@@ -35,5 +35,5 @@ if __name__ == "__main__":
         sys.exit(1)
     
     changelog_section = extract_changelog_section(changelog_path, version)
-    changelog_section += "Download the server and client on [GitHub](https://github.com/SymmetricDevs/Supersymmetry/releases/tag/{version})!"
+    changelog_section += "\nDownload the server and client on [GitHub](https://github.com/SymmetricDevs/Supersymmetry/releases/tag/{version})!"
     print(changelog_section)
