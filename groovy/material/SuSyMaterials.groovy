@@ -25,13 +25,13 @@ class SuSyMaterials {
 
         // Element Materials
 
+        // Isotope Materials
+
         public static Material NaturalUranium;
         public static Material LEU235;
         public static Material HALEU235;
         public static Material HEU235;
         public static Material WeaponsGradeUranium;
-
-        // Isotope Materials
 
         // Ore Materials
 

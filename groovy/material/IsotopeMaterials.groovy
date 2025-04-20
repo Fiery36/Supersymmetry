@@ -1,10 +1,13 @@
 package material;
 
 import static material.SuSyMaterials.*;
+import static globals.Globals.*;
 
 import gregtech.api.unification.material.Material;
 import gregtech.api.GregTechAPI;
 import gregtech.api.unification.material.properties.*
+import gregtech.api.GTValues;
+import supersymmetry.api.util.SuSyUtility;
 
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
