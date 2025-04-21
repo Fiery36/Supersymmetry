@@ -3674,7 +3674,7 @@ public class FirstDegreeMaterials {
                 .gas(new FluidBuilder().temperature(330))
                 .iconSet(SAND)
                 .components(NaturalUranium, Fluorine * 6)
-                .color(0x4287f5)
+                .color(0x46ba30)
                 .build();
 
         LEU235Hexafluoride = new Material.Builder(8651, SuSyUtility.susyId('leu_235_hexafluoride'))
@@ -3705,12 +3705,7 @@ public class FirstDegreeMaterials {
                 .color(0x1ec200)
                 .build();
 
-        DepletedUraniumHexafluoride = new Material.Builder(8655, SuSyUtility.susyId('depleted_uranium_hexafluoride'))
-                .gas(new FluidBuilder().temperature(330))
-                .iconSet(SAND)
-                .components(Uranium238, Fluorine * 6)
-                .color(0x1ec200)
-                .build();
+        // FREE ID: 8655
 
         LEU235AmmoniumDiuranate = new Material.Builder(8656, SuSyUtility.susyId('leu_235_ammonium_diuranate'))
                 .dust()

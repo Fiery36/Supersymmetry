@@ -1305,7 +1305,6 @@ class SuSyMaterials {
         public static Material HALEU235Hexafluoride;
         public static Material HEU235Hexafluoride;
         public static Material WeaponsGradeUraniumHexafluoride;
-        public static Material DepletedUraniumHexafluoride;
         public static Material LEU235AmmoniumDiuranate;
         public static Material HALEU235AmmoniumDiuranate;
         public static Material HEU235AmmoniumDiuranate;

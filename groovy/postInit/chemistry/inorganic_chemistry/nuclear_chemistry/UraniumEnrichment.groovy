@@ -30,7 +30,7 @@ GAS_CENTRIFUGE_RECIPES.recipeBuilder()
     .fluidInputs(fluid('heu_235_hexafluoride') * 4500)
     .fluidOutputs(fluid('depleted_uranium_hexafluoride') * 3500)
     .fluidOutputs(fluid('weapons_grade_uranium_hexafluoride') * 1000)
-    .duration(800)
+    .duration(10000)
     .EUt(480)
     .buildAndRegister()
 
@@ -38,8 +38,8 @@ def uranium_grades = [
     'leu_235',
     'haleu_235',
     'heu_235',
-    'weapons_grade_uranium',
-    'depleted_uranium'
+    'depleted_uranium',
+    'weapons_grade_uranium'
 ]
 
 REACTION_FURNACE.recipeBuilder()
@@ -61,7 +61,7 @@ REACTION_FURNACE.recipeBuilder()
     .buildAndRegister()
 
 for (grade in uranium_grades) {
-    grade_solid = grade.split('_').collect { it.capitalize() }.join()
+    grade_solid = grade.replace('uranium', '').split('_').collect { it.capitalize() }.join()
 
     BR.recipeBuilder()
         .fluidInputs(fluid(grade + '_hexafluoride') * 2000)
