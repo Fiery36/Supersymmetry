@@ -3718,7 +3718,8 @@ public class FirstDegreeMaterials {
                 .components(LEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
                 .color(0xe6cc22)
                 .build()
-                .setFormula("(NH4)2U2O7", true);
+
+        LEU235AmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
 
         HALEU235AmmoniumDiuranate = new Material.Builder(8657, SuSyUtility.susyId('haleu_235_ammonium_diuranate'))
                 .dust()
@@ -3726,7 +3727,8 @@ public class FirstDegreeMaterials {
                 .components(HALEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
                 .color(0xe6cc22)
                 .build()
-                .setFormula("(NH4)2U2O7", true);
+        
+        HALEU235AmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
 
         HEU235AmmoniumDiuranate = new Material.Builder(8658, SuSyUtility.susyId('heu_235_ammonium_diuranate'))
                 .dust()
@@ -3734,7 +3736,8 @@ public class FirstDegreeMaterials {
                 .components(HEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
                 .color(0x82f622)
                 .build()
-                .setFormula("(NH4)2U2O7", true);
+                
+        HEU235AmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
 
         WeaponsGradeAmmoniumDiuranate = new Material.Builder(8659, SuSyUtility.susyId('weapons_grade_ammonium_diuranate'))
                 .dust()
@@ -3742,7 +3745,8 @@ public class FirstDegreeMaterials {
                 .components(WeaponsGradeUranium, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
                 .color(0x62ff22)
                 .build()
-                .setFormula("(NH4)2U2O7", true);
+        
+        WeaponsGradeAmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
 
         DepletedAmmoniumDiuranate = new Material.Builder(8660, SuSyUtility.susyId('depleted_ammonium_diuranate'))
                 .dust()
@@ -3750,7 +3754,8 @@ public class FirstDegreeMaterials {
                 .components(Uranium238, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
                 .color(0xcfb029)
                 .build()
-                .setFormula("(NH4)2U2O7", true);
+        
+        DepletedAmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
 
         LEU235UraniumDioxide = new Material.Builder(8661, SuSyUtility.susyId('leu_235_uranium_dioxide'))
                 .dust()
@@ -3758,8 +3763,8 @@ public class FirstDegreeMaterials {
                 .components(LEU235, Oxygen * 2)
                 .color(0x1d2618)
                 .build()
-                .setFormula("UO2", true);
-
+        
+        LEU235UraniumDioxide.setFormula("UO2", true);
         LEU235UraniumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1500, 750, 55.0, 1.0, 2500.0, 0.0, 3.5, LEU235UraniumDioxide.getRegistryName()));
 
         HALEU235UraniumDioxide = new Material.Builder(8662, SuSyUtility.susyId('haleu_235_uranium_dioxide'))
@@ -3768,8 +3773,8 @@ public class FirstDegreeMaterials {
                 .components(HALEU235, Oxygen * 2)
                 .color(0x1c2617)
                 .build()
-                .setFormula("UO2", true);
-
+        
+        HALEU235UraniumDioxide.setFormula("UO2", true);
         HALEU235UraniumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1600, 700, 50.0, 1.0, 2700.0, 0.0, 3, HALEU235UraniumDioxide.getRegistryName()));
 
         HEU235UraniumDioxide = new Material.Builder(8663, SuSyUtility.susyId('heu_235_uranium_dioxide'))
@@ -3778,8 +3783,8 @@ public class FirstDegreeMaterials {
                 .components(HEU235, Oxygen * 2)
                 .color(0x273b1d)
                 .build()
-                .setFormula("UO2", true);
-
+        
+        HEU235UraniumDioxide.setFormula("UO2", true);
         HEU235UraniumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1800, 600, 40.0, 1.0, 3000.0, 0.0, 2.5, HEU235UraniumDioxide.getRegistryName()));
 
         WeaponsGradeUraniumDioxide = new Material.Builder(8664, SuSyUtility.susyId('weapons_grade_uranium_dioxide'))
