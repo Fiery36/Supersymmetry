@@ -21,19 +21,19 @@ import static material.SuSyMaterials.*
 
 //eventManager.listen(EventPriority.LOWEST)
 class ChangeFlags {
-	private static void setupSlurries(Material mat) {
-		def property = new FluidProperty()
-		property.enqueueRegistration(SusyFluidStorageKeys.SLURRY, new FluidBuilder().temperature(293))
-		property.enqueueRegistration(SusyFluidStorageKeys.IMPURE_SLURRY, new FluidBuilder().temperature(293))
+    private static void setupSlurries(Material mat) {
+        def property = new FluidProperty()
+        property.enqueueRegistration(SusyFluidStorageKeys.SLURRY, new FluidBuilder().temperature(293))
+        property.enqueueRegistration(SusyFluidStorageKeys.IMPURE_SLURRY, new FluidBuilder().temperature(293))
 
-		mat.setProperty(PropertyKey.FLUID, property)
-	}
-	
-	private static void setupFluidType(Material mat, FluidStorageKey key, int temp) {
+        mat.setProperty(PropertyKey.FLUID, property)
+    }
+    
+    private static void setupFluidType(Material mat, FluidStorageKey key, int temp) {
         if (mat.getProperty(PropertyKey.FLUID) == null) {
             def property = new FluidProperty();
-		    property.enqueueRegistration(key, new FluidBuilder().temperature(temp))
-		    mat.setProperty(PropertyKey.FLUID, property)
+            property.enqueueRegistration(key, new FluidBuilder().temperature(temp))
+            mat.setProperty(PropertyKey.FLUID, property)
         } else {
             def property = mat.getProperty(PropertyKey.FLUID)
             if (property.getQueuedBuilder(key) != null) {
@@ -42,17 +42,17 @@ class ChangeFlags {
                 property.enqueueRegistration(key, new FluidBuilder().temperature(temp))
             }
         }
-	}
-	private static void setupFluidType(Material mat, FluidStorageKey key) {
+    }
+    private static void setupFluidType(Material mat, FluidStorageKey key) {
         if (mat.getProperty(PropertyKey.FLUID) == null) {
             def property = new FluidProperty();
-		    property.enqueueRegistration(key, new FluidBuilder())
-		    mat.setProperty(PropertyKey.FLUID, property)
+            property.enqueueRegistration(key, new FluidBuilder())
+            mat.setProperty(PropertyKey.FLUID, property)
         } else {
             def property = mat.getProperty(PropertyKey.FLUID)
-		    property.enqueueRegistration(key, new FluidBuilder())
+            property.enqueueRegistration(key, new FluidBuilder())
         }
-	}
+    }
 
     public static void init() {
     //MaterialEvent event ->
@@ -89,12 +89,32 @@ class ChangeFlags {
         OsmiumTetroxide.addFlags("NO_UNIFICATION")
         //setupFluidType(Iron3Chloride, FluidStorageKeys.GAS, 590) 
 
+        setupFluidType(Sodium, FluidStorageKeys.LIQUID, 371)
+        setupFluidType(SodiumHydroxide, FluidStorageKeys.LIQUID, 591)
+        setupFluidType(Polydimethylsiloxane, FluidStorageKeys.LIQUID, 293)
+        setupFluidType(Glass, FluidStorageKeys.LIQUID, 1990)
+        setupFluidType(PolyvinylButyral, FluidStorageKeys.LIQUID, 440)
+        setupFluidType(Nitrochlorobenzene, FluidStorageKeys.LIQUID, 326)
+        setupFluidType(Iron3Chloride, FluidStorageKeys.LIQUID, 585)
+        setupFluidType(Dichlorobenzidine, FluidStorageKeys.LIQUID, 438)
+        setupFluidType(Diaminobenzidine, FluidStorageKeys.LIQUID, 450)
+        setupFluidType(PhthalicAcid, FluidStorageKeys.LIQUID, 480)
+        setupFluidType(DiphenylIsophtalate, FluidStorageKeys.LIQUID, 410)
+        setupFluidType(Dichlorobenzene, FluidStorageKeys.LIQUID, 256)
+        setupFluidType(SiliconeRubber, FluidStorageKeys.LIQUID, 400)
+        setupFluidType(StyreneButadieneRubber, FluidStorageKeys.LIQUID, 450)
+        setupFluidType(HighPurityGermanium, FluidStorageKeys.LIQUID, 1211)
+        setupFluidType(HighPurityArsenic, FluidStorageKeys.LIQUID, 1090)
+        setupFluidType(HighPuritySelenium, FluidStorageKeys.LIQUID, 494)
+        setupFluidType(BlackSteel, FluidStorageKeys.LIQUID, 1728)
+        setupFluidType(Polytetrafluoroethylene, FluidStorageKeys.LIQUID, 293)
+
         setupFluidType(CarbonDioxide, SusyFluidStorageKeys.SUPERCRITICAL, 304)
         setupFluidType(Propane, SusyFluidStorageKeys.SUPERCRITICAL, 370)
 
         Polybenzimidazole.setProperty(SuSyPropertyKey.FIBER, new FiberProperty(false, true, true))
         Polytetrafluoroethylene.setProperty(SuSyPropertyKey.FIBER, new FiberProperty(false, true, false))
-        Polydimethylsiloxane.setProperty(PropertyKey.FLUID, new FluidProperty(FluidStorageKeys.LIQUID, new FluidBuilder()));
+        //Polydimethylsiloxane.setProperty(PropertyKey.FLUID, new FluidProperty(FluidStorageKeys.LIQUID, new FluidBuilder()));
 
         Tantalum.setProperty(PropertyKey.BLAST, new BlastProperty(3293, GasTier.MID, 480, 240, -1, -1));
         Molybdenum.setProperty(PropertyKey.BLAST, new BlastProperty(2890, GasTier.MID, 480, 240, -1, -1));
@@ -148,6 +168,7 @@ class ChangeFlags {
         Phosphorus.addFlags("no_smelting");
         Tetrahedrite.addFlags("no_smelting");
         Gold.addFlags("generate_gear");
+        IronMagnetic.addFlags("generate_ring");
 
         /*
         ManganesePhosphide.addFlags("no_smashing", "no_smelting")
@@ -188,11 +209,11 @@ class ChangeFlags {
         Pitchblende.addFlags("disable_decomposition")
         Borax.setProperty(PropertyKey.ORE, new OreProperty());
         Scheelite.addFlags("generate_sifted", "generate_flotated");
-		setupSlurries(Scheelite)
+        setupSlurries(Scheelite)
         Pyrochlore.addFlags("generate_sifted", "generate_flotated", "generate_concentrate");
-		setupSlurries(Pyrochlore)
+        setupSlurries(Pyrochlore)
         Molybdenite.addFlags("generate_flotated");
-		setupSlurries(Molybdenite)
+        setupSlurries(Molybdenite)
         Tantalite.addFlags("generate_sifted", "generate_flotated", "generate_concentrate");
         setupSlurries(Tantalite)
         setupSlurries(Galena)
@@ -208,9 +229,8 @@ class ChangeFlags {
         Rutile.addFlags("generate_concentrate");
         setupSlurries(Sphalerite)
         setupSlurries(Pollucite)
-        setupSlurries(Arsenopyrite)
         Pentlandite.addFlags("generate_sifted", "generate_flotated");
-		setupSlurries(Pentlandite)
+        setupSlurries(Pentlandite)
 
         setupFluidType(PolyvinylAcetate, FluidStorageKeys.LIQUID, 385)
 

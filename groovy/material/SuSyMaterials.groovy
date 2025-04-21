@@ -348,6 +348,7 @@ class SuSyMaterials {
         public static Material ImpureUranylCarbonateSolution;
         public static Material UranylCarbonateSolution;
         public static Material UranylSulfateSolution;
+        public static Material ImpureUranylSulfateSolution;
         public static Material TetraethylleadSludge;
         public static Material Oxygenates;
         public static Material Antioxidants;
@@ -539,7 +540,7 @@ class SuSyMaterials {
         public static Material PGMFreeCopperLeach;
         public static Material PGMConcentrate;
         public static Material SulfidicCopperLeach;
-        public static Material ChalcogenFreeCopperLeach; 
+        public static Material ChalcogenFreeCopperLeach;
         public static Material MixedChalcogenDioxide;
         public static Material CopperSelenideTelluride;
         public static Material NickelExtractionMixture;
@@ -793,7 +794,7 @@ class SuSyMaterials {
         public static Material SodiumBromide;
         public static Material HydrogenChloride;
         public static Material HydrogenFluoride;
-        public static Material DilutedSaltwater;
+        public static Material DilutedSaltWater;
         public static Material SodiumHydroxideSolution;
         public static Material IronIIIChlorideSolution;
         public static Material DilutedSaltpeterSolution;
@@ -989,7 +990,6 @@ class SuSyMaterials {
         public static Material BerylliumHydroxide;
         public static Material BerylliumOxide;
         public static Material BerylliumChloride;
-        public static Material SulfuricPGMSolution;
         public static Material PGMSolution;
         public static Material SulfurTrioxideReactionMixture;
         public static Material CalciumMetasilicate;
@@ -1050,6 +1050,7 @@ class SuSyMaterials {
         public static Material BariumCarbonate;
         public static Material LeadOxide;
         public static Material TantalumNitride;
+        public static Material RutheniumIIIChloride;
         public static Material BismuthIridate;
         public static Material IridiumTrichloride;
         public static Material SodiumBismuthate;
@@ -1264,7 +1265,8 @@ class SuSyMaterials {
         public static Material LeadFreeSolder;
         public static Material CryogenicSolder;
         public static Material SeleniumDioxide;
-        public static Material CobaltSulfateSolution; 
+        public static Material CobaltSulfateSolution;
+        public static Material DilutedAmmoniumChlorideSolution;
         public static Material Kovar;
         public static Material ImpureLithiumCarbonate;
         public static Material WashedGraphene;
@@ -1272,14 +1274,14 @@ class SuSyMaterials {
         public static Material DriedGraphene;
         public static Material MoistArgon;
         public static Material ArgonHydrogenMixture;
-        public static Material IncoloyTwenty;
-        public static Material IncoloyEightTwoFive;
-        public static Material IncoloyNineZeroEight;
-        public static Material ReneN;
-        public static Material MonelFiveHundred;
+        public static Material Incoloy20;
+        public static Material Incoloy825;
+        public static Material Incoloy908;
+        public static Material ReneN5;
+        public static Material Monel500;
         public static Material StelliteJ;
-        public static Material StelliteSix;
-        public static Material HSLAEightyX;
+        public static Material Stellite6;
+        public static Material HSLA980X;
         public static Material FoodGradeStainlessSteel;
         public static Material CobaltSulfate;
         public static Material LithiumNitrate;
@@ -1291,6 +1293,7 @@ class SuSyMaterials {
         public static Material AmmoniumHexachloroiridate;
         public static Material PotassiumOsmate;
         public static Material SodiumHydrosulfide;
+        public static Material PotassiumIodate;
 
         // HP Materials
 
@@ -1408,6 +1411,7 @@ class SuSyMaterials {
         public static Material DilutedIronIIIChlorideSolution;
         public static Material SodiumPerchlorateSolution;
         public static Material SodiumChlorateSolution;
+        public static Material DilutedSodiumChlorateSolution;
         public static Material DilutedAniline;
         public static Material ChloroauricAcidSolution;
         public static Material ZincChlorideSolution;

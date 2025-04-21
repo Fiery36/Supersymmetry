@@ -232,14 +232,14 @@ public class SecondDegreeMaterials {
                 .color(0x5880c7)
                 .build()
 
-        SodiumPerchlorateSolution.setFormula('(H2O)(NaClO4)', true);
+        SodiumPerchlorateSolution.setFormula('(NaClO4)(H2O)', true);
 
         SodiumChlorateSolution = new Material.Builder(13036, SuSyUtility.susyId('sodium_chlorate_solution'))
                 .liquid()
                 .color(0x315fe8)
                 .build()
 
-        SodiumChlorateSolution.setFormula('(H2O)(NaClO3)', true);
+        SodiumChlorateSolution.setFormula('(NaClO3)(H2O)', true);
 
         DilutedAniline = new Material.Builder(13037, SuSyUtility.susyId('diluted_aniline'))
                 .liquid()
@@ -464,7 +464,12 @@ public class SecondDegreeMaterials {
                 .color(0x340959)
                 .build()
 
-        // FREE ID: 13074
+        DilutedSodiumChlorateSolution = new Material.Builder(13074, SuSyUtility.susyId('diluted_sodium_chlorate_solution'))
+                .liquid()
+                .color(0x5f81e8)
+                .build()
+
+        DilutedSodiumChlorateSolution.setFormula('(NaClO3)(H2O)2', true);
 
         DilutedAmmoniumSulfateSolution = new Material.Builder(13075, SuSyUtility.susyId('diluted_ammonium_sulfate_solution'))
                 .liquid()
@@ -562,7 +567,7 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        AlluvialPlatinumMotherLiquor.setFormula('(H2PdCl4)(ZnCl2)(HCl)4(H2O)14', true)
+        AlluvialDivalentPalladiumSolution.setFormula('(H2PdCl4)(ZnCl2)(HCl)4(H2O)14', true)
 
         PlatinumPrecursorSolution = new Material.Builder(13091, SuSyUtility.susyId('platinum_precursor_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -763,25 +768,27 @@ public class SecondDegreeMaterials {
 
         TetraamminepalladiumDichlorideSolution = new Material.Builder(13121, SuSyUtility.susyId("tetraamminepalladium_dichloride_solution"))
                 .fluid()
-                .components(Chlorine * 2, Hydrogen * 12, Nitrogen * 4, Palladium)
+                .components(Chlorine * 2, Hydrogen * 12, Nitrogen * 4, Palladium, Water * 4)
                 .colorAverage()
                 .build();
 
-        TetraamminepalladiumDichlorideSolution.setFormula("[Pd(NH3)4]Cl2", true)
+        TetraamminepalladiumDichlorideSolution.setFormula("([Pd(NH3)4]Cl2)(H2O)4", true)
 
         // FREE ID: 13122-13129
 
         HexachloroiridicAcidSolution = new Material.Builder(13130, SuSyUtility.susyId('hexachloroiridic_acid_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(HexachloroiridicAcid * 1, Water * 1)
+                .components(HexachloroiridicAcid * 1, Water * 2)
                 .colorAverage()
                 .build();
 
         HexachlororhodicAcidSolution = new Material.Builder(13131, SuSyUtility.susyId('hexachlororhodic_acid_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(Hydrogen * 3, Rhodium * 1, Chlorine * 6, Water * 1)
+                .components(Hydrogen * 3, Rhodium * 1, Chlorine * 6, Water * 18)
                 .colorAverage()
                 .build();
+
+        HexachlororhodicAcidSolution.setFormula("(H3RhCl6)(H2O)18", true); //it's actually (H3RhCl6)10(H2O)179
 
         HexachlororuthenicAcidSolution = new Material.Builder(13132, SuSyUtility.susyId('hexachlororuthenic_acid_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -793,7 +800,7 @@ public class SecondDegreeMaterials {
 
         IronIIChlorideSolution = new Material.Builder(13133, SuSyUtility.susyId('iron_ii_chloride_solution'))
                 .liquid()
-                .components(IronIIChloride, Water)
+                .components(IronIIChloride, Water * 2)
                 .colorAverage()
                 .build();
 
@@ -815,10 +822,31 @@ public class SecondDegreeMaterials {
 
         CobaltSulfateSolution = new Material.Builder(13137, SuSyUtility.susyId("cobalt_sulfate_solution"))
                 .fluid()
-                .components(Cobalt * 1, Sulfur * 1, Oxygen * 4, Water * 1)
+                .components(CobaltSulfate, Water * 1)
                 .colorAverage()
                 .build();
 
         CobaltSulfateSolution.setFormula("(CoSO4)(H2O)", true)
+
+        DilutedAmmoniumChlorideSolution = new Material.Builder(13138, SuSyUtility.susyId('diluted_ammonium_chloride_solution'))
+                .liquid()
+                .components(AmmoniumChloride * 1, Water * 2)
+                .colorAverage()
+                .build();
+
+        SodiumSulfateAcetoneSolution = new Material.Builder(13139, SuSyUtility.susyId('sodium_sulfate_acetone_solution'))
+                .liquid()
+                .components(SodiumSulfate * 6, Acetone, Water * 9)
+                .color(0x2c733a)
+                .build();
+
+        ChromiumSulfateSolution = new Material.Builder(13140, SuSyUtility.susyId('chromium_sulfate_solution'))
+                .liquid()
+                .components(Chrome * 4, Sulfur * 6, Oxygen * 24, Acetone, Water * 9)
+                .color(0x2c733a)
+                .build();
+
+        ChromiumSulfateSolution.setFormula("(Cr2(SO4)3)2(C3H6O)(H2O)9", true)
+
     }
 }
