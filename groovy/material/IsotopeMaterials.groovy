@@ -13,8 +13,10 @@ import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.Materials.*;
 
-public class IsotopeMaterials{
+public class IsotopeMaterials {
+
     public static void register() {
+
         log.infoMC("Registering Isotope Materials!");
 
         NaturalUranium = new Material.Builder(31000, SuSyUtility.susyId("natural_uranium"))
@@ -48,4 +50,5 @@ public class IsotopeMaterials{
             .build();
 
     }
+
 }

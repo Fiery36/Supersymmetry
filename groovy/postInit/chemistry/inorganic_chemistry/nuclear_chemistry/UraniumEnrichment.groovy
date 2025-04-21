@@ -1,7 +1,6 @@
-import static supercritical.api.recipes.SCRecipeMaps.GAS_CENTRIFUGE_RECIPES;
-
 REACTION_FURNACE = recipemap('reaction_furnace')
 FLUIDIZEDBR = recipemap('fluidized_bed_reactor')
+GAS_CENTRIFUGE_RECIPES = recipemap('gas_centrifuge')
 
 GAS_CENTRIFUGE_RECIPES.recipeBuilder()
     .fluidInputs(fluid('natural_uranium_hexafluoride') * 1000)

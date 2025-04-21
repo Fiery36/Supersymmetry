@@ -3687,14 +3687,14 @@ public class FirstDegreeMaterials {
         HALEU235Hexafluoride = new Material.Builder(8652, SuSyUtility.susyId('haleu_235_hexafluoride'))
                 .gas(new FluidBuilder().temperature(330))
                 .iconSet(SAND)
-                .components(HighAssayLowEnrichedUranium, Fluorine * 6)
+                .components(HALEU235, Fluorine * 6)
                 .color(0xec225)
                 .build();
 
         HEU235Hexafluoride = new Material.Builder(8653, SuSyUtility.susyId('heu_235_hexafluoride'))
                 .gas(new FluidBuilder().temperature(330))
                 .iconSet(SAND)
-                .components(HighEnrichedUranium, Fluorine * 6)
+                .components(HEU235, Fluorine * 6)
                 .color(0x38bf1f)
                 .build();
 
@@ -3723,7 +3723,7 @@ public class FirstDegreeMaterials {
         HALEU235AmmoniumDiuranate = new Material.Builder(8657, SuSyUtility.susyId('haleu_235_ammonium_diuranate'))
                 .dust()
                 .iconSet(SAND)
-                .components(HighAssayLowEnrichedUranium, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
+                .components(HALEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
                 .color(0xe6cc22)
                 .build()
                 .setFormula("(NH4)2U2O7", true);
@@ -3731,7 +3731,7 @@ public class FirstDegreeMaterials {
         HEU235AmmoniumDiuranate = new Material.Builder(8658, SuSyUtility.susyId('heu_235_ammonium_diuranate'))
                 .dust()
                 .iconSet(SAND)
-                .components(HighEnrichedUranium, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
+                .components(HEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
                 .color(0x82f622)
                 .build()
                 .setFormula("(NH4)2U2O7", true);
@@ -3765,17 +3765,17 @@ public class FirstDegreeMaterials {
         HALEU235UraniumDioxide = new Material.Builder(8662, SuSyUtility.susyId('haleu_235_uranium_dioxide'))
                 .dust()
                 .iconSet(SAND)
-                .components(HighAssayLowEnrichedUranium, Oxygen * 2)
+                .components(HALEU235, Oxygen * 2)
                 .color(0x1c2617)
                 .build()
                 .setFormula("UO2", true);
 
-        HALEU235UraniumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1750, 675, 50.0, 1.0, 2750.0, 0.0, 2, HALEU235UraniumDioxide.getRegistryName()));
+        HALEU235UraniumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1600, 700, 50.0, 1.0, 2700.0, 0.0, 3, HALEU235UraniumDioxide.getRegistryName()));
 
         HEU235UraniumDioxide = new Material.Builder(8663, SuSyUtility.susyId('heu_235_uranium_dioxide'))
                 .dust()
                 .iconSet(SAND)
-                .components(HighEnrichedUranium, Oxygen * 2)
+                .components(HEU235, Oxygen * 2)
                 .color(0x273b1d)
                 .build()
                 .setFormula("UO2", true);
