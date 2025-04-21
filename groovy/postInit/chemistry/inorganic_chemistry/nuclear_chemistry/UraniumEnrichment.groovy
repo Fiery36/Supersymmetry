@@ -30,7 +30,7 @@ GAS_CENTRIFUGE_RECIPES.recipeBuilder()
     .fluidInputs(fluid('heu_235_hexafluoride') * 4500)
     .fluidOutputs(fluid('depleted_uranium_hexafluoride') * 3500)
     .fluidOutputs(fluid('weapons_grade_uranium_hexafluoride') * 1000)
-    .duration(10000)
+    .duration(20000)
     .EUt(480)
     .buildAndRegister()
 
