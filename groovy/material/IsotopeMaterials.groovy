@@ -21,7 +21,7 @@ public class IsotopeMaterials {
 
         NaturalUranium = new Material.Builder(31000, SuSyUtility.susyId("natural_uranium"))
             .dust()
-            .components(Uranium235 * 1, Uranium238 * 99)
+            .components(Uranium235, Uranium238 * 99)
             .color(0x30a82a)
             .build();
 
