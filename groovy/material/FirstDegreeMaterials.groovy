@@ -3677,12 +3677,16 @@ public class FirstDegreeMaterials {
                 .color(0x46ba30)
                 .build();
 
+        NaturalUraniumHexafluoride.setFormula("UF6", true);
+
         LEU235Hexafluoride = new Material.Builder(8651, SuSyUtility.susyId('leu_235_hexafluoride'))
                 .gas(new FluidBuilder().temperature(330))
                 .iconSet(SAND)
                 .components(LEU235, Fluorine * 6)
                 .color(0x45c42d)
                 .build();
+
+        LEU235Hexafluoride.setFormula("UF6", true);
 
         HALEU235Hexafluoride = new Material.Builder(8652, SuSyUtility.susyId('haleu_235_hexafluoride'))
                 .gas(new FluidBuilder().temperature(330))
@@ -3691,6 +3695,8 @@ public class FirstDegreeMaterials {
                 .color(0xec225)
                 .build();
 
+        HALEU235Hexafluoride.setFormula("UF6", true);
+
         HEU235Hexafluoride = new Material.Builder(8653, SuSyUtility.susyId('heu_235_hexafluoride'))
                 .gas(new FluidBuilder().temperature(330))
                 .iconSet(SAND)
@@ -3698,12 +3704,16 @@ public class FirstDegreeMaterials {
                 .color(0x38bf1f)
                 .build();
 
+        HEU235Hexafluoride.setFormula("UF6", true);
+
         WeaponsGradeUraniumHexafluoride = new Material.Builder(8654, SuSyUtility.susyId('weapons_grade_uranium_hexafluoride'))
                 .gas(new FluidBuilder().temperature(330))
                 .iconSet(SAND)
                 .components(WeaponsGradeUranium, Fluorine * 6)
                 .color(0x1ec200)
                 .build();
+
+        WeaponsGradeUraniumHexafluoride.setFormula("UF6", true);
 
         // FREE ID: 8655
 
