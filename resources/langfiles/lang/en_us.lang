@@ -812,7 +812,6 @@ susy.material.salty_arsenic_acid=Salty Arsenic Acid
 susy.material.salty_arsenic_pentoxide=Salty Arsenic Pentoxide
 susy.material.tin_iv_oxide=Tin IV Oxide
 susy.material.antimony_v_oxide=Antimony V Oxide
-susy.material.impure_cobalt_oxide=Impure Cobalt Oxide
 susy.material.cassiterite_concentrate=Cassiterite Concentrate
 susy.material.crude_tin=Crude Tin
 susy.material.leached_cassiterite_concentrate=Leached Cassiterite Concentrate
@@ -1883,8 +1882,7 @@ susy.material.gaseous_methacrolein_residue=Gaseous Methacrolein Residue
 susy.material.absorbed_methacrolein=Absorbed Methacrolein
 susy.material.gaseous_methacrylic_acid_mixture=Gaseous Methacrylic Acid Mixture
 susy.material.methacrylic_acid_solution=Methacrylic Acid Solution
-susy.material.uranium_dioxide=Uranium Dioxide
-susy.material.uranium_tetrafluoride=Uranium Tetrafluoride
+susy.material.depleted_uranium_dioxide=Depleted Uranium Dioxide
 susy.material.salty_hydrofluoric_acid=Salty Hydrofluoric Acid
 susy.material.supported_molybdenum_vanadium=Supported Molybdenum Vanadium
 susy.material.acrolein=Acrolein
@@ -2227,8 +2225,31 @@ susy.material.potassium_iodate=Potassium Iodate
 susy.material.alnico=Alnico
 susy.material.alnico_magnetic=Magnetic Alnico
 susy.material.mica=Mica
+susy.material.uranium_tetrafluoride=Uranium Tetrafluoride
+susy.material.uranium_dioxide=Uranium Dioxide
 
 # Isotopes
+
+susy.material.natural_uranium=Natural Uranium
+susy.material.leu_235=Low Enriched Uranium-235 (LEU-235)
+susy.material.haleu_235=High Assay Low Enriched Uranium-235 (HALEU-235)
+susy.material.heu_235=High Enriched Uranium-235 (HEU-235)
+susy.material.weapons_grade_uranium=Weapons Grade Uranium
+susy.material.natural_uranium_hexafluoride=Natural Uranium Hexafluoride
+susy.material.leu_235_hexafluoride=LEU-235 Hexafluoride
+susy.material.haleu_235_hexafluoride=HALEU-235 Hexafluoride
+susy.material.heu_235_hexafluoride=HEU-235 Hexafluoride
+susy.material.weapons_grade_uranium_hexafluoride=Weapons Grade Uranium Hexafluoride
+susy.material.depleted_uranium_hexafluoride=Depleted Uranium Hexafluoride
+susy.material.leu_235_ammonium_diuranate=LEU-235 Ammonium Diuranate
+susy.material.haleu_235_ammonium_diuranate=HALEU-235 Ammonium Diuranate
+susy.material.heu_235_ammonium_diuranate=HEU-235 Ammonium Diuranate
+susy.material.weapons_grade_ammonium_diuranate=Weapons Grade Ammonium Diuranate
+susy.material.depleted_ammonium_diuranate=Depleted Ammonium Diuranate
+susy.material.leu_235_uranium_dioxide=LEU-235 Uranium Dioxide
+susy.material.haleu_235_uranium_dioxide=HALEU-235 Uranium Dioxide
+susy.material.heu_235_uranium_dioxide=HEU-235 Uranium Dioxide
+susy.material.weapons_grade_uranium_dioxide=Weapons Grade Uranium Dioxide
 
 # GregTech RecipeMaps
 
