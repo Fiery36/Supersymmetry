@@ -1770,13 +1770,7 @@ public class FirstDegreeMaterials {
                 .build();
 
 
-        ImpureCobaltOxide = new Material.Builder(8360, SuSyUtility.susyId('impure_cobalt_oxide'))
-                .dust()
-                .components(CobaltOxide)
-                .color(0xd6e600)
-                .build();
-
-        ImpureCobaltOxide.setFormula("(CoO)(?)", true)
+        // FREE ID: 8360
 
         CrudeTin = new Material.Builder(8361, SuSyUtility.susyId('crude_tin'))
                 .liquid(new FluidBuilder().temperature(600))
@@ -2062,10 +2056,11 @@ public class FirstDegreeMaterials {
         TreatedNeodymiumAlloy.getProperty(PropertyKey.INGOT).setMagneticMaterial(NeodymiumAlloyMagnetic);
 
         SamariumAlloy = new Material.Builder(8403, SuSyUtility.susyId('samarium_alloy'))
-                .dust().ingot().liquid(new FluidBuilder().temperature(800))
+                .dust().ingot()
                 .color(0xb3d683).iconSet(METALLIC)
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
                 .components(Samarium, Cobalt * 5)
+                .blastTemp(1800, GasTier.MID)
                 .build();
 
         TreatedSamariumAlloy = new Material.Builder(8404, SuSyUtility.susyId('treated_samarium_alloy'))
@@ -2221,7 +2216,11 @@ public class FirstDegreeMaterials {
                 .color(0xe8c3a5)
                 .build();
 
-        // FREE ID: 8426
+        HighPurityCobaltOxide = new Material.Builder(8426, SuSyUtility.susyId('high_purity_cobalt_oxide'))
+                .dust()
+                .components(Cobalt, Oxygen)
+                .color(0xe6f246)
+                .build();
 
         MustardGas = new Material.Builder(8427, SuSyUtility.susyId('mustard_gas'))
                 .liquid()
@@ -2684,13 +2683,7 @@ public class FirstDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        CobaltSulfateSolution = new Material.Builder(8497, SuSyUtility.susyId("cobalt_sulfate_solution"))
-                .fluid()
-                .components(Cobalt, Sulfur, Oxygen * 4)
-                .colorAverage()
-                .build();
-
-        CobaltSulfateSolution.setFormula("(CoSO4)(H2O)", true)
+        // FREE ID: 8497
 
         NickelSulfate = new Material.Builder(8498, SuSyUtility.susyId('nickel_sulfate'))
                 .dust()
@@ -3309,15 +3302,7 @@ public class FirstDegreeMaterials {
 
         ThalliumSulfateSolution.setFormula("(Tl2SO4)(H2O)", true)
 
-        ImpureCobaltSulfateSolution = new Material.Builder(8597, SuSyUtility.susyId("impure_cobalt_sulfate_solution"))
-                .liquid()
-                .components(Cobalt, Sulfur, Oxygen * 4, Water)
-                .colorAverage()
-                .build();
-
-        ImpureCobaltSulfateSolution.setFormula("(CoSO4)(?)(H2O)", true)
-
-        //FREE ID: 8598
+        //FREE ID: 8597-8598
 
         PurifiedCadmiumSolution = new Material.Builder(8599, SuSyUtility.susyId('purified_cadmium_solution'))
                 .liquid()
