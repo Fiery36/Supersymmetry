@@ -54,17 +54,6 @@ ELECTROLYTIC_CELL.recipeBuilder()
         .duration(240)
         .buildAndRegister()
 
-ELECTROLYTIC_CELL.recipeBuilder()
-        .notConsumable(metaitem('stickCobalt'))
-        .notConsumable(metaitem('graphite_electrode'))
-        .fluidInputs(fluid('high_purity_cobalt_sulfate_solution') * 1000)
-        .outputs(metaitem('dustHighPurityCobalt'))
-        .fluidOutputs(fluid('sulfuric_acid') * 1000)
-        .fluidOutputs(fluid('oxygen') * 1000)
-        .EUt(Globals.voltAmps[2])
-        .duration(240)
-        .buildAndRegister()
-
 for (combustible in combustibles()) {
     EBF.recipeBuilder()
         .inputs(ore('dustCobaltOxide') * 2)
@@ -106,18 +95,18 @@ ROASTER.recipeBuilder()
         .EUt(30)
         .buildAndRegister()
 
-// CoSO4
-
-BR.recipeBuilder()
-        .inputs(ore('dustHighPurityCobaltOxide') * 2)
-        .fluidInputs(fluid('sulfuric_acid') * 1000)
-        .fluidOutputs(fluid('high_purity_cobalt_sulfate_solution') * 1000)
-        .duration(80)
+ROASTER.recipeBuilder()
+        .inputs(ore('dustHighPurityCobalt'))
+        .fluidInputs(fluid('oxygen') * 1000)
+        .outputs(metaitem('dustHighPurityCobaltOxide') * 2)
+        .duration(120)
         .EUt(30)
         .buildAndRegister()
 
+// CoSO4
+
 DISTILLERY.recipeBuilder()
-        .fluidInputs(fluid('high_purity_cobalt_sulfate_solution') * 1000)
+        .fluidInputs(fluid('cobalt_sulfate_solution') * 1000)
         .outputs(metaitem('dustCobaltSulfate') * 6)
         .fluidOutputs(fluid('water') * 1000)
         .duration(80)
