@@ -189,7 +189,7 @@ MIXER.recipeBuilder()
     .inputs(ore('dustIron') * 11)
     .outputs(metaitem('dustAlnico') * 24)
     .duration(400)
-    .EUt(256)
+    .EUt(120)
     .buildAndRegister();
 
 //NEODYMIUM MAGNETS
