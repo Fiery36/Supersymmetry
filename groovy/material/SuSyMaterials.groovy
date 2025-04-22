@@ -27,6 +27,12 @@ class SuSyMaterials {
 
         // Isotope Materials
 
+        public static Material NaturalUranium;
+        public static Material LEU235;
+        public static Material HALEU235;
+        public static Material HEU235;
+        public static Material WeaponsGradeUranium;
+
         // Ore Materials
 
         public static Material Petalite;
@@ -1223,8 +1229,6 @@ class SuSyMaterials {
         public static Material AcrylicCatalyst;
         public static Material GelatinSolution;
         public static Material PhosphomolybdicAcid;
-        public static Material UraniumDioxide;
-        public static Material UraniumTetrafluoride;
         public static Material SaltyHydrofluoricAcid;
         public static Material SiliconTetrachloride;
         public static Material PurifiedSiliconTetrachloride;
@@ -1293,6 +1297,23 @@ class SuSyMaterials {
         public static Material PotassiumOsmate;
         public static Material SodiumHydrosulfide;
         public static Material PotassiumIodate;
+        public static Material UraniumTetrafluoride;
+        public static Material UraniumDioxide;
+        public static Material NaturalUraniumHexafluoride;
+        public static Material LEU235Hexafluoride;
+        public static Material HALEU235Hexafluoride;
+        public static Material HEU235Hexafluoride;
+        public static Material WeaponsGradeUraniumHexafluoride;
+        public static Material LEU235AmmoniumDiuranate;
+        public static Material HALEU235AmmoniumDiuranate;
+        public static Material HEU235AmmoniumDiuranate;
+        public static Material WeaponsGradeAmmoniumDiuranate;
+        public static Material DepletedAmmoniumDiuranate;
+        public static Material LEU235UraniumDioxide;
+        public static Material HALEU235UraniumDioxide;
+        public static Material HEU235UraniumDioxide;
+        public static Material WeaponsGradeUraniumDioxide;
+        public static Material DepletedUraniumDioxide;
 
         // HP Materials
 
