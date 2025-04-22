@@ -1,3 +1,5 @@
+import postInit.utils.RecyclingHelper
+
 ASSEMBLER = recipemap('assembler')
 
 // LV Electric Motor * 1
@@ -8,10 +10,6 @@ mods.gregtech.assembler.removeByInput(30, [metaitem('cableGtSingleTin') * 2, met
 mods.gregtech.assembler.removeByInput(30, [metaitem('cableGtSingleCopper') * 2, metaitem('stickAluminium') * 2, metaitem('stickSteelMagnetic'), metaitem('wireGtDoubleCupronickel') * 4], null)
 // HV Electric Motor * 1
 mods.gregtech.assembler.removeByInput(30, [metaitem('cableGtDoubleSilver') * 2, metaitem('stickStainlessSteel') * 2, metaitem('stickSteelMagnetic'), metaitem('wireGtDoubleElectrum') * 4], null)
-// EV Electric Motor * 1
-mods.gregtech.assembler.removeByInput(30, [metaitem('cableGtDoubleAluminium') * 2, metaitem('stickTitanium') * 2, metaitem('stickNeodymiumMagnetic'), metaitem('wireGtDoubleKanthal') * 4], null)
-// IV Electric Motor * 1
-mods.gregtech.assembler.removeByInput(30, [metaitem('cableGtDoubleTungsten') * 2, metaitem('stickTungstenSteel') * 2, metaitem('stickNeodymiumMagnetic'), metaitem('wireGtDoubleGraphene') * 4], null)
 // LuV Electric Motor * 1
 mods.gregtech.assembly_line.removeByInput(6000, [metaitem('stickLongSamariumMagnetic'), metaitem('stickLongHsss') * 2, metaitem('ringHsss') * 2, metaitem('roundHsss') * 4, metaitem('wireFineRuridit') * 64, metaitem('cableGtSingleNiobiumTitanium') * 2], [fluid('soldering_alloy') * 144, fluid('lubricant') * 250])
 // ZPM Electric Motor * 1
@@ -20,6 +18,7 @@ mods.gregtech.assembly_line.removeByInput(24000, [metaitem('stickLongSamariumMag
 mods.gregtech.assembly_line.removeByInput(100000, [metaitem('stickLongSamariumMagnetic'), metaitem('stickLongTritanium') * 4, metaitem('ringTritanium') * 4, metaitem('roundTritanium') * 8, metaitem('wireFineAmericium') * 64, metaitem('wireFineAmericium') * 64, metaitem('cableGtSingleYttriumBariumCuprate') * 2], [fluid('soldering_alloy') * 576, fluid('lubricant') * 1000, fluid('naquadria') * 576])
 
 crafting.removeByOutput(metaitem('electric.motor.lv'))
+crafting.removeByOutput(metaitem('electric.motor.ev'))
 crafting.removeByOutput(metaitem('electric.motor.iv'))
 
 // Brushed DC Motors (LV-EV)
@@ -40,21 +39,15 @@ crafting.addShaped('susy:electric_motor_lv', metaitem('electric.motor.lv'), [
     [metaitem('commutator'), metaitem('brush'), metaitem('plateSteelMagnetic')]
 ])
 
-crafting.addShaped('susy:electric_motor_mv', metaitem('electric.motor.mv'), [
+crafting.replaceShaped('gregtech:electric_motor_mv', metaitem('electric.motor.mv'), [
     [metaitem('plateSteelMagnetic'), metaitem('wireGtDoubleCupronickel'), metaitem('cableGtSingleCopper')],
     [metaitem('brush'), metaitem('stickAluminium'), metaitem('wireGtDoubleCupronickel')],
     [metaitem('commutator'), metaitem('brush'), metaitem('plateSteelMagnetic')]
 ])
 
-crafting.addShaped('susy:electric_motor_hv', metaitem('electric.motor.hv'), [
+crafting.replaceShaped('gregtech:electric_motor_hv', metaitem('electric.motor.hv'), [
     [metaitem('plateAlnicoMagnetic'), metaitem('wireGtDoubleElectrum'), metaitem('cableGtDoubleSilver')],
     [metaitem('brush'), metaitem('stickStainlessSteel'), metaitem('wireGtDoubleElectrum')],
-    [metaitem('commutator'), metaitem('brush'), metaitem('plateAlnicoMagnetic')]
-])
-
-crafting.replaceShaped('gregtech:electric_motor_ev', metaitem('electric.motor.ev'), [
-    [metaitem('plateAlnicoMagnetic'), metaitem('wireGtDoubleKanthal'), metaitem('cableGtDoubleAluminium')],
-    [metaitem('brush'), metaitem('stickTitanium'), metaitem('wireGtDoubleKanthal')],
     [metaitem('commutator'), metaitem('brush'), metaitem('plateAlnicoMagnetic')]
 ])
 
@@ -221,7 +214,7 @@ ASSEMBLER.recipeBuilder()
     .inputs(metaitem('plate.high_power_integrated_circuit'))
     .inputs(ore('circuitIv'))
     .inputs(metaitem('circuit_board.elite'))
-    .outputs(metaitem('electric.motor.iv'))
+    .outputs(metaitem('electric.motor.iv') * 3)
     .duration(100)
     .EUt(30)
     .buildAndRegister();

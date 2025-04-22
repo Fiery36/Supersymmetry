@@ -109,7 +109,7 @@ RecyclingHelper.replaceShaped('gcym:casing_large_assembler', item('gcym:large_mu
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(6)
-        .inputs(ore('frameGtHslaEightyX'))
+        .inputs(ore('frameGtHsla980X'))
         .inputs(ore('plateHsla980X') * 6)
         .outputs(item('gcym:large_multiblock_casing', 2) * 2)
         .duration(50)

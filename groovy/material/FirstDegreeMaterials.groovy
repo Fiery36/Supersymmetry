@@ -1034,14 +1034,14 @@ public class FirstDegreeMaterials {
                 .components(Aluminium * 5, Nickel * 4, Cobalt * 3, Copper, Iron * 11)
                 .color(0xb2d8ed)
                 .iconSet(METALLIC)
-                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
-                .blastTemp(1600, GasTier.LOW, 480, 200)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE)
+                .blastTemp(1600, GasTier.LOW)
                 .build()
 
         AlnicoMagnetic = new Material.Builder(8246, SuSyUtility.susyId('alnico_magnetic'))
                 .ingot()
                 .iconSet(MAGNETIC)
-                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION, IS_MAGNETIC)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, IS_MAGNETIC)
                 .color(0xb2d8ed)
                 .components(Alnico)
                 .ingotSmeltInto(Alnico)
@@ -2082,7 +2082,7 @@ public class FirstDegreeMaterials {
         TreatedNeodymiumAlloy.getProperty(PropertyKey.INGOT).setMagneticMaterial(NeodymiumAlloyMagnetic);
 
         SamariumAlloy = new Material.Builder(8403, SuSyUtility.susyId('samarium_alloy'))
-                .dust().ingot()
+                .dust().ingot().liquid(new FluidBuilder().temperature(1600))
                 .color(0xb3d683).iconSet(METALLIC)
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
                 .components(Samarium, Cobalt * 5)
