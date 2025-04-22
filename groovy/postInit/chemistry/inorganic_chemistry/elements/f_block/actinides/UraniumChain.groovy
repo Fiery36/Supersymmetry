@@ -1,3 +1,5 @@
+import javax.sound.sampled.Mixer
+
 VACUUM_FREEZER = recipemap('vacuum_freezer')
 CSTR = recipemap('continuous_stirred_tank_reactor')
 TBR = recipemap('trickle_bed_reactor')
@@ -260,3 +262,13 @@ REACTION_FURNACE.recipeBuilder()
     .buildAndRegister()
 
 // From Monazite Processing
+
+BR.recipeBuilder()
+        .inputs(ore('dustUranylHydroxidePrecipitate'))
+        .fluidInputs(fluid('tributyl_phosphate') * 50)
+        .outputs(metaitem('dustUraniumDioxide') * 3)
+        .chancedOutput(metaitem('dustMonaReHydroxides'), 100, 0)
+        .fluidOutputs(fluid('tributyl_phosphate') * 50)
+        .duration(80)
+        .EUt(120)
+        .buildAndRegister()

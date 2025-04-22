@@ -6,21 +6,12 @@ import static gregtech.api.unification.ore.OrePrefix.dye;
 
 BR = recipemap('batch_reactor')
 REACTION_FURNACE = recipemap('reaction_furnace')
-ROASTER = recipemap('roaster')
-
-ROASTER.recipeBuilder()
-        .inputs(ore('dustPraseodymiumHydroxide') * 9)
-        .outputs(metaitem('dustPraseodymiumOxide') * 3)
-        .fluidOutputs(fluid('dense_steam') * 2000)
-        .duration(160)
-        .EUt(480)
-        .buildAndRegister()
 
 BR.recipeBuilder()
         .inputs(ore('dustPraseodymiumOxide') * 3)
         .fluidInputs(fluid('hydrofluoric_acid') * 4000)
         .outputs(metaitem('dustPraseodymiumFluoride') * 5)
-        .fluidOutputs(fluid('dense_steam') * 2000)
+        .fluidOutputs(fluid('dense_steam') * 6000)
         .duration(80)
         .EUt(60)
         .buildAndRegister()

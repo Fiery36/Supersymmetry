@@ -2353,11 +2353,6 @@ public class UnknownCompositionMaterials {
                 .color(0x693214)
                 .build()
 
-        BastnasiticRareEarthNitratesSolution = new Material.Builder(4526, SuSyUtility.susyId('bast_re_nitrates_solution'))
-                .liquid()
-                .color(0x6c3316)
-                .build()
-
         BastnasiticOxidizedRareEarthNitratesSolution = new Material.Builder(4527, SuSyUtility.susyId('bast_ox_re_nitrates_solution'))
                 .liquid()
                 .color(0x713214)
@@ -2486,11 +2481,6 @@ public class UnknownCompositionMaterials {
         BastnasiticHREEWaste = new Material.Builder(4552, SuSyUtility.susyId('bast_hree_waste'))
                 .liquid()
                 .color(0xed5813)
-                .build()
-
-        MonaziticRareEarthNitratesSolution = new Material.Builder(4553, SuSyUtility.susyId('mona_re_nitrates_solution'))
-                .liquid()
-                .color(0x6c3316)
                 .build()
 
         MonaziticOxidizedRareEarthNitratesSolution = new Material.Builder(4554, SuSyUtility.susyId('mona_ox_re_nitrates_solution'))

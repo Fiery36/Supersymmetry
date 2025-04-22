@@ -4,15 +4,15 @@ import static gregtech.api.unification.material.Materials.*;
 import gregtech.api.unification.material.MarkerMaterials;
 import static gregtech.api.unification.ore.OrePrefix.dye;
 
-ION_EXCHANGE = recipemap('ion_exchange_column')
+BR = recipemap('batch_reactor')
 DISTILLERY = recipemap('distillery')
 REACTION_FURNACE = recipemap('reaction_furnace')
 
-ION_EXCHANGE.recipeBuilder()
-        .inputs(metaitem('beads.loaded_lutetium_cation_exchange'))
-        .fluidInputs(fluid('copper_chloride_solution') * 1000)
-        .outputs(metaitem('beads.rare_earth_cation_exchange'))
-        .fluidOutputs(fluid('lutetium_chloride_solution') * 1000)
+BR.recipeBuilder()
+        .inputs(metaitem('beads.loaded_lutetium_cation_exchange') * 2)
+        .fluidInputs(fluid('copper_chloride_solution') * 3000)
+        .outputs(metaitem('beads.rare_earth_cation_exchange') * 2)
+        .fluidOutputs(fluid('lutetium_chloride_solution') * 2000)
         .duration(20)
         .EUt(16)
         .buildAndRegister()

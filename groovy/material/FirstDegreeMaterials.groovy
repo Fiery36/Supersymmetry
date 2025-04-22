@@ -3669,8 +3669,9 @@ public class FirstDegreeMaterials {
                 .dust()
                 .components(Cerium * 1, Nitrogen * 4, Oxygen * 12)
                 .colorAverage()
-                .build()
-                .setFormula("Ce(NO3)4", true)
+                .build();
+
+        CeriumIVNitrate.setFormula("Ce(NO3)4", true)
 
         EthylHexylPhosphonicAcidMonoEthylHexylEster = new Material.Builder(8649, SuSyUtility.susyId('ethylhexyl_phosphonic_acid_mono_ethylhexyl_ester'))
                 .liquid()
@@ -3683,7 +3684,8 @@ public class FirstDegreeMaterials {
                 .components(Nitrogen * 2, Hydrogen * 8, Oxygen * 3, Carbon)
                 .color(0x849697)
                 .build()
-                .setFormula("(NH4)2CO3", true)
+
+        AmmoniumCarbonate.setFormula("(NH4)2CO3", true)
 
 
         SodiumAmalgam = new Material.Builder(8652, SuSyUtility.susyId('sodium_amalgam'))
@@ -3697,7 +3699,8 @@ public class FirstDegreeMaterials {
                 .components(Lanthanum * 2, Carbon * 3, Oxygen * 9)
                 .color(0xbea779)
                 .build()
-                .setFormula("La2(CO3)3", true)
+
+        LanthanumCarbonate.setFormula("La2(CO3)3", true)
 
         LanthanumOxide = new Material.Builder(8654, SuSyUtility.susyId('lanthanum_oxide'))
                 .dust()
@@ -3740,7 +3743,8 @@ public class FirstDegreeMaterials {
                 .components(Gadolinium, Hydrogen * 3, Oxygen * 3)
                 .color(0x56464f)
                 .build()
-                .setFormula('Gd(OH)3', true)
+
+        GadoliniumHydroxide.setFormula('Gd(OH)3', true)
 
         GadoliniumOxide = new Material.Builder(8661, SuSyUtility.susyId('gadolinium_oxide'))
                 .dust()
@@ -3753,7 +3757,8 @@ public class FirstDegreeMaterials {
                 .components(Terbium * 2, Carbon * 3, Oxygen * 9)
                 .color(0xb65817)
                 .build()
-                .setFormula('Tb2(CO3)3', true)
+
+        TerbiumCarbonate.setFormula('Tb2(CO3)3', true)
 
         TerbiumOxide = new Material.Builder(8663, SuSyUtility.susyId('terbium_oxide'))
                 .dust()
@@ -3772,7 +3777,8 @@ public class FirstDegreeMaterials {
                 .components(Yttrium, Chlorine * 3, Water)
                 .colorAverage()
                 .build()
-                .setFormula("(YCl3)(H2O)", true)
+
+        YttriumChlorideSolution.setFormula("(YCl3)(H2O)", true)
 
         YttriumChloride = new Material.Builder(8666, SuSyUtility.susyId('yttrium_chloride'))
                 .dust()
@@ -3785,14 +3791,16 @@ public class FirstDegreeMaterials {
                 .components(Erbium, Sulfur * 3, Oxygen * 12, Hydrogen * 75, Carbon * 36)
                 .color(0xb36dbd)
                 .build()
-                .setFormula("Er(DS)3", true)
+
+        ErbiumDodecylSulfate.setFormula("Er(DS)3", true)
 
         ErbiumHydroxide = new Material.Builder(8668, SuSyUtility.susyId('erbium_hydroxide'))
                 .dust()
                 .components(Erbium, Hydrogen * 3, Oxygen * 3)
                 .color(0xbfa3cd)
                 .build()
-                .setFormula("Er(OH)3", true)
+
+        ErbiumHydroxide.setFormula("Er(OH)3", true)
 
         ErbiumOxide = new Material.Builder(8669, SuSyUtility.susyId('erbium_oxide'))
                 .dust()
@@ -3805,14 +3813,16 @@ public class FirstDegreeMaterials {
                 .components(Holmium, Sulfur * 3, Oxygen * 12, Hydrogen * 75, Carbon * 36)
                 .color(0xb1b386)
                 .build()
-                .setFormula("Ho(DS)3", true)
+
+        HolmiumDodecylSulfate.setFormula("Ho(DS)3", true)
 
         HolmiumHydroxide = new Material.Builder(8671, SuSyUtility.susyId('holmium_hydroxide'))
                 .dust()
                 .components(Holmium, Hydrogen * 3, Oxygen * 3)
                 .color(0xdfe28b)
                 .build()
-                .setFormula("Ho(OH)3", true)
+
+        HolmiumHydroxide.setFormula("Ho(OH)3", true)
 
         HolmiumOxide = new Material.Builder(8672, SuSyUtility.susyId('holmium_oxide'))
                 .dust()
@@ -3825,7 +3835,6 @@ public class FirstDegreeMaterials {
                 .components(Ytterbium, Mercury)
                 .color(0x8a3264)
                 .build()
-                .setFormula("Na3Hg(Yb)", true)
 
         YtterbiumChloride = new Material.Builder(8674, SuSyUtility.susyId('ytterbium_chloride'))
                 .dust()
@@ -3838,7 +3847,8 @@ public class FirstDegreeMaterials {
                 .components(Thulium, Chlorine * 3, Water)
                 .color(0xc4b26a)
                 .build()
-                .setFormula("(TmCl3)(H2O)", true)
+
+        ThuliumChlorideSolution.setFormula("(TmCl3)(H2O)", true)
 
         ThuliumChloride = new Material.Builder(8677, SuSyUtility.susyId('thulium_chloride'))
                 .dust()
@@ -3851,7 +3861,8 @@ public class FirstDegreeMaterials {
                 .components(Lutetium, Chlorine * 3, Water)
                 .color(0x6abdd4)
                 .build()
-                .setFormula("(LuCl3)(H2O)", true)
+
+        LutetiumChlorideSolution.setFormula("(LuCl3)(H2O)", true)
 
         LutetiumChloride = new Material.Builder(8679, SuSyUtility.susyId('lutetium_chloride'))
                 .dust()
@@ -3864,7 +3875,8 @@ public class FirstDegreeMaterials {
                 .components(Copper, Chlorine * 2, Water)
                 .color(0x201e4a)
                 .build()
-                .setFormula("(CuCl2)(H2O)", true)
+
+        CopperChloride.setFormula("(CuCl2)(H2O)", true)
 
         LanthanumChloride = new Material.Builder(8681, SuSyUtility.susyId('lanthanum_chloride'))
                 .dust()
@@ -3877,7 +3889,8 @@ public class FirstDegreeMaterials {
                 .components(Thorium, Hydrogen * 3, Oxygen * 3)
                 .colorAverage()
                 .build()
-                .setFormula('Th(OH)3', true)
+
+        ThoriumHydroxide.setFormula('Th(OH)3', true)
 
         ThoriumDioxide = new Material.Builder(8683, SuSyUtility.susyId('thorium_dioxide'))
                 .dust()
@@ -3890,14 +3903,16 @@ public class FirstDegreeMaterials {
                 .components(Uranium238, Hydrogen * 2, Oxygen * 4)
                 .colorAverage()
                 .build()
-                .setFormula('UO2(OH)2', true)
+
+        UranylHydroxide.setFormula('UO2(OH)2', true)
 
         AmmoniumCarbonateSolution = new Material.Builder(8685, SuSyUtility.susyId('ammonium_carbonate_solution'))
                 .liquid()
                 .components(Nitrogen * 2, Hydrogen * 8, Carbon, Oxygen * 3, Water)
                 .color(0x849697)
                 .build()
-                .setFormula('(NH4)2CO3', true)
+
+        AmmoniumCarbonateSolution.setFormula('(NH4)2CO3', true)
 
         EthylHexylPhosphonicAcidSolution = new Material.Builder(8686, SuSyUtility.susyId('ethylhexyl_phosphonic_acid_solution'))
                 .liquid()
@@ -3916,7 +3931,8 @@ public class FirstDegreeMaterials {
                 .components(Phosphorus, Hydrogen * 3, Oxygen * 3)
                 .colorAverage()
                 .build()
-                .setFormula('H3PO3', true)
+
+        PhosphorousAcid.setFormula('H3PO3', true)
 
         CeriumFluoride = new Material.Builder(8689, SuSyUtility.susyId('cerium_fluoride'))
                 .dust()
@@ -3966,19 +3982,19 @@ public class FirstDegreeMaterials {
                 .colorAverage()
                 .build()
 
-        PraseodymiumIVHydroxide = new Material.Builder(8697, SuSyUtility.susyId('praseodymium_hydroxide'))
+        SodiumPhosphate = new Material.Builder(8697, SuSyUtility.susyId('sodium_phosphate'))
                 .dust()
-                .components(Praseodymium, Oxygen * 4, Hydrogen * 4)
-                .color(0x67ba49)
+                .components(Sodium * 3, Phosphorus, Oxygen * 4)
+                .color(0x462566)
                 .build()
-                .setFormula('Pr(OH)4', true)
 
         NeodymiumHydroxide = new Material.Builder(8698, SuSyUtility.susyId('neodymium_hydroxide'))
                 .dust()
                 .components(Neodymium, Oxygen * 3, Hydrogen * 3)
                 .color(0xbd8be0)
                 .build()
-                .setFormula('Nd(OH)3', true)
+
+        NeodymiumHydroxide.setFormula('Nd(OH)3', true)
 
         PotassiumIodate = new Material.Builder(8699, SuSyUtility.susyId('potassium_iodate'))
                 .dust()
@@ -3986,5 +4002,16 @@ public class FirstDegreeMaterials {
                 .colorAverage()
                 .build();
 
+        SamariumChlorideSolution = new Material.Builder(8700, SuSyUtility.susyId('samarium_chloride_solution'))
+                .liquid()
+                .components(Samarium, Chlorine * 3, Water)
+                .color(0x9c8d2d)
+                .buildAndRegister()
+
+        YtterbiumChlorideSolution = new Material.Builder(8701, SuSyUtility.susyId('ytterbium_chloride_solution'))
+                .liquid()
+                .components(Ytterbium, Chlorine * 3, Water)
+                .color(0x86a85e)
+                .buildAndRegister()
     }
 }

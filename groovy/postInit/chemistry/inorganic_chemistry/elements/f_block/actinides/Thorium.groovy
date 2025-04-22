@@ -1,0 +1,13 @@
+import javax.sound.sampled.Mixer
+
+BR = recipemap('batch_reactor')
+
+BR.recipeBuilder()
+        .inputs(ore('dustThoriumHydroxidePrecipitate'))
+        .fluidInputs(fluid('tributyl_phosphate') * 50)
+        .outputs(metaitem('dustUraniumDioxide') * 3)
+        .chancedOutput(metaitem('dustMonaReHydroxides'), 100, 0)
+        .fluidOutputs(fluid('tributyl_phosphate') * 50)
+        .duration(80)
+        .EUt(120)
+        .buildAndRegister()

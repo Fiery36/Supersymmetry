@@ -1310,6 +1310,7 @@ class SuSyMaterials {
         public static Material PhosphorousAcid;
         public static Material PhosphorousAcidSolution;
         public static Material EthylHexylPhosphonicAcidSolution;
+        public static Material SodiumPhosphate;
 
         public static Material MonaziteLeach;
         public static Material SiftedMonaziteLeach;
@@ -1338,7 +1339,6 @@ class SuSyMaterials {
         public static Material LanthanumChloride;
         public static Material LanthanumFluoride;
         public static Material LanthanumOxide;
-        public static Material PraseodymiumIVHydroxide;
         public static Material PraseodymiumOxide;
         public static Material PraseodymiumFluoride;
         public static Material NeodymiumHydroxide;
@@ -1347,6 +1347,7 @@ class SuSyMaterials {
         public static Material EuropiumOxide;
         public static Material EuropiumFluoride;
         public static Material SamariumAmalgam;
+        public static Material SamariumChlorideSolution;
         public static Material SamariumChloride;
         public static Material GadoliniumHydroxide;
         public static Material GadoliniumOxide;
@@ -1367,6 +1368,7 @@ class SuSyMaterials {
         public static Material HolmiumOxide;
         public static Material HolmiumFluoride
         public static Material YtterbiumAmalgam;
+        public static Material YtterbiumChlorideSolution;
         public static Material YtterbiumChloride;
         public static Material ThuliumChlorideSolution;
         public static Material ThuliumChloride;
@@ -1374,7 +1376,6 @@ class SuSyMaterials {
         public static Material LutetiumChloride;
 
         public static Material MonaziticRareEarthHydroxides;
-        public static Material MonaziticRareEarthNitratesSolution;
         public static Material MonaziticOxidizedRareEarthNitratesSolution;
         public static Material MonaziticCeriumExtract;
         public static Material MonaziticCeriumFreeRareEarthNitratesSolution;
@@ -1404,7 +1405,6 @@ class SuSyMaterials {
         public static Material MonaziticHREEWaste;
 
         public static Material BastnasiticRareEarthHydroxides;
-        public static Material BastnasiticRareEarthNitratesSolution;
         public static Material BastnasiticOxidizedRareEarthNitratesSolution;
         public static Material BastnasiticCeriumExtract;
         public static Material BastnasiticCeriumFreeRareEarthNitratesSolution;
