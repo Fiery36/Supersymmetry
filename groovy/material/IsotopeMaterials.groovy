@@ -21,7 +21,8 @@ public class IsotopeMaterials {
 
         NaturalUranium = new Material.Builder(31000, SuSyUtility.susyId("natural_uranium"))
             .dust()
-            .components(Uranium235, Uranium238 * 99)
+            .components(Uranium235 * 7, Uranium238 * 993)
+            .flags(DISABLE_DECOMPOSITION)
             .color(0x30a82a)
             .build();
 
@@ -30,6 +31,7 @@ public class IsotopeMaterials {
         LEU235 = new Material.Builder(31001, SuSyUtility.susyId("leu_235"))
             .dust()
             .components(Uranium235 * 5, Uranium238 * 95)
+            .flags(DISABLE_DECOMPOSITION)
             .color(0x31bd2a)
             .build();
 
@@ -37,7 +39,8 @@ public class IsotopeMaterials {
 
         HALEU235 = new Material.Builder(31002, SuSyUtility.susyId("haleu_235"))
             .dust()
-            .components(Uranium235 * 10, Uranium238 * 85)
+            .components(Uranium235 * 10, Uranium238 * 90)
+            .flags(DISABLE_DECOMPOSITION)
             .color(0x2dcc25)
             .build();
 
@@ -46,6 +49,7 @@ public class IsotopeMaterials {
         HEU235 = new Material.Builder(31003, SuSyUtility.susyId("heu_235"))
             .dust()
             .components(Uranium235 * 20, Uranium238 * 80)
+            .flags(DISABLE_DECOMPOSITION)
             .color(0x1ede14)
             .build();
 
@@ -54,6 +58,7 @@ public class IsotopeMaterials {
         WeaponsGradeUranium = new Material.Builder(31004, SuSyUtility.susyId("weapons_grade_uranium"))
             .dust()
             .components(Uranium235 * 90, Uranium238 * 10)
+            .flags(DISABLE_DECOMPOSITION)
             .color(0x0fe50e)
             .build();
 

@@ -3247,8 +3247,15 @@ public class FirstDegreeMaterials {
                 .build();
 
         PhosphomolybdicAcid.setFormula("H3[PMo12O40]", true)
-        
-        DepletedUraniumDioxide = new Material.Builder(8588, SuSyUtility.susyId("depleted_uranium_dioxide"))
+
+        UraniumDioxide = new Material.Builder(8588, SuSyUtility.susyId('uranium_dioxide'))
+                .dust()
+                .iconSet(SAND)
+                .components(NaturalUranium, Oxygen * 2)
+                .color(0x5a7b6a)
+                .build();
+
+        DepletedUraniumDioxide = new Material.Builder(8589, SuSyUtility.susyId("depleted_uranium_dioxide"))
                 .dust()
                 .iconSet(SAND)
                 .components(Uranium238, Oxygen * 2)
@@ -3256,8 +3263,6 @@ public class FirstDegreeMaterials {
                 .build();
 
         DepletedUraniumDioxide.setFormula("UO2", true)
-
-        // FREE ID: 8589
 
         SiliconTetrachloride = new Material.Builder(8590, SuSyUtility.susyId('silicon_tetrachloride'))
                 .liquid()
@@ -3800,11 +3805,6 @@ public class FirstDegreeMaterials {
                 .build()
                 .setFormula("UO2", true);
 
-        UraniumDioxide = new Material.Builder(8665, SuSyUtility.susyId('uranium_dioxide'))
-                .dust()
-                .iconSet(SAND)
-                .components(NaturalUranium, Oxygen * 2)
-                .color(0x5a7b6a)
-                .build();
+        
     }
 }
