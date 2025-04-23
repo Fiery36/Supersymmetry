@@ -219,7 +219,7 @@ ASSEMBLER.recipeBuilder()
     .EUt(30)
     .buildAndRegister();
 
-RecyclingHelper.handleRecycling(metaitem('electric.motor.iv'), [
+RecyclingHelper.handleRecycling(metaitem('electric.motor.iv') * 3, [
     ore('cableGtDoubleTungsten') * 2,
     ore('stickLongTungstenSteel'),
     ore('plateAlnicoMagnetic') * 3,
