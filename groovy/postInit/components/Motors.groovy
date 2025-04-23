@@ -145,13 +145,6 @@ ASSEMBLER.recipeBuilder()
     .EUt(30)
     .buildAndRegister();
 
-RecyclingHelper.handleRecycling(metaitem('electric.motor.lv') * 6, [
-    ore('cableGtSingleTin') * 2,
-    ore('stickLongSteel'),
-    ore('plateSteelMagnetic') * 3,
-    ore('wireGtSingleCopper') * 4
-])
-
 ASSEMBLER.recipeBuilder()
     .inputs(ore('cableGtSingleCopper') * 2)
     .inputs(ore('stickLongAluminium'))
@@ -164,13 +157,6 @@ ASSEMBLER.recipeBuilder()
     .duration(100)
     .EUt(30)
     .buildAndRegister();
-
-RecyclingHelper.handleRecycling(metaitem('electric.motor.mv') * 6, [
-    ore('cableGtSingleCopper') * 2,
-    ore('stickLongAluminium'),
-    ore('plateSteelMagnetic') * 3,
-    ore('wireGtDoubleCupronickel') * 4
-])
 
 ASSEMBLER.recipeBuilder()
     .inputs(ore('cableGtDoubleSilver') * 2)
@@ -185,13 +171,6 @@ ASSEMBLER.recipeBuilder()
     .EUt(30)
     .buildAndRegister();
 
-RecyclingHelper.handleRecycling(metaitem('electric.motor.hv') * 6, [
-    ore('cableGtDoubleSilver') * 2,
-    ore('stickLongStainlessSteel'),
-    ore('plateAlnicoMagnetic') * 3,
-    ore('wireGtDoubleElectrum') * 4
-])
-
 ASSEMBLER.recipeBuilder()
     .inputs(ore('cableGtDoubleAluminium') * 2)
     .inputs(ore('stickLongTitanium'))
@@ -205,13 +184,6 @@ ASSEMBLER.recipeBuilder()
     .EUt(30)
     .buildAndRegister();
 
-RecyclingHelper.handleRecycling(metaitem('electric.motor.ev') * 6, [
-    ore('cableGtDoubleAluminium') * 2,
-    ore('stickLongTitanium'),
-    ore('plateAlnicoMagnetic') * 3,
-    ore('wireGtDoubleKanthal') * 4
-])
-
 ASSEMBLER.recipeBuilder()
     .inputs(ore('cableGtDoubleTungsten') * 2)
     .inputs(ore('stickLongTungstenSteel'))
@@ -224,13 +196,6 @@ ASSEMBLER.recipeBuilder()
     .duration(100)
     .EUt(30)
     .buildAndRegister();
-
-RecyclingHelper.handleRecycling(metaitem('electric.motor.iv') * 3, [
-    ore('cableGtDoubleTungsten') * 2,
-    ore('stickLongTungstenSteel'),
-    ore('plateAlnicoMagnetic') * 3,
-    ore('wireGtDoubleGraphene') * 4
-])
 
 // TEMPORARY: TO BE MODIFIED LATER
 
