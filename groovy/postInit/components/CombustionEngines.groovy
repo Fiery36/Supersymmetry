@@ -1,4 +1,5 @@
 import globals.Globals;
+import postInit.utils.RecyclingHelper
 
 FORMINGPRESS = recipemap('forming_press')
 ASSEMBLER = recipemap('assembler')
@@ -24,6 +25,13 @@ ASSEMBLER.recipeBuilder()
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
+RecyclingHelper.handleRecycling(metaitem('engine.spark_plug'), [
+    ore('stickIridium'),
+    ore('plateStainlessSteel'),
+    ore('boltStainlessSteel'),
+    metaitem('cableGtSingleCopper'),
+])
+
 ASSEMBLER.recipeBuilder()
     .circuitMeta(16)
     .inputs(ore('plateDoubleStainlessSteel'))
@@ -35,6 +43,13 @@ ASSEMBLER.recipeBuilder()
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
+RecyclingHelper.handleRecycling(metaitem('engine.piston'), [
+    ore('plateDoubleStainlessSteel'),
+    ore('boltStainlessSteel'),
+    ore('ringStainlessSteel') * 4,
+    ore('ingotStainlessSteel'),
+])
+
 BENDER.recipeBuilder()
     .circuitMeta(16)
     .inputs(ore('stickLongStainlessSteel') * 2)
@@ -42,3 +57,7 @@ BENDER.recipeBuilder()
     .duration(100)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
+
+RecyclingHelper.handleRecycling(metaitem('engine.crankshaft'), [
+    ore('stickLongStainlessSteel') * 2,
+])

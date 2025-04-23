@@ -1221,6 +1221,17 @@ recipemap('assembler').recipeBuilder()
 		.duration(600)
 		.buildAndRegister()
 
+RecyclingHelper.handleRecycling(metaitem('combustion_generator.lv'), [
+		metaitem('hull.Lv'),
+		ore('springCopper'),
+		ore('springSmallCopper'),
+		metaitem('engine.spark_plug') * 4,
+		metaitem('engine.piston') * 4,
+		metaitem('engine.crankshaft'),
+		ore('gearSteel') * 2,
+		ore('pipeHugeFluidSteel'),
+])
+
 recipemap('assembler').recipeBuilder()
 		.inputs(metaitem('hull.Mv'))
 		.inputs(ore('springCopper'))
@@ -1236,6 +1247,17 @@ recipemap('assembler').recipeBuilder()
 		.duration(600)
 		.buildAndRegister()
 
+RecyclingHelper.handleRecycling(metaitem('combustion_generator.mv'), [
+		metaitem('hull.Mv'),
+		ore('springCopper'),
+		ore('springSmallCopper'),
+		metaitem('engine.spark_plug') * 4,
+		metaitem('engine.piston') * 4,
+		metaitem('engine.crankshaft'),
+		ore('gearAluminium') * 2,
+		ore('pipeHugeFluidAluminium'),
+])
+
 recipemap('assembler').recipeBuilder()
 		.inputs(metaitem('hull.Hv'))
 		.inputs(ore('springCopper'))
@@ -1250,3 +1272,14 @@ recipemap('assembler').recipeBuilder()
 		.EUt(30)
 		.duration(600)
 		.buildAndRegister()
+
+RecyclingHelper.handleRecycling(metaitem('combustion_generator.hv'), [
+		metaitem('hull.Hv'),
+		ore('springCopper'),
+		ore('springSmallCopper'),
+		metaitem('engine.spark_plug') * 4,
+		metaitem('engine.piston') * 4,
+		metaitem('engine.crankshaft'),
+		ore('gearStainlessSteel') * 2,
+		ore('pipeHugeFluidStainlessSteel'),
+])
