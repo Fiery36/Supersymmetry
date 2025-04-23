@@ -109,20 +109,20 @@ REACTION_FURNACE.recipeBuilder()
     .notConsumable(ore('stickCopper') * 2)
     .fluidInputs(fluid('nitrogen') * 1000)
     .fluidInputs(fluid('oxygen') * 1500)
-    .fluidOutputs(fluid('hot_nitrogen_oxides') * 1000) //500L NO,500L NO2
+    .fluidOutputs(fluid('hot_nitrogen_oxide_mixture') * 1000) //500L NO,500L NO2
     .duration(1200)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
 
 RADIATOR.recipeBuilder()
-    .fluidInputs(fluid('hot_nitrogen_oxides') * 1000)
-    .fluidOutputs(fluid('nitrogen_oxides') * 1000)
+    .fluidInputs(fluid('hot_nitrogen_oxide_mixture') * 1000)
+    .fluidOutputs(fluid('nitrogen_oxide_mixture') * 1000)
     .duration(20)
     .buildAndRegister();
 
 ROASTER.recipeBuilder()
     .fluidInputs(fluid('oxygen') * 500)
-    .fluidInputs(fluid('nitrogen_oxides') * 1000)
+    .fluidInputs(fluid('nitrogen_oxide_mixture') * 1000)
     .fluidOutputs(fluid('nitrogen_dioxide') * 1000)
     .duration(30)
     .EUt(30)
@@ -132,19 +132,19 @@ REACTION_FURNACE.recipeBuilder()
     .notConsumable(ore('stickCopper') * 2)
     .fluidInputs(fluid('air') * 10000) //assume this to be 8000L N, 2000L O
     .fluidInputs(fluid('oxygen') * 2800) //8000L N, 4800L O
-    .fluidOutputs(fluid('hot_nitrogen_oxides_rich_air') * 10400) //8000L Air, 800L O, 800L NO, 800L NO2
+    .fluidOutputs(fluid('hot_nitrogen_oxide_mixture_rich_air') * 10400) //8000L Air, 800L O, 800L NO, 800L NO2
     .duration(400)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
 
 RADIATOR.recipeBuilder()
-    .fluidInputs(fluid('hot_nitrogen_oxides_rich_air') * 1000)
-    .fluidOutputs(fluid('nitrogen_oxides_rich_air') * 1000) 
+    .fluidInputs(fluid('hot_nitrogen_oxide_mixture_rich_air') * 1000)
+    .fluidOutputs(fluid('nitrogen_oxide_mixture_rich_air') * 1000) 
     .duration(20)
     .buildAndRegister();
 
 ROASTER.recipeBuilder()
-    .fluidInputs(fluid('nitrogen_oxides_rich_air') * 5200)
+    .fluidInputs(fluid('nitrogen_oxide_mixture_rich_air') * 5200)
     .fluidOutputs(fluid('nitrogen_dioxide_rich_air') * 4800) //4000L Air, 800L NO2
     .duration(15)
     .EUt(30)

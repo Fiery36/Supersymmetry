@@ -2223,10 +2223,10 @@ susy.material.acidic_hydrogen_vapor=Acidic Hydrogen Vapor
 susy.material.sodium_hydroxide_methanol_solution=Sodium Hydroxide-Methanol Solution
 susy.material.dehexanized_naphtha=Dehexanized Naphtha
 susy.material.sodium_hydrosulfide=Sodium Hydrosulfide
-susy.material.nitrogen_oxides=Nitrogen Oxides
-susy.material.hot_nitrogen_oxides=Hot Nitrogen Oxides
-susy.material.nitrogen_oxides_rich_air=Nitrogen Oxides-Rich Air
-susy.material.hot_nitrogen_oxides_rich_air=Hot Nitrogen Oxides-Rich Air
+susy.material.nitrogen_oxide_mixture=Nitrogen Oxide Mixture
+susy.material.hot_nitrogen_oxide_mixture=Hot Nitrogen Oxide Mixture
+susy.material.nitrogen_oxide_mixture_rich_air=Nitrogen Oxide Mixture-Rich Air
+susy.material.hot_nitrogen_oxide_mixture_rich_air=Hot Nitrogen Oxide Mixture-Rich Air
 susy.material.nitrogen_dioxide_rich_air=Nitrogen Dioxide-Rich Air
 susy.material.nitric_oxide_rich_air=Nitric Oxide-Rich Air
 

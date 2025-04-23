@@ -2304,7 +2304,7 @@ public class UnknownCompositionMaterials {
                 .color(0xffebbb)
                 .build();
 
-        NitrogenOxides = new Material.Builder(4518, SuSyUtility.susyId('nitrogen_oxides'))
+        NitrogenOxideMixture = new Material.Builder(4518, SuSyUtility.susyId('nitrogen_oxide_mixture'))
                 .gas()
                 .components(NitricOxide, NitrogenDioxide)
                 .colorAverage()
@@ -2312,19 +2312,19 @@ public class UnknownCompositionMaterials {
 
         NitrogenOxides.setFormula('NOx', true)
 
-        HotNitrogenOxides = new Material.Builder(4519, SuSyUtility.susyId('hot_nitrogen_oxides'))
+        HotNitrogenOxideMixture = new Material.Builder(4519, SuSyUtility.susyId('hot_nitrogen_oxide_mixture'))
                 .gas(new FluidBuilder().temperature(1300))
                 .components(NitrogenOxides)
                 .colorAverage()
                 .build();
 
-        NitrogenOxidesRichAir = new Material.Builder(4520, SuSyUtility.susyId('nitrogen_oxides_rich_air'))
+        NitrogenOxideMixtureRichAir = new Material.Builder(4520, SuSyUtility.susyId('nitrogen_oxide_mixture_rich_air'))
                 .gas()
                 .components(NitrogenOxides * 2, Oxygen, Air * 10)
                 .colorAverage()
                 .build();
 
-        HotNitrogenOxidesRichAir = new Material.Builder(4521, SuSyUtility.susyId('hot_nitrogen_oxides_rich_air'))
+        HotNitrogenOxideMixtureRichAir = new Material.Builder(4521, SuSyUtility.susyId('hot_nitrogen_oxide_mixture_rich_air'))
                 .gas(new FluidBuilder().temperature(1300))
                 .components(NitrogenOxidesRichAir)
                 .colorAverage()
