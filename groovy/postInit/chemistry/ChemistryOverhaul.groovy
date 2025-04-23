@@ -2129,26 +2129,6 @@ ROASTER.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
-// DicobaltOctacarbonyl
-
-ROASTER.recipeBuilder()
-    .inputs(ore('dustAnyPurityCobalt') * 2)
-    .fluidInputs(fluid('carbon_monoxide') * 8000)
-    .outputs(metaitem('dustDicobaltOctacarbonyl') * 18)
-    .duration(200)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
-
-// Impregnated Alumina Catalyst
-
-ALLOY_SMELTER.recipeBuilder()
-    .inputs(ore('dustSilicaGel') * 3)
-    .inputs(ore('dustAlumina') * 5)
-    .outputs(metaitem('dustImpregnatedAluminaCatalyst') * 8)
-    .duration(200)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
-
 // Copper Bismuth
 
 MIXER.recipeBuilder()
@@ -2202,8 +2182,8 @@ CSTR.recipeBuilder()
 
 VACUUM_DT.recipeBuilder()
     .fluidInputs(fluid('hydrogen_peroxide_solution') * 1000)
-    .fluidOutputs(fluid('water') * 1000)
     .fluidOutputs(fluid('hydrogen_peroxide') * 1000)
+    .fluidOutputs(fluid('water') * 1000)
     .duration(40)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
@@ -3902,3 +3882,14 @@ MIXER.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
+// Potassium Iodine
+
+BR.recipeBuilder()
+    .inputs(ore('dustIodine') * 6)
+    .inputs(ore('dustPotassiumHydroxide') * 18)
+    .fluidInputs(fluid('gtfo_heated_water') * 2000)
+    .outputs(metaitem('dustPotassiumIodate') * 5)
+    .fluidOutputs(fluid('potassium_iodide_solution') * 5000)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister()
