@@ -2658,6 +2658,10 @@ metaitem.turbojet.small.name=Small Turbojet Engine
 metaitem.wing_panel.fiber_reinforced_epoxy.name=Glass Fiber Reinforced Epoxy (GFEP) Wing Panel
 metaitem.wing.small.name=Lightweight Wing
 
+metaitem.commutator.name=Commutator
+metaitem.brush.name=Brush
+metaitem.brush.unfired.name=Unfired Brush
+
 # Vanilla MC
 tile.hellsand.name=Mineral-Rich Sand
 tile.magma.name=Magma-Infused Netherrack
