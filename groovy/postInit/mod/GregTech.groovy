@@ -1956,3 +1956,72 @@ JET_WINGPACK.recipeBuilder()
         .fluidInputs(fluid('supreme_kerosene') * 1)
         .duration(80)
         .buildAndRegister()
+
+//susyfy GT lamps
+def lamp_colors = [
+	'white',
+	'orange',
+	'magenta',
+	'light_blue',
+	'yellow',
+	'lime',
+	'pink',
+	'gray',
+	'cyan',
+	'purple',
+	'blue',
+	'brown',
+	'green',
+	'red',
+	'black',
+]       
+
+for(color in lamp_colors) {
+	for(int i = 0; i < 8; i++) {
+		mods.gregtech.assembler.removeByInput(7, [metaitem('plateGlass') * 6, item('minecraft:glowstone_dust'), metaitem('circuit.integrated').withNbt(['Configuration': i+1])], [fluid('dye_'+color) * 144 * 144])
+		mods.gregtech.assembler.removeByInput(7, [metaitem('plateGlass') * 6, item('minecraft:glowstone_dust'), metaitem('circuit.integrated').withNbt(['Configuration': i+9])], [fluid('dye_'+color) * 144 * 144])
+		ASSEMBLER.recipeBuilder()
+			.fluidInputs(fluid('dye_'+color) * 144 * 144)
+			.inputs(metaitem('plateGlass') * 6)
+			.inputs(ore('gtLight'))
+			.outputs(item('gregtech:'+color+'_lamp',i))
+			.circuitMeta(i+1)
+			.duration(40)
+			.EUt(7)
+			.buildAndRegister()
+			
+		ASSEMBLER.recipeBuilder()
+			.fluidInputs(fluid('dye_'+color) * 144 * 144)
+			.inputs(metaitem('plateGlass') * 6)
+			.inputs(ore('gtLight'))
+			.outputs(item('gregtech:borderless_'+color+'_lamp',i))
+			.circuitMeta(i+9)
+			.duration(40)
+			.EUt(7)
+			.buildAndRegister()	
+       }
+}
+//do this separately for light gray lamps because they are called silver?
+for(int i = 0; i < 8; i++) {
+		mods.gregtech.assembler.removeByInput(7, [metaitem('plateGlass') * 6, item('minecraft:glowstone_dust'), metaitem('circuit.integrated').withNbt(['Configuration': i+1])], [fluid('dye_light_gray') * 144 * 144])
+		mods.gregtech.assembler.removeByInput(7, [metaitem('plateGlass') * 6, item('minecraft:glowstone_dust'), metaitem('circuit.integrated').withNbt(['Configuration': i+9])], [fluid('dye_light_gray') * 144 * 144])
+		ASSEMBLER.recipeBuilder()
+			.fluidInputs(fluid('dye_light_gray') * 144 * 144)
+			.inputs(metaitem('plateGlass') * 6)
+			.inputs(ore('gtLight'))
+			.outputs(item('gregtech:silver_lamp',i))
+			.circuitMeta(i+1)
+			.duration(40)
+			.EUt(7)
+			.buildAndRegister()
+			
+		ASSEMBLER.recipeBuilder()
+			.fluidInputs(fluid('dye_light_gray') * 144 * 144)
+			.inputs(metaitem('plateGlass') * 6)
+			.inputs(ore('gtLight'))
+			.outputs(item('gregtech:borderless_silver_lamp',i))
+			.circuitMeta(i+9)
+			.duration(40)
+			.EUt(7)
+			.buildAndRegister()	
+}
