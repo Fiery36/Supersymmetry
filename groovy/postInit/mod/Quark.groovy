@@ -56,7 +56,7 @@ def dye_colors = [
     'black'
 ]
 
-for (i = 0; i < 16; i++) {
+for (i in 0..15) {
 	CHEMICAL_BATH.recipeBuilder()
 		.inputs(ore('plankWood') * 8)
 		.fluidInputs(fluid('dye_' + dye_colors[i]) * 72)
