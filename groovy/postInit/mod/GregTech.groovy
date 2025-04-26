@@ -10,6 +10,7 @@ ASSEMBLER = recipemap('assembler')
 FLUID_SOLIDIFIER = recipemap('fluid_solidifier')
 MIXER = recipemap('mixer')
 AUTOCLAVE = recipemap('autoclave')
+CHEMICAL_BATH = recipemap('chemical_bath')
 
 //REMOVALS
 
@@ -1956,8 +1957,7 @@ JET_WINGPACK.recipeBuilder()
         .fluidInputs(fluid('supreme_kerosene') * 1)
         .duration(80)
         .buildAndRegister()
-
-//susyfy GT lamps
+        
 def lamp_colors = [
 	'white',
 	'orange',
@@ -2023,7 +2023,7 @@ for(color in lamp_colors) {
 	}
 	if(color == 'white') { continue }
 	
-	ASSEMBLER.recipeBuilder()
+	CHEMICAL_BATH.recipeBuilder()
 			.fluidInputs(fluid('dye_'+color) * 18)
 			.inputs(item('gregtech:white_lamp')) 
 			.outputs(item('gregtech:'+color+'_lamp'))
@@ -2040,13 +2040,12 @@ for(int i = 0; i < 8; i++) {
 	mods.gregtech.assembler.removeByInput(7, [metaitem('plateGlass') * 6, item('minecraft:glowstone_dust'), metaitem('circuit.integrated').withNbt(['Configuration': i+9])], [fluid('dye_light_gray') * 144 * 144])
 }
 
-ASSEMBLER.recipeBuilder()
+CHEMICAL_BATH.recipeBuilder()
 	.fluidInputs(fluid('dye_light_gray') * 18)
 	.inputs(item('gregtech:white_lamp')) 
 	.outputs(item('gregtech:silver_lamp'))
         .duration(10)
 	.EUt(7)
 	.buildAndRegister()
-
 
 
