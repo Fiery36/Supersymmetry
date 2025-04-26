@@ -37,4 +37,34 @@ chestVariants.each { chest ->
         [planks, planks, planks]])
 }
 
+def dye_colors = [
+    'white',
+    'orange',
+    'magenta',
+    'light_blue',
+    'yellow',
+    'lime',
+    'pink',
+    'gray',
+    'light_gray',
+    'cyan',
+    'purple',
+    'blue',
+    'brown',
+    'green',
+    'red',
+    'black'
+]
+
+for (i = 0; i < 16; i++) {
+	CHEMICAL_BATH.recipeBuilder()
+		.inputs(ore('plankWood') * 8)
+		.fluidInputs(fluid('dye_' + dye_colors[i]) * 72)
+		.outputs(item('quark:stained_planks', i))
+		.duration(20)
+		.EUt(7)
+		.buildAndRegister();
+	
+}
+
 
