@@ -14,6 +14,9 @@ FBR = recipemap('fixed_bed_reactor')
 CENTRIFUGE = recipemap('centrifuge')
 FLUID_HEATER = recipemap('fluid_heater')
 DT = recipemap('distillation_tower')
+FLUID_COMPRESSOR = recipemap('fluid_compressor')
+PSA = recipemap('pressure_swing_adsorption')
+TUBE_FURNACE = recipemap('tube_furnace')
 
 /*INFORMATION
 STANDARD I/O LIQUID: 64L OF REGULAR GAS
@@ -240,7 +243,7 @@ HIGH PRESSURE OUTPUT GAS: 6L OF REGULAR GAS
 
     //SUBCOOLED
     HEAT_EXCHANGER.recipeBuilder()
-        .circuitMeta(2)
+        .circuitMeta(1)
         .fluidInputs(fluid('cold_waste_gaseous_nitrogen') * 240)
         .fluidInputs(fluid('untreated_liquid_nitrogen') * 50)
         .fluidOutputs(fluid('chilly_waste_gaseous_nitrogen') * 240)
@@ -249,7 +252,7 @@ HIGH PRESSURE OUTPUT GAS: 6L OF REGULAR GAS
         .buildAndRegister()
 
     HEAT_EXCHANGER.recipeBuilder()
-        .circuitMeta(2)
+        .circuitMeta(1)
         .fluidInputs(fluid('untreated_liquid_nitrogen') * 25)
         .fluidInputs(fluid('untreated_liquid_oxygen') * 30)
         .fluidOutputs(fluid('subcooled_liquid_nitrogen') * 25)
@@ -356,6 +359,7 @@ HIGH_PRESSURE_DISTILLATION_TOWER.recipeBuilder()
 
     //REFLUXED DISTILLATION
     BATH_CONDENSER.recipeBuilder()
+        .notConsumable(fluid('subcooled_oxygen_rich_liquid') * 150)
         .fluidInputs(fluid('cold_waste_gaseous_nitrogen') * 48)
         .fluidOutputs(fluid('liquid_waste_nitrogen') * 1)
         .duration(1)
@@ -397,6 +401,13 @@ HIGH_PRESSURE_DISTILLATION_TOWER.recipeBuilder()
         .duration(100)
         .EUt(Globals.voltAmps[1])
         .buildAndRegister()
+    
+    CENTRIFUGE.recipeBuilder()
+        .fluidInputs(fluid('liquid_argon_product') * 100)
+        .fluidOutputs(fluid('liquid_argon') * 75)
+        .duration(1)
+        .EUt(Globals.voltAmps[0])
+        .buildAndRegister()
 
 //ADAPTED LOW PRESSURE RECIPE
 LOW_PRESSURE_DISTILLATION_TOWER.recipeBuilder()
@@ -415,7 +426,7 @@ LOW_PRESSURE_DISTILLATION_TOWER.recipeBuilder()
 
 //ADAPTED HEAT EXCHANGE (SUBCOOLING)
 HEAT_EXCHANGER.recipeBuilder()
-    .circuitMeta(1)
+    .circuitMeta(2)
     .fluidInputs(fluid('cold_waste_gaseous_nitrogen') * 480)
     .fluidInputs(fluid('untreated_liquid_nitrogen') * 75)
     .fluidOutputs(fluid('chilly_waste_gaseous_nitrogen') * 480)
@@ -424,7 +435,7 @@ HEAT_EXCHANGER.recipeBuilder()
     .buildAndRegister()
 
 HEAT_EXCHANGER.recipeBuilder()
-    .circuitMeta(1)
+    .circuitMeta(2)
     .fluidInputs(fluid('untreated_liquid_nitrogen') * 75)
     .fluidInputs(fluid('untreated_liquid_oxygen') * 105)
     .fluidOutputs(fluid('subcooled_liquid_nitrogen') * 75)
@@ -432,22 +443,117 @@ HEAT_EXCHANGER.recipeBuilder()
     .duration(5)
     .buildAndRegister()
 
-/*TIER THREE: RARE NOBLE GASES
+//TIER THREE: RARE NOBLE GASES
+/*per 24000 air charge:
+0.432 Ne
+0.12 He
+0.0264 Kr
+0.00216 Xe*/
+
+//ADAPATED RECIPES
+HIGH_PRESSURE_DISTILLATION_TOWER.recipeBuilder()
+    .circuitMeta(4)
+    .fluidInputs(fluid('treated_liquid_nitrogen') * 50)
+    .fluidInputs(fluid('liquid_decarburized_air') * 200)
+    .fluidInputs(fluid('cold_hp_decarburized_air') * 11200)
+    .fluidOutputs(fluid('oxygen_rich_liquid') * 150)
+    .fluidOutputs(fluid('nitrogen_rich_gas') * 3520)
+    .duration(10)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
 
 HEAT_EXCHANGER.recipeBuilder()
-    .circuitMeta(1)
-    .fluidInputs(fluid('cold_waste_gaseous_nitrogen') * 1280)
-    .fluidInputs(fluid('treated_liquid_nitrogen') * 100)
-    .fluidOutputs(fluid('chilly_waste_gaseous_nitrogen') * 1280)
-    .fluidOutputs(fluid('subcooled_liquid_nitrogen') * 100)
+    .circuitMeta(3)
+    .fluidInputs(fluid('cold_waste_gaseous_nitrogen') * 480)
+    .fluidInputs(fluid('treated_liquid_nitrogen') * 75)
+    .fluidOutputs(fluid('chilly_waste_gaseous_nitrogen') * 480)
+    .fluidOutputs(fluid('subcooled_liquid_nitrogen') * 75)
     .duration(5)
     .buildAndRegister()
 
 HEAT_EXCHANGER.recipeBuilder()
-    .circuitMeta(1)
-    .fluidInputs(fluid('treated_liquid_nitrogen') * 100)
+    .circuitMeta(3)
+    .fluidInputs(fluid('treated_liquid_nitrogen') * 75)
     .fluidInputs(fluid('treated_liquid_oxygen') * 105)
-    .fluidOutputs(fluid('subcooled_liquid_nitrogen') * 100)
+    .fluidOutputs(fluid('subcooled_liquid_nitrogen') * 75)
     .fluidOutputs(fluid('liquid_oxygen_product') * 105)
     .duration(5)
     .buildAndRegister()
+
+//HELIUM & NEON
+SINGLE_COLUMN_CRYOGENIC_DISTILLATION_PLANT.recipeBuilder()
+    .fluidInputs(fluid('untreated_liquid_nitrogen') * 200)
+    .fluidOutputs(fluid('treated_liquid_nitrogen') * 199)
+    .fluidOutputs(fluid('helium_neon_concentrate') * 48)
+    .duration(5)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
+//DEHYDROGENATION
+FBR.recipeBuilder()
+    .notConsumable(metaitem('catalystBedSupportedPlatinum'))
+    .fluidInputs(fluid('helium_neon_concentrate') * 6000)
+    .fluidInputs(fluid('oxygen') * 4)
+    .fluidOutputs(fluid('dehydrogenated_helium_neon_concentrate') * 6000)
+    .duration(100)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
+SIFTER.recipeBuilder()
+    .notConsumable(ore('dustMolecularSieve'))
+    .fluidInputs(fluid('dehydrogenated_helium_neon_concentrate') * 6000)
+    .fluidOutputs(fluid('demoisturized_helium_neon_concentrate') * 6000)
+    .duration(100)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
+FLUID_COMPRESSOR.recipeBuilder()
+    .fluidInputs(fluid('demoisturized_helium_neon_concentrate') * 6000)
+    .fluidOutputs(fluid('compressed_helium_neon_concentrate') * 250)
+    .duration(500)
+    .EUt(Globals.voltAmps[3])
+    .buildAndRegister()
+
+BATH_CONDENSER.recipeBuilder()
+    .fluidInputs(fluid('liquid_nitrogen') * 125)
+    .fluidOutputs(fluid('nitrogen') * 8000)
+    .fluidInputs(fluid('compressed_helium_neon_concentrate') * 250)
+    .fluidOutputs(fluid('treated_liquid_nitrogen') * 125)
+    .fluidOutputs(fluid('helium_neon_mixture') * 69)
+    .duration(100)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
+PSA.recipeBuilder()
+    .notConsumable(metaitem('zeolite_membrane'))
+    .fluidInputs(fluid('helium_neon_mixture') * 69)
+    .fluidOutputs(fluid('helium') * 54)
+    .fluidOutputs(fluid('neon') * 15)
+    .duration(500)
+    .EUt(Globals.voltAmps[3])
+    .buildAndRegister()
+
+//KRYPTON & XENON
+SINGLE_COLUMN_CRYOGENIC_DISTILLATION_PLANT.recipeBuilder()
+    .fluidInputs(fluid('untreated_liquid_oxygen') * 105)
+    .fluidOutputs(fluid('krypton_xenon_rich_liquid')) // Contains 0.0264 Kr and 0.00216 Xe
+    .fluidOutputs(fluid('treated_liquid_oxygen') * 105)
+    .duration(5)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
+TUBE_FURNACE.recipeBuilder()
+    .fluidInputs(fluid('krypton_xenon_rich_liquid'))
+    .fluidOutputs(fluid('combusted_krypton_xenon_concentrate') * 48)
+    .duration(5)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
+SINGLE_COLUMN_CRYOGENIC_DISTILLATION_PLANT.recipeBuilder()
+    .fluidInputs(fluid('combusted_krypton_xenon_concentrate') * 463)
+    .chancedOutput(fluid('liquid_krypton_xenon_concentrate') * 110, 1111, 0)
+    .fluidOutputs(fluid('xenon'))
+    .duration(200)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
