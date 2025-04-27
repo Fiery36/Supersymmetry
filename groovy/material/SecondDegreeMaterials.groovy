@@ -848,5 +848,11 @@ public class SecondDegreeMaterials {
 
         ChromiumSulfateSolution.setFormula("(Cr2(SO4)3)2(C3H6O)(H2O)9", true)
 
+        AmmoniumCarbonateSolution = new Material.Builder(13141, SuSyUtility.susyId('ammonium_carbonate_solution'))
+                .liquid()
+                .components(AmmoniumCarbonate, Water)
+                .color(0x849697)
+                .build()
+
     }
 }
