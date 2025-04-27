@@ -224,7 +224,7 @@ susy.material.high_purity_calcium=High Purity Calcium
 susy.material.high_purity_scandium=High Purity Scandium
 susy.material.high_purity_titanium=High Purity Titanium
 susy.material.high_purity_vanadium=High Purity Vanadium
-susy.material.high_purity_chrome=High Purity Chrome
+susy.material.high_purity_chrome=High Purity Chromium
 susy.material.high_purity_manganese=High Purity Manganese
 susy.material.high_purity_iron=High Purity Iron
 susy.material.high_purity_cobalt=High Purity Cobalt
@@ -331,6 +331,8 @@ susy.material.calcium_metaphosphate=Calcium Metaphosphate
 susy.material.phosphorus=White Phosphorus
 susy.material.hydroxyapatite=Hydroxyapatite
 susy.material.calcium_metasilicate=Calcium Metasilicate
+
+gregtech.material.chrome=Chromium
 
 # Fluids
 
