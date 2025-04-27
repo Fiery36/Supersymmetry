@@ -34,12 +34,12 @@ GTRecipeHandler.removeAllRecipes(RecipeMaps.VACUUM_RECIPES)
 GTRecipeHandler.removeAllRecipes(RecipeMaps.ELECTROLYZER_RECIPES)
 
 GregTechAPI.materialManager.getRegisteredMaterials().forEach(material -> {
-	if (material.hasProperty(PropertyKey.FLUID) && material.getProperty(PropertyKey.FLUID).getPrimaryKey() == SusyFluidStorageKeys.SLURRY) {
-		Recipe recipe = RecipeMaps.EXTRACTOR_RECIPES.findRecipe(Integer.MAX_VALUE, Collections.singletonList(OreDictUnifier.get(OrePrefix.dust, material)), Collections.emptyList(), false)
-		if (recipe != null) {
-			RecipeMaps.EXTRACTOR_RECIPES.removeRecipe(recipe)
-		}
-	}
+    if (material.hasProperty(PropertyKey.FLUID) && material.getProperty(PropertyKey.FLUID).getPrimaryKey() == SusyFluidStorageKeys.SLURRY) {
+        Recipe recipe = RecipeMaps.EXTRACTOR_RECIPES.findRecipe(Integer.MAX_VALUE, Collections.singletonList(OreDictUnifier.get(OrePrefix.dust, material)), Collections.emptyList(), false)
+        if (recipe != null) {
+            RecipeMaps.EXTRACTOR_RECIPES.removeRecipe(recipe)
+        }
+    }
 })
 //Removal of certain centrifuging recipes
 
@@ -346,72 +346,72 @@ mods.gregtech.macerator.removeByInput(2, [item('gregtech:ore_bauxite_0')], null)
 mods.gregtech.assembler.removeByInput(2, [item('minecraft:brick') * 3], null)
 
 RecipeMaps.SIFTER_RECIPES
-	.modifyMaxFluidInputs(1)
-	.modifyMaxFluidOutputs(1)
-	.modifyMaxInputs(2)
+    .modifyMaxFluidInputs(1)
+    .modifyMaxFluidOutputs(1)
+    .modifyMaxInputs(2)
 RecipeMaps.CENTRIFUGE_RECIPES
-	.modifyMaxFluidInputs(2)
-	.setSlotOverlay(false, true, false, GuiTextures.CENTRIFUGE_OVERLAY)
+    .modifyMaxFluidInputs(2)
+    .setSlotOverlay(false, true, false, GuiTextures.CENTRIFUGE_OVERLAY)
 RecipeMaps.MIXER_RECIPES
-	.modifyMaxFluidInputs(3)
-	.modifyMaxFluidOutputs(2)
+    .modifyMaxFluidInputs(3)
+    .modifyMaxFluidOutputs(2)
 RecipeMaps.ARC_FURNACE_RECIPES
-	.modifyMaxInputs(4)
+    .modifyMaxInputs(4)
 RecipeMaps.ELECTROLYZER_RECIPES
-	.modifyMaxInputs(4)
-	.modifyMaxOutputs(3)
-	.modifyMaxFluidOutputs(3)
+    .modifyMaxInputs(4)
+    .modifyMaxOutputs(3)
+    .modifyMaxFluidOutputs(3)
 RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES
-	.modifyMaxFluidInputs(1)
-	.modifyMaxFluidOutputs(2)
+    .modifyMaxFluidInputs(1)
+    .modifyMaxFluidOutputs(2)
 GTFORecipeMaps.GREENHOUSE_RECIPES
-	.modifyMaxFluidInputs(4)
+    .modifyMaxFluidInputs(4)
 RecipeMaps.PYROLYSE_RECIPES
-	.modifyMaxFluidOutputs(3)
+    .modifyMaxFluidOutputs(3)
 RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES
-	.setSlotOverlay(false, false, SusyGuiTextures.ELECTROMAGNETIC_SEPARATOR_ITEM_OVERLAY)
-	.setSlotOverlay(false, true, SusyGuiTextures.ELECTROMAGNETIC_SEPARATOR_FLUID_OVERLAY)
+    .setSlotOverlay(false, false, SusyGuiTextures.ELECTROMAGNETIC_SEPARATOR_ITEM_OVERLAY)
+    .setSlotOverlay(false, true, SusyGuiTextures.ELECTROMAGNETIC_SEPARATOR_FLUID_OVERLAY)
 RecipeMaps.SIFTER_RECIPES
-	.setSlotOverlay(false, true, SusyGuiTextures.SIFTER_FLUID_OVERLAY)
-	.setSlotOverlay(true, true, SusyGuiTextures.SIFTER_FLUID_OVERLAY)
-	.setSlotOverlay(false, false, SusyGuiTextures.SIFTER_ITEM_INPUT_OVERLAY)
-	.setSlotOverlay(true, false, SusyGuiTextures.SIFTER_ITEM_OUTPUT_OVERLAY)
+    .setSlotOverlay(false, true, SusyGuiTextures.SIFTER_FLUID_OVERLAY)
+    .setSlotOverlay(true, true, SusyGuiTextures.SIFTER_FLUID_OVERLAY)
+    .setSlotOverlay(false, false, SusyGuiTextures.SIFTER_ITEM_INPUT_OVERLAY)
+    .setSlotOverlay(true, false, SusyGuiTextures.SIFTER_ITEM_OUTPUT_OVERLAY)
 RecipeMaps.LASER_ENGRAVER_RECIPES
-	.modifyMaxFluidInputs(1)
+    .modifyMaxFluidInputs(1)
 RecipeMaps.GAS_TURBINE_FUELS
-	.modifyMaxInputs(1)
-	.modifyMaxFluidInputs(3)
-	.modifyMaxFluidOutputs(1)
+    .modifyMaxInputs(1)
+    .modifyMaxFluidInputs(3)
+    .modifyMaxFluidOutputs(1)
 RecipeMaps.AUTOCLAVE_RECIPES
-	.modifyMaxFluidInputs(2)
-	.modifyMaxFluidOutputs(2)
+    .modifyMaxFluidInputs(2)
+    .modifyMaxFluidOutputs(2)
 RecipeMaps.CHEMICAL_BATH_RECIPES
-	.modifyMaxOutputs(3)
-	.modifyMaxFluidInputs(3)
-	.modifyMaxFluidOutputs(3)
+    .modifyMaxOutputs(3)
+    .modifyMaxFluidInputs(3)
+    .modifyMaxFluidOutputs(3)
 RecipeMaps.EXTRUDER_RECIPES
-	.modifyMaxOutputs(3)
-	.modifyMaxFluidInputs(1)
+    .modifyMaxOutputs(3)
+    .modifyMaxFluidInputs(1)
 RecipeMaps.CUTTER_RECIPES
-	.modifyMaxOutputs(4)
+    .modifyMaxOutputs(4)
 RecipeMaps.FORGE_HAMMER_RECIPES
-	.modifyMaxInputs(2)
+    .modifyMaxInputs(2)
 RecipeMaps.LARGE_CHEMICAL_RECIPES
-	.modifyMaxInputs(4)
-	.modifyMaxFluidInputs(6)
-	
+    .modifyMaxInputs(4)
+    .modifyMaxFluidInputs(6)
+    
 //Add mixer recipes to blender
 
 RecipeMaps.MIXER_RECIPES.onRecipeBuild(recipeBuilder -> {
-	recipeBuilder.invalidateOnBuildAction();
-	SuSyRecipeMaps.BLENDER_RECIPES.recipeBuilder()
-		.inputs(recipeBuilder.getInputs().toArray(new GTRecipeInput[0]))
-		.fluidInputs(recipeBuilder.getFluidInputs())
-		.outputs(recipeBuilder.getOutputs())
-		.chancedOutputs(recipeBuilder.getChancedOutputs())
-		.fluidOutputs(recipeBuilder.getFluidOutputs())
-		.cleanroom(recipeBuilder.getCleanroom())
-		.duration(recipeBuilder.getDuration())
-		.EUt(recipeBuilder.EUt)
-		.buildAndRegister();
+    recipeBuilder.invalidateOnBuildAction();
+    SuSyRecipeMaps.BLENDER_RECIPES.recipeBuilder()
+        .inputs(recipeBuilder.getInputs().toArray(new GTRecipeInput[0]))
+        .fluidInputs(recipeBuilder.getFluidInputs())
+        .outputs(recipeBuilder.getOutputs())
+        .chancedOutputs(recipeBuilder.getChancedOutputs())
+        .fluidOutputs(recipeBuilder.getFluidOutputs())
+        .cleanroom(recipeBuilder.getCleanroom())
+        .duration(recipeBuilder.getDuration())
+        .EUt(recipeBuilder.EUt)
+        .buildAndRegister();
 });
