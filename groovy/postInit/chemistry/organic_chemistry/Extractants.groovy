@@ -945,7 +945,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
 
     MIXER.recipeBuilder()
         .fluidInputs(fluid('aluminium') * 144)
-        .inputs(ore('dustCobalt'))
+        .inputs(ore('dustAnyPurityCobalt'))
         .inputs(ore('dustTinyZinc'))
         .outputs(metaitem('dustRaneyCobalt') * 2)
         .duration(200)
