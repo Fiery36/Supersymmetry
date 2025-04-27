@@ -1032,6 +1032,14 @@ public class FirstDegreeMaterials {
                 .color(0x879e21)
                 .build()
 
+        AmmoniumCarbonate = new Material.Builder(8245, SuSyUtility.susyId('ammonium_carbonate'))
+                .dust()
+                .components(Nitrogen * 2, Hydrogen * 8, Oxygen * 3, Carbon)
+                .color(0x849697)
+                .build()
+
+        AmmoniumCarbonate.setFormula("(NH4)2CO3", true)
+
         // FREE IDs: 8246
 
         SulfidicSilverCyanideSolution = new Material.Builder(8247, SuSyUtility.susyId('sulfidic_silver_cyanide_solution'))
