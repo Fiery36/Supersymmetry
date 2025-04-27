@@ -340,17 +340,3 @@ mods.gregtech.forge_hammer.removeByInput(16, [item('gregtech:ore_bauxite_0')], n
 mods.gregtech.macerator.removeByInput(2, [item('gregtech:ore_bauxite_0')], null)
 // Flower Pot * 1
 mods.gregtech.assembler.removeByInput(2, [item('minecraft:brick') * 3], null)
-
-recipemap('vacuum_freezer').recipeBuilder()
-        .inputs(metaitem('gregtechfoodoption:matter_graham_hot_plate'))
-        .outputs(metaitem('gregtechfoodoption:cracker_graham_ungraded_plate'))
-        .EUt(60)
-        .duration(20)
-        .buildAndRegister()
-
-recipemap('vacuum_freezer').recipeBuilder()
-        .inputs(metaitem('gregtechfoodoption:hot_apple_hard_candy_plate'))
-        .outputs(metaitem('gregtechfoodoption:food.apple_hard_candy'))
-        .EUt(5)
-        .duration(200)
-        .buildAndRegister()
