@@ -2247,6 +2247,18 @@ susy.material.leu_235_uranium_dioxide=LEU-235 Uranium Dioxide
 susy.material.haleu_235_uranium_dioxide=HALEU-235 Uranium Dioxide
 susy.material.heu_235_uranium_dioxide=HEU-235 Uranium Dioxide
 susy.material.weapons_grade_uranium_dioxide=Weapons Grade Uranium Dioxide
+susy.material.treated_liquid_nitrogen=Treated Liquid Nitrogen
+susy.material.treated_liquid_oxygen=Treated Liquid Oxygen
+susy.material.helium_neon_concentrate=Helium-Neon Concentrate
+susy.material.dehydrogenated_helium_neon_concentrate=Dehydrogenated Helium-Neon Concentrate
+susy.material.demoisturized_helium_neon_concentrate=Demoisturized Helium-Neon Concentrate
+susy.material.compressed_helium_neon_concentrate=Compressed Helium-Neon Concentrate
+susy.material.helium_neon_mixture=Helium-Neon Mixture
+susy.material.krypton_xenon_rich_liquid=Krypton-Xenon Rich Liquid
+susy.material.combusted_krypton_xenon_concentrate=Combusted Krypton-Xenon Concentrate
+susy.material.purified_krypton_xenon_concentrate=Purified Krypton-Xenon Concentrate
+susy.material.liquid_crude_xenon=Liquid Crude Xenon
+susy.material.oxidized_xenon=Oxidized Xenon
 
 # GregTech RecipeMaps
 
