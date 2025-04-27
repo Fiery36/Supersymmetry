@@ -399,14 +399,3 @@ RecipeMaps.FORGE_HAMMER_RECIPES
 RecipeMaps.LARGE_CHEMICAL_RECIPES
 	.modifyMaxInputs(4)
 	.modifyMaxFluidInputs(6)
-
-RecipeMaps.MIXER_RECIPES.onRecipeBuild(recipeBuilder -> SuSyRecipeMaps.BLENDER_RECIPES.recipeBuilder()
-	.inputs(recipeBuilder.getInputs().toArray(new GTRecipeInput[0]))
-	.fluidInputs(recipeBuilder.getFluidInputs())
-	.outputs(recipeBuilder.getOutputs())
-	.chancedOutputs(recipeBuilder.getChancedOutputs())
-	.fluidOutputs(recipeBuilder.getFluidOutputs())
-	.cleanroom(recipeBuilder.getCleanroom())
-	.duration(recipeBuilder.getDuration())
-	.EUt(recipeBuilder.getEUt())
-	.buildAndRegister())
