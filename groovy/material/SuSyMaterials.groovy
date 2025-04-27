@@ -1309,8 +1309,14 @@ class SuSyMaterials {
         public static Material CopperChlorideSolution;
         public static Material PhosphorousAcid;
         public static Material PhosphorousAcidSolution;
-        public static Material EthylHexylPhosphonicAcidSolution;
         public static Material SodiumPhosphate;
+        public static Material TrimethylPhosphite;
+        public static Material TosylChloride;
+        public static Material PotassiumTosylate;
+        public static Material EthylhexylTosylate;
+        public static Material EthylhexylIodide;
+        public static Material Tri2EthylhexylPhosphite;
+        public static Material EthylhexylPhosphonicAcidDi2EthylhexylEster;
 
         public static Material MonaziteLeach;
         public static Material SiftedMonaziteLeach;

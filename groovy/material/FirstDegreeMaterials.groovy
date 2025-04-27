@@ -3876,7 +3876,7 @@ public class FirstDegreeMaterials {
                 .color(0x201e4a)
                 .build()
 
-        CopperChloride.setFormula("(CuCl2)(H2O)", true)
+        CopperChlorideSolution.setFormula('(CuCl2)(H2O)', true)
 
         LanthanumChloride = new Material.Builder(8681, SuSyUtility.susyId('lanthanum_chloride'))
                 .dust()
@@ -3914,11 +3914,7 @@ public class FirstDegreeMaterials {
 
         AmmoniumCarbonateSolution.setFormula('(NH4)2CO3', true)
 
-        EthylHexylPhosphonicAcidSolution = new Material.Builder(8686, SuSyUtility.susyId('ethylhexyl_phosphonic_acid_solution'))
-                .liquid()
-                .components(Carbon * 16, Hydrogen * 35, Oxygen * 3, Phosphorus, Water)
-                .colorAverage()
-                .build()
+        // Free ID: 8686
 
         PhosphorousAcidSolution = new Material.Builder(8687, SuSyUtility.susyId('phosphorous_acid_solution'))
                 .liquid()
@@ -4006,12 +4002,54 @@ public class FirstDegreeMaterials {
                 .liquid()
                 .components(Samarium, Chlorine * 3, Water)
                 .color(0x9c8d2d)
-                .buildAndRegister()
+                .build()
 
         YtterbiumChlorideSolution = new Material.Builder(8701, SuSyUtility.susyId('ytterbium_chloride_solution'))
                 .liquid()
                 .components(Ytterbium, Chlorine * 3, Water)
                 .color(0x86a85e)
-                .buildAndRegister()
+                .build()
+
+        TrimethylPhosphite = new Material.Builder(8702, SuSyUtility.susyId('trimethyl_phosphate'))
+                .liquid()
+                .components(Carbon * 3, Hydrogen * 9, Oxygen * 3, Phosphorus)
+                .colorAverage()
+                .build()
+
+        TosylChloride = new Material.Builder(8703, SuSyUtility.susyId('tosyl_chloride'))
+                .dust()
+                .components(Carbon * 7, Hydrogen * 7, Chlorine, Oxygen * 2, Sulfur)
+                .colorAverage()
+                .build()
+
+        PotassiumTosylate = new Material.Builder(8704, SuSyUtility.susyId('potassium_tosylate'))
+                .liquid()
+                .components(Carbon * 7, Hydrogen * 7, Potassium, Oxygen * 3, Sulfur)
+                .colorAverage()
+                .build()
+
+        EthylhexylTosylate = new Material.Builder(8705, SuSyUtility.susyId('2_ethylhexyl_tosylate'))
+                .liquid()
+                .components(Carbon * 15, Hydrogen * 24, Oxygen * 3, Sulfur)
+                .colorAverage()
+                .build()
+
+        EthylhexylIodide = new Material.Builder(8706, SuSyUtility.susyId('2_ethylhexyl_iodide'))
+                .liquid()
+                .components(Carbon * 8, Hydrogen * 17, Iodine)
+                .colorAverage()
+                .build()
+
+        Tri2EthylhexylPhosphite = new Material.Builder(8707, SuSyUtility.susyId('tri_2_ethylhexyl_phosphite'))
+                .liquid()
+                .components(Carbon * 24, Hydrogen * 51, Oxygen * 3, Phosphorus)
+                .colorAverage()
+                .build()
+
+        EthylhexylPhosphonicAcidDi2EthylhexylEster = new Material.Builder(8708, SuSyUtility.susyId('ethylhexyl_phosphonic_acid_di_2_ethylhexyl_ester'))
+                .liquid()
+                .components(Carbon * 24, Hydrogen * 51, Oxygen * 3, Phosphorus)
+                .colorAverage()
+                .build()
     }
 }

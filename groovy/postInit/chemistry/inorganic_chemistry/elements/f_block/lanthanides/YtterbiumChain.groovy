@@ -19,7 +19,7 @@ BR.recipeBuilder()
         .buildAndRegister()
 
 DISTILLERY.recipeBuilder()
-        .fluidInputs(fluid('ytteribum_chloride_solution') * 5000)
+        .fluidInputs(fluid('ytterbium_chloride_solution') * 5000)
         .outputs(metaitem('dustYtterbiumChloride') * 4)
         .fluidOutputs(fluid('water') * 5000)
         .duration(200)
