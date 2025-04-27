@@ -349,56 +349,74 @@ RecipeMaps.SIFTER_RECIPES
     .modifyMaxFluidInputs(1)
     .modifyMaxFluidOutputs(1)
     .modifyMaxInputs(2)
+
 RecipeMaps.CENTRIFUGE_RECIPES
     .modifyMaxFluidInputs(2)
     .setSlotOverlay(false, true, false, GuiTextures.CENTRIFUGE_OVERLAY)
+
 RecipeMaps.MIXER_RECIPES
     .modifyMaxFluidInputs(3)
     .modifyMaxFluidOutputs(2)
+
 RecipeMaps.ARC_FURNACE_RECIPES
     .modifyMaxInputs(4)
+
 RecipeMaps.ELECTROLYZER_RECIPES
     .modifyMaxInputs(4)
     .modifyMaxOutputs(3)
     .modifyMaxFluidOutputs(3)
+
 RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES
     .modifyMaxFluidInputs(1)
     .modifyMaxFluidOutputs(2)
+
 GTFORecipeMaps.GREENHOUSE_RECIPES
     .modifyMaxFluidInputs(4)
+
 RecipeMaps.PYROLYSE_RECIPES
     .modifyMaxFluidOutputs(3)
+
 RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES
     .setSlotOverlay(false, false, SusyGuiTextures.ELECTROMAGNETIC_SEPARATOR_ITEM_OVERLAY)
     .setSlotOverlay(false, true, SusyGuiTextures.ELECTROMAGNETIC_SEPARATOR_FLUID_OVERLAY)
+
 RecipeMaps.SIFTER_RECIPES
     .setSlotOverlay(false, true, SusyGuiTextures.SIFTER_FLUID_OVERLAY)
     .setSlotOverlay(true, true, SusyGuiTextures.SIFTER_FLUID_OVERLAY)
     .setSlotOverlay(false, false, SusyGuiTextures.SIFTER_ITEM_INPUT_OVERLAY)
     .setSlotOverlay(true, false, SusyGuiTextures.SIFTER_ITEM_OUTPUT_OVERLAY)
+
 RecipeMaps.LASER_ENGRAVER_RECIPES
     .modifyMaxFluidInputs(1)
+
 RecipeMaps.GAS_TURBINE_FUELS
     .modifyMaxInputs(1)
     .modifyMaxFluidInputs(3)
     .modifyMaxFluidOutputs(1)
+
 RecipeMaps.AUTOCLAVE_RECIPES
     .modifyMaxFluidInputs(2)
     .modifyMaxFluidOutputs(2)
+
 RecipeMaps.CHEMICAL_BATH_RECIPES
     .modifyMaxOutputs(3)
     .modifyMaxFluidInputs(3)
     .modifyMaxFluidOutputs(3)
+
 RecipeMaps.EXTRUDER_RECIPES
     .modifyMaxOutputs(3)
     .modifyMaxFluidInputs(1)
+
 RecipeMaps.CUTTER_RECIPES
     .modifyMaxOutputs(4)
+
 RecipeMaps.FORGE_HAMMER_RECIPES
     .modifyMaxInputs(2)
+
 RecipeMaps.LARGE_CHEMICAL_RECIPES
     .modifyMaxInputs(4)
     .modifyMaxFluidInputs(6)
+
     
 //Add mixer recipes to blender
 
