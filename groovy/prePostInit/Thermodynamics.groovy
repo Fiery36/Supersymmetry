@@ -8,6 +8,7 @@ import java.lang.Math;
 //REMOVALS
 
 mods.gregtech.steam_turbine.removeByInput(32, null, [fluid('steam') * 640])
+mods.gregtech.gas_turbine.removeByInput(32, null, [fluid('refinery_gas')])
 mods.gregtech.gas_turbine.removeByInput(32, null, [fluid('coal_gas')])
 mods.gregtech.gas_turbine.removeByInput(32, null, [fluid('ethylene')])
 mods.gregtech.gas_turbine.removeByInput(32, null, [fluid('natural_gas') * 8])
