@@ -1,22 +1,19 @@
 package prePostInit
 
 import gregtech.api.GregTechAPI
-import gregtech.api.gui.GuiTextures;
+import gregtech.api.gui.GuiTextures
+import gregtech.api.recipes.GTRecipeHandler
 import gregtech.api.recipes.Recipe
 import gregtech.api.recipes.RecipeMaps
-import gregtech.api.recipes.GTRecipeHandler
-import gregtech.api.recipes.ingredients.GTRecipeInput
-import gregtech.api.unification.material.properties.PropertyKey
 import gregtech.api.unification.OreDictUnifier
+import gregtech.api.unification.material.properties.PropertyKey
 import gregtech.api.unification.ore.OrePrefix
 import gregtechfoodoption.recipe.GTFORecipeMaps
-
 import supersymmetry.api.fluids.SusyFluidStorageKeys
-import supersymmetry.api.recipes.SuSyRecipeMaps
-import supersymmetry.api.gui.SusyGuiTextures;
+import supersymmetry.api.gui.SusyGuiTextures
 
-import static gregtech.api.recipes.RecipeMaps.*
 import static gregtech.api.recipes.GTRecipeHandler.*
+import static gregtech.api.recipes.RecipeMaps.*
 
 //Removed to make way for overhauls
 GTRecipeHandler.removeAllRecipes(RecipeMaps.DISTILLERY_RECIPES)
@@ -416,20 +413,3 @@ RecipeMaps.FORGE_HAMMER_RECIPES
 RecipeMaps.LARGE_CHEMICAL_RECIPES
     .modifyMaxInputs(4)
     .modifyMaxFluidInputs(6)
-
-    
-//Add mixer recipes to blender
-
-RecipeMaps.MIXER_RECIPES.onRecipeBuild(recipeBuilder -> {
-    recipeBuilder.invalidateOnBuildAction();
-    SuSyRecipeMaps.BLENDER_RECIPES.recipeBuilder()
-        .inputs(recipeBuilder.getInputs().toArray(new GTRecipeInput[0]))
-        .fluidInputs(recipeBuilder.getFluidInputs())
-        .outputs(recipeBuilder.getOutputs())
-        .chancedOutputs(recipeBuilder.getChancedOutputs())
-        .fluidOutputs(recipeBuilder.getFluidOutputs())
-        .cleanroom(recipeBuilder.getCleanroom())
-        .duration(recipeBuilder.getDuration())
-        .EUt(recipeBuilder.EUt)
-        .buildAndRegister();
-});

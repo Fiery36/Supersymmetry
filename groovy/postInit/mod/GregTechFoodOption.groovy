@@ -6,7 +6,7 @@ DISTILLERY = recipemap('distillery')
 MIXER = recipemap('mixer')
 LCR = recipemap('large_chemical_reactor')
 BR = recipemap('batch_reactor')
-CSTR = recipemap('continuous_stirred_tank_reactor');
+CSTR = recipemap('continuous_stirred_tank_reactor')
 FERMENTER = recipemap('vat_fermentation')
 ELECTROLYZER = recipemap('electrolyzer')
 CENTRIFUGE = recipemap('centrifuge')
@@ -168,7 +168,7 @@ for (ItemStack fish : GTFOUtils.getFish()) {
     .outputs(metaitem('gregtechfoodoption:food.fried_fish'))
     .EUt(16)
     .duration(400)
-    .buildAndRegister();
+    .buildAndRegister()
 
     FERMENTER.recipeBuilder()
     .fluidInputs(fluid('water') * 100)
@@ -176,7 +176,7 @@ for (ItemStack fish : GTFOUtils.getFish()) {
     .outputs(metaitem('gregtechfoodoption:food.fish_rotten'))
     .EUt(7)
     .duration(100)
-    .buildAndRegister();
+    .buildAndRegister()
 }
 
 MIXER.recipeBuilder()
@@ -256,7 +256,7 @@ for (ItemStack meat : GTFOUtils.getMeat()) {
     .outputs(metaitem('gregtechfoodoption:food.meat_rotten'))
     .EUt(7)
     .duration(100)
-    .buildAndRegister();
+    .buildAndRegister()
 
     LCR.recipeBuilder()
     .fluidInputs(fluid('methanol') * 4000)
@@ -268,7 +268,7 @@ for (ItemStack meat : GTFOUtils.getMeat()) {
     .fluidOutputs(fluid('gtfo_sludge') * 12000)
     .EUt(256)
     .duration(1000)
-    .buildAndRegister();
+    .buildAndRegister()
 }
 
 LCR.recipeBuilder()
@@ -281,7 +281,7 @@ LCR.recipeBuilder()
     .fluidOutputs(fluid('gtfo_sludge') * 16000)
     .EUt(256)
     .duration(1000)
-    .buildAndRegister();
+    .buildAndRegister()
 
 CHEMICAL_BATH.recipeBuilder()
     .inputs(metaitem('gregtechfoodoption:component.scrap_meat'))
