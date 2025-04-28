@@ -521,7 +521,6 @@ BATH_CONDENSER.recipeBuilder()
     .fluidOutputs(fluid('treated_liquid_nitrogen') * 125)
     .fluidOutputs(fluid('helium_neon_mixture') * 69)
     .duration(100)
-    .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
 PSA.recipeBuilder()
