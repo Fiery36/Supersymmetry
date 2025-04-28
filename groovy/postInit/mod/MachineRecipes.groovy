@@ -6,9 +6,9 @@ def name_removals = [
 	'gregtech:gregtech.machine.fisher.mv',
 	'gregtech:gregtech.machine.fisher.hv',
 	'gregtech:gregtech.machine.fisher.ev',
-	'gregtech:gregtech.machine.combustion_generator.lv',
-	'gregtech:gregtech.machine.combustion_generator.mv',
-	'gregtech:gregtech.machine.combustion_generator.hv'
+	'gregtech:diesel_generator_lv',
+	'gregtech:diesel_generator_mv',
+	'gregtech:diesel_generator_hv'
 ]
 
 for (name in name_removals) {
