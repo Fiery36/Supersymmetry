@@ -2310,23 +2310,23 @@ public class UnknownCompositionMaterials {
                 .colorAverage()
                 .build();
 
-        NitrogenOxides.setFormula('NOx', true)
+        NitrogenOxideMixture.setFormula('NOx', true)
 
         HotNitrogenOxideMixture = new Material.Builder(4519, SuSyUtility.susyId('hot_nitrogen_oxide_mixture'))
                 .gas(new FluidBuilder().temperature(1300))
-                .components(NitrogenOxides)
+                .components(NitrogenOxideMixture)
                 .colorAverage()
                 .build();
 
         NitrogenOxideMixtureRichAir = new Material.Builder(4520, SuSyUtility.susyId('nitrogen_oxide_mixture_rich_air'))
                 .gas()
-                .components(NitrogenOxides * 2, Oxygen, Air * 10)
+                .components(NitrogenOxideMixture * 2, Oxygen, Air * 10)
                 .colorAverage()
                 .build();
 
         HotNitrogenOxideMixtureRichAir = new Material.Builder(4521, SuSyUtility.susyId('hot_nitrogen_oxide_mixture_rich_air'))
                 .gas(new FluidBuilder().temperature(1300))
-                .components(NitrogenOxidesRichAir)
+                .components(NitrogenOxideMixtureRichAir)
                 .colorAverage()
                 .build();
 
