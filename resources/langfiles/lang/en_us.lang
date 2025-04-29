@@ -2648,6 +2648,11 @@ metaitem.epoxy_lamina.name=Epoxy Lamina
 metaitem.stem.cotton.name=Cotton Stem
 metaitem.spinneret.name=Spinneret
 
+metaitem.engine.spark_plug.name=Spark Plug
+metaitem.engine.piston.name=Piston
+metaitem.engine.crankshaft.name=Crankshaft
+metaitem.sintered_alumina.insulator.name=Sintered Alumina Insulator
+
 metaitem.rubylith.name=Rubylith
 metaitem.rubylith_film.name=Rubylith Film
 metaitem.stencil.ic.name=Integrated Circuit Stencil
