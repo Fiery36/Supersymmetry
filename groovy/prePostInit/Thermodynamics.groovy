@@ -706,6 +706,12 @@ for (FluidFuel in FluidFuels) {
                     .duration((int) (FluidFuel.duration * 1.5))
                     .EUt(128)
                     .buildAndRegister();
+
+            recipemap('combustion_generator').recipeBuilder()
+                    .fluidInputs(liquid(FluidFuel.liquid_fuel) * FluidFuel.amount_to_burn)
+                    .duration((int) (FluidFuel.duration * 3))
+                    .EUt(32)
+                    .buildAndRegister();
         } else {
             recipemap('gas_turbine').recipeBuilder()
                     .circuitMeta(1)
