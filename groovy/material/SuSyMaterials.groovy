@@ -570,7 +570,6 @@ class SuSyMaterials {
         public static Material ChlorinatedPGMConcentrate;
         public static Material PalladiumExtract;
         public static Material RhodiumIridiumSolution;
-        public static Material RhodiumIridiumExtractionMixture;
         public static Material CobaltMatte;
         public static Material OrthoCresylicAcidMixture;
         public static Material CresolNovolacsOligomer;
