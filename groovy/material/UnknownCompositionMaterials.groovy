@@ -2336,8 +2336,8 @@ public class UnknownCompositionMaterials {
         */
 
 
-        RoastedBastnasiteLeach = new Material.Builder(4523, SuSyUtility.susyId('roasted_bastnasite_leach'))
-                .liquid()
+        RoastedBastnasite = new Material.Builder(4523, SuSyUtility.susyId('roasted_bastnasite'))
+                .dust()
                 .color(0x754c20)
                 .build()
                 .setFormula('(La, Ce, Y)CO3F', true)

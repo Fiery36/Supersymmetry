@@ -1349,7 +1349,7 @@ class SuSyMaterials {
         public static Material UranylHydroxidePrecipitate;
         public static Material UranylHydroxide;
 
-        public static Material RoastedBastnasiteLeach;
+        public static Material RoastedBastnasite;
         public static Material ConcentratedBastnasite;
 
         public static Material RoastedXenotime;
@@ -1377,7 +1377,7 @@ class SuSyMaterials {
         public static Material SamariumChloride;
         public static Material GadoliniumHydroxide;
         public static Material GadoliniumOxide;
-        public static Material GadoliniumFluoride
+        public static Material GadoliniumFluoride;
         public static Material TerbiumCarbonate;
         public static Material TerbiumOxide;
         public static Material TerbiumFluoride;
@@ -1392,7 +1392,7 @@ class SuSyMaterials {
         public static Material HolmiumDodecylSulfate;
         public static Material HolmiumHydroxide;
         public static Material HolmiumOxide;
-        public static Material HolmiumFluoride
+        public static Material HolmiumFluoride;
         public static Material YtterbiumAmalgam;
         public static Material YtterbiumChlorideSolution;
         public static Material YtterbiumChloride;

@@ -1,5 +1,3 @@
-import javax.sound.sampled.Mixer
-
 BR = recipemap('batch_reactor')
 
 BR.recipeBuilder()
