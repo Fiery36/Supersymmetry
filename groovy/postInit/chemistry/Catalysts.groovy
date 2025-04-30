@@ -561,8 +561,10 @@ ASSEMBLER.recipeBuilder()
 ASSEMBLER.recipeBuilder()
     .inputs(ore('wireFinePlatinum') * 16)
     .outputs(metaitem('mesh.platinum'))
+    .circuitMeta(3)
     .EUt(120)
     .duration(160)
+    .buildAndRegister()
 
 // Dicobalt Octacarbonyl
 
