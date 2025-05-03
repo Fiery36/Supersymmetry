@@ -122,10 +122,7 @@ public class UnknownCompositionMaterials {
                 .color(0x345691)
                 .build();
 
-        PalladiumContainingSolution = new Material.Builder(4019, SuSyUtility.susyId('palladium_containing_solution'))
-                .liquid()
-                .color(0x808080)
-                .build();
+        // FREE ID: 4019
 
         Mash = new Material.Builder(4020, SuSyUtility.susyId('mash'))
                 .liquid()

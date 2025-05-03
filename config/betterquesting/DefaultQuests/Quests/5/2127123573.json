@@ -1,24 +1,25 @@
 {
   "preRequisites:11": [
-    875
+    109945351
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "susy.quest.db.876.desc",
+      "desc:8": "susy.quest.db.2127123573.desc",
+      "frame:8": "GATE",
       "icon:10": {
-        "Damage:2": 116,
+        "Damage:2": 31004,
         "id:8": "gregtech:meta_dust"
       },
-      "name:8": "susy.quest.db.876.title"
+      "name:8": "susy.quest.db.2127123573.title"
     }
   },
-  "questID:3": 876,
+  "questID:3": 2127123573,
   "tasks:9": {
     "0:10": {
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
-          "Damage:2": 8477,
+          "Damage:2": 31004,
           "id:8": "gregtech:meta_dust"
         }
       },

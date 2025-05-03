@@ -2553,7 +2553,7 @@ public class FirstDegreeMaterials {
 
         AmmoniumDiuranate = new Material.Builder(8477, SuSyUtility.susyId('ammonium_diuranate'))
                 .dust()
-                .iconSet(SHINY)
+                .iconSet(SAND)
                 .components(Nitrogen * 2, Hydrogen * 8, Uranium238, Oxygen * 7)
                 .color(0xe6be22)
                 .build();
@@ -3719,7 +3719,7 @@ public class FirstDegreeMaterials {
                 .dust()
                 .iconSet(SAND)
                 .components(HALEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
-                .color(0xe6cc22)
+                .color(0xede31c)
                 .build()
         
         HALEU235AmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
@@ -3728,7 +3728,7 @@ public class FirstDegreeMaterials {
                 .dust()
                 .iconSet(SAND)
                 .components(HEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
-                .color(0x82f622)
+                .color(0xe6ed15)
                 .build()
                 
         HEU235AmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
@@ -3737,7 +3737,7 @@ public class FirstDegreeMaterials {
                 .dust()
                 .iconSet(SAND)
                 .components(WeaponsGradeUranium, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
-                .color(0x62ff22)
+                .color(0xe6ed0c)
                 .build()
         
         WeaponsGradeAmmoniumDiuranate.setFormula("(NH4)2U2O7", true);

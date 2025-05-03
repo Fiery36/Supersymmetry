@@ -398,7 +398,6 @@ class SuSyMaterials {
         public static Material CopperMatteFlueDust;
         public static Material CopperMatteFlueGas;
         public static Material CopperConcentrate;
-        public static Material PalladiumContainingSolution;
         public static Material ChlorofluoromethaneMix;
         public static Material HafniumExtractionMixture;
         public static Material HafniumExtract;
