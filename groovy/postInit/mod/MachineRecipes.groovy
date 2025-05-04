@@ -7,13 +7,13 @@ EXTRUDER = recipemap('extruder')
 SINTERING_OVEN = recipemap('sintering_oven')
 
 def name_removals = [
-	'gregtech:gregtech.machine.fisher.lv',
-	'gregtech:gregtech.machine.fisher.mv',
-	'gregtech:gregtech.machine.fisher.hv',
-	'gregtech:gregtech.machine.fisher.ev',
-	'gregtech:diesel_generator_lv',
-	'gregtech:diesel_generator_mv',
-	'gregtech:diesel_generator_hv'
+    'gregtech:gregtech.machine.fisher.lv',
+    'gregtech:gregtech.machine.fisher.mv',
+    'gregtech:gregtech.machine.fisher.hv',
+    'gregtech:gregtech.machine.fisher.ev',
+    'gregtech:diesel_generator_lv',
+    'gregtech:diesel_generator_mv',
+    'gregtech:diesel_generator_hv'
 ]
 
 for (name in name_removals) {
@@ -21,25 +21,25 @@ for (name in name_removals) {
 }
 
 mods.jei.ingredient.yeet(
-	metaitem('steam_turbine.mv'),
-	metaitem('steam_turbine.hv'),
-	metaitem('gas_turbine.lv'),
-	metaitem('gas_turbine.mv'),
-	metaitem('gas_turbine.hv'),
-	metaitem('gcym:steam_engine'),
-	item('gcym:large_multiblock_casing:12'),
-	metaitem('large_turbine.steam'),
-	metaitem('large_turbine.gas'),
-	metaitem('large_turbine.plasma'),
-	metaitem('large_combustion_engine'),
-	metaitem('extreme_combustion_engine'),
-	metaitem('reservoir_hatch'),
-	metaitem('rotor_holder.hv'),
-	metaitem('rotor_holder.ev'),
-	metaitem('rotor_holder.iv'),
-	metaitem('rotor_holder.luv'),
-	metaitem('rotor_holder.zpm'),
-	metaitem('rotor_holder.uv')
+    metaitem('steam_turbine.mv'),
+    metaitem('steam_turbine.hv'),
+    metaitem('gas_turbine.lv'),
+    metaitem('gas_turbine.mv'),
+    metaitem('gas_turbine.hv'),
+    metaitem('gcym:steam_engine'),
+    item('gcym:large_multiblock_casing:12'),
+    metaitem('large_turbine.steam'),
+    metaitem('large_turbine.gas'),
+    metaitem('large_turbine.plasma'),
+    metaitem('large_combustion_engine'),
+    metaitem('extreme_combustion_engine'),
+    metaitem('reservoir_hatch'),
+    metaitem('rotor_holder.hv'),
+    metaitem('rotor_holder.ev'),
+    metaitem('rotor_holder.iv'),
+    metaitem('rotor_holder.luv'),
+    metaitem('rotor_holder.zpm'),
+    metaitem('rotor_holder.uv')
 )
 
 //Add recipes for new chemical reactors, and remove old chemical reactor recipes
@@ -1211,79 +1211,82 @@ RecyclingHelper.addShaped("gregtech:sieve_distillation_tower", metaitem('sieve_d
 // COMBUSTION ENGINES
 
 ASSEMBLER.recipeBuilder()
-		.inputs(metaitem('hull.Lv'))
-		.inputs(ore('springCopper'))
-		.inputs(ore('springSmallCopper'))
-		.inputs(ore('circuitLv'))
-		.inputs(metaitem('engine.spark_plug') * 4)
-		.inputs(metaitem('engine.piston') * 4)
-		.inputs(metaitem('engine.crankshaft'))
-		.inputs(ore('gearSteel') * 2)
-		.inputs(ore('pipeHugeFluidSteel'))
-		.outputs(metaitem('combustion_generator.lv'))
-		.EUt(30)
-		.duration(600)
-		.buildAndRegister()
+    .inputs(metaitem('hull.Lv'))
+    .inputs(ore('springCopper'))
+    .inputs(ore('springSmallCopper'))
+    .inputs(ore('circuitLv'))
+    .inputs(metaitem('engine.spark_plug') * 4)
+    .inputs(metaitem('engine.piston') * 4)
+    .inputs(metaitem('engine.crankshaft'))
+    .inputs(ore('gearSteel') * 2)
+    .inputs(ore('pipeHugeFluidSteel'))
+    .outputs(metaitem('combustion_generator.lv'))
+    .EUt(30)
+    .duration(600)
+    .buildAndRegister()
 
+RecyclingHelper.removeRecyclingRecipes(metaitem('combustion_generator.lv'))
 RecyclingHelper.handleRecycling(metaitem('combustion_generator.lv'), [
-		metaitem('hull.Lv'),
-		ore('springCopper'),
-		ore('springSmallCopper'),
-		metaitem('engine.spark_plug') * 4,
-		metaitem('engine.piston') * 4,
-		metaitem('engine.crankshaft'),
-		ore('gearSteel') * 2,
-		ore('pipeHugeFluidSteel'),
+    metaitem('hull.Lv'),
+    ore('springCopper'),
+    ore('springSmallCopper'),
+    metaitem('engine.spark_plug') * 4, //doesn't get counted by RecyclingHandler
+    metaitem('engine.piston') * 4,     //doesn't get counted by RecyclingHandler
+    metaitem('engine.crankshaft'),     //doesn't get counted by RecyclingHandler
+    ore('gearSteel') * 2,
+    ore('pipeHugeFluidSteel'),
 ])
 
 ASSEMBLER.recipeBuilder()
-		.inputs(metaitem('hull.Mv'))
-		.inputs(ore('springCopper'))
-		.inputs(ore('springSmallCopper'))
-		.inputs(ore('circuitMv'))
-		.inputs(metaitem('engine.spark_plug') * 4)
-		.inputs(metaitem('engine.piston') * 4)
-		.inputs(metaitem('engine.crankshaft'))
-		.inputs(ore('gearAluminium') * 2)
-		.inputs(ore('pipeHugeFluidAluminium'))
-		.outputs(metaitem('combustion_generator.mv'))
-		.EUt(30)
-		.duration(600)
-		.buildAndRegister()
+    .inputs(metaitem('hull.Mv'))
+    .inputs(ore('springCopper'))
+    .inputs(ore('springSmallCopper'))
+    .inputs(ore('circuitMv'))
+    .inputs(metaitem('engine.spark_plug') * 4)
+    .inputs(metaitem('engine.piston') * 4)
+    .inputs(metaitem('engine.crankshaft'))
+    .inputs(ore('gearAluminium') * 2)
+    .inputs(ore('pipeHugeFluidAluminium'))
+    .outputs(metaitem('combustion_generator.mv'))
+    .EUt(30)
+    .duration(600)
+    .buildAndRegister()
 
+RecyclingHelper.removeRecyclingRecipes(metaitem('combustion_generator.mv'))
 RecyclingHelper.handleRecycling(metaitem('combustion_generator.mv'), [
-		metaitem('hull.Mv'),
-		ore('springCopper'),
-		ore('springSmallCopper'),
-		metaitem('engine.spark_plug') * 4,
-		metaitem('engine.piston') * 4,
-		metaitem('engine.crankshaft'),
-		ore('gearAluminium') * 2,
-		ore('pipeHugeFluidAluminium'),
+    metaitem('hull.Mv'),
+    ore('springCopper'),
+    ore('springSmallCopper'),
+    metaitem('engine.spark_plug') * 4, //doesn't get counted by RecyclingHandler
+    metaitem('engine.piston') * 4,     //doesn't get counted by RecyclingHandler
+    metaitem('engine.crankshaft'),     //doesn't get counted by RecyclingHandler
+    ore('gearAluminium') * 2,
+    ore('pipeHugeFluidAluminium'),
 ])
 
 ASSEMBLER.recipeBuilder()
-		.inputs(metaitem('hull.Hv'))
-		.inputs(ore('springCopper'))
-		.inputs(ore('springSmallCopper'))
-		.inputs(ore('circuitHv'))
-		.inputs(metaitem('engine.spark_plug') * 4)
-		.inputs(metaitem('engine.piston') * 4)
-		.inputs(metaitem('engine.crankshaft'))
-		.inputs(ore('gearStainlessSteel') * 2)
-		.inputs(ore('pipeHugeFluidStainlessSteel'))
-		.outputs(metaitem('combustion_generator.hv'))
-		.EUt(30)
-		.duration(600)
-		.buildAndRegister()
+    .inputs(metaitem('hull.Hv'))
+    .inputs(ore('springCopper'))
+    .inputs(ore('springSmallCopper'))
+    .inputs(ore('circuitHv'))
+    .inputs(metaitem('engine.spark_plug') * 4)
+    .inputs(metaitem('engine.piston') * 4)
+    .inputs(metaitem('engine.crankshaft'))
+    .inputs(ore('gearStainlessSteel') * 2)
+    .inputs(ore('pipeHugeFluidStainlessSteel'))
+    .outputs(metaitem('combustion_generator.hv'))
+    .EUt(30)
+    .duration(600)
+    .buildAndRegister()
 
+RecyclingHelper.removeRecyclingRecipes(metaitem('combustion_generator.hv'))
 RecyclingHelper.handleRecycling(metaitem('combustion_generator.hv'), [
-		metaitem('hull.Hv'),
-		ore('springCopper'),
-		ore('springSmallCopper'),
-		metaitem('engine.spark_plug') * 4,
-		metaitem('engine.piston') * 4,
-		metaitem('engine.crankshaft'),
-		ore('gearStainlessSteel') * 2,
-		ore('pipeHugeFluidStainlessSteel'),
+    metaitem('hull.Hv'),
+    ore('springCopper'),
+    ore('springSmallCopper'),
+    metaitem('engine.spark_plug') * 4, //doesn't get counted by RecyclingHandler
+    metaitem('engine.piston') * 4,     //doesn't get counted by RecyclingHandler
+    metaitem('engine.crankshaft'),     //doesn't get counted by RecyclingHandler
+    ore('gearStainlessSteel') * 2,
+    ore('pipeHugeFluidStainlessSteel'),
 ])
