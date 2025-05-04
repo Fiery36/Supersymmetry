@@ -7,7 +7,7 @@ ASSEMBLER = recipemap('assembler')
 ASSEMBLER.recipeBuilder()
     .inputs(ore('plateAluminium') * 20)
     .inputs(ore('plateReinforcedEpoxyResin') * 20)
-    .inputs(ore('pipeSmallFluidAluminium') * 6)
+    .inputs(ore('pipeSmallFluidStainlessSteel') * 6)
     .inputs(ore('stickLongStainlessSteel') * 8)
     .inputs(ore('ringStainlessSteel') * 8)
     .inputs(ore('plateStainlessSteel') * 20)
@@ -22,7 +22,7 @@ ASSEMBLER.recipeBuilder()
 
 RecyclingHelper.handleRecycling(item('supercritical:gas_centrifuge_casing') * 5,
     [ore('plateAluminium') * 20,
-    ore('pipeSmallFluidAluminium') * 6,
+    ore('pipeSmallFluidStainlessSteel') * 6,
     ore('stickLongStainlessSteel') * 8,
     ore('ringStainlessSteel') * 8,
     ore('plateStainlessSteel') * 20,
@@ -54,7 +54,7 @@ ASSEMBLER.recipeBuilder()
     .inputs(metaitem('hull.ev'))
     .inputs(ore('circuitEv') * 8)
     .inputs(metaitem('plate.power_integrated_circuit') * 4)
-    .inputs(ore('pipeSmallFluidAluminium') * 16)
+    .inputs(ore('pipeSmallFluidStainlessSteel') * 16)
     .inputs(metaitem('electric.pump.ev') * 4)
     .circuitMeta(22)
     .outputs(item('gregtech:machine', 14403))
@@ -66,6 +66,6 @@ RecyclingHelper.handleRecycling(item('gregtech:machine', 14403),
     [metaitem('hull.ev'),
     ore('circuitEv') * 8,
     metaitem('plate.power_integrated_circuit') * 4,
-    ore('pipeSmallFluidAluminium') * 16,
+    ore('pipeSmallFluidStainlessSteel') * 16,
     metaitem('electric.pump.ev') * 4]
 )
