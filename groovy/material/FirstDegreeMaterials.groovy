@@ -1031,7 +1031,15 @@ public class FirstDegreeMaterials {
                 .color(0x879e21)
                 .build()
 
-        // FREE IDs: 8245-8246
+        PlatinumRhodium = new Material.Builder(8245, SuSyUtility.susyId('platinum_rhodium'))
+                .dust().liquid(new FluidBuilder().temperature(2113))
+                .components(Platinum * 9, Rhodium)
+                .color(0xffe1c8)
+                .flags(GENERATE_FINE_WIRE)
+                .blastTemp(2113, GasTier.MID)
+                .build()
+
+        // FREE IDs: 8246
 
         SulfidicSilverCyanideSolution = new Material.Builder(8247, SuSyUtility.susyId('sulfidic_silver_cyanide_solution'))
                 .liquid()
@@ -3788,7 +3796,6 @@ public class FirstDegreeMaterials {
                 .color(0x2c4a1e)
                 .build()
                 .setFormula("UO2", true);
-
         
     }
 }
