@@ -123,6 +123,7 @@ class ChangeFlags {
         Cobalt.setProperty(PropertyKey.BLAST, new BlastProperty(1750, GasTier.LOW, 120, 200, -1, -1));
         Beryllium.setProperty(PropertyKey.BLAST, new BlastProperty(1560, GasTier.LOW, 120, 200, -1, -1));
         Nickel.setProperty(PropertyKey.BLAST, new BlastProperty(1728, GasTier.LOW, 120, 120, -1, -1));
+        Hafnium.setProperty(PropertyKey.BLAST, new BlastProperty(2227, GasTier.LOW, 120, 120, -1, -1));
 
         // Supercons, max amps multiplied by 4.
         ManganesePhosphide.getProperty(PropertyKey.WIRE).setAmperage(8);
@@ -169,6 +170,8 @@ class ChangeFlags {
         Tetrahedrite.addFlags("no_smelting");
         Gold.addFlags("generate_gear");
         IronMagnetic.addFlags("generate_ring");
+        StainlessSteel.addFlags("generate_round");
+        Hafnium.addFlags("generate_long_rod", "generate_rod");
 
         /*
         ManganesePhosphide.addFlags("no_smashing", "no_smelting")
