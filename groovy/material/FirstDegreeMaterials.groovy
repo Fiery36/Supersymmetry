@@ -3255,6 +3255,8 @@ public class FirstDegreeMaterials {
                 .color(0x5a7b6a)
                 .build();
 
+        UraniumDioxide.setFormula("UO2", true)
+
         DepletedUraniumDioxide = new Material.Builder(8589, SuSyUtility.susyId("depleted_uranium_dioxide"))
                 .dust()
                 .iconSet(SAND)
