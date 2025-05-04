@@ -1172,13 +1172,11 @@ public class UnknownCompositionMaterials {
         LtftCatalyst = new Material.Builder(4226, SuSyUtility.susyId('ltft_catalyst'))
                 .dust()
                 .color(0x4f3030)
-                .flags(GENERATE_CATALYST_BED)
                 .build();
 
         HtftCatalyst = new Material.Builder(4227, SuSyUtility.susyId('htft_catalyst'))
                 .dust()
                 .color(0x7d2727)
-                .flags(GENERATE_CATALYST_BED)
                 .build();
 
         CrudeCarnotiteLeach = new Material.Builder(4228, SuSyUtility.susyId('crude_carnotite_leach'))

@@ -1,20 +1,21 @@
 {
   "preRequisites:11": [
-    202
+    798,
+    284433121
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "susy.quest.db.203.desc",
+      "desc:8": "susy.quest.db.328732527.desc",
       "frame:8": "GATE",
       "icon:10": {
-        "Damage:2": 2,
-        "id:8": "gregtech:meta_ingot"
+        "Damage:2": 990,
+        "id:8": "gregtech:machine"
       },
       "ismain:1": 1,
-      "name:8": "susy.quest.db.203.title"
+      "name:8": "susy.quest.db.328732527.title"
     }
   },
-  "questID:3": 203,
+  "questID:3": 328732527,
   "rewards:9": {
     "0:10": {
       "rewardID:8": "bq_standard:item",
@@ -23,17 +24,17 @@
           "Count:3": 1,
           "id:8": "simple_trophies:trophy",
           "tag:10": {
-            "TrophyColorBlue:3": 211,
-            "TrophyColorGreen:3": 137,
-            "TrophyColorRed:3": 102,
+            "TrophyColorBlue:3": 255,
+            "TrophyColorGreen:3": 255,
+            "TrophyColorRed:3": 255,
             "TrophyItem:10": {
               "Count:3": 1,
-              "Damage:2": 2,
-              "id:8": "gregtech:meta_ingot"
+              "Damage:2": 990,
+              "id:8": "gregtech:machine"
             },
-            "TrophyName:8": "Hall-H\u00c3\u0192\u00c2\u00a9roult",
+            "TrophyName:8": "Assembly Required",
             "TrophyShowsTooltip:1": 1,
-            "TrophyVariant:8": "classic"
+            "TrophyVariant:8": "neon"
           }
         }
       }
@@ -44,8 +45,8 @@
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
-          "Damage:2": 2,
-          "id:8": "gregtech:meta_ingot"
+          "Damage:2": 990,
+          "id:8": "gregtech:machine"
         }
       },
       "taskID:8": "bq_standard:retrieval"
