@@ -1032,14 +1032,21 @@ public class FirstDegreeMaterials {
                 .build()
 
         PlatinumRhodium = new Material.Builder(8245, SuSyUtility.susyId('platinum_rhodium'))
-                .dust().liquid(new FluidBuilder().temperature(2113))
+                .dust().liquid()
                 .components(Platinum * 9, Rhodium)
                 .color(0xffe1c8)
                 .flags(GENERATE_FINE_WIRE)
                 .blastTemp(2113, GasTier.MID)
                 .build()
 
-        // FREE IDs: 8246
+        Zircaloy = new Material.Builder(8246, SuSyUtility.susyId('zircaloy'))
+                .ingot().liquid()
+                .components(Zirconium * 16, Tin * 2, Chrome)
+                .color(0x566570)
+                .iconSet(METALLIC)
+                .flags(GENERATE_RING, GENERATE_PLATE)
+                .blastTemp(2123, GasTier.LOW)
+                .build()
 
         SulfidicSilverCyanideSolution = new Material.Builder(8247, SuSyUtility.susyId('sulfidic_silver_cyanide_solution'))
                 .liquid()
@@ -1374,7 +1381,14 @@ public class FirstDegreeMaterials {
                 .color(0x38393b)
                 .build();
 
-        // FREE ID: 8297
+        Inconel625 = new Material.Builder(8297, SuSyUtility.susyId('inconel_625'))
+                .ingot().liquid()
+                .color(0x7F8F75).iconSet(SHINY)
+                .flags(GENERATE_DOUBLE_PLATE, GENERATE_SPRING, DISABLE_DECOMPOSITION)
+                .components(Nickel * 5, Chrome * 2, Iron * 2, Niobium, Molybdenum)
+                .blastTemp(1610, GasTier.MID, GTValues.VA[GTValues.EV], 200)
+                .fluidPipeProperties(2010, 175, true, true, true, false)
+                .build();
 
         PGMSolution = new Material.Builder(8298, SuSyUtility.susyId('pgm_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))

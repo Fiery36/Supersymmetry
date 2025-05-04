@@ -2097,7 +2097,6 @@ susy.material.compounded_styrene_butadiene_rubber=Compounded Styrene Butadiene R
 susy.material.fuel_oil=Fuel Oil
 susy.material.isopropylamine=Isopropylamine
 susy.material.isopropylamine_solution=Isopropylamine Solution
-susy.material.platinum_rhodium=Platinum-Rhodium
 
 susy.material.incoloy_20=Incoloy 20
 susy.material.incoloy_825=Incoloy 825
@@ -2108,6 +2107,9 @@ susy.material.stellite_j=Stellite J
 susy.material.stellite_6=Stellite 6
 susy.material.hsla_980_x=HSLA 980X
 susy.material.food_grade_stainless_steel=Food-Grade Stainless Steel
+susy.material.platinum_rhodium=Platinum-Rhodium
+susy.material.zircaloy=Zircaloy
+susy.material.inconel_625=Inconel 625
 susy.material.moist_argon=Moist Argon
 susy.material.argon_hydrogen_mixture=Argon Hydrogen Mixture
 susy.material.ammoniacal_argon_hydrogen_mixture=Ammoniacal Argon Hydrogen Mixture

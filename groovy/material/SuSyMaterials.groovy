@@ -918,6 +918,9 @@ class SuSyMaterials {
         public static Material HydrobromicAcid;
         public static Material SodiumSulfite;
         public static Material SodiumThiosulfate;
+        public static Material PlatinumRhodium;
+        public static Material Zircaloy;
+        public static Material Inconel625;
         public static Material SulfidicSilverCyanideSolution;
         public static Material SilverCyanideSolution;
         public static Material SulfidicPyrargyriteCyanideLeachSolution;
@@ -1943,7 +1946,6 @@ class SuSyMaterials {
         public static Material OneBromohexane;
         public static Material DiNHexylsulfide;
         public static Material Isopropylamine;
-        public static Material PlatinumRhodium;
 
         // Third Degree Materials
 
