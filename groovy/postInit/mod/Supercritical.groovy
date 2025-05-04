@@ -305,6 +305,18 @@ RecyclingHelper.handleRecycling(metaitem('supercritical:control_rod_moderated'),
     ore('ingotPolytetrafluoroethylene')]
 )
 
+// Spent Fuel Casing
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('stickBoronCarbide') * 8)
+    .outputs(item('supercritical:nuclear_casing'))
+    .duration(300)
+    .EUt(Globals.voltAmps[2] * 2)
+    .buildAndRegister()
+
+RecyclingHelper.handleRecycling(item('supercritical:nuclear_casing'),
+    [ore('stickBoronCarbide') * 8]
+)
+
 // Anode Basket
 ASSEMBLER.recipeBuilder()
     .inputs(ore('ringTitanium') * 2)
