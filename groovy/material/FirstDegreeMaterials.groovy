@@ -25,26 +25,25 @@ import supercritical.api.unification.material.properties.SCPropertyKey;
 
 
 public class FirstDegreeMaterials {
-        
-        private static Material generatePurifiedElement(Material material, int id, boolean generateLiquid, boolean generateIngot) {
-                def color = material.materialRGB
-                def builder = new Material.Builder(id, SuSyUtility.susyId('high_purity_' + material.toString()))
-                        .dust()
-                        .iconSet(SHINY)
-                        .flags(DISABLE_DECOMPOSITION)
-                        .color(color)
-                        .components(material)
+    private static Material generatePurifiedElement(Material material, int id, boolean generateLiquid, boolean generateIngot) {
+        def color = material.materialRGB
+        def builder = new Material.Builder(id, SuSyUtility.susyId('high_purity_' + material.toString()))
+            .dust()
+            .iconSet(SHINY)
+            .flags(DISABLE_DECOMPOSITION)
+            .color(color)
+            .components(material)
 
-                if (generateLiquid) {
-                        builder.liquid(new FluidBuilder().temperature(determineTemperatureLiquid(material)))
-                }
-        
-                if (generateIngot) {
-                        builder.ingot()
-                }
-        
-                return builder.build()
+        if (generateLiquid) {
+            builder.liquid(new FluidBuilder().temperature(determineTemperatureLiquid(material)))
         }
+
+        if (generateIngot) {
+            builder.ingot()
+        }
+
+        return builder.build()
+    }
 
 
 
@@ -2566,7 +2565,7 @@ public class FirstDegreeMaterials {
 
         AmmoniumDiuranate = new Material.Builder(8477, SuSyUtility.susyId('ammonium_diuranate'))
                 .dust()
-                .iconSet(SHINY)
+                .iconSet(SAND)
                 .components(Nitrogen * 2, Hydrogen * 8, Uranium238, Oxygen * 7)
                 .color(0xe6be22)
                 .build();
@@ -3456,7 +3455,7 @@ public class FirstDegreeMaterials {
                 .build()
 
         Kovar = new Material.Builder(8619, SuSyUtility.susyId('kovar'))
-                .ingot()
+                .ingot().liquid(new FluidBuilder().temperature(1723))
                 .iconSet(SHINY)
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, DISABLE_DECOMPOSITION)
                 .components(Iron * 2, Nickel * 1, Cobalt * 1)
@@ -3732,7 +3731,7 @@ public class FirstDegreeMaterials {
                 .dust()
                 .iconSet(SAND)
                 .components(HALEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
-                .color(0xe6cc22)
+                .color(0xede31c)
                 .build()
         
         HALEU235AmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
@@ -3741,7 +3740,7 @@ public class FirstDegreeMaterials {
                 .dust()
                 .iconSet(SAND)
                 .components(HEU235, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
-                .color(0x82f622)
+                .color(0xe6ed15)
                 .build()
                 
         HEU235AmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
@@ -3750,7 +3749,7 @@ public class FirstDegreeMaterials {
                 .dust()
                 .iconSet(SAND)
                 .components(WeaponsGradeUranium, Nitrogen * 2, Hydrogen * 8, Oxygen * 7)
-                .color(0x62ff22)
+                .color(0xe6ed0c)
                 .build()
         
         WeaponsGradeAmmoniumDiuranate.setFormula("(NH4)2U2O7", true);

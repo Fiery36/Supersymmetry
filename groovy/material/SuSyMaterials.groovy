@@ -399,7 +399,6 @@ class SuSyMaterials {
         public static Material CopperMatteFlueDust;
         public static Material CopperMatteFlueGas;
         public static Material CopperConcentrate;
-        public static Material PalladiumContainingSolution;
         public static Material ChlorofluoromethaneMix;
         public static Material HafniumExtractionMixture;
         public static Material HafniumExtract;
@@ -571,7 +570,6 @@ class SuSyMaterials {
         public static Material ChlorinatedPGMConcentrate;
         public static Material PalladiumExtract;
         public static Material RhodiumIridiumSolution;
-        public static Material RhodiumIridiumExtractionMixture;
         public static Material CobaltMatte;
         public static Material OrthoCresylicAcidMixture;
         public static Material CresolNovolacsOligomer;
@@ -601,6 +599,12 @@ class SuSyMaterials {
         public static Material IsomerizedParaffin;
         public static Material SodiumHydroxideMethanolSolution;
         public static Material DiisobutyleneMixture;
+        public static Material NitrogenOxideMixture;
+        public static Material HotNitrogenOxideMixture;
+        public static Material NitrogenOxideMixtureRichAir;
+        public static Material HotNitrogenOxideMixtureRichAir;
+        public static Material NitrogenDioxideRichAir;
+        public static Material NitricOxideRichAir;
 
         // Petrochem Materials
 
@@ -2111,6 +2115,7 @@ class SuSyMaterials {
         public static Material OneBromohexane;
         public static Material DiNHexylsulfide;
         public static Material Isopropylamine;
+        public static Material PlatinumRhodium;
 
         // Third Degree Materials
 
@@ -2258,6 +2263,19 @@ class SuSyMaterials {
         public static Material ColdAmmoniacalArgonHydrogenMixture;
         public static Material ColdArgonHydrogenMixture;
         public static Material PartiallyLiquefiedArgonHydrogenMixture;
+        public static Material TreatedLiquidNitrogen;
+        public static Material TreatedLiquidOxygen;
+        public static Material HeliumNeonConcentrate;
+        public static Material DehydrogenatedHeliumNeonConcentrate;
+        public static Material DemoisturizedHeliumNeonConcentrate;
+        public static Material CompressedHeliumNeonConcentrate;
+        public static Material HeliumNeonMixture;
+        public static Material KryptonXenonRichLiquid;
+        public static Material CombustedKryptonXenonConcentrate;
+        public static Material PurifiedKryptonXenonConcentrate;
+        public static Material LiquidCrudeXenon;
+        public static Material OxidizedXenon;
+        
 
         public static void changeFormulas() {
             log.infoMC("Changing Formulas!");

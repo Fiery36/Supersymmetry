@@ -122,10 +122,7 @@ public class UnknownCompositionMaterials {
                 .color(0x345691)
                 .build();
 
-        PalladiumContainingSolution = new Material.Builder(4019, SuSyUtility.susyId('palladium_containing_solution'))
-                .liquid()
-                .color(0x808080)
-                .build();
+        // FREE ID: 4019
 
         Mash = new Material.Builder(4020, SuSyUtility.susyId('mash'))
                 .liquid()
@@ -1175,13 +1172,11 @@ public class UnknownCompositionMaterials {
         LtftCatalyst = new Material.Builder(4226, SuSyUtility.susyId('ltft_catalyst'))
                 .dust()
                 .color(0x4f3030)
-                .flags(GENERATE_CATALYST_BED)
                 .build();
 
         HtftCatalyst = new Material.Builder(4227, SuSyUtility.susyId('htft_catalyst'))
                 .dust()
                 .color(0x7d2727)
-                .flags(GENERATE_CATALYST_BED)
                 .build();
 
         CrudeCarnotiteLeach = new Material.Builder(4228, SuSyUtility.susyId('crude_carnotite_leach'))
@@ -2191,10 +2186,7 @@ public class UnknownCompositionMaterials {
                 .color(0x9177a1)
                 .build();
 
-        RhodiumIridiumExtractionMixture = new Material.Builder(4471, SuSyUtility.susyId("rh_ir_extraction_mixture"))
-                .fluid()
-                .color(0xb3abb8)
-                .build();
+        // FREE ID: 4471
 
         OsmiumRutheniumTetroxideMixture = new Material.Builder(4472, SuSyUtility.susyId("os_ru_tetroxide_mixture"))
                 .gas()
@@ -2293,6 +2285,7 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xf6f6ef)
                 .build();
+
         DistilledNParaffin = new Material.Builder(4516, SuSyUtility.susyId('distilled_n_paraffin'))
                 .liquid()
                 .color(0xeff6f6)
@@ -2302,6 +2295,45 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xffebbb)
                 .build();
+
+        NitrogenOxideMixture = new Material.Builder(4518, SuSyUtility.susyId('nitrogen_oxide_mixture'))
+                .gas()
+                .components(NitricOxide, NitrogenDioxide)
+                .colorAverage()
+                .build();
+
+        NitrogenOxideMixture.setFormula('NOx', true)
+
+        HotNitrogenOxideMixture = new Material.Builder(4519, SuSyUtility.susyId('hot_nitrogen_oxide_mixture'))
+                .gas(new FluidBuilder().temperature(1300))
+                .components(NitrogenOxideMixture)
+                .colorAverage()
+                .build();
+
+        NitrogenOxideMixtureRichAir = new Material.Builder(4520, SuSyUtility.susyId('nitrogen_oxide_mixture_rich_air'))
+                .gas()
+                .components(NitrogenOxideMixture * 2, Oxygen, Air * 10)
+                .colorAverage()
+                .build();
+
+        HotNitrogenOxideMixtureRichAir = new Material.Builder(4521, SuSyUtility.susyId('hot_nitrogen_oxide_mixture_rich_air'))
+                .gas(new FluidBuilder().temperature(1300))
+                .components(NitrogenOxideMixtureRichAir)
+                .colorAverage()
+                .build();
+
+        NitrogenDioxideRichAir = new Material.Builder(4522, SuSyUtility.susyId('nitrogen_dioxide_rich_air'))
+                .gas(new FluidBuilder().temperature(500))
+                .components(NitrogenDioxide, Air * 5)
+                .colorAverage()
+                .build();
+
+        NitricOxideRichAir = new Material.Builder(4523, SuSyUtility.susyId('nitric_oxide_rich_air'))
+                .gas()
+                .components(NitricOxide, Air * 15)
+                .colorAverage()
+                .build();
+
 
         RareEarthExtractionMixture = new Material.Builder(4518, SuSyUtility.susyId('rare_earth_extraction_mixture'))
                 .liquid()

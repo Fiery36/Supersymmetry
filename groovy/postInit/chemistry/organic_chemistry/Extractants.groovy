@@ -137,15 +137,25 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
 
     CRYSTALLIZER.recipeBuilder()
         .fluidInputs(fluid('oleic_acid_solution') * 1000)
-        .outputs(metaitem('dustOleicAcid') * 18)
+        .outputs(metaitem('dustOleicAcid'))
         .fluidOutputs(fluid('methanol') * 1000)
         .EUt(30)
         .duration(200)
         .buildAndRegister()
 
+    // Liquid Oleic Acid * 144
+    mods.gregtech.extractor.removeByInput(30, [metaitem('dustOleicAcid')], null)
+
+    FLUID_EXTRACTOR.recipeBuilder()
+        .inputs(ore('dustOleicAcid'))
+        .fluidOutputs(fluid('oleic_acid') * 1000)
+        .duration(5)
+        .EUt(30)
+        .buildAndRegister()
+
     MIXER.recipeBuilder()
         .fluidInputs(fluid('sodium_hydroxide_solution') * 1000)
-        .inputs(ore('dustOleicAcid') * 18)
+        .inputs(ore('dustOleicAcid'))
         .fluidOutputs(fluid('alkaline_sodium_oleate_solution') * 1000)
         .EUt(30)
         .duration(80)
