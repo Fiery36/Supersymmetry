@@ -1323,24 +1323,13 @@ class SuSyMaterials {
 
         // Rare Earth Processing Materials
 
-        public static Material EthylHexylPhosphonicAcidMonoEthylHexylEster;
-        public static Material RareEarthExtractionMixture;
-        public static Material RareEarthSeparationMixture;
         public static Material PotassiumChlorate;
         public static Material AmmoniumCarbonate;
-        public static Material AmmoniumCarbonateSolution;
         public static Material SodiumAmalgam;
         public static Material CopperChlorideSolution;
         public static Material PhosphorousAcid;
         public static Material PhosphorousAcidSolution;
         public static Material SodiumPhosphate;
-        public static Material TrimethylPhosphite;
-        public static Material TosylChloride;
-        public static Material PotassiumTosylate;
-        public static Material EthylhexylTosylate;
-        public static Material EthylhexylIodide;
-        public static Material Tri2EthylhexylPhosphite;
-        public static Material EthylhexylPhosphonicAcidDi2EthylhexylEster;
 
         public static Material MonaziteLeach;
         public static Material SiftedMonaziteLeach;
@@ -2116,6 +2105,15 @@ class SuSyMaterials {
         public static Material DiNHexylsulfide;
         public static Material Isopropylamine;
         public static Material PlatinumRhodium;
+        public static Material TrimethylPhosphite;
+        public static Material EthylhexylIodide;
+        public static Material Tri2EthylhexylPhosphite;
+        public static Material EthylhexylPhosphonicAcidDi2EthylhexylEster;
+        public static Material EthylHexylPhosphonicAcidMonoEthylHexylEster;
+        public static Material TwoEthylOneHexene;
+        public static Material Azobisisobutyronitrile;
+        public static Material DiTwoEthylhexylphosphine;
+        public static Material DiTwoEthylhexylphosphinicAcid;
 
         // Third Degree Materials
 

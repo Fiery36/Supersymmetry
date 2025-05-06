@@ -1,4 +1,14 @@
 BR = recipemap('batch_reactor')
+ROASTER = recipemap('roaster')
+
+ROASTER.recipeBuilder()
+        .inputs(ore('dustThoriumOxalate') * 13)
+        .outputs(metaitem('dustThoriumDioxide') * 3)
+        .fluidOutputs(fluid('carbon_dioxide') * 2000)
+        .fluidOutputs(fluid('carbon_monoxide') * 2000)
+        .duration(80)
+        .EUt(120)
+        .buildAndRegister()
 
 BR.recipeBuilder()
         .inputs(ore('dustThoriumHydroxidePrecipitate'))

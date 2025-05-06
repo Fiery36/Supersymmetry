@@ -2304,7 +2304,7 @@ public class OrganicChemistryMaterials {
         CalciumDidodecylbenzeneSulfonate.setFormula("Ca(C30H53SO3)2", true)
 
         Nonylphenol = new Material.Builder(15366, SuSyUtility.susyId('nonylphenol'))
-                .liquid()
+                .dust()
                 .components(Carbon * 15, Hydrogen * 24, Oxygen * 1)
                 .color(0x4070b8)
                 .build();
@@ -2682,5 +2682,58 @@ public class OrganicChemistryMaterials {
 
         CobaltExtractionMixture.setFormula("(C8H10)(C16H35O2P)", true)
 
+        TrimethylPhosphite = new Material.Builder(15426, SuSyUtility.susyId('trimethyl_phosphate'))
+                .liquid()
+                .components(Carbon * 3, Hydrogen * 9, Oxygen * 3, Phosphorus)
+                .colorAverage()
+                .build()
+
+        TwoEthylhexylIodide = new Material.Builder(15427, SuSyUtility.susyId('two_ethylhexyl_iodide'))
+                .liquid()
+                .components(Carbon * 8, Hydrogen * 17, Iodine)
+                .colorAverage()
+                .build()
+
+        TriTwoEthylhexylPhosphite = new Material.Builder(15428, SuSyUtility.susyId('tri_two_ethylhexyl_phosphite'))
+                .liquid()
+                .components(Carbon * 24, Hydrogen * 51, Oxygen * 3, Phosphorus)
+                .colorAverage()
+                .build()
+
+        TwoEthylhexylPhosphonicAcidDiTwoEthylhexylEster = new Material.Builder(15429, SuSyUtility.susyId('two_ethylhexyl_phosphonic_acid_di_two_ethylhexyl_ester'))
+                .liquid()
+                .components(Carbon * 24, Hydrogen * 51, Oxygen * 3, Phosphorus)
+                .colorAverage()
+                .build()
+
+        TwoEthylHexylPhosphonicAcidMonoTwoEthylHexylEster = new Material.Builder(15430, SuSyUtility.susyId('two_ethylhexyl_phosphonic_acid_mono_two_ethylhexyl_ester'))
+                .liquid()
+                .components(Carbon * 16, Hydrogen * 35, Oxygen * 3, Phosphorus)
+                .colorAverage()
+                .build()
+
+        TwoEthylOneHexene = new Material.Builder(15431, SuSyUtility.susyId('two_ethyl_one_hexene'))
+                .liquid()
+                .components(Carbon * 8, Hydrogen * 16)
+                .color(0xa1b2c3)
+                .build();
+
+        Azobisisobutyronitrile = new Material.Builder(15432, SuSyUtility.susyId('azobisisobutyronitrile'))
+                .dust()
+                .components(Carbon * 8, Hydrogen * 12, Nitrogen * 4)
+                .color(0xffa500)
+                .build();
+
+        DiTwoEthylhexylphosphine = new Material.Builder(15433, SuSyUtility.susyId('di_two_ethylhexylphosphine'))
+                .liquid()
+                .components(Carbon * 16, Hydrogen * 35, Phosphorus * 1)
+                .color(0x8b4513)
+                .build();
+
+        DiTwoEthylhexylphosphinicAcid = new Material.Builder(15434, SuSyUtility.susyId('di_two_ethylhexylphosphinic_acid'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(Carbon * 16, Hydrogen * 35, Oxygen * 2, Phosphorus * 1)
+                .color(0x556b2f)
+                .build();
     }
 }

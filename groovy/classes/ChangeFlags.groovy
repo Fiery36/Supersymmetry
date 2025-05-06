@@ -203,8 +203,8 @@ class ChangeFlags {
         Diatomite.setFormula("(SiO2)8(Fe2O3)(Al2O3)", true);
         Pollucite.setFormula("(Cs,Na)2Al2Si4O12(H2O)2", true);
         Pitchblende.setFormula("(?)UO2", true);
-        Bastnasite.setFormula("(La,Ce,Y)CO3F", true);
-        Monazite.setFormula("(Ce,La,Nd)PO4", true);
+        Bastnasite.setFormula("(REE)CO3F", true);
+        Monazite.setFormula("(REE,Th)PO4", true);
 
         // Ore Processing
         

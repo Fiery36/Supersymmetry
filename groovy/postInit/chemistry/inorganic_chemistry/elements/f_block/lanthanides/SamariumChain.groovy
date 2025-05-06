@@ -5,10 +5,25 @@ import gregtech.api.unification.material.MarkerMaterials;
 import static gregtech.api.unification.ore.OrePrefix.dye;
 
 BR = recipemap('batch_reactor')
+ROASTER = recipemap('roaster')
 REACTION_FURNACE = recipemap('reaction_furnace')
 DISTILLERY = recipemap('distillery')
 
-BR.recipeBuilder()
+ROASTER.recipeBuilder()
+        .inputs(ore('dustSamariumHydroxide') * 14)
+        .outputs(metaitem('dustSamariumOxide') * 5)
+        .fluidOutputs(fluid('dense_steam') * 3000)
+        .duration(100)
+        .EUt(120)
+        .buildAndRegister()
+
+REACTION_FURNACE.recipeBuilder()
+        .inputs(ore('dustSamariumOxide') * 5)
+        .inputs(ore('dustLanthanum') * 2)
+        .outputs(metaitem('dustSamarium') * 2)
+        .outputs(metaitem('dustLanthanumOxide') * 5)
+
+/*BR.recipeBuilder()
         .fluidInputs(fluid('samarium_amalgam') * 1000)
         .fluidInputs(fluid('hydrochloric_acid') * 5000)
         .outputs(metaitem('dustMercuryIiChloride') * 3)
@@ -33,4 +48,4 @@ REACTION_FURNACE.recipeBuilder()
         .outputs(metaitem('dustLanthanumChloride') * 4)
         .duration(200)
         .EUt(480)
-        .buildAndRegister()
+        .buildAndRegister()*/

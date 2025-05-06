@@ -6,9 +6,18 @@ import static gregtech.api.unification.ore.OrePrefix.dye;
 
 DISTILLERY = recipemap('distillery')
 REACTION_FURNACE = recipemap('reaction_furnace')
+BR = recipemap('batch_reactor')
+
+BR.recipeBuilder()
+        .inputs(ore('dustYttriumHydroxide') * 7)
+        .fluidInputs(fluid('hydrochloric_acid') * 3000)
+        .fluidOutputs(fluid('yttrium_chloride_solution') * 6000)
+        .duration(160)
+        .EUt(Globals.voltAmps[2])
+        .buildAndRegister()
 
 DISTILLERY.recipeBuilder()
-        .fluidInputs(fluid('yttrium_chloride_solution') * 1000)
+        .fluidInputs(fluid('yttrium_chloride_solution') * 6000)
         .outputs(metaitem('dustYttriumChloride') * 4)
         .fluidOutputs(fluid('water') * 1000)
         .duration(160)

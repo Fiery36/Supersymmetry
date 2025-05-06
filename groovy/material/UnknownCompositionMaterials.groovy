@@ -2334,53 +2334,19 @@ public class UnknownCompositionMaterials {
                 .colorAverage()
                 .build();
 
-
-        RareEarthExtractionMixture = new Material.Builder(4518, SuSyUtility.susyId('rare_earth_extraction_mixture'))
-                .liquid()
-                .color(0xbfb880)
-                .build()
-
-        /*
-        SiftedBastnasite = new Material.Builder(4519, SuSyUtility.susyId("sifted_bastnasite"))
-                .dust()
-                .color(0xab6113)
-                .build()
-                .setFormula('(La, Ce, Y)CO3F', true)
-
-        ImpureBastnasiteSlurry = new Material.Builder(4520, SuSyUtility.susyId('impure_bastnasite_slurry'))
-                .liquid()
-                .color(0x7d6032)
-                .build()
-                .setFormula('(La, Ce, Y)CO3F', true)
-
-        BastnasiteSlurry = new Material.Builder(4521, SuSyUtility.susyId('bastnasite_slurry'))
-                .liquid()
-                .color(0xa68042)
-                .build()
-                .setFormula('(La, Ce, Y)CO3F', true)
-
-        FlotatedBastnasite = new Material.Builder(4522, SuSyUtility.susyId('flotated_bastnasite'))
-                .dust()
-                .color(0xa86d2d)
-                .build()
-                .setFormula('(La, Ce, Y)CO3F', true)
-
-        */
-
-
-        RoastedBastnasite = new Material.Builder(4523, SuSyUtility.susyId('roasted_bastnasite'))
+        RoastedBastnasite = new Material.Builder(4524, SuSyUtility.susyId('roasted_bastnasite'))
                 .dust()
                 .color(0x754c20)
                 .build()
                 .setFormula('(La, Ce, Y)CO3F', true)
 
-        ConcentratedBastnasite = new Material.Builder(4524, SuSyUtility.susyId('concentrated_bastnasite'))
+        ConcentratedBastnasite = new Material.Builder(4525, SuSyUtility.susyId('concentrated_bastnasite'))
                 .dust()
                 .color(0xab6113)
                 .build()
                 .setFormula('(La, Ce, Y)CO3F', true)
 
-        BastnasiticRareEarthHydroxides = new Material.Builder(4525, SuSyUtility.susyId('bast_re_hydroxides'))
+        BastnasiticRareEarthHydroxides = new Material.Builder(4526, SuSyUtility.susyId('bast_re_hydroxides'))
                 .dust()
                 .color(0x693214)
                 .build()
@@ -2877,5 +2843,40 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xd45b00)
                 .build()
+
+        P204ExtractionMixture = new Material.Builder(4626, SuSyUtility.susyId('p204_extraction_mixture'))
+                .liquid()
+                .color(0x7f7f7f)
+                .build();
+
+        SpentP204ExtractionMixture = new Material.Builder(4627, SuSyUtility.susyId('spent_p204_extraction_mixture'))
+                .liquid()
+                .color(0x7f7f7f)
+                .build();
+
+        P507ExtractionMixture = new Material.Builder(4628, SuSyUtility.susyId('p507_extraction_mixture'))
+                .liquid()
+                .color(0x7f7f7f)
+                .build();
+
+        SpentP507ExtractionMixture = new Material.Builder(4629, SuSyUtility.susyId('spent_p507_extraction_mixture'))
+                .liquid()
+                .color(0x7f7f7f)
+                .build();
+
+        P507P224ExtractionMixture = new Material.Builder(4630, SuSyUtility.susyId('p507_p224_extraction_mixture'))
+                .liquid()
+                .color(0x7f7f7f)
+                .build();
+
+        SpentP507P224ExtractionMixture = new Material.Builder(4631, SuSyUtility.susyId('spent_p507_p224_extraction_mixture'))
+                .liquid()
+                .color(0x7f7f7f)
+                .build();
+
+        CA12ExtractionMixture = new Material.Builder(4632, SuSyUtility.susyId('ca12_extraction_mixture'))
+                .liquid()
+                .color(0x7f7f7f)
+                .build();
     }
 }
