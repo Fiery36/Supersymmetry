@@ -92,7 +92,7 @@ class ChangeFlags {
         setupFluidType(Sodium, FluidStorageKeys.LIQUID, 371)
         setupFluidType(SodiumHydroxide, FluidStorageKeys.LIQUID, 591)
         setupFluidType(Polydimethylsiloxane, FluidStorageKeys.LIQUID, 293)
-        setupFluidType(Glass, FluidStorageKeys.LIQUID, 1990)
+        setupFluidType(Glass, FluidStorageKeys.LIQUID, 1800)
         setupFluidType(PolyvinylButyral, FluidStorageKeys.LIQUID, 440)
         setupFluidType(Nitrochlorobenzene, FluidStorageKeys.LIQUID, 326)
         setupFluidType(Iron3Chloride, FluidStorageKeys.LIQUID, 585)
