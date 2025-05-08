@@ -82,14 +82,14 @@ def ingotMap = [
     'TantalumCarbide':4120,
     'MolybdenumDisilicide':2300,
     'TitaniumTungstenCarbide':3800,
-    'IncoloyMa956':3625
-    'Incoloy825':3000
-    'Incoloy908':3000
-    'ReneN5':3000
-    'Monel500':3000
-    'StelliteJ':3800
-    'Stellite6':3000
-    'HSLA980X':2600
+    'IncoloyMa956':3625,
+    'Incoloy825':3000,
+    'Incoloy908':3000,
+    'ReneN5':3000,
+    'Monel500':3000,
+    'StelliteJ':3800,
+    'Stellite6':3000,
+    'Hsla980X':2600,
     'FoodGradeStainlessSteel':2600
 ]
 

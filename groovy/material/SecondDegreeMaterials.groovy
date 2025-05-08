@@ -7,6 +7,7 @@ import gregtech.api.GregTechAPI;
 import gregtech.api.fluids.attribute.FluidAttributes;
 import gregtech.api.fluids.FluidBuilder;
 import gregtech.api.unification.material.properties.*
+import gregtech.api.unification.material.properties.BlastProperty.GasTier;
 
 import supersymmetry.api.util.SuSyUtility;
 
