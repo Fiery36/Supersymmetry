@@ -1246,6 +1246,15 @@ REACTION_FURNACE.recipeBuilder()
     .EUt(120)
     .buildAndRegister()
 
+BCR.recipeBuilder()
+    .fluidInputs(fluid('phosgene') * 50)
+    .fluidInputs(fluid('water') * 150)
+    .fluidOutputs(fluid('carbon_dioxide') * 50)
+    .fluidOutputs(fluid('hydrochloric_acid') * 100)
+    .duration(4)
+    .EUt(30)
+    .buildAndRegister()
+
 // Rutile
 
 REACTION_FURNACE.recipeBuilder()
