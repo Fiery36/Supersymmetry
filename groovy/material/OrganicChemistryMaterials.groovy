@@ -182,7 +182,7 @@ public class OrganicChemistryMaterials {
 
         AcidicTetrafluoroethylene = new Material.Builder(15026, SuSyUtility.susyId('acidic_tetrafluoroethylene'))
                 .gas(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(Tetrafluoroethylene * 1, HydrogenChloride * 4)
+                .components(Tetrafluoroethylene * 1, HydrogenChloride * 6)
                 .color(0x726678)
                 .build();
 
