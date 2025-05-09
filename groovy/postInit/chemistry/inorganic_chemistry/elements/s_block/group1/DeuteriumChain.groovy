@@ -1,8 +1,9 @@
 import globals.Globals
 
-LCR = recipemap('large_chemical_reactor');
-ELECTROLYZER = recipemap('electrolyzer');
-ELECTROLYTIC_CELL = recipemap('electrolytic_cell');
+LCR = recipemap('large_chemical_reactor')
+ELECTROLYZER = recipemap('electrolyzer')
+ELECTROLYTIC_CELL = recipemap('electrolytic_cell')
+ROASTER = recipemap('roaster')
 
 LCR.recipeBuilder().EUt(480).duration(200)
     .fluidInputs(fluid('hydrogen_sulfide') * 2000)
@@ -81,11 +82,10 @@ ELECTROLYTIC_CELL.recipeBuilder()
     .duration(200)
     .buildAndRegister()
 
-
-CSTR.recipeBuilder()
-    .fluidInputs(fluid('deuterium') * 100)
-    .fluidInputs(fluid('oxygen') * 50)
-    .fluidOutputs(fluid('heavy_water') * 50)
+ROASTER.recipeBuilder()
+    .fluidInputs(fluid('deuterium') * 2000)
+    .fluidInputs(fluid('oxygen') * 1000)
+    .fluidOutputs(fluid('heavy_water') * 1000)
     .duration(10)
     .EUt(7)
     .buildAndRegister()

@@ -12,14 +12,14 @@ CSTR = recipemap('continuous_stirred_tank_reactor')
 ASSEMBLER.recipeBuilder()
     .inputs(ore('plateAluminium') * 20)
     .inputs(ore('plateReinforcedEpoxyResin') * 20)
-    .inputs(ore('pipeSmallFluidStainlessSteel') * 6)
+    .inputs(ore('pipeSmallFluidAluminium') * 6)
     .inputs(ore('stickLongStainlessSteel') * 8)
     .inputs(ore('ringStainlessSteel') * 8)
     .inputs(ore('plateStainlessSteel') * 20)
     .inputs(metaitem('electric.pump.ev') * 4)
     .inputs(metaitem('electric.motor.ev'))
     .fluidInputs(fluid('supreme_lubricant') * 5000)
-    .circuitMeta(30)
+    .circuitMeta(22)
     .outputs(item('supercritical:gas_centrifuge_casing') * 5)
     .duration(240)
     .EUt(Globals.voltAmps[4])
@@ -27,7 +27,7 @@ ASSEMBLER.recipeBuilder()
 
 RecyclingHelper.handleRecycling(item('supercritical:gas_centrifuge_casing') * 5,
     [ore('plateAluminium') * 20,
-    ore('pipeSmallFluidStainlessSteel') * 6,
+    ore('pipeSmallFluidAluminium') * 6,
     ore('stickLongStainlessSteel') * 8,
     ore('ringStainlessSteel') * 8,
     ore('plateStainlessSteel') * 20,
@@ -59,9 +59,9 @@ ASSEMBLER.recipeBuilder()
     .inputs(metaitem('hull.ev'))
     .inputs(ore('circuitEv') * 8)
     .inputs(metaitem('plate.power_integrated_circuit') * 4)
-    .inputs(ore('pipeSmallFluidStainlessSteel') * 16)
+    .inputs(ore('pipeSmallFluidAluminium') * 16)
     .inputs(metaitem('electric.pump.ev') * 4)
-    .circuitMeta(30)
+    .circuitMeta(22)
     .outputs(metaitem('supercritical:gas_centrifuge'))
     .duration(240)
     .EUt(Globals.voltAmps[4])
@@ -71,16 +71,16 @@ RecyclingHelper.handleRecycling(metaitem('supercritical:gas_centrifuge'),
     [metaitem('hull.ev'),
     ore('circuitEv') * 8,
     metaitem('plate.power_integrated_circuit') * 4,
-    ore('pipeSmallFluidStainlessSteel') * 16,
+    ore('pipeSmallFluidAluminium') * 16,
     metaitem('electric.pump.ev') * 4]
 )
 
 // Spent Fuel Pool Controller
 ASSEMBLER.recipeBuilder()
-    .inputs(metaitem('hull.mv'))
-    .inputs(ore('circuitMv') * 4)
+    .inputs(metaitem('hull.hv'))
+    .inputs(ore('circuitHv') * 4)
     .inputs(ore('pipeSmallFluidAluminium') * 16)
-    .inputs(metaitem('electric.pump.mv') * 16)
+    .inputs(metaitem('electric.pump.Hv') * 16)
     .circuitMeta(30)
     .outputs(metaitem('supercritical:spent_fuel_pool'))
     .duration(120)
@@ -88,15 +88,16 @@ ASSEMBLER.recipeBuilder()
     .buildAndRegister()
 
 RecyclingHelper.handleRecycling(metaitem('supercritical:spent_fuel_pool'),
-    [metaitem('hull.mv'),
-    ore('circuitMv') * 4,
+    [metaitem('hull.hv'),
+    ore('circuitHv') * 4,
     ore('pipeSmallFluidAluminium') * 16,
-    metaitem('electric.pump.mv') * 16]
+    metaitem('electric.pump.Hv') * 16]
 )
 
 // Panelling
 ASSEMBLER.recipeBuilder()
-    .inputs(ore('plateSteel') * 4)
+    .inputs(ore('plateStainlessSteelSteel') * 6)
+    .fluidInputs(fluid('concrete') * 144)
     .circuitMeta(17)
     .outputs(item('supercritical:panelling', 7))
     .EUt(16)
@@ -112,7 +113,8 @@ for (int i = 0; i < CHEMICAL_DYES.length; i++) {
         .buildAndRegister()
 
     RecyclingHelper.handleRecycling(item('supercritical:panelling', i),
-        [ore('plateSteel') * 4]
+        [ore('plateStainlessSteelSteel') * 6,
+        ore('blockConcrete')]
     )
 }
 
