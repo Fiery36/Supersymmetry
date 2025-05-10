@@ -13,6 +13,7 @@ import supersymmetry.api.util.SuSyUtility;
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.Materials.*;
+import gregtech.api.unification.material.properties.BlastProperty.GasTier;
 import static gregtechfoodoption.GTFOMaterialHandler.*;
 import static supersymmetry.api.unification.material.info.SuSyMaterialFlags.*;
 
