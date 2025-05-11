@@ -3998,7 +3998,7 @@ MIXER.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
-// Potassium Iodine
+// Potassium Iodide
 
 BR.recipeBuilder()
     .inputs(ore('dustIodine') * 6)
@@ -4032,5 +4032,13 @@ LCR.recipeBuilder()
     .fluidOutputs(fluid('ammonia') * 5000)
     .fluidOutputs(fluid('wastewater') * 5000)
     .duration(300)
+    .EUt(30)
+    .buildAndRegister()
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustPenteticAcid') * 50)
+    .fluidInputs(fluid('distilled_water') * 1000)
+    .fluidOutputs(fluid('pentetic_acid_solution') * 1000)
+    .duration(80)
     .EUt(30)
     .buildAndRegister()

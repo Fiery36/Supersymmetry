@@ -111,7 +111,7 @@ public class FirstDegreeMaterials {
         HighPurityLead = generatePurifiedElement(Lead, 8055, false, false)
         HighPurityBismuth = generatePurifiedElement(Bismuth, 8056, false, false)
         HighPurityCerium = generatePurifiedElement(Cerium, 8057, false, false)
-        HighPurityPraesodymium = generatePurifiedElement(Praseodymium, 8058, false, false)
+        HighPurityPraseodymium = generatePurifiedElement(Praseodymium, 8058, false, false)
         HighPurityNeodymium = generatePurifiedElement(Neodymium, 8059, false, false)
         HighPuritySamarium = generatePurifiedElement(Samarium, 8060, false, false)
         HighPurityEuropium = generatePurifiedElement(Europium, 8061, false, false)

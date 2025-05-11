@@ -955,7 +955,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
         .buildAndRegister()
 
     MIXER.recipeBuilder()
-        .inputs(ore('dustSmallSodiumHydroxide') * 3)
+        .inputs(ore('dustSmallSodiumHydroxide') * 6)
         .fluidInputs(fluid('spent_P507_P224_extraction_mixture') * 10000)
         .fluidOutputs(fluid('P507_P224_extraction_mixture') * 10000)
         .duration(10)
