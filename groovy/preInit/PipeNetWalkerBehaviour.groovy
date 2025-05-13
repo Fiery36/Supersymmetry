@@ -32,7 +32,12 @@ class PipeNetWalkerBehaviour implements IToolBehavior {
             if (te instanceof IPipeTile) {
                 def pipe = te as IPipeTile
 
-                def rayTraceResult = pipe.getPipeBlock().getServerCollisionRayTrace(player, pos, world)
+                def block = pipe.getPipeBlock()
+                def toolStack = player.getHeldItem(hand)
+
+                if (!block.isPipeTool(toolStack)) return EnumActionResult.FAIL
+
+                def rayTraceResult = block.getServerCollisionRayTrace(player, pos, world)
 
                 def gridSide = CoverRayTracer.traceCoverSide(rayTraceResult)
 
@@ -44,7 +49,6 @@ class PipeNetWalkerBehaviour implements IToolBehavior {
 
                 if (!option) return EnumActionResult.FAIL
 
-                def toolStack = player.getHeldItem(hand)
                 def toolTag = ToolHelper.getToolTag(toolStack)
                 int maxWalks = toolTag.getInteger(ToolHelper.MAX_DURABILITY_KEY) - toolTag.getInteger(ToolHelper.DURABILITY_KEY)
 
