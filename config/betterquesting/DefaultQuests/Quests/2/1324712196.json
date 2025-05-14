@@ -1,0 +1,46 @@
+{
+  "preRequisites:11": [
+    161
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "With the drone pad you can automate a bunch of mob drops.",
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 214,
+        "id:8": "gregtech:meta_item_2",
+        "tag:10": {
+          "Charge:4": 10000
+        }
+      },
+      "name:8": "Drone pad"
+    }
+  },
+  "questID:3": 1324712196,
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "requiredItems:9": {
+        "0:10": {
+          "Count:3": 1,
+          "Damage:2": 214,
+          "id:8": "gregtech:meta_item_2",
+          "tag:10": {
+            "Charge:4": 10000
+          }
+        },
+        "1:10": {
+          "Count:3": 1,
+          "Damage:2": 15062,
+          "id:8": "gregtech:machine"
+        },
+        "2:10": {
+          "Count:3": 9,
+          "Damage:2": 4,
+          "id:8": "susy:susy_multiblock_casing"
+        }
+      },
+      "taskID:8": "bq_standard:retrieval"
+    }
+  }
+}
