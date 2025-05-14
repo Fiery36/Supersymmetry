@@ -9,21 +9,19 @@
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "With some NAND chips you will be able to craft your first IV tier circuit.",
+      "desc:8": "susy.quest.db.357396976.desc",
       "frame:8": "GATE",
       "icon:10": {
-        "Count:3": 1,
         "Damage:2": 631,
         "id:8": "gregtech:meta_item_1"
       },
       "ismain:1": 1,
-      "name:8": "Mainframe"
+      "name:8": "susy.quest.db.357396976.title"
     }
   },
   "questID:3": 357396976,
   "tasks:9": {
     "0:10": {
-      "index:3": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,

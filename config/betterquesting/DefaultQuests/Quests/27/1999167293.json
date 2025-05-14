@@ -4,18 +4,16 @@
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "You can use Industrial Renewals, Ultra-HV transformers to economically transfer energy over long distances.",
+      "desc:8": "susy.quest.db.1999167293.desc",
       "icon:10": {
-        "Count:3": 1,
         "id:8": "industrialrenewal:transformer_hv"
       },
-      "name:8": "IR Transformers"
+      "name:8": "susy.quest.db.1999167293.title"
     }
   },
   "questID:3": 1999167293,
   "tasks:9": {
     "0:10": {
-      "index:3": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 2,

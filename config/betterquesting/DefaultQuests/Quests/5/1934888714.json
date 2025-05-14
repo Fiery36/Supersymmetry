@@ -4,18 +4,16 @@
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "No Description",
+      "desc:8": "susy.quest.db.1934888714.desc",
       "icon:10": {
-        "Count:3": 1,
         "id:8": "techguns:t2_commando_chestplate"
       },
-      "name:8": "Commando gear"
+      "name:8": "susy.quest.db.1934888714.title"
     }
   },
   "questID:3": 1934888714,
   "tasks:9": {
     "0:10": {
-      "index:3": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
