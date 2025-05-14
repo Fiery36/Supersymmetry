@@ -1,12 +1,14 @@
 {
   "preRequisites:11": [
     875,
-    1399178319
+    1399178319,
+    874
   ],
   "properties:10": {
     "betterquesting:10": {
       "desc:8": "susy.quest.db.649388409.desc",
       "icon:10": {
+        "Count:3": 1,
         "id:8": "supercritical:gas_centrifuge_casing"
       },
       "name:8": "susy.quest.db.649388409.title"
@@ -15,6 +17,7 @@
   "questID:3": 649388409,
   "tasks:9": {
     "0:10": {
+      "index:3": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,

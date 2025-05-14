@@ -7,14 +7,17 @@
     "betterquesting:10": {
       "desc:8": "susy.quest.db.326901357.desc",
       "icon:10": {
+        "Count:3": 1,
         "id:8": "industrialrenewal:steam"
       },
-      "name:8": "susy.quest.db.326901357.title"
+      "name:8": "susy.quest.db.326901357.title",
+      "questlogic:8": "OR"
     }
   },
   "questID:3": 326901357,
   "tasks:9": {
     "0:10": {
+      "index:3": 0,
       "taskID:8": "bq_standard:checkbox"
     }
   }
