@@ -1293,20 +1293,20 @@ RecyclingHelper.handleRecycling(metaitem('combustion_generator.hv'), [
 
 // Train interfaces
 def rail = ore('stickLongSteel')
-crafting.addShaped("gt_fluid_loader", metaitem('stock_fluid_exchanger'), [
-		[null, metaitem('electric.pump.lv'), null],
-		[rail, metaitem('hull.lv'), rail],
-		[null, null, null]
+crafting.addShaped("gregtech:fluid_loader", metaitem('stock_fluid_exchanger'), [
+		[ore('craftingToolHardHammer'), metaitem('electric.pump.lv'), ore('craftingToolWrench')],
+		[ore('pipeSmallFluidSteel'), metaitem('hull.lv'), ore('pipeSmallFluidSteel')],
+		[ore('pipeSmallFluidSteel'), metaitem('conveyor.lv'), ore('pipeSmallFluidSteel')]
 ]);
 
-crafting.addShaped("gt_item_loader", metaitem('stock_item_exchanger'), [
-		[null, metaitem('conveyor.module.lv'), null],
-		[rail, metaitem('hull.lv'), rail],
-		[null, null, null]
+crafting.addShaped("gregtech:item_loader", metaitem('stock_item_exchanger'), [
+		[ore('craftingToolHardHammer'), ore('circuitLv'), ore('craftingToolWrench')],
+		[ore('pipeSmallNickel'), metaitem('hull.lv'), ore('pipeSmallNickel')],
+		[ore('pipeSmallNickel'), metaitem('pump.lv'), ore('pipeSmallNickel')]
 ]);
 
-crafting.addShaped("gt_locomotive_controller", metaitem('stock_controller'), [
-		[rail, metaitem('sensor.lv'), rail],
-		[rail, metaitem('hull.lv'), rail],
-		[rail, ore('circuitLv'), rail]
+crafting.addShaped("gregtech:locomotive_controller", metaitem('stock_controller'), [
+		[ore('craftingToolHardHammer'), ore('circuitLv'), ore('craftingToolWrench')],
+		[ore('pipeSmallNickel'), metaitem('hull.lv'), ore('pipeSmallNickel')],
+		[metaitem('emitter.lv'), ore('circuitLv'), metaitem('sensor.lv')]
 ]);
