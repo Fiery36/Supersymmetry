@@ -1290,3 +1290,23 @@ RecyclingHelper.handleRecycling(metaitem('combustion_generator.hv'), [
     ore('gearStainlessSteel') * 2,
     ore('pipeHugeFluidStainlessSteel'),
 ])
+
+// Train interfaces
+def rail = ore('stickLongSteel')
+crafting.addShaped("gt_fluid_loader", metaitem('stock_fluid_exchanger'), [
+		[null, metaitem('electric.pump.lv'), null],
+		[rail, metaitem('hull.lv'), rail],
+		[null, null, null]
+]);
+
+crafting.addShaped("gt_item_loader", metaitem('stock_item_exchanger'), [
+		[null, metaitem('conveyor.module.lv'), null],
+		[rail, metaitem('hull.lv'), rail],
+		[null, null, null]
+]);
+
+crafting.addShaped("gt_locomotive_controller", metaitem('stock_controller'), [
+		[rail, metaitem('sensor.lv'), rail],
+		[rail, metaitem('hull.lv'), rail],
+		[rail, ore('circuitLv'), rail]
+]);
