@@ -9,6 +9,7 @@
       "icon:10": {
         "id:8": "pyrotech:campfire"
       },
+      "ismain:1": 1,
       "name:8": "susy.quest.db.456863075.title"
     }
   },
