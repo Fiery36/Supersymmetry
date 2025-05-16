@@ -1,12 +1,13 @@
 {
   "preRequisites:11": [
-    87
+    1580653524
   ],
   "properties:10": {
     "betterquesting:10": {
       "desc:8": "susy.quest.db.15.desc",
       "frame:8": "GATE",
       "icon:10": {
+        "Count:3": 1,
         "id:8": "gregtech:mortar",
         "tag:10": {
           "DisallowContainerItem:1": 0,
