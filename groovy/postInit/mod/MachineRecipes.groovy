@@ -1290,3 +1290,22 @@ RecyclingHelper.handleRecycling(metaitem('combustion_generator.hv'), [
     ore('gearStainlessSteel') * 2,
     ore('pipeHugeFluidStainlessSteel'),
 ])
+
+// Train interfaces
+RecyclingHelper.addShaped("gregtech:fluid_loader", metaitem('stock_fluid_exchanger'), [
+		[ore('craftingToolHardHammer'), metaitem('electric.pump.lv'), ore('craftingToolWrench')],
+		[ore('pipeSmallFluidSteel'), metaitem('hull.lv'), ore('pipeSmallFluidSteel')],
+		[ore('pipeSmallFluidSteel'), metaitem('conveyor.module.lv'), ore('pipeSmallFluidSteel')]
+])
+
+RecyclingHelper.addShaped("gregtech:item_loader", metaitem('stock_item_exchanger'), [
+		[ore('craftingToolHardHammer'), ore('circuitLv'), ore('craftingToolWrench')],
+		[ore('pipeSmallItemNickel'), metaitem('hull.lv'), ore('pipeSmallItemNickel')],
+		[ore('pipeSmallItemNickel'), metaitem('electric.pump.lv'), ore('pipeSmallItemNickel')]
+])
+
+RecyclingHelper.addShaped("gregtech:locomotive_controller", metaitem('stock_controller'), [
+		[ore('craftingToolHardHammer'), ore('circuitLv'), ore('craftingToolWrench')],
+		[ore('pipeSmallItemNickel'), metaitem('hull.lv'), ore('pipeSmallItemNickel')],
+		[metaitem('emitter.lv'), ore('circuitLv'), metaitem('sensor.lv')]
+])
