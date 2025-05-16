@@ -15,14 +15,11 @@
   "questID:3": 456863075,
   "tasks:9": {
     "0:10": {
+      "index:3": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
           "id:8": "pyrotech:bow_drill"
-        },
-        "1:10": {
-          "Count:3": 1,
-          "id:8": "pyrotech:tinder"
         }
       },
       "taskID:8": "bq_standard:retrieval"
@@ -32,14 +29,9 @@
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
-          "Damage:2": 48,
-          "id:8": "pyrotech:material"
+          "id:8": "pyrotech:tinder"
         },
         "1:10": {
-          "Count:3": 1,
-          "id:8": "pyrotech:bow_drill_durable"
-        },
-        "2:10": {
           "Count:3": 1,
           "id:8": "pyrotech:bow_drill_durable_spindle"
         }
