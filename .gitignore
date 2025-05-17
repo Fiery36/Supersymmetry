@@ -105,5 +105,4 @@ mods/*.jar
 /resourcepacks
 vintagefix/transformerCache/jarDiscoverer.cache
 /journeymap
-.gitignore
 hotbar.nbt
