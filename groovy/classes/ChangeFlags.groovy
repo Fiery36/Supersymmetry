@@ -226,6 +226,7 @@ class ChangeFlags {
         Cassiterite.addFlags("generate_concentrate");
         setupSlurries(Cassiterite)
         setupSlurries(Malachite)
+        Malachite.setOreMultiplier(2)
         Rutile.addFlags("generate_concentrate");
         setupSlurries(Sphalerite)
         setupSlurries(Pollucite)
