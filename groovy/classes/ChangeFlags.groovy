@@ -549,6 +549,7 @@ class ChangeFlags {
         oreProp.setOreByProducts(LimestoneTailings, LimestoneTailings, LimestoneTailings, LimestoneTailings);
 
         oreProp = Malachite.getProperty(PropertyKey.ORE);
+        oreProp.setOreMultiplier(2)
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(LimestoneTailings, LimestoneTailings, LimestoneTailings, LimestoneTailings);
 
