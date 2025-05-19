@@ -226,7 +226,6 @@ class ChangeFlags {
         Cassiterite.addFlags("generate_concentrate");
         setupSlurries(Cassiterite)
         setupSlurries(Malachite)
-        Malachite.setOreMultiplier(2)
         Rutile.addFlags("generate_concentrate");
         setupSlurries(Sphalerite)
         setupSlurries(Pollucite)
@@ -550,6 +549,7 @@ class ChangeFlags {
         oreProp.setOreByProducts(LimestoneTailings, LimestoneTailings, LimestoneTailings, LimestoneTailings);
 
         oreProp = Malachite.getProperty(PropertyKey.ORE);
+        oreProp.setOreMultiplier(2)
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(LimestoneTailings, LimestoneTailings, LimestoneTailings, LimestoneTailings);
 
