@@ -640,6 +640,16 @@ ASSEMBLER.recipeBuilder()
     .EUt(960)
     .buildAndRegister();
 
+
+ASSEMBLER.recipeBuilder()
+    .inputs(ore('cableGtSingleTin') * 2)
+    .inputs(metaitem('graphite_electrode'))
+    .inputs(metaitem('component.glass.tube') * 8)
+    .outputs(metaitem('carbon_arc_lamp') * 8)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister();
+
 //Ore Recipes
 
 MACERATOR.recipeBuilder()
@@ -1294,14 +1304,14 @@ RecyclingHelper.replaceShaped('gregtech:distillation_tower', metaitem('distillat
 // Item Magnet with Lead Acid battery
 
 crafting.shapedBuilder()
-    .name('gregtech:lv_magnet_lead_acid') 
+    .name('gregtech:lv_magnet_lead_acid')
     .output(metaitem('item_magnet.lv').withNbt(['MaxCharge': 120000L]))
     .shape([
         [ore('stickSteelMagnetic'), ore('toolWrench'), ore('stickSteelMagnetic')],
         [ore('stickSteelMagnetic'), metaitem('battery.lead_acid').mark('battery'), ore('stickSteelMagnetic')],
         [ore('cableGtSingleTin'), ore('plateSteel'), ore('cableGtSingleTin')]
     ])
-    .recipeFunction { output, inputs, info -> 
+    .recipeFunction { output, inputs, info ->
         def batteryTag = inputs['battery']?.getTagCompound()
         if (batteryTag != null) {
             output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
@@ -1312,14 +1322,14 @@ crafting.shapedBuilder()
 // Power Unit with Lead Acid Battery
 
 crafting.shapedBuilder()
-    .name('gregtech:lv_power_unit_lead_acid') 
+    .name('gregtech:lv_power_unit_lead_acid')
     .output(metaitem('power_unit.lv').withNbt(['MaxCharge': 120000L]))
     .shape([
         [ore('screwSteel'), null, ore('toolScrewdriver')],
         [ore('gearSmallSteel'), metaitem('electric.motor.lv'), ore('gearSmallSteel')],
         [ore('plateSteel'), metaitem('battery.lead_acid').mark('battery'), ore('plateSteel')]
     ])
-    .recipeFunction { output, inputs, info -> 
+    .recipeFunction { output, inputs, info ->
         def batteryTag = inputs['battery']?.getTagCompound()
         if (batteryTag != null) {
             output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
@@ -1337,7 +1347,7 @@ crafting.shapedBuilder()
         [ore('circuitLv'), ore('plateGlass'), ore('circuitLv')],
         [ore('plateSteel'), metaitem('battery.lead_acid').mark('battery'), ore('plateSteel')]
     ])
-    .recipeFunction { output, inputs, info -> 
+    .recipeFunction { output, inputs, info ->
         def batteryTag = inputs['battery']?.getTagCompound()
         if (batteryTag != null) {
             output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
@@ -1349,13 +1359,13 @@ crafting.shapedBuilder()
 
 crafting.shapedBuilder()
     .name('gregtech:nightvision_lithium')
-    .output(metaitem('nightvision_goggles').withNbt([MaxCharge: 120000L])) 
+    .output(metaitem('nightvision_goggles').withNbt([MaxCharge: 120000L]))
     .shape([
         [ore('circuitUlv'), metaitem('screwSteel'), ore('circuitUlv')],
         [metaitem('ringRubber'), metaitem('battery.re.lv.lithium').mark('battery'), metaitem('ringRubber')],
         [metaitem('lensGlass'), ore('toolScrewdriver'), metaitem('lensGlass')]
     ])
-    .recipeFunction { output, inputs, info -> 
+    .recipeFunction { output, inputs, info ->
         def batteryTag = inputs['battery']?.getTagCompound()
         if (batteryTag != null) {
             output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
@@ -1365,13 +1375,13 @@ crafting.shapedBuilder()
 
 crafting.shapedBuilder()
     .name('gregtech:nightvision_cadmium')
-    .output(metaitem('nightvision_goggles').withNbt([MaxCharge: 100000L])) 
+    .output(metaitem('nightvision_goggles').withNbt([MaxCharge: 100000L]))
     .shape([
         [ore('circuitUlv'), metaitem('screwSteel'), ore('circuitUlv')],
         [metaitem('ringRubber'), metaitem('battery.re.lv.cadmium').mark('battery'), metaitem('ringRubber')],
         [metaitem('lensGlass'), ore('toolScrewdriver'), metaitem('lensGlass')]
     ])
-    .recipeFunction { output, inputs, info -> 
+    .recipeFunction { output, inputs, info ->
         def batteryTag = inputs['battery']?.getTagCompound()
         if (batteryTag != null) {
             output.getTagCompound().setLong("Charge", batteryTag.getLong("Charge"))
@@ -1593,7 +1603,7 @@ MACERATOR.recipeBuilder()
     .duration(150)
     .EUt(7)
     .buildAndRegister();
-        
+
 // Wireless Digital Interface * 1
 mods.gregtech.assembler.removeByInput(480, [metaitem('cover.digital'), metaitem('wireless')], [fluid('plastic') * 144])
 
@@ -1964,7 +1974,7 @@ JET_WINGPACK.recipeBuilder()
     .fluidInputs(fluid('supreme_kerosene') * 1)
     .duration(80)
     .buildAndRegister()
-        
+
 def lamp_colors = [
     'white',
     'orange',
@@ -2014,7 +2024,7 @@ ASSEMBLER.recipeBuilder()
     .buildAndRegister()
 
 ASSEMBLER.recipeBuilder()
-    .inputs(metaitem('plateGlass') * 6) 
+    .inputs(metaitem('plateGlass') * 6)
     .inputs(ore('gtLight'))
     .inputs(ore('frameGtTitanium'))
     .outputs(item('gregtech:white_lamp') * 32)
@@ -2032,7 +2042,7 @@ for(color in lamp_colors) {
 
     CHEMICAL_BATH.recipeBuilder()
         .fluidInputs(fluid('dye_'+color) * 18)
-        .inputs(item('gregtech:white_lamp')) 
+        .inputs(item('gregtech:white_lamp'))
         .outputs(item('gregtech:'+color+'_lamp'))
         .duration(10)
         .EUt(7)
@@ -2048,7 +2058,7 @@ for(int i = 0; i < 8; i++) {
 
 CHEMICAL_BATH.recipeBuilder()
     .fluidInputs(fluid('dye_light_gray') * 18)
-    .inputs(item('gregtech:white_lamp')) 
+    .inputs(item('gregtech:white_lamp'))
     .outputs(item('gregtech:silver_lamp'))
     .duration(10)
     .EUt(7)
