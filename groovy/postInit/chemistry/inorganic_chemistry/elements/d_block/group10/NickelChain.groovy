@@ -226,3 +226,25 @@ MIXER.recipeBuilder()
     .duration(80)
     .EUt(30)
     .buildAndRegister()
+
+// DEDICATED RECIPES FOR COPPER SULFATE DUST AND COPPER SULFATE SOLUTION (ISSUE #1368)
+
+ROASTER.recipeBuilder()
+    .inputs(ore('dustCupricOxide'))
+    .fluidInputs(fluid('sulfuric_acid') * 1000)
+    .outputs(metaitem('dustCopperSulfate'))
+    .fluidOutputs(fluid("water") * 1000)
+    .EUt(Globals.voltAmps[1])
+    .duration(100)
+    .buildAndRegister()
+
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustCopperSulfate') * 6)
+    .fluidInputs(fluid('water') * 1000)
+    .fluidOutputs(fluid('copper_sulfate_solution') * 1000)
+    .EUt(Globals.voltAmps[1])
+    .duration(60)
+    .buildAndRegister()
+
+
