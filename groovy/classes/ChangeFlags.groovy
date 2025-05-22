@@ -169,6 +169,10 @@ class ChangeFlags {
         Tetrahedrite.addFlags("no_smelting");
         Gold.addFlags("generate_gear");
         IronMagnetic.addFlags("generate_ring");
+        Steel.addFlags("continuously_cast");
+        Aluminium.addFlags("continuously_cast");
+        Copper.addFlags("continuously_cast");
+
 
         /*
         ManganesePhosphide.addFlags("no_smashing", "no_smelting")

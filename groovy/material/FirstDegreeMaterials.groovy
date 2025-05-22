@@ -3542,7 +3542,7 @@ public class FirstDegreeMaterials {
         MonelFiveHundred = new Material.Builder(8631, SuSyUtility.susyId("monel"))
                 .ingot().liquid(new FluidBuilder().temperature(1625))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_FRAME)
                 .components(Nickel * 23, Manganese * 2, Copper * 10, Aluminium * 4, Titanium)
                 .colorAverage()
                 .build()
