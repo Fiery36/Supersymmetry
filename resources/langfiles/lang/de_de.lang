@@ -143,7 +143,6 @@ susy.material.isophthaloyl_chloride=Isophthaloylchlorid
 susy.material.caprolactam_oxime=Caprolactamoxim
 susy.material.ammonium_sulfate=Ammoniumsulfat
 susy.material.impure_caprolactam=Verunreinigtes Caprolactam
-#- You TNT almost has lol in its name, I am laughing uncontrollable over little things -PhoenixSky
 susy.material.tnt=Trinitrotoluol (TNT)
 susy.material.nitrate_salt_mix=Nitrat-Salzmischung
 susy.material.sodium_nitrate=Natriumnitrat
@@ -434,9 +433,6 @@ susy.material.yeast_solution=Hefelösung
 susy.material.grain_solution=Getreidelösung
 susy.material.mash=Maische
 
-#-I am unaware of what the 100% correct translation is, please help me out here
-#-Line 443-451
-#- PhoenixSky
 susy.material.heavy_water=Schweres Wasser (Deuteriumoxid)
 susy.material.heavy_hydrogen_sulfide=Schwerer Schwefelwasserstoff
 susy.material.semiheavy_hydrogen_sulfide=Halbschwerer Schwefelwasserstoff
@@ -532,7 +528,6 @@ susy.material.durene=Duren
 susy.material.pyromellitic_dianhydride=Pyromellitsäuredianhydrid
 susy.material.four_four_oxydianiline=4,4-Oxydianilin
 susy.material.kapton_k=Kapton K
-#- I like german :D - PhoenixSky
 susy.material.biphenyl_tetracarboxylic_acid_dianhydride=Biphenyltetracarbonsäuredianhydrid
 susy.material.kapton_e=Kapton E
 susy.material.two_butanol=2-Butanol
@@ -573,7 +568,6 @@ susy.material.wacker_catalyst_solution=Wacker-Katalysatorlösung
 susy.material.two_ethylanthraquinone_solution=2-Ethylanthrachinonlösung
 susy.material.acetamide_solution=Acetamidlösung
 susy.material.hydrazine_solution=Hydrazinlösung
-#- Yes german is great :D
 susy.material.tetrasodium_ethylenediaminetetraacetate_solution=Tetranatriumethylendiamintetraacetatlösung
 susy.material.urea_solution=Harnstofflösung
 susy.material.diiodobenzene_solution=Diiodbenzollösung
@@ -641,11 +635,9 @@ susy.material.sulfidic_silver_cyanide_solution=Sulfidische Silbercyanidlösung
 susy.material.silver_cyanide_solution=Silbercyanidlösung
 susy.material.sulfidic_pyrargyrite_cyanide_leach_solution=Sulfidische Pyrargyrit-Cyanid-Laugenlösung
 susy.material.pyrargyrite_cyanide_leach_solution=Pyrargyrit-Cyanid-Laugenlösung
-#- No Stephan no!
 susy.material.sulfidic_stephanite_cyanide_leach_solution=Sulfidische Stephanit-Cyanid-Laugenlösung
 susy.material.stephanite_cyanide_leach_solution=Stephanit-Cyanid-Laugenlösung
-susy.material.pyrargyrite_thiosulfate_leach_solution=Pyrargyrit
-Thiosulfat-Laugenlösung
+susy.material.pyrargyrite_thiosulfate_leach_solution=Pyrargyrit Thiosulfat-Laugenlösung
 susy.material.thiosulfate_thioantimonite_solution=Thiosulfat-Thioantimonitlösung
 susy.material.proustite_thiosulfate_leach_solution=Proustit-Thiosulfat-Laugenlösung
 susy.material.thiosulfate_thioarsenite_solution=Thiosulfat-Thioarsenitlösung
@@ -836,7 +828,6 @@ susy.material.magnesium_chloride_ammoniate=Magnesiumchlorid-Ammoniakat
 susy.material.hydrated_magnesium_chloride_glycolate=Hydratisiertes Magnesiumchloridglykolat
 susy.material.magnesium_chloride_glycolate=Magnesiumchloridglykolat
 susy.material.purified_magnesium_chloride=Gereinigtes Magnesiumchlorid
-# Schnitzellanguage, right? - PhoenixSky
 susy.material.impure_saturated_ammoniacal_methanol=Verunreinigtes Gesättigtes ammoniakalisches Methanol
 susy.material.impure_ethylene_glycol=Verunreinigtes Ethylenglykol
 susy.material.potassium_sulfide=Kaliumsulfid
@@ -1189,7 +1180,6 @@ susy.material.rare_earth_catalyst_y_nd=Seltenerd-Katalysator (Y-Nd)
 susy.material.diluted_primary_amine_n=Verdünntes primäres Amin N-1923
 susy.material.crosslinked_polystyrene=Vernetztes Polystyrol-Divinylbenzol
 susy.material.chloroacetic_anhydride=Chlorameisensäureanhydrid
-#- Alf is a good alien -PhoenixSky
 susy.material.alfol_trialkylaluminium_mixture=Alfol-Trialkylaluminiumgemisch
 susy.material.copper_ii_nitrate=Kupfer(II)-nitrat
 susy.material.nickel_ii_nitrate=Nickel(II)-nitrat
@@ -1251,8 +1241,7 @@ susy.material.disproportionated_dichlorosilane=Disproportioniertes Dichlorsilan
 susy.material.disproportionated_chlorosilane=Disproportioniertes Chlorsilan
 susy.material.diisopropylamino_ethyl_ethyl_methylphosphonite=2-(Diisopropylamino)ethyl Ethylmethylphosphonit
 susy.material.methyl_diethylphosphinate=Methyldiethylphosphinat
-#- Just at looking on these chemicals I am scared to even start Minecraft - PhoenixSky
-susy.material.sarin=Sarin Nerven Kampfstoff
+susy.material.sarin=Sarin Nervengift
 susy.material.methylphosphonyl_difluoride=Methylphosphonyldifluorid
 susy.material.methylphosphonyl_dichloride=Methylphosphonyldichlorid
 susy.material.sulfuryl_chloride=Sulfurylchlorid
@@ -1888,7 +1877,6 @@ susy.material.acrylic_photoemulsion=Acryl-Fotoemulsion
 susy.material.crotonaldehyde_mixture=Crotonaldehydgemisch
 susy.material.crotonaldehyde=Crotonaldehyd
 susy.material.treated_collagen=Behandeltes Kollagen
-#- Gallerte - PhoenixSky
 susy.material.gelatin_solution=Gelatinlösung
 susy.material.mixed_cyanide_solution=Gemischte Cyanidlösung
 susy.material.phosphomolybdic_acid=Phosphomolybdänsäure
@@ -2112,7 +2100,6 @@ susy.material.isopropylamine=Isopropylamin
 susy.material.isopropylamine_solution=Isopropylaminlösung
 susy.material.platinum_rhodium=Platinrhodium
 
-#- HAH No translation needed! - PhoenixSky
 susy.material.incoloy_20=Incoloy 20
 susy.material.incoloy_825=Incoloy 825
 susy.material.incoloy_908=Incoloy 908
@@ -2121,7 +2108,6 @@ susy.material.monel_500=Monel 500
 susy.material.stellite_j=Stellite J
 susy.material.stellite_6=Stellite 6
 susy.material.hsla_980_x=HSLA 980X
-#- Wait, you can eat stainless steel? -PhoenixSky
 susy.material.food_grade_stainless_steel=Lebensmittelechter Edelstahl
 susy.material.moist_argon=Feuchtes Argon
 susy.material.argon_hydrogen_mixture=Argon-Wasserstoffgemisch
@@ -2295,8 +2281,7 @@ recipemap.large_weapons_factory.name=Große Waffenfabrik
 recipemap.ore_sorter.name=Erzsortierung
 recipemap.cooling_tower.name=Kühlturm
 recipemap.gas_turbine_new.name=Gasturbine
-#- You know the drill by now, please help and make suggestions - PhoenixSky
-recipemap.quencher.name=Abschrecker
+recipemap.quencher.name=Abschreckbecken
 recipemap.steam_turbine_new.name=Dampfturbine
 recipemap.railroad_engineering_station.name=Eisenbahn-Ingenieurstation
 recipemap.dryer.name=Trocknung
@@ -2377,7 +2362,6 @@ metaitem.bound_leather.name=Gebundenes Leder
 metaitem.vacuum_tube_components.name=Vakuumröhrenkomponenten
 metaitem.mylar.name=Dünne Mylarfolie
 
-#- Circtuits, so many Circuits -PhoenixSky
 metaitem.circuit.gooware_processor.name=Gooware-Prozessor
 metaitem.circuit.gooware_processor.tooltip=Reaktions-Diffusions-Berechnung/n§2ZPM-Tier-Schaltkreis
 metaitem.circuit.gooware_assembly.name=Gooware-Baugruppe
@@ -2505,7 +2489,6 @@ metaitem.patterned.board.plastic.name=Strukturierte Kunststoff-Leiterplatte
 
 metaitem.laminated.board.phenolic.name=Laminierte Phenolharz-Leiterplatte
 
-#- Mhhm, Wafers... wait it's not food? - PhoenixSky
 metaitem.etched.ic.name=Geätzter integrierter Logikschaltkreis-Wafer
 metaitem.etched.cpu.name=Geätzter CPU-Wafer
 metaitem.etched.ram.name=Geätzter RAM-Wafer
@@ -2539,7 +2522,6 @@ metaitem.fluorescent_light.name=Leuchtstofflampe
 metaitem.led_light.name=L.E.D. Lichter
 
 metaitem.mineral_wool.name=Mineralwollplatte
-#- A filter for Hepatitis, Nice! -PhoenixSky
 metaitem.hepa_filter.name=H.E.P.A.-Filter
 
 metaitem.shape.mold.rod.name=Form (Stab)
@@ -2637,16 +2619,13 @@ metaitem.beads.strong_acidic_cation_exchange.name=Stark saure Kationenaustausche
 metaitem.beads.amberlyst_ch.name=Amberlyst CH-43 Perlen
 metaitem.beads.loaded_rhenium_anion_exchange.name=Rhenium-Ionenaustauscher-Perlen
 metaitem.beads.loaded_uranium_anion_exchange.name=Uran-Ionenaustauscher-Perlen
-metaitem.beads.weak_basic_anion_exchange.name=Schwache
-Basische Kationenaustauscherharz-Perlen
+metaitem.beads.weak_basic_anion_exchange.name=Schwache Basische Kationenaustauscherharz-Perlen
 metaitem.beads.strong_basic_anion_exchange.name=Stark basische Kationenaustauscherharz-Perlen
 
 metaitem.fused_quartz.name=Geschmolzene Quarzplatte
 metaitem.crucible.quartz.name=Quarz-Tiegel
 metaitem.crucible.graphite.name=Graphit-Tiegel
 
-#- Again I am unsure of the real translation of Sponge
-#- Please help me out - PhoenixSky
 metaitem.vti_rich_pig_iron.name=Vanadium/Titan-reiches Roheisen
 metaitem.vt_slag.name=Vanadium/Titan-reiche Schlacke
 metaitem.white_matte.name=Weiße Matte
@@ -2729,7 +2708,6 @@ gregtech.machine.laser_engraver.uxv.name=Epischer Elektronenstrahl-Lithograph IV
 gregtech.machine.laser_engraver.opv.name=Legendärer Elektronenstrahl-Lithograph
 
 recipemap.laser_engraver.name=Elektronenstrahl-Lithographie
-
 recipemap.laser_engraver.name=Electron Beam Lithography
 
 # Material Renaming
@@ -2756,5 +2734,4 @@ susy.menu.reportabug=Spielfehler melden
 susy.menu.openfolder=Minecraft-Ordner öffnen
 susy.menu.refresh=Menü aktualisieren
 susy.menu.replayviewer=Aufnahmen
-#- This is true, reading and translating was fun - PhoenixSky
 susy.menu.quit.hover=Du kannst Greg niemals entkommen.
