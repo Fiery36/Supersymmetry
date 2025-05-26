@@ -3909,4 +3909,23 @@ DISTILLERY.recipeBuilder()
     .fluidOutputs(fluid('water') * 1000)
     .duration(100)
     .EUt(30)   
-    .buildAndRegister()       
+    .buildAndRegister()     
+
+// Copper Sulfate Dust & Solution
+
+BR.recipeBuilder()
+    .inputs(ore('dustCupricOxide') * 2)
+    .fluidInputs(fluid('sulfuric_acid') * 1000)
+    .fluidOutputs(fluid("copper_sulfate_solution") * 1000)
+    .EUt(Globals.voltAmps[1])
+    .duration(100)
+    .buildAndRegister()
+
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustCopperSulfate') * 6)
+    .fluidInputs(fluid('water') * 1000)
+    .fluidOutputs(fluid('copper_sulfate_solution') * 1000)
+    .EUt(Globals.voltAmps[1])
+    .duration(60)
+    .buildAndRegister()  
