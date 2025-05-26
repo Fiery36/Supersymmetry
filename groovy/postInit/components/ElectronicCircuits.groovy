@@ -1,7 +1,5 @@
 import gregtech.api.recipes.ingredients.GTRecipeItemInput;
 
-EBF = recipemap('electric_blast_furnace')
-
 // Diode * 2
 mods.gregtech.assembler.removeByInput(30, [metaitem('wireFineAnnealedCopper') * 4, metaitem('dustSmallGalliumArsenide')], [fluid('glass') * 144])
 // Diode * 1
@@ -185,24 +183,3 @@ mods.gregtech.mixer.recipeBuilder()
         .duration(800)
         .EUt(16)
         .buildAndRegister();
-
-// Kovar Ingot * 1
-mods.gregtech.electric_blast_furnace.removeByInput(120, [metaitem('dustKovar'), metaitem('circuit.integrated').withNbt(['Configuration': 1])], null)
-mods.gregtech.electric_blast_furnace.removeByInput(120, [metaitem('dustKovar'), metaitem('circuit.integrated').withNbt(['Configuration': 2])],
-                                                        [fluid('nitrogen') * 1000 * 1000])
-EBF.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(ore('dustKovar'))
-        .outputs(metaitem('ingotKovar'))
-        .duration(90)
-        .EUt(120)
-        .buildAndRegister()
-
-EBF.recipeBuilder()
-        .circuitMeta(2)
-        .inputs(ore('dustKovar'))
-        .fluidInputs(fluid('nitrogen') * 1000)
-        .outputs(metaitem('ingotKovar'))
-        .duration(60)
-        .EUt(120)
-        .buildAndRegister()
