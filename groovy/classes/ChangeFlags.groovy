@@ -68,6 +68,7 @@ class ChangeFlags {
         Germanium.setProperty(PropertyKey.INGOT, new IngotProperty());
         Tellurium.setProperty(PropertyKey.INGOT, new IngotProperty());
         Cadmium.setProperty(PropertyKey.INGOT, new IngotProperty());
+        Magnesium.setProperty(PropertyKey.INGOT, new IngotProperty());
         Asbestos.setProperty(PropertyKey.INGOT, new IngotProperty());
 
         BisphenolA.setProperty(PropertyKey.DUST, new DustProperty());
@@ -92,7 +93,7 @@ class ChangeFlags {
         setupFluidType(Sodium, FluidStorageKeys.LIQUID, 371)
         setupFluidType(SodiumHydroxide, FluidStorageKeys.LIQUID, 591)
         setupFluidType(Polydimethylsiloxane, FluidStorageKeys.LIQUID, 293)
-        setupFluidType(Glass, FluidStorageKeys.LIQUID, 1990)
+        setupFluidType(Glass, FluidStorageKeys.LIQUID, 1800)
         setupFluidType(PolyvinylButyral, FluidStorageKeys.LIQUID, 440)
         setupFluidType(Nitrochlorobenzene, FluidStorageKeys.LIQUID, 326)
         setupFluidType(Iron3Chloride, FluidStorageKeys.LIQUID, 585)
@@ -143,6 +144,7 @@ class ChangeFlags {
         // Flags
 
         Asbestos.addFlags("generate_foil");
+        Magnesium.addFlags("generate_rod", "generate_plate");
         Tellurium.addFlags("generate_plate");
         Steel.addFlags("generate_spring", "generate_spring_small");
         Titanium.addFlags("generate_foil", "generate_spring", "generate_spring_small");
@@ -553,6 +555,7 @@ class ChangeFlags {
         oreProp.setOreByProducts(LimestoneTailings, LimestoneTailings, LimestoneTailings, LimestoneTailings);
 
         oreProp = Malachite.getProperty(PropertyKey.ORE);
+        oreProp.setOreMultiplier(2)
         oreProp.getOreByProducts().clear();
         oreProp.setOreByProducts(LimestoneTailings, LimestoneTailings, LimestoneTailings, LimestoneTailings);
 

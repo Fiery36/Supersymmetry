@@ -10,7 +10,8 @@
         "Damage:2": 8661,
         "id:8": "gregtech:meta_fuel_pellet"
       },
-      "name:8": "susy.quest.db.1337107364.title"
+      "name:8": "susy.quest.db.1337107364.title",
+      "tasklogic:8": "OR"
     }
   },
   "questID:3": 1337107364,
@@ -23,6 +24,10 @@
         }
       },
       "taskID:8": "bq_standard:fluid"
+    },
+    "1:10": {
+      "index:3": 1,
+      "taskID:8": "bq_standard:checkbox"
     }
   }
 }

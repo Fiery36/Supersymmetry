@@ -110,7 +110,7 @@ CENTRIFUGE.recipeBuilder() // Fluorotantalic Acid Solution
     .buildAndRegister()
 
 CRYSTALLIZER.recipeBuilder() // Potassium Heptafluorotantalate
-    .inputs(ore('dustPotassiumFluoride') * 36)
+    .inputs(ore('dustPotassiumFluoride') * 18)
     .fluidInputs(fluid('fluorotantalic_acid_solution') * 5000)
     .outputs(metaitem('dustPotassiumHeptafluorotantalate') * 45)
     .fluidOutputs(fluid('hydrofluoric_ammonia_mixture') * 5000)
