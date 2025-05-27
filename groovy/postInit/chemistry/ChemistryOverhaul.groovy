@@ -954,9 +954,9 @@ PYROLYSE.recipeBuilder()
 
 CENTRIFUGE.recipeBuilder()
     .fluidInputs(fluid('acidic_tetrafluoroethylene') * 5000)
-    .fluidInputs(fluid('water') * 4000)
+    .fluidInputs(fluid('water') * 6000)
     .fluidOutputs(fluid('tetrafluoroethylene') * 1000)
-    .fluidOutputs(fluid('hydrochloric_acid') * 4000)
+    .fluidOutputs(fluid('hydrochloric_acid') * 6000)
     .duration(200)
     .EUt(30)
     .buildAndRegister()
@@ -1168,25 +1168,6 @@ DISTILLERY.recipeBuilder()
     .EUt(120)
     .buildAndRegister()
 
-// Nitric Acid, Nitrogen Dioxide
-
-CSTR.recipeBuilder()
-    .fluidInputs(fluid('oxygen') * 50)
-    .fluidInputs(fluid('nitric_oxide') * 50)
-    .fluidOutputs(fluid('nitrogen_dioxide') * 50)
-    .duration(8)
-    .EUt(30)
-    .buildAndRegister()
-
-CSTR.recipeBuilder()
-    .fluidInputs(fluid('water') * 50)
-    .fluidInputs(fluid('nitrogen_dioxide') * 150)
-    .fluidOutputs(fluid('nitric_acid') * 100)
-    .fluidOutputs(fluid('nitric_oxide') * 50)
-    .duration(12)
-    .EUt(30)
-    .buildAndRegister()
-
 // Methyl Acetate
 
 CSTR.recipeBuilder()
@@ -1263,6 +1244,15 @@ REACTION_FURNACE.recipeBuilder()
     .fluidOutputs(fluid('chlorine') * 2000)
     .duration(30)
     .EUt(120)
+    .buildAndRegister()
+
+BCR.recipeBuilder()
+    .fluidInputs(fluid('phosgene') * 50)
+    .fluidInputs(fluid('water') * 150)
+    .fluidOutputs(fluid('carbon_dioxide') * 50)
+    .fluidOutputs(fluid('hydrochloric_acid') * 100)
+    .duration(4)
+    .EUt(30)
     .buildAndRegister()
 
 // Rutile
@@ -1924,7 +1914,7 @@ DRYER.recipeBuilder()
 
 ASSEMBLER.recipeBuilder()
     .inputs(ore('threadCelluloseAcetate') * 16)
-    .outputs(metaitem('cellulose_acetate_mesh'))
+    .outputs(metaitem('mesh.cellulose_acetate'))
     .EUt(120)
     .duration(160)
     .buildAndRegister()
@@ -1956,69 +1946,6 @@ DISTILLATION_TOWER.recipeBuilder()
     .fluidOutputs(fluid('water') * 3000)
     .duration(240)
     .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
-
-// Graphene
-
-// Ammonia (Haber Process)
-
-REACTION_FURNACE.recipeBuilder()
-    .fluidInputs(fluid('hot_hp_air') * 1500)
-    .fluidInputs(fluid('hydrogen') * 3000)
-    .notConsumable(ore('dustWustiteCatalyst'))
-    .fluidOutputs(fluid('ammonia_rich_gas') * 4000)
-    .duration(160)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister()
-
-REACTION_FURNACE.recipeBuilder()
-    .fluidInputs(fluid('hot_hp_nitrogen') * 1000)
-    .fluidInputs(fluid('hydrogen') * 3000)
-    .notConsumable(ore('dustWustiteCatalyst'))
-    .fluidOutputs(fluid('ammonia_rich_gas') * 4000)
-    .duration(100)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister()
-
-REACTION_FURNACE.recipeBuilder()
-    .fluidInputs(fluid('ammonia_reaction_mix') * 4000)
-    .notConsumable(ore('dustWustiteCatalyst'))
-    .fluidOutputs(fluid('ammonia_rich_gas') * 4000)
-    .duration(100)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister()
-
-MIXER.recipeBuilder()
-    .fluidInputs(fluid('ammonia_rich_gas') * 4000)
-    .fluidInputs(fluid('water') * 500)
-    .fluidOutputs(fluid('ammonia_solution') * 500)
-    .fluidOutputs(fluid('ammonia_reaction_mix') * 2000)
-    .duration(100)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
-
-ROASTER.recipeBuilder()
-    .fluidInputs(fluid('monoxide_rich_syngas') * 1000)
-    .inputs(ore('dustIronIiiOxide') * 5)
-    .outputs(metaitem('dustWustiteCatalyst') * 5)
-    .duration(400)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister()
-
-ROASTER.recipeBuilder()
-    .fluidInputs(fluid('hydrogen_rich_syngas') * 1000)
-    .inputs(ore('dustIronIiiOxide') * 5)
-    .outputs(metaitem('dustWustiteCatalyst') * 5)
-    .duration(400)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister()
-
-DISTILLATION_TOWER.recipeBuilder()
-    .fluidInputs(fluid('ammonia_solution') * 1000)
-    .fluidOutputs(fluid('water') * 1000)
-    .fluidOutputs(fluid('ammonia') * 1000)
-    .duration(150)
-    .EUt(30)
     .buildAndRegister()
 
 // Butadiene without oil
@@ -2143,16 +2070,6 @@ DISTILLATION_TOWER.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
-// Nitrogen Dioxide
-
-REACTION_FURNACE.recipeBuilder()
-    .fluidInputs(fluid('nitrogen') * 1000)
-    .fluidInputs(fluid('oxygen') * 2000)
-    .fluidOutputs(fluid('nitrogen_dioxide') * 1000)
-    .duration(60)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister()
-
 // Isobutylene
 
 FBR.recipeBuilder()
@@ -2221,26 +2138,6 @@ ROASTER.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
-// DicobaltOctacarbonyl
-
-ROASTER.recipeBuilder()
-    .inputs(ore('dustAnyPurityCobalt') * 2)
-    .fluidInputs(fluid('carbon_monoxide') * 8000)
-    .outputs(metaitem('dustDicobaltOctacarbonyl') * 18)
-    .duration(200)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
-
-// Impregnated Alumina Catalyst
-
-ALLOY_SMELTER.recipeBuilder()
-    .inputs(ore('dustSilicaGel') * 3)
-    .inputs(ore('dustAlumina') * 5)
-    .outputs(metaitem('dustImpregnatedAluminaCatalyst') * 8)
-    .duration(200)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
-
 // Copper Bismuth
 
 MIXER.recipeBuilder()
@@ -2294,8 +2191,8 @@ CSTR.recipeBuilder()
 
 VACUUM_DT.recipeBuilder()
     .fluidInputs(fluid('hydrogen_peroxide_solution') * 1000)
-    .fluidOutputs(fluid('water') * 1000)
     .fluidOutputs(fluid('hydrogen_peroxide') * 1000)
+    .fluidOutputs(fluid('water') * 1000)
     .duration(40)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
@@ -3994,3 +3891,41 @@ MIXER.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
+// Potassium Iodine
+
+BR.recipeBuilder()
+    .inputs(ore('dustIodine') * 6)
+    .inputs(ore('dustPotassiumHydroxide') * 18)
+    .fluidInputs(fluid('gtfo_heated_water') * 2000)
+    .outputs(metaitem('dustPotassiumIodate') * 5)
+    .fluidOutputs(fluid('potassium_iodide_solution') * 5000)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister()       
+
+DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('potassium_iodide_solution') * 1000)
+    .outputs(metaitem('dustPotassiumIodide') * 2)
+    .fluidOutputs(fluid('water') * 1000)
+    .duration(100)
+    .EUt(30)   
+    .buildAndRegister()     
+
+// Copper Sulfate Dust & Solution
+
+BR.recipeBuilder()
+    .inputs(ore('dustCupricOxide') * 2)
+    .fluidInputs(fluid('sulfuric_acid') * 1000)
+    .fluidOutputs(fluid("copper_sulfate_solution") * 1000)
+    .EUt(Globals.voltAmps[1])
+    .duration(100)
+    .buildAndRegister()
+
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustCopperSulfate') * 6)
+    .fluidInputs(fluid('water') * 1000)
+    .fluidOutputs(fluid('copper_sulfate_solution') * 1000)
+    .EUt(Globals.voltAmps[1])
+    .duration(60)
+    .buildAndRegister()  

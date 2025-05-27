@@ -7,12 +7,14 @@ import gregtech.api.GregTechAPI;
 import gregtech.api.fluids.attribute.FluidAttributes;
 import gregtech.api.fluids.FluidBuilder;
 import gregtech.api.unification.material.properties.*
+import gregtech.api.unification.material.properties.BlastProperty.GasTier;
 
 import supersymmetry.api.util.SuSyUtility;
 
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.Materials.*;
+import gregtech.api.unification.material.properties.BlastProperty.GasTier;
 import static gregtechfoodoption.GTFOMaterialHandler.*;
 import static supersymmetry.api.unification.material.info.SuSyMaterialFlags.*;
 
@@ -848,5 +850,12 @@ public class SecondDegreeMaterials {
 
         ChromiumSulfateSolution.setFormula("(Cr2(SO4)3)2(C3H6O)(H2O)9", true)
 
+        PlatinumRhodium = new Material.Builder(13141, SuSyUtility.susyId('platinum_rhodium'))
+                .dust().liquid(new FluidBuilder().temperature(2113))
+                .components(Platinum * 9, Rhodium)
+                .color(0xffe1c8)
+                .flags(GENERATE_FINE_WIRE)
+                .blastTemp(2113, GasTier.MID)
+                .build()
     }
 }
