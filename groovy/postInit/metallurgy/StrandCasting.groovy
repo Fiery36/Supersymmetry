@@ -11,7 +11,7 @@ FLUID_SOLIDIFIER.recipeBuilder()
         .outputs(metaitem('work_roll.unfinished'))
         .EUt(30)
         .duration(80)
-        .build()
+        .buildAndRegister()
 
 POLISHING.recipeBuilder()
         .inputs(metaitem('work_roll.unfinished'))
@@ -19,7 +19,7 @@ POLISHING.recipeBuilder()
         .outputs(item('susy:metallurgy_roll'))
         .EUt(120)
         .duration(200)
-        .build()
+        .buildAndRegister()
 
 // Hydraulic Press
 ASSEMBLER.recipeBuilder()
@@ -32,7 +32,7 @@ ASSEMBLER.recipeBuilder()
         .outputs(item('susy:metallurgy'))
         .EUt(120)
         .duration(300)
-        .build()
+        .buildAndRegister()
 
 // Flying Shear Saw
 ASSEMBLER.recipeBuilder()
@@ -44,22 +44,29 @@ ASSEMBLER.recipeBuilder()
         .outputs(item('susy:metallurgy_2'))
         .EUt(16)
         .duration(100)
-        .build()
+        .buildAndRegister()
 
 // Monel 500 casings
 ASSEMBLER.recipeBuilder()
         .inputs(metaitem('plateMonel500') * 6)
-        .outputs(metaitem('frameHsla980X'))
+        .outputs(metaitem('frameGtHsla980X'))
         .outputs(item('susy:susy_multiblock_casing', 5) * 4)
         .EUt(16)
         .duration(100)
-        .build()
+        .buildAndRegister()
+        
 
 // Pipe casing
 crafting.addShaped("susy:monel_500_pipe_casing", item('susy:susy_multiblock_casing', 6) * 2, [
     [ore('plateMonel500'), ore('pipeNormalFluidMonel500'), ore('plateMonel500')],
-    [ore('pipeNormalFluidMonel500'), metaitem('frameHsla980X'), ore('pipeNormalFluidMonel500')],
+    [ore('pipeNormalFluidMonel500'), ore('frameGtHsla980X'), ore('pipeNormalFluidMonel500')],
     [ore('plateMonel500'), ore('pipeNormalFluidMonel500'), ore('plateMonel500')]
+])
+
+crafting.addShaped("susy:copper_pipe_casing", item('susy:susy_multiblock_casing', 6) * 2, [
+    [ore('plateCopper'), ore('pipeNormalFluidCopper'), ore('plateCopper')],
+    [ore('pipeNormalFluidCopper'), ore('frameGtSteel'), ore('pipeNormalFluidCopper')],
+    [ore('plateCopper'), ore('pipeNormalFluidCopper'), ore('plateCopper')]
 ])
 
 // Machines
@@ -104,6 +111,20 @@ crafting.addShaped("susy:flying_shear", metaitem('flying_shear'), [
         [item('electric.motor.ev'), ore('circuitEv'), item('electric.piston.ev')]
 ])
 
+// Molds
+crafting.addShaped("susy:slab_mold", metaitem('slab_mold'), [
+        [ore('electric.pump.ev'), metaitem('plateDoubleCopper'), ore('electric.pump.ev')],
+        [item('electric.sensor.ev'), metaitem('plateDoubleCopper'), ore('circuitEv')],
+        [item('electric.pump.ev'), metaitem('plateDoubleCopper'), item('electric.pump.ev')]
+])
+
+crafting.addShaped("susy:billet_mold", metaitem('billet_mold'), [
+        [ore('electric.pump.ev'), metaitem('plateSteel'), ore('electric.pump.ev')],
+        [item('electric.sensor.ev'), metaitem('plateDoubleCopper'), ore('circuitEv')],
+        [item('electric.pump.ev'), metaitem('plateSteel'), item('electric.pump.ev')]
+])
+
+
 // Fast steel generation in large arc furnace
 ADVANCED_ARC_FURNACE.recipeBuilder()
         .inputs(ore('ingotPigIron') * 18)
@@ -128,7 +149,7 @@ ADVANCED_ARC_FURNACE.recipeBuilder()
 ADVANCED_ARC_FURNACE.recipeBuilder()
         .notConsumable(fluid('cryolite') * 7776)
         .inputs(ore('dustAlumina') * 45)
-        .notConsumable(ore('dustAluminiumTrifluoride') * 12)
+        .notConsumable(metaitem('dustAluminiumTrifluoride') * 12)
         .inputs(ore('dustCoke') * 14)
         .fluidOutputs(fluid('carbon_dioxide') * 13500)
         .fluidOutputs(fluid('molten.aluminium') * 2592)
