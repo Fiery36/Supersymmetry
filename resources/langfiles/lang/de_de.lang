@@ -433,6 +433,7 @@ susy.material.yeast_solution=Hefelösung
 susy.material.grain_solution=Getreidelösung
 susy.material.mash=Maische
 
+
 susy.material.heavy_water=Schweres Wasser (Deuteriumoxid)
 susy.material.heavy_hydrogen_sulfide=Schwerer Schwefelwasserstoff
 susy.material.semiheavy_hydrogen_sulfide=Halbschwerer Schwefelwasserstoff
@@ -637,7 +638,8 @@ susy.material.sulfidic_pyrargyrite_cyanide_leach_solution=Sulfidische Pyrargyrit
 susy.material.pyrargyrite_cyanide_leach_solution=Pyrargyrit-Cyanid-Laugenlösung
 susy.material.sulfidic_stephanite_cyanide_leach_solution=Sulfidische Stephanit-Cyanid-Laugenlösung
 susy.material.stephanite_cyanide_leach_solution=Stephanit-Cyanid-Laugenlösung
-susy.material.pyrargyrite_thiosulfate_leach_solution=Pyrargyrit Thiosulfat-Laugenlösung
+susy.material.pyrargyrite_thiosulfate_leach_solution=Pyrargyrit
+Thiosulfat-Laugenlösung
 susy.material.thiosulfate_thioantimonite_solution=Thiosulfat-Thioantimonitlösung
 susy.material.proustite_thiosulfate_leach_solution=Proustit-Thiosulfat-Laugenlösung
 susy.material.thiosulfate_thioarsenite_solution=Thiosulfat-Thioarsenitlösung
@@ -679,8 +681,7 @@ susy.material.impure_quinoline=Verunreinigtes Chinolin
 susy.material.pyridine=Pyridin
 susy.material.quinoline=Chinolin
 
-#- Rename it completly as Natriumcarbonat? Soda isn't particually used in German -PhoenixSky
-susy.material.soda_ash=Soda (Natriumcarbonat)
+susy.material.soda_ash=Natriumcarbonat
 
 susy.material.concentrated_brine=Konzentrierte Sole
 susy.material.brine_evaporite=Sole-Evaporit
@@ -828,6 +829,7 @@ susy.material.magnesium_chloride_ammoniate=Magnesiumchlorid-Ammoniakat
 susy.material.hydrated_magnesium_chloride_glycolate=Hydratisiertes Magnesiumchloridglykolat
 susy.material.magnesium_chloride_glycolate=Magnesiumchloridglykolat
 susy.material.purified_magnesium_chloride=Gereinigtes Magnesiumchlorid
+# Schnitzellanguage, right? - PhoenixSky
 susy.material.impure_saturated_ammoniacal_methanol=Verunreinigtes Gesättigtes ammoniakalisches Methanol
 susy.material.impure_ethylene_glycol=Verunreinigtes Ethylenglykol
 susy.material.potassium_sulfide=Kaliumsulfid
@@ -876,7 +878,7 @@ susy.material.potassium_isopropyl_xanthate_solution=Kaliumisopropylxanthogenatl�
 susy.material.potassium_ethyl_xanthate=Kaliumethylxanthogenat
 susy.material.potassium_ethyl_xanthate_solution=Kaliumethylxanthogenatlösung
 susy.material.silica_gel=Silicagel
-susy.material.wet_silica_gel=Feuchtes Silicagel
+susy.material.wet_silica_gel=Nasses Silicagel
 susy.material.phosphoric_acid_silica_gel=Phosphorsäure auf Silicagel
 susy.material.lead_chloride=Bleichlorid
 susy.material.ammonium_metavanadate=Ammoniummetavanadat
@@ -1141,7 +1143,7 @@ susy.material.purified_iron_two_three_oxide=Gereinigtes Eisen(II,III)-oxid
 susy.material.purified_iron_iii_oxide=Gereinigtes Eisen(III)-oxid
 susy.material.nickel_ii_oxide=Nickel(II)-oxid
 susy.material.ethylenediamine_pyrocatechol=Ethylendiamin-Pyrocatechol
-susy.material.carbon_tetrafluoride=Tetrachlorkohlenstoff
+susy.material.carbon_tetrafluoride=Tetrafluorkohlenstoff
 susy.material.ceramic_thick_film_paste=Keramische Dickschichtpaste
 
 susy.material.nitrogen_trifluoride=Stickstofftrifluorid
@@ -1241,7 +1243,8 @@ susy.material.disproportionated_dichlorosilane=Disproportioniertes Dichlorsilan
 susy.material.disproportionated_chlorosilane=Disproportioniertes Chlorsilan
 susy.material.diisopropylamino_ethyl_ethyl_methylphosphonite=2-(Diisopropylamino)ethyl Ethylmethylphosphonit
 susy.material.methyl_diethylphosphinate=Methyldiethylphosphinat
-susy.material.sarin=Sarin Nervengift
+
+susy.material.sarin=Sarin
 susy.material.methylphosphonyl_difluoride=Methylphosphonyldifluorid
 susy.material.methylphosphonyl_dichloride=Methylphosphonyldichlorid
 susy.material.sulfuryl_chloride=Sulfurylchlorid
@@ -1620,7 +1623,6 @@ susy.material.nickel_nitrate_solution=Nickel(II)-nitratlösung
 susy.material.triethylenetetramine=Triethylentetramin
 susy.material.aminoethylpiperazine=Aminoethylpiperazin
 susy.material.diethylenetriamine=Diethylentriamin
-#- WHAT, now we are cooking, Walter White - PhoenixSky
 susy.material.piperazine=Piperazin
 susy.material.cyclooctadiene=1,5-Cyclooctadien
 susy.material.triethyl_phosphate=Triethylphosphat
@@ -1885,7 +1887,7 @@ susy.material.gaseous_methacrolein_residue=Gasförmiger Methacrolein-Rückstand
 susy.material.absorbed_methacrolein=Absorbiertes Methacrolein
 susy.material.gaseous_methacrylic_acid_mixture=Gasförmiges Methacrylsäuregemisch
 susy.material.methacrylic_acid_solution=Methacrylsäurelösung
-susy.material.depleted_uranium_dioxide=Abgereichertes Uransiliciumdioxid
+susy.material.depleted_uranium_dioxide=Abgereichertes Uraniumdioxid
 susy.material.salty_hydrofluoric_acid=Salzige Fluorwasserstoffsäure
 susy.material.supported_molybdenum_vanadium=Geträgertes Molybdän-Vanadium
 susy.material.acrolein=Acrolein
@@ -2046,7 +2048,7 @@ susy.material.crude_catalytically_cracked_vacuum_oil_residue=Roher katalytisch g
 susy.material.quenched_atmospheric_oil_residue=Abgeschreckter atmosphärischer Ölrückstand
 susy.material.quenched_vacuum_oil_residue=Abgeschreckter Vakuum-Ölrückstand
 susy.material.light_gas_oil=Leichtgasöl
-susy.material.slurry_oil=Slurryöl
+susy.material.slurry_oil=Schlammöl
 susy.material.light_cycle_oil=Leichtes Kreisöl
 susy.material.sulfuric_catalytic_overheads=Schwefelhaltige katalytische Überkopffraktion
 susy.material.catalytic_overheads=Katalytische Überkopffraktion
@@ -2089,7 +2091,7 @@ susy.material.cold_hp_fuel_gas=Kaltes Hochdruck-Brennstoffgas
 susy.material.rp_one=RP-1
 susy.material.ammonium_metatungstate=Ammoniummetawolframat (AMT)
 susy.material.ammonium_metatungstate_solution=Ammoniummetawolframatlösung
-susy.material.clarified_slurry_oil=Geklärtes Slurryöl
+susy.material.clarified_slurry_oil=Geklärtes Schlammöl
 susy.material.pyrolysis_raffinate=Pyrolyse-Raffinat
 susy.material.carbon_black=Ruß
 susy.material.compounded_polyisoprene=Compoundiertes Polyisopren
@@ -2272,8 +2274,8 @@ susy.material.oxidized_xenon=Oxidiertes Xenon
 
 # GregTech RecipeMaps
 
-recipemap.fluid_decompressor.name=Fluid (De-)Kompression
-recipemap.fluid_compressor.name=Fluidkompression
+recipemap.fluid_decompressor.name=Dekomprimierer
+recipemap.fluid_compressor.name=Kompressor
 recipemap.weapons_factory.name=Waffenfabrik
 recipemap.heat_exchanger.name=Wärmetauscher
 recipemap.radiator.name=Kühler
@@ -2284,16 +2286,16 @@ recipemap.gas_turbine_new.name=Gasturbine
 recipemap.quencher.name=Abschreckbecken
 recipemap.steam_turbine_new.name=Dampfturbine
 recipemap.railroad_engineering_station.name=Eisenbahn-Ingenieurstation
-recipemap.dryer.name=Trocknung
-recipemap.sintering_oven.name=Sintern
+recipemap.dryer.name=Trockner
+recipemap.sintering_oven.name=Sinterofen
 recipemap.electrolytic_cell.name=Fortschrittliche Elektrolyse
 recipemap.vat_fermentation.name=Gärbottich
 recipemap.vacuum_distillation.name=Vakuumdestillation
 recipemap.catalytic_reformer_recipes.name=Katalytisches Reforming
 recipemap.coking_tower.name=Verkokungsturm
 recipemap.ion_exchange_column.name=Ionenaustausch
-recipemap.smoke_stack.name=Schornstein
-recipemap.gravity_separator.name=Schwerkrafttrennung
+recipemap.smoke_stack.name=Schlot
+recipemap.gravity_separator.name=Schwerkraftabscheider
 recipemap.electrostatic_separator.name=Elektrostatische Trennung
 recipemap.single_column_cryogenic_distillation.name=Einsäulen-Tieftemperaturdestillation
 recipemap.low_pressure_cryogenic_distillation.name=Niederdruck-Tieftemperaturdestillation
@@ -2619,7 +2621,8 @@ metaitem.beads.strong_acidic_cation_exchange.name=Stark saure Kationenaustausche
 metaitem.beads.amberlyst_ch.name=Amberlyst CH-43 Perlen
 metaitem.beads.loaded_rhenium_anion_exchange.name=Rhenium-Ionenaustauscher-Perlen
 metaitem.beads.loaded_uranium_anion_exchange.name=Uran-Ionenaustauscher-Perlen
-metaitem.beads.weak_basic_anion_exchange.name=Schwache Basische Kationenaustauscherharz-Perlen
+metaitem.beads.weak_basic_anion_exchange.name=Schwache
+Basische Kationenaustauscherharz-Perlen
 metaitem.beads.strong_basic_anion_exchange.name=Stark basische Kationenaustauscherharz-Perlen
 
 metaitem.fused_quartz.name=Geschmolzene Quarzplatte
@@ -2708,7 +2711,6 @@ gregtech.machine.laser_engraver.uxv.name=Epischer Elektronenstrahl-Lithograph IV
 gregtech.machine.laser_engraver.opv.name=Legendärer Elektronenstrahl-Lithograph
 
 recipemap.laser_engraver.name=Elektronenstrahl-Lithographie
-recipemap.laser_engraver.name=Electron Beam Lithography
 
 # Material Renaming
 item.susy.material.ultra_high_molecular_weight_polyethylene.dustTiny=Winziger Haufen Ultrahochmolekulares Polyethylen (UHMWPE) Zellstoff
