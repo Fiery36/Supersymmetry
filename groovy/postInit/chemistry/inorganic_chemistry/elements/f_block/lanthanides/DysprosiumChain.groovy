@@ -1,29 +1,24 @@
 import globals.Globals
 
-import static gregtech.api.unification.material.Materials.*;
-import gregtech.api.unification.material.MarkerMaterials;
-import static gregtech.api.unification.ore.OrePrefix.dye;
-
 BR = recipemap('batch_reactor')
-ROASTER = recipemap('roaster')
 REACTION_FURNACE = recipemap('reaction_furnace')
+DISTILLERY = recipemap('distillery')
 
-BR.recipeBuilder()
-    .inputs(ore('dustSodiumHydroxide') * 9)
-    .fluidInputs(fluid('bast_dysprosium_concentrate') * 6000)
-    .outputs(metaitem('dustDysprosiumHydroxide') * 7)
-    .fluidOutputs(fluid('diluted_salt_water') * 6000)
-    .duration(80)
-    .EUt(120)
+DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('dysprosium_chloride_solution') * 6000)
+    .outputs(metaitem('dustDysprosiumChloride') * 4)
+    .fluidOutputs(fluid('water') * 6000)
+    .duration(20)
+    .EUt(30)
     .buildAndRegister()
 
-ROASTER.recipeBuilder()
-    .inputs(ore('dustDysprosiumHydroxide') * 7)
+BR.recipeBuilder()
+    .inputs(ore('dustDysprosiumChloride') * 4)
     .fluidInputs(fluid('hydrofluoric_acid') * 3000)
     .outputs(metaitem('dustDysprosiumFluoride') * 4)
-    .fluidOutputs(fluid('dense_steam') * 6000)
-    .duration(160)
-    .EUt(Globals.voltAmps[2])
+    .fluidOutputs(fluid('acidic_wastewater') * 9000)
+    .duration(80)
+    .EUt(30)
     .buildAndRegister()
 
 REACTION_FURNACE.recipeBuilder()
@@ -33,6 +28,6 @@ REACTION_FURNACE.recipeBuilder()
     .fluidInputs(fluid('helium') * 50)
     .outputs(metaitem('dustFluorite') * 9)
     .outputs(metaitem('dustDysprosium') * 2)
-    .duration(160)
-    .EUt(Globals.voltAmps[3])
+    .duration(200)
+    .EUt(Globals.voltAmps[3] * 2)
     .buildAndRegister()

@@ -1077,7 +1077,7 @@ public class OrganicChemistryMaterials {
                 .color(0x89db6b)
                 .build()
 
-        DibutylCarbitol.setFormula('(CH3CH2CH2CH2OCH2CH2)2O', true)
+        DibutylCarbitol.setFormula('(C4H9OC2H4)2O', true)
 
         MonoTwoEthylhexylPhosphoricAcid = new Material.Builder(15179, SuSyUtility.susyId('mono_two_ethylhexyl_phosphoric_acid'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))

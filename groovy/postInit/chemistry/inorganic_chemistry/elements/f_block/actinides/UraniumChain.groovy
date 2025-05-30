@@ -233,15 +233,3 @@ FLUIDIZEDBR.recipeBuilder()
     .EUt(240)
     .duration(80)
     .buildAndRegister()
-
-// From Monazite Processing
-
-BR.recipeBuilder()
-    .inputs(ore('dustUranylHydroxidePrecipitate'))
-    .fluidInputs(fluid('tributyl_phosphate') * 50)
-    .outputs(metaitem('dustUraniumDioxide') * 3)
-    .chancedOutput(metaitem('dustMonaReHydroxides'), 100, 0)
-    .fluidOutputs(fluid('tributyl_phosphate') * 50)
-    .duration(80)
-    .EUt(120)
-    .buildAndRegister()

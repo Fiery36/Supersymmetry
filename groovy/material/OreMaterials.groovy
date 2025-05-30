@@ -515,6 +515,7 @@ public class OreMaterials{
         Xenotime = new Material.Builder(7067, SuSyUtility.susyId('xenotime'))
                 .dust()
                 .iconSet(SHINY)
+                .flags(GENERATE_CONCENTRATE)
                 .color(0x6e572e)
                 .components(Yttrium, Phosphorus, Oxygen * 4)
                 .build();

@@ -85,11 +85,7 @@ public class ThirdDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        TetrasodiumEthylenediaminetetraacetateSolution = new Material.Builder(24011, SuSyUtility.susyId('tetrasodium_ethylenediaminetetraacetate_solution'))
-                .liquid()
-                .components(TetrasodiumEthylenediaminetetraacetate * 1, Water * 4)
-                .colorAverage()
-                .build();
+        // FREE ID: 24011
 
         UreaSolution = new Material.Builder(24012, SuSyUtility.susyId('urea_solution'))
                 .liquid()

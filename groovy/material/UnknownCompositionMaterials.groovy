@@ -2864,17 +2864,12 @@ public class UnknownCompositionMaterials {
                 .color(0x7f7f7f)
                 .build();
 
-        P507P224ExtractionMixture = new Material.Builder(4630, SuSyUtility.susyId('p507_p224_extraction_mixture'))
+        P507P229ExtractionMixture = new Material.Builder(4630, SuSyUtility.susyId('p507_p229_extraction_mixture'))
                 .liquid()
                 .color(0x7f7f7f)
                 .build();
 
-        SpentP507P224ExtractionMixture = new Material.Builder(4631, SuSyUtility.susyId('spent_p507_p224_extraction_mixture'))
-                .liquid()
-                .color(0x7f7f7f)
-                .build();
-
-        CA12ExtractionMixture = new Material.Builder(4632, SuSyUtility.susyId('ca12_extraction_mixture'))
+        SpentP507P229ExtractionMixture = new Material.Builder(4631, SuSyUtility.susyId('spent_p507_p229_extraction_mixture'))
                 .liquid()
                 .color(0x7f7f7f)
                 .build();

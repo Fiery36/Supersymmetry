@@ -126,7 +126,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
         .duration(200)
         .buildAndRegister()
 
-    CRYSTALLIZER.recipeBuilder() //TODO: ADD LINOLEIC ACID
+    CRYSTALLIZER.recipeBuilder()
         .fluidInputs(fluid('fatty_acid_solution') * 1000)
         .fluidInputs(fluid('methanol') * 1000)
         .inputs(ore('dustUrea'))
@@ -238,7 +238,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
             .duration(80)
             .buildAndRegister()
 
-        //POTASSIUM ETHYL XANTHATE
+        //POTASSIUM ETHYL XANTHATE (NO USE)
 
         BR.recipeBuilder()
             .inputs(ore('dustPotassiumHydroxide') * 3)
@@ -314,7 +314,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
             .duration(80)
             .buildAndRegister()
 
-        //POTASSIUM ISOPROPYL XANTHATE
+        //POTASSIUM ISOPROPYL XANTHATE (NO USE)
 
         BR.recipeBuilder()
             .inputs(ore('dustPotassiumHydroxide') * 3)
@@ -333,7 +333,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
             .duration(80)
             .buildAndRegister()
 
-    //HEXYLAMMONIUM ACETATE
+    //HEXYLAMMONIUM ACETATE (NO USE)
 
     BR.recipeBuilder()
         .notConsumable(metaitem('dustActivatedRaneyNickel'))
@@ -413,7 +413,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
 
 //LIQUID-LIQUID EXTRACTANTS
 
-    //TODGA
+    //TODGA (NO USE)
 
     CSTR.recipeBuilder()
         .fluidInputs(fluid('diethylene_glycol') * 50)
@@ -517,6 +517,14 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
         .EUt(120)
         .buildAndRegister()
 
+    MIXER.recipeBuilder()
+        .fluidInputs(fluid('tributyl_phosphate') * 1000)
+        .fluidInputs(fluid('kerosene') * 9000)
+        .fluidOutputs(fluid('tributyl_phosphate_extraction_mixture') * 10000)
+        .duration(60)
+        .EUt(120)
+        .buildAndRegister()
+
     //D2EHPA (P204)
     
     CENTRIFUGE.recipeBuilder()
@@ -570,7 +578,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
         .EUt(120)
         .buildAndRegister()
 
-    //N1923
+    //N1923 (NO USE)
 
     MIXER.recipeBuilder()
         .inputs(ore('dustYttriumOxide') * 5)
@@ -844,8 +852,8 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
 
     MIXER.recipeBuilder()
         .inputs(ore('dustSmallSodiumHydroxide') * 3)
-        .fluidInputs(fluid('spent_P507_extraction_mixture') * 10000)
-        .fluidOutputs(fluid('P507_extraction_mixture') * 10000)
+        .fluidInputs(fluid('spent_P204_extraction_mixture') * 10000)
+        .fluidOutputs(fluid('P204_extraction_mixture') * 10000)
         .duration(10)
         .EUt(Globals.voltAmps[4])
         .buildAndRegister()
@@ -915,7 +923,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
         .EUt(120)
         .buildAndRegister()
 
-    // P224
+    // P229
 
     CSTR.recipeBuilder()
         .fluidInputs(fluid('hot_sulfuric_acid') * 100)
@@ -949,20 +957,20 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
         .fluidInputs(fluid('two_ethylhexyl_phosphonic_acid_mono_two_ethylhexyl_ester') * 1000)
         .fluidInputs(fluid('two_ethylhexanol') * 1000)
         .fluidInputs(fluid('kerosene') * 7000)
-        .fluidOutputs(fluid('P507_P224_extraction_mixture') * 10000)
+        .fluidOutputs(fluid('P507_P229_extraction_mixture') * 10000)
         .duration(120)
-        .EUt(1920)
+        .EUt(Globals.voltAmps[5])
         .buildAndRegister()
 
     MIXER.recipeBuilder()
         .inputs(ore('dustSmallSodiumHydroxide') * 6)
-        .fluidInputs(fluid('spent_P507_P224_extraction_mixture') * 10000)
-        .fluidOutputs(fluid('P507_P224_extraction_mixture') * 10000)
+        .fluidInputs(fluid('spent_P507_P229_extraction_mixture') * 10000)
+        .fluidOutputs(fluid('P507_P229_extraction_mixture') * 10000)
         .duration(10)
         .EUt(120)
         .buildAndRegister()
 
-    // CA-12
+    /* CA-12 (NO USE)
 
     CSTR.recipeBuilder()
         .notConsumable(fluid('sulfuric_acid') * 1000)
@@ -1008,8 +1016,8 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
         .fluidInputs(fluid('kerosene') * 900)
         .fluidOutputs(fluid('CA12_extraction_mixture') * 1000)
         .duration(100)
-        .EUt(120)
-        .buildAndRegister()
+        .EUt(Globals.voltAmps[5])
+        .buildAndRegister()*/
 
     // Aliquat 336
 
@@ -1026,7 +1034,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
         .fluidInputs(fluid('xylene') * 500)
         .fluidOutputs(fluid('aliquat_336_extraction_mixture') * 1000)
         .duration(100)
-        .EUt(120)
+        .EUt(Globals.voltAmps[5])
         .buildAndRegister()
 
 //ION EXCHANGE RESINS
@@ -1212,7 +1220,7 @@ ION_EXCHANGE = recipemap('ion_exchange_column')
 
     ION_EXCHANGE.recipeBuilder()
         .inputs(metaitem('beads.strong_acidic_cation_exchange'))
-        .fluidInputs(fluid('copper_chloride_solution') * 50)
+        .fluidInputs(fluid('copper_chloride_solution') * 10)
         .outputs(metaitem('beads.rare_earth_cation_exchange'))
         .duration(40)
         .EUt(480)

@@ -42,13 +42,6 @@ Y: 0.15
 0.2% HREEs
 */
 
-MACERATOR.recipeBuilder()
-    .inputs(item('susy:resource_block', 7))
-    .outputs(metaitem('dustBastnasite') * 4)
-    .duration(240)
-    .EUt(7)
-    .buildAndRegister()
-
 // Bastnasite beneficiation
 
 GRAVITY_SEPARATOR.recipeBuilder()
@@ -66,7 +59,7 @@ MIXER.recipeBuilder()
     .fluidInputs(fluid('distilled_water') * 2000)
     .fluidOutputs(fluid('impure_bastnasite_slurry') * 2000)
     .duration(80)
-    .EUt(480)
+    .EUt(30)
     .buildAndRegister()
 
 FROTH_FLOTATION.recipeBuilder()
@@ -98,7 +91,7 @@ for (fuel in sintering_fuels) {
             .fluidOutputs(fluid('carbon_dioxide') * 2000)
             .fluidOutputs(fluid('dense_steam') * 2000)
             .duration(80)
-            .EUt(120)
+            .EUt(480)
             .buildAndRegister()
     }
 }   
@@ -110,59 +103,59 @@ AUTOCLAVE.recipeBuilder()
     .outputs(metaitem('dustBastReHydroxides'))
     .fluidOutputs(fluid('sodium_sulfate_solution') * 2000)
     .duration(40)
-    .EUt(30)
+    .EUt(120)
     .buildAndRegister()
 
-// Bastnasite Concentrate Processing
+// Bastnasite REE Concentrate Processing
 // RE3+ + 2.5 H2L2 (dimers) -> REL(HL2)2 + 3H+ (acidic organophosphorous extractants)
 
 ROASTER.recipeBuilder()
     .inputs(ore('dustBastReHydroxides'))
     .fluidInputs(fluid('air') * 1200)
-    .outputs(metaitem('dustOxidizedBastReHydroxides'))
+    .outputs(metaitem('dustBastOxReHydroxides'))
     .duration(80)
     .EUt(120)
     .buildAndRegister()
 
 BR.recipeBuilder()
-    .inputs(ore('dustOxidizedBastReHydroxides'))
-    .fluidInputs(fluid('nitric_acid') * 3000)
-    .fluidOutputs(fluid('bast_ox_re_nitrates_solution') * 3000)
+    .inputs(ore('dustBastOxReHydroxides'))
+    .fluidInputs(fluid('nitric_acid') * 3500)
+    .fluidOutputs(fluid('bast_ox_re_nitrates_solution') * 1000)
     .duration(80)
-    .EUt(120)
+    .EUt(30)
     .buildAndRegister()
 
 CENTRIFUGE.recipeBuilder()
     .fluidInputs(fluid('bast_ox_re_nitrates_solution') * 1000)
-    .fluidInputs(fluid('tributyl_phosphate') * 1000)
-    .fluidOutputs(fluid('cerium_extract') * 1000)
-    .fluidOutputs(fluid('bast_ce_free_re_nitrates_solution') * 1000)
+    .fluidInputs(fluid('tributyl_phosphate_extraction_mixture') * 10000)
+    .fluidOutputs(fluid('bast_ce_free_solution') * 1000)
+    .fluidOutputs(fluid('cerium_extract') * 10000)
     .duration(80)
     .EUt(120)
     .buildAndRegister()
 
 CENTRIFUGE.recipeBuilder()
-    .fluidInputs(fluid('bast_ce_free_re_nitrates_solution') * 1000)
+    .fluidInputs(fluid('bast_ce_free_solution') * 1000)
     .fluidInputs(fluid('P204_extraction_mixture') * 300)
-    .fluidOutputs(fluid('bast_lree_concentrate') * 1000)
-    .fluidOutputs(fluid('bast_mree_extract') * 300)
+    .fluidOutputs(fluid('bast_lree_concentrate') * 1000) // contains 0.036 mol H+
+    .fluidOutputs(fluid('bast_lree_free_extract') * 300)
     .duration(80)
     .EUt(120)
     .buildAndRegister()
 
 CENTRIFUGE.recipeBuilder()
     .fluidInputs(fluid('hydrochloric_acid') * 4350)
-    .fluidInputs(fluid('bast_mree_extract') * 30000) // MREE/HREEs enriched hundredfold
-    .fluidOutputs(fluid('bast_mree_chlorides_solution') * 4350)
+    .fluidInputs(fluid('bast_lree_free_extract') * 30000) // MREE/HREEs enriched hundredfold
+    .fluidOutputs(fluid('bast_lree_free_concentrate') * 4350)
     .fluidOutputs(fluid('spent_P204_extraction_mixture') * 30000)
     .duration(80)
     .EUt(120)
     .buildAndRegister()
 
 CENTRIFUGE.recipeBuilder()
-    .fluidInputs(fluid('bast_mree_chlorides_solution') * 4350)
+    .fluidInputs(fluid('bast_lree_free_concentrate') * 4350)
     .fluidInputs(fluid('P507_extraction_mixture') * 5000)
-    .fluidOutputs(fluid('bast_mree_concentrate') * 4350) // contains 1.5 mol H+
+    .fluidOutputs(fluid('bast_mree_concentrate') * 4350) // contains 0.6 mol H+
     .fluidOutputs(fluid('bast_hree_extract') * 5000)
     .duration(80)
     .EUt(120)
@@ -181,35 +174,36 @@ CENTRIFUGE.recipeBuilder()
 
 // LREE separation
     // La: 0.34
-    // Pr: 0.4
+    // Pr: 0.04
     // Nd: 0.108
 
-    CRYSTALLIZER.recipeBuilder()
-        .inputs(ore('dustAmmoniumCarbonate') * 21)
-        .inputs(ore('dustSodiumHydroxide') * 5)
+    LCR.recipeBuilder()
+        .inputs(ore('dustAmmoniumCarbonate') * 8)
+        .fluidInputs(fluid('ammonia_solution') * 544)
         .fluidInputs(fluid('bast_lree_concentrate') * 1000)
         .chancedOutput(metaitem('dustLanthanumCarbonate') * 14, 1700, 0)
         .outputs(metaitem('dustBastPrNdHydroxides'))
+        .fluidOutputs(fluid('wastewater') * 1036)
         .duration(2000)
-        .EUt(120)
+        .EUt(30)
         .buildAndRegister()
 
     BR.recipeBuilder()
         .notConsumable(fluid('potassium_hydroxide') * 432)
         .inputs(ore('dustBastPrNdHydroxides'))
         .inputs(ore('dustTinyPotassiumChlorate'))
-        .outputs(metaitem('dustOxidizedBastPrNdConcentrate'))
+        .outputs(metaitem('dustBastOxPrNdConcentrate'))
         .duration(2000)
-        .EUt(120)
+        .EUt(30)
         .buildAndRegister()
 
     BR.recipeBuilder()
-        .inputs(ore('dustOxidizedBastPrNdConcentrate'))
+        .inputs(ore('dustBastOxPrNdConcentrate'))
         .fluidInputs(fluid('hydrochloric_acid') * 324)
-        .chancedOutput(metaitem('dustPraseodymiumIvOxide') * 3, 400, 0)
-        .fluidOutputs(fluid('neodymium_chloride_solution') * 324)
+        .chancedOutput(metaitem('dustPraseodymiumIvOxide'), 1200, 0)
+        .fluidOutputs(fluid('neodymium_chloride_solution') * 648)
         .duration(2000)
-        .EUt(120)
+        .EUt(30)
         .buildAndRegister()
 
 // MREE separation
@@ -223,85 +217,17 @@ CENTRIFUGE.recipeBuilder()
         .chancedOutput(metaitem('dustZinc'), 9500, 0)
         .fluidOutputs(fluid('bast_reduced_mree_concentrate') * 4350)
         .duration(80)
-        .EUt(120)
+        .EUt(30)
         .buildAndRegister()
 
     BR.recipeBuilder()
         .fluidInputs(fluid('bast_reduced_mree_concentrate') * 4350)
         .fluidInputs(fluid('sulfuric_acid') * 100)
         .chancedOutput(metaitem('dustEuropiumIiSulfate'), 6000, 0)
-        .fluidOutputs(fluid('bast_sm_gd_concentrate') * 4350) // contains 1.7 mol H+
+        .fluidOutputs(fluid('bast_sm_gd_concentrate') * 4350)
         .duration(80)
-        .EUt(120)
+        .EUt(30)
         .buildAndRegister()
-
-    LCR.recipeBuilder()
-        .fluidInputs(fluid('bast_sm_gd_concentrate') * 4350)
-        .fluidInputs(fluid('sodium_amalgam') * 750)
-        .fluidOutputs(fluid('samarium_amalgam') * 750)
-        .fluidOutputs(fluid('bast_gd_concentrate') * 4350)
-        .duration(2000)
-        .EUt(480)
-        .buildAndRegister()
-
-    ION_EXCHANGE.recipeBuilder()
-        .inputs(metaitem('beads.strong_basic_anion_exchange') * 10)
-        .fluidInputs(fluid('bast_gd_concentrate') * 2900)
-        .outputs(metaitem('beads.loaded_gadolinium_anion_exchange') * 10)
-        .fluidOutputs(fluid('wastewater') * 2900)
-        .duration(400)
-        .EUt(16)
-        .buildAndRegister()
-
-// Bastnasite Element Extraction Tier 2 (IV)
-
-// LREE separation
-    // La: 0.34
-    // Pr: 0.4
-    // Nd: 0.108
-    // Per 1000L of bastnasite LREE concentrate
-    // Total: 1.348 moles of LREEs
-
-    // La separation
-    CENTRIFUGE.recipeBuilder()
-        .inputs(ore('dustPenteticAcid') * 5)
-        .fluidInputs(fluid('bast_lree_concentrate') * 1000) // contains 0.34 La, 0.04 Pr, 0.108 Nd
-        .fluidInputs(fluid('aliquat_336_extraction_mixture') * 3400)
-        .fluidOutputs(fluid('bast_didymium_conentrate') * 1000)
-        .fluidOutputs(fluid('lanthanium_extract') * 3400)
-        .duration(80)
-        .EUt(120)
-        .buildAndRegister()
-
-    // Didymium separation
-    CENTRIFUGE.recipeBuilder()
-        .inputs(ore('dustPenteticAcid') * 5)
-        .fluidInputs(fluid('bast_didymium_conentrate') * 1000)
-        .fluidInputs(fluid('aliquat_336_extraction_mixture') * 400)
-        .fluidOutputs(fluid('bast_neodymium_concentrate') * 1000)
-        .fluidOutputs(fluid('praseodymium_extract') * 400)
-        .duration(80)
-        .EUt(120)
-        .buildAndRegister()
-
-    // Neodymium preciptation
-    BR.recipeBuilder()
-        .inputs(ore('dustSodiumHydroxide'))
-        .fluidInputs(fluid('bast_neodymium_concentrate') * 1000)
-        .chancedOutput(metaitem('dustNeodymiumHydroxide') * 7, 1080, 0)
-        .fluidOutputs(fluid('wastewater') * 1000)
-        .duration(80)
-        .EUt(120)
-        .buildAndRegister()
-    
-// MREE separation
-    // Sm: 0.75
-    // Eu: 0.1
-    // Gd: 0.15
-    // Per 3675L of bastnasite MREE concentrate
-    // Total: 0.2 moles of MREEs
-
-    // Europium separation same as tier 1
 
     // Gadolinium separation
     CENTRIFUGE.recipeBuilder()
@@ -323,6 +249,56 @@ CENTRIFUGE.recipeBuilder()
         .EUt(120)
         .buildAndRegister()
 
+// Bastnasite Element Extraction Tier 2 (IV)
+
+// LREE separation
+    // La: 0.34
+    // Pr: 0.04
+    // Nd: 0.108
+    // Per 3000L of bastnasite LREE concentrate
+    // Total: 1.348 moles of LREEs
+
+    // Lanthanum separation
+    CENTRIFUGE.recipeBuilder()
+        .inputs(ore('dustPenteticAcid') * 3)
+        .fluidInputs(fluid('bast_lree_concentrate') * 1000) // contains 0.34 La, 0.04 Pr, 0.108 Nd
+        .fluidInputs(fluid('aliquat_336_extraction_mixture') * 3400)
+        .fluidOutputs(fluid('bast_didymium_concentrate') * 1000)
+        .fluidOutputs(fluid('lanthanium_extract') * 3400)
+        .duration(80)
+        .EUt(120)
+        .buildAndRegister()
+
+    // Didymium separation
+    CENTRIFUGE.recipeBuilder()
+        .inputs(ore('dustPenteticAcid'))
+        .fluidInputs(fluid('bast_didymium_concentrate') * 1000)
+        .fluidInputs(fluid('aliquat_336_extraction_mixture') * 400)
+        .fluidOutputs(fluid('bast_nd_concentrate') * 1000)
+        .fluidOutputs(fluid('praseodymium_extract') * 400)
+        .duration(80)
+        .EUt(120)
+        .buildAndRegister()
+
+    // Neodymium extraction
+    BR.recipeBuilder()
+        .fluidInputs(fluid('hydrofluoric_acid') * 324)
+        .fluidInputs(fluid('bast_nd_concentrate') * 1000)
+        .chancedOutput(metaitem('dustNeodymiumFluoride') * 4320, 0)
+        .fluidOutputs(fluid('wastewater') * 1324)
+        .duration(80)
+        .EUt(120)
+        .buildAndRegister()
+
+// MREE separation
+    // Sm: 0.75
+    // Eu: 0.1
+    // Gd: 0.15
+    // Per 3675L of bastnasite MREE concentrate
+    // Total: 0.2 moles of MREEs
+
+    // Separation same as tier 1
+
 // HREE separation
     // Tb: 0.01
     // Dy: 0.03
@@ -338,7 +314,7 @@ CENTRIFUGE.recipeBuilder()
     // Primary purification
     CENTRIFUGE.recipeBuilder()
         .fluidInputs(fluid('bast_hree_concentrate') * 1325)
-        .fluidInputs(fluid('P507_P224_extraction_mixture') * 5000)
+        .fluidInputs(fluid('P507_P229_extraction_mixture') * 5000)
         .fluidOutputs(fluid('acidic_wastewater') * 1325)
         .fluidOutputs(fluid('bast_purified_hree_extract') * 5000)
         .duration(80)
@@ -348,9 +324,9 @@ CENTRIFUGE.recipeBuilder()
     CENTRIFUGE.recipeBuilder()
         .fluidInputs(fluid('bast_purified_hree_extract') * 5000)
         .fluidInputs(fluid('distilled_water') * 5000)
-        .fluidInputs(fluid('nitric_acid') * 100)
+        .fluidInputs(fluid('nitric_acid') * 125)
         .fluidOutputs(fluid('bast_scrubbed_hree_extract') * 5000)
-        .fluidOutputs(fluid('acidic_wastewater') * 5000)
+        .fluidOutputs(fluid('wastewater') * 5000)
         .duration(80)
         .EUt(120)
         .buildAndRegister()
@@ -360,7 +336,7 @@ CENTRIFUGE.recipeBuilder()
         .fluidInputs(fluid('nitric_acid') * 594)
         .fluidInputs(fluid('distilled_water') * 1000)
         .fluidInputs(fluid('bast_scrubbed_hree_extract') * 5000)
-        .fluidOutputs(fluid('bast_yttrium_group_concentrate') * 1000)
+        .fluidOutputs(fluid('bast_yttrium_rich_concentrate') * 1000)
         .fluidOutputs(fluid('bast_tm_yb_extract') * 5000)
         .duration(80)
         .EUt(120)
@@ -369,8 +345,8 @@ CENTRIFUGE.recipeBuilder()
     // Yttrium separation & precipitation
     CENTRIFUGE.recipeBuilder()
         .inputs(ore('dustAmmoniumThiocyanate'))
-        .inputs(ore('dustPenteticAcid') * 5)
-        .fluidInputs(fluid('bast_yttrium_group_concentrate') * 1000)
+        .inputs(ore('dustPenteticAcid'))
+        .fluidInputs(fluid('bast_yttrium_rich_concentrate') * 1000)
         .fluidInputs(fluid('aliquat_336_extraction_mixture') * 480)
         .fluidOutputs(fluid('bast_yttrium_concentrate') * 1000)
         .fluidOutputs(fluid('bast_terbium_group_extract') * 480)
@@ -379,12 +355,12 @@ CENTRIFUGE.recipeBuilder()
         .buildAndRegister()
 
     BR.recipeBuilder()
-        .inputs(ore('dustSmallSodiumHydroxide') * 2)
+        .inputs(ore('dustSodiumHydroxide') * 2)
         .fluidInputs(fluid('bast_yttrium_concentrate') * 1000)
         .chancedOutput(metaitem('dustYttriumHydroxide') * 7, 1500, 0)
         .fluidOutputs(fluid('wastewater') * 1000)
         .duration(80)
-        .EUt(120)
+        .EUt(30)
         .buildAndRegister()
 
     // Terbium group separation
@@ -399,7 +375,7 @@ CENTRIFUGE.recipeBuilder()
 
     CENTRIFUGE.recipeBuilder()
         .fluidInputs(fluid('bast_terbium_group_concentrate') * 48)
-        .fluidInputs(fluid('P507_P224_extraction_mixture') * 1200)
+        .fluidInputs(fluid('P507_P229_extraction_mixture') * 1200)
         .fluidOutputs(fluid('acidic_wastewater') * 48)
         .fluidOutputs(fluid('bast_purified_terbium_group_extract') * 1200)
         .duration(80)
@@ -408,8 +384,8 @@ CENTRIFUGE.recipeBuilder()
 
     CENTRIFUGE.recipeBuilder()
         .fluidInputs(fluid('bast_purified_terbium_group_extract') * 1200)
-        .fluidInputs(fluid('hydrochloric_acid') * 60)
-        .fluidOutputs(fluid('bast_scrubbed_terbium_group_extract') * 1200)
+        .fluidInputs(fluid('hydrochloric_acid') * 60) // 30 to neutralize, 30 to solvate
+        .fluidOutputs(fluid('bast_terbium_free_extract') * 1200)
         .fluidOutputs(fluid('bast_terbium_concentrate') * 60)
         .duration(80)
         .EUt(120)
@@ -417,17 +393,17 @@ CENTRIFUGE.recipeBuilder()
 
     BR.recipeBuilder()
         .fluidInputs(fluid('bast_terbium_concentrate') * 6000)
-        .inputs(ore('dustSodiumHydroxide') * 9)
-        .outputs(metaitem('dustTerbiumHydroxide') * 7)
-        .fluidOutputs(fluid('diluted_salt_water') * 6000)
+        .fluidInputs(fluid('hydrofluoric_acid') * 3000)
+        .outputs(metaitem('dustTerbiumFluoride') * 4)
+        .fluidOutputs(fluid('acidic_wastewater') * 9000)
         .duration(80)
-        .EUt(120)
+        .EUt(30)
         .buildAndRegister()
 
     CENTRIFUGE.recipeBuilder()
-        .fluidInputs(fluid('diluted_hydrochloric_acid') * 60)
-        .fluidInputs(fluid('bast_scrubbed_terbium_group_extract') * 1200)
-        .fluidOutputs(fluid('dysprosium_concentrate') * 60)
+        .fluidInputs(fluid('diluted_hydrochloric_acid') * 180)
+        .fluidInputs(fluid('bast_terbium_free_extract') * 1200)
+        .fluidOutputs(fluid('dysprosium_chloride_solution') * 180)
         .fluidOutputs(fluid('bast_ho_er_extract') * 1200)
         .duration(80)
         .EUt(120)
@@ -446,7 +422,7 @@ CENTRIFUGE.recipeBuilder()
     CENTRIFUGE.recipeBuilder()
         .fluidInputs(fluid('bast_er_extract') * 1200)
         .fluidInputs(fluid('diluted_sulfuric_acid') * 12)
-        .fluidOutputs(fluid('bast_holmium_concentrate') * 1200)
+        .fluidOutputs(fluid('spent_P507_P229_extraction_mixture') * 1200)
         .fluidOutputs(fluid('erbium_sulfate_solution') * 6)
         .duration(80)
         .EUt(120)
@@ -455,7 +431,7 @@ CENTRIFUGE.recipeBuilder()
     CENTRIFUGE.recipeBuilder()
         .fluidInputs(fluid('bast_tm_yb_extract') * 5000)
         .fluidInputs(fluid('hydrochloric_acid') * 6)
-        .fluidOutputs(fluid('spent_P507_P224_extraction_mixture') * 5000)
+        .fluidOutputs(fluid('spent_P507_P229_extraction_mixture') * 5000)
         .fluidOutputs(fluid('bast_tm_yb_concentrate') * 6)
         .duration(80)
         .EUt(120)
@@ -463,18 +439,18 @@ CENTRIFUGE.recipeBuilder()
 
     LCR.recipeBuilder()
         .fluidInputs(fluid('bast_tm_yb_concentrate') * 60)
-        .fluidInputs(fluid('sodium_amalgam')* 10)
+        .fluidInputs(fluid('sodium_amalgam') * 10)
         .fluidOutputs(fluid('ytterbium_amalgam') * 10)
-        .fluidOutputs(fluid('bast_thulium_concentrate') * 60)
+        .fluidOutputs(fluid('bast_tm_concentrate') * 60)
         .duration(80)
-        .EUt(480)
+        .EUt(30)
         .buildAndRegister()
 
     BR.recipeBuilder()
-        .inputs(ore('dustSodiumHydroxide') * 9)
-        .fluidInputs(fluid('bast_thulium_concentrate') * 6000)
-        .chancedOutput(metaitem('dustThuliumHydroxide') * 7)
-        .fluidOutputs(fluid('wastewater') * 6000)
+        .fluidInputs(fluid('hydrofluoric_acid') * 3000)
+        .fluidInputs(fluid('bast_tm_concentrate') * 6000)
+        .chancedOutput(metaitem('dustThuliumFluoride') * 4)
+        .fluidOutputs(fluid('acidic_wastewater') * 9000)
         .duration(80)
-        .EUt(120)
+        .EUt(30)
         .buildAndRegister()

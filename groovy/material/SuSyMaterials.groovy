@@ -1321,18 +1321,136 @@ class SuSyMaterials {
         public static Material WeaponsGradeUraniumDioxide;
         public static Material DepletedUraniumDioxide;
 
-        // Rare Earth Processing Materials
+        // Rare Earth Processing Materials 
+        // Not registered in SuSyMaterials.groovy:
+
+        // ThoriumConcentrate
+        // BastReHydroxides, MonaReHydroxides, XenoReHydroxides
+        // BastOxReHydroxides, MonaOxReHydroxides
+        // BastOxReNitratesSolution, MonaOxReNitratesSolution, XenoReNitratesSolution
+        // TributylPhosphateExtractionMixture
+        // BastCeFreeSolution, MonaCeFreeSolution
+        // CeriumExtract
+        // P204ExtractionMixture
+        // BastLreeConcentrate, MonaLreeConcentrate, XenoLreeExtract
+        // BastLreeFreeExtract, MonaLreeFreeExtract
+        // BastLreeFreeConcentrate, MonaLreeFreeConcentrate, XenoLreeFreeConcentrate
+        // SpentP204ExtractionMixture
+        // P507ExtractionMixture
+        // BastMreeConcentrate, MonaMreeConcentrate, XenoMreeConcentrate
+        // XenoMreeExtract
+        // XenoEnrichedMreeConcentrate
+        // BastHreeExtract, MonaHreeExtract, XenoHreeExtract
+        // BastHreeConcentrate, MonaHreeConcentrate
+        // SpentP507ExtractionMixture
+        // CeriumIvHydroxide
+        // XenoCeFreeConcentrate
+        // BastPrNdHydroxides, MonaPrNdHydroxides
+        // BastOxPrNdConcentrate, MonaOxPrNdConcentrate
+        // PraseodymiumIvOxide
+        // NeodymiumChlorideSolution
+        // XenoEnrichedMreeConcentrate
+        // BastReducedMreeConcentrate, MonaReducedMreeConcentrate, XenoReducedMreeConcentrate
+        // BastSmGdConcentrate, MonaSmGdConcentrate, XenoSmGdConcentrate
+        // BastSmConcentrate, MonaSmConcentrate, XenoSmConcentrate
+        // GadoliniumExtract
+        // SamariumHydroxide
+        // PenteticAcid
+        // Aliquat336ExtractionMixture
+        // BastDidymiumConcentrate, MonaDidymiumConcentrate, XenoDidymiumConcentrate
+        // LanthanumExtract
+        // BastNdConcentrate, MonaNdConcentrate, XenoNdConcentrate
+        // PraseodymiumExtract
+        // P507P229ExtractionMixture
+        // BastPurifiedHreeExtract, MonaPurifiedHreeExtract
+        // BastScrubbedHreeExtract, MonaScrubbedHreeExtract, XenoScrubbedHreeExtract
+        // BastYttriumRichConcentrate, MonaYttriumRichConcentrate, XenoYttriumRichConcentrate
+        // BastTmYbExtract, MonaThuliumGroupExtract, XenoThuliumGroupExtract
+        // BastYttriumConcentrate, MonaYttriumConcentrate, XenoYttriumConcentrate
+        // BastTerbiumGroupExtract, MonaTerbiumGroupExtract, XenoTerbiumGroupExtract
+        // YttriumHydroxide
+        // BastTerbiumGroupConcentrate, MonaTerbiumGroupConcentrate, XenoTerbiumGroupConcentrate
+        // BastPurifiedTerbiumGroupExtract, MonaPurifiedTerbiumGroupExtract, XenoPurifiedTerbiumGroupExtract
+        // BastTerbiumFreeExtract, MonaTerbiumFreeExtract, XenoTerbiumFreeExtract
+        // BastTerbiumConcentrate, MonaTerbiumConcentrate, XenoTerbiumConcentrate
+        // TerbiumFluoride
+        // DysprosiumConcentrate
+        // BastHoErExtract, MonaHoErExtract, XenoHoErExtract
+        // BastErExtract, MonaErExtract, XenoErExtract
+        // HolmiumChlorideSolution
+        // SpentP507P229ExtractionMixture
+        // ErbiumSulfateSolution
+        // BastTmYbConcentrate, MonaThuliumGroupConcentrate, XenoThuliumGroupConcentrate
+        // MonaTmLuConcentrate, XenoTmLuConcentrate
+        // NHydroxyethylEthylenediaminetriaceticAcid
+        // BastTmConcentrate, MonaTmConcentrate, XenoTmConcentrate
+        // ThuliumFluoride
+
+        // Registered in SuSyMaterials.groovy but NOT in your list:
+        // SiftedMonaziteLeach
+        // MonaziteWaste
+        // ThoriumHydroxidePrecipitate
+        // ThoriumHydroxide
+        // ThoriumDioxide
+        // UranylHydroxidePrecipitate
+        // UranylHydroxide
+        // ConcentratedBastnasite
+        // XenotimeSlurry
+        // XenotimeResidue
+        // CrudeXenotimeNitrateSolution
+        // XenotimePhosphateWaste
+        // XenotimeTailing
+        // CeriumIVNitrate
+        // CeriumFluoride
+        // LanthanumChloride
+        // LanthanumFluoride
+        // LanthanumOxide
+        // PraseodymiumOxide
+        // PraseodymiumFluoride
+        // NeodymiumHydroxide
+        // NeodymiumFluoride
+        // EuropiumIISulfate
+        // EuropiumOxide
+        // EuropiumFluoride
+        // SamariumAmalgam
+        // SamariumChlorideSolution
+        // SamariumChloride
+        // GadoliniumHydroxide
+        // GadoliniumOxide
+        // GadoliniumFluoride
+        // TerbiumCarbonate
+        // TerbiumOxide
+        // TerbiumFluoride
+        // DysprosiumFluoride
+        // YttriumChlorideSolution
+        // YttriumChloride
+        // YttriumSponge
+        // ErbiumDodecylSulfate
+        // ErbiumHydroxide
+        // ErbiumOxide
+        // ErbiumFluoride
+        // HolmiumDodecylSulfate
+        // HolmiumHydroxide
+        // HolmiumOxide
+        // HolmiumFluoride
+        // YtterbiumAmalgam
+        // YtterbiumChlorideSolution
+        // YtterbiumChloride
+        // ThuliumChlorideSolution
+        // ThuliumChloride
+        // LutetiumChlorideSolution
+        // LutetiumChloride
+        // ...and all the Monazitic/Bastnasitic/Xenotimic* intermediate/waste/concentrate/extract materials already listed in the file.
 
         public static Material PotassiumChlorate;
         public static Material AmmoniumCarbonate;
         public static Material SodiumAmalgam;
-        public static Material CopperChlorideSolution;
-        public static Material PhosphorousAcid;
-        public static Material PhosphorousAcidSolution;
+        public static Material CopperIIChlorideSolution;
         public static Material SodiumPhosphate;
+        // SodiumPhosphateSolution
+        // SaltyPhosphoricAcid
 
         public static Material MonaziteLeach;
-        public static Material SiftedMonaziteLeach;
         public static Material ThoriumFreeMonaziteLeach;
         public static Material RareEarthFreeMonaziteLeach;
         public static Material MonaziteWaste;
@@ -2127,7 +2245,6 @@ class SuSyMaterials {
         public static Material AcetamideSolution;
         public static Material HydrazineSolution;
         public static Material EthylenediaminetetraaceticAcidSolution;
-        public static Material TetrasodiumEthylenediaminetetraacetateSolution;
         public static Material UreaSolution;
         public static Material DiiodobenzeneSolution;
         public static Material ImpureFourFourOxydianiline;

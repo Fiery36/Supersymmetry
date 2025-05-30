@@ -1,20 +1,26 @@
 import globals.Globals
 
-import static gregtech.api.unification.material.Materials.*;
-import gregtech.api.unification.material.MarkerMaterials;
-import static gregtech.api.unification.ore.OrePrefix.dye;
-
 REACTION_FURNACE = recipemap('reaction_furnace')
 BR = recipemap('batch_reactor')
+DISTILLERY = recipemap('distillery')
 
-BR.recipeBuilder()
-    .fluidInputs(fluid('holmium_chloride_solution') * 3000)
-    .fluidInputs(fluid('hydrofluoric_acid') * 3000)
-    .outputs(metaitem('dustHolmiumFluoride') * 4)
-    .duration(100)
-    .EUt(Globals.voltAmps[2])
+DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('holmium_chloride_solution') * 9000)
+    .outputs(metaitem('dustHolmiumChloride') * 4)
+    .fluidOutputs(fluid('water') * 9000)
+    .duration(20)
+    .EUt(30)
     .buildAndRegister()
 
+BR.recipeBuilder()
+    .inputs(ore('dustHolmiumChloride') * 4)
+    .fluidInputs(fluid('hydrofluoric_acid') * 3000)
+    .outputs(metaitem('dustHolmiumFluoride') * 4)
+    .fluidOutputs(fluid('hydrochloric_acid') * 3000)
+    .duration(80)
+    .EUt(30)
+    .buildAndRegister()
+    
 REACTION_FURNACE.recipeBuilder()
     .notConsumable(metaitem('crucible.tantalum'))
     .inputs(ore('dustHolmiumFluoride') * 8)

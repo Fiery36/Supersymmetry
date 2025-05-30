@@ -1,24 +1,22 @@
 import globals.Globals
 
-import static gregtech.api.unification.material.Materials.*;
-import gregtech.api.unification.material.MarkerMaterials;
-import static gregtech.api.unification.ore.OrePrefix.dye;
-
 ROASTER = recipemap('roaster')
 REACTION_FURNACE = recipemap('reaction_furnace')
 
 ROASTER.recipeBuilder()
-    .inputs(ore('dustEuropiumIiSulfate') * 6)
-    .outputs(metaitem('dustEuropiumOxide') * 2)
-    .fluidOutputs(fluid('sulfur_trioxide') * 1000)
+    .inputs(ore('dustEuropiumIiSulfate') * 12)
+    .fluidInputs(fluid('oxygen') * 1000)
+    .outputs(metaitem('dustEuropiumIiiOxide') * 5)
+    .fluidOutputs(fluid('sulfur_trioxide') * 2000)
     .duration(80)
-    .EUt(480)
+    .EUt(120)
     .buildAndRegister()
 
 REACTION_FURNACE.recipeBuilder()
-    .inputs(ore('dustEuropiumOxide') * 6)
+    .notConsumable(metaitem('crucible.tantalum'))
+    .inputs(ore('dustEuropiumIiiOxide') * 5)
     .inputs(ore('dustLanthanum') * 2)
-    .outputs(metaitem('dustEuropium') * 3)
+    .outputs(metaitem('dustEuropium') * 2)
     .outputs(metaitem('dustLanthanumOxide') * 5)
     .duration(200)
     .EUt(480)

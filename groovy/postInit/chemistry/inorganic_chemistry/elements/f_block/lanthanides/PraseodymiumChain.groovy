@@ -1,33 +1,33 @@
-import globals.Globals
-
-import static gregtech.api.unification.material.Materials.*;
-import gregtech.api.unification.material.MarkerMaterials;
-import static gregtech.api.unification.ore.OrePrefix.dye;
+import globals.globals
 
 BR = recipemap('batch_reactor')
 REACTION_FURNACE = recipemap('reaction_furnace')
 CENTRIFUGE = recipemap('centrifuge')
 DISTILLERY = recipemap('distillery')
-ROASTER = recipemap('roaster')
 
 // Tier 1
-ROASTER.recipeBuilder()
+
+// PrO2 + 4HF -> Pr4+ + 2H2O + 4F-
+// Pr4+ + 1/2H2O -> Pr3+ + H+ + 1/2O
+// PrO2 + 3HF -> PrF3 + 3/2H2O + 1/2O
+
+BR.recipeBuilder()
     .inputs(ore('dustPraseodymiumIvOxide') * 6)
-    .fluidInputs(fluid('hydrofluoric_acid') * 8000)
+    .fluidInputs(fluid('hydrofluoric_acid') * 6000)
     .outputs(metaitem('dustPraseodymiumIiiFluoride') * 8)
-    .fluidOutputs(fluid('dense_steam') * 12000)
-    .fluidOutputs(fluid('fluorine') * 2000)
+    .fluidOutputs(fluid('water') * 3000)
+    .fluidOutputs(fluid('oxygen') * 1000)
     .duration(80)
-    .EUt(60)
+    .EUt(120)
     .buildAndRegister()
 
 REACTION_FURNACE.recipeBuilder()
-    .notConsumable(metaitem('crucible.graphite'))
-    .inputs(ore('dustPraseodymiumFluoride') * 5)
-    .inputs(ore('dustCalcium') * 2)
+    .notConsumable(metaitem('crucible.tantalum'))
+    .inputs(ore('dustPraseodymiumIiiFluoride') * 8)
+    .inputs(ore('dustCalcium') * 3)
     .fluidInputs(fluid('argon') * 50)
-    .outputs(metaitem('dustPraseodymium') * 1)
-    .outputs(metaitem('dustFluorite') * 6)
+    .outputs(metaitem('dustPraseodymium') * 2)
+    .outputs(metaitem('dustFluorite') * 9)
     .duration(200)
     .EUt(960)
     .buildAndRegister()
@@ -50,20 +50,11 @@ DISTILLERY.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
-ROASTER.recipeBuilder()
-    .inputs(ore('dustPraseodymiumIiiNitrate') * 26)
-    .outputs(metaitem('dustPraseodymiumIiiOxide') * 5)
-    .fluidOutputs(fluid('nitrogen_dioxide') * 6000)
-    .fluidOutputs(fluid('oxygen') * 3000)
+BR.recipeBuilder()
+    .inputs(metaitem('dustPraseodymiumIiiNitrate') * 13)
+    .fluidInputs(fluid('hydrofluoric_acid') * 3000)
+    .outputs(metaitem('dustPraseodymiumIiiFluoride') * 4)
+    .fluidOutputs(fluid('diluted_nitric_acid') * 6000)
     .duration(80)
-    .EUt(120)
-    .buildAndRegister()
-
-ROASTER.recipeBuilder()
-    .inputs(ore('dustPraseodymiumIiiOxide') * 5)
-    .fluidInputs(fluid('hydrofluoric_acid') * 6000)
-    .outputs(metaitem('dustPraseodymiumIiiFluoride') * 8)
-    .fluidOutputs(fluid('dense_steam') * 9000)
-    .duration(80)
-    .EUt(60)
+    .EUt(30)
     .buildAndRegister()
