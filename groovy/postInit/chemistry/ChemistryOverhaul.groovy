@@ -3856,12 +3856,12 @@ mods.gregtech.fluid_solidifier.recipeBuilder()
 
 // Iron III Nitrate Solution
 BR.recipeBuilder()
-        .inputs(metaitem('dustIronIiiHydroxide') * 7)
-        .fluidInputs(fluid('nitric_acid') * 3000)
-        .fluidOutputs(fluid('iron_iii_nitrate_solution') * 3000)
-        .duration(100)
-        .EUt(30)
-        .buildAndRegister()
+    .inputs(metaitem('dustIronIiiHydroxide') * 7)
+    .fluidInputs(fluid('nitric_acid') * 3000)
+    .fluidOutputs(fluid('iron_iii_nitrate_solution') * 3000)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister()
 
 // Diluted NaClO3
 
@@ -3927,39 +3927,7 @@ MIXER.recipeBuilder()
     .EUt(7)
     .buildAndRegister()
 
-// Phosphorous Acid
-
-CSTR.recipeBuilder()
-    .fluidInputs(fluid('water') * 75)
-    .fluidInputs(fluid('phosphorus_trichloride') * 25)
-    .fluidOutputs(fluid('phosphorous_acid_solution') * 100)
-    .duration(5)
-    .EUt(30)
-    .buildAndRegister()
-
-DISTILLERY.recipeBuilder()
-    .circuitMeta(1)
-    .fluidInputs(fluid('phosphorous_acid_solution') * 100)
-    .fluidOutputs(fluid('phosphorous_acid') * 25)
-    .duration(10)
-    .EUt(30)
-    .buildAndRegister()
-
-DISTILLERY.recipeBuilder()
-    .circuitMeta(2)
-    .fluidInputs(fluid('phosphorous_acid_solution') * 100)
-    .fluidOutputs(fluid('hydrogen_chloride') * 75)
-    .duration(10)
-    .EUt(30)
-    .buildAndRegister()
-
-DISTILLATION_TOWER.recipeBuilder()
-    .fluidInputs(fluid('phosphorous_acid_solution') * 4000)
-    .fluidOutputs(fluid('phosphorous_acid') * 1000)
-    .fluidOutputs(fluid('hydrogen_chloride') * 3000)
-    .duration(100)
-    .EUt(60)
-    .buildAndRegister()
+// Sodium Amalgam
 
 BR.recipeBuilder()
     .inputs(ore('dustSodium') * 3)
@@ -3969,41 +3937,12 @@ BR.recipeBuilder()
     .EUt(7)
     .buildAndRegister()
 
-// Sodium Chromate distillation and solution
-
-DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('sodium_chromate_solution') * 1000)
-    .outputs(metaitem('dustSodiumChromate') * 7)
-    .fluidOutputs(fluid('water') * 1000)
-    .duration(80)
-    .EUt(30)
-    .buildAndRegister()
-
-MIXER.recipeBuilder()
-    .fluidInputs(fluid('water') * 1000)
-    .inputs(metaitem('dustSodiumChromate') * 7)
-    .fluidOutputs(fluid('sodium_chromate_solution') * 1000)
-    .duration(80)
-    .EUt(30)
-    .buildAndRegister()
-
-
-ROASTER.recipeBuilder()
-    .inputs(ore('dustSodaAsh') * 24)
-    .inputs(ore('dustChromiumTrioxide') * 10)
-    .fluidInputs(fluid('oxygen') * 6000)
-    .outputs(metaitem('dustSodiumChromate') * 28)
-    .fluidOutputs(fluid('carbon_dioxide') * 4000)
-    .duration(100)
-    .EUt(480)
-    .buildAndRegister()
-
 // Copper Chloride Solution
 
 MIXER.recipeBuilder()
     .inputs(ore('dustCopperIiChloride') * 3)
     .fluidInputs(fluid('water') * 1000)
-    .fluidOutputs(fluid('copper_chloride_solution') * 1000)
+    .fluidOutputs(fluid('copper_ii_chloride_solution') * 1000)
     .duration(80)
     .EUt(30)
     .buildAndRegister()
