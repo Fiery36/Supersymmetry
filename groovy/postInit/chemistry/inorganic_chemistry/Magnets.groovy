@@ -5,10 +5,13 @@ ABS = recipemap('alloy_blast_smelter')
 FORMING_PRESS = recipemap("forming_press")
 MIXER = recipemap('mixer')
 ELECTROLYZER = recipemap('electrolyzer')
+ASSEMBLER = recipemap('assembler')
+ASSEMBLY_LINE = recipemap('assembly_line')
+POLARIZER = recipemap('polarizer')
 
 //NEODYMIUM MAGNETS
 
-mods.gregtech.mixer.recipeBuilder()
+MIXER.recipeBuilder()
     .inputs(ore('dustNeodymium') * 2)
     .inputs(ore('dustIron') * 14)
     .inputs(ore('dustBoron') * 1)
@@ -17,7 +20,7 @@ mods.gregtech.mixer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('ingotNeodymiumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -27,7 +30,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('plateNeodymiumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -37,7 +40,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('stickNeodymiumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -47,7 +50,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('stickLongNeodymiumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -57,7 +60,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('ringNeodymiumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -111,7 +114,7 @@ FORMING_PRESS.recipeBuilder()
     .EUt(240)
     .buildAndRegister()
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('ingotSamariumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -121,7 +124,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('plateSamariumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -131,7 +134,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('stickSamariumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -141,7 +144,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('stickLongSamariumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -151,7 +154,7 @@ mods.gregtech.electrolyzer.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-mods.gregtech.electrolyzer.recipeBuilder()
+ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
     .inputs(ore('ringSamariumAlloy'))
     .inputs(ore('dustSmallNickel') * 1)
@@ -244,7 +247,7 @@ crafting.replaceShaped('gregtech:gregtech.machine.polarizer.iv', metaitem('polar
     [metaitem('wireGtQuadrupleTungstenSteel'), metaitem('stickNeodymiumAlloyMagnetic'), metaitem('wireGtQuadrupleTungstenSteel')]
 ])
 
-mods.gregtech.assembler.recipeBuilder()
+ASSEMBLER.recipeBuilder()
     .inputs(ore('cableGtDoubleAluminium') * 2)
     .inputs(ore('stickTitanium') * 2)
     .inputs(ore('stickSteelMagnetic') * 1)
@@ -254,7 +257,7 @@ mods.gregtech.assembler.recipeBuilder()
     .EUt(30)
     .buildAndRegister();
 
-mods.gregtech.assembler.recipeBuilder()
+ASSEMBLER.recipeBuilder()
     .inputs(ore('cableGtDoubleTungsten') * 2)
     .inputs(ore('stickTungstenSteel') * 2)
     .inputs(ore('stickNeodymiumAlloyMagnetic') * 1)
@@ -264,7 +267,7 @@ mods.gregtech.assembler.recipeBuilder()
     .EUt(30)
     .buildAndRegister();
 
-mods.gregtech.assembler.recipeBuilder()
+ASSEMBLER.recipeBuilder()
     .inputs(ore('stickSteelMagnetic') * 1)
     .inputs(ore('wireFineTungstenSteel') * 16)
     .outputs(metaitem('voltage_coil.ev'))
@@ -272,7 +275,7 @@ mods.gregtech.assembler.recipeBuilder()
     .EUt(1920)
     .buildAndRegister();
 
-mods.gregtech.assembler.recipeBuilder()
+ASSEMBLER.recipeBuilder()
     .inputs(ore('stickNeodymiumAlloyMagnetic') * 1)
     .inputs(ore('wireFineIridium') * 16)
     .outputs(metaitem('voltage_coil.iv'))
@@ -280,7 +283,7 @@ mods.gregtech.assembler.recipeBuilder()
     .EUt(7680)
     .buildAndRegister();
 
-mods.gregtech.assembler.recipeBuilder()
+ASSEMBLER.recipeBuilder()
     .inputs(ore('stickSamariumAlloyMagnetic') * 1)
     .inputs(ore('wireFineOsmiridium') * 16)
     .outputs(metaitem('voltage_coil.luv'))
@@ -288,7 +291,7 @@ mods.gregtech.assembler.recipeBuilder()
     .EUt(30720)
     .buildAndRegister();
 
-mods.gregtech.assembler.recipeBuilder()
+ASSEMBLER.recipeBuilder()
     .inputs(ore('stickSamariumAlloyMagnetic') * 1)
     .inputs(ore('wireFineEuropium') * 16)
     .outputs(metaitem('voltage_coil.zpm'))
@@ -296,7 +299,7 @@ mods.gregtech.assembler.recipeBuilder()
     .EUt(122880)
     .buildAndRegister();
 
-mods.gregtech.assembler.recipeBuilder()
+ASSEMBLER.recipeBuilder()
     .inputs(ore('stickSamariumAlloyMagnetic') * 1)
     .inputs(ore('wireFineTritanium') * 16)
     .outputs(metaitem('voltage_coil.uv'))
@@ -304,7 +307,7 @@ mods.gregtech.assembler.recipeBuilder()
     .EUt(491520)
     .buildAndRegister();
 
-mods.gregtech.assembly_line.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickLongSamariumAlloyMagnetic'))
     .inputs(ore('stickLongHsss') * 2)
     .inputs(ore('ringHsss') * 2)
@@ -318,7 +321,7 @@ mods.gregtech.assembly_line.recipeBuilder()
     .EUt(6000)
     .buildAndRegister();
 
-mods.gregtech.assembly_line.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickLongSamariumAlloyMagnetic'))
     .inputs(ore('stickLongOsmiridium') * 4)
     .inputs(ore('ringOsmiridium') * 4)
@@ -333,7 +336,7 @@ mods.gregtech.assembly_line.recipeBuilder()
     .EUt(24000)
     .buildAndRegister();
 
-mods.gregtech.assembly_line.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickLongSamariumAlloyMagnetic'))
     .inputs(ore('stickLongTritanium') * 4)
     .inputs(ore('ringTritanium') * 4)
@@ -349,70 +352,70 @@ mods.gregtech.assembly_line.recipeBuilder()
     .EUt(100000)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickLongTreatedSamariumAlloy'))
     .outputs(metaitem('stickLongSamariumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickTreatedSamariumAlloy'))
     .outputs(metaitem('stickSamariumAlloyMagnetic'))
     .duration(75)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('ringTreatedSamariumAlloy'))
     .outputs(metaitem('ringSamariumAlloyMagnetic'))
     .duration(40)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('ingotTreatedSamariumAlloy'))
     .outputs(metaitem('ingotSamariumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('plateTreatedSamariumAlloy'))
     .outputs(metaitem('plateSamariumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickLongTreatedNeodymiumAlloy'))
     .outputs(metaitem('stickLongNeodymiumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('stickTreatedNeodymiumAlloy'))
     .outputs(metaitem('stickNeodymiumAlloyMagnetic'))
     .duration(75)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('ringTreatedNeodymiumAlloy'))
     .outputs(metaitem('ringNeodymiumAlloyMagnetic'))
     .duration(40)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('ingotTreatedNeodymiumAlloy'))
     .outputs(metaitem('ingotNeodymiumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-mods.gregtech.polarizer.recipeBuilder()
+ASSEMBLY_LINE.recipeBuilder()
     .inputs(ore('plateTreatedNeodymiumAlloy'))
     .outputs(metaitem('plateNeodymiumAlloyMagnetic'))
     .duration(150)
