@@ -2715,6 +2715,12 @@ tile.pyrotech.anvil_granite.name=Stone Anvil
 gui.pyrotech.jei.category.anvil.granite=Stone Anvil
 gregtech.universal.tooltip.terrain_resist=§eWill not explode from water, lava, fire or rain.
 gregtech.advancement.steam.14_magnetic_iron.desc=Craft a Magnetic Iron Rod
+gregtech.advancement.low_voltage.27_electric_blast_furnace.name=Electric Induction Furnace
+gregtech.advancement.low_voltage.27_electric_blast_furnace.desc=Craft an Electric Induction Furnace.
+gregtech.machine.electric_blast_furnace.name=Electric Induction Furnace
+gregtech.multiblock.electric_blast_furnace.description=The Electric Induction Furnace (EIF) is a multiblock structure used for smelting alloys, cooking metals and refining ores. It is required for obtaining high-tier alloys and metals, such as aluminium, stainless steel, titanium, and naquadah alloy.
+gregtech.advancement.medium_voltage.31_mv_energy_hatch.name=Upgrade Your EIF
+recipemap.electric_blast_furnace.name=Induction Furnace
 
 # Material Renaming
 item.susy.material.ultra_high_molecular_weight_polyethylene.dustTiny=Tiny Pile of Ultra High Molecular Weight Polyethylene (UHMWPE) Pulp
@@ -2739,3 +2745,5 @@ susy.menu.openfolder=Open MC Folder
 susy.menu.refresh=Refresh Menu
 susy.menu.replayviewer=Replay Viewer
 susy.menu.quit.hover=You can never escape Greg.
+
+
