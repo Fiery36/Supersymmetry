@@ -49,7 +49,7 @@ ASSEMBLER.recipeBuilder()
 // Monel 500 casings
 ASSEMBLER.recipeBuilder()
         .inputs(metaitem('plateMonel500') * 6)
-        .outputs(metaitem('frameGtHsla980X'))
+        .inputs(ore('frameGtHsla980X'))
         .outputs(item('susy:susy_multiblock_casing', 5) * 4)
         .EUt(16)
         .duration(100)
@@ -72,56 +72,56 @@ crafting.addShaped("susy:copper_pipe_casing", item('susy:susy_multiblock_casing'
 // Machines
 // Gas atomizer
 crafting.addShaped("susy:gas_atomizer", metaitem('gas_atomizer'), [
-    [ore('plateSteel'), item('electric.pump.ev'), ore('plateSteel')],
+    [ore('plateSteel'), metaitem('electric.pump.ev'), ore('plateSteel')],
         [ore('circuitEv'), item('susy:susy_multiblock_casing', 6), ore('circuitEv')],
-        [ore('plateSteel'), item('electric.pump.ev'), ore('plateSteel')]
+        [ore('plateSteel'), metaitem('electric.pump.ev'), ore('plateSteel')]
 ])
 
 // Hot isostatic press
 crafting.addShaped("susy:hot_isostatic_press", metaitem('hot_isostatic_press'), [
-    [ore('plateSiliconCarbide'), item('electric.pump.ev'), ore('plateSiliconCarbide')],
+    [ore('plateSiliconCarbide'), metaitem('electric.pump.ev'), ore('plateSiliconCarbide')],
         [ore('circuitEv'), item('susy:susy_multiblock_casing'), ore('circuitEv')],
-        [ore('plateSiliconCarbide'), item('electric.piston.ev'), ore('plateSiliconCarbide')]
+        [ore('plateSiliconCarbide'), metaitem('electric.piston.ev'), ore('plateSiliconCarbide')]
 ])
 
 // Turning zone
 crafting.addShaped("susy:turning_zone", metaitem('turning_zone'), [
         [ore('gearUltimet'), metaitem('cableGtOctalNichrome'), ore('gearUltimet')],
-    [item('electric.motor.ev'), item('gregtech:metal_casing', 4), item('electric.motor.ev')],
-    [item('electric.motor.ev'), ore('circuitMv'), item('electric.motor.ev')]
+    [metaitem('electric.motor.ev'), item('gregtech:metal_casing', 4), metaitem('electric.motor.ev')],
+    [metaitem('electric.motor.ev'), ore('circuitMv'), metaitem('electric.motor.ev')]
 ])
 
 // Rolling mill and cluster mill
 crafting.addShaped("susy:rolling_mill", metaitem('rolling_mill'), [
         [ore('gearUltimet'), metaitem('cableGtOctalNichrome'), ore('gearUltimet')],
-    [item('electric.pump.ev'), item('gregtech:boiler_casing', 1), item('electric.pump.ev')],
-    [item('electric.motor.ev'), metaitem('cableGtOctalNichrome'), item('electric.motor.ev')]
+    [metaitem('electric.pump.ev'), item('gregtech:boiler_casing', 1), metaitem('electric.pump.ev')],
+    [metaitem('electric.motor.ev'), metaitem('cableGtOctalNichrome'), metaitem('electric.motor.ev')]
 ])
 
 crafting.addShaped("susy:cluster_mill", metaitem('cluster_mill'), [
         [ore('gearUltimet'), metaitem('cableGtHexNichrome'), ore('gearUltimet')],
-        [item('electric.pump.ev'), item('gregtech:boiler_casing', 1), item('electric.pump.ev')],
-        [item('electric.motor.ev'), metaitem('cableGtHexNichrome'), item('electric.motor.ev')]
+        [metaitem('electric.pump.ev'), item('gregtech:boiler_casing', 1), metaitem('electric.pump.ev')],
+        [metaitem('electric.motor.ev'), metaitem('cableGtHexNichrome'), metaitem('electric.motor.ev')]
 ])
 
 // Flying shear
 crafting.addShaped("susy:flying_shear", metaitem('flying_shear'), [
         [ore('gearUltimet'), metaitem('cableGtOctalNichrome'), ore('gearUltimet')],
-        [item('electric.sensor.ev'), item('gregtech:metal_casing', 4), item('electric.piston.ev')],
-        [item('electric.motor.ev'), ore('circuitEv'), item('electric.piston.ev')]
+        [metaitem('sensor.ev'), item('gregtech:metal_casing', 4), metaitem('electric.piston.ev')],
+        [metaitem('electric.motor.ev'), ore('circuitEv'), metaitem('electric.piston.ev')]
 ])
 
 // Molds
 crafting.addShaped("susy:slab_mold", metaitem('slab_mold'), [
-        [ore('electric.pump.ev'), metaitem('plateDoubleCopper'), ore('electric.pump.ev')],
-        [item('electric.sensor.ev'), metaitem('plateDoubleCopper'), ore('circuitEv')],
-        [item('electric.pump.ev'), metaitem('plateDoubleCopper'), item('electric.pump.ev')]
+        [metaitem('electric.pump.ev'), metaitem('plateDoubleCopper'), metaitem('electric.pump.ev')],
+        [metaitem('sensor.ev'), metaitem('plateDoubleCopper'), ore('circuitEv')],
+        [metaitem('electric.pump.ev'), metaitem('plateDoubleCopper'), metaitem('electric.pump.ev')]
 ])
 
 crafting.addShaped("susy:billet_mold", metaitem('billet_mold'), [
-        [ore('electric.pump.ev'), metaitem('plateSteel'), ore('electric.pump.ev')],
-        [item('electric.sensor.ev'), metaitem('plateDoubleCopper'), ore('circuitEv')],
-        [item('electric.pump.ev'), metaitem('plateSteel'), item('electric.pump.ev')]
+        [metaitem('electric.pump.ev'), metaitem('plateSteel'), metaitem('electric.pump.ev')],
+        [metaitem('sensor.ev'), metaitem('plateDoubleCopper'), ore('circuitEv')],
+        [metaitem('electric.pump.ev'), metaitem('plateSteel'), metaitem('electric.pump.ev')]
 ])
 
 
@@ -134,13 +134,20 @@ ADVANCED_ARC_FURNACE.recipeBuilder()
         .duration(65) // Give a good number of overclocks
         .buildAndRegister()
 
-// Fast aluminium generation in large arc furnace
+// Also let it be made from steel dust
+ADVANCED_ARC_FURNACE.recipeBuilder()
+        .inputs(ore('dustSteel') * 1)
+        .fluidOutputs(fluid('molten.steel') * 144)
+        .EUt(120)
+        .duration(10) // Give a good number of overclocks
+        .buildAndRegister()
+
+// Fast aluminium generation in large arc furnace, not including carbon dioxide
 ADVANCED_ARC_FURNACE.recipeBuilder()
         .notConsumable(fluid('cryolite') * 7776)
         .inputs(ore('dustAlumina') * 45)
         .notConsumable(ore('dustAluminiumTrifluoride') * 12)
         .inputs(ore('dustCoke') * 14)
-        .fluidOutputs(fluid('carbon_dioxide') * 13500)
         .fluidOutputs(fluid('molten.aluminium') * 2592)
         .duration(300)
         .EUt(120)
@@ -151,7 +158,6 @@ ADVANCED_ARC_FURNACE.recipeBuilder()
         .inputs(ore('dustAlumina') * 45)
         .notConsumable(metaitem('dustAluminiumTrifluoride') * 12)
         .inputs(ore('dustCoke') * 14)
-        .fluidOutputs(fluid('carbon_dioxide') * 13500)
         .fluidOutputs(fluid('molten.aluminium') * 2592)
         .duration(100)
         .EUt(120)
@@ -160,62 +166,63 @@ ADVANCED_ARC_FURNACE.recipeBuilder()
 // Fast copper generation in large arc furnace
 
 def copperOres = [
-        "Copper",
-        "Tetrahedrite",
-        "Bornite",
-        "Chalcopyrite",
-        "Chalcocite"
+        'Copper',
+        'Tetrahedrite',
+        'Bornite',
+        'Chalcopyrite',
+        'Chalcocite'
 ]
 def orePrefixes = [
-        "ore",
-        "crushed",
-        "dust",
-        "crushedPurified",
-        "dustImpure",
-        "dustPurified",
-        "crushedCentrifuged"
+        'ore',
+        'crushed',
+        'dust',
+        'crushedPurified',
+        'dustImpure',
+        'dustPurified',
+        'crushedCentrifuged'
 ]
 
-for (ore in copperOres) {
+for (copperOre in copperOres) {
     for (prefix in orePrefixes) {
+        
         ADVANCED_ARC_FURNACE.recipeBuilder()
-                .inputs(ore(prefix + ore) * 18)
+                .inputs(ore(prefix + copperOre) * 18)
                 .fluidOutputs(fluid('molten.copper') * 2592)
                 .EUt(120)
                 .duration(65) // Give a good number of overclocks
                 .buildAndRegister()
     }
     ADVANCED_ARC_FURNACE.recipeBuilder()
-            .inputs(ore('oreNetherrack' + ore) * 9)
+            .inputs(ore('oreNetherrack' + copperOre) * 9)
             .fluidOutputs(fluid('molten.copper') * 2592)
             .EUt(120)
-            .duration(65) // Give a good number of overclocks
+            .duration(33) // Give a good number of overclocks
             .buildAndRegister()
     ADVANCED_ARC_FURNACE.recipeBuilder()
-            .inputs(ore('oreEndstone' + ore) * 9)
+            .inputs(ore('oreEndstone' + copperOre) * 9)
             .fluidOutputs(fluid('molten.copper') * 2592)
             .EUt(120)
-            .duration(65) // Give a good number of overclocks
+            .duration(33) // Give a good number of overclocks
             .buildAndRegister()
 }
 
 for (prefix in orePrefixes) {
     ADVANCED_ARC_FURNACE.recipeBuilder()
-            .inputs(ore(prefix + "Malachite") * 18)
-            .outputs(fluid('molten.copper') * 5184)
+            .inputs(ore(prefix + 'Malachite') * 18)
+            .fluidOutputs(fluid('molten.copper') * 5184)
             .EUt(120)
             .duration(65) // Give a good number of overclocks
             .buildAndRegister()
 }
 ADVANCED_ARC_FURNACE.recipeBuilder()
         .inputs(ore('oreNetherrackMalachite') * 9)
-        .outputs(fluid('molten.copper') * 5184)
+        .fluidOutputs(fluid('molten.copper') * 5184)
         .EUt(120)
-        .duration(65) // Give a good number of overclocks
+        .duration(33) // Give a good number of overclocks
         .buildAndRegister()
 ADVANCED_ARC_FURNACE.recipeBuilder()
         .inputs(ore('oreEndstoneMalachite') * 9)
-        .outputs(fluid('molten.copper') * 5184)
+        .fluidOutputs(fluid('molten.copper') * 5184)
         .EUt(120)
-        .duration(65) // Give a good number of overclocks
+        .duration(33) // Give a good number of overclocks
         .buildAndRegister()

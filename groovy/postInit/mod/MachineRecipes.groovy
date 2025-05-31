@@ -846,7 +846,7 @@ crafting.addShaped("gregtech:evaporation_bed", item('susy:evaporation_bed') * 8,
     [item('minecraft:sand'), item('minecraft:dirt'), item('minecraft:sand')],
     [item('minecraft:dirt'), item('minecraft:gravel'), item('minecraft:dirt')],
     [item('minecraft:sand'), item('minecraft:dirt'), item('minecraft:sand')]
-    ]);
+]);
 
 RecyclingHelper.addShaped("gregtech:clarifier", metaitem('clarifier'), [
     [tieredCables[2], metaitem('rotorSteel'), tieredCables[2]],
