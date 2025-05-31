@@ -824,6 +824,12 @@ RecyclingHelper.addShaped("gregtech:advanced_arc_furnace", metaitem('advanced_ar
     [tieredPlates[1], tieredPlates[1], tieredPlates[1]]
 ]);
 
+RecyclingHelper.addShaped("gregtech:industrial_arc_furnace", metaitem('industrial_arc_furnace'), [
+    [metaitem('cableGtHexNichrome'), item('susy:electrode_assembly'), metaitem('cableGtHexNichrome')],
+    [circuits[4], hulls[4], circuits[4]],
+    [tieredPlates[4], tieredPlates[4], tieredPlates[4]]
+]);
+
 RecyclingHelper.addShaped("gregtech:electrode_assembly", item('susy:electrode_assembly'), [
     [metaitem('plateSteel'), metaitem('cableGtSingleCopper'), metaitem('plateSteel')],
     [metaitem('graphite_electrode'), metaitem('frameSteel'), metaitem('graphite_electrode')],

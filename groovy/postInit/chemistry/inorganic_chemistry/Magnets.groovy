@@ -1,7 +1,6 @@
 import globals.Globals
 import globals.SinteringGlobals
 
-ABS = recipemap('alloy_blast_smelter')
 FORMING_PRESS = recipemap("forming_press")
 
 //NEODYMIUM MAGNETS
