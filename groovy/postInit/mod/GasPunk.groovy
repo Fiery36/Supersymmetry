@@ -58,10 +58,11 @@ Globals.solders.each { key, val ->
             .inputs([
                 ore(rubber_ring)*4,
                 ore('platePlastic'),
+                metaitem('component.glass.tube'),
                 ore('plateSteel')
             ])
             .fluidInputs(fluid(key) * val)
-            .outputs(item('gaspunk:diffuser'))
+            .outputs(item('gaspunk:grenade'))
             .duration(200)
             .EUt(60)
             .buildAndRegister();
@@ -131,7 +132,7 @@ for (key in GasMapMV) {
             .buildAndRegister();
 
     mods.gregtech.canner.recipeBuilder()
-            .inputs([item('gaspunk:diffuser')])
+            .inputs([item('gaspunk:grenade')])
             .fluidInputs(liquid(key.getKey())*100)
             .outputs(item('gaspunk:grenade').withNbt(["gaspunk:contained_gas": GasMapMV[key.getKey()]]))
             .duration(20)
