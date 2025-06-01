@@ -91,6 +91,7 @@ def ingotMap = [
     'Stellite6':3000,
     'Hsla980X':2600,
     'FoodGradeStainlessSteel':2600
+    'PlatinumRhodium':2113
 ]
 
 //MV Tweaks (from CEu #1724)
