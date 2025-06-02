@@ -847,6 +847,13 @@ mods.gregtech.packer.recipeBuilder()
         .buildAndRegister();
 
 mods.gregtech.packer.recipeBuilder()
+        .inputs(item('minecraft:red_sand'))
+        .outputs(metaitem('sand.dust') * 4)
+        .duration(20)
+        .EUt(7)
+        .buildAndRegister();
+
+mods.gregtech.packer.recipeBuilder()
         .inputs(metaitem('sand.dust') * 4)
         .outputs(item('minecraft:sand'))
         .duration(20)
