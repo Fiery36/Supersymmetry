@@ -27,6 +27,12 @@ class SuSyMaterials {
 
         // Isotope Materials
 
+        public static Material NaturalUranium;
+        public static Material LEU235;
+        public static Material HALEU235;
+        public static Material HEU235;
+        public static Material WeaponsGradeUranium;
+
         // Ore Materials
 
         public static Material Petalite;
@@ -348,6 +354,7 @@ class SuSyMaterials {
         public static Material ImpureUranylCarbonateSolution;
         public static Material UranylCarbonateSolution;
         public static Material UranylSulfateSolution;
+        public static Material ImpureUranylSulfateSolution;
         public static Material TetraethylleadSludge;
         public static Material Oxygenates;
         public static Material Antioxidants;
@@ -391,7 +398,6 @@ class SuSyMaterials {
         public static Material CopperMatteFlueDust;
         public static Material CopperMatteFlueGas;
         public static Material CopperConcentrate;
-        public static Material PalladiumContainingSolution;
         public static Material ChlorofluoromethaneMix;
         public static Material HafniumExtractionMixture;
         public static Material HafniumExtract;
@@ -493,7 +499,6 @@ class SuSyMaterials {
         public static Material AcrylicPhotoemulsion;
         public static Material TreatedCollagen;
         public static Material ImpureThalliumSulfateSolution;
-        public static Material ImpureCobaltSulfateSolution;
         public static Material ImpureCadmiumSulfateSolution;
         public static Material TannicAcidSolution;
         public static Material GermaniumRichOxide;
@@ -539,7 +544,7 @@ class SuSyMaterials {
         public static Material PGMFreeCopperLeach;
         public static Material PGMConcentrate;
         public static Material SulfidicCopperLeach;
-        public static Material ChalcogenFreeCopperLeach; 
+        public static Material ChalcogenFreeCopperLeach;
         public static Material MixedChalcogenDioxide;
         public static Material CopperSelenideTelluride;
         public static Material NickelExtractionMixture;
@@ -564,7 +569,6 @@ class SuSyMaterials {
         public static Material ChlorinatedPGMConcentrate;
         public static Material PalladiumExtract;
         public static Material RhodiumIridiumSolution;
-        public static Material RhodiumIridiumExtractionMixture;
         public static Material CobaltMatte;
         public static Material OrthoCresylicAcidMixture;
         public static Material CresolNovolacsOligomer;
@@ -594,6 +598,12 @@ class SuSyMaterials {
         public static Material IsomerizedParaffin;
         public static Material SodiumHydroxideMethanolSolution;
         public static Material DiisobutyleneMixture;
+        public static Material NitrogenOxideMixture;
+        public static Material HotNitrogenOxideMixture;
+        public static Material NitrogenOxideMixtureRichAir;
+        public static Material HotNitrogenOxideMixtureRichAir;
+        public static Material NitrogenDioxideRichAir;
+        public static Material NitricOxideRichAir;
 
         // Petrochem Materials
 
@@ -793,7 +803,7 @@ class SuSyMaterials {
         public static Material SodiumBromide;
         public static Material HydrogenChloride;
         public static Material HydrogenFluoride;
-        public static Material DilutedSaltwater;
+        public static Material DilutedSaltWater;
         public static Material SodiumHydroxideSolution;
         public static Material IronIIIChlorideSolution;
         public static Material DilutedSaltpeterSolution;
@@ -989,7 +999,6 @@ class SuSyMaterials {
         public static Material BerylliumHydroxide;
         public static Material BerylliumOxide;
         public static Material BerylliumChloride;
-        public static Material SulfuricPGMSolution;
         public static Material PGMSolution;
         public static Material SulfurTrioxideReactionMixture;
         public static Material CalciumMetasilicate;
@@ -1021,7 +1030,6 @@ class SuSyMaterials {
         public static Material SaltyArsenicPentoxide;
         public static Material TinIVOxide;
         public static Material AntimonyVOxide;
-        public static Material ImpureCobaltOxide
         public static Material CrudeTin;
         public static Material LeachedCassiteriteConcentrate;
         public static Material AmmoniumTungstateSolution;
@@ -1050,6 +1058,7 @@ class SuSyMaterials {
         public static Material BariumCarbonate;
         public static Material LeadOxide;
         public static Material TantalumNitride;
+        public static Material RutheniumIIIChloride;
         public static Material BismuthIridate;
         public static Material IridiumTrichloride;
         public static Material SodiumBismuthate;
@@ -1080,6 +1089,7 @@ class SuSyMaterials {
         public static Material DilutedSodiumHydroxideSolution;
         public static Material ZirconiumDioxide;
         public static Material Oleum;
+        public static Material HighPurityCobaltOxide;
         public static Material ChromiumSulfateSolution;
         public static Material Dichlorosilane;
         public static Material Chlorosilane;
@@ -1223,8 +1233,6 @@ class SuSyMaterials {
         public static Material AcrylicCatalyst;
         public static Material GelatinSolution;
         public static Material PhosphomolybdicAcid;
-        public static Material UraniumDioxide;
-        public static Material UraniumTetrafluoride;
         public static Material SaltyHydrofluoricAcid;
         public static Material SiliconTetrachloride;
         public static Material PurifiedSiliconTetrachloride;
@@ -1264,7 +1272,8 @@ class SuSyMaterials {
         public static Material LeadFreeSolder;
         public static Material CryogenicSolder;
         public static Material SeleniumDioxide;
-        public static Material CobaltSulfateSolution; 
+        public static Material CobaltSulfateSolution;
+        public static Material DilutedAmmoniumChlorideSolution;
         public static Material Kovar;
         public static Material ImpureLithiumCarbonate;
         public static Material WashedGraphene;
@@ -1272,14 +1281,14 @@ class SuSyMaterials {
         public static Material DriedGraphene;
         public static Material MoistArgon;
         public static Material ArgonHydrogenMixture;
-        public static Material IncoloyTwenty;
-        public static Material IncoloyEightTwoFive;
-        public static Material IncoloyNineZeroEight;
-        public static Material ReneN;
-        public static Material MonelFiveHundred;
+        public static Material Incoloy20;
+        public static Material Incoloy825;
+        public static Material Incoloy908;
+        public static Material ReneN5;
+        public static Material Monel500;
         public static Material StelliteJ;
-        public static Material StelliteSix;
-        public static Material HSLAEightyX;
+        public static Material Stellite6;
+        public static Material HSLA980X;
         public static Material FoodGradeStainlessSteel;
         public static Material CobaltSulfate;
         public static Material LithiumNitrate;
@@ -1291,6 +1300,24 @@ class SuSyMaterials {
         public static Material AmmoniumHexachloroiridate;
         public static Material PotassiumOsmate;
         public static Material SodiumHydrosulfide;
+        public static Material PotassiumIodate;
+        public static Material UraniumTetrafluoride;
+        public static Material UraniumDioxide;
+        public static Material NaturalUraniumHexafluoride;
+        public static Material LEU235Hexafluoride;
+        public static Material HALEU235Hexafluoride;
+        public static Material HEU235Hexafluoride;
+        public static Material WeaponsGradeUraniumHexafluoride;
+        public static Material LEU235AmmoniumDiuranate;
+        public static Material HALEU235AmmoniumDiuranate;
+        public static Material HEU235AmmoniumDiuranate;
+        public static Material WeaponsGradeAmmoniumDiuranate;
+        public static Material DepletedAmmoniumDiuranate;
+        public static Material LEU235UraniumDioxide;
+        public static Material HALEU235UraniumDioxide;
+        public static Material HEU235UraniumDioxide;
+        public static Material WeaponsGradeUraniumDioxide;
+        public static Material DepletedUraniumDioxide;
 
         // HP Materials
 
@@ -1408,6 +1435,7 @@ class SuSyMaterials {
         public static Material DilutedIronIIIChlorideSolution;
         public static Material SodiumPerchlorateSolution;
         public static Material SodiumChlorateSolution;
+        public static Material DilutedSodiumChlorateSolution;
         public static Material DilutedAniline;
         public static Material ChloroauricAcidSolution;
         public static Material ZincChlorideSolution;
@@ -1914,6 +1942,7 @@ class SuSyMaterials {
         public static Material OneBromohexane;
         public static Material DiNHexylsulfide;
         public static Material Isopropylamine;
+        public static Material PlatinumRhodium;
 
         // Third Degree Materials
 
@@ -2061,6 +2090,19 @@ class SuSyMaterials {
         public static Material ColdAmmoniacalArgonHydrogenMixture;
         public static Material ColdArgonHydrogenMixture;
         public static Material PartiallyLiquefiedArgonHydrogenMixture;
+        public static Material TreatedLiquidNitrogen;
+        public static Material TreatedLiquidOxygen;
+        public static Material HeliumNeonConcentrate;
+        public static Material DehydrogenatedHeliumNeonConcentrate;
+        public static Material DemoisturizedHeliumNeonConcentrate;
+        public static Material CompressedHeliumNeonConcentrate;
+        public static Material HeliumNeonMixture;
+        public static Material KryptonXenonRichLiquid;
+        public static Material CombustedKryptonXenonConcentrate;
+        public static Material PurifiedKryptonXenonConcentrate;
+        public static Material LiquidCrudeXenon;
+        public static Material OxidizedXenon;
+        
 
         public static void changeFormulas() {
             log.infoMC("Changing Formulas!");

@@ -232,6 +232,9 @@ ore('stickWood').add(item('minecraft:stick'))
 ore('stickIron').remove(item('industrialrenewal:stick_iron'))
 ore('stickSteel').remove(item('industrialrenewal:stick_steel'))
 ore('ingotSteel').remove(item('industrialrenewal:ingot_steel'))
+ore('blockConcrete').remove(item('susy:susy_stone_smooth:9'))
+ore('stone').remove(item('susy:susy_stone_smooth:9'))
+ore('cobblestone').remove(item('susy:susy_stone_cobble:9'))
 
 //Misc Fixes
 
@@ -251,8 +254,6 @@ mods.jei.category.hideCategory('techguns.oredrill')
 mods.jei.category.hideCategory('techguns.blastfurnace')
 mods.jei.category.hideCategory('techguns.grinder')
 mods.jei.category.hideCategory('techguns.camobench')
-
-mods.jei.category.hideCategory('gregtech:combustion_generator')
 
 mods.jei.category.hideCategory('minecraft.anvil')
 

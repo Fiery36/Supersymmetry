@@ -189,14 +189,13 @@ new Etchant("hydrofluoric_acid", "titanium_nitride", 50, 700)
 new Etchant("nitric_acid", "silicon", 80, 700)
 new Etchant("hydrofluoric_acid", "silicon", 40, 500)
 
-new NDopant("dustHighPurityBoron", 1)
-new NDopant("dustHighPurityGallium", 2)
-new NDopant("dustHighPurityAluminium", 2)
-new NDopant("dustTinyHighPurityIndium", 1)
+new PDopant("dustHighPurityBoron", 1)
+new PDopant("dustHighPurityGallium", 2)
+new PDopant("dustTinyHighPurityIndium", 1)
 
-new PDopant("dustHighPurityAntimony", 1)
-new PDopant("dustHighPurityPhosphorus", 2)
-new PDopant("dustHighPurityArsenic", 2)
+new NDopant("dustHighPurityAntimony", 1)
+new NDopant("dustHighPurityPhosphorus", 2)
+new NDopant("dustHighPurityArsenic", 2)
 
 MIXER.recipeBuilder()
         .inputs(ore('dustTinyPotassiumHydroxide'))
@@ -475,7 +474,7 @@ FORMING_PRESS.recipeBuilder()
         .EUt(30)
         .buildAndRegister()
 
-generatePatterningRecipes('laminated.board.phenolic', 'patterned.board.phenolic', 'mask.pcb', 1, 1, 1, 0, false)
+generatePatterningRecipes('laminated.board.phenolic', 'patterned.board.phenolic', 'mask.pcb', 1, 1, 1, 10, false)
 generateEtchingRecipes('patterned.board.phenolic', 'circuit_board.good', 'copper', 1, 1, false)
 
 //PLASTIC CIRCUIT BOARD (TIER 3)
@@ -512,7 +511,7 @@ FORMING_PRESS.recipeBuilder()
         .EUt(30)
         .buildAndRegister()
 
-generatePatterningRecipes('board.plastic', 'patterned.board.plastic', 'mask.pcb', 2, 1, 1, 0, false)
+generatePatterningRecipes('board.plastic', 'patterned.board.plastic', 'mask.pcb', 2, 1, 1, 10, false)
 generateEtchingRecipes('patterned.board.plastic', 'circuit_board.plastic', 'copper', 2, 1, false)
 
 //NAND AND NOR

@@ -69,7 +69,9 @@ eventManager.listen {
 
         customMetaItems.addItem(170, "raw_diamond");
 
-        customMetaItems.addItem(171, "cellulose_acetate_mesh");
+        customMetaItems.addItem(171, "mesh.cellulose_acetate");
+        customMetaItems.addItem(172, "mesh.platinum");
+        customMetaItems.addItem(173, "mesh.platinum_rhodium");
 
         customMetaItems.addItem(177, "zeolite_membrane_support");
         customMetaItems.addItem(178, "zeolite_membrane");
@@ -102,7 +104,7 @@ eventManager.listen {
 
         customMetaItems.addItem(203, "white_matte")
 
-	    customMetaItems.addItem(210, "bound_leather")
+        customMetaItems.addItem(210, "bound_leather")
 
         customMetaItems.addItem(212, "drone.lv").setMaxStackSize(1).addComponents(ElectricStats.createRechargeableBattery(10000, GTValues.LV)).setModelAmount(8).setCreativeTabs(GregTechAPI.TAB_GREGTECH_TOOLS);
         customMetaItems.addItem(213, "glass_fibers")
@@ -117,6 +119,12 @@ eventManager.listen {
 
         customMetaItems.addItem(300, "mylar")
         customMetaItems.addItem(301, "spinneret")
+
+        customMetaItems.addItem(400, "engine.spark_plug")
+        customMetaItems.addItem(401, "engine.piston")
+        customMetaItems.addItem(402, "engine.crankshaft")
+
+        customMetaItems.addItem(500, "sintered_alumina.insulator")
 
         customMetaItems.addItem(1000, "chunk.magnetite")
         customMetaItems.addItem(1001, "hot_iron_rod")
