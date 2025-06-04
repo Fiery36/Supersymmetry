@@ -161,3 +161,11 @@ CHEMICAL_BATH.recipeBuilder()
         .duration(20)
         .EUt(7)
         .buildAndRegister();
+
+CHEMICAL_BATH.recipeBuilder()
+        .fluidInputs(fluid('dye_magenta') * 144)
+        .inputs(ore('blockElevator'))
+        .outputs(item('elevatorid:elevator_magenta'))
+        .duration(20)
+        .EUt(7)
+        .buildAndRegister();
