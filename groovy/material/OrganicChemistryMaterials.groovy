@@ -2682,7 +2682,7 @@ public class OrganicChemistryMaterials {
 
         CobaltExtractionMixture.setFormula("(C8H10)(C16H35O2P)", true)
 
-        TrimethylPhosphite = new Material.Builder(15426, SuSyUtility.susyId('trimethyl_phosphate'))
+        TrimethylPhosphite = new Material.Builder(15426, SuSyUtility.susyId('trimethyl_phosphite'))
                 .liquid()
                 .components(Carbon * 3, Hydrogen * 9, Oxygen * 3, Phosphorus)
                 .colorAverage()
@@ -2706,7 +2706,7 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build()
 
-        TwoEthylHexylPhosphonicAcidMonoTwoEthylHexylEster = new Material.Builder(15430, SuSyUtility.susyId('two_ethylhexyl_phosphonic_acid_mono_two_ethylhexyl_ester'))
+        TwoEthylhexylPhosphonicAcidMonoTwoEthylHexylEster = new Material.Builder(15430, SuSyUtility.susyId('two_ethylhexyl_phosphonic_acid_mono_two_ethylhexyl_ester'))
                 .liquid()
                 .components(Carbon * 16, Hydrogen * 35, Oxygen * 3, Phosphorus)
                 .colorAverage()
@@ -2734,6 +2734,30 @@ public class OrganicChemistryMaterials {
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .components(Carbon * 16, Hydrogen * 35, Oxygen * 2, Phosphorus * 1)
                 .color(0x556b2f)
+                .build();
+                
+        MethyltrioctylammoniumChloride = new Material.Builder(15435, SuSyUtility.susyId('methyltrioctylammonium_chloride'))
+                .dust()
+                .components(Carbon * 25, Hydrogen * 54, Nitrogen, Chlorine)
+                .color(0x51f23f)
+                .build();
+
+        PenteticAcid = new Material.Builder(15436, SuSyUtility.susyId('pentetic_acid'))
+                .dust()
+                .components(Carbon * 14, Hydrogen * 23, Nitrogen * 3, Oxygen * 10)
+                .color(0x6b8e23)
+                .build();
+        
+        NHydroxyethylEthylenediamine = new Material.Builder(15437, SuSyUtility.susyId('n_hydroxyethyl_ethylenediamine'))
+                .liquid()
+                .components(Carbon * 4, Hydrogen * 12, Nitrogen * 2, Oxygen)
+                .color(0x808dd1)
+                .build();
+
+        NHydroxyethylEthylenediaminetriaceticAcid = new Material.Builder(15438, SuSyUtility.susyId('n_hydroxyethyl_ethylenediaminetriacetic_acid'))
+                .dust()
+                .components(Carbon * 10, Hydrogen * 18, Nitrogen * 2, Oxygen * 7)
+                .color(0x7ebdba)
                 .build();
     }
 }

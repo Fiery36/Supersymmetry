@@ -3664,6 +3664,14 @@ BR.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
+BCR.recipeBuilder()
+    .fluidInputs(fluid('hydrogen_iodide') * 1000)
+    .fluidInputs(fluid('water') * 1000)
+    .fluidOutputs(fluid('hydroiodic_acid') * 1000)
+    .duration(20)
+    .EUt(30)
+    .buildAndRegister()
+
 // Early butyraldehyde
 
 BR.recipeBuilder()

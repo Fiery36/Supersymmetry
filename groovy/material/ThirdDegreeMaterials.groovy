@@ -645,5 +645,17 @@ public class ThirdDegreeMaterials {
                 .components(Isopropylamine, Water)
                 .colorAverage()
                 .build();
+
+        TributylPhosphateExtractionMixture = new Material.Builder(24104, SuSyUtility.susyId('tributyl_phosphate_extraction_mixture'))
+                .liquid()
+                .components(TributylPhosphate, Kerosene * 9)
+                .colorAverage()
+                .build();
+
+        Aliquat336ExtractionMixture = new Material.Builder(24105, SuSyUtility.susyId('aliquat_336_extraction_mixture'))
+                .liquid()
+                .components(MethyltrioctylammoniumChloride, Xylene)
+                .colorAverage()
+                .build();
     }
 }

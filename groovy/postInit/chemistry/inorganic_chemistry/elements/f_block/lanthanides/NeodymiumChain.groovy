@@ -32,7 +32,7 @@ ROASTER.recipeBuilder()
 
 REACTION_FURNACE.recipeBuilder()
     .notConsumable(metaitem('crucible.tantalum'))
-    .inputs(ore('dustNeodymiumChloride') * 8)
+    .inputs(ore('dustNeodymiumFluoride') * 8)
     .inputs(ore('dustHighPurityCalcium') * 3)
     .fluidInputs(fluid('argon') * 50)
     .outputs(metaitem('dustNeodymium') * 2)

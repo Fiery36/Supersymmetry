@@ -20,14 +20,3 @@ REACTION_FURNACE.recipeBuilder()
     .duration(200)
     .EUt(480)
     .buildAndRegister()
-
-// From Xenotime
-
-ROASTER.recipeBuilder()
-    .inputs(ore('dustSamariumOxalate') * 20)
-    .outputs(metaitem('dustSamariumOxide') * 5)
-    .fluidOutputs(fluid('carbon_dioxide') * 3000)
-    .fluidOutputs(fluid('carbon_monoxide') * 3000)
-    .duration(100)
-    .EUt(120)
-    .buildAndRegister()

@@ -518,7 +518,7 @@ public class OreMaterials{
                 .flags(GENERATE_CONCENTRATE)
                 .color(0x6e572e)
                 .components(Yttrium, Phosphorus, Oxygen * 4)
-                .build();
+                .build()
                 .setFormula('(REE)PO4', true);
 
         Caliche = new Material.Builder(7068, SuSyUtility.susyId('caliche'))

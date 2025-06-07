@@ -1,3 +1,5 @@
+import globals.Globals
+
 BR = recipemap('batch_reactor')
 CENTRIFUGE = recipemap('centrifuge')
 ROASTER = recipemap('roaster')
@@ -43,8 +45,9 @@ CENTRIFUGE.recipeBuilder()
 ROASTER.recipeBuilder()
     .fluidInputs(fluid('thorium_nitrate_solution') * 1000)
     .outputs(metaitem('dustThoriumDioxide') * 3)
-    .fluidOutputs(fluid('nitrogen_dioxide') * 2000)
+    .fluidOutputs(fluid('nitrogen_dioxide') * 4000)
     .fluidOutputs(fluid('oxygen') * 2000)
+    .fluidOutputs(fluid('dense_steam') * 1000)
     .duration(80)
     .EUt(120)
     .buildAndRegister() 

@@ -1,4 +1,4 @@
-import globals.globals
+import globals.Globals
 
 BR = recipemap('batch_reactor')
 REACTION_FURNACE = recipemap('reaction_furnace')

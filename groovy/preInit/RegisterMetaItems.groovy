@@ -35,6 +35,7 @@ eventManager.listen {
         customMetaItems.addItem(108, "crucible.graphite")
         customMetaItems.addItem(109, "shape.mold.long_rod")
         customMetaItems.addItem(110, "shape.mold.ring")
+        customMetaItems.addItem(111, "crucible.tantalum")
 
         customMetaItems.addItem(150, "mudbrick_mix")
         customMetaItems.addItem(151, "slaked_lime")
@@ -117,9 +118,7 @@ eventManager.listen {
         customMetaItems.addItem(254, "beads.strong_basic_anion_exchange");
         customMetaItems.addItem(255, "beads.loaded_uranium_anion_exchange");
         customMetaItems.addItem(256, "beads.rare_earth_cation_exchange")
-        customMetaItems.addItem(257, "beads.loaded_thulium_cation_exchange")
-        customMetaItems.addItem(258, "beads.loaded_lutetium_cation_exchange")
-        customMetaItems.addItem(259, "beads.loaded_gadolinium_anion_exchange")
+        customMetaItems.addItem(257, "beads.loaded_lutetium_cation_exchange")
 
         customMetaItems.addItem(300, "mylar")
         customMetaItems.addItem(301, "spinneret")

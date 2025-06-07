@@ -20,7 +20,7 @@ BR.recipeBuilder()
     .duration(80)
     .EUt(30)
     .buildAndRegister()
-    
+
 REACTION_FURNACE.recipeBuilder()
     .notConsumable(metaitem('crucible.tantalum'))
     .inputs(ore('dustHolmiumFluoride') * 8)
