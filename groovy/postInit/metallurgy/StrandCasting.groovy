@@ -63,7 +63,7 @@ crafting.addShaped("susy:monel_500_pipe_casing", item('susy:susy_multiblock_casi
     [ore('plateMonel500'), ore('pipeNormalFluidMonel500'), ore('plateMonel500')]
 ])
 
-crafting.addShaped("susy:copper_pipe_casing", item('susy:susy_multiblock_casing', 6) * 2, [
+crafting.addShaped("susy:copper_pipe_casing", item('susy:susy_multiblock_casing', 7) * 2, [
     [ore('plateCopper'), ore('pipeNormalFluidCopper'), ore('plateCopper')],
     [ore('pipeNormalFluidCopper'), ore('frameGtSteel'), ore('pipeNormalFluidCopper')],
     [ore('plateCopper'), ore('pipeNormalFluidCopper'), ore('plateCopper')]
@@ -73,7 +73,7 @@ crafting.addShaped("susy:copper_pipe_casing", item('susy:susy_multiblock_casing'
 // Gas atomizer
 crafting.addShaped("susy:gas_atomizer", metaitem('gas_atomizer'), [
     [ore('plateSteel'), metaitem('electric.pump.ev'), ore('plateSteel')],
-        [ore('circuitEv'), item('susy:susy_multiblock_casing', 6), ore('circuitEv')],
+        [ore('circuitEv'), item('gregtech:boiler_casing', 1), ore('circuitEv')],
         [ore('plateSteel'), metaitem('electric.pump.ev'), ore('plateSteel')]
 ])
 
@@ -122,6 +122,39 @@ crafting.addShaped("susy:billet_mold", metaitem('billet_mold'), [
         [metaitem('electric.pump.ev'), metaitem('plateSteel'), metaitem('electric.pump.ev')],
         [metaitem('sensor.ev'), metaitem('plateDoubleCopper'), ore('circuitEv')],
         [metaitem('electric.pump.ev'), metaitem('plateSteel'), metaitem('electric.pump.ev')]
+])
+
+ASSEMBLER.recipeBuilder()
+        .inputs(metaitem('electric.motor.ev') * 2)
+        .inputs(item('susy:metallurgy_roll'))
+        .inputs(metaitem('hull.ev'))
+        .fluidInputs(fluid('soldering_alloy') * 288)
+        .circuitMeta(1)
+        .outputs(metaitem('strand_bus.import'))
+        .EUt(1920)
+        .duration(300)
+        .buildAndRegister()
+
+ASSEMBLER.recipeBuilder()
+        .inputs(metaitem('electric.motor.ev') * 2)
+        .inputs(item('susy:metallurgy_roll'))
+        .inputs(metaitem('hull.ev'))
+        .fluidInputs(fluid('soldering_alloy') * 288)
+        .circuitMeta(2)
+        .outputs(metaitem('strand_bus.export'))
+        .EUt(1920)
+        .duration(300)
+        .buildAndRegister()
+
+// Interconversion
+crafting.addShaped("susy:strand_bus_import_to_export", metaitem('strand_bus.export'), [
+        [ore('craftingToolScrewdriver')],
+        [metaitem('strand_bus.import')]
+])
+
+crafting.addShaped("susy:strand_bus_export_to_import", metaitem('strand_bus.import'), [
+        [ore('craftingToolScrewdriver')],
+        [metaitem('strand_bus.export')]
 ])
 
 

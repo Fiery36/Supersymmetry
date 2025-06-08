@@ -3535,6 +3535,7 @@ public class FirstDegreeMaterials {
                 .components(Nickel * 23, Manganese * 2, Copper * 10, Aluminium * 4, Titanium)
                 .colorAverage()
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .fluidPipeProperties(753, 2000, true, true, true, false)
                 .build();
 
         StelliteJ = new Material.Builder(8632, SuSyUtility.susyId("stellite_j"))
