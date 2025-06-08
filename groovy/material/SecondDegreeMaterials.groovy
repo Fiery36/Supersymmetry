@@ -945,5 +945,11 @@ public class SecondDegreeMaterials {
                 .components(HydrogenIodide, Water)
                 .colorAverage()
                 .build();
+                
+        PotassiumChlorateSolution = new Material.Builder(13157, SuSyUtility.susyId('potassium_chlorate_solution'))
+                .liquid()
+                .components(PotassiumChlorate, Water)
+                .colorAverage()
+                .build();
     }
 }

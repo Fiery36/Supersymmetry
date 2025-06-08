@@ -3934,11 +3934,15 @@ public class FirstDegreeMaterials {
                 .color(0xde8cdb)
                 .build()
 
+        NeodymiumHydroxide.setFormula("Nd(OH)3", true)  
+
         SamariumHydroxide = new Material.Builder(8685, SuSyUtility.susyId('samarium_hydroxide'))
                 .dust()
                 .components(Samarium, Hydrogen * 3, Oxygen * 3)
                 .color(0xebe3b0)
                 .build()
+
+        SamariumHydroxide.setFormula("Sm(OH)3", true)
 
         SamariumOxide = new Material.Builder(8686, SuSyUtility.susyId('samarium_oxide'))
                 .dust()
