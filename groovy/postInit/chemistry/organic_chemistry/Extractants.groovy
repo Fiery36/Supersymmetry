@@ -960,7 +960,7 @@ BLENDER = recipemap('blender')
         .fluidInputs(fluid('kerosene') * 8000)
         .fluidOutputs(fluid('p_five_zero_seven_p_two_two_nine_extraction_mixture') * 10000)
         .duration(120)
-        .EUt(Globals.voltAmps[5])
+        .EUt(Globals.voltAmps[5] * 2)
         .buildAndRegister()
 
     BLENDER.recipeBuilder()
@@ -1035,7 +1035,7 @@ BLENDER = recipemap('blender')
         .fluidInputs(fluid('xylene') * 1000)
         .fluidOutputs(fluid('aliquat_336_extraction_mixture') * 1000)
         .duration(100)
-        .EUt(Globals.voltAmps[5])
+        .EUt(Globals.voltAmps[5] * 2)
         .buildAndRegister()
 
 //ION EXCHANGE RESINS

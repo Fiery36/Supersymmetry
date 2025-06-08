@@ -1692,6 +1692,7 @@ class SuSyMaterials {
         public static Material SodiumPhosphateSolution;
         public static Material ThoriumChlorideSolution;
         public static Material HydroiodicAcid;
+        public static Material PotassiumChlorateSolution;
 
         // Organic Chemistry Materials
 
