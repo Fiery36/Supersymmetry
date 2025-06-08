@@ -948,7 +948,8 @@ public class FirstDegreeMaterials {
                 .components(Nitrogen, Hydrogen * 5, Sulfur, Oxygen * 4)
                 .colorAverage()
                 .build()
-                .setFormula("(NH4)HSO4", true)
+        
+        AmmoniumBisulfate.setFormula("(NH4)HSO4", true)
 
         Phosphine = new Material.Builder(8231, SuSyUtility.susyId('phosphine'))
                 .gas()
