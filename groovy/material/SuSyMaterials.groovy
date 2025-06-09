@@ -110,6 +110,7 @@ class SuSyMaterials {
         public static Material Rhodochrosite;
         public static Material Carnotite;
         public static Material AlluvialPGMSand;
+        public static Material Bertrandite;
 
         // Deposits for scanning
 
