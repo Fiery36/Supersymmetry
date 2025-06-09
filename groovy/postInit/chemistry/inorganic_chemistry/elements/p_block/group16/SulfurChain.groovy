@@ -46,3 +46,13 @@ REACTION_FURNACE.recipeBuilder()
     .duration(40)
     .EUt(30)
     .buildAndRegister()
+
+// Sodium bisulfite
+
+BCR.recipeBuilder()
+    .fluidInputs(fluid('sulfur_dioxide') * 1000)
+    .fluidInputs(fluid('sodium_hydroxide_solution') * 1000)
+    .fluidOutputs(fluid('sodium_bisulfite_solution') * 1000)
+    .duration(80)
+    .EUt(7)
+    .buildAndRegister()

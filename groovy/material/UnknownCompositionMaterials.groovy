@@ -2893,5 +2893,20 @@ public class UnknownCompositionMaterials {
                 .dust()
                 .color(0x210604)
                 .build()
+
+        CalicheLeach = new Material.Builder(4637, SuSyUtility.susyId('caliche_leach'))
+                .liquid()
+                .color(0x8480c2)
+                .build();
+
+        IodateConcentrate = new Material.Builder(4638, SuSyUtility.susyId('iodate_concentrate'))
+                .liquid()
+                .color(0x895ec4)
+                .build();
+
+        IodideConcentrate = new Material.Builder(4639, SuSyUtility.susyId('iodide_concentrate'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0x6d1ddb)
+                .build();
     }
 }

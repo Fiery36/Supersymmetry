@@ -176,13 +176,13 @@ def sedimentary_tier_3 = [
     'gregtech:ore_magnesite_0' : 2000,
     //T3
     'gregtech:ore_ilmenite_0' : 1000,
-    //'susy:resource_block:1' : 10000,
+    'susy:resource_block:1' : 1000,
     'gregtech:ore_celestine_0' : 500,
     'gregtech:ore_barite_0' : 2500,
 ];
 
 def sedimentary_tier_4 = [
-        //T1
+    //T1
     'gregtech:ore_banded_iron_0' : 7500,
     'gregtech:ore_cinnabar_0' : 2000,
     'susy:resource_block:15' : 5000,
@@ -197,7 +197,7 @@ def sedimentary_tier_4 = [
     'gregtech:ore_magnesite_0' : 2000,
     //T3
     'gregtech:ore_ilmenite_0' : 1000,
-    //'susy:resource_block:1' : 10000,
+    'susy:resource_block:1' : 1000,
     'gregtech:ore_celestine_0' : 500,
     'gregtech:ore_barite_0' : 2500,
     //T4
