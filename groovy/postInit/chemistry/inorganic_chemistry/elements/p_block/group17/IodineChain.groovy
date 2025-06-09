@@ -31,7 +31,7 @@ EVAPORATION_POOL.recipeBuilder()
     .buildAndRegister()
 
 CSTR.recipeBuilder()
-    .fluidInputs(fluid('iodiate_concentrate') * 50)
+    .fluidInputs(fluid('iodate_concentrate') * 50)
     .fluidInputs(fluid('sodium_bisulfite_solution') * 150)
     .fluidOutputs(fluid('iodide_concentrate') * 275)
     .duration(5)
