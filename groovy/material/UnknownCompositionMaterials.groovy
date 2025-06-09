@@ -2893,5 +2893,25 @@ public class UnknownCompositionMaterials {
                 .dust()
                 .color(0x210604)
                 .build()
+
+        PolymerisedXylenolSolution = new Material.Builder(4637, SuSyUtility.susyId('polymerised_xylenol_solution'))
+                .fluid()
+                .color(0x382f4d)
+                .build()
+
+        DilutedPPOSolution = new Material.Builder(4638, SuSyUtility.susyId('diluted_ppo_solution'))
+                .fluid()
+                .color(0x302a52)
+                .build()
+
+        PPOSolution = new Material.Builder(4639, SuSyUtility.susyId('ppo_solution'))
+                .fluid()
+                .color(0x395270)
+                .build()
+
+        PPOExtractionWaste = new Material.Builder(4640, SuSyUtility.susyId('ppo_extraction_waste'))
+                .fluid()
+                .color(0x47260e)
+                .build()
     }
 }

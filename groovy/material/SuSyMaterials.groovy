@@ -1477,6 +1477,11 @@ class SuSyMaterials {
         public static Material ThoriumDioxide;
         public static Material ThoriumChloride;
         public static Material SodiumPhosphate;
+        public static Material PolymerisedXylenolSolution;
+        public static Material DilutedPPOSolution;
+        public static Material PPOSolution;
+        public static Material PPOExtractionWaste;
+        public static Material PolyphenyleneOxide;
 
         // HP Materials
 

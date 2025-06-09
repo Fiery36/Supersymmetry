@@ -4097,5 +4097,13 @@ public class FirstDegreeMaterials {
                 .components(Sodium * 3, Phosphorus, Oxygen * 4)
                 .color(0xdae69e)
                 .build();
+
+        PolyphenyleneOxide = new Material.Builder(8710, SuSyUtility.susyId('polyphenylene_oxide'))
+                .polymer()
+                .components(Carbon * 8, Hydrogen * 8, Oxygen * 1)
+                .color(0x4a567d)
+                .build();
+
+        PolyphenyleneOxide.setFormula('[C8H8O]n', true)
     }
 }
