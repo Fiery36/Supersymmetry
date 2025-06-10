@@ -2684,17 +2684,17 @@ public class UnknownCompositionMaterials {
                 .color(0xb0376e)
                 .build();
         
-        BastYttriumConcentrate = new Material.Builder(4595, SuSyUtility.susyId('bast_yttrium_concentrate'))
+        BastYttriumConcentrate = new Material.Builder(4595, SuSyUtility.susyId('bast_y_concentrate'))
                 .liquid()
                 .color(0x6b4025)
                 .build();
 
-        MonaYttriumConcentrate = new Material.Builder(4596, SuSyUtility.susyId('mona_yttrium_concentrate'))
+        MonaYttriumConcentrate = new Material.Builder(4596, SuSyUtility.susyId('mona_y_concentrate'))
                 .liquid()
                 .color(0x824119)
                 .build();
         
-        XenoYttriumConcentrate = new Material.Builder(4597, SuSyUtility.susyId('xeno_yttrium_concentrate'))
+        XenoYttriumConcentrate = new Material.Builder(4597, SuSyUtility.susyId('xeno_y_concentrate'))
                 .liquid()
                 .color(0x472510)
                 .build();
@@ -2744,32 +2744,32 @@ public class UnknownCompositionMaterials {
                 .color(0x67ab20)
                 .build();
 
-        BastTerbiumFreeExtract = new Material.Builder(4607, SuSyUtility.susyId('bast_terbium_free_extract'))
+        BastTerbiumFreeExtract = new Material.Builder(4607, SuSyUtility.susyId('bast_tb_free_extract'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0xa39953)
                 .build();
 
-        MonaTerbiumFreeExtract = new Material.Builder(4608, SuSyUtility.susyId('mona_terbium_free_extract'))
+        MonaTerbiumFreeExtract = new Material.Builder(4608, SuSyUtility.susyId('mona_tb_free_extract'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0xbaac47)
                 .build();
         
-        XenoTerbiumFreeExtract = new Material.Builder(4609, SuSyUtility.susyId('xeno_terbium_free_extract'))
+        XenoTerbiumFreeExtract = new Material.Builder(4609, SuSyUtility.susyId('xeno_tb_free_extract'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x857821)
                 .build();
 
-        BastTerbiumConcentrate = new Material.Builder(4610, SuSyUtility.susyId('bast_terbium_concentrate'))
+        BastTerbiumConcentrate = new Material.Builder(4610, SuSyUtility.susyId('bast_tb_concentrate'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x3d8076)
                 .build();
 
-        MonaTerbiumConcentrate = new Material.Builder(4611, SuSyUtility.susyId('mona_terbium_concentrate'))
+        MonaTerbiumConcentrate = new Material.Builder(4611, SuSyUtility.susyId('mona_tb_concentrate'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x2e9485)
                 .build();
 
-        XenoTerbiumConcentrate = new Material.Builder(4612, SuSyUtility.susyId('xeno_terbium_concentrate'))
+        XenoTerbiumConcentrate = new Material.Builder(4612, SuSyUtility.susyId('xeno_tb_concentrate'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x0d7a6a)
                 .build();
