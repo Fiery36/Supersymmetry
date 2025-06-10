@@ -198,7 +198,7 @@ DT.recipeBuilder()
 
 BR.recipeBuilder()
     .fluidInputs(fluid('germanium_tetrachloride') * 1000)
-    .fluidInputs(fluid('ultrapure_water') * 6000)
+    .fluidInputs(fluid('distilled_water') * 6000)
     .outputs(metaitem('dustGermaniumDioxide') * 3)
     .fluidOutputs(fluid('hydrochloric_acid') * 4000)
     .duration(200)
