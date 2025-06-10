@@ -1,13 +1,13 @@
 name = "Supercritical"
-filename = "Supercritical-0.0.5.jar"
+filename = "Supercritical-0.0.6.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "0ed9b24db9977d7b80f1bd0e57a9fda35ec9179b"
+hash = "248a4cf8191a6b7537b3d194b22f50377331455f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 6493239
+file-id = 6636598
 project-id = 1185871
