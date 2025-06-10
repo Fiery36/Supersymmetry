@@ -85,11 +85,7 @@ public class ThirdDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        TetrasodiumEthylenediaminetetraacetateSolution = new Material.Builder(24011, SuSyUtility.susyId('tetrasodium_ethylenediaminetetraacetate_solution'))
-                .liquid()
-                .components(TetrasodiumEthylenediaminetetraacetate * 1, Water * 4)
-                .colorAverage()
-                .build();
+        // FREE ID: 24011
 
         UreaSolution = new Material.Builder(24012, SuSyUtility.susyId('urea_solution'))
                 .liquid()
@@ -647,6 +643,18 @@ public class ThirdDegreeMaterials {
         IsopropylamineSolution = new Material.Builder(24103, SuSyUtility.susyId('isopropylamine_solution'))
                 .liquid()
                 .components(Isopropylamine, Water)
+                .colorAverage()
+                .build();
+
+        TributylPhosphateExtractionMixture = new Material.Builder(24104, SuSyUtility.susyId('tributyl_phosphate_extraction_mixture'))
+                .liquid()
+                .components(TributylPhosphate, Kerosene * 9)
+                .colorAverage()
+                .build();
+
+        Aliquat336ExtractionMixture = new Material.Builder(24105, SuSyUtility.susyId('aliquat_336_extraction_mixture'))
+                .liquid()
+                .components(MethyltrioctylammoniumChloride, Xylene)
                 .colorAverage()
                 .build();
     }

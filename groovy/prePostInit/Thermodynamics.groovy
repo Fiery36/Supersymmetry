@@ -857,9 +857,9 @@ recipemap('fluid_compressor').recipeBuilder()
 
 recipemap('heat_exchanger').recipeBuilder()
         .fluidInputs(liquid('water') * 96)
-        .fluidInputs(liquid('lava') * 3)
+        .fluidInputs(liquid('lava') * 10)
         .fluidOutputs(liquid('steam') * 15360)
-        .fluidOutputs(liquid('chilled_lava') * 3)
+        .fluidOutputs(liquid('chilled_lava') * 10)
         .duration(10)
         .buildAndRegister();
 

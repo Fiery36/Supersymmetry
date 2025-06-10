@@ -529,7 +529,7 @@ RecyclingHelper.addShaped("gregtech:fermentation_vat", metaitem('fermentation_va
 
 for (i = 1; i <= 8; i++) {
     RecyclingHelper.addShaped("gregtech:uv_light_box." + Globals.voltageTiers[i], metaitem('uv_light_box.' + Globals.voltageTiers[i]), [
-        [tieredCables[i], metaitem('lamp.carbon_filament'), tieredCables[i]],
+        [tieredCables[i], metaitem('carbon_arc_lamp'), tieredCables[i]],
         [circuits[i], hulls[i], circuits[i]],
         [tieredPlates[i], tieredPlates[i], tieredPlates[i]]
     ])
@@ -1289,4 +1289,23 @@ RecyclingHelper.handleRecycling(metaitem('combustion_generator.hv'), [
     metaitem('engine.crankshaft'),     //doesn't get counted by RecyclingHandler
     ore('gearStainlessSteel') * 2,
     ore('pipeHugeFluidStainlessSteel'),
+])
+
+// Train interfaces
+RecyclingHelper.addShaped("gregtech:fluid_loader", metaitem('stock_fluid_exchanger'), [
+		[ore('craftingToolHardHammer'), metaitem('electric.pump.lv'), ore('craftingToolWrench')],
+		[ore('pipeSmallFluidSteel'), metaitem('hull.lv'), ore('pipeSmallFluidSteel')],
+		[ore('pipeSmallFluidSteel'), metaitem('conveyor.module.lv'), ore('pipeSmallFluidSteel')]
+])
+
+RecyclingHelper.addShaped("gregtech:item_loader", metaitem('stock_item_exchanger'), [
+		[ore('craftingToolHardHammer'), ore('circuitLv'), ore('craftingToolWrench')],
+		[ore('pipeSmallItemNickel'), metaitem('hull.lv'), ore('pipeSmallItemNickel')],
+		[ore('pipeSmallItemNickel'), metaitem('electric.pump.lv'), ore('pipeSmallItemNickel')]
+])
+
+RecyclingHelper.addShaped("gregtech:locomotive_controller", metaitem('stock_controller'), [
+		[ore('craftingToolHardHammer'), ore('circuitLv'), ore('craftingToolWrench')],
+		[ore('pipeSmallItemNickel'), metaitem('hull.lv'), ore('pipeSmallItemNickel')],
+		[metaitem('emitter.lv'), ore('circuitLv'), metaitem('sensor.lv')]
 ])
