@@ -14,6 +14,7 @@ CLARIFIER = recipemap('clarifier')
 CHEMICAL_BATH = recipemap('chemical_bath')
 CRYSTALLIZER = recipemap('crystallizer')
 REACTION_FURNACE = recipemap('reaction_furnace')
+FORMING_PRESS = recipemap("forming_press")
 
 // Beneficiation
 
@@ -181,5 +182,11 @@ CRYSTALLIZER.recipeBuilder()
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
-
-    
+// Crucibles
+FORMING_PRESS.recipeBuilder()
+    .notConsumable(metaitem('shape.mold.crucible'))
+    .inputs(ore('plateTantalum') * 4)
+    .outputs(metaitem('crucible.tantalum'))
+    .duration(100)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()

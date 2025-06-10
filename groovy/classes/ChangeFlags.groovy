@@ -156,7 +156,7 @@ class ChangeFlags {
         Tantalum.addFlags("generate_rod");
         Tantalum.addFlags("generate_fine_wire");
         Titanium.addFlags("generate_fine_wire");
-        Tantalum.addFlags("generate_catalyst_bed");
+        Tantalum.addFlags("generate_catalyst_bed", "generate_plate");
         ChromiumTrioxide.addFlags("generate_catalyst_bed");
         Iron3Chloride.addFlags("generate_catalyst_bed");
         Platinum.addFlags("generate_catalyst_bed");
@@ -193,6 +193,11 @@ class ChangeFlags {
         // Colors
 
         Phosphorus.setMaterialRGB(0xfffed6);
+        Terbium.setMaterialRGB(0x4b9c70);
+        Dysprosium.setMaterialRGB(0xbfc25f);
+        Holmium.setMaterialRGB(0xe3b16b);
+        Erbium.setMaterialRGB(0xc07ede);
+        Thulium.setMaterialRGB(0xe86666);
 
         // Formulae
 
@@ -207,6 +212,8 @@ class ChangeFlags {
         Diatomite.setFormula("(SiO2)8(Fe2O3)(Al2O3)", true);
         Pollucite.setFormula("(Cs,Na)2Al2Si4O12(H2O)2", true);
         Pitchblende.setFormula("(?)UO2", true);
+        Bastnasite.setFormula("(REE)CO3F", true);
+        Monazite.setFormula("(REE,Th)PO4", true);
 
         // Ore Processing
         
@@ -235,6 +242,9 @@ class ChangeFlags {
         setupSlurries(Pollucite)
         Pentlandite.addFlags("generate_sifted", "generate_flotated");
         setupSlurries(Pentlandite)
+        Bastnasite.addFlags("generate_sifted", "generate_flotated");
+        setupSlurries(Bastnasite)
+        Monazite.addFlags("generate_concentrate");
 
         setupFluidType(PolyvinylAcetate, FluidStorageKeys.LIQUID, 385)
 

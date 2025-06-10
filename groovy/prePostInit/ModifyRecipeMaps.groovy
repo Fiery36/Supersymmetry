@@ -350,7 +350,7 @@ RecipeMaps.SIFTER_RECIPES
     .modifyMaxInputs(2)
 
 RecipeMaps.CENTRIFUGE_RECIPES
-    .modifyMaxFluidInputs(2)
+    .modifyMaxFluidInputs(3)
     .setSlotOverlay(false, true, false, GuiTextures.CENTRIFUGE_OVERLAY)
 
 RecipeMaps.MIXER_RECIPES
