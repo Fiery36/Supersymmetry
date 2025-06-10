@@ -1,5 +1,3 @@
-import javax.sound.sampled.Mixer
-
 VACUUM_FREEZER = recipemap('vacuum_freezer')
 CSTR = recipemap('continuous_stirred_tank_reactor')
 TBR = recipemap('trickle_bed_reactor')
