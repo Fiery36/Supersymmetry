@@ -1,3 +1,31 @@
+# UPDATE 0.1.14.10
+## Mod Changes
+(Truncated due to size! Check on GitHub for the full details.)
+## Changes
+### New Features
+- Finally, the Rare-Earth Elements chain has reached SUSY! Play through 9 brand-new quests. (#1227 by @WideMann) (#1482 by @planetme)
+- Project Red mods now have a questline! (#1473 by @fil1423)
+- Iodine can now be extracted from caliche, a mineral in HV sedimentary rock. (#1485 by @planetme)
+- [Susy-Core] Reflective and asbestos suits now also protect you from drowning and hot/cold pipes! (#439 by @unitazer)
+- [Susy-Core] Four multiblocks now have excellent particle effects! (#446 by @h3tR)
+### Changed Features
+- Watch out: geothermal has been nerfed from 3L of lava usage to 10L of lava usage per recipe! You all deserved it though. (#1477 by @Oganesson897)
+- Germanium now uses distilled rather than ultrapure water (#1471 by @WideMann)
+- The chromite line now uses a mixer instead of a BR for one step (#1479 by @WideMann)
+- Aluminium's recipe is now stoichiometrically correct (#1459 by @WideMann)
+- The inhaler recipe is now logically correct (#1469 by @Rick8484)
+- [Susy-Core] The jet wingsuit now works as a bauble (#441 by @bruberu)
+- [Susy-Core] However, firework rockets no longer work with the elytra (#448 by @fil1423)
+### Fixes
+- Many people helped contribute to the questbook! (#1462 by @Rick8484) (#1463 by @Rick8484) (#1467 by @Cone444) (#1483 by @Brebexe) (#1487 by @Cone444)
+- Allow red sand to be used to craft sand pile (#1472 by @WideMann)
+- Magenta elevators are now craftable (#1475 by @Rick8484)
+- Recycling caution blocks no longer dupes steel (#1488 by @Fiery36)
+- [Susy-Core] Sheeted frames now stack when mined (#442 by @bruberu)
+- [Susy-Core] Evaporation pools no longer spam log (#449 by @MCTian-mi)
+- [Susy-Core] Filters are no longer removed from pipes when conveyors are placed on them (#450 by @unitazer)
+
+Finally, thanks to our first-time contributor @Blebkleb!
 # UPDATE 0.1.14.9
 
 ## Mod Changes
