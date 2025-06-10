@@ -935,6 +935,13 @@ PACKAGER.recipeBuilder()
     .buildAndRegister();
 
 PACKAGER.recipeBuilder()
+    .inputs(item('minecraft:sand', 1))
+    .outputs(metaitem('sand.dust') * 4)
+    .duration(20)
+    .EUt(7)
+    .buildAndRegister();
+
+PACKAGER.recipeBuilder()
     .inputs(metaitem('sand.dust') * 4)
     .outputs(item('minecraft:sand'))
     .duration(20)
