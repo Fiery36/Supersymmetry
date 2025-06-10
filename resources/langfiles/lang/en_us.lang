@@ -896,6 +896,22 @@ susy.material.alkali_fused_wulfenite=Alkali Fused Wulfenite
 susy.material.lead_ii_hydroxide=Lead II Hydroxide
 susy.material.sodium_molybdate_solution=Sodium Molybdate Solution
 susy.material.zinc_oxide=Zinc Oxide
+susy.material.molten_uranyl_nitrate=Molten Uranyl Nitrate
+susy.material.uranium_trioxide=Uranium Trioxide
+susy.material.plutonium_oxalate=Plutonium Oxalate
+susy.material.plutonium_dioxide=Plutonium Dioxide
+susy.material.spent_fuel_suspension=Spent Fuel Suspension
+susy.material.spent_fuel_solution=Spent Fuel Solution
+susy.material.uranium_plutonium_extract=Uranium Plutonium Extract
+susy.material.crude_uranium_extract=Crude Uranium Extract
+susy.material.crude_uranium_concentrate=Crude Uranium Concentrate
+susy.material.uranium_extract=Uranium Extract
+susy.material.uranium_concentrate=Uranium Concentrate
+susy.material.crude_plutonium_concentrate=Crude Plutonium Concentrate
+susy.material.adjusted_plutonium_concentrate=Adjusted Plutonium Concentrate
+susy.material.plutonium_extract=Plutonium Extract
+susy.material.plutonium_concentrate=Plutonium Concentrate
+susy.material.hydroxylammonium_nitrate=Hydroxylammonium Nitrate
 
 # Thermodynamics
 

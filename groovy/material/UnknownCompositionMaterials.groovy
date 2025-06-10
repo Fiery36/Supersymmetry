@@ -2893,5 +2893,60 @@ public class UnknownCompositionMaterials {
                 .dust()
                 .color(0x210604)
                 .build()
+
+        SpentFuelSuspension = new Material.Builder(4636, SuSyUtility.susyId('spent_fuel_suspension'))
+                .liquid()
+                .color(0xd1b000)
+                .build()  
+
+        SpentFuelSolution = new Material.Builder(4637, SuSyUtility.susyId('spent_fuel_solution'))
+                .liquid()
+                .color(0xd1b000)
+                .build() 
+
+        UraniumPlutoniumExtract = new Material.Builder(4638, SuSyUtility.susyId('uranium_plutonium_extract'))
+                .liquid()
+                .color(0xd1b000)
+                .build()
+
+        CrudeUraniumExtract = new Material.Builder(4639, SuSyUtility.susyId('crude_uranium_extract'))
+                .liquid()
+                .color(0xd1b000)
+                .build()
+
+        CrudeUraniumConcentrate = new Material.Builder(4640, SuSyUtility.susyId('crude_uranium_concentrate'))
+                .liquid()
+                .color(0xd1b000)
+                .build()
+
+        UraniumExtract = new Material.Builder(4641, SuSyUtility.susyId('uranium_extract'))
+                .liquid()
+                .color(0xd1b000)
+                .build()
+
+        UraniumConcentrate = new Material.Builder(4642, SuSyUtility.susyId('uranium_concentrate'))
+                .liquid()
+                .color(0xd1b000)
+                .build()
+
+        CrudePlutoniumConcentrate = new Material.Builder(4643, SuSyUtility.susyId('crude_plutonium_concentrate'))
+                .liquid()
+                .color(0xd1b000)
+                .build()        
+
+        AdjustedPlutoniumConcentrate = new Material.Builder(4644, SuSyUtility.susyId('adjusted_plutonium_concentrate'))
+                .liquid()
+                .color(0xd1b000)
+                .build()            
+
+        PlutoniumExtract = new Material.Builder(4645, SuSyUtility.susyId('plutonium_extract'))
+                .liquid()
+                .color(0xd1b000)
+                .build()  
+
+        PlutoniumConcentrate = new Material.Builder(4646, SuSyUtility.susyId('plutonium_concentrate'))
+                .liquid()
+                .color(0xd1b000)
+                .build()  
     }
 }

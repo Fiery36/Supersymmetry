@@ -4097,5 +4097,34 @@ public class FirstDegreeMaterials {
                 .components(Sodium * 3, Phosphorus, Oxygen * 4)
                 .color(0xdae69e)
                 .build();
+        
+        MoltenUranylNitrate = new Material.Builder(8710, SuSyUtility.susyId('molten_uranyl_nitrate'))
+                .liquid()
+                .components(NaturalUranium, Oxygen * 2, Nitrogen * 2, Oxygen * 6)
+                .colorAverage()
+                .build()
+                .setFormula("UO2(NO3)2", true)
+
+        UraniumTrioxide = new Material.Builder(8711, SuSyUtility.susyId('uranium_trioxide'))
+                .dust()
+                .liquid()
+                .components(NaturalUranium, Oxygen * 3)
+                .colorAverage()
+                .build()
+                .setFormula("UO3", true)
+
+        PlutoniumOxalate = new Material.Builder(8712, SuSyUtility.susyId('plutonium_oxalate'))
+                .dust()
+                .components(Plutonium239, Carbon * 4, Oxygen * 8)
+                .colorAverage()
+                .build()
+                .setFormula("Pu(C2O4)2", true)
+
+        PlutoniumDioxide = new Material.Builder(8713, SuSyUtility.susyId('plutonium_dioxide'))
+                .dust()
+                .components(Plutonium239, Oxygen * 2)
+                .colorAverage()
+                .build()
+                .setFormula("PuO2", true)   
     }
 }

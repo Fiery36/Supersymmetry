@@ -657,5 +657,13 @@ public class ThirdDegreeMaterials {
                 .components(MethyltrioctylammoniumChloride, Xylene)
                 .colorAverage()
                 .build();
+        
+        HydroxylammoniumNitrate = new Material.Builder(24106, SuSyUtility.susyId('hydroxylammonium_nitrate'))
+                .liquid()
+                .components(Hydroxylamine, NitricAcid)
+                .colorAverage()
+                .build();
+                
+        HydroxylammoniumNitrate.setFormula("(NH3OH)(NO3)", true)
     }
 }

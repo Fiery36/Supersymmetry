@@ -716,6 +716,17 @@ class SuSyMaterials {
         public static Material ThoriumConcentrate;
         public static Material ThoriumFreeMonaziteLeach;
         public static Material RareEarthFreeMonaziteLeach;
+        public static Material SpentFuelSuspension;
+        public static Material SpentFuelSolution;
+        public static Material UraniumPlutoniumExtract;
+        public static Material CrudeUraniumExtract;
+        public static Material CrudeUraniumConcentrate;
+        public static Material UraniumExtract;
+        public static Material UraniumConcentrate;
+        public static Material CrudePlutoniumConcentrate;
+        public static Material AdjustedPlutoniumConcentrate;
+        public static Material PlutoniumExtract;
+        public static Material PlutoniumConcentrate;
 
         // Petrochem Materials
 
@@ -1477,7 +1488,11 @@ class SuSyMaterials {
         public static Material ThoriumDioxide;
         public static Material ThoriumChloride;
         public static Material SodiumPhosphate;
-
+        public static Material MoltenUranylNitrate;
+        public static Material UraniumTrioxide;
+        public static Material PlutoniumOxalate;
+        public static Material PlutoniumDioxide;
+        
         // HP Materials
 
         public static Material HighPurityLithium;
@@ -2238,6 +2253,7 @@ class SuSyMaterials {
         public static Material IsopropylamineSolution;
         public static Material TributylPhosphateExtractionMixture;
         public static Material Aliquat336ExtractionMixture;
+        public static Material HydroxylammoniumNitrate;
 
         // Thermodynamics Materials
 
