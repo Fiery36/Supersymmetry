@@ -1,10 +1,33 @@
 # UPDATE 0.1.14.10
 ## Mod Changes
-(Truncated due to size! Check on GitHub for the full details.)
+### Mod Updates
+- Not Enough Energistics 1.12.2-2.0.7 -> 1.12.2-2.0.9
+- SusyCore v0.1.59 -> v0.1.61
+- Supercritical 0.0.5 -> 0.0.6
+- Had Enough Items 4.27.3 -> 4.28.0
+- Fixeroo 2.3.5-hotfix.1 -> 2.3.6b
+- OpenComputers MC1.12.2-1.8.8+8da357f -> MC1.12.2-1.8.9a+8ca336f
+- Universal Tweaks 1.12.2-1.14.0 -> 1.12.2-1.15.1
+- CraftPresence 2.5.3+1.12.2-forge -> 2.6.1+1.12.2-forge
+- ModularUI 2.5.0-rc4 -> 2.5.0-rc5
+- Forgelin-Continuous Continuous-2.1.10.0 -> Continuous-2.1.21.0
+- Extreme Sound Muffler: Legacy legacy-1.12.2-1.0.2 -> legacy-1.12.2-1.0.3
+- Chemistry Signs 1.0.0 -> 1.1.1
+- VintageFix 0.5.5 -> 0.6.2
+- PackagedAuto 1.12.2-1.0.17.60 -> 1.12.2-1.0.18.63
+- Flare (Spark for 1.12.2) 0.5.0 -> 0.7.0
+- UniLib 1.0.5+1.12.2-forge -> 1.1.0+1.12.2-forge
+- Quark: RotN Edition r1.6-189 -> r1.6-190
+- VisualOres 0.2.6 -> 0.2.7
+- Fugue 0.18.4 -> 0.18.6
+- GroovyScript 1.2.3 -> 1.2.4
+- Bubbles 2.4.4 -> 2.4.7
+### Mod Removals
+- RandomPatches (Forge)
 ## Changes
 ### New Features
 - Finally, the Rare-Earth Elements chain has reached SUSY! Play through 9 brand-new quests. (#1227 by @WideMann) (#1482 by @planetme)
-- Project Red mods now have a questline! (#1473 by @fil1423)
+- Project Red mods now has a questline! (#1473 by @fil1423)
 - Iodine can now be extracted from caliche, a mineral in HV sedimentary rock. (#1485 by @planetme)
 - [Susy-Core] Reflective and asbestos suits now also protect you from drowning and hot/cold pipes! (#439 by @unitazer)
 - [Susy-Core] Four multiblocks now have excellent particle effects! (#446 by @h3tR)
