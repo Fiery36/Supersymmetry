@@ -1,3 +1,9 @@
+# UPDATE 0.1.14.10.1
+## Changes
+### Fixes
+- Clarifiers and froth flotaters are now safe
+- Magnetic neodymium rods no longer need an assembly line (#1490 by WideMann)
+- Cobalt electrolysis no longer produces the high-purity version (#1491 by trainvoi)
 # UPDATE 0.1.14.10
 ## Mod Changes
 ### Mod Updates
