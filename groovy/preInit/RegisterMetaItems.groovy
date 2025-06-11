@@ -319,6 +319,7 @@ eventManager.listen {
 
         // Metallurgy 6400-6500
         customMetaItems.addItem(6400, "work_roll.unfinished")
+        customMetaItems.addItem(6401, "nozzle.yttria_stabilized_zirconia")
 
         //Seed crystals 7000-7500
 
