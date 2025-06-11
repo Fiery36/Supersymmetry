@@ -21,6 +21,10 @@ AUTOCLAVE = recipemap('autoclave')
 CENTRIFUGE = recipemap('centrifuge')
 ELECTROMAGNETIC_SEPARATOR = recipemap('electromagnetic_separator')
 
+// Monazite Dust * 1
+mods.gregtech.electromagnetic_separator.removeByInput(24, [metaitem('dustPureMonazite')], null)
+
+
 /* REE Data (%mol)
 La: 23.4
 Ce: 45.5

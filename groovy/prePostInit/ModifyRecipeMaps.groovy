@@ -365,7 +365,8 @@ RecipeMaps.ELECTROLYZER_RECIPES
 
 RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES
     .modifyMaxFluidInputs(1)
-    .modifyMaxFluidOutputs(4)
+    .modifyMaxFluidOutputs(2)
+    .modifyMaxOutputs(4)
 
 GTFORecipeMaps.GREENHOUSE_RECIPES
     .modifyMaxFluidInputs(4)
