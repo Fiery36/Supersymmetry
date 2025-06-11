@@ -1428,9 +1428,9 @@ class SuSyMaterials {
         public static Material HEU235AmmoniumDiuranate;
         public static Material WeaponsGradeAmmoniumDiuranate;
         public static Material DepletedAmmoniumDiuranate;
-        public static Material LEU235UraniumDioxide;
-        public static Material HALEU235UraniumDioxide;
-        public static Material HEU235UraniumDioxide;
+        public static Material LEU235Dioxide;
+        public static Material HALEU235Dioxide;
+        public static Material HEU235Dioxide;
         public static Material WeaponsGradeUraniumDioxide;
         public static Material DepletedUraniumDioxide;
         public static Material AmmoniumCarbonate;
