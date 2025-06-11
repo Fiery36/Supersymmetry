@@ -1,17 +1,8 @@
 import globals.Globals;
 import postInit.utils.RecyclingHelper
 
-FORMINGPRESS = recipemap('forming_press')
 ASSEMBLER = recipemap('assembler')
 BENDER = recipemap('bender')
-
-FORMINGPRESS.recipeBuilder()
-    .inputs(ore('dustAlumina') * 10)
-    .notConsumable(metaitem('shape.mold.ring'))
-    .outputs(metaitem('sintered_alumina.insulator'))
-    .duration(500)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
 
 ASSEMBLER.recipeBuilder()
     .circuitMeta(16)

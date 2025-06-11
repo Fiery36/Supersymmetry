@@ -716,6 +716,8 @@ class SuSyMaterials {
         public static Material ThoriumConcentrate;
         public static Material ThoriumFreeMonaziteLeach;
         public static Material RareEarthFreeMonaziteLeach;
+        public static Material HydraulicFluid;
+        public static Material YttriaStabilizedZirconia;
 
         // Petrochem Materials
 
@@ -2238,6 +2240,7 @@ class SuSyMaterials {
         public static Material IsopropylamineSolution;
         public static Material TributylPhosphateExtractionMixture;
         public static Material Aliquat336ExtractionMixture;
+        public static Material PolyvinylAlcoholBinder;
 
         // Thermodynamics Materials
 
