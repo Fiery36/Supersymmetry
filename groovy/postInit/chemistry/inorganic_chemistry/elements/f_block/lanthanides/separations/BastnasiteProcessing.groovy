@@ -20,6 +20,9 @@ MACERATOR = recipemap('macerator')
 AUTOCLAVE = recipemap('autoclave')
 CENTRIFUGE = recipemap('centrifuge')
 
+// Bastnasite Dust * 1
+mods.gregtech.electromagnetic_separator.removeByInput(24, [metaitem('dustPureBastnasite')], null)
+
 /* Data (%mol)
 La: 34
 Ce: 50
