@@ -1481,6 +1481,10 @@ class SuSyMaterials {
         public static Material ThoriumDioxide;
         public static Material ThoriumChloride;
         public static Material SodiumPhosphate;
+        public static Material SodiumBisulfiteSolution;
+        public static Material CalicheLeach;
+        public static Material IodateConcentrate;
+        public static Material IodideConcentrate;
 
         // HP Materials
 

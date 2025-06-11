@@ -1040,13 +1040,13 @@ public class FirstDegreeMaterials {
 
         AmmoniumCarbonate.setFormula("(NH4)2CO3", true)
 
-        Zircaloy = new Material.Builder(8246, SuSyUtility.susyId('zircaloy'))
-                .ingot().liquid()
-                .components(Zirconium * 16, Tin * 2, Chrome)
-                .color(0x566570)
-                .iconSet(METALLIC)
-                .flags(GENERATE_RING, GENERATE_PLATE)
-                .build()
+        SodiumBisulfiteSolution = new Material.Builder(8246, SuSyUtility.susyId('sodium_bisulfite_solution'))
+                .liquid()
+                .components(Sodium, Hydrogen, Sulfur, Oxygen * 3, Water)
+                .colorAverage()
+                .build();
+
+        SodiumBisulfiteSolution.setFormula("(NaHSO3)(H2O)", true)
 
         SulfidicSilverCyanideSolution = new Material.Builder(8247, SuSyUtility.susyId('sulfidic_silver_cyanide_solution'))
                 .liquid()
@@ -4115,5 +4115,13 @@ public class FirstDegreeMaterials {
                 .components(Sodium * 3, Phosphorus, Oxygen * 4)
                 .color(0xdae69e)
                 .build();
+
+        Zircaloy = new Material.Builder(8710, SuSyUtility.susyId('zircaloy'))
+                .ingot().liquid()
+                .components(HighPurityZirconium * 16, Tin * 2, Chrome)
+                .color(0x566570)
+                .iconSet(METALLIC)
+                .flags(GENERATE_RING, GENERATE_PLATE)
+                .build()
     }
 }
