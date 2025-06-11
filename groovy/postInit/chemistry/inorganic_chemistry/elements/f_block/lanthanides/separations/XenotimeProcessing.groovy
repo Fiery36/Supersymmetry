@@ -41,12 +41,12 @@ Y: 60.8
 88.7% HREEs
 */
 
-MACERATOR.recipeBuilder()
+/*MACERATOR.recipeBuilder()
     .inputs(item('susy:resource_block', 9))
     .outputs(metaitem('dustXenotime') * 4)
     .duration(240)
     .EUt(7)
-    .buildAndRegister()
+    .buildAndRegister()*/
 
 // Xenotime beneficiation
 

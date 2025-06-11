@@ -291,12 +291,47 @@ def fluid_removals = [
     fluid('severely_hydrocracked_light_fuel'),
     item('forge:bucketfilled').withNbt(['FluidName': 'severely_hydrocracked_light_fuel', 'Amount': 1000]),
     fluid('severely_hydrocracked_heavy_fuel'),
-    item('forge:bucketfilled').withNbt(['FluidName': 'severely_hydrocracked_heavy_fuel', 'Amount': 1000])
+    item('forge:bucketfilled').withNbt(['FluidName': 'severely_hydrocracked_heavy_fuel', 'Amount': 1000]),
+    fluid('ruby_slurry'),
+    item('forge:bucketfilled').withNbt(['FluidName': 'ruby_slurry', 'Amount': 1000]),
+    fluid('sapphire_slurry'),
+    item('forge:bucketfilled').withNbt(['FluidName': 'sapphire_slurry', 'Amount': 1000]),
+    fluid('green_sapphire_slurry'),
+    item('forge:bucketfilled').withNbt(['FluidName': 'green_sapphire_slurry', 'Amount': 1000])
 ]
 
 for (fluid in fluid_removals) {
     mods.jei.ingredient.hide(fluid)
 }
+
+def item_removals = [
+    item('susy:resource_block:9'), //Alluvial Xenotime Deposit
+    item('gregtech:meta_item_1:310'), //Infinite Water Cover
+    item('gregtech:meta_item_1:492'), //Engraved Lapotron Crystal Chip
+    item('gregtech:meta_dust:364'), //Platinum Group Sludge
+    item('gregtech:meta_dust_small:364'), //Small Clump of Platinum Group Sludge
+    item('gregtech:meta_dust_tiny:364'), //Tiny Clump of Platinum Group Sludge
+    item('gregtech:meta_dust:436'), //Osmium Tetroxide
+    item('gregtech:meta_dust_small:436'), //Small Pile of Osmium Tetroxide
+    item('gregtech:meta_dust_tiny:436'), //Tiny Pile of Osmium Tetroxide
+    item('gregtech:meta_dust:1598'), //Rare Earth
+    item('gregtech:meta_dust_small:1598'), //Small Pile of Rare Earth
+    item('gregtech:meta_dust_tiny:1598'), //Tiny Pile of Rare Earth
+    item('gregtech:meta_dust:2057'), //Platinum Sludge Residue
+    item('gregtech:meta_dust_small:2057'), //Small Pile of Platinum Sludge Residue
+    item('gregtech:meta_dust_tiny:2057'), //Tiny Pile of Platinum Sludge Residue
+    item('gregtech:meta_dust:2058'), //Raw Palladium Mixture
+    item('gregtech:meta_dust_small:2058'), //Small Pile of Raw Palladium Mixture
+    item('gregtech:meta_dust_tiny:2058'), //Tiny Pile of Raw Palladium Mixture
+    item('gregtech:meta_dust:2059'), //Rarest Metal Mixture
+    item('gregtech:meta_dust_small:2059'), //Small Pile of Rarest Metal Mixture
+    item('gregtech:meta_dust_tiny:2059'), //Tiny Pile of Rarest Metal Mixture
+]
+
+for (item in item_removals) {
+    mods.jei.ingredient.hide(item)
+}
+
 //ADDITIONS
 
 //CONSUMES IRON BUCKET ONLY BECAUSE THE OUTPUT IS IN AN IRON BUCKET

@@ -379,8 +379,7 @@ def alluvial_tier_4 = [
     'susy:resource_block:11' : 10000,
     //T4
     'minecraft:soul_sand' : 100,
-    'susy:resource_block:6' : 1000,
-    'susy:resource_block:9' : 500
+    'susy:resource_block:6' : 1000
 ];
 
 //FORMAT: BASE ROCK, WASHING FLUID, WASTE FLUID, ORE OUTPUT LISTS, STARTING VOLTAGE TIER
