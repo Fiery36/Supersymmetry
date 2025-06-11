@@ -2893,5 +2893,16 @@ public class UnknownCompositionMaterials {
                 .dust()
                 .color(0x210604)
                 .build()
+
+        HydraulicFluid = new Material.Builder(4637, SuSyUtility.susyId('hydraulic_fluid'))
+                .liquid()
+                .color(0xebd64d)
+                .flags(FLAMMABLE)
+                .build();
+
+        YttriaStabilizedZirconia = new Material.Builder(4638, SuSyUtility.susyId('yttria_stabilized_zirconia'))
+                .dust()
+                .color(0xe3ecff)
+                .build();
     }
 }

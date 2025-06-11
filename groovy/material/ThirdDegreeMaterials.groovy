@@ -657,5 +657,11 @@ public class ThirdDegreeMaterials {
                 .components(MethyltrioctylammoniumChloride, Xylene)
                 .colorAverage()
                 .build();
+
+        PolyvinylAlcoholBinder = new Material.Builder(24106, SuSyUtility.susyId('polyvinyl_alcohol_binder'))
+                .liquid()
+                .components(PolyvinylAlcohol, Water)
+                .colorAverage()
+                .build();
     }
 }

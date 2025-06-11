@@ -317,6 +317,10 @@ eventManager.listen {
         customMetaItems.addItem(6303, "anode_slime.copper")
         customMetaItems.addItem(6304, "anode_slime.decopperized")
 
+        // Metallurgy 6400-6500
+        customMetaItems.addItem(6400, "work_roll.unfinished")
+        customMetaItems.addItem(6401, "nozzle.yttria_stabilized_zirconia")
+
         //Seed crystals 7000-7500
 
         customMetaItems.addItem(7000, "seed_crystal.silicon");

@@ -147,11 +147,11 @@ class ChangeFlags {
         Asbestos.addFlags("generate_foil");
         Magnesium.addFlags("generate_rod", "generate_plate");
         Tellurium.addFlags("generate_plate");
-        Steel.addFlags("generate_spring", "generate_spring_small");
+        Steel.addFlags("generate_spring", "generate_spring_small", "continuously_cast");
         Titanium.addFlags("generate_foil", "generate_spring", "generate_spring_small");
         Lead.addFlags("generate_round");
         Nickel.addFlags("generate_rod", "generate_foil");
-        Aluminium.addFlags("generate_round", "generate_rotor");
+        Aluminium.addFlags("generate_round", "generate_rotor", "continuously_cast");
         Tungsten.addFlags("generate_fine_wire");
         Molybdenum.addFlags("generate_fine_wire");
         Tantalum.addFlags("generate_rod");
@@ -174,6 +174,8 @@ class ChangeFlags {
         IronMagnetic.addFlags("generate_ring");
         StainlessSteel.addFlags("generate_round");
         Hafnium.addFlags("generate_long_rod", "generate_rod");
+        Copper.addFlags("continuously_cast");
+
 
         /*
         ManganesePhosphide.addFlags("no_smashing", "no_smelting")

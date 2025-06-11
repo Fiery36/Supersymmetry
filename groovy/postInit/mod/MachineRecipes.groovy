@@ -824,6 +824,12 @@ RecyclingHelper.addShaped("gregtech:advanced_arc_furnace", metaitem('advanced_ar
     [tieredPlates[1], tieredPlates[1], tieredPlates[1]]
 ]);
 
+RecyclingHelper.addShaped("gregtech:industrial_arc_furnace", metaitem('advanced_arc_furnace'), [
+    [metaitem('cableGtHexNichrome'), item('susy:electrode_assembly'), metaitem('cableGtHexNichrome')],
+    [circuits[4], hulls[4], circuits[4]],
+    [tieredPlates[4], tieredPlates[4], tieredPlates[4]]
+]);
+
 RecyclingHelper.addShaped("gregtech:electrode_assembly", item('susy:electrode_assembly'), [
     [metaitem('plateSteel'), metaitem('cableGtSingleCopper'), metaitem('plateSteel')],
     [metaitem('graphite_electrode'), metaitem('frameSteel'), metaitem('graphite_electrode')],
@@ -840,7 +846,7 @@ crafting.addShaped("gregtech:evaporation_bed", item('susy:evaporation_bed') * 8,
     [item('minecraft:sand'), item('minecraft:dirt'), item('minecraft:sand')],
     [item('minecraft:dirt'), item('minecraft:gravel'), item('minecraft:dirt')],
     [item('minecraft:sand'), item('minecraft:dirt'), item('minecraft:sand')]
-    ]);
+]);
 
 RecyclingHelper.addShaped("gregtech:clarifier", metaitem('clarifier'), [
     [tieredCables[2], metaitem('rotorSteel'), tieredCables[2]],

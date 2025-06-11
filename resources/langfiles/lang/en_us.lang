@@ -2427,6 +2427,9 @@ susy.material.two_ethyl_one_hexene=2-Ethyl-1-hexene
 susy.material.di_two_ethylhexylphosphine=Di(2-Ethylhexyl)phosphine
 susy.material.di_two_ethylhexylphosphinic_acid=Di(2-Ethylhexyl)phosphinic Acid
 susy.material.potassium_chlorate_solution=Potassium Chlorate Solution
+susy.material.hydraulic_fluid=Hydraulic Fluid
+susy.material.yttria_stabilized_zirconia=Yttria Stabilized Zirconia
+susy.material.polyvinyl_alcohol_binder=Polyvinyl Alcohol Binder
 
 # Isotopes
 
@@ -2880,6 +2883,9 @@ metaitem.turbojet.small.name=Small Turbojet Engine
 metaitem.wing_panel.fiber_reinforced_epoxy.name=Glass Fiber Reinforced Epoxy (GFEP) Wing Panel
 metaitem.wing.small.name=Lightweight Wing
 
+metaitem.work_roll.unfinished.name=Unfinished Work Roll
+metaitem.nozzle.yttria_stabilized_zirconia.name=Yttria-Stabilized Zirconia Nozzle
+
 # Vanilla MC
 tile.hellsand.name=Mineral-Rich Sand
 tile.magma.name=Magma-Infused Netherrack
@@ -2913,6 +2919,12 @@ tile.pyrotech.anvil_granite.name=Stone Anvil
 gui.pyrotech.jei.category.anvil.granite=Stone Anvil
 gregtech.universal.tooltip.terrain_resist=§eWill not explode from water, lava, fire or rain.
 gregtech.advancement.steam.14_magnetic_iron.desc=Craft a Magnetic Iron Rod
+gregtech.advancement.low_voltage.27_electric_blast_furnace.name=Electric Resistance Furnace
+gregtech.advancement.low_voltage.27_electric_blast_furnace.desc=Craft an Electric Resistance Furnace.
+gregtech.machine.electric_blast_furnace.name=Electric Resistance Furnace
+gregtech.multiblock.electric_blast_furnace.description=The Electric Resistance Furnace (ERF) is a multiblock structure used for smelting alloys, cooking metals and refining ores. It is required for obtaining high-tier alloys and metals, such as aluminium, stainless steel, titanium, and naquadah alloy.
+gregtech.advancement.medium_voltage.31_mv_energy_hatch.name=Upgrade Your ERF
+recipemap.electric_blast_furnace.name=Resistance Furnace
 
 # Material Renaming
 item.susy.material.ultra_high_molecular_weight_polyethylene.dustTiny=Tiny Pile of Ultra High Molecular Weight Polyethylene (UHMWPE) Pulp
@@ -2937,3 +2949,5 @@ susy.menu.openfolder=Open MC Folder
 susy.menu.refresh=Refresh Menu
 susy.menu.replayviewer=Replay Viewer
 susy.menu.quit.hover=You can never escape Greg.
+
+
