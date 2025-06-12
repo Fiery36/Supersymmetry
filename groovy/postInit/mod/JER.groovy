@@ -2,14 +2,9 @@
 
 import net.minecraft.entity.EntityList
 import jeresources.compatibility.minecraft.MinecraftCompat
-import jeresources.util.MobTableBuilder
-import java.lang.reflect.Constructor
 import net.minecraftforge.fml.common.registry.ForgeRegistries
 import jeresources.compatibility.JERAPI
-import jeresources.registry.MobRegistry
 import techguns.entities.npcs.GenericNPC
-
-MobRegistry.getInstance().clear()
 
 def registry = JERAPI.getInstance().getMobRegistry()
 def world = MinecraftCompat.getWorld()
