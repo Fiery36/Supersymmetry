@@ -61,6 +61,7 @@ Globals.solders.each { key, val ->
                 ore('plateSteel'),
                 metaitem('component.glass.tube')
             ])
+            .circuitMeta(1)
             .fluidInputs(fluid(key) * val)
             .outputs(item('gaspunk:empty_grenade'))
             .duration(200)
@@ -73,6 +74,7 @@ Globals.solders.each { key, val ->
                 metaitem('component.glass.tube'),
                 ore('plateSteel')
             ])
+            .circuitMeta(2)
             .fluidInputs(fluid(key) * val)
             .outputs(item('gp_inhaler:empty_inhaler'))
             .duration(200)
