@@ -305,6 +305,7 @@ for (fluid in fluid_removals) {
 }
 
 def item_removals = [
+    item('susy:resource_block:7'), //Alluvial Bastnasite Deposit
     item('susy:resource_block:9'), //Alluvial Xenotime Deposit
     item('gregtech:meta_item_1:310'), //Infinite Water Cover
     item('gregtech:meta_item_1:492'), //Engraved Lapotron Crystal Chip
