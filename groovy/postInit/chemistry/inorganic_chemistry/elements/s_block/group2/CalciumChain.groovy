@@ -5,7 +5,7 @@ DISTILLERY = recipemap('distillery')
 VACUUM_DT = recipemap('vacuum_distillation')
 
 ROASTER.recipeBuilder()
-        .inputs(ore('dustGypsum') * 8)
+        .inputs(ore('dustGypsum') * 12)
         .outputs(metaitem('dustCalciumSulfate') * 6)
         .fluidOutputs(fluid('dense_steam') * 2000)
         .EUt(30)
