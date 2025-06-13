@@ -15,7 +15,7 @@ FORMINGPRESS.recipeBuilder()
 
 ASSEMBLER.recipeBuilder()
     .circuitMeta(16)
-    .inputs(ore('stickIridium'))
+    .inputs(ore('boltIridium'))
     .inputs(ore('plateStainlessSteel'))
     .inputs(ore('boltStainlessSteel'))
     .inputs(metaitem('sintered_alumina.insulator'))
