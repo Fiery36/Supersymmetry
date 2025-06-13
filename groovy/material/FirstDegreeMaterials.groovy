@@ -111,7 +111,7 @@ public class FirstDegreeMaterials {
         HighPurityLead = generatePurifiedElement(Lead, 8055, false, false)
         HighPurityBismuth = generatePurifiedElement(Bismuth, 8056, false, false)
         HighPurityCerium = generatePurifiedElement(Cerium, 8057, false, false)
-        HighPurityPraesodymium = generatePurifiedElement(Praseodymium, 8058, false, false)
+        HighPurityPraseodymium = generatePurifiedElement(Praseodymium, 8058, false, false)
         HighPurityNeodymium = generatePurifiedElement(Neodymium, 8059, false, false)
         HighPuritySamarium = generatePurifiedElement(Samarium, 8060, false, false)
         HighPurityEuropium = generatePurifiedElement(Europium, 8061, false, false)
@@ -948,7 +948,8 @@ public class FirstDegreeMaterials {
                 .components(Nitrogen, Hydrogen * 5, Sulfur, Oxygen * 4)
                 .colorAverage()
                 .build()
-                .setFormula("(NH4)HSO4", true)
+        
+        AmmoniumBisulfate.setFormula("(NH4)HSO4", true)
 
         Phosphine = new Material.Builder(8231, SuSyUtility.susyId('phosphine'))
                 .gas()
@@ -1031,7 +1032,21 @@ public class FirstDegreeMaterials {
                 .color(0x879e21)
                 .build()
 
-        // FREE IDs: 8245-8246
+        AmmoniumCarbonate = new Material.Builder(8245, SuSyUtility.susyId('ammonium_carbonate'))
+                .dust()
+                .components(Nitrogen * 2, Hydrogen * 8, Oxygen * 3, Carbon)
+                .color(0x849697)
+                .build()
+
+        AmmoniumCarbonate.setFormula("(NH4)2CO3", true)
+
+        SodiumBisulfiteSolution = new Material.Builder(8246, SuSyUtility.susyId('sodium_bisulfite_solution'))
+                .liquid()
+                .components(Sodium, Hydrogen, Sulfur, Oxygen * 3, Water)
+                .colorAverage()
+                .build();
+
+        SodiumBisulfiteSolution.setFormula("(NaHSO3)(H2O)", true)
 
         SulfidicSilverCyanideSolution = new Material.Builder(8247, SuSyUtility.susyId('sulfidic_silver_cyanide_solution'))
                 .liquid()
@@ -2177,7 +2192,7 @@ public class FirstDegreeMaterials {
         NeodymiumOxide = new Material.Builder(8418, SuSyUtility.susyId('neodymium_oxide'))
                 .dust()
                 .components(Neodymium * 2, Oxygen * 3)
-                .colorAverage()
+                .color(0x99baf0)
                 .build()
 
         Bromooctane = new Material.Builder(8419, SuSyUtility.susyId('bromooctane'))
@@ -3789,6 +3804,304 @@ public class FirstDegreeMaterials {
                 .build()
                 .setFormula("UO2", true);
 
-        
+        PotassiumChlorate = new Material.Builder(8665, SuSyUtility.susyId('potassium_chlorate'))
+                .dust()
+                .components(Potassium, Chlorine, Oxygen * 3)
+                .color(0x91b39e)
+                .build()
+
+        PotassiumChlorate.setFormula("KClO3", true)
+
+        AmmoniumPersulfate = new Material.Builder(8666, SuSyUtility.susyId('ammonium_persulfate'))
+                .dust()
+                .components(Nitrogen * 2, Hydrogen * 8, Sulfur * 2, Oxygen * 8)
+                .color(0x3268a8)
+                .build();
+
+        AmmoniumPersulfate.setFormula("(NH4)2S2O8", true)
+
+        SodiumAmalgam = new Material.Builder(8667, SuSyUtility.susyId('sodium_amalgam'))
+                .liquid()
+                .components(Sodium * 3, Mercury)
+                .color(0x5f527d)
+                .build()
+
+        DilutedNitricAcid = new Material.Builder(8668, SuSyUtility.susyId('diluted_nitric_acid'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(NitricAcid * 1, Water * 1)
+                .colorAverage()
+                .build();
+
+        YttriumChloride = new Material.Builder(8669, SuSyUtility.susyId('yttrium_chloride'))
+                .dust()
+                .components(Yttrium, Chlorine * 3)
+                .colorAverage()
+                .build()
+
+        YttriumHydroxide = new Material.Builder(8670, SuSyUtility.susyId('yttrium_hydroxide'))
+                .dust()
+                .components(Yttrium, Hydrogen * 3, Oxygen * 3)
+                .color(0x765278)
+                .build()
+
+        YttriumHydroxide.setFormula("Y(OH)3", true)
+
+        LanthanumCarbonate = new Material.Builder(8671, SuSyUtility.susyId('lanthanum_carbonate'))
+                .dust()
+                .components(Lanthanum * 2, Carbon * 3, Oxygen * 9)
+                .color(0x597a7a)
+                .build()
+
+        LanthanumCarbonate.setFormula("La2(CO3)3", true)
+
+        LanthanumFluoride = new Material.Builder(8672, SuSyUtility.susyId('lanthanum_fluoride'))
+                .dust() 
+                .components(Lanthanum, Fluorine * 3)
+                .color(0x5b8c86)
+                .build()
+
+        LanthanumOxide = new Material.Builder(8673, SuSyUtility.susyId('lanthanum_oxide'))
+                .dust()
+                .components(Lanthanum * 2, Oxygen * 3)
+                .color(0x5b748c)
+                .build()
+
+        LanthanumNitrate = new Material.Builder(8674, SuSyUtility.susyId('lanthanum_nitrate'))
+                .dust()
+                .components(Lanthanum, Nitrogen * 3, Oxygen * 9)
+                .color(0x4e646e)
+                .build()
+
+        LanthanumNitrate.setFormula("La(NO3)3", true)
+
+        CeriumIIINitrateSolution = new Material.Builder(8675, SuSyUtility.susyId('cerium_iii_nitrate_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(Cerium * 2, Nitrogen * 6, Oxygen * 18, NitricAcid * 2, Water)
+                .color(0x87918c)
+                .build()
+
+        CeriumIIINitrateSolution.setFormula("(Ce(NO3)3)2(HNO3)2(H2O)", true)
+
+        CeriumIIIFluoride = new Material.Builder(8676, SuSyUtility.susyId('cerium_iii_fluoride'))
+                .dust()
+                .components(Cerium, Fluorine * 3)
+                .color(0x97a73)
+                .build()
+
+        CeriumIVHydroxide = new Material.Builder(8677, SuSyUtility.susyId('cerium_iv_hydroxide'))
+                .dust()
+                .components(Cerium, Hydrogen * 4, Oxygen * 4)
+                .color(0x719191)
+                .build()
+
+        CeriumIVHydroxide.setFormula("Ce(OH)4", true)
+
+        CeriumIIIChloride = new Material.Builder(8678, SuSyUtility.susyId('cerium_iii_chloride'))
+                .dust()
+                .components(Cerium, Chlorine * 3)
+                .color(0x758f65)
+                .build()
+
+        PraseodymiumIVOxide = new Material.Builder(8679, SuSyUtility.susyId('praseodymium_iv_oxide'))
+                .dust()
+                .components(Praseodymium, Oxygen * 2)
+                .color(0x210e04)
+                .build()
+
+        PraseodymiumIIIFluoride = new Material.Builder(8680, SuSyUtility.susyId('praseodymium_iii_fluoride'))
+                .dust()
+                .components(Praseodymium, Fluorine * 3)
+                .color(0x80b570)
+                .build()
+
+        PraseodymiumIIINitrate = new Material.Builder(8681, SuSyUtility.susyId('praseodymium_iii_nitrate'))
+                .dust()
+                .components(Praseodymium, Nitrogen * 3, Oxygen * 9)
+                .color(0x4cab37)
+                .build()
+
+        NeodymiumChlorideSolution = new Material.Builder(8682, SuSyUtility.susyId('neodymium_chloride_solution'))
+                .liquid()
+                .components(Neodymium, Chlorine * 3, Water * 3)
+                .color(0xde5b9c)
+                .build()
+
+        NeodymiumChlorideSolution.setFormula("(NdCl3)(H2O)3", true)
+
+        NeodymiumFluoride = new Material.Builder(8683, SuSyUtility.susyId('neodymium_fluoride'))
+                .dust()
+                .components(Neodymium, Fluorine * 3)
+                .color(0xe079be)
+                .build()
+
+        NeodymiumHydroxide = new Material.Builder(8684, SuSyUtility.susyId('neodymium_hydroxide'))
+                .dust()
+                .components(Neodymium, Hydrogen * 3, Oxygen * 3)
+                .color(0xde8cdb)
+                .build()
+
+        NeodymiumHydroxide.setFormula("Nd(OH)3", true)  
+
+        SamariumHydroxide = new Material.Builder(8685, SuSyUtility.susyId('samarium_hydroxide'))
+                .dust()
+                .components(Samarium, Hydrogen * 3, Oxygen * 3)
+                .color(0xebe3b0)
+                .build()
+
+        SamariumHydroxide.setFormula("Sm(OH)3", true)
+
+        SamariumOxide = new Material.Builder(8686, SuSyUtility.susyId('samarium_oxide'))
+                .dust()
+                .components(Samarium * 2, Oxygen * 3)
+                .color(0xe0d590)
+                .build()
+
+        EuropiumIISulfate = new Material.Builder(8687, SuSyUtility.susyId('europium_ii_sulfate'))
+                .dust()
+                .components(Europium , Sulfur, Oxygen * 4)
+                .color(0x65b5b3)
+                .build()
+
+        EuropiumIIIOxide = new Material.Builder(8688, SuSyUtility.susyId('europium_iii_oxide'))
+                .dust()
+                .components(Europium * 2, Oxygen * 3)
+                .color(0x478eb5)
+                .build()
+
+        GadoliniumChloride = new Material.Builder(8689, SuSyUtility.susyId('gadolinium_chloride'))
+                .dust()
+                .components(Gadolinium, Chlorine * 3)
+                .color(0xddf0ff)
+                .build()
+
+        GadoliniumFluoride = new Material.Builder(8690, SuSyUtility.susyId('gadolinium_fluoride'))
+                .dust()
+                .components(Gadolinium, Fluorine * 3)
+                .color(0xc2c7f0)
+                .build()
+
+        TerbiumFluoride = new Material.Builder(8691, SuSyUtility.susyId('terbium_fluoride'))
+                .dust()
+                .components(Terbium, Fluorine * 3)
+                .color(0x78c25f)
+                .build()
+                
+        DysprosiumChloride = new Material.Builder(8692, SuSyUtility.susyId('dysprosium_chloride'))
+                .dust()
+                .components(Dysprosium, Chlorine * 3)
+                .color(0xc4d64d)
+                .build()
+
+        DysprosiumFluoride = new Material.Builder(8693, SuSyUtility.susyId('dysprosium_fluoride'))
+                .dust()
+                .components(Dysprosium, Fluorine * 3)
+                .color(0xdbf0b6)
+                .build()
+
+        HolmiumChloride = new Material.Builder(8694, SuSyUtility.susyId('holmium_chloride'))
+                .dust()
+                .components(Holmium, Chlorine * 3)
+                .color(0xdec18e)
+                .build()
+
+        HolmiumFluoride = new Material.Builder(8695, SuSyUtility.susyId('holmium_fluoride'))
+                .dust()
+                .components(Holmium, Fluorine * 3)
+                .color(0xe2e697)
+                .build()
+
+        ErbiumSulfate = new Material.Builder(8696, SuSyUtility.susyId('erbium_sulfate'))
+                .dust()
+                .components(Erbium * 2, Sulfur * 3, Oxygen * 12)
+                .color(0xd660d6)
+                .build()
+
+        ErbiumSulfate.setFormula("Er2(SO4)3", true)
+
+        ErbiumFluoride = new Material.Builder(8697, SuSyUtility.susyId('erbium_fluoride'))
+                .dust()
+                .components(Erbium, Fluorine * 3)
+                .color(0xd660a1)
+                .build()
+
+        ThuliumFluoride = new Material.Builder(8698, SuSyUtility.susyId('thulium_fluoride'))
+                .dust()
+                .components(Thulium, Fluorine * 3)
+                .color(0xf09078)
+                .build()
+
+        YtterbiumAmalgam = new Material.Builder(8699, SuSyUtility.susyId('ytterbium_amalgam'))
+                .liquid()
+                .components(Ytterbium, Mercury)
+                .color(0xbcc8e0)
+                .build()
+
+        YtterbiumChlorideSolution = new Material.Builder(8700, SuSyUtility.susyId('ytterbium_chloride_solution'))
+                .liquid()
+                .components(Ytterbium, Chlorine * 3, Water * 5)
+                .color(0x9fa89e)
+                .build();
+
+        YtterbiumChlorideSolution.setFormula("(YbCl3)(H2O)5", true)
+
+        YtterbiumHydroxide = new Material.Builder(8701, SuSyUtility.susyId('ytterbium_hydroxide'))
+                .dust()
+                .components(Ytterbium, Hydrogen * 3, Oxygen * 3)
+                .color(0x9395a3)
+                .build();
+
+        YtterbiumHydroxide.setFormula("Yb(OH)3", true)
+
+        YtterbiumOxide = new Material.Builder(8702, SuSyUtility.susyId('ytterbium_oxide'))
+                .dust()
+                .components(Ytterbium * 2, Oxygen * 3)
+                .color(0x888f9e)
+                .build();
+
+        LutetiumChlorideSolution = new Material.Builder(8703, SuSyUtility.susyId('lutetium_chloride_solution'))
+                .liquid()
+                .components(Lutetium, Chlorine * 3, Water * 3)
+                .color(0x24e0da)
+                .build();
+
+        LutetiumChlorideSolution.setFormula("(LuCl3)(H2O)3", true)
+
+        LutetiumFluoride = new Material.Builder(8704, SuSyUtility.susyId('lutetium_fluoride'))
+                .dust()
+                .components(Lutetium, Fluorine * 3)
+                .color(0x30b3bf)
+                .build();
+
+        SaltyPhosphoricAcid = new Material.Builder(8705, SuSyUtility.susyId('salty_phosphoric_acid'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(PhosphoricAcid, Salt * 3, Water * 3)
+                .color(0xbfbe7c)
+                .build();
+
+        ThoriumNitrateSolution = new Material.Builder(8706, SuSyUtility.susyId('thorium_nitrate_solution'))
+                .liquid()
+                .components(Thorium, Nitrogen * 3, Oxygen * 9, Water)
+                .color(0x001e13)
+                .build();
+
+        ThoriumNitrateSolution.setFormula("(Th(NO3)4)(H2O)", true)
+
+        ThoriumDioxide = new Material.Builder(8707, SuSyUtility.susyId('thorium_dioxide'))
+                .dust()
+                .components(Thorium, Oxygen * 2)
+                .color(0x00061e)
+                .build();
+
+        ThoriumChloride = new Material.Builder(8708, SuSyUtility.susyId('thorium_chloride'))
+                .dust()
+                .components(Thorium, Chlorine * 3)
+                .color(0x012916)
+                .build();
+
+        SodiumPhosphate = new Material.Builder(8709, SuSyUtility.susyId('sodium_phosphate'))
+                .dust()
+                .components(Sodium * 3, Phosphorus, Oxygen * 4)
+                .color(0xdae69e)
+                .build();
     }
 }
