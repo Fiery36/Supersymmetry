@@ -1,9 +1,11 @@
 import globals.Globals
+import static globals.SinteringGlobals.*
 
 SINTERING_OVEN = recipemap('sintering_oven')
 HOT_ISOSTATIC_PRESS = recipemap('hot_isostatic_press')
 MIXER = recipemap('mixer')
 FORMING_PRESS = recipemap('forming_press')
+CVD = recipemap('cvd')
 
 // PVA binder
 
@@ -48,12 +50,29 @@ ARC_FURNACE.recipeBuilder()
     .buildAndRegister()
 
 for (blanket in sintering_blankets) {
-    SINTERING_RECIPES.recipeBuilder()
+    SINTERING_OVEN.recipeBuilder()
         .inputs(ore('dustBoronCarbide'))
         .fluidInputs(fluid('novolacs') * 100)
         .notConsumable(metaitem('shape.mold.rod'))
         .fluidInputs(fluid(blanket.name) * blanket.amountRequired)
-        .outputs(metaitem('stickBoronCarbide'))
+        .outputs(metaitem('stickBoronCarbide') * 2)
+        .circuitMeta(1)
+        .duration(blanket.duration)
+        .EUt(Globals.voltAmps[2])
+        .buildAndRegister()
+}
+
+// Long Boron Carbide Rod * 1
+mods.gregtech.forge_hammer.removeByInput(16, [metaitem('stickBoronCarbide') * 2], null)
+
+for (blanket in sintering_blankets) {
+    SINTERING_OVEN.recipeBuilder()
+        .inputs(ore('dustBoronCarbide'))
+        .fluidInputs(fluid('novolacs') * 100)
+        .notConsumable(metaitem('shape.mold.rod'))
+        .fluidInputs(fluid(blanket.name) * blanket.amountRequired)
+        .outputs(metaitem('stickLongBoronCarbide'))
+        .circuitMeta(2)
         .duration(blanket.duration)
         .EUt(Globals.voltAmps[2])
         .buildAndRegister()

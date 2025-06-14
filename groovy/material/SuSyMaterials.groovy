@@ -10,7 +10,8 @@ import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.Materials.*;
 
 import static material.ElementMaterials.*;
-import static material.FirstDegreeMaterials.*;
+import static material.FirstDegreeMaterialsA.*;
+import static material.FirstDegreeMaterialsB.*;
 import static material.IsotopeMaterials.*;
 import static material.OreMaterials.*;
 import static material.OrganicChemistryMaterials.*;
@@ -900,7 +901,7 @@ class SuSyMaterials {
         public static Material RPOne;
         public static Material DehexanizedNaphtha;
 
-        // First Degree Materials
+        // First Degree Materials A
 
         public static Material PotassiumBisulfate;
         public static Material AmmoniumNitrate;
@@ -1032,8 +1033,6 @@ class SuSyMaterials {
         public static Material HydrobromicAcid;
         public static Material SodiumSulfite;
         public static Material SodiumThiosulfate;
-        public static Material Zircaloy;
-        public static Material Inconel625;
         public static Material SulfidicSilverCyanideSolution;
         public static Material SilverCyanideSolution;
         public static Material SulfidicPyrargyriteCyanideLeachSolution;
@@ -1485,6 +1484,13 @@ class SuSyMaterials {
         public static Material CalicheLeach;
         public static Material IodateConcentrate;
         public static Material IodideConcentrate;
+
+        // First Degree Materials B
+
+        public static Material Zircaloy4;
+        public static Material ReactorSteel;
+        public static Material Inconel718;
+        public static Material SilverIndiumCadmium;
 
         // HP Materials
 
@@ -2311,7 +2317,8 @@ class SuSyMaterials {
                 IsotopeMaterials.register();
                 UnknownCompositionMaterials.register();
                 OreMaterials.register();
-                FirstDegreeMaterials.register();
+                FirstDegreeMaterialsA.register();
+                FirstDegreeMaterialsB.register();
                 SecondDegreeMaterials.register();
                 OrganicChemistryMaterials.register();
                 PetrochemistryMaterials.register();

@@ -84,18 +84,6 @@ RecyclingHelper.addShaped("susy:copper_pipe_casing", item('susy:susy_multiblock_
 // Machines
 // Gas atomizer
 
-for (blanket in sintering_blankets) {
-    SINTERING_OVEN.recipeBuilder()
-        .inputs(ore('dustYttriaStabilizedZirconia'))
-        .fluidInputs(fluid(''))
-        .notConsumable(metaitem('shape.mold.cylinder'))
-        .fluidInputs(fluid(blanket.name) * blanket.amountRequired)
-        .outputs(metaitem('nozzle.yttria_stabilized_zirconia'))
-        .duration(blanket.duration)
-        .EUt(Globals.voltAmps[2])
-        .buildAndRegister()
-}
-
 ASSEMBLER.recipeBuilder()
         .inputs(item('gregtech:boiler_casing', 1))
         .inputs(ore('circuitEv') * 2)
@@ -108,7 +96,7 @@ ASSEMBLER.recipeBuilder()
         .duration(300)
         .buildAndRegister()
 
-RecyclingHandler.handleRecycling("susy:gas_atomizer", metaitem('gas_atomizer'), [
+RecyclingHelper.handleRecycling(metaitem('gas_atomizer'), [
     ore('plateBoronNitride') * 64,
     metaitem('nozzle.yttria_stabilized_zirconia'),
     metaitem('electric.pump.ev') * 4,
@@ -174,11 +162,11 @@ ASSEMBLER.recipeBuilder()
         .duration(300)
         .buildAndRegister()
 
-RecyclingHandler.handleRecycling("susy:strand_bus.import", metaitem('strand_bus.import'), [
+RecyclingHelper.handleRecycling(metaitem('strand_bus.import'), [
         metaitem('electric.motor.ev') * 2,
         ore('ingotVanadiumSteel') * 3,
-        ore('ingotSolderingAlloy') * 2
-        metaitem('hull.ev'),
+        ore('ingotSolderingAlloy') * 2,
+        metaitem('hull.ev')
 ])
 
 ASSEMBLER.recipeBuilder()
@@ -192,11 +180,11 @@ ASSEMBLER.recipeBuilder()
         .duration(300)
         .buildAndRegister()
 
-RecyclingHandler.handleRecycling("susy:strand_bus.export", metaitem('strand_bus.export'), [
+RecyclingHelper.handleRecycling(metaitem('strand_bus.export'), [
         metaitem('electric.motor.ev') * 2,
         ore('ingotVanadiumSteel') * 3,
-        ore('ingotSolderingAlloy') * 2
-        metaitem('hull.ev'),
+        ore('ingotSolderingAlloy') * 2,
+        metaitem('hull.ev')
 ])
 
 // Interconversion
@@ -214,6 +202,7 @@ crafting.addShaped("susy:strand_bus_export_to_import", metaitem('strand_bus.impo
 ADVANCED_ARC_FURNACE.recipeBuilder()
         .inputs(ore('dustSteel') * 1)
         .fluidOutputs(fluid('molten.steel') * 144)
+        .circuitMeta(1)
         .EUt(120)
         .duration(10) // Give a good number of overclocks
         .buildAndRegister()

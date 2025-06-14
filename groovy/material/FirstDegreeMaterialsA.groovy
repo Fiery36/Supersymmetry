@@ -23,8 +23,7 @@ import static gregtech.api.fluids.FluidConstants.*;
 import supercritical.api.unification.material.properties.FissionFuelProperty;
 import supercritical.api.unification.material.properties.SCPropertyKey;
 
-
-public class FirstDegreeMaterials {
+public class FirstDegreeMaterialsA {
     private static Material generatePurifiedElement(Material material, int id, boolean generateLiquid, boolean generateIngot) {
         def color = material.materialRGB
         def builder = new Material.Builder(id, SuSyUtility.susyId('high_purity_' + material.toString()))
@@ -45,11 +44,9 @@ public class FirstDegreeMaterials {
         return builder.build()
     }
 
-
-
     public static void register() {
 
-        log.infoMC('Registering First Degree Materials!');
+        log.infoMC('Registering First Degree Materials A!');
 
         // IDs 8000-8100: Pure Elements
 
@@ -432,7 +429,7 @@ public class FirstDegreeMaterials {
         BoronCarbide = new Material.Builder(8148, SuSyUtility.susyId('boron_carbide'))
                 .dust()
                 .components(Boron * 4, Carbon)
-                .flags(GENERATE_ROD)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_PLATE)
                 .colorAverage()
                 .build()
 
@@ -1381,14 +1378,7 @@ public class FirstDegreeMaterials {
                 .color(0x38393b)
                 .build();
 
-        Inconel625 = new Material.Builder(8297, SuSyUtility.susyId('inconel_625'))
-                .ingot().liquid()
-                .color(0x7F8F75).iconSet(SHINY)
-                .flags(GENERATE_DOUBLE_PLATE, GENERATE_SPRING, DISABLE_DECOMPOSITION)
-                .components(Nickel * 5, Chrome * 2, Iron * 2, Niobium, Molybdenum)
-                .blastTemp(1610, GasTier.MID, GTValues.VA[GTValues.EV], 200)
-                .fluidPipeProperties(2010, 175, true, true, true, false)
-                .build();
+        // FREE ID: 8297
 
         PGMSolution = new Material.Builder(8298, SuSyUtility.susyId('pgm_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -4116,12 +4106,6 @@ public class FirstDegreeMaterials {
                 .color(0xdae69e)
                 .build();
 
-        Zircaloy = new Material.Builder(8710, SuSyUtility.susyId('zircaloy'))
-                .ingot().liquid()
-                .components(HighPurityZirconium * 16, Tin * 2, Chrome)
-                .color(0x566570)
-                .iconSet(METALLIC)
-                .flags(GENERATE_RING, GENERATE_PLATE)
-                .build()
+        // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
     }
 }

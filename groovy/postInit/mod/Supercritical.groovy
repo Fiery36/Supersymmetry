@@ -11,7 +11,7 @@ SINTERING_OVEN = recipemap('sintering_oven')
 FORMING_PRESS = recipemap('forming_press')
 CANNER = recipemap('canner')
 SPENT_FUEL_POOL = recipemap('spent_fuel_pool')
-CUTTING_MACHINE = recipemap('cutting_machine')
+CUTTING_MACHINE = recipemap('cutter')
 
 // Gas Centrifuge
 
@@ -33,15 +33,15 @@ CUTTING_MACHINE = recipemap('cutting_machine')
         .EUt(Globals.voltAmps[4])
         .buildAndRegister()
 
-    RecyclingHelper.handleRecycling(item('supercritical:gas_centrifuge_casing') * 5,
-        [ore('plateAluminium') * 20,
+    RecyclingHelper.handleRecycling(item('supercritical:gas_centrifuge_casing') * 5, [
+        ore('plateAluminium') * 20,
         ore('pipeSmallFluidAluminium') * 6,
         ore('stickLongStainlessSteel') * 8,
         ore('ringStainlessSteel') * 8,
         ore('plateStainlessSteel') * 20,
         metaitem('electric.pump.ev') * 4,
-        metaitem('electric.motor.ev')]
-    )
+        metaitem('electric.motor.ev')
+    ])
 
     // Gas Centrifuge Heater
 
@@ -56,12 +56,12 @@ CUTTING_MACHINE = recipemap('cutting_machine')
         .EUt(Globals.voltAmps[4])
         .buildAndRegister()
 
-    RecyclingHelper.handleRecycling(item('supercritical:nuclear_casing', 1),
-        [ore('springKanthal') * 4,
+    RecyclingHelper.handleRecycling(item('supercritical:nuclear_casing', 1), [
+        ore('springKanthal') * 4,
         ore('plateStainlessSteel') * 4,
         ore('cableGtSingleAluminium') * 4,
-        ore('frameGtStainlessSteel')]
-    )
+        ore('frameGtStainlessSteel')
+    ])
 
     // Gas Centrifuge Controller
 
@@ -77,13 +77,11 @@ CUTTING_MACHINE = recipemap('cutting_machine')
         .EUt(Globals.voltAmps[4])
         .buildAndRegister()
 
-    RecyclingHelper.handleRecycling(metaitem('supercritical:gas_centrifuge'),
-        [metaitem('hull.ev'),
-        ore('circuitEv') * 8,
-        metaitem('plate.power_integrated_circuit') * 4,
+    RecyclingHelper.handleRecycling(metaitem('supercritical:gas_centrifuge'), [
+        metaitem('hull.ev'),
         ore('pipeSmallFluidAluminium') * 16,
-        metaitem('electric.pump.ev') * 4]
-    )
+        metaitem('electric.pump.ev') * 4
+    ])
 
 // Fission Fuel
 
@@ -96,17 +94,17 @@ def fuels = [
 
     // Fuel Cladding
     ASSEMBLER.recipeBuilder()
-        .inputs(ore('plateZircaloy') * 4)
-        .inputs(ore('springInconel625'))
+        .inputs(ore('plateZircaloy4') * 8)
+        .inputs(ore('springInconel718'))
         .inputs(ore('roundStainlessSteel') * 2)
-        .outputs(metaitem('supercritical:cladding.fuel'))
+        .outputs(item('supercritical:supercritical_meta_item', 1))
         .duration(200)
         .EUt(Globals.voltAmps[2])
         .buildAndRegister()
 
-    RecyclingHelper.handleRecycling(metaitem('supercritical:cladding.fuel'),
-        [ore('plateZircaloy') * 4,
-        ore('springInconel625'),
+    RecyclingHelper.handleRecycling(item('supercritical:supercritical_meta_item', 1),
+        [ore('plateZircaloy4') * 8,
+        ore('springInconel718'),
         ore('roundStainlessSteel') * 2]
     )
 
@@ -122,12 +120,12 @@ for (fuel in fuels) {
         .inputs(ore('fuelPelletRaw' + fuel))
         .outputs(metaitem('fuelPellet' + fuel))
         .duration(15)
-        .EUt(Globals.voltAmps[4])
+        .EUt(Globals.voltAmps[3])
         .buildAndRegister()
 
     CANNER.recipeBuilder()
         .inputs(ore('fuelPellet' + fuel) * 16)
-        .inputs(metaitem('suprcritical:cladding.fuel'))
+        .inputs(item('supercritical:supercritical_meta_item', 1))
         .outputs(metaitem('fuelRod' + fuel))
         .duration(300)
         .EUt(Globals.voltAmps[3])
@@ -141,118 +139,138 @@ ASSEMBLER.recipeBuilder()
     .inputs(ore('circuitEv') * 16)
     .inputs(ore('wireFineRedAlloy') * 16)
     .inputs(metaitem('sensor.ev') * 16)
+    .inputs(ore('roundVanadiumSteel') * 64)
+    .fluidInputs(fluid('soldering_alloy') * 1296)
     .circuitMeta(31)
     .outputs(metaitem('supercritical:fission_reactor'))
     .duration(240)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(metaitem('supercritical:fission_reactor'),
-    [metaitem('hull.ev'),
-    ore('circuitEv') * 4,
+RecyclingHelper.handleRecycling(metaitem('supercritical:fission_reactor'), [
+    metaitem('hull.ev'),
+    ore('circuitEv') * 16,
     ore('wireFineRedAlloy') * 16,
-    metaitem('sensor.ev') * 16]
-)
+    metaitem('sensor.ev') * 16,
+    ore('roundVanadiumSteel') * 64,
+    ore('ingotSolderingAlloy') * 9
+])
 
 // Fission Reactor Vessel
 
 ASSEMBLER.recipeBuilder()
-    .inputs(ore('plateDoubleInconel625'))
-    .inputs(ore('plateStainlessSteel') * 5)
-    .inputs(ore('frameGtStainlessSteel'))
+    .inputs(ore('plateDoubleReactorSteel') * 6)
+    .inputs(ore('frameGtInconel718'))
     .outputs(item('supercritical:fission_casing'))
     .duration(320)
-    .EUt(Globals.voltAmps[2] * 2)
+    .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(item('supercritical:fission_casing'),
-    [ore('plateDoubleInconel625'),
-    ore('plateStainlessSteel') * 5,
-    ore('frameGtStainlessSteel')]
-)
+RecyclingHelper.handleRecycling(item('supercritical:fission_casing'), [
+    ore('plateDoubleReactorSteel') * 6,
+    ore('frameGtInconel718')
+])
 
 // Fuel Channel
+
 ASSEMBLER.recipeBuilder()
-    .inputs(ore('stickZircaloy') * 6)
-    .inputs(ore('ringZircaloy'))
+    .inputs(ore('frameGtZircaloy4'))
+    .inputs(ore('ringZircaloy4') * 2)
+    .inputs(ore('plateZircaloy4') * 4)
     .circuitMeta(1)
     .outputs(item('supercritical:fission_casing', 1))
     .duration(320)
-    .EUt(Globals.voltAmps[2] * 2)
+    .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 1),
-    [ore('stickZircaloy') * 6,
-    ore('ringZircaloy')]
-)
+RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 1), [
+    ore('frameGtZircaloy4'),
+    ore('ringZircaloy4') * 2,
+    ore('plateZircaloy4') * 4
+])
 
 // Control Rod Channel
+
 ASSEMBLER.recipeBuilder()
-    .inputs(ore('stickZircaloy') * 3)
-    .inputs(ore('ringZircaloy'))
+    .inputs(ore('ringZircaloy4') * 2)
+    .inputs(ore('plateZircaloy4') * 4)
+    .inputs(ore('springZircaloy4'))
     .circuitMeta(2)
     .outputs(item('supercritical:fission_casing', 2))
     .duration(320)
-    .EUt(Globals.voltAmps[2] * 2)
+    .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
 RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 2),
-    [ore('stickZircaloy') * 3,
-    ore('ringZircaloy')]
+    [ore('stickZircaloy4') * 3,
+    ore('ringZircaloy4')]
 )
 
 // Coolant Channel
+
 ASSEMBLER.recipeBuilder()
-    .inputs(ore('pipeLargeFluidInconel625'))
-    .inputs(ore('frameGtStainlessSteel'))
+    .inputs(ore('pipeLargeFluidZircaloy4'))
+    .inputs(ore('frameGtZircaloy4'))
     .outputs(item('supercritical:fission_casing', 3))
     .duration(320)
-    .EUt(Globals.voltAmps[2] * 2)
+    .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 3),
-    [ore('pipeLargeFluidInconel625'),
-    ore('frameGtStainlessSteel')]
-)
+RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 3), [
+    ore('pipeLargeFluidZircaloy4'),
+    ore('frameGtZircaloy4')
+])
 
 // Fuel Rod Input Port
+
 ASSEMBLER.recipeBuilder()
     .inputs(metaitem('hull.ev'))
-    .inputs(ore('stickZircaloy') * 6)
+    .inputs(ore('ringZircaloy4') * 2)
+    .inputs(ore('screwZircaloy4') * 6)
+    .inputs(metaitem('conveyor.module.ev'))
     .fluidInputs(fluid('polytetrafluoroethylene') * 144)
-    .circuitMeta(1)
+    .circuitMeta(3)
     .outputs(metaitem('supercritical:fuel_rod_input'))
     .duration(300)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(metaitem('supercritical:fuel_rod_output'),
-    [metaitem('hull.ev'),
-    ore('stickZircaloy') * 6,
-    ore('ingotPolytetrafluoroethylene')]
-)
+RecyclingHelper.handleRecycling(metaitem('supercritical:fuel_rod_output'), [
+    metaitem('hull.ev'),
+    ore('ringZircaloy4') * 2,
+    ore('screwZircaloy4') * 6,
+    metaitem('conveyor.module.ev'),
+    ore('ingotPolytetrafluoroethylene')
+])
 
 // Fuel Rod Output Port
+
 ASSEMBLER.recipeBuilder()
     .inputs(metaitem('hull.ev'))
-    .inputs(ore('stickZircaloy') * 6)
+    .inputs(ore('ringZircaloy4') * 2)
+    .inputs(ore('screwZircaloy4') * 6)
+    .inputs(metaitem('conveyor.module.ev'))
     .fluidInputs(fluid('polytetrafluoroethylene') * 144)
-    .circuitMeta(2)
+    .circuitMeta(4)
     .outputs(metaitem('supercritical:fuel_rod_output'))
     .duration(300)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(metaitem('supercritical:fuel_rod_input'),
-    [metaitem('hull.ev'),
-    ore('stickZircaloy') * 6,
-    ore('ingotPolytetrafluoroethylene')]
-)
+RecyclingHelper.handleRecycling(metaitem('supercritical:fuel_rod_input'), [
+    metaitem('hull.ev'),
+    ore('stickZircaloy4') * 6,
+    ore('ringZircaloy4') * 2,
+    ore('screwZircaloy4') * 6,
+    ore('ingotPolytetrafluoroethylene')
+])
 
 // Coolant Input Port
+
 ASSEMBLER.recipeBuilder()
     .inputs(metaitem('hull.ev'))
-    .inputs(ore('pipeLargeFluidInconel625'))
+    .inputs(ore('pipeLargeFluidZircaloy4'))
+    .inputs(metaitem('electric.pump.ev'))
     .fluidInputs(fluid('polytetrafluoroethylene') * 144)
     .circuitMeta(1)
     .outputs(metaitem('supercritical:coolant_input'))
@@ -260,16 +278,19 @@ ASSEMBLER.recipeBuilder()
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(metaitem('supercritical:coolant_input'),
-    [metaitem('hull.ev'),
-    ore('pipeLargeFluidInconel625'),
-    ore('ingotPolytetrafluoroethylene')]
-)
+RecyclingHelper.handleRecycling(metaitem('supercritical:coolant_input'), [
+    metaitem('hull.ev'),
+    ore('pipeLargeFluidZircaloy4'),
+    metaitem('electric.pump.ev'),
+    ore('ingotPolytetrafluoroethylene')
+])
 
 // Coolant Output Port
+
 ASSEMBLER.recipeBuilder()
     .inputs(metaitem('hull.ev'))
-    .inputs(ore('pipeLargeFluidInconel625'))
+    .inputs(ore('pipeLargeFluidZircaloy4'))
+    .inputs(metaitem('electric.pump.ev'))
     .fluidInputs(fluid('polytetrafluoroethylene') * 144)
     .circuitMeta(2)
     .outputs(metaitem('supercritical:coolant_output'))
@@ -277,54 +298,60 @@ ASSEMBLER.recipeBuilder()
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(metaitem('supercritical:coolant_output'),
-    [metaitem('hull.ev'),
-    ore('pipeLargeFluidInconel625'),
-    ore('ingotPolytetrafluoroethylene')]
-)
+RecyclingHelper.handleRecycling(metaitem('supercritical:coolant_output'), [ 
+    metaitem('hull.ev'),
+    ore('pipeLargeFluidZircaloy4'),
+    metaitem('electric.pump.ev'),
+    ore('ingotPolytetrafluoroethylene')
+])
 
 // Control Rod Port
+
 ASSEMBLER.recipeBuilder()
     .inputs(metaitem('hull.ev'))
     .inputs(ore('circuitEv'))
     .inputs(metaitem('electric.piston.ev'))
-    .inputs(ore('stickLongHafnium'))
-    .fluidInputs(fluid('polytetrafluoroethylene') * 144)
+    .inputs(ore('gearStainlessSteel') * 2)
+    .inputs(ore('stickLongSilverIndiumCadmium'))
+    .fluidInputs(fluid('hydraulic_fluid') * 1000)
     .circuitMeta(1)
     .outputs(metaitem('supercritical:control_rod'))
     .duration(300)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(metaitem('supercritical:control_rod'),
-    [metaitem('hull.ev'),
+RecyclingHelper.handleRecycling(metaitem('supercritical:control_rod'), [
+    metaitem('hull.ev'),
     ore('circuitEv'),
-    ore('stickLongHafnium'),
-    ore('ingotPolytetrafluoroethylene')]
-)
+    metaitem('electric.piston.ev'),
+    ore('gearStainlessSteel') * 2,
+    ore('stickLongSilverIndiumCadmium')
+])
 
 // Graphite-Tipped Control Rod Port
+
 ASSEMBLER.recipeBuilder()
     .inputs(metaitem('hull.ev'))
     .inputs(ore('circuitEv'))
     .inputs(metaitem('electric.piston.ev'))
-    .inputs(ore('stickLongHafnium'))
+    .inputs(ore('gearStainlessSteel') * 2)
+    .inputs(ore('stickLongBoronCarbide'))
     .inputs(ore('dustGraphite'))
-    .fluidInputs(fluid('polytetrafluoroethylene') * 144)
+    .fluidInputs(fluid('hydraulic_fluid') * 1000)
     .circuitMeta(2)
     .outputs(metaitem('supercritical:control_rod_moderated'))
     .duration(300)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(metaitem('supercritical:control_rod_moderated'),
-    [metaitem('hull.ev'),
+RecyclingHelper.handleRecycling(metaitem('supercritical:control_rod_moderated'), [
+    metaitem('hull.ev'),
     ore('circuitEv'),
     metaitem('electric.piston.ev'),
-    ore('stickLongHafnium'),
-    ore('dustGraphite'),
-    ore('ingotPolytetrafluoroethylene')]
-)
+    ore('gearStainlessSteel') * 2,
+    ore('stickLongBoronCarbide'),
+    ore('dustGraphite')
+])
 
 // Anode Basket
 ASSEMBLER.recipeBuilder()
@@ -340,7 +367,6 @@ RecyclingHelper.handleRecycling(metaitem('supercritical:basket.anode'),
     ore('stickTitanium') * 16]
 )
 
-
 // Spent Fuel Pool
 
     // Spent Fuel Pool Controller
@@ -349,19 +375,19 @@ RecyclingHelper.handleRecycling(metaitem('supercritical:basket.anode'),
         .inputs(metaitem('hull.hv'))
         .inputs(item('gregtech:stone_smooth', 4) * 16)
         .inputs(ore('plateStainlessSteel') * 16)
-        .inputs(metaitem('robot_arm.hv'))
+        .inputs(metaitem('robot.arm.hv'))
         .circuitMeta(30)
         .outputs(metaitem('supercritical:spent_fuel_pool'))
         .duration(120)
         .EUt(Globals.voltAmps[4])
         .buildAndRegister()
 
-    RecyclingHelper.handleRecycling(metaitem('supercritical:spent_fuel_pool'),
-        [metaitem('hull.hv'),
-        ore('circuitHv') * 4,
-        ore('pipeSmallFluidAluminium') * 16,
-        metaitem('electric.pump.hv') * 16]
-    )
+    RecyclingHelper.handleRecycling(metaitem('supercritical:spent_fuel_pool'), [metaitem('hull.hv'),
+        metaitem('hull.hv'),
+        item('gregtech:stone_smooth', 4) * 16,
+        ore('plateStainlessSteel') * 16,
+        metaitem('robot.arm.hv')
+    ])
 
     // Panelling
 
@@ -383,25 +409,29 @@ RecyclingHelper.handleRecycling(metaitem('supercritical:basket.anode'),
             .EUt(2).duration(10)
             .buildAndRegister()
 
-        RecyclingHelper.handleRecycling(item('supercritical:panelling', i),
-            [ore('plateStainlessSteelSteel') * 6,
-            ore('blockConcrete')]
-        )
+        RecyclingHelper.handleRecycling(item('supercritical:panelling', i), [
+            ore('plateStainlessSteelSteel') * 6,
+            ore('blockConcrete')
+        ])
     }
+
+    // Gray Panelling * 1
+    mods.gregtech.chemical_bath.removeByInput(2, [item('supercritical:panelling', 7)], [fluid('dye_gray') * 9 * 9])
 
     // Spent Fuel Casing
     
     ASSEMBLER.recipeBuilder()
-        .inputs(ore('plateBoron10Carbide') * 4) // NEEDS TO BE BORON 10
+        .inputs(ore('plateBoronCarbide') * 4)
         .inputs(ore('frameGtStainlessSteel'))
         .outputs(item('supercritical:nuclear_casing'))
         .duration(300)
         .EUt(Globals.voltAmps[3])
         .buildAndRegister()
 
-    RecyclingHelper.handleRecycling(item('supercritical:nuclear_casing'),
-        [ore('plateBoron10Carbide') * 4]
-    )
+    RecyclingHelper.handleRecycling(item('supercritical:nuclear_casing'), [
+        ore('plateBoronCarbide') * 4,
+        ore('frameGtStainlessSteel')
+    ])
 
 // Fuel Rod Decay
 
@@ -409,14 +439,14 @@ for (fuel in fuels) {
     SPENT_FUEL_POOL.recipeBuilder()
         .inputs(metaitem('fuelRodHotDepleted' + fuel))
         .outputs(metaitem('fuelRodDepleted' + fuel))
-        .duration(1000)
+        .duration(64000)
         .EUt(Globals.voltAmps[1])
         .buildAndRegister()
 
     CUTTING_MACHINE.recipeBuilder()
         .inputs(metaitem('fuelRodDepleted' + fuel))
         .outputs(metaitem('fuelPelletDepleted' + fuel) * 16)
-        .duration(100)
+        .duration(64000)
         .EUt(Globals.voltAmps[1])
         .buildAndRegister()
 }

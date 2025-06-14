@@ -175,6 +175,7 @@ class ChangeFlags {
         StainlessSteel.addFlags("generate_round");
         Hafnium.addFlags("generate_long_rod", "generate_rod");
         Copper.addFlags("continuously_cast");
+        VanadiumSteel.addFlags("generate_round")
 
 
         /*
