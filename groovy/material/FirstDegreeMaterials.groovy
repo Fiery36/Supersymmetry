@@ -1040,7 +1040,13 @@ public class FirstDegreeMaterials {
 
         AmmoniumCarbonate.setFormula("(NH4)2CO3", true)
 
-        // FREE IDs: 8246
+        SodiumBisulfiteSolution = new Material.Builder(8246, SuSyUtility.susyId('sodium_bisulfite_solution'))
+                .liquid()
+                .components(Sodium, Hydrogen, Sulfur, Oxygen * 3, Water)
+                .colorAverage()
+                .build();
+
+        SodiumBisulfiteSolution.setFormula("(NaHSO3)(H2O)", true)
 
         SulfidicSilverCyanideSolution = new Material.Builder(8247, SuSyUtility.susyId('sulfidic_silver_cyanide_solution'))
                 .liquid()
