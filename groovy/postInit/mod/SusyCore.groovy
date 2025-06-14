@@ -154,7 +154,7 @@ crafting.addShaped("susy:gas_tank", item('susy:susy_armor', 3).withNbt(['oxygen'
 ])
 
 crafting.addShaped("susy:easy_cell", metaitem('fluid_cell'), [
-    [ore('toolHardHammer'), null],
+    [ore('craftingToolHardHammer'), null],
     [null, ore('plateSteel')]
 ])
 
