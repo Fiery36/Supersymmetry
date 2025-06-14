@@ -951,5 +951,17 @@ public class SecondDegreeMaterials {
                 .components(PotassiumChlorate, Water)
                 .colorAverage()
                 .build();
+
+        XylenolSolution = new Material.Builder(13158, SuSyUtility.susyId('xylenol_solution'))
+                .liquid()
+                .components(Toluene, TwoSixXylenol)
+                .color(0x4f301e)
+                .build();
+
+        EthylenediamineSolution = new Material.Builder(13159, SuSyUtility.susyId('ethylenediamine_solution'))
+                .liquid()
+                .components(Ethylenediamine, Water)
+                .color(0x2c6147)
+                .build();
     }
 }
