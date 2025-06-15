@@ -5,6 +5,7 @@ ADVANCED_ARC_FURNACE = recipemap('advanced_arc_furnace')
 FLUID_SOLIDIFIER = recipemap('fluid_solidifier')
 ASSEMBLER = recipemap('assembler')
 SINTERING_OVEN = recipemap('sintering_oven')
+METALLURGICAL_CONVERTER = recipmap('metallurgical_converter')
 
 // Recipes for the machines and components needed for the multiblocks
 
@@ -121,6 +122,25 @@ RecyclingHelper.addShaped("susy:hot_isostatic_press", metaitem('hot_isostatic_pr
     [ore('plateStainlessSteel'), metaitem('electric.pump.hv'), ore('plateStainlessSteel')],
         [ore('circuitHv'), item('gregtech:metal_casing', 5), ore('circuitHv')],
         [ore('plateStainlessSteel'), metaitem('electric.piston.hv'), ore('plateStainlessSteel')]
+])
+
+// Metallurgical converter
+ASSEMBLER.recipeBuilder()
+        .inputs(item('gregtech:metal_casing', 4))
+        .inputs(ore('circuitEv') * 2)
+        .inputs(metaitem('electric.motor.ev') * 2)
+        .inputs(metaitem('electric.pump.ev') * 1)
+        .circuitMeta(2)
+        .outputs(metaitem('metallurgical_converter'))
+        .EUt(1920)
+        .duration(300)
+        .buildAndRegister()
+
+RecyclingHandler.handleRecycling("susy:metallurgical_converter", metaitem('metallurgical_converter'), [
+    item('gregtech:metal_casing', 4),
+    metaitem('electric.motor.ev') * 2,
+    metaitem('electric.pump.ev') * 1,
+    ore('circuitEv') * 2
 ])
 
 // Turning zone
