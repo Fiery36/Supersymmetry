@@ -96,7 +96,8 @@ def electrodeMap = [
     'ReneN5':3000,
     'Incoloy825':3000,
     'Incoloy908':3000,
-    'Incoloy20':3000
+    'Incoloy20':3000,
+    'Nimonic105':3000
 ]
 
 //MV Tweaks (from CEu #1724)

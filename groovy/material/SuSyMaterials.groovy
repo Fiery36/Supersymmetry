@@ -1406,6 +1406,7 @@ class SuSyMaterials {
         public static Material HSLA980X;
         public static Material FoodGradeStainlessSteel;
         public static Material CobaltSulfate;
+        public static Material Nimonic105;
         public static Material LithiumNitrate;
         public static Material LithiumNitrateSolution;
         public static Material ZincCarbonate;
