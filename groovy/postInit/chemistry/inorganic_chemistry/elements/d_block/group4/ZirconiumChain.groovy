@@ -206,7 +206,7 @@ BR.recipeBuilder()
 
 for (highPurityCombustible in highPurityCombustibles()) {
         FLUIDIZED_BED_REACTOR.recipeBuilder()
-                .inputs(ore('dustZirconiumDioxide'))
+                .inputs(ore('dustZirconiumDioxide') * 3)
                 .inputs(ore(highPurityCombustible.name) * highPurityCombustible.equivalent(2))
                 .fluidInputs(fluid('chlorine') * 4000)
                 .outputs(metaitem('dustZirconiumTetrachloride') * 5)
