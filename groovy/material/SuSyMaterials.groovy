@@ -1481,6 +1481,7 @@ class SuSyMaterials {
         public static Material CalicheLeach;
         public static Material IodateConcentrate;
         public static Material IodideConcentrate;
+        public static Material Pyrazine;
 
         // HP Materials
 

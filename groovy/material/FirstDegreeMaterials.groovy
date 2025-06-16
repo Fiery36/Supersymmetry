@@ -4103,5 +4103,13 @@ public class FirstDegreeMaterials {
                 .components(Sodium * 3, Phosphorus, Oxygen * 4)
                 .color(0xdae69e)
                 .build();
-    }
+
+        Pyrazine = new Material.Builder(8710, SuSyUtility.susyId('pyrazine'))
+                .dust()
+                .components(Carbon * 4, Hydrogen * 4, Nitrogen * 2)
+                .color(0xfaf9f6)
+                .build();
+        Pyrazine.setFormula("(C4H4N2)", true)
+
+    }   
 }
