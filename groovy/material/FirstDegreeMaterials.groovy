@@ -4109,7 +4109,6 @@ public class FirstDegreeMaterials {
                 .components(Carbon * 4, Hydrogen * 4, Nitrogen * 2)
                 .color(0xfaf9f6)
                 .build();
-        Pyrazine.setFormula("C4H4N2", true)
 
     }   
 }
