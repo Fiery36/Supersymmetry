@@ -718,6 +718,7 @@ class SuSyMaterials {
         public static Material RareEarthFreeMonaziteLeach;
         public static Material HydraulicFluid;
         public static Material YttriaStabilizedZirconia;
+        public static Material RefractoryGunningMixture;
 
         // Petrochem Materials
 

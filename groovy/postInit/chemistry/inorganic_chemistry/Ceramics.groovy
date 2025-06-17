@@ -1,9 +1,11 @@
 import globals.Globals
+import static globals.SinteringGlobals.*
 
 SINTERING_OVEN = recipemap('sintering_oven')
 HOT_ISOSTATIC_PRESS = recipemap('hot_isostatic_press')
 MIXER = recipemap('mixer')
 FORMING_PRESS = recipemap('forming_press')
+CVD = recipemap('cvd')
 
 // PVA binder
 
@@ -48,7 +50,7 @@ ARC_FURNACE.recipeBuilder()
     .buildAndRegister()
 
 for (blanket in sintering_blankets) {
-    SINTERING_RECIPES.recipeBuilder()
+    SINTERING_OVEN.recipeBuilder()
         .inputs(ore('dustBoronCarbide'))
         .fluidInputs(fluid('novolacs') * 100)
         .notConsumable(metaitem('shape.mold.rod'))
