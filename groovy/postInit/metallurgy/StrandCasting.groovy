@@ -239,8 +239,8 @@ ADVANCED_ARC_FURNACE.recipeBuilder()
         .buildAndRegister()
 
 
-/* Fast steel generation in large arc furnace
-ADVANCED_ARC_FURNACE.recipeBuilder()
+// Fast steel generation in metallurgical converter
+METALLURGICAL_CONVERTER.recipeBuilder()
         .inputs(ore('ingotPigIron') * 18)
         .fluidInputs(fluid('oxygen') * 400)
         .fluidOutputs(fluid('molten.steel') * 2592)
@@ -292,20 +292,20 @@ def orePrefixes = [
 for (copperOre in copperOres) {
     for (prefix in orePrefixes) {
         
-        ADVANCED_ARC_FURNACE.recipeBuilder()
+        METALLURGICAL_CONVERTER.recipeBuilder()
                 .inputs(ore(prefix + copperOre) * 18)
                 .fluidOutputs(fluid('molten.copper') * 2592)
                 .EUt(120)
                 .duration(65) // Give a good number of overclocks
                 .buildAndRegister()
     }
-    ADVANCED_ARC_FURNACE.recipeBuilder()
+    METALLURGICAL_CONVERTER.recipeBuilder()
             .inputs(ore('oreNetherrack' + copperOre) * 9)
             .fluidOutputs(fluid('molten.copper') * 2592)
             .EUt(120)
             .duration(33) // Give a good number of overclocks
             .buildAndRegister()
-    ADVANCED_ARC_FURNACE.recipeBuilder()
+    METALLURGICAL_CONVERTER.recipeBuilder()
             .inputs(ore('oreEndstone' + copperOre) * 9)
             .fluidOutputs(fluid('molten.copper') * 2592)
             .EUt(120)
@@ -314,20 +314,20 @@ for (copperOre in copperOres) {
 }
 
 for (prefix in orePrefixes) {
-    ADVANCED_ARC_FURNACE.recipeBuilder()
+    METALLURGICAL_CONVERTER.recipeBuilder()
             .inputs(ore(prefix + 'Malachite') * 18)
             .fluidOutputs(fluid('molten.copper') * 5184)
             .EUt(120)
             .duration(65) // Give a good number of overclocks
             .buildAndRegister()
 }
-ADVANCED_ARC_FURNACE.recipeBuilder()
+METALLURGICAL_CONVERTER.recipeBuilder()
         .inputs(ore('oreNetherrackMalachite') * 9)
         .fluidOutputs(fluid('molten.copper') * 5184)
         .EUt(120)
         .duration(33) // Give a good number of overclocks
         .buildAndRegister()
-ADVANCED_ARC_FURNACE.recipeBuilder()
+METALLURGICAL_CONVERTER.recipeBuilder()
         .inputs(ore('oreEndstoneMalachite') * 9)
         .fluidOutputs(fluid('molten.copper') * 5184)
         .EUt(120)
