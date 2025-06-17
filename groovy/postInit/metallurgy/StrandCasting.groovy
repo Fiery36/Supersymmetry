@@ -5,7 +5,7 @@ ADVANCED_ARC_FURNACE = recipemap('advanced_arc_furnace')
 FLUID_SOLIDIFIER = recipemap('fluid_solidifier')
 ASSEMBLER = recipemap('assembler')
 SINTERING_OVEN = recipemap('sintering_oven')
-METALLURGICAL_CONVERTER = recipmap('metallurgical_converter')
+METALLURGICAL_CONVERTER = recipemap('metallurgical_converter')
 MIXER = recipemap('mixer')
 
 // Recipes for the machines and components needed for the multiblocks
@@ -84,20 +84,8 @@ RecyclingHelper.addShaped("susy:copper_pipe_casing", item('susy:susy_multiblock_
 ])
 
 // Machines
+
 // Gas atomizer
-
-for (blanket in sintering_blankets) {
-    SINTERING_OVEN.recipeBuilder()
-        .inputs(ore('dustYttriaStabilizedZirconia'))
-        .fluidInputs(fluid(''))
-        .notConsumable(metaitem('shape.mold.cylinder'))
-        .fluidInputs(fluid(blanket.name) * blanket.amountRequired)
-        .outputs(metaitem('nozzle.yttria_stabilized_zirconia'))
-        .duration(blanket.duration)
-        .EUt(Globals.voltAmps[2])
-        .buildAndRegister()
-}
-
 ASSEMBLER.recipeBuilder()
         .inputs(item('gregtech:boiler_casing', 1))
         .inputs(ore('circuitEv') * 2)
@@ -110,7 +98,7 @@ ASSEMBLER.recipeBuilder()
         .duration(300)
         .buildAndRegister()
 
-RecyclingHelper.handleRecycling("susy:gas_atomizer", metaitem('gas_atomizer'), [
+RecyclingHelper.handleRecycling(metaitem('gas_atomizer'), [
     ore('plateBoronNitride') * 64,
     metaitem('nozzle.yttria_stabilized_zirconia'),
     metaitem('electric.pump.ev') * 4,
@@ -137,7 +125,7 @@ ASSEMBLER.recipeBuilder()
         .duration(300)
         .buildAndRegister()
 
-RecyclingHelper.handleRecycling("susy:metallurgical_converter", metaitem('metallurgical_converter'), [
+RecyclingHelper.handleRecycling(metaitem('metallurgical_converter'), [
     item('gregtech:metal_casing', 4),
     metaitem('electric.motor.ev') * 2,
     metaitem('electric.pump.ev'),
@@ -195,7 +183,7 @@ ASSEMBLER.recipeBuilder()
         .duration(300)
         .buildAndRegister()
 
-RecyclingHelper.handleRecycling("susy:strand_bus.import", metaitem('strand_bus.import'), [
+RecyclingHelper.handleRecycling(metaitem('strand_bus.import'), [
         metaitem('electric.motor.ev') * 2,
         ore('ingotVanadiumSteel') * 3,
         ore('ingotSolderingAlloy') * 2,
@@ -213,7 +201,7 @@ ASSEMBLER.recipeBuilder()
         .duration(300)
         .buildAndRegister()
 
-RecyclingHelper.handleRecycling("susy:strand_bus.export", metaitem('strand_bus.export'), [
+RecyclingHelper.handleRecycling(metaitem('strand_bus.export'), [
         metaitem('electric.motor.ev') * 2,
         ore('ingotVanadiumSteel') * 3,
         ore('ingotSolderingAlloy') * 2,

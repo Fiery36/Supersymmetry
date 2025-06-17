@@ -14,6 +14,7 @@ DISTILLERY = recipemap('distillery')
 SIFTER = recipemap('sifter')
 CENTRIFUGE = recipemap('centrifuge')
 DISTILLATION_TOWER = recipemap('distillation_tower')
+REVERBERATORY_FURNACE = recipemap('reverberatory_furnace')
 METALLURGICAL_CONVERTER = recipemap('metallurgical_converter')
 
 // Cupric Oxide Dust * 1

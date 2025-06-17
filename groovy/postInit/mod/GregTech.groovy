@@ -1455,7 +1455,7 @@ FORMING_PRESS.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
 
-// Nickel Zinc Ferrite * 864
+/*/ Nickel Zinc Ferrite * 864
 mods.gregtech.advanced_arc_furnace.removeByInput(120, [metaitem('dustNickel'), metaitem('dustZinc'), metaitem('dustIron') * 4, metaitem('circuit.integrated').withNbt(["Configuration": 6])], [fluid('oxygen') * 8000])
 // Molten Yttrium Barium Cuprate * 1872
 mods.gregtech.advanced_arc_furnace.removeByInput(7680, [metaitem('dustYttrium'), metaitem('dustBarium') * 2, metaitem('dustCopper') * 3, metaitem('circuit.integrated').withNbt(["Configuration": 14])], [fluid('oxygen') * 7000, fluid('argon') * 650])
@@ -1505,6 +1505,7 @@ mods.gregtech.advanced_arc_furnace.removeByInput(1920, [metaitem('dustIron') * 1
 mods.gregtech.advanced_arc_furnace.removeByInput(480, [metaitem('dustInvar') * 2, metaitem('dustVanadium'), metaitem('dustTitanium'), metaitem('dustMolybdenum'), metaitem('circuit.integrated').withNbt(['Configuration': 14])], [fluid('nitrogen') * 5000 * 5000])
 // Liquid HSLA Steel * 720
 mods.gregtech.advanced_arc_furnace.removeByInput(480, [metaitem('dustInvar') * 2, metaitem('dustVanadium'), metaitem('dustTitanium'), metaitem('dustMolybdenum'), metaitem('circuit.integrated').withNbt(['Configuration': 4])], null)
+*/
 
 CENTRIFUGE.recipeBuilder()
     .fluidInputs(fluid('gtfo_soybean_oil') * 1000)

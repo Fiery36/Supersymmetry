@@ -8,7 +8,7 @@ ROASTER = recipemap('roaster')
 ALLOY_SMELTER = recipemap('alloy_smelter')
 ADVANCED_ARC_FURNACE = recipemap('advanced_arc_furnace')
 METALLURGICAL_CONVERTER = recipemap('metallurgical_converter')
-REVERBERATIRY_FURNACE = recipemap('reverberatory_furnace')
+REVERBERATORY_FURNACE = recipemap('reverberatory_furnace')
 
 // Pyrometallurgical processing
 
@@ -150,6 +150,7 @@ for (blastable in blastables) {
         .buildAndRegister()
 
     FORGE_HAMMER.recipeBuilder()
+        .circuitMeta(1)
         .inputs(ore('ingotWroughtIron'))
         .outputs(item('minecraft:iron_ingot'))
         .duration(60)
