@@ -1,5 +1,6 @@
 mods.chisel.carving.addGroup("markings_basic")
 mods.chisel.carving.addGroup("markings_symbolic")
+mods.chisel.carving.addGroup("markings_symbolic_yellow")
 mods.chisel.carving.addGroup("markings_electric")
 
 def basic = [
@@ -22,7 +23,14 @@ def basic = [
     'ags_modernmarkings:floor_marking_yellow_sideline',
     'ags_modernmarkings:floor_marking_yellow_singleline',
     'ags_modernmarkings:floor_marking_yellow_square',
-    'ags_modernmarkings:floor_marking_yellow_stripes'
+    'ags_modernmarkings:floor_marking_yellow_stripes',
+    'ags_modernmarkings:floor_marking_black_corner',
+    'ags_modernmarkings:floor_marking_blue_corner',
+    'ags_modernmarkings:floor_marking_green_corner',
+    'ags_modernmarkings:floor_marking_orange_corner',
+    'ags_modernmarkings:floor_marking_white_corner',
+    'ags_modernmarkings:floor_marking_yellow_corner',
+    'ags_modernmarkings:floor_marking_red_corner'
 ]
 
 for (anItem in basic) {
@@ -75,7 +83,8 @@ def symbolic = [
     'ags_modernmarkings:wall_marking_symbol_chemical',
     'ags_modernmarkings:wall_marking_symbol_electric',
     'ags_modernmarkings:wall_marking_symbol_fire',
-    'ags_modernmarkings:wall_marking_symbol_fluid'
+    'ags_modernmarkings:wall_marking_symbol_fluid',
+    'ags_modernmarkings:wall_marking_symbol_jeo'
 ]
 
 for (anItem in symbolic) {
@@ -97,7 +106,8 @@ def electric = [
     'ags_modernmarkings:wall_marking_voltage_fe',
     'ags_modernmarkings:wall_marking_voltage_rf',
     'ags_modernmarkings:wall_marking_voltage_pert',
-    // No ULV tier :(
+    'ags_modernmarkings:wall_marking_voltage_steam',
+    'ags_modernmarkings:wall_marking_voltage_ulv',
     'ags_modernmarkings:wall_marking_voltage_lv',
     'ags_modernmarkings:wall_marking_voltage_mv',
     'ags_modernmarkings:wall_marking_voltage_hv',
@@ -128,6 +138,39 @@ mods.gregtech.mixer.recipeBuilder()
     .duration(30)
     .buildAndRegister()
 
+mods.gregtech.mixer.recipeBuilder()
+    .inputs(ore('dustCalcite') * 2)
+    .fluidInputs(fluid('dye_yellow') * 150)
+    .circuitMeta(2)
+    .outputs(item('ags_modernmarkings:wall_marking_voltage_eu'))
+    .EUt(8)
+    .duration(30)
+    .buildAndRegister()
+
+def yellow = [
+    'ags_modernmarkings:wall_marking_symbol_yellow_frost',
+    'ags_modernmarkings:wall_marking_symbol_yellow_gears',
+    'ags_modernmarkings:wall_marking_symbol_yellow_laser',
+    'ags_modernmarkings:wall_marking_symbol_yellow_magic',
+    'ags_modernmarkings:wall_marking_symbol_yellow_mob',
+    'ags_modernmarkings:wall_marking_symbol_yellow_pinch',
+    'ags_modernmarkings:wall_marking_symbol_yellow_production',
+    'ags_modernmarkings:wall_marking_symbol_yellow_radiation',
+    'ags_modernmarkings:wall_marking_symbol_yellow_storage',
+    'ags_modernmarkings:wall_marking_symbol_yellow_chemical',
+    'ags_modernmarkings:wall_marking_symbol_yellow_electric',
+    'ags_modernmarkings:wall_marking_symbol_yellow_fire',
+    'ags_modernmarkings:wall_marking_symbol_yellow_fluid'
+]
+
+
+for (anItem in yellow) {
+	crafting.remove(anItem) // Should all be the same name
+    mods.chisel.carving.addVariation("markings_symbolic_yellow", item(anItem))
+}
+
+crafting.remove('ags_modernmarkings:floor_marking_yelow_corner') // Except for this one, which is misspelled as 0.4.1
+
+
 crafting.remove('ags_modernmarkings:floor_marking_danger_red_from_yellow')
 crafting.remove('ags_modernmarkings:floor_marking_danger_yellow_from_red')
-crafting.remove('ags_modernmarkings:wall_marking_voltage_fe_from_rf')
