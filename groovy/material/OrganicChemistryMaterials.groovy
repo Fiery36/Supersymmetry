@@ -137,7 +137,7 @@ public class OrganicChemistryMaterials {
                 .build()
 
         PhthalicAnhydride = new Material.Builder(15018, SuSyUtility.susyId('phthalic_anhydride'))
-                .dust()
+                .dust().liquid(new FluidBuilder().temperature(405))
                 .components(Carbon * 8, Hydrogen * 4, Oxygen * 3)
                 .colorAverage()
                 .build();
@@ -2759,5 +2759,92 @@ public class OrganicChemistryMaterials {
                 .components(Carbon * 10, Hydrogen * 18, Nitrogen * 2, Oxygen * 7)
                 .color(0x7ebdba)
                 .build();
+
+        PolyphenyleneOxide = new Material.Builder(15439, SuSyUtility.susyId('polyphenylene_oxide'))
+                .polymer()
+                .components(Carbon * 8, Hydrogen * 8, Oxygen * 1)
+                .color(0x4a567d)
+                .build();
+
+        PolyphenyleneOxide.setFormula('[C8H8O]n', true)
+
+        Phthalimide = new Material.Builder(15440, SuSyUtility.susyId('phthalimide'))
+                .dust().liquid(new FluidBuilder().temperature(511))
+                .components(Carbon * 8, Hydrogen * 5, Oxygen * 2, Nitrogen)
+                .colorAverage()
+                .build();
+
+        AmmoniacalPhthalimide = new Material.Builder(15441, SuSyUtility.susyId('ammoniacal_phthalimide'))
+                .liquid()
+                .components(Phthalimide, Ammonia, Water)
+                .colorAverage()
+                .build();
+
+        NMethylPhthalimide = new Material.Builder(15442, SuSyUtility.susyId('n_methyl_phthalimide'))
+                .dust()
+                .components(Carbon * 9, Hydrogen * 7, Oxygen * 2, Nitrogen)
+                .colorAverage()
+                .build();
+
+        FourNitroNMethylPhthalimide = new Material.Builder(15443, SuSyUtility.susyId('four_nitro_n_methyl_phthalimide'))
+                .dust()
+                .components(Carbon * 9, Hydrogen * 6, Oxygen * 4, Nitrogen * 2)
+                .colorAverage()
+                .build();
+
+        FourNitroNMethylPhthalimideSolution = new Material.Builder(15444, SuSyUtility.susyId('four_nitro_n_methyl_phthalimide_solution'))
+                .liquid()
+                .components(FourNitroNMethylPhthalimide, Water * 2)
+                .colorAverage()
+                .build();
+
+        SodiumBisphenolate = new Material.Builder(15445, SuSyUtility.susyId('sodium_bisphenolate'))
+                .dust()
+                .components(Carbon * 15, Hydrogen * 14, Oxygen * 2, Sodium * 2)
+                .colorAverage()
+                .build();
+
+        BisphenolADiimideSolution = new Material.Builder(15446, SuSyUtility.susyId('bisphenol_a_diimide_solution'))
+                .liquid()
+                .components(Carbon * 33, Hydrogen * 26, Oxygen * 6, Nitrogen * 2, NMethylTwoPyrrolidone)
+                .colorAverage()
+                .build();
+
+        BisphenolADianhydride = new Material.Builder(15447, SuSyUtility.susyId('bisphenol_a_dianhydride'))
+                .dust()
+                .components(Carbon * 31, Hydrogen * 20, Oxygen * 8)
+                .colorAverage()
+                .build();
+
+        ImpureBisphenolADianhydride = new Material.Builder(15448, SuSyUtility.susyId('impure_bisphenol_a_dianhydride'))
+                .dust().liquid(new FluidBuilder().temperature(493))
+                .components(BisphenolADianhydride, Phthalimide * 2)
+                .colorAverage()
+                .build();
+
+        ImpureBisphenolADianhydrideSolution = new Material.Builder(15449, SuSyUtility.susyId('impure_bisphenol_a_dianhydride_solution'))
+                .liquid()
+                .components(ImpureBisphenolADianhydride, NMethylTwoPyrrolidone)
+                .colorAverage()
+                .build();
+
+        PeiPreparationMixture = new Material.Builder(15450, SuSyUtility.susyId('pei_preparation_mixture'))
+                .liquid()
+                .components(MetaPhenylenediamine, BisphenolADianhydride, OneTwoDichlorobenzene)
+                .colorAverage()
+                .build();
+
+        PeiPolymerisationSolution = new Material.Builder(15451, SuSyUtility.susyId('pei_polymerisation_solution'))
+                .liquid()
+                .components(MetaPhenylenediamine, BisphenolADianhydride, OneTwoDichlorobenzene)
+                .colorAverage()
+                .build();
+
+        PolyetherImide = new Material.Builder(15452, SuSyUtility.susyId('polyether_imide'))
+                .polymer()
+                .components(Carbon * 37, Hydrogen * 24, Oxygen * 6, Nitrogen * 2)
+                .colorAverage()
+                .build();
+        PolyetherImide.setFormula('(C37H24O6N2)n', true)
     }
 }

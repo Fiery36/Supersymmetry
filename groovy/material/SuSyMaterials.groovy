@@ -2141,6 +2141,19 @@ class SuSyMaterials {
         public static Material PenteticAcid;
         public static Material NHydroxyethylEthylenediamine;
         public static Material NHydroxyethylEthylenediaminetriaceticAcid;
+        public static Material AmmoniacalPhthalimide;
+        public static Material Phthalimide;
+        public static Material NMethylPhthalimide;
+        public static Material FourNitroNMethylPhthalimide;
+        public static Material FourNitroNMethylPhthalimideSolution;
+        public static Material SodiumBisphenolate;
+        public static Material BisphenolADiimideSolution;
+        public static Material ImpureBisphenolADianhydride;
+        public static Material ImpureBisphenolADianhydrideSolution;
+        public static Material BisphenolADianhydride;
+        public static Material PeiPreparationMixture;
+        public static Material PeiPolymerisationSolution;
+        public static Material PolyetherImide;
 
         // Third Degree Materials
 
