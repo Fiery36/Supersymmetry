@@ -1633,6 +1633,20 @@ RecyclingHelper.replaceShaped("gregtech:casing_steel_solid", item('gregtech:meta
     [ore('plateSteel'), ore('craftingToolWrench'), ore('plateSteel')]
 ])
 
+for (i in 0..15) {
+RecyclingHelper.removeRecyclingRecipes(item('gregtech:warning_sign', i))
+RecyclingHelper.handleRecycling(item('gregtech:warning_sign', i), [
+    metaitem('ingotSteel') * 2
+])
+}
+
+for (i in 0..8) {
+RecyclingHelper.removeRecyclingRecipes(item('gregtech:warning_sign_1', i))
+RecyclingHelper.handleRecycling(item('gregtech:warning_sign_1', i), [
+    metaitem('ingotSteel') * 2
+])
+}
+
 ASSEMBLER.recipeBuilder()
     .circuitMeta(6)
     .inputs(ore('plateSteel') * 6)

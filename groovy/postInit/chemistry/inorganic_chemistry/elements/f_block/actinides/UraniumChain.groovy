@@ -1,5 +1,3 @@
-import javax.sound.sampled.Mixer
-
 VACUUM_FREEZER = recipemap('vacuum_freezer')
 CSTR = recipemap('continuous_stirred_tank_reactor')
 TBR = recipemap('trickle_bed_reactor')
@@ -93,6 +91,7 @@ MIXER.recipeBuilder()
     .fluidInputs(fluid('kerosene') * 900)
     .fluidInputs(fluid('tributyl_phosphate') * 40)
     .fluidInputs(fluid('di_two_ethylhexyl_phosphoric_acid') * 60)
+    .circuitMeta(1)
     .fluidOutputs(fluid('uranium_extraction_mixture') * 1000)
     .EUt(120)
     .duration(200)

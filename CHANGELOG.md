@@ -1,3 +1,60 @@
+# UPDATE 0.1.14.10.1
+## Changes
+### Fixes
+- Clarifiers and froth flotaters are now safe
+- Magnetic neodymium rods no longer need an assembly line (#1490 by WideMann)
+- Cobalt electrolysis no longer produces the high-purity version (#1491 by trainvoi)
+# UPDATE 0.1.14.10
+## Mod Changes
+### Mod Updates
+- Not Enough Energistics 1.12.2-2.0.7 -> 1.12.2-2.0.9
+- SusyCore v0.1.59 -> v0.1.61
+- Supercritical 0.0.5 -> 0.0.6
+- Had Enough Items 4.27.3 -> 4.28.0
+- Fixeroo 2.3.5-hotfix.1 -> 2.3.6b
+- OpenComputers MC1.12.2-1.8.8+8da357f -> MC1.12.2-1.8.9a+8ca336f
+- Universal Tweaks 1.12.2-1.14.0 -> 1.12.2-1.15.1
+- CraftPresence 2.5.3+1.12.2-forge -> 2.6.1+1.12.2-forge
+- ModularUI 2.5.0-rc4 -> 2.5.0-rc5
+- Forgelin-Continuous Continuous-2.1.10.0 -> Continuous-2.1.21.0
+- Extreme Sound Muffler: Legacy legacy-1.12.2-1.0.2 -> legacy-1.12.2-1.0.3
+- Chemistry Signs 1.0.0 -> 1.1.1
+- VintageFix 0.5.5 -> 0.6.2
+- PackagedAuto 1.12.2-1.0.17.60 -> 1.12.2-1.0.18.63
+- Flare (Spark for 1.12.2) 0.5.0 -> 0.7.0
+- UniLib 1.0.5+1.12.2-forge -> 1.1.0+1.12.2-forge
+- Quark: RotN Edition r1.6-189 -> r1.6-190
+- VisualOres 0.2.6 -> 0.2.7
+- Fugue 0.18.4 -> 0.18.6
+- GroovyScript 1.2.3 -> 1.2.4
+- Bubbles 2.4.4 -> 2.4.7
+### Mod Removals
+- RandomPatches (Forge)
+## Changes
+### New Features
+- Finally, the Rare-Earth Elements chain has reached SUSY! Play through 9 brand-new quests. (#1227 by @WideMann) (#1482 by @planetme)
+- Project Red mods now has a questline! (#1473 by @fil1423)
+- Iodine can now be extracted from caliche, a mineral in HV sedimentary rock. (#1485 by @planetme)
+- [Susy-Core] Reflective and asbestos suits now also protect you from drowning and hot/cold pipes! (#439 by @unitazer)
+- [Susy-Core] Four multiblocks now have excellent particle effects! (#446 by @h3tR)
+### Changed Features
+- Watch out: geothermal has been nerfed from 3L of lava usage to 10L of lava usage per recipe! You all deserved it though. (#1477 by @Oganesson897)
+- Germanium now uses distilled rather than ultrapure water (#1471 by @WideMann)
+- The chromite line now uses a mixer instead of a BR for one step (#1479 by @WideMann)
+- Aluminium's recipe is now stoichiometrically correct (#1459 by @WideMann)
+- The inhaler recipe is now logically correct (#1469 by @Rick8484)
+- [Susy-Core] The jet wingsuit now works as a bauble (#441 by @bruberu)
+- [Susy-Core] However, firework rockets no longer work with the elytra (#448 by @fil1423)
+### Fixes
+- Many people helped contribute to the questbook! (#1462 by @Rick8484) (#1463 by @Rick8484) (#1467 by @Cone444) (#1483 by @Brebexe) (#1487 by @Cone444)
+- Allow red sand to be used to craft sand pile (#1472 by @WideMann)
+- Magenta elevators are now craftable (#1475 by @Rick8484)
+- Recycling caution blocks no longer dupes steel (#1488 by @Fiery36)
+- [Susy-Core] Sheeted frames now stack when mined (#442 by @bruberu)
+- [Susy-Core] Evaporation pools no longer spam log (#449 by @MCTian-mi)
+- [Susy-Core] Filters are no longer removed from pipes when conveyors are placed on them (#450 by @unitazer)
+
+Finally, thanks to our first-time contributor @Blebkleb!
 # UPDATE 0.1.14.9
 
 ## Mod Changes
