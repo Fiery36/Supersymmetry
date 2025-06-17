@@ -248,7 +248,7 @@ METALLURGICAL_CONVERTER.recipeBuilder()
         .duration(65) // Give a good number of overclocks
         .buildAndRegister()
 
-
+/* Waiting on industrial electrolysis plant
 // Fast aluminium generation in large arc furnace, not including carbon dioxide
 ADVANCED_ARC_FURNACE.recipeBuilder()
         .notConsumable(fluid('cryolite') * 7776)
@@ -269,6 +269,7 @@ ADVANCED_ARC_FURNACE.recipeBuilder()
         .duration(100)
         .EUt(120)
         .buildAndRegister()
+*/
 
 // Fast copper generation in large arc furnace
 
