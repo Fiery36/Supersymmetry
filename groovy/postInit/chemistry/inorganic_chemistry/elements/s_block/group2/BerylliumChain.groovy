@@ -298,6 +298,14 @@ DISTILLERY.recipeBuilder()
         .duration(100)
         .buildAndRegister()
 
+ROASTER.recipeBuilder()
+        .inputs(ore('dustBeryllium'))
+        .fluidInputs(fluid('oxygen') * 1000)
+        .outputs(metaitem('dustBerylliumOxide') * 2)
+        .EUt(Globals.voltAmps[2])
+        .duration(100)
+        .buildAndRegister()
+
 //BERTRANDITE CHAIN (SPECIALIZED)
 
 //HIGH PURITY CHAIN
