@@ -707,6 +707,14 @@ DISTILLERY.recipeBuilder()
     .duration(160)
     .buildAndRegister()
 
+DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('very_diluted_calcium_chloride_solution') * 3000)
+    .fluidOutputs(fluid('water') * 3000)
+    .outputs(metaitem('dustCalciumChloride') * 3)
+    .duration(160)
+    .EUt(30)
+    .buildAndRegister()
+
 // Soda Ash
 
 // Soda Ash (Sodium Carbonate) Dust * 1
