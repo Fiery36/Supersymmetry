@@ -1157,7 +1157,6 @@ pourPointDepressantMap.each { ppd, multiplier1 ->
 }
 
 // Supreme
-
 for (chelate in chelates) {
     for (ci in corrosionInhibitors) {
         BLENDER.recipeBuilder()
@@ -1183,3 +1182,18 @@ for (chelate in chelates) {
         }
     }
 }
+
+// Hydraulic fluid
+BLENDER.recipeBuilder()
+    .fluidInputs(fluid('lubricating_oil') * 10000)
+    .fluidInputs(fluid('zinc_dialkyldithiophosphate') * 100) // EP additive, antiwear
+    .inputs(ore('dustTinyCalciumDidodecylbenzeneSulfonate')) // Corrosion/rust inhibitor
+    .inputs(ore('dustNPhenylOneNaphthylamine')) // Antioxidant
+    .inputs(ore('dustPolyisobutene')) // Pour point depressant & VI improver
+    .fluidInputs(fluid('polyethylene_glycol') * 100) // Demulsifier
+    .fluidInputs(fluid('antifoaming_additive') * 100)
+    .inputs(ore('dustTinyCalciumDodecylbenzeneSulfonate')) // Detergent
+    .fluidOutputs(fluid('hydraulic_fluid') * 10000)
+    .duration(200)
+    .EUt(120)
+    .buildAndRegister()
