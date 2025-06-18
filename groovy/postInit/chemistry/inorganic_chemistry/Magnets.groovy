@@ -1,7 +1,6 @@
 import globals.Globals
 import globals.SinteringGlobals
 
-ABS = recipemap('alloy_blast_smelter')
 FORMING_PRESS = recipemap("forming_press")
 MIXER = recipemap('mixer')
 ELECTROLYZER = recipemap('electrolyzer')
@@ -71,8 +70,6 @@ ELECTROLYZER.recipeBuilder()
     .buildAndRegister();
 
 //SAMARIUM MAGNETS
-
-
 
 FORMING_PRESS.recipeBuilder()
     .notConsumable(metaitem('shape.mold.long_rod'))

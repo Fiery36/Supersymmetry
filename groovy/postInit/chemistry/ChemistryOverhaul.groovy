@@ -707,6 +707,14 @@ DISTILLERY.recipeBuilder()
     .duration(160)
     .buildAndRegister()
 
+DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('very_diluted_calcium_chloride_solution') * 3000)
+    .fluidOutputs(fluid('water') * 3000)
+    .outputs(metaitem('dustCalciumChloride') * 3)
+    .duration(160)
+    .EUt(30)
+    .buildAndRegister()
+
 // Soda Ash
 
 // Soda Ash (Sodium Carbonate) Dust * 1
@@ -3654,7 +3662,7 @@ CSTR.recipeBuilder()
 
 FBR.recipeBuilder()
     .fluidInputs(fluid('butanediol') * 50)
-        .notConsumable(ore('catalystBedCopper'))
+    .notConsumable(ore('catalystBedCopper'))
     .fluidOutputs(fluid('gamma_butyrolactone') * 50)
     .fluidOutputs(fluid('hydrogen') * 200)
     .EUt(120)
@@ -4055,4 +4063,25 @@ MIXER.recipeBuilder()
     .fluidOutputs(fluid('potassium_bisulfate_solution') * 1000)
     .duration(60)
     .EUt(30)
+    .buildAndRegister()
+    
+// EDPT
+
+ FBR.recipeBuilder()
+    .notConsumable(ore('catalystBedPalladium'))
+    .fluidInputs(fluid('piperazine') * 1000)
+    .outputs(metaitem('dustPyrazine') * 10)
+    .fluidOutputs(fluid('hydrogen') * 8000)
+    .duration(40)
+    .EUt(128)
+    .buildAndRegister()
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustPyrocatechol') * 3)
+    .inputs(ore('dustTinyPyrazine') * 1)
+    .fluidInputs(fluid('water') * 2000)
+    .fluidInputs(fluid('ethylenediamine') * 2000)
+    .fluidOutputs(fluid('ethylenediamine_pyrocatechol') * 4000)
+    .duration(100)
+    .EUt(128)
     .buildAndRegister()

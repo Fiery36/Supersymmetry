@@ -2908,5 +2908,25 @@ public class UnknownCompositionMaterials {
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x6d1ddb)
                 .build();
+
+        HydraulicFluid = new Material.Builder(4640, SuSyUtility.susyId('hydraulic_fluid'))
+                .liquid()
+                .color(0xebd64d)
+                .flags(FLAMMABLE)
+                .build();
+
+        YttriaStabilizedZirconia = new Material.Builder(4641, SuSyUtility.susyId('yttria_stabilized_zirconia'))
+                .dust()
+                .color(0xe3ecff)
+                .build();
+
+        // FREE ID: 4643
+
+        HighAluminaRefractory = new Material.Builder(4643, SuSyUtility.susyId('high_alumina_refractory'))
+                .dust().ingot()
+                .iconSet(DULL)
+                .flags(NO_UNIFICATION)
+                .color(0xe8dec3)
+                .build();
     }
 }
