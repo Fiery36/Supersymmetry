@@ -2358,7 +2358,7 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "config/betterquesting.cfg"
-hash = "27c70723131c907ca0891a20a4aeeab3ffe0b9c5d762c170ab5d9db51aaff662"
+hash = "593a6aeb686bd725adca1f401e6b36072be8089ab3f51cffcebd5030763bdbcf"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/0.json"
@@ -2394,7 +2394,7 @@ hash = "8489518a5a05dbafd7c4ac86b9e5168019c46038800e0bac76cc5f04e80852ba"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/1548222032.json"
-hash = "324908cc7c7599ba00c3fe14ea6a0e34e122af7e9563fac53e4af1e3e905e4bd"
+hash = "3528cd34d8dfa8ea84027308f4c9fa2e36ac40d81e80089b9a4b9dd2bb60bc27"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/16.json"
@@ -2406,7 +2406,7 @@ hash = "8196c827832a176ab9f5756d701be49497d24b2d427bdce60268b6ad902dc852"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/1796662362.json"
-hash = "80f537798d5f93a79569e9946662fec3aa449ff49aabde75f1325d3744a49896"
+hash = "7971d85cd9ea30b4d61583d706f4041d5681cd1f0fd005cbcc7e0eb45c64bed6"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/18.json"
@@ -2458,15 +2458,15 @@ hash = "9341803fbbc8af91ab51c26a2432fa5094c2d6edf55016fa02bb5663a6096e13"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/4.json"
-hash = "723398edbda5a48fbb32e11011fa60e259b81b68e62daf16bc68cf6bc0a16b26"
+hash = "484b4ee98efd388de2e6683f726852739d26235348fa8077ba0e5ded798f729a"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/5.json"
-hash = "a37cd518976808c37d2f67e4c27bfb284f8c506b374b5d8073c8a24561e055fc"
+hash = "4e6bcac6809f75601115960431af98cc6d501562560697b11c2a2c50f3f4c40b"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/6.json"
-hash = "1f585269757d29c3ae79d256d0e4fd67f60ac90778a7edd4359def22e14659b8"
+hash = "6800301c53228cef3cbdaa2a9521986f98185b898a3bad6a7459c0bc64cc9af6"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/QuestLines/7.json"
@@ -3006,7 +3006,7 @@ hash = "747349c0d23af220dbd022af56c3d4fcf9e782716fa6d326156b685e069e2eb5"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/16/207.json"
-hash = "a848bbe112daee8965a1167be70d0ac60d3c8018911ac4ebc22d2509c5d29a9c"
+hash = "33b388f176d0c163471b83d8e3c4584f582fb36ec6ba0a123caf65876bd38744"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/16/232.json"
@@ -3622,7 +3622,7 @@ hash = "bb95258ff309baa365449de3f51db23dc6acacb88696f7d71d59cf984d5d44fc"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/2/203.json"
-hash = "edbc72fe40a2541657624b9d5ff2cffe3d64798af012230548853b5ddf8629f6"
+hash = "b2947a3b7347cdbb64afbf96f1bc3f4a81db3e0e6a63cafa5cfa3d60902dce87"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/2/205.json"
@@ -5245,6 +5245,10 @@ file = "config/betterquesting/DefaultQuests/Quests/4/1203267647.json"
 hash = "65a82c266958c38925ea49f64b1bb18fd059dbe465e45849cbdb8782b465e829"
 
 [[files]]
+file = "config/betterquesting/DefaultQuests/Quests/4/1220908734.json"
+hash = "416e3adf9903a4e6f030938677c3e96d9ed3a978004ec43ffc552aed8aebea1d"
+
+[[files]]
 file = "config/betterquesting/DefaultQuests/Quests/4/1322263999.json"
 hash = "2a5860cf6563b9316d7d73a68b65d6dc65dd274c6204cc1e8ef6566797b1d030"
 
@@ -5629,6 +5633,14 @@ file = "config/betterquesting/DefaultQuests/Quests/4/954006870.json"
 hash = "414a3483843eb0cc3214925f268fa1beb80a5b4e11551ed23b9d20f2fc04682d"
 
 [[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/1051748281.json"
+hash = "8fbefe80d6e6c8ebc202f5bff5045887819d408b3f3cfa0968ccd0352abe57de"
+
+[[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/1064746016.json"
+hash = "3bc993994faced8ff0282d7a649cdb8fb51347d765b2016f8675c59f873ac282"
+
+[[files]]
 file = "config/betterquesting/DefaultQuests/Quests/5/1091063286.json"
 hash = "bc1ad4e3e3f003f0fa2a86bb0ccc9e03b99acb66d856fa0f4455a70c8ee4fe1a"
 
@@ -5643,6 +5655,10 @@ hash = "9f917f8a3806bbb8aab1a8479fc6dff5130b06d696733116de401f347ed458c6"
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/5/1337107364.json"
 hash = "43f5c3f2a74b4688b85d0b533eae49bc4b3eaba5942ab2c9620d2a8fd74365b9"
+
+[[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/1338245952.json"
+hash = "f4fe38304ee3d64b72663f19ad0cfaf480403b10a2752da6f2b901738e920684"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/5/1399178319.json"
@@ -5665,12 +5681,28 @@ file = "config/betterquesting/DefaultQuests/Quests/5/1634463815.json"
 hash = "a99a5c493092d445c93d01feca59370d92e0ec63c33fcfe8c71aa1f8de71c3c3"
 
 [[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/1646718435.json"
+hash = "4796ec1303e3070d0de4e8cad6778b55bd82b18fa4eb4aa063eacdd7548e48a0"
+
+[[files]]
 file = "config/betterquesting/DefaultQuests/Quests/5/1818221999.json"
 hash = "880364d63ee105dd33fdd33c72b859e08cd859a18875bbf30722a9ece2effc1b"
 
 [[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/1923587932.json"
+hash = "2d57cff2c1a9085a9fe02604edb5c48e20dd48ce95e1f53d05b26aeb8cbf0ded"
+
+[[files]]
 file = "config/betterquesting/DefaultQuests/Quests/5/1934888714.json"
 hash = "8e1c0d0ea57f9b084fb265ef85b5b753971f4b2676d462b134a93895dcbbab80"
+
+[[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/1962935316.json"
+hash = "296678b9ea8a653cd5062564bdb532d470bb5883fe01cb2b519335b037c11d74"
+
+[[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/1973878836.json"
+hash = "5aa5b4d20ff3f0fb140728d2244e55111622bf74bee7e21db987281445a1d4ad"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/5/19817968.json"
@@ -5685,8 +5717,20 @@ file = "config/betterquesting/DefaultQuests/Quests/5/2127123573.json"
 hash = "3f8174f6cac6b1d178977df00330449f62d33659243de837cd2e8a1f27051c8e"
 
 [[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/213706018.json"
+hash = "4bb6d88f09abfbd1d3db06c5e7be16d9a49ae54a3834577e599624b626e629ee"
+
+[[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/245789464.json"
+hash = "067395f9a2563e237152a36ec05ebbb3fd313e73416d71b26dc24b3f3d6be4db"
+
+[[files]]
 file = "config/betterquesting/DefaultQuests/Quests/5/280131684.json"
 hash = "967cdcca9ecb05cfb95394a0e017c844e949fde8ea62f160e2ecbab6953dcb67"
+
+[[files]]
+file = "config/betterquesting/DefaultQuests/Quests/5/595675883.json"
+hash = "247e899d9b06027456556a2bc951c33b04c9eded71ba3eb9dcaad3452332ab92"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/5/649388409.json"
@@ -5889,6 +5933,10 @@ file = "config/betterquesting/DefaultQuests/Quests/5/977680348.json"
 hash = "d778a00f25016168514c8faf585b7699c4f65765a2559e1487762a8602e7d372"
 
 [[files]]
+file = "config/betterquesting/DefaultQuests/Quests/6/1188697175.json"
+hash = "5b2bb9fa482e6e0f845b0ef3e3364ea55083dee0cd464d5267fde1e82c4ef817"
+
+[[files]]
 file = "config/betterquesting/DefaultQuests/Quests/6/2039298687.json"
 hash = "2ff491d0664b0a47b1f882b133267dd5c2cf17fc4792c6e43b206d6598fd2964"
 
@@ -6074,7 +6122,7 @@ hash = "dbfefc0f4ada3f902800249dfb8e57873d5fef436248eb59881f9c9bd83b7df5"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/MultipleQuestLine/328732527.json"
-hash = "2cc62a7ca0e32f6cb3a5b4e1112be4202524388612f09c6f7cfc423bc9526ca9"
+hash = "4cee724fd9f64dad3ae5e5e2683827d0e3051c9c62b0af22c9c197ac81197191"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/MultipleQuestLine/369.json"
@@ -6374,7 +6422,7 @@ hash = "4bc1e754d68c4ef9bb61339cb06b2663b5328ccb401722a9e0e642e625469401"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/MultipleQuestLine/702454111.json"
-hash = "e2a6625b772c872d8befb07aa715e626dde80389034d1aa300756bb4e310715c"
+hash = "3ec68929f69ae21d089b101099be06383cae4abfc77bee41c7044be67371fae2"
 
 [[files]]
 file = "config/betterquesting/DefaultQuests/Quests/MultipleQuestLine/703.json"
@@ -6518,7 +6566,7 @@ hash = "b774a1a6bb0ce1e0d4dccc0b2ae740aaa8dea58be90d13ab227aacdf002e0b7c"
 
 [[files]]
 file = "config/betterquesting/resources/supersymmetry/lang/en_us.lang"
-hash = "44e9e9f631b7dd9d4414fbc9509a8364619088c4da961fb6af5b57595e3b43d7"
+hash = "7362ec6d28d8bcfbe9fb73bfdbb36b9b5825667cb4cc65d1e6b307abde578b04"
 
 [[files]]
 file = "config/betterquesting/resources/supersymmetry/lang/ru_ru.lang"
@@ -8959,7 +9007,7 @@ hash = "fb26d2614c8a4f211af1b4e96d81bc74f9ca30b8ad1d34f3c06eec50451109c5"
 
 [[files]]
 file = "config/jei/itemBlacklist.cfg"
-hash = "f8b613fc4ee5ed5f736dd36bd7358dd62d632a4557d791e4f5540a46d3521c30"
+hash = "95287e0c53a6a94f4014eb4146eb77e09bd837df2afe8828484556ddc7e3a359"
 
 [[files]]
 file = "config/jei/jei.cfg"
@@ -9382,6 +9430,10 @@ file = "config/supercritical.cfg"
 hash = "3251d0e6a52505863f6b620cb6bebf2b6a70a67181173dd0a123d44251c810ef"
 
 [[files]]
+file = "config/susy/susy_canary"
+hash = "0bb22b762aaa7ab66f8a4df8fe6b644ad2bdfd7bdfac147a1caa5c7bae99a820"
+
+[[files]]
 file = "config/sync.cfg"
 hash = "33e88e282c46d8845514e1f0e5b1fab7088f42bbdfe6d06c541aa77d4941b44e"
 
@@ -9471,7 +9523,7 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "groovy/classes/ChangeFlags.groovy"
-hash = "a4004f6d8a622872e45a5dad8f8f05d917354ad81c2ea11e14ed466d77950941"
+hash = "9a2e0ca7801ce479162277efbb9ce0d5e4608752d2b1f64e7ec67cf82008e898"
 
 [[files]]
 file = "groovy/classes/ICoolant.groovy"
@@ -9531,7 +9583,7 @@ hash = "bdde882e114762da0db247563d5438a8d589a11204ba48eb22f26e1db91f8207"
 
 [[files]]
 file = "groovy/material/FirstDegreeMaterials.groovy"
-hash = "b87a15757bf273ce0e656eb60c014935845837f01de1c654209ba23e6ee31e63"
+hash = "dc5b5d469bef4940bf865b08850fd36ab133c94d693b237e8bf5be5128afc953"
 
 [[files]]
 file = "groovy/material/IsotopeMaterials.groovy"
@@ -9539,11 +9591,11 @@ hash = "f5e234afc1b8e6a34f763f6fa0b7abe42cdf7692e911b6544c58eaf531d475be"
 
 [[files]]
 file = "groovy/material/OreMaterials.groovy"
-hash = "4f3053e578684c08c5ceb9b01c34fccbdc0570782bcb28992886901e7c9c2c3a"
+hash = "04f08e12db6c3dbc029d3f925e5f1d0e7c1057f32221268f275333b1833b5b28"
 
 [[files]]
 file = "groovy/material/OrganicChemistryMaterials.groovy"
-hash = "ebeaf454274c296b37bd6d1e642e1d127f285246497e71068000e9f7d6b11066"
+hash = "8a1fc16acf56968213819db3fede5923e7d1525cf0f1c81fb3071bc878d062fa"
 
 [[files]]
 file = "groovy/material/PetrochemistryMaterials.groovy"
@@ -9551,11 +9603,11 @@ hash = "f2551e701c29de6b93ed52e623da124a86c647041fc7a8ad6af70b66af40beb8"
 
 [[files]]
 file = "groovy/material/SecondDegreeMaterials.groovy"
-hash = "ae038df795fb5d042b5461b042f3ca9fc3f8e22265e14d1e304a7eef084b30ea"
+hash = "55670c4be917b2fdc3fefcd6fb6716c9e6e3683d46133adf656a37713b6d6839"
 
 [[files]]
 file = "groovy/material/SuSyMaterials.groovy"
-hash = "afd0a55e5c8f0fe3e7e5ef1bcb445458b0226273cbdb2ab12375c84f6db80335"
+hash = "d1269974db76d1d4b0da419e3e172732909a61583cc833f9ff3a521f3123047b"
 
 [[files]]
 file = "groovy/material/ThermodynamicsMaterials.groovy"
@@ -9563,11 +9615,11 @@ hash = "f8bb3a36a15c12a5ecb44495dd6e5e087dc6406a900010cda3ed45df02c65b7e"
 
 [[files]]
 file = "groovy/material/ThirdDegreeMaterials.groovy"
-hash = "40fc441a30cda00af068dcf4fdb66a421e0d187f8047abf53a98848df0eee974"
+hash = "9fc36a29c33f32109dde6eb66a6adaf75168dc7a8172ded62df790a515b4607b"
 
 [[files]]
 file = "groovy/material/UnknownCompositionMaterials.groovy"
-hash = "0f328f2d94f9509f813a288e4d34c7cf0068897e30a8663ad9a5e28b66a80243"
+hash = "48499a3a1d9359c1f47ca78cdb3e053fb195d877d22901fa0844ab0b19ebe21f"
 
 [[files]]
 file = "groovy/postInit/biology/FermentingChain.groovy"
@@ -9591,7 +9643,7 @@ hash = "8e79ae20d3b48ce925c3c6cf59c8b34bfd517b35c0c7f591140a28bd44e780ea"
 
 [[files]]
 file = "groovy/postInit/chemistry/ChemistryOverhaul.groovy"
-hash = "108a3d5b8c860113082e5d1a6ec5470665d9f6a6cec97e301fbf826f530140ed"
+hash = "15e08bfd103e6be0f6539811ed02ac0059769ae21ba88d44fd0d4151772c3f4b"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/Dyes.groovy"
@@ -9599,7 +9651,7 @@ hash = "65ead07591b99106e42be6b116572dd4579f77383d79b2fdbe14380a4f297578"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/ElectrolysisOverhaul.groovy"
-hash = "e3d2c2a36283c8c3272561758a927595c4378aca86078281b0ec783a84f1967c"
+hash = "aa3dfbfa6f9e78ee650cedc1f4a2d01745908ac6c7e23d096c2dc8a245840eeb"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/GemChain.groovy"
@@ -9607,7 +9659,7 @@ hash = "2583728595581ee4fee56e9756032a447218e283d6bc62df7dfbdb448f612776"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/Magnets.groovy"
-hash = "6d7eef7eec673df8409761a82e60fc56e444bcd100b56446c6dfa3b3d2aaec9a"
+hash = "6d63c951f8ab564cbafa07c4886d6bd2769ccf4eb2ab742f175d3177364416fc"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/WaterPurificationChain.groovy"
@@ -9623,7 +9675,7 @@ hash = "64920b77d50099456c7f23173b470dc74475e79b6a0950650c4503232b712be6"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group10/PlatinumGroupChain.groovy"
-hash = "f9096f708669ce178ef29f74fdc70c0facf15c536fa8c68be1affbc86dd3a251"
+hash = "5341e6439b846723a1f210d91fd704c35a52c50f7d3c18a057537471a1ff653a"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group11/CopperChain.groovy"
@@ -9650,6 +9702,10 @@ file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group12/Z
 hash = "8e3f387e1c09b4b84956a83ece63fb8b20395719a8b1db15c1829e65f07b01d9"
 
 [[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group3/YttriumChain.groovy"
+hash = "67697c9bf5de6abfc8cf34b0cb6159d35ef720c04765494a447761ddd9d4ad4d"
+
+[[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group4/HafniumChain.groovy"
 hash = "75b49a5a82f318a4692fa8c5700447f384e310604355a5a4ee31c1e717a5f5bc"
 
@@ -9667,7 +9723,7 @@ hash = "0bb62e40dc04fea97e51c9c1a5b2c7a1c9f2a29954e11537a5c4598c4204a3ff"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group5/TantalumChain.groovy"
-hash = "0ca390f4b46fa0b8041cab1b8b1749e91a3b38d9083de10f2b40c8609940cfe1"
+hash = "50387ef3e08866880bbf5d2ad227a3c2d3101c328a04733a2117f4fb37601be7"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group5/VanadiumChain.groovy"
@@ -9675,7 +9731,7 @@ hash = "e8777a30a71b64cfa779f263dbfdfe636fa362ad94ab16c4f3bc5c76c31b0cb2"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group6/ChromiumChain.groovy"
-hash = "7cfe3796878f78e965f7a243193f9fb8c58c4ad9ed2b99b053609a34240cd9e9"
+hash = "c5744f04f69533d1626e68ca45adcbe5415cddf2f12ab8cbb2cf5a87e67220e6"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group6/MolybdenumChain.groovy"
@@ -9699,11 +9755,83 @@ hash = "91fccf89bbc35e92d421c24e93cb9c5a82599edce4e4c571df4a0b69c1df7d8d"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/d_block/group9/CobaltChain.groovy"
-hash = "8b88567af2ef010449fd23ed6cf20bb283e29c873838016485612f2523967241"
+hash = "cdc87769d52f635a1c09c56a8eaf438ea983e406894e08a143f7c8ce8f48418a"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/actinides/ThoriumChain.groovy"
+hash = "c7c4ef0792ce8b035741e46cd00566203a009147f94bc4eb45bab68b42687acc"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/actinides/UraniumChain.groovy"
-hash = "f719a2a54e308c2b32504f2b38d920f087d4d83ed0b06c843195bf28f840439d"
+hash = "9385c5bdfbd162a2d385812d200fb4903c509f2ce62b2816fa00dc2fc3d63beb"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/CeriumChain.groovy"
+hash = "746c4ba1103962444aeb2ae6e847d0df97572722fed0474ee147056e14f0b8b0"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/DysprosiumChain.groovy"
+hash = "05966e730649649983e2d57d1c04707ac815cb7d8721f1adc3ae444eceaeb127"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/ErbiumChain.groovy"
+hash = "951b1154e737df7a1f10c062e44ca2c0bd0442ea7be86475e0b990ab2bb9999d"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/EuropiumChain.groovy"
+hash = "8cb0463c21b758ebe48afdf4af6a605b7b48fbef00ba8dc0c47ac430ea0414b3"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/GadoliniumChain.groovy"
+hash = "104b6c0c4d40968048ba493ce96b7b05aef04233cdd910a81cd679ab5830e91e"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/HolmiumChain.groovy"
+hash = "a97a46893fca3aa03ffc5c71c88dc7b58a16d45cf5c336e421195461846e062b"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/LanthanumChain.groovy"
+hash = "6b46810b5104f6fb340a802b95a8de6f21679b23aae57c687332d8d8d05b1477"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/LutetiumChain.groovy"
+hash = "57dd284ab6dd7781ba542db8f4a39e0217ccfac6462fc2b2d7f16e456d1bb005"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/NeodymiumChain.groovy"
+hash = "37a0393a61d4ac3bf55d38484f1d253e68b3181107d139258c91c859946c74cd"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/PraseodymiumChain.groovy"
+hash = "f60f57e4aba5dfa06523d188fca088ea8e16330efb991eff80e2cc6a8f9170a8"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/SamariumChain.groovy"
+hash = "2c8e96dc890afcbc7ef7fa77f02cef58bfffc03949f88f5236286d75bb7bb176"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/TerbiumChain.groovy"
+hash = "cd9bd0927f96cbb0869fb8a37ee018027bef5258b28ea0570d758fa9d25838ff"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/ThuliumChain.groovy"
+hash = "cc18bd4a560cf188b4414cf99950d28cb65832542ff12c98707a5a3d8d88ce10"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/YtterbiumChain.groovy"
+hash = "1cdb3da84ae63cb78c819288e042206a30d6f6bb4bc57da77a0b49fbca00584b"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/separations/BastnasiteProcessing.groovy"
+hash = "ee1b6009b98316a58e0ca4986b1ee8c4e3c69d37a222e3361f5610d4324b1e2e"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/separations/MonaziteProcessing.groovy"
+hash = "764e79f272bf8a1cd3cdb196ed901b40a17463ccabefffb35ede9b1a92d56d67"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/f_block/lanthanides/separations/XenotimeProcessing.groovy"
+hash = "3bb64ea13931a84b96265e811e16d1bd39f70370c87ac384387b54b06d6020b4"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group13/AluminiumChain.groovy"
@@ -9727,7 +9855,7 @@ hash = "8560126f986f0dc75544b882653510b686b234d6d3954ab42a20b3311e435366"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group14/GermaniumChain.groovy"
-hash = "34ece37abb8aa8873a708f8a97602481aa7c4ca2d06b532ec968f644d4328232"
+hash = "5613d13e1e6eb757246648fca0bdc5a0b97757da5e4eca56f70dda0c2592ba68"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group14/LeadChain.groovy"
@@ -9755,11 +9883,11 @@ hash = "d9f442945004254ec89c911e07a60bbc6090ff9c129913c78405bcbc496b1819"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group15/NitrogenChain.groovy"
-hash = "5ed514f44d6ba06566efbf902374885083b2da6f35203d4f1a645d97f493f29c"
+hash = "e1a0c432a5ee3381029694dd741e5ef081184ff5804ec103dc980a996e0cf7b7"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group15/PhosphorusChain.groovy"
-hash = "8aaf5e072c32fd8a63fbe4d8e69828dc6538a02b1a4445685a812e8fe26ad1de"
+hash = "da5282fe01751a3ab51d6d0821438eaf5b7f8300900b87eb4c822c4f46b3b6a9"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group16/SeleniumChain.groovy"
@@ -9767,7 +9895,7 @@ hash = "4d35d6053130f74cf65effda2318ceecb61edbf9cbfc18b2110eabfda53a95c4"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group16/SulfurChain.groovy"
-hash = "b22c0e4bd07528f09fab810fa08db796d394eda1e63f7fe3d391f288f8a01707"
+hash = "c2c12c2b37cd681368ef34c6ab514b9039948ad0de08ae19b29365d14ca3e09d"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group16/TelluriumChain.groovy"
@@ -9776,6 +9904,10 @@ hash = "ab5810ed72d8b7ae693c41abe2eb8a7a48261f964893fdff2fc8a7b245e59229"
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group17/FluorineChain.groovy"
 hash = "7832130c0aa3e130769738e5b8879f97ec3dc26e2756cebde5780bd07945cdb3"
+
+[[files]]
+file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group17/IodineChain.groovy"
+hash = "31636068efbd9a2b734d65257603bc5b44958e5b148e01b5083c3490ba863353"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/p_block/group18/AirDistillation.groovy"
@@ -9851,7 +9983,7 @@ hash = "e35da3180ad45dc88b8254f43edb03516c9704899371c58e34286c5ba68ad0ee"
 
 [[files]]
 file = "groovy/postInit/chemistry/organic_chemistry/Extractants.groovy"
-hash = "437b4d3e7dd2aae0865a30976995c23a14722e5cf34a0adbd55fa4d3dd179870"
+hash = "4e6e6d940b8a782c36469f839906e33c613d41f4ab7d8964c31265b5a767a9af"
 
 [[files]]
 file = "groovy/postInit/chemistry/organic_chemistry/GrapheneChain.groovy"
@@ -9887,7 +10019,7 @@ hash = "5747879ded440d5ae8fed406ea9308ddf4ddd1b414c11851ffc7bb696e18ac08"
 
 [[files]]
 file = "groovy/postInit/chemistry/organic_chemistry/petrochemistry/Lubricants.groovy"
-hash = "c172b9d0ff17a510453d7cc472f59e75e68abaf35b712dcf9db8222878c7f077"
+hash = "67e2eaf178334a37ae6ecb90239677d0684d2c042c303afaa744f6965d746fe7"
 
 [[files]]
 file = "groovy/postInit/chemistry/organic_chemistry/petrochemistry/NaturalGas.groovy"
@@ -10103,7 +10235,7 @@ hash = "d7db58b5cc3cca27ff3cc4640855a8c153e27274bcd66df209483b4297914969"
 
 [[files]]
 file = "groovy/postInit/metallurgy/OreSorting.groovy"
-hash = "0b6e5bfc7d787b9c6cb6a2b60338c6baca88fa118047158939f2bce2663f67da"
+hash = "d2df2588be44ddb77c9a728153ea9495f5d6bb2a3320f8ec519253eb764e828c"
 
 [[files]]
 file = "groovy/postInit/metallurgy/Potin.groovy"
@@ -10111,7 +10243,7 @@ hash = "45723b3f10fca583222750f4a318164553e969ca85e2b4fa2cccaa1f1b629029"
 
 [[files]]
 file = "groovy/postInit/metallurgy/Quenching.groovy"
-hash = "6b2dad0e2a9d745ac31ab57dc0baed1d12388ac8ce0f14c16213b714b6cd73e0"
+hash = "ae917eea6b4c0584bb1ef9f932067f9b407629756d380b613320bbd744671d88"
 
 [[files]]
 file = "groovy/postInit/metallurgy/Solders.groovy"
@@ -10127,7 +10259,7 @@ hash = "e2177403cd1b94fa87e9622fc5d3edf065f9d83a3ffb2c308d8174d922520f27"
 
 [[files]]
 file = "groovy/postInit/misc/BrickChain.groovy"
-hash = "86dc1197825cbe6617f652c2fb69d3ddc39facb5b6c788ae1abdb716146e009b"
+hash = "52c7d2933f5603fd20349134dd5c7b716f784f19463156824e5f1e6edbac22a1"
 
 [[files]]
 file = "groovy/postInit/misc/CementChain.groovy"
@@ -10195,7 +10327,7 @@ hash = "f76f1bf1a625f4cbe9f9fc7dcb6863d9c4f957a9deeb46dddac8cfab25b5ca95"
 
 [[files]]
 file = "groovy/postInit/mod/Elevators.groovy"
-hash = "c0c28aae80db0020e12208af4c6e3f1b7b6ad29d8ca83c3c2f78e011cd746d88"
+hash = "a100b6a7278d980b2bae6c5822650a41c0fe8e38a264ad98fea2ee3444f1364f"
 
 [[files]]
 file = "groovy/postInit/mod/EngineersDecor.groovy"
@@ -10203,7 +10335,7 @@ hash = "6bf68d1e8587940cb699e6da26cf3fb9b5d29df84ffee984cfe01250ee1887f5"
 
 [[files]]
 file = "groovy/postInit/mod/GasPunk.groovy"
-hash = "04fb0c52809f123a54873b39cb9c237f323fafae0c5025e89ce7f1096f771424"
+hash = "8381bef985be3bf2ad9f77d11d7c93ed83be5bed27e74df4656f0294e6f7c4c0"
 
 [[files]]
 file = "groovy/postInit/mod/GeneticsReborn.groovy"
@@ -10211,7 +10343,7 @@ hash = "8a2d9980bcb0456266868698dabef8e2093d4e832b97b4eb4cd4a46a487baa22"
 
 [[files]]
 file = "groovy/postInit/mod/GregTech.groovy"
-hash = "ca87f4846ee736db745077d3d59b7af6c86505059defc07e7519fedf9067f3e3"
+hash = "79fd73d0d47ff9ff04e4d47824c7136cef22fb4a40d26d0a496c2173744b2403"
 
 [[files]]
 file = "groovy/postInit/mod/GregTechFoodOption.groovy"
@@ -10366,10 +10498,6 @@ file = "groovy/preInit/MetaClassExpansions.groovy"
 hash = "9cb580085dc57139e24ee83ee3382befff8bcf68bd17d5107828143e19296098"
 
 [[files]]
-file = "groovy/preInit/RecipeBuildActions.groovy"
-hash = "549d4033ae2a5a8d7361ed89243cc828c0e179a7531de788540e05bf06ec783f"
-
-[[files]]
 file = "groovy/preInit/RegisterElements.groovy"
 hash = "849a606f6683371643d56fe9686d451d5739963c821bb69ca8a21245608ada7c"
 
@@ -10379,15 +10507,15 @@ hash = "c92d4d4e6459b821bd86dc2bd7e745224ca85ab1b07f1f3a8a53c71a23f09f22"
 
 [[files]]
 file = "groovy/preInit/RegisterMetaItems.groovy"
-hash = "8aa35734b94b9bb2dc479254985dcc595c7b75a42b7c9ac643fdc41f4bb98a0a"
+hash = "ae8f2bc51204ca9d8f93b56bc10d5358b428d50f0187861da3c82c2bf178a6f4"
 
 [[files]]
 file = "groovy/prePostInit/ModifyRecipeMaps.groovy"
-hash = "3617b72ec0e673aa6c80f723db8cdd271c5d6a00d1980a4671ca46c083704002"
+hash = "0bed6a9131ed7a0ed5dcb75bdfa78978351cc2cacfe02d0ed788ec03219643aa"
 
 [[files]]
 file = "groovy/prePostInit/Thermodynamics.groovy"
-hash = "8c8d47efad4fd1c0772f2dafc6a4770fe0db30dedb416e9dae44027472323e88"
+hash = "2d5527941ca5513e5fccbbc3274e02db201a47274f9ca6ed7b91e179b922f41d"
 
 [[files]]
 file = "groovy/prePostInit/oreDict.groovy"
@@ -10525,7 +10653,7 @@ metafile = true
 
 [[files]]
 file = "mods/bubbles-a-baubles-fork.pw.toml"
-hash = "6f0dfed1a266a8d39ef261badb99c877c052afc2059cfc70f4f723fa66d70f24"
+hash = "0f638c404af3f45c1b04c1ecb4d4b54c02ac3d2e96ce29bdb15f479042bc6f70"
 metafile = true
 
 [[files]]
@@ -10615,7 +10743,7 @@ metafile = true
 
 [[files]]
 file = "mods/craftpresence.pw.toml"
-hash = "4559d9634c72b93d2b71f140c1228f5c05a987b4068f41ba81067977f4160405"
+hash = "8e6724222506857a225b2f4d0a2e215e0afa4473bc34f676031b6a973e3ca2fd"
 metafile = true
 
 [[files]]
@@ -10670,7 +10798,7 @@ metafile = true
 
 [[files]]
 file = "mods/extreme-sound-muffler-legacy.pw.toml"
-hash = "543f6ff8fcfb5052af4caf4cd5c40d394c5a92cb935893f5730d4f81d045d862"
+hash = "5c1382e8653582fab1c93b81691a1bd059197e8b2d1afb65014a86a1ad09710b"
 metafile = true
 
 [[files]]
@@ -10685,7 +10813,7 @@ metafile = true
 
 [[files]]
 file = "mods/flare.pw.toml"
-hash = "306514c708b7df74d028fa23d1486936a9e634451908fc08a686c73c98c9e84b"
+hash = "de273d83365a71eadb97eb0feb2f690e9678436601dfd0c85e7acc591829923f"
 metafile = true
 
 [[files]]
@@ -10695,7 +10823,7 @@ metafile = true
 
 [[files]]
 file = "mods/forgelin-continuous.pw.toml"
-hash = "af7fce859d981cc22e49e7afb32d77b812187bcb976d9aa4ccfb91aa1f674dbc"
+hash = "02ff2c5bcdfe0ed7d7e7c3f88da0a35f855491901bedb9b0ad6f897df4ad0fba"
 metafile = true
 
 [[files]]
@@ -10715,7 +10843,7 @@ metafile = true
 
 [[files]]
 file = "mods/fugue.pw.toml"
-hash = "fc3f4ac188fd6f63da77364f665ede6bae0deed9bb691b147a88cabecbfc31ca"
+hash = "0bc5d5ac93129ff8587f224fb1465798e938e1ff666e2bc9f04002ac52bdc82f"
 metafile = true
 
 [[files]]
@@ -10775,12 +10903,12 @@ metafile = true
 
 [[files]]
 file = "mods/groovyscript.pw.toml"
-hash = "25e958f5be39338dbe7419e63dfce98098d59b3fe11c73dfec3b7b02ffe10925"
+hash = "b93853b9bfac85ac4b0b1dc55b62d015d9957fbe2e46076b1912dedcde729cab"
 metafile = true
 
 [[files]]
 file = "mods/had-enough-items.pw.toml"
-hash = "ef2311d35eec247d9d0544804c3e744aa56a2e8984016505e1a073bad88ec9ba"
+hash = "f3d56a2af8454e4ccf94b86c17aef630c1952ba92783745fa47bd6dc20d2d162"
 metafile = true
 
 [[files]]
@@ -10935,7 +11063,7 @@ metafile = true
 
 [[files]]
 file = "mods/modularui.pw.toml"
-hash = "7288956db5731ae8f5c5a81df922124c172000416c1e02a44f85ac2acf7276fc"
+hash = "b6687ee824c3aab78a9ef39d1c690345cfdef25723649f0fe8bfbb1da7d99612"
 metafile = true
 
 [[files]]
@@ -10980,7 +11108,7 @@ metafile = true
 
 [[files]]
 file = "mods/not-enough-energistics.pw.toml"
-hash = "4d6580e369384d2786bf9ade5a78cbc03682765b93306fd6f6e9e93d24900b70"
+hash = "fd2650282d1bbf0f646ba61b34119ca620953248d0452b3fb8897361f9d2183f"
 metafile = true
 
 [[files]]
@@ -11015,7 +11143,7 @@ metafile = true
 
 [[files]]
 file = "mods/opencomputers.pw.toml"
-hash = "d131eb7d705326e6101e07a3fad60f935eb46931f5eb862650c5e33464f1078b"
+hash = "8dea8c278137b0f42a815734c4b3a338ad18ea76e2ca08623ad3c332e5127eb5"
 metafile = true
 
 [[files]]
@@ -11040,7 +11168,7 @@ metafile = true
 
 [[files]]
 file = "mods/packagedauto.pw.toml"
-hash = "d46b86b5990574c3b88cf2c30816e6a2f95c92374923e1e51810f20cf56bd4e5"
+hash = "71fbe0aca0a3d357da0eb3c1b245b01dc81c2fdadc8455bc4f14d042a07a7416"
 metafile = true
 
 [[files]]
@@ -11080,12 +11208,7 @@ metafile = true
 
 [[files]]
 file = "mods/quark-rotn-edition.pw.toml"
-hash = "f41d2e13f211289f834fda310ac00283824ebb43a9ec3d267ee15ad93081664a"
-metafile = true
-
-[[files]]
-file = "mods/randompatches-forge.pw.toml"
-hash = "93d16979ce8714c02e8e13cfb36d7f604e75ca334ec3349bf6d4e8e42f1c5563"
+hash = "64d7bdb3b57ac5c0226545ec843d71ddb66dbe75fe6373e5063892d977eb238a"
 metafile = true
 
 [[files]]
@@ -11205,12 +11328,12 @@ metafile = true
 
 [[files]]
 file = "mods/supercritical.pw.toml"
-hash = "5869d363af1373375bd666d8116eb3a86e05541805c1ef466bb618c09bc31157"
+hash = "d44b77acdfba7353af52c7df4149579da06455c36b5663bd020572de4eae8aca"
 metafile = true
 
 [[files]]
 file = "mods/susycore.pw.toml"
-hash = "7460cc6700ab87620753850f756e17b32095f7a6d17ef726b8f8561b4edaf84c"
+hash = "9e3c3f3054d5fa071f363c258b3ed07d41ccea2f10a56649fe6c468aaf8fb5c5"
 metafile = true
 
 [[files]]
@@ -11275,7 +11398,7 @@ metafile = true
 
 [[files]]
 file = "mods/unilib.pw.toml"
-hash = "3783f60b0557d958a9b30691a3530919e26ee916d41e9e846154262a3c6daf6c"
+hash = "66a5104ae7bb2ff7f18bd926c6e3a4f612566028fccd07a7e65f87b29d919806"
 metafile = true
 
 [[files]]
@@ -11285,7 +11408,7 @@ metafile = true
 
 [[files]]
 file = "mods/universal-tweaks.pw.toml"
-hash = "2847e45f8412ff2a4cc94cc9470b99bb203dfe5ef8aaee174f6e24f00534f925"
+hash = "0abec0949ca051ee96bdbfcd40a2a4d20413166b9a4f95e891faddb52d73a22a"
 metafile = true
 
 [[files]]
@@ -11295,12 +11418,12 @@ metafile = true
 
 [[files]]
 file = "mods/vintagefix.pw.toml"
-hash = "5702e15971df5f230602c57ec5c4f725bd429e8d7e7f2457624717a4aa80907c"
+hash = "21e1e9cb5ed51d3a6905304f1ba12fbecd3a009929a0ee474ceff11c9591b396"
 metafile = true
 
 [[files]]
 file = "mods/visualores.pw.toml"
-hash = "b2908e4506d34fbe6b10d217fd7f2e55fec8b3c753a91bc8cdadd5c93b7be4ac"
+hash = "6c3af4243926a375a9f5aa3a7bb65894b617e9a2f2b0f5fbeca080cc5c282243"
 metafile = true
 
 [[files]]
@@ -11320,7 +11443,7 @@ metafile = true
 
 [[files]]
 file = "mods/xp-orb-clump.pw.toml"
-hash = "5ee8d35bf1ca9832942fb2431081840b6ec1da95da7991f2f8289955708a7309"
+hash = "642fd6d88e90ed6db1315a3a591e4ec57c72c39b18ae88b917412bdba841a1d1"
 metafile = true
 
 [[files]]
@@ -11645,12 +11768,20 @@ file = "resources/gregtech/models/item/metaitems/beads.amberlyst_ch.json"
 hash = "546619f280aa1933c934c3601ea491c138b2df161123ed3f01e319cf76e7834b"
 
 [[files]]
+file = "resources/gregtech/models/item/metaitems/beads.loaded_lutetium_cation_exchange.json"
+hash = "d8903e329b80276dd971684f30b0070390aa8d43e07c13c80558223e650b73cc"
+
+[[files]]
 file = "resources/gregtech/models/item/metaitems/beads.loaded_rhenium_anion_exchange.json"
 hash = "15cd0f999a578d103de2808b848f45dec1934f9cf7d4d3f68228b6b8d80bf9f9"
 
 [[files]]
 file = "resources/gregtech/models/item/metaitems/beads.loaded_uranium_anion_exchange.json"
 hash = "44d4a094129f81315dd048b09d18174c78b342d18275c58d077d5a29e7c0c2a8"
+
+[[files]]
+file = "resources/gregtech/models/item/metaitems/beads.rare_earth_cation_exchange.json"
+hash = "b7d6c73bf6f9adb1da8beb0a106703422d23d0d9c7045ae7e0e6cfd55ccf23b6"
 
 [[files]]
 file = "resources/gregtech/models/item/metaitems/beads.strong_acidic_cation_exchange.json"
@@ -11907,6 +12038,10 @@ hash = "ecdf6d448d57c2342e9f0122f61049a431b4a5acab337e899090e7afc4b424ac"
 [[files]]
 file = "resources/gregtech/models/item/metaitems/crucible.quartz.json"
 hash = "fbb0d5dbc56ea8bc3a98a480642e43dacb3f16d54cc98cefd2fc68aceb29d64d"
+
+[[files]]
+file = "resources/gregtech/models/item/metaitems/crucible.tantalum.json"
+hash = "9b5f5c6cb3e4ad268445279a32495ec25b5a94ea5e76dbae923814698bed855c"
 
 [[files]]
 file = "resources/gregtech/models/item/metaitems/drone.lv/1.json"
@@ -13265,12 +13400,20 @@ file = "resources/gregtech/textures/items/metaitems/beads.amberlyst_ch.png"
 hash = "cbcf9b5bf75a4111c223bc7c8db9a6376341845d926bb3bfa45c5dac9bbbc3fb"
 
 [[files]]
+file = "resources/gregtech/textures/items/metaitems/beads.loaded_lutetium_cation_exchange.png"
+hash = "ab9e6b007526aa366dd3f3d10ec1b79f2ff8b40e3b7d90a2d288a7c89dd388b6"
+
+[[files]]
 file = "resources/gregtech/textures/items/metaitems/beads.loaded_rhenium_anion_exchange.png"
 hash = "24dc8e5b5ab34e2a54cdc000ff94178bf7fc347c3a9b7178850710b0c69c2973"
 
 [[files]]
 file = "resources/gregtech/textures/items/metaitems/beads.loaded_uranium_anion_exchange.png"
 hash = "7dd738f6b3f5f790459e9ccb4f95af066ab324012dce08bf78eeb893db3bc330"
+
+[[files]]
+file = "resources/gregtech/textures/items/metaitems/beads.rare_earth_cation_exchange.png"
+hash = "ef4ea243a493cd4eaa84efc506a83f7e6af704f5f532e187397f11f5f8d7ef83"
 
 [[files]]
 file = "resources/gregtech/textures/items/metaitems/beads.strong_acidic_cation_exchange.png"
@@ -13559,6 +13702,10 @@ hash = "26bed113d6570ac6b171aec9b2abbd4e64132b8669fd8e694a39786a9db34406"
 [[files]]
 file = "resources/gregtech/textures/items/metaitems/crucible.quartz.png"
 hash = "aec4a06309206d1e36b22e237804534cad9f07e83d50598af715f715e592a531"
+
+[[files]]
+file = "resources/gregtech/textures/items/metaitems/crucible.tantalum.png"
+hash = "c4917f4964dae25fd1d42fdce698e8c58b86e8f854c6776fff94327e03ea223f"
 
 [[files]]
 file = "resources/gregtech/textures/items/metaitems/drone.lv.png"
@@ -14282,23 +14429,23 @@ hash = "71300841dd66d750a7a468ed577c08d4e78e03700f34adc159d91221d5929300"
 
 [[files]]
 file = "resources/langfiles/lang/en_pt.lang"
-hash = "3aabded11d7f6bb04206a1491861243fd9d27931211a180c589c7fcc61f44cb9"
+hash = "054de434569ba75e47afc0b3d6d55c1ca19639066ecbb76bfc6917d5bccdd164"
 
 [[files]]
 file = "resources/langfiles/lang/en_us.lang"
-hash = "c8744a5264d2410d3309be0de6b9e21fc4d18696317b3356fc1552bb27f83685"
+hash = "2aacb8553b8a8fc425090d8908441b2236f41ec94824d8b5efa2e54a5a29ecde"
 
 [[files]]
 file = "resources/langfiles/lang/pl_pl.lang"
-hash = "f308471280d6b1a19209d58836e20c8ab9edf2f45fe90cfb83c38d291a2a4c60"
+hash = "106f7ef1d9d87f5aee1950b9c370a1189def6df0fa73147b73ca3ec13c068361"
 
 [[files]]
 file = "resources/langfiles/lang/ru_ru.lang"
-hash = "a8601d98e5ff7a2f5f34c8a0a5a91f6c1cc1e5e3818f6546d39496fdb6d4128c"
+hash = "9d836c5c44f657315b7b7c97fd5217ee7d4bc8ca8fd9cbf2d1ecc599815db967"
 
 [[files]]
 file = "resources/langfiles/lang/zh_cn.lang"
-hash = "f9874d592ad199c5690e0ca9a626814a83bd71eddee82c84f00b10ba35ccc687"
+hash = "d0388d7e9bb204a8de22c68d2a26a23725aa355269412cab13a2b64757588a80"
 
 [[files]]
 file = "resources/minecraft/sounds/music/menu/menu1.ogg"

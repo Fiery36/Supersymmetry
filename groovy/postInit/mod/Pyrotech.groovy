@@ -198,7 +198,8 @@ def name_removals = [
         "pyrotech:leather_helmet_fireproof",
         "pyrotech:leather_chestplate_fireproof",
         "pyrotech:leather_boots_fireproof",
-        "pyrotech:chest"
+        "pyrotech:chest",
+        "pyrotech:fire_charge"
 ]
 
 for (item in name_removals) {
