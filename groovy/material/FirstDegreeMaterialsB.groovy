@@ -30,7 +30,7 @@ public class FirstDegreeMaterialsB {
 
         Zircaloy4 = new Material.Builder(8710, SuSyUtility.susyId('zircaloy_4'))
                 .ingot().liquid(new FluidBuilder().temperature(2200))
-                .components(Zirconium * 18, Tin * 3, Iron * 2, Chrome)
+                .components(HighPurityZirconium * 18, Tin * 3, Iron * 2, Chrome)
                 .color(0x566570)
                 .iconSet(METALLIC)
                 .flags(GENERATE_RING, GENERATE_RING, GENERATE_PLATE, GENERATE_FRAME, GENERATE_SPRING, GENERATE_BOLT_SCREW)
@@ -41,7 +41,7 @@ public class FirstDegreeMaterialsB {
         ReactorSteel = new Material.Builder(8711, SuSyUtility.susyId('reactor_steel'))
                 .ingot().liquid(new FluidBuilder().temperature(1800))
                 .iconSet(SHINY)
-                .flags(GENERATE_DOUBLE_PLATE)
+                .flags(GENERATE_DOUBLE_PLATE, GENERATE_ROD, GENERATE_FRAME)
                 .components(Iron * 113, Manganese * 10, Molybdenum * 2, Nickel * 3)
                 .colorAverage()
                 .blastTemp(1800, GasTier.MID, GTValues.VA[GTValues.EV])
@@ -50,7 +50,7 @@ public class FirstDegreeMaterialsB {
         Inconel718 = new Material.Builder(8297, SuSyUtility.susyId('inconel_718'))
                 .ingot().liquid(new FluidBuilder().temperature(1610))
                 .colorAverage()
-                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_DOUBLE_PLATE, GENERATE_SPRING, GENERATE_FRAME, SUPERALLOY)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_DOUBLE_PLATE, GENERATE_FRAME, GENERATE_SPRING, SUPERALLOY)
                 .components(Nickel * 41, Iron * 19, Chrome * 20, Niobium * 3, Molybdenum * 2, Titanium, Aluminium * 2)
                 .blastTemp(1610, GasTier.MID, GTValues.VA[GTValues.EV])
                 .build();

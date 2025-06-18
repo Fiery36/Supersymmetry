@@ -160,7 +160,7 @@ RecyclingHelper.handleRecycling(metaitem('supercritical:fission_reactor'), [
 
 ASSEMBLER.recipeBuilder()
     .inputs(ore('plateDoubleReactorSteel') * 6)
-    .inputs(ore('frameGtInconel718'))
+    .inputs(ore('frameGtReactorSteel'))
     .outputs(item('supercritical:fission_casing'))
     .duration(320)
     .EUt(Globals.voltAmps[4])
@@ -168,13 +168,13 @@ ASSEMBLER.recipeBuilder()
 
 RecyclingHelper.handleRecycling(item('supercritical:fission_casing'), [
     ore('plateDoubleReactorSteel') * 6,
-    ore('frameGtInconel718')
+    ore('frameGtReactorSteel')
 ])
 
 // Fuel Channel
 
 ASSEMBLER.recipeBuilder()
-    .inputs(ore('frameGtZircaloy4'))
+    .inputs(ore('frameGtInconel718'))
     .inputs(ore('ringZircaloy4') * 2)
     .inputs(ore('plateZircaloy4') * 4)
     .circuitMeta(1)
@@ -184,7 +184,7 @@ ASSEMBLER.recipeBuilder()
     .buildAndRegister()
 
 RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 1), [
-    ore('frameGtZircaloy4'),
+    ore('frameGtInconel718'),
     ore('ringZircaloy4') * 2,
     ore('plateZircaloy4') * 4
 ])
@@ -192,6 +192,7 @@ RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 1), [
 // Control Rod Channel
 
 ASSEMBLER.recipeBuilder()
+    .inputs(ore('frameGtInconel718'))
     .inputs(ore('ringZircaloy4') * 2)
     .inputs(ore('plateZircaloy4') * 4)
     .inputs(ore('springZircaloy4'))
@@ -201,16 +202,18 @@ ASSEMBLER.recipeBuilder()
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
-RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 2),
-    [ore('stickZircaloy4') * 3,
-    ore('ringZircaloy4')]
-)
+RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 2), [
+    ore('frameGtInconel718'),
+    ore('ringZircaloy4') * 2,
+    ore('plateZircaloy4') * 4,
+    ore('springZircaloy4')
+])
 
 // Coolant Channel
 
 ASSEMBLER.recipeBuilder()
     .inputs(ore('pipeLargeFluidZircaloy4'))
-    .inputs(ore('frameGtZircaloy4'))
+    .inputs(ore('frameGtInconel718'))
     .outputs(item('supercritical:fission_casing', 3))
     .duration(320)
     .EUt(Globals.voltAmps[4])
@@ -218,7 +221,7 @@ ASSEMBLER.recipeBuilder()
 
 RecyclingHelper.handleRecycling(item('supercritical:fission_casing', 3), [
     ore('pipeLargeFluidZircaloy4'),
-    ore('frameGtZircaloy4')
+    ore('frameGtInconel718')
 ])
 
 // Fuel Rod Input Port
