@@ -69,5 +69,11 @@ public class FirstDegreeMaterialsB {
                 .components(Aluminium * 2, Silicon * 1, Oxygen * 5)
                 .color(0xb8cee0)
                 .build();
+
+        Pyrazine = new Material.Builder(8714, SuSyUtility.susyId('pyrazine'))
+                .dust()
+                .components(Carbon * 4, Hydrogen * 4, Nitrogen * 2)
+                .color(0xfaf9f6)
+                .build();
     }
 }
