@@ -63,5 +63,11 @@ public class FirstDegreeMaterialsB {
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD)
                 .blastTemp(1100, GasTier.MID, GTValues.VA[GTValues.EV])
                 .build();
+
+        MullitizedKyanite = new Material.Builder(8713, SuSyUtility.susyId('mullitized_kyanite'))
+                .dust()
+                .components(Aluminium * 2, Silicon * 1, Oxygen * 5)
+                .color(0xb8cee0)
+                .build();
     }
 }
