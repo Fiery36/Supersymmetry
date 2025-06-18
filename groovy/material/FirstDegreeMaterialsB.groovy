@@ -47,7 +47,7 @@ public class FirstDegreeMaterialsB {
                 .blastTemp(1800, GasTier.MID, GTValues.VA[GTValues.EV])
                 .build();
 
-        Inconel718 = new Material.Builder(8297, SuSyUtility.susyId('inconel_718'))
+        Inconel718 = new Material.Builder(8712, SuSyUtility.susyId('inconel_718'))
                 .ingot().liquid(new FluidBuilder().temperature(1610))
                 .colorAverage()
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_DOUBLE_PLATE, GENERATE_FRAME, GENERATE_SPRING, SUPERALLOY)
@@ -55,7 +55,7 @@ public class FirstDegreeMaterialsB {
                 .blastTemp(1610, GasTier.MID, GTValues.VA[GTValues.EV])
                 .build();
 
-        SilverIndiumCadmium = new Material.Builder(8712, SuSyUtility.susyId('silver_indium_cadmium'))
+        SilverIndiumCadmium = new Material.Builder(8713, SuSyUtility.susyId('silver_indium_cadmium'))
                 .ingot().liquid(new FluidBuilder().temperature(1100))
                 .components(Silver * 17, Indium * 3, Cadmium * 1)
                 .colorAverage()
@@ -64,7 +64,7 @@ public class FirstDegreeMaterialsB {
                 .blastTemp(1100, GasTier.MID, GTValues.VA[GTValues.EV])
                 .build();
 
-        MullitizedKyanite = new Material.Builder(8713, SuSyUtility.susyId('mullitized_kyanite'))
+        MullitizedKyanite = new Material.Builder(8714, SuSyUtility.susyId('mullitized_kyanite'))
                 .dust()
                 .components(Aluminium * 2, Silicon * 1, Oxygen * 5)
                 .color(0xb8cee0)
