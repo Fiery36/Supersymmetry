@@ -1381,7 +1381,11 @@ public class FirstDegreeMaterials {
                 .color(0x38393b)
                 .build();
 
-        // FREE ID: 8297
+        CalciumChlorideSolution = new Material.Builder(8297, SuSyUtility.susyId('calcium_chloride_solution'))
+                .liquid()
+                .components(CalciumChloride * 1, Water * 1)
+                .colorAverage()
+                .build();
 
         PGMSolution = new Material.Builder(8298, SuSyUtility.susyId('pgm_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -1691,7 +1695,11 @@ public class FirstDegreeMaterials {
                 .color(0xb3c99)
                 .build();
 
-        // FREE ID: 8345
+        VeryDilutedCalciumChlorideSolution = new Material.Builder(8345, SuSyUtility.susyId('very_diluted_calcium_chloride_solution'))
+                .liquid()
+                .components(CalciumChloride, Water * 3)
+                .colorAverage()
+                .build();
 
         LeadFreeSolder = new Material.Builder(8346, SuSyUtility.susyId('lead_free_solder'))
                 .ingot().liquid(new FluidBuilder().temperature(411))

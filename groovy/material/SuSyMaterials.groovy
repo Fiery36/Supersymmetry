@@ -1481,6 +1481,8 @@ class SuSyMaterials {
         public static Material CalicheLeach;
         public static Material IodateConcentrate;
         public static Material IodideConcentrate;
+        public static Material CalciumChlorideSolution;
+        public static Material VeryDilutedCalciumChlorideSolution;
 
         // HP Materials
 
@@ -1566,7 +1568,6 @@ class SuSyMaterials {
         public static Material PotassiumChlorideSolution;
         public static Material PotassiumBisulfateSolution;
         public static Material SodiumBisulfateSolution;
-        public static Material CalciumChlorideSolution;
         public static Material SodaAshSolution;
         public static Material SodiumBicarbonateSolution;
         public static Material AmmoniumNitrateSolution;
