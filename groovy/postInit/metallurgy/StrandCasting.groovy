@@ -1,3 +1,4 @@
+import globals.Globals
 import postInit.utils.RecyclingHelper
 
 POLISHING = recipemap('polishing_machine')
@@ -249,7 +250,7 @@ MIXER.recipeBuilder()
         .duration(200)
         .buildAndRegister()
 
-SINTERING.recipeBuilder()
+SINTERING_OVEN.recipeBuilder()
         .inputs(metaitem('dustHighAluminaRefractory'))
         .outputs(metaitem('ingotHighAluminaRefractory'))
         .EUt(Globals.voltAmps[3])

@@ -2920,7 +2920,9 @@ public class UnknownCompositionMaterials {
                 .color(0xe3ecff)
                 .build();
 
-        HighAluminaRefractory = new Material.Builder(4642, SuSyUtility.susyId('high_alumina_refractory'))
+        // FREE ID: 4643
+
+        HighAluminaRefractory = new Material.Builder(4643, SuSyUtility.susyId('high_alumina_refractory'))
                 .dust().ingot()
                 .iconSet(DULL)
                 .flags(NO_UNIFICATION)
