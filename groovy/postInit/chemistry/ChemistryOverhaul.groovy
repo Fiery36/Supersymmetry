@@ -2526,7 +2526,7 @@ BR.recipeBuilder()
 BR.recipeBuilder()
     .fluidInputs(fluid('phenol') * 1000)
     .fluidInputs(fluid('hydrogen_peroxide') * 1000)
-    .outputs(metaitem('dustPyrocatechol') * 12)
+    .outputs(metaitem('dustPyrocatechol') * 14)
     .fluidOutputs(fluid('water') * 1000)
     .duration(300)
     .EUt(30)
@@ -4057,6 +4057,14 @@ LCR.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
+MIXER.recipeBuilder()
+    .inputs(ore('dustPotassiumBisulfate') * 7)
+    .fluidInputs(fluid('water') * 1000)
+    .fluidOutputs(fluid('potassium_bisulfate_solution') * 1000)
+    .duration(60)
+    .EUt(30)
+    .buildAndRegister()
+    
 // EDPT
 
  FBR.recipeBuilder()

@@ -20,6 +20,9 @@ MACERATOR = recipemap('macerator')
 AUTOCLAVE = recipemap('autoclave')
 CENTRIFUGE = recipemap('centrifuge')
 
+// Bastnasite Dust * 1
+mods.gregtech.electromagnetic_separator.removeByInput(24, [metaitem('dustPureBastnasite')], null)
+
 /* Data (%mol)
 La: 34
 Ce: 50
@@ -101,9 +104,9 @@ for (fuel in sintering_fuels) {
 AUTOCLAVE.recipeBuilder()
     .inputs(ore('dustRoastedBastnasite'))
     .inputs(ore('dustSodiumHydroxide') * 9)
-    .fluidInputs(fluid('distilled_water') * 2000)
+    .fluidInputs(fluid('distilled_water') * 1500)
     .outputs(metaitem('dustBastReHydroxides'))
-    .fluidOutputs(fluid('sodium_sulfate_solution') * 2000)
+    .fluidOutputs(fluid('sodium_sulfate_solution') * 1500)
     .duration(40)
     .EUt(120)
     .buildAndRegister()
