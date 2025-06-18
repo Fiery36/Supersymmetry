@@ -1486,7 +1486,7 @@ class SuSyMaterials {
         public static Material CalicheLeach;
         public static Material IodateConcentrate;
         public static Material IodideConcentrate;
-        
+
         // First Degree Materials B
 
         public static Material Zircaloy4;
@@ -2148,6 +2148,8 @@ class SuSyMaterials {
         public static Material PenteticAcid;
         public static Material NHydroxyethylEthylenediamine;
         public static Material NHydroxyethylEthylenediaminetriaceticAcid;
+        public static Material Pyrazine;
+
 
         // Third Degree Materials
 
