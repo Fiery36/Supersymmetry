@@ -266,7 +266,7 @@ CLARIFIER.recipeBuilder()
 
 BATCH_REACTOR.recipeBuilder()
     .inputs(ore('dustPhosphateConcentrate'))
-    .fluidInputs(fluid('sulfuric_acid') * 1000)
+    .fluidInputs(fluid('sulfuric_acid') * 1500)
     .outputs(metaitem('dustGypsum') * 12)
     .fluidOutputs(fluid('phosphoric_acid') * 1000)
     .duration(20)
