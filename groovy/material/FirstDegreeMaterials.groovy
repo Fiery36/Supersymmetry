@@ -4112,5 +4112,11 @@ public class FirstDegreeMaterials {
                 .components(Sodium * 3, Phosphorus, Oxygen * 4)
                 .color(0xdae69e)
                 .build();
+
+        MullitizedKyanite = new Material.Builder(8710, SuSyUtility.susyId('mullitized_kyanite'))
+                .dust()
+                .components(Aluminium * 2, Silicon * 1, Oxygen * 5)
+                .color(0xb8cee0)
+                .build();
     }
 }

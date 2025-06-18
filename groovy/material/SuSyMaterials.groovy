@@ -718,6 +718,7 @@ class SuSyMaterials {
         public static Material RareEarthFreeMonaziteLeach;
         public static Material HydraulicFluid;
         public static Material YttriaStabilizedZirconia;
+        public static Material HighAluminaRefractory;
 
         // Petrochem Materials
 
@@ -1484,6 +1485,7 @@ class SuSyMaterials {
         public static Material CalicheLeach;
         public static Material IodateConcentrate;
         public static Material IodideConcentrate;
+        public static Material MullitizedKyanite;
 
         // HP Materials
 

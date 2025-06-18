@@ -7,6 +7,7 @@ ASSEMBLER = recipemap('assembler')
 SINTERING_OVEN = recipemap('sintering_oven')
 METALLURGICAL_CONVERTER = recipemap('metallurgical_converter')
 MIXER = recipemap('mixer')
+EBF = recipemap('electric_blast_furnace')
 
 // Recipes for the machines and components needed for the multiblocks
 
@@ -219,7 +220,7 @@ crafting.addShaped("susy:strand_bus_export_to_import", metaitem('strand_bus.impo
         [metaitem('strand_bus.export')]
 ])
 
-// Refractory mixture
+// Refractories
 MIXER.recipeBuilder()
         .inputs(ore('dustAlumina') * 10)
         .inputs(ore('dustBauxite'))
@@ -230,3 +231,32 @@ MIXER.recipeBuilder()
         .EUt(7)
         .duration(10)
         .buildAndRegister()
+
+EBF.recipeBuilder()
+        .inputs(ore('dustKyanite'))
+        .outputs(metaitem('dustMullitizedKyanite'))
+        .EUt(Globals.voltAmps[3])
+        .blastFurnaceTemp(1200)
+        .duration(100)
+        .buildAndRegister()
+
+MIXER.recipeBuilder()
+        .inputs(ore('dustMullitizedKyanite') * 2)
+        .inputs(ore('dustBauxite'))
+        .inputs(ore('dustClay'))
+        .outputs(metaitem('dustHighAluminaRefractory') * 4)
+        .EUt(Globals.voltAmps[3])
+        .duration(200)
+        .buildAndRegister()
+
+SINTERING.recipeBuilder()
+        .inputs(metaitem('dustHighAluminaRefractory'))
+        .outputs(metaitem('ingotHighAluminaRefractory'))
+        .EUt(Globals.voltAmps[3])
+        .duration(50)
+        .buildAndRegister()
+
+crafting.addShaped("susy:advanced_refractory", item('susy:susy_multiblock_casing', 9), [
+        [ore('ingotHighAluminaRefractory'), ore('ingotHighAluminaRefractory')],
+        [ore('ingotHighAluminaRefractory'), ore('ingotHighAluminaRefractory')]
+])
