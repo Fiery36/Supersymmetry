@@ -802,6 +802,7 @@ class ChangeFlags {
         Naphtha.addFlags("flammable");
         NaturalGas.addFlags("flammable");
         Methane.addFlags("flammable");
+        Ethane.addFlags("flammable");
         Propane.addFlags("flammable");
         Butane.addFlags("flammable");
         Butadiene.addFlags("flammable");

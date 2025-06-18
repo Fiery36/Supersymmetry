@@ -2437,6 +2437,8 @@ susy.material.iodide_concentrate=Iodide Concentrate
 susy.material.reactor_steel=Reactor Steel
 susy.material.inconel_718=Inconel 718
 susy.material.silver_indium_cadmium=Silver-Indium-Cadmium Alloy
+susy.material.high_alumina_refractory=High Alumina Refractory
+susy.material.mullitized_kyanite=Mullitized Kyanite
 
 # Isotopes
 

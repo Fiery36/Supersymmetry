@@ -5,6 +5,9 @@ ADVANCED_ARC_FURNACE = recipemap('advanced_arc_furnace')
 FLUID_SOLIDIFIER = recipemap('fluid_solidifier')
 ASSEMBLER = recipemap('assembler')
 SINTERING_OVEN = recipemap('sintering_oven')
+METALLURGICAL_CONVERTER = recipemap('metallurgical_converter')
+MIXER = recipemap('mixer')
+EBF = recipemap('electric_blast_furnace')
 
 // Recipes for the machines and components needed for the multiblocks
 
@@ -82,8 +85,8 @@ RecyclingHelper.addShaped("susy:copper_pipe_casing", item('susy:susy_multiblock_
 ])
 
 // Machines
-// Gas atomizer
 
+// Gas atomizer
 ASSEMBLER.recipeBuilder()
         .inputs(item('gregtech:boiler_casing', 1))
         .inputs(ore('circuitEv') * 2)
@@ -109,6 +112,25 @@ RecyclingHelper.addShaped("susy:hot_isostatic_press", metaitem('hot_isostatic_pr
     [ore('plateStainlessSteel'), metaitem('electric.pump.hv'), ore('plateStainlessSteel')],
         [ore('circuitHv'), item('gregtech:metal_casing', 5), ore('circuitHv')],
         [ore('plateStainlessSteel'), metaitem('electric.piston.hv'), ore('plateStainlessSteel')]
+])
+
+// Metallurgical converter
+ASSEMBLER.recipeBuilder()
+        .inputs(item('gregtech:metal_casing', 4))
+        .inputs(ore('circuitEv') * 2)
+        .inputs(metaitem('electric.motor.ev') * 2)
+        .inputs(metaitem('electric.pump.ev'))
+        .circuitMeta(2)
+        .outputs(metaitem('metallurgical_converter'))
+        .EUt(1920)
+        .duration(300)
+        .buildAndRegister()
+
+RecyclingHelper.handleRecycling(metaitem('metallurgical_converter'), [
+    item('gregtech:metal_casing', 4),
+    metaitem('electric.motor.ev') * 2,
+    metaitem('electric.pump.ev'),
+    ore('circuitEv') * 2
 ])
 
 // Turning zone
@@ -198,107 +220,43 @@ crafting.addShaped("susy:strand_bus_export_to_import", metaitem('strand_bus.impo
         [metaitem('strand_bus.export')]
 ])
 
-// Steel melting
-ADVANCED_ARC_FURNACE.recipeBuilder()
-        .inputs(ore('dustSteel') * 1)
-        .fluidOutputs(fluid('molten.steel') * 144)
-        .circuitMeta(1)
-        .EUt(120)
-        .duration(10) // Give a good number of overclocks
+// Refractories
+MIXER.recipeBuilder()
+        .inputs(ore('dustAlumina') * 10)
+        .inputs(ore('dustBauxite'))
+        .inputs(ore('dustSiliconCarbide'))
+        .inputs(ore('dustClay'))
+        .fluidInputs(fluid('water') * 10000)
+        .fluidOutputs(fluid('refractory_gunning_mixture') * 10000)
+        .EUt(7)
+        .duration(10)
         .buildAndRegister()
 
-
-/* Fast steel generation in large arc furnace
-ADVANCED_ARC_FURNACE.recipeBuilder()
-        .inputs(ore('ingotPigIron') * 18)
-        .fluidInputs(fluid('oxygen') * 400)
-        .fluidOutputs(fluid('molten.steel') * 2592)
-        .EUt(120)
-        .duration(65) // Give a good number of overclocks
-        .buildAndRegister()
-
-
-// Fast aluminium generation in large arc furnace, not including carbon dioxide
-ADVANCED_ARC_FURNACE.recipeBuilder()
-        .notConsumable(fluid('cryolite') * 7776)
-        .inputs(ore('dustAlumina') * 45)
-        .notConsumable(ore('dustAluminiumTrifluoride') * 12)
-        .inputs(ore('dustCoke') * 14)
-        .fluidOutputs(fluid('molten.aluminium') * 2592)
-        .duration(300)
-        .EUt(120)
-        .buildAndRegister()
-
-ADVANCED_ARC_FURNACE.recipeBuilder()
-        .notConsumable(fluid('cryolite') * 7776)
-        .inputs(ore('dustAlumina') * 45)
-        .notConsumable(metaitem('dustAluminiumTrifluoride') * 12)
-        .inputs(ore('dustCoke') * 14)
-        .fluidOutputs(fluid('molten.aluminium') * 2592)
+EBF.recipeBuilder()
+        .inputs(ore('dustKyanite'))
+        .outputs(metaitem('dustMullitizedKyanite'))
+        .EUt(Globals.voltAmps[3])
+        .blastFurnaceTemp(1200)
         .duration(100)
-        .EUt(120)
         .buildAndRegister()
 
-// Fast copper generation in large arc furnace
-
-def copperOres = [
-        'Copper',
-        'Tetrahedrite',
-        'Bornite',
-        'Chalcopyrite',
-        'Chalcocite'
-]
-def orePrefixes = [
-        'ore',
-        'crushed',
-        'dust',
-        'crushedPurified',
-        'dustImpure',
-        'dustPurified',
-        'crushedCentrifuged'
-]
-
-for (copperOre in copperOres) {
-    for (prefix in orePrefixes) {
-        
-        ADVANCED_ARC_FURNACE.recipeBuilder()
-                .inputs(ore(prefix + copperOre) * 18)
-                .fluidOutputs(fluid('molten.copper') * 2592)
-                .EUt(120)
-                .duration(65) // Give a good number of overclocks
-                .buildAndRegister()
-    }
-    ADVANCED_ARC_FURNACE.recipeBuilder()
-            .inputs(ore('oreNetherrack' + copperOre) * 9)
-            .fluidOutputs(fluid('molten.copper') * 2592)
-            .EUt(120)
-            .duration(33) // Give a good number of overclocks
-            .buildAndRegister()
-    ADVANCED_ARC_FURNACE.recipeBuilder()
-            .inputs(ore('oreEndstone' + copperOre) * 9)
-            .fluidOutputs(fluid('molten.copper') * 2592)
-            .EUt(120)
-            .duration(33) // Give a good number of overclocks
-            .buildAndRegister()
-}
-
-for (prefix in orePrefixes) {
-    ADVANCED_ARC_FURNACE.recipeBuilder()
-            .inputs(ore(prefix + 'Malachite') * 18)
-            .fluidOutputs(fluid('molten.copper') * 5184)
-            .EUt(120)
-            .duration(65) // Give a good number of overclocks
-            .buildAndRegister()
-}
-ADVANCED_ARC_FURNACE.recipeBuilder()
-        .inputs(ore('oreNetherrackMalachite') * 9)
-        .fluidOutputs(fluid('molten.copper') * 5184)
-        .EUt(120)
-        .duration(33) // Give a good number of overclocks
+MIXER.recipeBuilder()
+        .inputs(ore('dustMullitizedKyanite') * 2)
+        .inputs(ore('dustBauxite'))
+        .inputs(ore('dustClay'))
+        .outputs(metaitem('dustHighAluminaRefractory') * 4)
+        .EUt(Globals.voltAmps[3])
+        .duration(200)
         .buildAndRegister()
-ADVANCED_ARC_FURNACE.recipeBuilder()
-        .inputs(ore('oreEndstoneMalachite') * 9)
-        .fluidOutputs(fluid('molten.copper') * 5184)
-        .EUt(120)
-        .duration(33) // Give a good number of overclocks
-        .buildAndRegister()*/
+
+SINTERING.recipeBuilder()
+        .inputs(metaitem('dustHighAluminaRefractory'))
+        .outputs(metaitem('ingotHighAluminaRefractory'))
+        .EUt(Globals.voltAmps[3])
+        .duration(50)
+        .buildAndRegister()
+
+crafting.addShaped("susy:advanced_refractory", item('susy:susy_multiblock_casing', 9), [
+        [ore('ingotHighAluminaRefractory'), ore('ingotHighAluminaRefractory')],
+        [ore('ingotHighAluminaRefractory'), ore('ingotHighAluminaRefractory')]
+])

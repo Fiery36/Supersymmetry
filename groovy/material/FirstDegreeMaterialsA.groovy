@@ -3596,7 +3596,15 @@ public class FirstDegreeMaterialsA {
                 .color(0xbb7694)
                 .build()
 
-        // FREE ID: 8637
+        Nimonic105 = new Material.Builder(8637, SuSyUtility.susyId('nimonic_105'))
+                .ingot().liquid(new FluidBuilder().temperature(1770))
+                .iconSet(SHINY)
+                .flags(GENERATE_ROD, GENERATE_PLATE, SUPERALLOY)
+                .components(Nickel * 19, Chrome * 6, Manganese * 1, Iron * 1, Aluminium * 2, Titanium * 1, Cobalt * 8)
+                .colorAverage()
+                .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
+        
         // 8638: Co3O4
 
         LithiumNitrate = new Material.Builder(8639, SuSyUtility.susyId('lithium_nitrate'))

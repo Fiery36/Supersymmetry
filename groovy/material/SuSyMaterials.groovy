@@ -719,6 +719,7 @@ class SuSyMaterials {
         public static Material RareEarthFreeMonaziteLeach;
         public static Material HydraulicFluid;
         public static Material YttriaStabilizedZirconia;
+        public static Material HighAluminaRefractory;
 
         // Petrochem Materials
 
@@ -1407,6 +1408,7 @@ class SuSyMaterials {
         public static Material HSLA980X;
         public static Material FoodGradeStainlessSteel;
         public static Material CobaltSulfate;
+        public static Material Nimonic105;
         public static Material LithiumNitrate;
         public static Material LithiumNitrateSolution;
         public static Material ZincCarbonate;
@@ -1484,6 +1486,7 @@ class SuSyMaterials {
         public static Material CalicheLeach;
         public static Material IodateConcentrate;
         public static Material IodideConcentrate;
+        public static Material MullitizedKyanite;
 
         // First Degree Materials B
 

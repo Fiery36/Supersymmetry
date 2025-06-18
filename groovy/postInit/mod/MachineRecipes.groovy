@@ -821,13 +821,13 @@ RecyclingHelper.addShaped("gregtech:reaction_furnace", metaitem('reaction_furnac
 RecyclingHelper.addShaped("gregtech:advanced_arc_furnace", metaitem('advanced_arc_furnace'), [
     [metaitem('cableGtHexTin'), item('susy:electrode_assembly'), metaitem('cableGtHexTin')],
     [circuits[1], hulls[1], circuits[1]],
-    [tieredPlates[1], tieredPlates[1], tieredPlates[1]]
+    [pumps[1], tieredPlates[1], robotArms[1]]
 ]);
 
-RecyclingHelper.addShaped("gregtech:industrial_arc_furnace", metaitem('advanced_arc_furnace'), [
-    [metaitem('cableGtHexNichrome'), item('susy:electrode_assembly'), metaitem('cableGtHexNichrome')],
+RecyclingHelper.addShaped("gregtech:arc_furnace_complex", metaitem('arc_furnace_complex'), [
+    [metaitem('cableGtHexPlatinum'), item('susy:electrode_assembly'), metaitem('cableGtHexPlatinum')],
     [circuits[4], hulls[4], circuits[4]],
-    [tieredPlates[4], tieredPlates[4], tieredPlates[4]]
+    [pumps[4], tieredPlates[4], robotArms[4]]
 ]);
 
 RecyclingHelper.addShaped("gregtech:electrode_assembly", item('susy:electrode_assembly'), [
