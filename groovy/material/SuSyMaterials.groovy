@@ -1494,7 +1494,6 @@ class SuSyMaterials {
         public static Material Inconel718;
         public static Material SilverIndiumCadmium;
         public static Material MullitizedKyanite;
-        public static Material Pyrazine;
 
         // HP Materials
 
@@ -2148,6 +2147,8 @@ class SuSyMaterials {
         public static Material PenteticAcid;
         public static Material NHydroxyethylEthylenediamine;
         public static Material NHydroxyethylEthylenediaminetriaceticAcid;
+        public static Material Pyrazine;
+
 
         // Third Degree Materials
 
