@@ -39,10 +39,10 @@ for (anItem in basic) {
 }
 
 mods.gregtech.mixer.recipeBuilder()
-    .inputs(ore('dustCalcite'))
-    .fluidInputs(fluid('water') * 100)
+    .inputs(ore('dyeWhite') * 1)
+    .fluidInputs(fluid('gtfo_raw_soybean_oil') * 25)
     .circuitMeta(1)
-    .outputs(item('ags_modernmarkings:floor_marking_white_singleline'))
+    .outputs(item('ags_modernmarkings:floor_marking_white_singleline') * 8)
     .EUt(8)
     .duration(30)
     .buildAndRegister()
@@ -93,10 +93,10 @@ for (anItem in symbolic) {
 }
 
 mods.gregtech.mixer.recipeBuilder()
-    .inputs(ore('dustCalcite') * 2)
-    .fluidInputs(fluid('water') * 150)
+    .inputs(ore('dyeWhite') * 2)
+    .fluidInputs(fluid('gtfo_raw_soybean_oil') * 50)
     .circuitMeta(2)
-    .outputs(item('ags_modernmarkings:wall_marking_number_0'))
+    .outputs(item('ags_modernmarkings:wall_marking_number_0') * 8)
     .EUt(8)
     .duration(30)
     .buildAndRegister()
@@ -130,24 +130,25 @@ for (anItem in electric) {
 }
 
 mods.gregtech.mixer.recipeBuilder()
-    .inputs(ore('dustCalcite') * 2)
-    .fluidInputs(fluid('water') * 200)
+    .inputs(ore('dyeWhite') * 2)
+    .fluidInputs(fluid('gtfo_raw_soybean_oil') * 50)
     .circuitMeta(3)
-    .outputs(item('ags_modernmarkings:wall_marking_voltage_eu'))
+    .outputs(item('ags_modernmarkings:wall_marking_voltage_eu') * 8)
     .EUt(8)
     .duration(30)
     .buildAndRegister()
 
 mods.gregtech.mixer.recipeBuilder()
-    .inputs(ore('dustCalcite') * 2)
-    .fluidInputs(fluid('dye_yellow') * 150)
-    .circuitMeta(2)
-    .outputs(item('ags_modernmarkings:wall_marking_voltage_eu'))
+    .inputs(ore('dyeYellow') * 2)
+    .fluidInputs(fluid('gtfo_raw_soybean_oil') * 50)
+    .circuitMeta(1)
+    .outputs(item('ags_modernmarkings:wall_marking_symbol_yellow_electric') * 8)
     .EUt(8)
     .duration(30)
     .buildAndRegister()
 
 def yellow = [
+    'ags_modernmarkings:wall_marking_symbol_yellow_electric',
     'ags_modernmarkings:wall_marking_symbol_yellow_frost',
     'ags_modernmarkings:wall_marking_symbol_yellow_gears',
     'ags_modernmarkings:wall_marking_symbol_yellow_laser',
@@ -158,7 +159,6 @@ def yellow = [
     'ags_modernmarkings:wall_marking_symbol_yellow_radiation',
     'ags_modernmarkings:wall_marking_symbol_yellow_storage',
     'ags_modernmarkings:wall_marking_symbol_yellow_chemical',
-    'ags_modernmarkings:wall_marking_symbol_yellow_electric',
     'ags_modernmarkings:wall_marking_symbol_yellow_fire',
     'ags_modernmarkings:wall_marking_symbol_yellow_fluid'
 ]
