@@ -297,7 +297,7 @@ def fluid_removals = [
     fluid('sapphire_slurry'),
     item('forge:bucketfilled').withNbt(['FluidName': 'sapphire_slurry', 'Amount': 1000]),
     fluid('green_sapphire_slurry'),
-    item('forge:bucketfilled').withNbt(['FluidName': 'green_sapphire_slurry', 'Amount': 1000])
+    item('forge:bucketfilled').withNbt(['FluidName': 'green_sapphire_slurry', 'Amount': 1000]),
     fluid('uranium_hexafluoride'),
     item('forge:bucketfilled').withNbt(['FluidName': 'uranium_hexafluoride', 'Amount': 1000]),
     fluid('enriched_uranium_hexafluoride'),

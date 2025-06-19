@@ -212,13 +212,12 @@ for (blastable in blastables) {
         .buildAndRegister()
 
     METALLURGICAL_CONVERTER.recipeBuilder()
-        .inputs(ore('ingotPigIron') * 20)
-        .inputs(ore('dustQuicklime') * 2)
-        .inputs(ore('dustSmallFluorite'))
-        .fluidInputs(fluid('oxygen') * 1000)
-        .fluidOutputs(fluid('molten.steel') * 2880)
-        .EUt(120)
-        .duration(50)
+        .inputs(ore('ingotPigIron') * 10)
+        .inputs(ore('dustQuicklime'))
+        .fluidInputs(fluid('oxygen') * 500)
+        .fluidOutputs(fluid('molten.steel') * 1440)
+        .EUt(30)
+        .duration(100)
         .buildAndRegister()
 
 // Continuous casting
