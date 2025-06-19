@@ -2904,12 +2904,12 @@ public class UnknownCompositionMaterials {
                 .color(0x6d2aa3)
                 .build();
         
-        BerylliumExtractionMixture new Material.Builder(4642, SuSyUtility.susyId('beryllium_extraction_mixture'))
+        BerylliumExtractionMixture = new Material.Builder(4642, SuSyUtility.susyId('beryllium_extraction_mixture'))
                 .liquid()
                 .color(0xa3d126)
                 .build();
 
-        SpentBerylliumExtractionMixture new Material.Builder(4643, SuSyUtility.susyId('spent_beryllium_extraction_mixture'))
+        SpentBerylliumExtractionMixture = new Material.Builder(4643, SuSyUtility.susyId('spent_beryllium_extraction_mixture'))
                 .liquid()
                 .color(0x779c14)
                 .build();
