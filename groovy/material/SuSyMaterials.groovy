@@ -717,6 +717,12 @@ class SuSyMaterials {
         public static Material ThoriumConcentrate;
         public static Material ThoriumFreeMonaziteLeach;
         public static Material RareEarthFreeMonaziteLeach;
+        public static Material ImpureBertranditeLeach;
+        public static Material BertranditeLeach;
+        public static Material BerylliumExtractionMixture;
+        public static Material SpentBerylliumExtractionMixture;
+        public static Material BerylliumExtract;
+        public static Material BerylliumCarbonateSolution;
 
         // Petrochem Materials
 
@@ -1694,7 +1700,10 @@ class SuSyMaterials {
         public static Material ThoriumChlorideSolution;
         public static Material HydroiodicAcid;
         public static Material PotassiumChlorateSolution;
-
+        public static Material AmmoniumAlum;
+        public static Material PurifiedBerylliumHydroxide;
+        public static Material PurifiedBerylliumOxide;
+        public static Material PurifiedBerylliumChloride;
         // Organic Chemistry Materials
 
         public static Material NMethylTwoPyrrolidone;

@@ -2893,5 +2893,35 @@ public class UnknownCompositionMaterials {
                 .dust()
                 .color(0x210604)
                 .build()
+
+        ImpureBertranditeLeach = new Material.Builder(4640, SuSyUtility.susyId('impure_bertrandite_leach'))
+                .liquid()
+                .color(0x521782)
+                .build();
+
+        BertranditeLeach = new Material.Builder(4641, SuSyUtility.susyId('bertrandite_leach'))
+                .liquid()
+                .color(0x6d2aa3)
+                .build();
+        
+        BerylliumExtractionMixture new Material.Builder(4642, SuSyUtility.susyId('beryllium_extraction_mixture'))
+                .liquid()
+                .color(0xa3d126)
+                .build();
+
+        SpentBerylliumExtractionMixture new Material.Builder(4643, SuSyUtility.susyId('spent_beryllium_extraction_mixture'))
+                .liquid()
+                .color(0x779c14)
+                .build();
+
+        BerylliumExtract = new Material.Builder(4644, SuSyUtility.susyId('beryllium_extract'))
+                .liquid()
+                .color(0x117844)
+                .build();
+        
+        BerylliumCarbonateSolution = new Material.Builder(4645, SuSyUtility.susyId('beryllium_carbonate_solution'))
+                .liquid()
+                .color(0x1c382d)
+                .build();
     }
 }

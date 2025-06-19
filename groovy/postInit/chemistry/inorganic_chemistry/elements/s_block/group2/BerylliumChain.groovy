@@ -13,6 +13,8 @@ FLUID_EXTRACTOR = recipemap('extractor')
 ARC_FURNACE = recipemap('arc_furnace')
 DT = recipemap('distillation_tower')
 FLUID_SOLIDIFIER = recipemap('fluid_solidifier')
+LCR = recipemap('large_chemical_reactor')
+BLENDER = recipemap('blender')
 
 //Emerald: 3BeO · Al2O3 · 6SiO2
 //Bertrandite: Be4Si2O7(OH)2
@@ -309,5 +311,112 @@ DISTILLERY.recipeBuilder()
         .buildAndRegister()
 
 //BERTRANDITE CHAIN (SPECIALIZED)
-
 //HIGH PURITY CHAIN
+BR.recipeBuilder()
+        .inputs(ore('dustBertrandite') * 1)
+        .fluidInputs(fluid('sulfuric_acid') * 4100) //100 for Ammonium Alum
+        .outputs(metaitem('dustSiliconDioxide') * 6)
+        .fluidOutputs(fluid('impure_bertrandite_leach') * 1000) //Be4Si2O7(OH)2 + 4H2SO4 -> 4BeSO4 + 2SiO2 + 5H2O
+        .EUt(Globals.voltAmps[2])
+        .duration(100)
+        .buildAndRegister()
+
+BR.recipeBuilder()
+        .inputs(ore('dustAmmoniumSulfate') * 3) // 1/5 mol
+        .fluidInputs(fluid('impure_bertrandite_leach') * 2000)
+        .chancedOutput(metaitem('dustAmmoniumAlum') *4, 8000, 0) //On average it should be 3.2 because 1/5 mol
+        .fluidOutputs(fluid('bertrandite_leach') * 2000)
+        .EUt(Globals.voltAmps[2])
+        .duration(100)
+        .buildAndRegister()
+
+BLENDER.recipeBuilder()
+        .fluidInputs(fluid('ammonia_solution') * 2000) 
+        .fluidInputs(fluid('di_two_ethylhexyl_phosphoric_acid') * 2500) //DEHPA or D2EHPA
+        .fluidInputs(fluid('kerosene') * 5500)
+        .fluidOutputs(fluid('beryllium_extraction_mixture') * 10000)
+        .EUt(Globals.voltAmps[5]) //tier gating part for this chain
+        .duration(100)
+        .buildAndRegister() 
+
+CENTRIFUGE.recipeBuilder()
+        .fluidInputs(fluid('bertrandite_leach') * 1000)
+        .fluidInputs(fluid('beryllium_extraction_mixture') * 1000)
+        .fluidOutputs(fluid('beryllium_extract') * 1000)
+        .fluidOutputs(fluid('wastewater') * 1000) //contains other impurites from bertrandite
+        .EUt(Globals.voltAmps[3])
+        .duration(80)
+        .buildAndRegister()
+
+LCR.recipeBuilder() 
+        .inputs(ore('dustAmmoniumCarbonate') * 56) // 4 mol
+        .fluidInputs(fluid('beryllium_extract') * 1000)
+        .chancedOutput(metaitem('dustAluminiumHydroxide'), 100, 0)
+        .chancedOutput(metaitem('dustIronIiiHydroxide'), 1500, 0)
+        .fluidOutputs(fluid('beryllium_carbonate_solution') * 4000) //Idk what else to call it
+        .fluidOutputs(fluid('spent_beryllium_extraction_mixture') * 1000) 
+        .EUt(Globals.voltAmps[3])
+        .duration(120)
+        .buildAndRegister()
+
+BLENDER.recipeBuilder()
+        .fluidInputs(fluid('spent_beryllium_extraction_mixture') * 1000) 
+        .fluidInputs(fluid('ammonia_solution') * 200)
+        .fluidOutputs(fluid('beryllium_extraction_mixture') * 1000)
+        .EUt(Globals.voltAmps[3]) 
+        .duration(20)
+        .buildAndRegister() 
+
+AUTOCLAVE.recipeBuilder()
+        .fluidInputs(fluid('beryllium_carbonate_solution') * 1000)
+        .fluidInputs(fluid('ultrapure_water') * 1000)
+        .outputs(metaitem('dustPurifiedBerylliumHydroxide') * 5)
+        .fluidOutputs(fluid('carbon_dioxide') * 1000)
+        .fluidOutputs(fluid('ammonia_solution') * 1000)
+        .EUt(Globals.voltAmps[3]) 
+        .duration(120)
+        .buildAndRegister()
+
+//BERYLLIUM CHLORIDE ROUTE FOR HIGH PURITY
+ROASTER.recipeBuilder()
+        .inputs(ore('dustPurifiedBerylliumHydroxide') * 5)
+        .outputs(metaitem('dustPurifiedBerylliumOxide') * 2)
+        .fluidOutputs(fluid('dense_steam') * 1000)
+        .EUt(Globals.voltAmps[4])
+        .duration(80)
+        .buildAndRegister()
+
+REACTION_FURNACE.recipeBuilder()
+        .inputs(ore('dustPurifiedBerylliumOxide') * 2)
+        .inputs(ore('dustAnyPurityCarbon') * 1)
+        .fluidInputs(fluid('chlorine') * 2000)
+        .outputs(metaitem('dustPurifiedBerylliumChloride') * 3)
+        .fluidOutputs(fluid('carbon_monoxide') * 1000)
+        .EUt(Globals.voltAmps[4])
+        .duration(240)
+        .buildAndRegister()
+
+ELECTROLYTIC_CELL.recipeBuilder()
+        .circuitMeta(1)
+        .notConsumable(metaitem('graphite_electrode'))
+        .notConsumable(metaitem('stickAluminium'))
+        .notConsumable(fluid('salt') * 432)
+        .fluidInputs(fluid('purified_beryllium_chloride') * 432)
+        .fluidOutputs(fluid('chlorine') * 2000)
+        .outputs(metaitem('dustHighPurityBeryllium') * 3)
+        .EUt(Globals.voltAmps[4])
+        .duration(480)
+        .buildAndRegister()
+
+ELECTROLYTIC_CELL.recipeBuilder()
+        .circuitMeta(2)
+        .notConsumable(metaitem('graphite_electrode'))
+        .notConsumable(metaitem('stickAluminium'))
+        .notConsumable(fluid('salt') * 432)
+        .fluidInputs(fluid('purified_beryllium_chloride') * 432)
+        .fluidOutputs(fluid('chlorine') * 2000)
+        .outputs(metaitem('dustBeryllium') * 3) //In case if somebody wants to have normal Be from this chain
+        .EUt(Globals.voltAmps[4])
+        .duration(480)
+        .buildAndRegister()
+

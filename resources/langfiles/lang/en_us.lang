@@ -190,6 +190,17 @@ susy.material.methyldichlorosilane=Methyldichlorosilane
 susy.material.methyltrichlorosilane=Methyltrichlorosilane
 susy.material.dimethyldichlorosilane=Dimethyldichlorosilane
 
+susy.material.impure_bertrandite_leach=Impure Bertrandite Leach
+susy.material.bertrandite_leach=Bertrandite Leach
+susy.material.ammonium_alum=Ammonium Alum
+susy.material.beryllium_extraction_mixture=Beryllium Extraction Mixture
+susy.material.spent_beryllium_extraction_mixture=Spent Beryllium Extraction Mixture
+susy.material.beryllium_extract=Beryllium Extract
+susy.material.beryllium_carbonate_solution=Beryllium Carbonate Solution
+susy.material.purified_beryllium_hydroxide=Purified Beryllium Hydroxide
+susy.material.purified_beryllium_oxide=Purified Beryllium Oxide
+susy.material.purified_beryllium_chloride=Purified Beryllium Chloride
+
 # Solids
 
 susy.material.pig_iron=Pig Iron
