@@ -315,10 +315,7 @@ class ThermodynamicsMaterials {
                 .color(0x8fbfe3)
                 .build();
 
-        HotHighPressureSteam = new Material.Builder(22801, SuSyUtility.susyId("hot_hp_steam"))
-                .gas(new FluidBuilder().temperature(1200))
-                .color(0xffffff)
-                .build();
+        // FREE ID: 22801
 
         WasteGaseousNitrogen = new Material.Builder(22807, SuSyUtility.susyId("waste_gaseous_nitrogen"))
                 .gas()
@@ -562,5 +559,19 @@ class ThermodynamicsMaterials {
                 .gas(new FluidBuilder().temperature(180))
                 .color(0x0af0f7)
                 .build()
+
+        HighPressureSteam = new Material.Builder(22859, SuSyUtility.susyId("hp_steam"))
+                .gas(new FluidBuilder().temperature(623))
+                .color(0xffffff)
+                .components(Steam)
+                .flags(DISABLE_DECOMPOSITION)
+                .build();
+
+        LowPressureSteam = new Material.Builder(22860, SuSyUtility.susyId("lp_steam"))
+                .gas(new FluidBuilder().temperature(573))
+                .color(0xf7f7f7)
+                .components(Steam)
+                .flags(DISABLE_DECOMPOSITION)
+                .build();
     }
 }

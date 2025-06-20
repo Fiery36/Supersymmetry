@@ -69,5 +69,11 @@ public class FirstDegreeMaterialsB {
                 .components(Aluminium * 2, Silicon * 1, Oxygen * 5)
                 .color(0xb8cee0)
                 .build();
+
+        SodiumPhosphate = new Material.Builder(8715, SuSyUtility.susyId('sodium_phosphate'))
+                .dust()
+                .components(Sodium * 3, Phosphorus, Oxygen * 4)
+                .color(0xdae69e)
+                .build();
     }
 }

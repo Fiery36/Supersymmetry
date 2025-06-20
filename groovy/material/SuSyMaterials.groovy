@@ -2263,7 +2263,6 @@ class SuSyMaterials {
         // Thermodynamics Materials
 
         public static Material EarthlikeAir;
-        public static Material HotHighPressureSteam;
         public static Material WasteGaseousNitrogen;
         public static Material ChillyWasteGaseousNitrogen;
         public static Material SubcooledLiquidNitrogen;
@@ -2311,6 +2310,8 @@ class SuSyMaterials {
         public static Material PurifiedKryptonXenonConcentrate;
         public static Material LiquidCrudeXenon;
         public static Material OxidizedXenon;
+        public static Material HighPressureSteam;
+        public static Material LowPressureSteam;
         
 
         public static void changeFormulas() {

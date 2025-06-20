@@ -627,7 +627,8 @@ susy.material.sodium_perchlorate_solution=Sodium Perchlorate Solution
 susy.material.sodium_chlorate_solution=Sodium Chlorate Solution
 susy.material.diluted_sodium_chlorate_solution=Diluted Sodium Chlorate Solution
 susy.material.diluted_aniline=Diluted Aniline
-susy.material.hot_hp_steam=Hot High Pressure Steam
+susy.material.hp_steam=High Pressure Steam
+susy.material.lp_steam=Low Pressure Steam
 
 susy.material.sodium_thiosulfate_solution=Sodium Thiosulfate Solution
 susy.material.sodium_sulfite_solution=Sodium Sulfite Solution
@@ -2441,6 +2442,7 @@ susy.material.inconel_718=Inconel 718
 susy.material.silver_indium_cadmium=Silver-Indium-Cadmium Alloy
 susy.material.high_alumina_refractory=High Alumina Refractory
 susy.material.mullitized_kyanite=Mullitized Kyanite
+susy.material.nimonic_105=Nimonic 105
 
 # Isotopes
 

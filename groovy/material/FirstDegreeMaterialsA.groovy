@@ -3526,7 +3526,7 @@ public class FirstDegreeMaterialsA {
         Incoloy825 = new Material.Builder(8628, SuSyUtility.susyId("incoloy_825"))
                 .ingot().liquid(new FluidBuilder().temperature(1675))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD, SUPERALLOY)
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_ROTOR, SUPERALLOY)
                 .components(Iron * 9, Nickel * 16, Chrome * 7, Manganese, Copper * 2, Aluminium, Titanium, Molybdenum * 2)
                 .colorAverage()
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
@@ -3607,7 +3607,7 @@ public class FirstDegreeMaterialsA {
         Nimonic105 = new Material.Builder(8637, SuSyUtility.susyId('nimonic_105'))
                 .ingot().liquid(new FluidBuilder().temperature(1770))
                 .iconSet(SHINY)
-                .flags(GENERATE_ROD, GENERATE_PLATE, SUPERALLOY)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_PLATE, GENERATE_RING, GENERATE_ROTOR, SUPERALLOY)
                 .components(Nickel * 19, Chrome * 6, Manganese * 1, Iron * 1, Aluminium * 2, Titanium * 1, Cobalt * 8)
                 .colorAverage()
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
@@ -4114,12 +4114,6 @@ public class FirstDegreeMaterialsA {
                 .dust()
                 .components(Thorium, Chlorine * 3)
                 .color(0x012916)
-                .build();
-
-        SodiumPhosphate = new Material.Builder(8709, SuSyUtility.susyId('sodium_phosphate'))
-                .dust()
-                .components(Sodium * 3, Phosphorus, Oxygen * 4)
-                .color(0xdae69e)
                 .build();
 
         // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
