@@ -394,7 +394,7 @@ BR.recipeBuilder()
     .fluidOutputs(fluid('nitrogen_dioxide') * 4000)
     .fluidOutputs(fluid('water') * 3000)
     .duration(60)
-    .EUt(30)
+    .EUt(60)
     .buildAndRegister()    
 
 FBR.recipeBuilder()
