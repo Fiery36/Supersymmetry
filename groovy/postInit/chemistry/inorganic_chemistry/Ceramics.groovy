@@ -31,9 +31,9 @@ HOT_ISOSTATIC_PRESS.recipeBuilder()
 // Zirconia
 
 HOT_ISOSTATIC_PRESS.recipeBuilder()
-    .inputs(ore('dustYttriaStabilizedZirconiumDioxide') * 12)
+    .inputs(ore('dustBoronNitride') * 12)
     .fluidInputs(fluid('polyvinyl_alcohol_binder') * 400)
-    .outputs(metaitem('nozzle.yttria_stabilized_zirconia'))
+    .outputs(metaitem('nozzle.boron_nitride'))
     .duration(600)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()

@@ -847,7 +847,7 @@ recipemap('fluid_compressor').recipeBuilder()
 
 recipemap('fluid_compressor').recipeBuilder()
         .fluidInputs(liquid('steam') * 1000)
-        .fluidOutputs(liquid('hot_hp_steam') * 400)
+        .fluidOutputs(liquid('hp_steam') * 400)
         .duration(80)
         .EUt(120)
         .buildAndRegister();

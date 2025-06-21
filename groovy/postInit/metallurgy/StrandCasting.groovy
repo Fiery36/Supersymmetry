@@ -92,7 +92,7 @@ ASSEMBLER.recipeBuilder()
         .inputs(item('gregtech:boiler_casing', 1))
         .inputs(ore('circuitEv') * 2)
         .inputs(metaitem('electric.pump.ev') * 4)
-        .inputs(metaitem('nozzle.yttria_stabilized_zirconia'))
+        .inputs(metaitem('nozzle.boron_nitride'))
         .inputs(ore('plateBoronNitride') * 64)
         .circuitMeta(1)
         .outputs(metaitem('gas_atomizer'))
@@ -102,7 +102,7 @@ ASSEMBLER.recipeBuilder()
 
 RecyclingHelper.handleRecycling(metaitem('gas_atomizer'), [
     ore('plateBoronNitride') * 64,
-    metaitem('nozzle.yttria_stabilized_zirconia'),
+    metaitem('nozzle.boron_nitride'),
     metaitem('electric.pump.ev') * 4,
     ore('circuitEv') * 2,
     item('gregtech:boiler_casing', 1)
@@ -172,6 +172,12 @@ RecyclingHelper.addShaped("susy:billet_mold", metaitem('billet_mold'), [
         [metaitem('electric.pump.ev'), metaitem('plateSteel'), metaitem('electric.pump.ev')],
         [metaitem('sensor.ev'), metaitem('plateDoubleCopper'), ore('circuitEv')],
         [metaitem('electric.pump.ev'), metaitem('plateSteel'), metaitem('electric.pump.ev')]
+])
+
+RecyclingHelper.addShaped("susy:strand_cooler", metaitem("strand_cooler"), [
+    [metaitem('electric.pump.ev'), ore('pipeNormalFluidMonel500'), metaitem('electric.pump.ev')],
+    [item('susy:metallurgy_roll'), ore('circuitEv'), item('susy:metallurgy_roll')],
+    [metaitem('electric.motor.ev'), ore('pipeNormalFluidMonel500'), metaitem('electric.motor.ev')]
 ])
 
 ASSEMBLER.recipeBuilder()

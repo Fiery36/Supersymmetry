@@ -354,6 +354,12 @@ RecyclingHelper.replaceShaped('gregtech:bronze_primitive_blast_furnace', metaite
     [ore('craftingToolScrewdriver'), ore('stickBronze'), ore('screwBronze')]
 ])
 
+RecyclingHelper.addShaped('gregtech:reverberatory_furnace', metaitem('reverberatory_furnace'), [
+    [ore('craftingToolHardHammer'), ore('plateWroughtIron'), ore('screwWroughtIron')],
+    [ore('blockGlass'), item('gregtech:metal_casing:1'), ore('stickWroughtIron')],
+    [ore('craftingToolScrewdriver'), ore('plateWroughtIron'), ore('screwWroughtIron')]
+])
+
 RecyclingHelper.addShaped('gregtech:high_pressure_latex_extractor', metaitem('latex_collector.steel'), [
     [metaitem('pipeSmallFluidSteel'), metaitem('susy:pump.steam'), metaitem('pipeSmallFluidSteel')],
     [metaitem('plateSteel'), metaitem('latex_collector.bronze'), metaitem('plateSteel')],
