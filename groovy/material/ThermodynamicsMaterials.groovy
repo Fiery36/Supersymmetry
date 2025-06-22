@@ -18,6 +18,9 @@ import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.Materials.*;
 
+import supercritical.api.unification.material.properties.CoolantProperty;
+import supercritical.api.unification.material.properties.SCPropertyKey;
+
 class ThermodynamicsMaterials {
 
 
@@ -583,7 +586,7 @@ class ThermodynamicsMaterials {
                 .color(0x0a2ca1)
                 .build();
 
-        PressurizedWater.setProperty(SCPropertyKey.COOLANT, new CoolantProperty(PressurizedWater, HotPressurizedWater, FluidStorageKeys.LIQUID, 1., 1000, 588, 2260000, 4184.).setAccumulatesHydrogen(true));
+        PressurizedWater.setProperty(SCPropertyKey.COOLANT, new CoolantProperty(PressurizedWater, HotPressurizedWater, FluidStorageKeys.LIQUID, 1, 1000, 588, 2260000, 4184).setAccumulatesHydrogen(true));
         // per mole, 2,427,360J absorbed --> 359,946EU/mol
 
 
@@ -592,7 +595,7 @@ class ThermodynamicsMaterials {
                 .color(0x7585bd)
                 .build();
 
-        BoilingWater.setProperty(SCPropertyKey.COOLANT, new CoolantProperty(BoilingWater, HighPressureWetSteam, FluidStorageKeys.LIQUID, 1., 1000, 558, 2260000, 4184.).setAccumulatesHydrogen(true));
+        BoilingWater.setProperty(SCPropertyKey.COOLANT, new CoolantProperty(BoilingWater, HighPressureWetSteam, FluidStorageKeys.LIQUID, 1, 1000, 558, 2260000, 4184).setAccumulatesHydrogen(true));
         // per mole, 2,301,840J absorbed --> 341,333 EU/mol
 
         HighPressureExhaustSteam = new Material.Builder(22864, SuSyUtility.susyId("hp_exhaust_steam"))
