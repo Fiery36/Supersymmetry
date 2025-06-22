@@ -629,6 +629,12 @@ susy.material.diluted_sodium_chlorate_solution=Diluted Sodium Chlorate Solution
 susy.material.diluted_aniline=Diluted Aniline
 susy.material.hp_steam=High Pressure Steam
 susy.material.lp_steam=Low Pressure Steam
+susy.material.pressurized_water=Pressurized Water
+susy.material.hot_pressurized_water=Hot Pressurized Water
+susy.material.boiling_water=Boiling Water
+susy.material.hp_wet_steam=High Pressure Wet Steam
+susy.material.hp_exhaust_steam=High Pressure Exhaust Steam
+susy.material.hp_wet_exhaust_steam=High Pressure Wet Exhaust Steam
 
 susy.material.sodium_thiosulfate_solution=Sodium Thiosulfate Solution
 susy.material.sodium_sulfite_solution=Sodium Sulfite Solution

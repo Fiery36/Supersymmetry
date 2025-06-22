@@ -561,13 +561,54 @@ class ThermodynamicsMaterials {
                 .build()
 
         HighPressureSteam = new Material.Builder(22859, SuSyUtility.susyId("hp_steam"))
-                .gas(new FluidBuilder().temperature(623))
+                .gas(new FluidBuilder().temperature(558))
                 .color(0xffffff)
                 .components(Steam)
                 .flags(DISABLE_DECOMPOSITION)
                 .build();
 
-        HighPressureHeavyWater = new Material.Builder(22860, SuSyUtility.susyId("lp_steam"))
+        HighPressureWetSteam = new Material.Builder(22860, SuSyUtility.susyId("high_pressure_wet_steam"))
+                .gas(new FluidBuilder().temperature(558))
+                .color(0xa7b6e8)
+                .components(Steam)
+                .build();
+
+        HotPressurizedWater = new Material.Builder(22861, SuSyUtility.susyId("hot_pressurized_water"))
+                .liquid(new FluidBuilder().temperature(588))
+                .color(0x183fc4)
+                .build();
+
+        PressurizedWater = new Material.Builder(22862, SuSyUtility.susyId("pressurized_water"))
+                .liquid(new FluidBuilder().temperature(548))
+                .color(0x0a2ca1)
+                .build();
+
+        PressurizedWater.setProperty(SCPropertyKey.COOLANT, new CoolantProperty(PressurizedWater, HotPressurizedWater, FluidStorageKeys.LIQUID, 1., 1000, 588, 2260000, 4184.).setAccumulatesHydrogen(true));
+        // per mole, 2,427,360J absorbed --> 359,946EU/mol
+
+
+        BoilingWater = new Material.Builder(22863, SuSyUtility.susyId("boiling_water"))
+                .liquid(new FluidBuilder().temperature(548))
+                .color(0x7585bd)
+                .build();
+
+        BoilingWater.setProperty(SCPropertyKey.COOLANT, new CoolantProperty(BoilingWater, HighPressureWetSteam, FluidStorageKeys.LIQUID, 1., 1000, 558, 2260000, 4184.).setAccumulatesHydrogen(true));
+        // per mole, 2,301,840J absorbed --> 341,333 EU/mol
+
+        HighPressureExhaustSteam = new Material.Builder(22864, SuSyUtility.susyId("hp_exhaust_steam"))
+                .gas(new FluidBuilder().temperature(558))
+                .color(0xc9cbd1)
+                .components(Steam)
+                .flags(DISABLE_DECOMPOSITION)
+                .build();
+
+        HighPressureWetExhaustSteam = new Material.Builder(22865, SuSyUtility.susyId("hp_wet_exhaust_steam"))
+                .gas(new FluidBuilder().temperature(558))
+                .color(0xa6abbd)
+                .components(Steam)
+                .build();
+
+        /*HighPressureHeavyWater = new Material.Builder(22860, SuSyUtility.susyId("hp_heavy_water"))
                 .gas(new FluidBuilder().temperature(500))
                 .color(0xccd9f0)
                 .flags(DISABLE_DECOMPOSITION)
@@ -577,7 +618,7 @@ class ThermodynamicsMaterials {
         HeavyWater.setProperty(SCPropertyKey.COOLANT,
             new CoolantProperty(HeavyWater, HighPressureHeavyWater, FluidStorageKeys.LIQUID, 4., 1000,
                 374.4, 2064000, 4228.)
-                    .setAccumulatesHydrogen(true));
+                    .setAccumulatesHydrogen(true));*/
 
     }
 }

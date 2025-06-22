@@ -2311,7 +2311,13 @@ class SuSyMaterials {
         public static Material LiquidCrudeXenon;
         public static Material OxidizedXenon;
         public static Material HighPressureSteam;
-        public static Material HighPressureHeavyWater;
+        public static Material HighPressureWetSteam;
+        public static Material HotPressurizedWater;
+        public static Material PressurizedWater;
+        public static Material BoilingWater;
+        public static Material HighPressureExhaustSteam;
+        public static Material HighPressureWetExhaustSteam;
+        //public static Material HighPressureHeavyWater;
         
 
         public static void changeFormulas() {

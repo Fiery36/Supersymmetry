@@ -149,11 +149,6 @@ class ChangeFlags {
         Steel.setProperty(GCYMPropertyKey.ALLOY_BLAST, new DummyABSProperty())
         Aluminium.setProperty(GCYMPropertyKey.ALLOY_BLAST, new DummyABSProperty())
 
-        DistilledWater.setProperty(SCPropertyKey.COOLANT,
-            new CoolantProperty(DistilledWater, HighPressureSteam, FluidStorageKeys.LIQUID, 1., 1000,
-                373, 2260000, 4168.)
-                    .setAccumulatesHydrogen(true));
-
         // Flags
 
         Asbestos.addFlags("generate_foil");
