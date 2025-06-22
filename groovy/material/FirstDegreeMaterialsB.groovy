@@ -48,11 +48,11 @@ public class FirstDegreeMaterialsB {
                 .build();
 
         Inconel718 = new Material.Builder(8712, SuSyUtility.susyId('inconel_718'))
-                .ingot().liquid(new FluidBuilder().temperature(1610))
+                .ingot().liquid(new FluidBuilder().temperature(1800))
                 .colorAverage()
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_DOUBLE_PLATE, GENERATE_FRAME, GENERATE_SPRING, SUPERALLOY)
                 .components(Nickel * 41, Iron * 19, Chrome * 20, Niobium * 3, Molybdenum * 2, Titanium, Aluminium * 2)
-                .blastTemp(1610, GasTier.MID, GTValues.VA[GTValues.EV])
+                .blastTemp(1800, GasTier.MID, GTValues.VA[GTValues.EV])
                 .build();
 
         SilverIndiumCadmium = new Material.Builder(8713, SuSyUtility.susyId('silver_indium_cadmium'))

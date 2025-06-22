@@ -570,7 +570,7 @@ class ThermodynamicsMaterials {
                 .flags(DISABLE_DECOMPOSITION)
                 .build();
 
-        HighPressureWetSteam = new Material.Builder(22860, SuSyUtility.susyId("high_pressure_wet_steam"))
+        HighPressureWetSteam = new Material.Builder(22860, SuSyUtility.susyId("hp_wet_steam"))
                 .gas(new FluidBuilder().temperature(558))
                 .color(0xa7b6e8)
                 .components(Steam)
