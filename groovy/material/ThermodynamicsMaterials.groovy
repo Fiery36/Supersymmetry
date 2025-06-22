@@ -567,11 +567,17 @@ class ThermodynamicsMaterials {
                 .flags(DISABLE_DECOMPOSITION)
                 .build();
 
-        LowPressureSteam = new Material.Builder(22860, SuSyUtility.susyId("lp_steam"))
-                .gas(new FluidBuilder().temperature(573))
-                .color(0xf7f7f7)
-                .components(Steam)
+        HighPressureHeavyWater = new Material.Builder(22860, SuSyUtility.susyId("lp_steam"))
+                .gas(new FluidBuilder().temperature(500))
+                .color(0xccd9f0)
                 .flags(DISABLE_DECOMPOSITION)
+                .components(Deuterium, 2, Oxygen, 1)
                 .build();
+                
+        HeavyWater.setProperty(SCPropertyKey.COOLANT,
+            new CoolantProperty(HeavyWater, HighPressureHeavyWater, FluidStorageKeys.LIQUID, 4., 1000,
+                374.4, 2064000, 4228.)
+                    .setAccumulatesHydrogen(true));
+
     }
 }

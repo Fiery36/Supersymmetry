@@ -87,7 +87,9 @@ def ingotMap = [
     'Monel500':3000,
     'Hsla980X':2600,
     'FoodGradeStainlessSteel':2600,
-    'PlatinumRhodium':2113
+    'PlatinumRhodium':2113,
+    'Zircaloy':2200,
+    'ReactorSteel':1800
 ]
 
 def electrodeMap = [
@@ -97,7 +99,8 @@ def electrodeMap = [
     'Incoloy825':3000,
     'Incoloy908':3000,
     'Incoloy20':3000,
-    'Nimonic105':3000
+    'Nimonic105':3000,
+    'Inconel718':3000
 ]
 
 //MV Tweaks (from CEu #1724)
