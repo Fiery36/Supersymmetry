@@ -3790,7 +3790,7 @@ public class FirstDegreeMaterialsA {
                 .build()
         
         LEU235Dioxide.setFormula("UO2", true);
-        LEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1500, 750, 55.0, 1.0, 2500.0, 0.0, 3.5, LEU235Dioxide.getRegistryName()));
+        LEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1500, 1000, 55.0, 1.0, 2500.0, 0.0, 3.5, LEU235Dioxide.getRegistryName()));
 
         HALEU235Dioxide = new Material.Builder(8662, SuSyUtility.susyId('haleu_235_dioxide'))
                 .dust()
@@ -3800,7 +3800,7 @@ public class FirstDegreeMaterialsA {
                 .build()
         
         HALEU235Dioxide.setFormula("UO2", true);
-        HALEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1600, 700, 50.0, 1.0, 2700.0, 0.0, 3, HALEU235Dioxide.getRegistryName()));
+        HALEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1600, 2000, 50.0, 1.0, 2700.0, 0.0, 3, HALEU235Dioxide.getRegistryName()));
 
         HEU235Dioxide = new Material.Builder(8663, SuSyUtility.susyId('heu_235_dioxide'))
                 .dust()
@@ -3810,7 +3810,7 @@ public class FirstDegreeMaterialsA {
                 .build()
         
         HEU235Dioxide.setFormula("UO2", true);
-        HEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1800, 600, 40.0, 1.0, 3000.0, 0.0, 2.5, HEU235Dioxide.getRegistryName()));
+        HEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1800, 4000, 40.0, 1.0, 3000.0, 0.0, 2.5, HEU235Dioxide.getRegistryName()));
 
         WeaponsGradeUraniumDioxide = new Material.Builder(8664, SuSyUtility.susyId('weapons_grade_uranium_dioxide'))
                 .dust()
