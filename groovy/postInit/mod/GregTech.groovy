@@ -1431,7 +1431,7 @@ CUTTING_MACHINE.recipeBuilder()
 GAS_COLLECTOR.recipeBuilder()
     .circuitMeta(4)
     .fluidOutputs(fluid('air') * 10000)
-    .dimension(10)
+    .dimension(Globals.dimensions["Beneath"])
     .duration(200)
     .EUt(16)
     .buildAndRegister();
