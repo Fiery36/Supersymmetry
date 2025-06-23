@@ -21,7 +21,7 @@ MIXER.recipeBuilder()
     .EUt(120)
     .buildAndRegister();
 
-//NEODYMIUM MAGNETS
+// Neodymium magnets
 
 MIXER.recipeBuilder()
     .inputs(ore('dustNeodymium') * 2)
@@ -82,17 +82,7 @@ ELECTROLYZER.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-//SAMARIUM MAGNETS
-
-ABS.recipeBuilder()
-    .inputs(ore('dustSamarium'))
-    .inputs(ore('dustCobalt') * 5)
-    .fluidInputs(fluid('argon') * 300)
-    .fluidOutputs(fluid('samarium_alloy') * 864)
-    .blastFurnaceTemp(1800)
-    .duration(300)
-    .EUt(1920)
-    .buildAndRegister();
+// Samarium-cobalt magnets
 
 FORMING_PRESS.recipeBuilder()
     .notConsumable(metaitem('shape.mold.long_rod'))
@@ -184,7 +174,7 @@ ELECTROLYZER.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-//REPLACE MAGNETIC STUFF IN RECIPES
+// Replace magnetic component recipes
 
 // Extreme Voltage Coil * 1
 mods.gregtech.assembler.removeByInput(1920, [metaitem('stickNeodymiumMagnetic'), metaitem('wireFineTungstenSteel') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)

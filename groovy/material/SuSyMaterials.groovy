@@ -1421,7 +1421,6 @@ class SuSyMaterials {
         public static Material PotassiumIodate;
         public static Material Alnico;
         public static Material AlnicoMagnetic;
-        public static Material Mica;
         public static Material UraniumTetrafluoride;
         public static Material UraniumDioxide;
         public static Material NaturalUraniumHexafluoride;
