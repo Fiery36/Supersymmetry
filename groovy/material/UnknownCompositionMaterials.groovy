@@ -2909,12 +2909,12 @@ public class UnknownCompositionMaterials {
                 .color(0xa3d126)
                 .build();
 
-        BerylliumExtract = new Material.Builder(4644, SuSyUtility.susyId('beryllium_extract'))
+        BerylliumExtract = new Material.Builder(4643, SuSyUtility.susyId('beryllium_extract'))
                 .liquid()
                 .color(0x117844)
                 .build();
         
-        BerylliumCarbonateSolution = new Material.Builder(4645, SuSyUtility.susyId('beryllium_carbonate_solution'))
+        BerylliumCarbonateSolution = new Material.Builder(4644, SuSyUtility.susyId('beryllium_carbonate_solution'))
                 .liquid()
                 .color(0x1c382d)
                 .build();
