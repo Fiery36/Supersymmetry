@@ -2909,11 +2909,6 @@ public class UnknownCompositionMaterials {
                 .color(0xa3d126)
                 .build();
 
-        SpentBerylliumExtractionMixture new Material.Builder(4643, SuSyUtility.susyId('spent_beryllium_extraction_mixture'))
-                .liquid()
-                .color(0x779c14)
-                .build();
-
         BerylliumExtract = new Material.Builder(4644, SuSyUtility.susyId('beryllium_extract'))
                 .liquid()
                 .color(0x117844)

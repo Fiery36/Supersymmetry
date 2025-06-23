@@ -312,18 +312,18 @@ ROASTER.recipeBuilder()
 //HIGH PURITY CHAIN
 BR.recipeBuilder()
         .inputs(ore('dustBertrandite') * 1)
-        .fluidInputs(fluid('sulfuric_acid') * 4100) //100 for Ammonium Alum
+        .fluidInputs(fluid('sulfuric_acid') * 4150) //100 for Ammonium Alum
         .outputs(metaitem('dustSiliconDioxide') * 6)
-        .fluidOutputs(fluid('impure_bertrandite_leach') * 1000) //Be4Si2O7(OH)2 + 4H2SO4 -> 4BeSO4 + 2SiO2 + 5H2O
+        .fluidOutputs(fluid('impure_bertrandite_leach') * 5000) //Be4Si2O7(OH)2 + 4H2SO4 -> 4BeSO4 + 2SiO2 + 5H2O
         .EUt(Globals.voltAmps[2])
         .duration(100)
         .buildAndRegister()
 
 BR.recipeBuilder()
         .inputs(ore('dustAmmoniumSulfate') * 3) // 1/5 mol
-        .fluidInputs(fluid('impure_bertrandite_leach') * 2000)
+        .fluidInputs(fluid('impure_bertrandite_leach') * 10000)
         .chancedOutput(metaitem('dustAmmoniumAlum') *4, 8000, 0) //On average it should be 3.2 because 1/5 mol
-        .fluidOutputs(fluid('bertrandite_leach') * 2000)
+        .fluidOutputs(fluid('bertrandite_leach') * 2000) 
         .EUt(Globals.voltAmps[2])
         .duration(100)
         .buildAndRegister()
@@ -333,14 +333,14 @@ BLENDER.recipeBuilder()
         .fluidInputs(fluid('di_two_ethylhexyl_phosphoric_acid') * 2500) //DEHPA or D2EHPA
         .fluidInputs(fluid('kerosene') * 5500)
         .fluidOutputs(fluid('beryllium_extraction_mixture') * 10000)
-        .EUt(Globals.voltAmps[5]) //tier gating part for this chain
-        .duration(100)
+        .EUt(Globals.voltAmps[4])
+        .duration(200)
         .buildAndRegister() 
 
 CENTRIFUGE.recipeBuilder()
-        .fluidInputs(fluid('bertrandite_leach') * 1000)
-        .fluidInputs(fluid('beryllium_extraction_mixture') * 1000)
-        .fluidOutputs(fluid('beryllium_extract') * 1000)
+        .fluidInputs(fluid('bertrandite_leach') * 1000) 
+        .fluidInputs(fluid('beryllium_extraction_mixture') * 8000) 
+        .fluidOutputs(fluid('beryllium_extract') * 8000)
         .fluidOutputs(fluid('wastewater') * 1000) //contains other impurites from bertrandite
         .EUt(Globals.voltAmps[3])
         .duration(80)
@@ -348,31 +348,23 @@ CENTRIFUGE.recipeBuilder()
 
 LCR.recipeBuilder() 
         .inputs(ore('dustAmmoniumCarbonate') * 56) // 4 mol
-        .fluidInputs(fluid('beryllium_extract') * 1000)
+        .fluidInputs(fluid('beryllium_extract') * 8000)
         .chancedOutput(metaitem('dustAluminiumHydroxide'), 100, 0)
         .chancedOutput(metaitem('dustIronIiiHydroxide'), 1500, 0)
-        .fluidOutputs(fluid('beryllium_carbonate_solution') * 4000) //Idk what else to call it
-        .fluidOutputs(fluid('spent_beryllium_extraction_mixture') * 1000) 
+        .fluidOutputs(fluid('beryllium_carbonate_solution') * 1000) //Idk what else to call it
+        .fluidOutputs(fluid('beryllium_extraction_mixture') * 8000) 
         .EUt(Globals.voltAmps[3])
         .duration(120)
         .buildAndRegister()
 
-BLENDER.recipeBuilder()
-        .fluidInputs(fluid('spent_beryllium_extraction_mixture') * 1000) 
-        .fluidInputs(fluid('ammonia_solution') * 200)
-        .fluidOutputs(fluid('beryllium_extraction_mixture') * 1000)
-        .EUt(Globals.voltAmps[3]) 
-        .duration(20)
-        .buildAndRegister() 
-
 AUTOCLAVE.recipeBuilder()
-        .fluidInputs(fluid('beryllium_carbonate_solution') * 1000)
-        .fluidInputs(fluid('ultrapure_water') * 1000)
-        .outputs(metaitem('dustPurifiedBerylliumHydroxide') * 5)
-        .fluidOutputs(fluid('carbon_dioxide') * 1000)
-        .fluidOutputs(fluid('ammonia_solution') * 1000)
+        .fluidInputs(fluid('beryllium_carbonate_solution') * 1000) //contains 4 Be
+        .fluidInputs(fluid('ultrapure_water') * 4000)
+        .outputs(metaitem('dustPurifiedBerylliumHydroxide') * 20)
+        .fluidOutputs(fluid('carbon_dioxide') * 4000)
+        .fluidOutputs(fluid('ammonia_solution') * 8000)
         .EUt(Globals.voltAmps[3]) 
-        .duration(120)
+        .duration(160)
         .buildAndRegister()
 
 //BERYLLIUM CHLORIDE ROUTE FOR HIGH PURITY

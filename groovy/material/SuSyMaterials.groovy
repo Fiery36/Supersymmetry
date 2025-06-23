@@ -720,7 +720,6 @@ class SuSyMaterials {
         public static Material ImpureBertranditeLeach;
         public static Material BertranditeLeach;
         public static Material BerylliumExtractionMixture;
-        public static Material SpentBerylliumExtractionMixture;
         public static Material BerylliumExtract;
         public static Material BerylliumCarbonateSolution;
 
