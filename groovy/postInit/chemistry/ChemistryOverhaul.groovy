@@ -4040,3 +4040,13 @@ LCR.recipeBuilder()
     .duration(300)
     .EUt(30)
     .buildAndRegister()
+
+ROASTER.recipeBuilder() 
+    .inputs(ore('dustAmmoniumAlum') * 52) //normaly 104 for balanced reaction but for the sake of not insanity everthing divided by 2
+    .chancedOutput(metaitem('dustAlumina') * 5, 5000, 0) //meant to be the 1/2 mol
+    .fluidOutputs(fluid('ammonia') * 1000)
+    .fluidOutputs(fluid('sulfur_trioxide') * 2000)
+    .fluidOutputs(fluid('dense_steam') * 12500)
+    .duration(160)
+    .EUt(1920)
+    .buildAndRegister()
