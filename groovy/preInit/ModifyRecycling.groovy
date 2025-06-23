@@ -1,6 +1,6 @@
 import supersymmetry.loaders.recipes.handlers.RecyclingManager
 
-event_manager.listen { RecyclingManager.PreRecyclingEvent ->
+event_manager.listen(RecyclingManager.PreRecyclingEvent) { event ->
     RecyclingManager.addRecyclingGroovy(metaitem('electric.motor.lv') * 6, [
         ore('cableGtSingleTin') * 2,
         ore('stickLongSteel'),
