@@ -2905,7 +2905,7 @@ metaitem.wing_panel.fiber_reinforced_epoxy.name=Glass Fiber Reinforced Epoxy (GF
 metaitem.wing.small.name=Lightweight Wing
 
 metaitem.work_roll.unfinished.name=Unfinished Work Roll
-metaitem.nozzle.yttria_stabilized_zirconia.name=Yttria-Stabilized Zirconia Nozzle
+metaitem.nozzle.boron_nitride.name=Boron Nitride Nozzle
 
 # Vanilla MC
 tile.hellsand.name=Mineral-Rich Sand
