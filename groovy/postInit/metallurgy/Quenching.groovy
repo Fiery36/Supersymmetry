@@ -88,7 +88,7 @@ def ingotMap = [
     'Hsla980X':2600,
     'FoodGradeStainlessSteel':2600,
     'PlatinumRhodium':2113,
-    'Zircaloy':2200,
+    'Zircaloy4':2200,
     'ReactorSteel':1800
 ]
 

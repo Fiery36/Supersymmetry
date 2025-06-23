@@ -184,7 +184,6 @@ for (name in ore_smelting_removals) {
 }
 
 // Malachite Ore
-furnace.removeByInput(item('gregtech:ore_malachite_0', 0))
 furnace.add(item('gregtech:ore_malachite_0', 0), metaitem('ingotCopper') * 2, 0.5)
 
 // Polycaprolactam Bar * 1
