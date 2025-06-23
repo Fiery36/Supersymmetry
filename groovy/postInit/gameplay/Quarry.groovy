@@ -1,5 +1,14 @@
 QUARRY = recipemap('quarry')
 
+
+crafting.addShaped("susy:quarry_controller", metaitem('quarry'), [
+    [ore('plateSteel'), metaitem('motor.lv'), ore('plateSteel')],
+    [ore('circuitLv'), metaitem('hull.lv'), ore('circuitLv')],
+    [ore('cableGtSingleTin'), metaitem('component.grinder.diamond'), ore('cableGtSingleTin')]
+])
+
+
+
 def overworld_ores = [ 
     item('minecraft:stone'), 
     item('minecraft:stone', 1), 
