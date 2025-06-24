@@ -25,12 +25,6 @@ crafting.removeByOutput(metaitem('electric.motor.lv'))
 crafting.removeByOutput(metaitem('electric.motor.ev'))
 crafting.removeByOutput(metaitem('electric.motor.iv'))
 
-RecyclingHelper.removeRecyclingRecipes(metaitem('electric.motor.lv'))
-RecyclingHelper.removeRecyclingRecipes(metaitem('electric.motor.mv'))
-RecyclingHelper.removeRecyclingRecipes(metaitem('electric.motor.hv'))
-RecyclingHelper.removeRecyclingRecipes(metaitem('electric.motor.ev'))
-RecyclingHelper.removeRecyclingRecipes(metaitem('electric.motor.iv'))
-
 // Brushed DC Motors (LV-EV)
 
 crafting.addShapeless('commutator', metaitem('commutator'), [
