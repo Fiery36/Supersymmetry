@@ -8,7 +8,70 @@ ASSEMBLER = recipemap('assembler')
 ASSEMBLY_LINE = recipemap('assembly_line')
 POLARIZER = recipemap('polarizer')
 
-// Alnico
+// Iron & steel magnets (LV-MV)
+
+def voltaic_pile_ingredients = [
+    [null, metaitem('electrolyte_paper'), null],
+    [null, metaitem('plateZinc'), null],
+    [null, metaitem('plateCopper'), null]
+]
+
+def magnetic_rod_ingredients = [
+    [metaitem('voltaic_pile').reuse(), metaitem('wireGtSingleCopper').reuse(), metaitem('springCopper').reuse()],
+    [null, null, metaitem('hot_iron_rod')],
+    [null, null, null]
+]
+
+def magnetic_plate_ingredients = [
+    [metaitem('voltaic_pile').reuse(), metaitem('wireGtSingleCopper').reuse(), metaitem('springCopper').reuse()],
+    [null, null, metaitem('hot_steel_plate')],
+    [null, null, null]
+]
+
+oreDict.add('electrolyteFruit', metaitem('gregtechfoodoption:food.lime'))
+oreDict.add('electrolyteFruit', metaitem('gregtechfoodoption:food.lemon'))
+oreDict.add('electrolyteFruit', metaitem('gregtechfoodoption:food.orange'))
+
+crafting.removeByOutput(metaitem('stickIronMagnetic')) 
+furnace.add(metaitem('stickIron'), metaitem('hot_iron_rod'))
+furnace.add(metaitem('plateSteel'), metaitem('hot_steel_plate'))
+
+crafting.addShapeless('ElectrolytePaperSalt',metaitem('electrolyte_paper'), [
+    item('forge:bucketfilled').withNbt([FluidName: "salt_water", Amount: 1000]),
+    item('minecraft:paper')
+]) 
+
+crafting.addShapeless('ElectrolytePaperFruit',metaitem('electrolyte_paper'), [
+    ore('electrolyteFruit'),
+    item('minecraft:paper'),
+    ore('craftingToolMortar')
+]) 
+
+crafting.addShapeless('MagneticIronDuplication',metaitem('stickIronMagnetic') * 2, [
+    metaitem('hot_iron_rod'), 
+    metaitem('stickIronMagnetic')
+])
+
+crafting.addShapeless('SteelPlateDuplication',metaitem('plateSteelMagnetic') * 2, [
+    metaitem('hot_steel_plate'),
+    metaitem('plateSteelMagnetic')
+])
+
+crafting.addShapeless('MagneticIronMagnetite',metaitem('stickIronMagnetic'), [
+    metaitem('hot_iron_rod'), 
+    metaitem('chunk.magnetite')
+])
+
+crafting.addShapeless('MagneticSteelMagnetite',metaitem('plateSteelMagnetic'), [
+    metaitem('hot_steel_plate'),
+    metaitem('chunk.magnetite')
+])
+
+crafting.addShaped('MagneticRodVoltaic',metaitem('stickIronMagnetic'), magnetic_rod_ingredients)
+crafting.addShaped('MagneticPlateVoltaic',metaitem('plateSteelMagnetic'), magnetic_plate_ingredients)
+crafting.addShaped('VoltaicPileCrafting',metaitem('voltaic_pile'), voltaic_pile_ingredients)
+
+// Alnico (HV-EV)
 
 MIXER.recipeBuilder()
     .inputs(ore('dustAluminium') * 5)
@@ -21,7 +84,7 @@ MIXER.recipeBuilder()
     .EUt(120)
     .buildAndRegister();
 
-// Neodymium magnets
+// Neodymium magnets (IV)
 
 MIXER.recipeBuilder()
     .inputs(ore('dustNeodymium') * 2)
@@ -82,7 +145,7 @@ ELECTROLYZER.recipeBuilder()
     .EUt(256)
     .buildAndRegister();
 
-// Samarium-cobalt magnets
+// Samarium-cobalt magnets (LuV)
 
 FORMING_PRESS.recipeBuilder()
     .notConsumable(metaitem('shape.mold.long_rod'))
@@ -316,68 +379,68 @@ POLARIZER.recipeBuilder()
     .inputs(ore('stickLongTreatedNeodymiumAlloy'))
     .outputs(metaitem('stickLongNeodymiumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('stickTreatedNeodymiumAlloy'))
     .outputs(metaitem('stickNeodymiumAlloyMagnetic'))
     .duration(75)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('ringTreatedNeodymiumAlloy'))
     .outputs(metaitem('ringNeodymiumAlloyMagnetic'))
     .duration(40)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('ingotTreatedNeodymiumAlloy'))
     .outputs(metaitem('ingotNeodymiumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('plateTreatedNeodymiumAlloy'))
     .outputs(metaitem('plateNeodymiumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('stickLongTreatedSamariumAlloy'))
     .outputs(metaitem('stickLongSamariumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(3840)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('stickTreatedSamariumAlloy'))
     .outputs(metaitem('stickSamariumAlloyMagnetic'))
     .duration(75)
-    .EUt(240)
+    .EUt(3840)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('ringTreatedSamariumAlloy'))
     .outputs(metaitem('ringSamariumAlloyMagnetic'))
     .duration(40)
-    .EUt(240)
+    .EUt(3840)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('ingotTreatedSamariumAlloy'))
     .outputs(metaitem('ingotSamariumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(3840)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('plateTreatedSamariumAlloy'))
     .outputs(metaitem('plateSamariumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(3840)
     .buildAndRegister();

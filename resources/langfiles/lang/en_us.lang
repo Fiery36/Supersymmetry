@@ -2563,6 +2563,7 @@ metaitem.chunk.magnetite.name=Magnetite Chunk
 metaitem.hot_iron_rod.name=Hot Iron Rod
 metaitem.voltaic_pile.name=Voltaic Pile
 metaitem.electrolyte_paper.name=Electrolyte Paper
+metaitem.hot_steel_plate.name=Hot Steel Plate
 metaitem.sand.dust.name=Fine Pile of Sand
 metaitem.native_copper.name=Native Copper
 metaitem.mudbrick_mix.name=Mudbrick Mix

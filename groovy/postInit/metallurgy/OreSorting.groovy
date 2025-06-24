@@ -85,7 +85,7 @@ def orthomagmatic_tier_4 = [
 
 def metamorphic_tier_1 = [
     //T1
-    
+    'gregtech:ore_graphite_0' : 5000,
     'gregtech:ore_arsenopyrite_0' : 7500,
     'gregtech:ore_cinnabar_0' : 2500,
     'gregtech:ore_cobaltite_0' : 1000,
@@ -98,7 +98,8 @@ def metamorphic_tier_1 = [
 ];
 
 def metamorphic_tier_2 = [
-        //T1
+    //T1
+    'gregtech:ore_graphite_0' : 5000,
     'gregtech:ore_arsenopyrite_0' : 7500,
     'gregtech:ore_cinnabar_0' : 2500,
     'gregtech:ore_cobaltite_0' : 1000,
@@ -115,6 +116,7 @@ def metamorphic_tier_2 = [
 
 def metamorphic_tier_3 = [
     //T1
+    'gregtech:ore_graphite_0' : 5000,
     'gregtech:ore_arsenopyrite_0' : 7500,
     'gregtech:ore_cinnabar_0' : 2500,
     'gregtech:ore_cobaltite_0' : 1000,
