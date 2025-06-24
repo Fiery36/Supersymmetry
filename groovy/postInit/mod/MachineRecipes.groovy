@@ -936,7 +936,7 @@ RecyclingHelper.replaceShaped("gregtech:vacuum_freezer", metaitem('vacuum_freeze
 ])
 
 RecyclingHelper.addShaped("gregtech:natural_draft_cooling_tower", metaitem('natural_draft_cooling_tower'), [
-    [metaitem('rotorStainlessSteel'), metaitem('rotorStainlessSteel'), metaitem('rotorStainlessSteel')],
+    [metaitem('pipeHugeFluidStainlessSteel'), metaitem('pipeHugeFluidStainlessSteel'), metaitem('pipeHugeFluidStainlessSteel')],
     [motors[3], metaitem('hull.hv'), motors[3]],
     [pumps[3], circuits[3], pumps[3]]
 ])
