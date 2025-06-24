@@ -635,5 +635,15 @@ public class OreMaterials{
                 .flags(NO_UNIFICATION)
                 .color(0x644646)
                 .build();
+
+        Bertrandite = new Material.Builder(7086, SuSyUtility.susyId("bertrandite"))
+                .dust().ore()
+                .flags(NO_SMELTING)
+                .iconSet(SHINY)
+                .color(0x3a1682)
+                .components(Beryllium * 4, Silicon * 2, Hydrogen * 2, Oxygen * 9)
+                .build()
+        
+        Bertrandite.setFormula('Be4Si2O7(OH)2', true);
     }
 }
