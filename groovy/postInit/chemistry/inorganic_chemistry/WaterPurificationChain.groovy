@@ -178,7 +178,7 @@ MSFD.recipeBuilder()
         .fluidInputs(fluid('water') * 8750)
         .fluidInputs(fluid('steam') * 1000)
         .fluidOutputs(fluid('distilled_water') * 8750)
-        .duration(5)
+        .duration(10)
         .EUt(120)
         .buildAndRegister()
 
