@@ -947,36 +947,5 @@ public class SecondDegreeMaterials {
                 .components(PotassiumChlorate, Water)
                 .colorAverage()
                 .build();
-        
-        AmmoniumAlum = new Material.Builder(13158, SuSyUtility.susyId('ammonium_alum'))
-                .dust()
-                .components(Aluminium * 1, Nitrogen * 1, Hydrogen * 4, Sulfur * 2, Oxygen * 8, Water * 12)
-                .color(0x1673a6)
-                .build(); 
-
-        AmmoniumAlum.setFormula('(NH4)Al(SO4)2 * (H2O)12', true);
-        
-        PurifiedBerylliumHydroxide = new Material.Builder(13159, SuSyUtility.susyId('purified_beryllium_hydroxide')) 
-                .dust()
-                .iconSet(SHINY)
-                .components(Beryllium, Oxygen * 2, Hydrogen * 2)
-                .colorAverage()
-                .build();
-        
-        PurifiedBerylliumHydroxide.setFormula("Be(OH)2", true);
-
-        PurifiedBerylliumOxide = new Material.Builder(13160, SuSyUtility.susyId('purified_beryllium_oxide'))
-                .dust()
-                .iconSet(SHINY)
-                .components(Beryllium, Oxygen)
-                .colorAverage()
-                .build();
-
-        PurifiedBerylliumChloride = new Material.Builder(13161, SuSyUtility.susyId('purified_beryllium_chloride'))
-                .dust().liquid(new FluidBuilder().temperature(672))
-                .components(Beryllium, Chlorine * 2)
-		.iconSet(SHINY)
-                .colorAverage()
-                .build();
     }
 }
