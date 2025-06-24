@@ -2684,17 +2684,17 @@ public class UnknownCompositionMaterials {
                 .color(0xb0376e)
                 .build();
         
-        BastYttriumConcentrate = new Material.Builder(4595, SuSyUtility.susyId('bast_yttrium_concentrate'))
+        BastYttriumConcentrate = new Material.Builder(4595, SuSyUtility.susyId('bast_y_concentrate'))
                 .liquid()
                 .color(0x6b4025)
                 .build();
 
-        MonaYttriumConcentrate = new Material.Builder(4596, SuSyUtility.susyId('mona_yttrium_concentrate'))
+        MonaYttriumConcentrate = new Material.Builder(4596, SuSyUtility.susyId('mona_y_concentrate'))
                 .liquid()
                 .color(0x824119)
                 .build();
         
-        XenoYttriumConcentrate = new Material.Builder(4597, SuSyUtility.susyId('xeno_yttrium_concentrate'))
+        XenoYttriumConcentrate = new Material.Builder(4597, SuSyUtility.susyId('xeno_y_concentrate'))
                 .liquid()
                 .color(0x472510)
                 .build();
@@ -2744,32 +2744,32 @@ public class UnknownCompositionMaterials {
                 .color(0x67ab20)
                 .build();
 
-        BastTerbiumFreeExtract = new Material.Builder(4607, SuSyUtility.susyId('bast_terbium_free_extract'))
+        BastTerbiumFreeExtract = new Material.Builder(4607, SuSyUtility.susyId('bast_tb_free_extract'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0xa39953)
                 .build();
 
-        MonaTerbiumFreeExtract = new Material.Builder(4608, SuSyUtility.susyId('mona_terbium_free_extract'))
+        MonaTerbiumFreeExtract = new Material.Builder(4608, SuSyUtility.susyId('mona_tb_free_extract'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0xbaac47)
                 .build();
         
-        XenoTerbiumFreeExtract = new Material.Builder(4609, SuSyUtility.susyId('xeno_terbium_free_extract'))
+        XenoTerbiumFreeExtract = new Material.Builder(4609, SuSyUtility.susyId('xeno_tb_free_extract'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x857821)
                 .build();
 
-        BastTerbiumConcentrate = new Material.Builder(4610, SuSyUtility.susyId('bast_terbium_concentrate'))
+        BastTerbiumConcentrate = new Material.Builder(4610, SuSyUtility.susyId('bast_tb_concentrate'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x3d8076)
                 .build();
 
-        MonaTerbiumConcentrate = new Material.Builder(4611, SuSyUtility.susyId('mona_terbium_concentrate'))
+        MonaTerbiumConcentrate = new Material.Builder(4611, SuSyUtility.susyId('mona_tb_concentrate'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x2e9485)
                 .build();
 
-        XenoTerbiumConcentrate = new Material.Builder(4612, SuSyUtility.susyId('xeno_terbium_concentrate'))
+        XenoTerbiumConcentrate = new Material.Builder(4612, SuSyUtility.susyId('xeno_tb_concentrate'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x0d7a6a)
                 .build();
@@ -2894,34 +2894,68 @@ public class UnknownCompositionMaterials {
                 .color(0x210604)
                 .build()
 
-        ImpureBertranditeLeach = new Material.Builder(4640, SuSyUtility.susyId('impure_bertrandite_leach'))
+        CalicheLeach = new Material.Builder(4637, SuSyUtility.susyId('caliche_leach'))
+                .liquid()
+                .color(0x8480c2)
+                .build();
+
+        IodateConcentrate = new Material.Builder(4638, SuSyUtility.susyId('iodate_concentrate'))
+                .liquid()
+                .color(0x895ec4)
+                .build();
+
+        IodideConcentrate = new Material.Builder(4639, SuSyUtility.susyId('iodide_concentrate'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0x6d1ddb)
+                .build();
+
+        HydraulicFluid = new Material.Builder(4640, SuSyUtility.susyId('hydraulic_fluid'))
+                .liquid()
+                .color(0xebd64d)
+                .flags(FLAMMABLE)
+                .build();
+
+        YttriaStabilizedZirconia = new Material.Builder(4641, SuSyUtility.susyId('yttria_stabilized_zirconia'))
+                .dust()
+                .color(0xe3ecff)
+                .build();
+
+        // FREE ID: 4643
+
+        HighAluminaRefractory = new Material.Builder(4643, SuSyUtility.susyId('high_alumina_refractory'))
+                .dust().ingot()
+                .iconSet(DULL)
+                .flags(NO_UNIFICATION)
+                .color(0xe8dec3)
+                .build();
+
+        ImpureBertranditeLeach = new Material.Builder(4644, SuSyUtility.susyId('impure_bertrandite_leach'))
                 .liquid()
                 .color(0x521782)
                 .build();
 
-        BertranditeLeach = new Material.Builder(4641, SuSyUtility.susyId('bertrandite_leach'))
+        BertranditeLeach = new Material.Builder(4645, SuSyUtility.susyId('bertrandite_leach'))
                 .liquid()
                 .color(0x6d2aa3)
                 .build();
         
-        BerylliumExtractionMixture = new Material.Builder(4642, SuSyUtility.susyId('beryllium_extraction_mixture'))
+        BerylliumExtractionMixture = new Material.Builder(4646, SuSyUtility.susyId('beryllium_extraction_mixture'))
                 .liquid()
                 .color(0xa3d126)
                 .build();
 
-        BerylliumExtract = new Material.Builder(4643, SuSyUtility.susyId('beryllium_extract'))
+        BerylliumExtract = new Material.Builder(4647, SuSyUtility.susyId('beryllium_extract'))
                 .liquid()
                 .color(0x117844)
                 .build();
 
-        BasicBerylliumCarbonateSlurry = new Material.Builder(4644, SuSyUtility.susyId('basic_beryllium_carbonate_slurry'))
+        BasicBerylliumCarbonateSlurry = new Material.Builder(4648, SuSyUtility.susyId('basic_beryllium_carbonate_slurry'))
                 .liquid()
                 .color(0x1d3029)
                 .build();
         
-        BasicBerylliumCarbonateSolution = new Material.Builder(4645, SuSyUtility.susyId('basic_beryllium_carbonate_solution'))
+        BasicBerylliumCarbonateSolution = new Material.Builder(4649, SuSyUtility.susyId('basic_beryllium_carbonate_solution'))
                 .liquid()
                 .color(0x1c382d)
-                .build();
     }
 }

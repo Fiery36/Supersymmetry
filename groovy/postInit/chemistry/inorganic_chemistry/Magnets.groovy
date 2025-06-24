@@ -1,7 +1,6 @@
 import globals.Globals
 import globals.SinteringGlobals
 
-ABS = recipemap('alloy_blast_smelter')
 FORMING_PRESS = recipemap("forming_press")
 MIXER = recipemap('mixer')
 ELECTROLYZER = recipemap('electrolyzer')
@@ -71,8 +70,6 @@ ELECTROLYZER.recipeBuilder()
     .buildAndRegister();
 
 //SAMARIUM MAGNETS
-
-
 
 FORMING_PRESS.recipeBuilder()
     .notConsumable(metaitem('shape.mold.long_rod'))
@@ -352,70 +349,70 @@ ASSEMBLY_LINE.recipeBuilder()
     .EUt(100000)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('stickLongTreatedSamariumAlloy'))
     .outputs(metaitem('stickLongSamariumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('stickTreatedSamariumAlloy'))
     .outputs(metaitem('stickSamariumAlloyMagnetic'))
     .duration(75)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('ringTreatedSamariumAlloy'))
     .outputs(metaitem('ringSamariumAlloyMagnetic'))
     .duration(40)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('ingotTreatedSamariumAlloy'))
     .outputs(metaitem('ingotSamariumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('plateTreatedSamariumAlloy'))
     .outputs(metaitem('plateSamariumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('stickLongTreatedNeodymiumAlloy'))
     .outputs(metaitem('stickLongNeodymiumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('stickTreatedNeodymiumAlloy'))
     .outputs(metaitem('stickNeodymiumAlloyMagnetic'))
     .duration(75)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('ringTreatedNeodymiumAlloy'))
     .outputs(metaitem('ringNeodymiumAlloyMagnetic'))
     .duration(40)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('ingotTreatedNeodymiumAlloy'))
     .outputs(metaitem('ingotNeodymiumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
+POLARIZER.recipeBuilder()
     .inputs(ore('plateTreatedNeodymiumAlloy'))
     .outputs(metaitem('plateNeodymiumAlloyMagnetic'))
     .duration(150)

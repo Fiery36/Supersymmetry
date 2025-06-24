@@ -10,7 +10,8 @@ import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.Materials.*;
 
 import static material.ElementMaterials.*;
-import static material.FirstDegreeMaterials.*;
+import static material.FirstDegreeMaterialsA.*;
+import static material.FirstDegreeMaterialsB.*;
 import static material.IsotopeMaterials.*;
 import static material.OreMaterials.*;
 import static material.OrganicChemistryMaterials.*;
@@ -723,6 +724,9 @@ class SuSyMaterials {
         public static Material BerylliumExtract;
         public static Material BasicBerylliumCarbonateSlurry;
         public static Material BasicBerylliumCarbonateSolution;
+        public static Material HydraulicFluid;
+        public static Material YttriaStabilizedZirconia;
+        public static Material HighAluminaRefractory;
 
         // Petrochem Materials
 
@@ -905,7 +909,7 @@ class SuSyMaterials {
         public static Material RPOne;
         public static Material DehexanizedNaphtha;
 
-        // First Degree Materials
+        // First Degree Materials A
 
         public static Material PotassiumBisulfate;
         public static Material AmmoniumNitrate;
@@ -1411,6 +1415,7 @@ class SuSyMaterials {
         public static Material HSLA980X;
         public static Material FoodGradeStainlessSteel;
         public static Material CobaltSulfate;
+        public static Material Nimonic105;
         public static Material LithiumNitrate;
         public static Material LithiumNitrateSolution;
         public static Material ZincCarbonate;
@@ -1433,9 +1438,9 @@ class SuSyMaterials {
         public static Material HEU235AmmoniumDiuranate;
         public static Material WeaponsGradeAmmoniumDiuranate;
         public static Material DepletedAmmoniumDiuranate;
-        public static Material LEU235UraniumDioxide;
-        public static Material HALEU235UraniumDioxide;
-        public static Material HEU235UraniumDioxide;
+        public static Material LEU235Dioxide;
+        public static Material HALEU235Dioxide;
+        public static Material HEU235Dioxide;
         public static Material WeaponsGradeUraniumDioxide;
         public static Material DepletedUraniumDioxide;
         public static Material AmmoniumCarbonate;
@@ -1484,6 +1489,24 @@ class SuSyMaterials {
         public static Material ThoriumDioxide;
         public static Material ThoriumChloride;
         public static Material SodiumPhosphate;
+        public static Material SodiumBisulfiteSolution;
+        public static Material CalicheLeach;
+        public static Material IodateConcentrate;
+        public static Material IodideConcentrate;
+
+        // First Degree Materials B
+
+        public static Material Zircaloy4;
+        public static Material ReactorSteel;
+        public static Material Inconel718;
+        public static Material SilverIndiumCadmium;
+        public static Material MullitizedKyanite;
+        public static Material CalciumChlorideSolution;
+        public static Material VeryDilutedCalciumChlorideSolution;
+        public static Material AmmoniumAlum;
+        public static Material PurifiedBerylliumHydroxide;
+        public static Material PurifiedBerylliumOxide;
+        public static Material PurifiedBerylliumChloride;
 
         // HP Materials
 
@@ -1569,7 +1592,6 @@ class SuSyMaterials {
         public static Material PotassiumChlorideSolution;
         public static Material PotassiumBisulfateSolution;
         public static Material SodiumBisulfateSolution;
-        public static Material CalciumChlorideSolution;
         public static Material SodaAshSolution;
         public static Material SodiumBicarbonateSolution;
         public static Material AmmoniumNitrateSolution;
@@ -1700,10 +1722,7 @@ class SuSyMaterials {
         public static Material ThoriumChlorideSolution;
         public static Material HydroiodicAcid;
         public static Material PotassiumChlorateSolution;
-        public static Material AmmoniumAlum;
-        public static Material PurifiedBerylliumHydroxide;
-        public static Material PurifiedBerylliumOxide;
-        public static Material PurifiedBerylliumChloride;
+
         // Organic Chemistry Materials
 
         public static Material NMethylTwoPyrrolidone;
@@ -2140,6 +2159,8 @@ class SuSyMaterials {
         public static Material PenteticAcid;
         public static Material NHydroxyethylEthylenediamine;
         public static Material NHydroxyethylEthylenediaminetriaceticAcid;
+        public static Material Pyrazine;
+
 
         // Third Degree Materials
 
@@ -2248,11 +2269,11 @@ class SuSyMaterials {
         public static Material IsopropylamineSolution;
         public static Material TributylPhosphateExtractionMixture;
         public static Material Aliquat336ExtractionMixture;
+        public static Material PolyvinylAlcoholBinder;
 
         // Thermodynamics Materials
 
         public static Material EarthlikeAir;
-        public static Material HotHighPressureSteam;
         public static Material WasteGaseousNitrogen;
         public static Material ChillyWasteGaseousNitrogen;
         public static Material SubcooledLiquidNitrogen;
@@ -2300,6 +2321,14 @@ class SuSyMaterials {
         public static Material PurifiedKryptonXenonConcentrate;
         public static Material LiquidCrudeXenon;
         public static Material OxidizedXenon;
+        public static Material HighPressureSteam;
+        public static Material HighPressureWetSteam;
+        public static Material HotPressurizedWater;
+        public static Material PressurizedWater;
+        public static Material BoilingWater;
+        public static Material HighPressureExhaustSteam;
+        public static Material HighPressureWetExhaustSteam;
+        //public static Material HighPressureHeavyWater;
         
 
         public static void changeFormulas() {
@@ -2312,7 +2341,8 @@ class SuSyMaterials {
                 IsotopeMaterials.register();
                 UnknownCompositionMaterials.register();
                 OreMaterials.register();
-                FirstDegreeMaterials.register();
+                FirstDegreeMaterialsA.register();
+                FirstDegreeMaterialsB.register();
                 SecondDegreeMaterials.register();
                 OrganicChemistryMaterials.register();
                 PetrochemistryMaterials.register();

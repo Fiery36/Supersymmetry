@@ -623,7 +623,6 @@ susy.material.sodium_perchlorate_solution=Раствор перхлората н
 susy.material.sodium_chlorate_solution=Раствор хлората натрия
 susy.material.diluted_sodium_chlorate_solution=Разбавленный раствор хлората натрия
 susy.material.diluted_aniline=Разбавленный анилин
-susy.material.hot_hp_steam=Горячий пар высокого давления
 
 susy.material.sodium_thiosulfate_solution=Раствор тиосульфата натрия
 susy.material.sodium_sulfite_solution=Раствор сульфита натрия
@@ -2227,7 +2226,7 @@ recipemap.heat_exchanger.name=Теплообменник
 recipemap.radiator.name=Радиатор
 recipemap.large_weapons_factory.name=Крупный оружейный завод
 recipemap.ore_sorter.name=Сортировка руды
-recipemap.cooling_tower.name=Градирни
+recipemap.natural_draft_cooling_tower.name=Градирня естественной тяги
 recipemap.gas_turbine_new.name=Газовая турбина
 recipemap.quencher.name=Утолитель
 recipemap.steam_turbine_new.name=Паровая турбина
