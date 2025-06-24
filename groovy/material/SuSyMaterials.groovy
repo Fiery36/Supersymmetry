@@ -111,6 +111,7 @@ class SuSyMaterials {
         public static Material Rhodochrosite;
         public static Material Carnotite;
         public static Material AlluvialPGMSand;
+        public static Material Bertrandite;
 
         // Deposits for scanning
 
@@ -717,6 +718,12 @@ class SuSyMaterials {
         public static Material ThoriumConcentrate;
         public static Material ThoriumFreeMonaziteLeach;
         public static Material RareEarthFreeMonaziteLeach;
+        public static Material ImpureBertranditeLeach;
+        public static Material BertranditeLeach;
+        public static Material BerylliumExtractionMixture;
+        public static Material BerylliumExtract;
+        public static Material BasicBerylliumCarbonateSlurry;
+        public static Material BasicBerylliumCarbonateSolution;
         public static Material HydraulicFluid;
         public static Material YttriaStabilizedZirconia;
         public static Material HighAluminaRefractory;
@@ -1496,6 +1503,10 @@ class SuSyMaterials {
         public static Material MullitizedKyanite;
         public static Material CalciumChlorideSolution;
         public static Material VeryDilutedCalciumChlorideSolution;
+        public static Material AmmoniumAlum;
+        public static Material PurifiedBerylliumHydroxide;
+        public static Material PurifiedBerylliumOxide;
+        public static Material PurifiedBerylliumChloride;
 
         // HP Materials
 

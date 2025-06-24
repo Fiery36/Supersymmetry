@@ -190,6 +190,17 @@ susy.material.methyldichlorosilane=Methyldichlorosilane
 susy.material.methyltrichlorosilane=Methyltrichlorosilane
 susy.material.dimethyldichlorosilane=Dimethyldichlorosilane
 
+susy.material.impure_bertrandite_leach=Impure Bertrandite Leach
+susy.material.bertrandite_leach=Bertrandite Leach
+susy.material.ammonium_alum=Ammonium Alum
+susy.material.beryllium_extraction_mixture=Beryllium Extraction Mixture
+susy.material.beryllium_extract=Beryllium Extract
+susy.material.basic_beryllium_carbonate_slurry=Basic Beryllium Carbonate Slurry
+susy.material.basic_beryllium_carbonate_solution=Basic Beryllium Carbonate Solution
+susy.material.purified_beryllium_hydroxide=Purified Beryllium Hydroxide
+susy.material.purified_beryllium_oxide=Purified Beryllium Oxide
+susy.material.purified_beryllium_chloride=Purified Beryllium Chloride
+
 # Solids
 
 susy.material.pig_iron=Pig Iron
@@ -779,7 +790,6 @@ susy.material.phosphorite_slurry=Phosphorite Slurry
 susy.material.phosphate_pulp=Phosphate Pulp
 susy.material.filtered_phosphate_pulp=Filtered Phosphate Pulp
 susy.material.phosphate_concentrate=Phosphate Concentrate
-susy.material.impure_ammonium_fluoroberyllate_solution=Impure Ammonium Fluoroberyllate Solution
 susy.material.silicon_tetrafluoride=Silicon Tetrafluoride
 susy.material.ammonium_fluoroberyllate_solution=Ammonium Fluoroberyllate Solution
 susy.material.sodium_fluoroberyllate_solution=Sodium Fluorosilicate Solution
@@ -1086,6 +1096,7 @@ susy.material.lignite_coke=Lignite Coke
 susy.material.anthracite=Anthracite
 susy.material.phosphorite=Phosphorite
 susy.material.sperrylite=Sperrylite
+susy.material.bertrandite=Bertrandite
 
 # Deposit ores for scanning
 
