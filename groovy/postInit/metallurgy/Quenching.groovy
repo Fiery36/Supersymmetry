@@ -11,7 +11,7 @@ import gregtech.api.util.GTUtility;
 CHEMICAL_BATH = recipemap('chemical_bath')
 QUENCHER = recipemap('quencher')
 RADIATOR = recipemap('radiator')
-COOLING_UNIT = recipemap('cooling_unit')
+COOLING_UNIT = recipemap('natural_draft_cooling_tower')
 
 //IQuenchingFluid(cold fluid, hot fluid, amount, duration, isInert, generateHeatRadiatorRecipes)
 
