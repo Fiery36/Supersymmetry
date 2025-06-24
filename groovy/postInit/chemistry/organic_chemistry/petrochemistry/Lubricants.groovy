@@ -505,7 +505,7 @@ PHASE_SEPARATOR = recipemap('phase_separator')
     // Polyalkyl methacrylate
 
     BR.recipeBuilder()
-        .inputs(ore('dustMethacrylamideSulfate'))
+        .inputs(ore('dustMethacrylamideSulfate') * 20)
         .fluidInputs(fluid('water') * 1000)
         .fluidOutputs(fluid('methacrylic_acid') * 1000)
         .outputs(metaitem('dustAmmoniumBisulfate') * 11)
