@@ -935,8 +935,8 @@ RecyclingHelper.replaceShaped("gregtech:vacuum_freezer", metaitem('vacuum_freeze
     [metaitem('cableGtSingleGold'), circuits[3], metaitem('cableGtSingleGold')]
 ])
 
-RecyclingHelper.addShaped("gregtech:cooling_unit", metaitem('cooling_unit'), [
-    [metaitem('rotorStainlessSteel'), metaitem('rotorStainlessSteel'), metaitem('rotorStainlessSteel')],
+RecyclingHelper.addShaped("gregtech:natural_draft_cooling_tower", metaitem('natural_draft_cooling_tower'), [
+    [metaitem('pipeHugeFluidStainlessSteel'), metaitem('pipeHugeFluidStainlessSteel'), metaitem('pipeHugeFluidStainlessSteel')],
     [motors[3], metaitem('hull.hv'), motors[3]],
     [pumps[3], circuits[3], pumps[3]]
 ])
