@@ -275,39 +275,39 @@ ASSEMBLER.recipeBuilder()
     .EUt(491520)
     .buildAndRegister();
 
-// Shaping
+// Magnetization
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('stickLongTreatedSamariumAlloy'))
-    .outputs(metaitem('stickLongSamariumAlloyMagnetic'))
+    .inputs(ore('stickLongAlnico'))
+    .outputs(metaitem('stickLongAlnicoMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('stickTreatedSamariumAlloy'))
-    .outputs(metaitem('stickSamariumAlloyMagnetic'))
+    .inputs(ore('stickAlnico'))
+    .outputs(metaitem('stickAlnicoMagnetic'))
     .duration(75)
     .EUt(240)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('ringTreatedSamariumAlloy'))
-    .outputs(metaitem('ringSamariumAlloyMagnetic'))
+    .inputs(ore('ringAlnico'))
+    .outputs(metaitem('ringAlnicoMagnetic'))
     .duration(40)
     .EUt(240)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('ingotTreatedSamariumAlloy'))
-    .outputs(metaitem('ingotSamariumAlloyMagnetic'))
+    .inputs(ore('ingotAlnico'))
+    .outputs(metaitem('ingotAlnicoMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('plateTreatedSamariumAlloy'))
-    .outputs(metaitem('plateSamariumAlloyMagnetic'))
+    .inputs(ore('plateAlnico'))
+    .outputs(metaitem('plateAlnicoMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
@@ -343,6 +343,41 @@ POLARIZER.recipeBuilder()
 POLARIZER.recipeBuilder()
     .inputs(ore('plateTreatedNeodymiumAlloy'))
     .outputs(metaitem('plateNeodymiumAlloyMagnetic'))
+    .duration(150)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('stickLongTreatedSamariumAlloy'))
+    .outputs(metaitem('stickLongSamariumAlloyMagnetic'))
+    .duration(150)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('stickTreatedSamariumAlloy'))
+    .outputs(metaitem('stickSamariumAlloyMagnetic'))
+    .duration(75)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('ringTreatedSamariumAlloy'))
+    .outputs(metaitem('ringSamariumAlloyMagnetic'))
+    .duration(40)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('ingotTreatedSamariumAlloy'))
+    .outputs(metaitem('ingotSamariumAlloyMagnetic'))
+    .duration(150)
+    .EUt(240)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('plateTreatedSamariumAlloy'))
+    .outputs(metaitem('plateSamariumAlloyMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
