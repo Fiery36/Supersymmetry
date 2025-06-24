@@ -35,7 +35,7 @@ def beneath_ores = [
 ]
 
 //overworld rocks:
-for (entry in overworld_ores) {
+for(entry in overworld_ores){
     QUARRY.recipeBuilder()
             .notConsumable(entry)
             .outputs(entry)
@@ -43,35 +43,36 @@ for (entry in overworld_ores) {
             .duration(100)
             .EUt(16)
             .buildAndRegister();
+    QUARRY.recipeBuilder()
+            .circuitMeta(1)
+            .chancedOutput(item('minecraft:stone'), 1667, 500)
+            .chancedOutput(item('minecraft:stone', 1), 1667, 500)
+            .chancedOutput(item('minecraft:stone', 3), 1667, 500)
+            .chancedOutput(item('minecraft:stone', 5), 1667, 500)
+            .chancedOutput(item('susy:susy_stone_smooth', 1), 1667, 500)
+            .chancedOutput(item('susy:susy_stone_smooth', 5), 1667, 500)
+            .outputs(entry)
+            .dimension(Globals.dimensions["Overworld"])
+            .duration(100)
+            .EUt(16)
+            .buildAndRegister();
+
+    QUARRY.recipeBuilder()
+            .circuitMeta(2)
+            .chancedOutput(item('minecraft:cobblestone'), 1667, 500)
+            .chancedOutput(item('pyrotech:cobblestone'), 1667, 500)
+            .chancedOutput(item('pyrotech:cobblestone', 1), 1667, 500)
+            .chancedOutput(item('pyrotech:cobblestone', 2), 1667, 500)
+            .chancedOutput(item('susy:susy_stone_cobble', 1), 1667, 500)
+            .chancedOutput(item('susy:susy_stone_cobble', 5), 1667, 500)
+            .outputs(entry)
+            .dimension(Globals.dimensions["Overworld"])
+            .duration(100)
+            .EUt(16)
+            .buildAndRegister();
 }
 
-QUARRY.recipeBuilder()
-        .circuitMeta(1)
-        .chancedOutput(item('minecraft:stone'), 1667, 500)
-        .chancedOutput(item('minecraft:stone', 1), 1667, 500)
-        .chancedOutput(item('minecraft:stone', 3), 1667, 500)
-        .chancedOutput(item('minecraft:stone', 5), 1667, 500)
-        .chancedOutput(item('susy:susy_stone_smooth', 1), 1667, 500)
-        .chancedOutput(item('susy:susy_stone_smooth', 5), 1667, 500)
-        .outputs(entry)
-        .dimension(Globals.dimensions["Overworld"])
-        .duration(100)
-        .EUt(16)
-        .buildAndRegister();
 
-QUARRY.recipeBuilder()
-        .circuitMeta(2)
-        .chancedOutput(item('minecraft:cobblestone'), 1667, 500)
-        .chancedOutput(item('pyrotech:cobblestone'), 1667, 500)
-        .chancedOutput(item('pyrotech:cobblestone', 1), 1667, 500)
-        .chancedOutput(item('pyrotech:cobblestone', 2), 1667, 500)
-        .chancedOutput(item('susy:susy_stone_cobble', 1), 1667, 500)
-        .chancedOutput(item('susy:susy_stone_cobble', 5), 1667, 500)
-        .outputs(entry)
-        .dimension(Globals.dimensions["Overworld"])
-        .duration(100)
-        .EUt(16)
-        .buildAndRegister();
 
 //beneath rocks:
 for(entry in beneath_ores){
@@ -82,26 +83,24 @@ for(entry in beneath_ores){
             .duration(100)
             .EUt(64)
             .buildAndRegister();
+    QUARRY.recipeBuilder()
+            .circuitMeta(1)
+            .chancedOutput(item('susy:susy_stone_smooth', 1), 3333, 500)
+            .chancedOutput(item('susy:susy_stone_smooth', 2), 3333, 500)
+            .chancedOutput(item('susy:susy_stone_smooth', 2), 3333, 500)
+            .outputs(entry)
+            .dimension(Globals.dimensions["Beneath"])
+            .duration(100)
+            .EUt(64)
+            .buildAndRegister();
+    QUARRY.recipeBuilder()
+            .circuitMeta(2)
+            .chancedOutput(item('susy:susy_stone_cobble', 1), 3333, 500)
+            .chancedOutput(item('susy:susy_stone_cobble', 2), 3333, 500)
+            .chancedOutput(item('susy:susy_stone_cobble', 2), 3333, 500)
+            .outputs(entry)
+            .dimension(Globals.dimensions["Beneath"])
+            .duration(100)
+            .EUt(64)
+            .buildAndRegister();
 }
-
-QUARRY.recipeBuilder()
-        .circuitMeta(1)
-        .chancedOutput(item('susy:susy_stone_smooth', 1), 3333, 500)
-        .chancedOutput(item('susy:susy_stone_smooth', 2), 3333, 500)
-        .chancedOutput(item('susy:susy_stone_smooth', 2), 3333, 500)
-        .outputs(entry)
-        .dimension(Globals.dimensions["Beneath"])
-        .duration(100)
-        .EUt(64)
-        .buildAndRegister();
-
-QUARRY.recipeBuilder()
-        .circuitMeta(2)
-        .chancedOutput(item('susy:susy_stone_cobble', 1), 3333, 500)
-        .chancedOutput(item('susy:susy_stone_cobble', 2), 3333, 500)
-        .chancedOutput(item('susy:susy_stone_cobble', 2), 3333, 500)
-        .outputs(entry)
-        .dimension(Globals.dimensions["Beneath"])
-        .duration(100)
-        .EUt(64)
-        .buildAndRegister();

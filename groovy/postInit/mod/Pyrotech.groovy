@@ -581,7 +581,7 @@ crafting.addShapeless("susy:cutting_wheat", item('pyrotech:material', 2), [
 
 // Bone block compacting
 crafting.remove("minecraft:bone_block")
-mods.pyrotech.compacting_bin.remove("pyrotech:bone_block")
+
 mods.pyrotech.compacting_bin.add("pyrotech:bone_block", item('minecraft:dye', 15), item('minecraft:bone_block'), 9)
 
 crafting.replaceShaped("pyrotech:straw", item('pyrotech:material', 2) * 4, [

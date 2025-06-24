@@ -1,4 +1,5 @@
 import globals.GroovyUtils
+import globals.Globals
 import postInit.utils.RecyclingHelper
 import gregtech.common.blocks.MetaBlocks
 import gregtech.common.blocks.MetaBlocks.*
