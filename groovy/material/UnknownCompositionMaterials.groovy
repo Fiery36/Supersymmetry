@@ -2957,5 +2957,6 @@ public class UnknownCompositionMaterials {
         BasicBerylliumCarbonateSolution = new Material.Builder(4649, SuSyUtility.susyId('basic_beryllium_carbonate_solution'))
                 .liquid()
                 .color(0x1c382d)
+                .build();
     }
 }
