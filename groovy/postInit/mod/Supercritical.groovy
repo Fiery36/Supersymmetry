@@ -161,6 +161,7 @@ RecyclingHelper.handleRecycling(metaitem('supercritical:fission_reactor'), [
 ASSEMBLER.recipeBuilder()
     .inputs(ore('plateDoubleReactorSteel') * 6)
     .inputs(ore('frameGtReactorSteel'))
+    .inputs(ore('screwReactorSteel') * 24)
     .outputs(item('supercritical:fission_casing'))
     .duration(320)
     .EUt(Globals.voltAmps[4])

@@ -41,7 +41,7 @@ public class FirstDegreeMaterialsB {
         ReactorSteel = new Material.Builder(8711, SuSyUtility.susyId('reactor_steel'))
                 .ingot().liquid(new FluidBuilder().temperature(1800))
                 .iconSet(SHINY)
-                .flags(GENERATE_DOUBLE_PLATE, GENERATE_ROD, GENERATE_FRAME)
+                .flags(GENERATE_DOUBLE_PLATE, GENERATE_ROD, GENERATE_FRAME, GENERATE_BOLT_SCREW)
                 .components(Iron * 113, Manganese * 10, Molybdenum * 2, Nickel * 3)
                 .colorAverage()
                 .blastTemp(1800, GasTier.MID, GTValues.VA[GTValues.EV])
