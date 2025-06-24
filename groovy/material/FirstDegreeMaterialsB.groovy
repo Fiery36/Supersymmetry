@@ -106,5 +106,25 @@ public class FirstDegreeMaterialsB {
 		.iconSet(SHINY)
                 .colorAverage()
                 .build();
+
+        Alnico = new Material.Builder(8720, SuSyUtility.susyId('alnico'))
+                .dust().ingot().liquid(new FluidBuilder().temperature(1600))
+                .components(Aluminium * 5, Nickel * 4, Cobalt * 3, Copper, Iron * 11)
+                .color(0xb2d8ed)
+                .iconSet(METALLIC)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE)
+                .blastTemp(1600, GasTier.LOW, 480, 200)
+                .build()
+
+        AlnicoMagnetic = new Material.Builder(8721, SuSyUtility.susyId('alnico_magnetic'))
+                .ingot()
+                .iconSet(MAGNETIC)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, IS_MAGNETIC)
+                .color(0xb2d8ed)
+                .components(Alnico)
+                .ingotSmeltInto(Alnico)
+                .arcSmeltInto(Alnico)
+                .macerateInto(Alnico)
+                .build()
     }
 }

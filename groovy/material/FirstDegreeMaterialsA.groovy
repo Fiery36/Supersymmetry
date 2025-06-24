@@ -1028,7 +1028,7 @@ public class FirstDegreeMaterialsA {
                 .components(Sodium * 2, Sulfur * 2, Oxygen * 3)
                 .color(0x879e21)
                 .build()
-
+        
         AmmoniumCarbonate = new Material.Builder(8245, SuSyUtility.susyId('ammonium_carbonate'))
                 .dust()
                 .components(Nitrogen * 2, Hydrogen * 8, Oxygen * 3, Carbon)
@@ -2078,7 +2078,7 @@ public class FirstDegreeMaterialsA {
         TreatedNeodymiumAlloy.getProperty(PropertyKey.INGOT).setMagneticMaterial(NeodymiumAlloyMagnetic);
 
         SamariumAlloy = new Material.Builder(8403, SuSyUtility.susyId('samarium_alloy'))
-                .dust().ingot()
+                .dust().ingot().liquid(new FluidBuilder().temperature(1600))
                 .color(0xb3d683).iconSet(METALLIC)
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
                 .components(Samarium, Cobalt * 5)

@@ -179,11 +179,12 @@ class ChangeFlags {
         Tetrahedrite.addFlags("no_smelting");
         Gold.addFlags("generate_gear");
         IronMagnetic.addFlags("generate_ring");
+        SteelMagnetic.addFlags("generate_plate")
         StainlessSteel.addFlags("generate_round");
         Hafnium.addFlags("generate_long_rod", "generate_rod");
         Copper.addFlags("continuously_cast");
         VanadiumSteel.addFlags("generate_round")
-
+        Mica.addFlags(GENERATE_PLATE, NO_UNIFICATION)
 
         /*
         ManganesePhosphide.addFlags("no_smashing", "no_smelting")
@@ -209,6 +210,7 @@ class ChangeFlags {
         Holmium.setMaterialRGB(0xe3b16b);
         Erbium.setMaterialRGB(0xc07ede);
         Thulium.setMaterialRGB(0xe86666);
+        Mica.setMaterialRGB(0xe8e7ba);
 
         // Formulae
 

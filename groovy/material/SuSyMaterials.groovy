@@ -1426,6 +1426,8 @@ class SuSyMaterials {
         public static Material PotassiumOsmate;
         public static Material SodiumHydrosulfide;
         public static Material PotassiumIodate;
+        public static Material Alnico;
+        public static Material AlnicoMagnetic;
         public static Material UraniumTetrafluoride;
         public static Material UraniumDioxide;
         public static Material NaturalUraniumHexafluoride;

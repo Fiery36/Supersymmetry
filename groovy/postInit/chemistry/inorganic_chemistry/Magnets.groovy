@@ -8,7 +8,83 @@ ASSEMBLER = recipemap('assembler')
 ASSEMBLY_LINE = recipemap('assembly_line')
 POLARIZER = recipemap('polarizer')
 
-//NEODYMIUM MAGNETS
+// Iron & steel magnets (LV-MV)
+
+def voltaic_pile_ingredients = [
+    [null, metaitem('electrolyte_paper'), null],
+    [null, metaitem('plateZinc'), null],
+    [null, metaitem('plateCopper'), null]
+]
+
+def magnetic_rod_ingredients = [
+    [metaitem('voltaic_pile').reuse(), metaitem('wireGtSingleCopper').reuse(), metaitem('springCopper').reuse()],
+    [null, null, metaitem('hot_iron_rod')],
+    [null, null, null]
+]
+
+def magnetic_plate_ingredients = [
+    [metaitem('voltaic_pile').reuse(), metaitem('wireGtSingleCopper').reuse(), metaitem('springCopper').reuse()],
+    [null, null, metaitem('hot_steel_plate')],
+    [null, null, null]
+]
+
+oreDict.add('electrolyteFruit', metaitem('gregtechfoodoption:food.lime'))
+oreDict.add('electrolyteFruit', metaitem('gregtechfoodoption:food.lemon'))
+oreDict.add('electrolyteFruit', metaitem('gregtechfoodoption:food.orange'))
+
+crafting.removeByOutput(metaitem('stickIronMagnetic')) 
+furnace.add(metaitem('stickIron'), metaitem('hot_iron_rod'))
+furnace.add(metaitem('plateSteel'), metaitem('hot_steel_plate'))
+
+crafting.addShapeless('ElectrolytePaperSalt',metaitem('electrolyte_paper'), [
+    item('forge:bucketfilled').withNbt([FluidName: "salt_water", Amount: 1000]),
+    item('minecraft:paper')
+]) 
+
+crafting.addShapeless('ElectrolytePaperFruit',metaitem('electrolyte_paper'), [
+    ore('electrolyteFruit'),
+    item('minecraft:paper'),
+    ore('craftingToolMortar')
+]) 
+
+crafting.addShapeless('MagneticIronDuplication',metaitem('stickIronMagnetic') * 2, [
+    metaitem('hot_iron_rod'), 
+    metaitem('stickIronMagnetic')
+])
+
+crafting.addShapeless('SteelPlateDuplication',metaitem('plateSteelMagnetic') * 2, [
+    metaitem('hot_steel_plate'),
+    metaitem('plateSteelMagnetic')
+])
+
+crafting.addShapeless('MagneticIronMagnetite',metaitem('stickIronMagnetic'), [
+    metaitem('hot_iron_rod'), 
+    metaitem('chunk.magnetite')
+])
+
+crafting.addShapeless('MagneticSteelMagnetite',metaitem('plateSteelMagnetic'), [
+    metaitem('hot_steel_plate'),
+    metaitem('chunk.magnetite')
+])
+
+crafting.addShaped('MagneticRodVoltaic',metaitem('stickIronMagnetic'), magnetic_rod_ingredients)
+crafting.addShaped('MagneticPlateVoltaic',metaitem('plateSteelMagnetic'), magnetic_plate_ingredients)
+crafting.addShaped('VoltaicPileCrafting',metaitem('voltaic_pile'), voltaic_pile_ingredients)
+
+// Alnico (HV-EV)
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustAluminium') * 5)
+    .inputs(ore('dustNickel') * 4)
+    .inputs(ore('dustCobalt') * 3)
+    .inputs(ore('dustCopper'))
+    .inputs(ore('dustIron') * 11)
+    .outputs(metaitem('dustAlnico') * 24)
+    .duration(400)
+    .EUt(120)
+    .buildAndRegister();
+
+// Neodymium magnets (IV)
 
 MIXER.recipeBuilder()
     .inputs(ore('dustNeodymium') * 2)
@@ -41,10 +117,10 @@ ELECTROLYZER.recipeBuilder()
 
 ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
-    .inputs(ore('stickNeodymiumAlloy'))
+    .inputs(ore('stickNeodymiumAlloy') * 2)
     .inputs(ore('dustSmallNickel') * 1)
     .inputs(ore('dustTinyBoricAcid') * 1)
-    .outputs(metaitem('stickTreatedNeodymiumAlloy'))
+    .outputs(metaitem('stickTreatedNeodymiumAlloy') * 2)
     .duration(120)
     .EUt(256)
     .buildAndRegister();
@@ -61,15 +137,15 @@ ELECTROLYZER.recipeBuilder()
 
 ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
-    .inputs(ore('ringNeodymiumAlloy'))
+    .inputs(ore('ringNeodymiumAlloy') * 4)
     .inputs(ore('dustSmallNickel') * 1)
     .inputs(ore('dustTinyBoricAcid') * 1)
-    .outputs(metaitem('ringTreatedNeodymiumAlloy'))
+    .outputs(metaitem('ringTreatedNeodymiumAlloy') * 4)
     .duration(120)
     .EUt(256)
     .buildAndRegister();
 
-//SAMARIUM MAGNETS
+// Samarium-cobalt magnets (LuV)
 
 FORMING_PRESS.recipeBuilder()
     .notConsumable(metaitem('shape.mold.long_rod'))
@@ -133,10 +209,10 @@ ELECTROLYZER.recipeBuilder()
 
 ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
-    .inputs(ore('stickSamariumAlloy'))
+    .inputs(ore('stickSamariumAlloy') * 2)
     .inputs(ore('dustSmallNickel') * 1)
     .inputs(ore('dustTinyBoricAcid') * 1)
-    .outputs(metaitem('stickTreatedSamariumAlloy'))
+    .outputs(metaitem('stickTreatedSamariumAlloy') * 2)
     .duration(120)
     .EUt(256)
     .buildAndRegister();
@@ -153,20 +229,16 @@ ELECTROLYZER.recipeBuilder()
 
 ELECTROLYZER.recipeBuilder()
     .fluidInputs(fluid('sulfuric_acid') * 100)
-    .inputs(ore('ringSamariumAlloy'))
+    .inputs(ore('ringSamariumAlloy') * 4)
     .inputs(ore('dustSmallNickel') * 1)
     .inputs(ore('dustTinyBoricAcid') * 1)
-    .outputs(metaitem('ringTreatedSamariumAlloy'))
+    .outputs(metaitem('ringTreatedSamariumAlloy') * 4)
     .duration(120)
     .EUt(256)
     .buildAndRegister();
 
-//REPLACE MAGNETIC STUFF IN RECIPES
+// Replace magnetic component recipes
 
-// IV Electric Motor * 1
-mods.gregtech.assembler.removeByInput(30, [metaitem('cableGtDoubleTungsten') * 2, metaitem('stickTungstenSteel') * 2, metaitem('stickNeodymiumMagnetic'), metaitem('wireGtDoubleGraphene') * 4], null)
-// EV Electric Motor * 1
-mods.gregtech.assembler.removeByInput(30, [metaitem('cableGtDoubleAluminium') * 2, metaitem('stickTitanium') * 2, metaitem('stickNeodymiumMagnetic'), metaitem('wireGtDoubleKanthal') * 4], null)
 // Extreme Voltage Coil * 1
 mods.gregtech.assembler.removeByInput(1920, [metaitem('stickNeodymiumMagnetic'), metaitem('wireFineTungstenSteel') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
 // Insane Voltage Coil * 1
@@ -177,24 +249,6 @@ mods.gregtech.assembler.removeByInput(30720, [metaitem('stickSamariumMagnetic'),
 mods.gregtech.assembler.removeByInput(122880, [metaitem('stickSamariumMagnetic'), metaitem('wireFineEuropium') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
 // Ultimate Voltage Coil * 1
 mods.gregtech.assembler.removeByInput(491520, [metaitem('stickSamariumMagnetic'), metaitem('wireFineTritanium') * 16, metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
-// LuV Electric Motor * 1
-mods.gregtech.assembly_line.removeByInput(6000, [metaitem('stickLongSamariumMagnetic'), metaitem('stickLongHsss') * 2, metaitem('ringHsss') * 2, metaitem('roundHsss') * 4, metaitem('wireFineRuridit') * 64, metaitem('cableGtSingleNiobiumTitanium') * 2], [fluid('soldering_alloy') * 144, fluid('lubricant') * 250])
-// ZPM Electric Motor * 1
-mods.gregtech.assembly_line.removeByInput(24000, [metaitem('stickLongSamariumMagnetic'), metaitem('stickLongOsmiridium') * 4, metaitem('ringOsmiridium') * 4, metaitem('roundOsmiridium') * 8, metaitem('wireFineEuropium') * 64, metaitem('wireFineEuropium') * 32, metaitem('cableGtSingleVanadiumGallium') * 2], [fluid('soldering_alloy') * 288, fluid('lubricant') * 500])
-// UV Electric Motor * 1
-mods.gregtech.assembly_line.removeByInput(100000, [metaitem('stickLongSamariumMagnetic'), metaitem('stickLongTritanium') * 4, metaitem('ringTritanium') * 4, metaitem('roundTritanium') * 8, metaitem('wireFineAmericium') * 64, metaitem('wireFineAmericium') * 64, metaitem('cableGtSingleYttriumBariumCuprate') * 2], [fluid('soldering_alloy') * 576, fluid('lubricant') * 1000, fluid('naquadria') * 576])
-
-crafting.replaceShaped('gregtech:electric_motor_ev', metaitem('electric.motor.ev'), [
-    [metaitem('cableGtDoubleAluminium'), metaitem('wireGtDoubleKanthal'), metaitem('stickTitanium')],
-    [metaitem('wireGtDoubleKanthal'), metaitem('stickSteelMagnetic'), metaitem('wireGtDoubleKanthal')],
-    [metaitem('stickTitanium'), metaitem('wireGtDoubleKanthal'), metaitem('cableGtDoubleAluminium')]
-])
-
-crafting.replaceShaped('gregtech:electric_motor_iv', metaitem('electric.motor.iv'), [
-    [metaitem('cableGtDoubleTungsten'), metaitem('wireGtDoubleGraphene'), metaitem('stickTungstenSteel')],
-    [metaitem('wireGtDoubleGraphene'), metaitem('stickNeodymiumAlloyMagnetic'), metaitem('wireGtDoubleGraphene')],
-    [metaitem('stickTungstenSteel'), metaitem('wireGtDoubleGraphene'), metaitem('cableGtDoubleTungsten')]
-])
 
 crafting.replaceShaped('gregtech:magnet_hv_battery.re.hv.sodium', metaitem('item_magnet.hv'), [
     [metaitem('stickNeodymiumAlloyMagnetic'), ore('toolWrench'), metaitem('stickNeodymiumAlloyMagnetic')],
@@ -222,7 +276,7 @@ crafting.replaceShaped('gregtech:magnet_hv_energy_crystal', metaitem('item_magne
 
 crafting.replaceShaped('gregtech:gregtech.machine.electromagnetic_separator.ev', metaitem('electromagnetic_separator.ev'), [
     [metaitem('conveyor.module.ev'), metaitem('cableGtSingleAluminium'), metaitem('wireGtQuadrupleNichrome')],
-    [metaitem('cableGtSingleAluminium'), metaitem('hull.ev'), metaitem('stickSteelMagnetic')],
+    [metaitem('cableGtSingleAluminium'), metaitem('hull.ev'), metaitem('stickAlnicoMagnetic')],
     [ore('circuitEv'), metaitem('cableGtSingleAluminium'), metaitem('wireGtQuadrupleNichrome')]
 ])
 
@@ -233,9 +287,9 @@ crafting.replaceShaped('gregtech:gregtech.machine.electromagnetic_separator.iv',
 ])
 
 crafting.replaceShaped('gregtech:gregtech.machine.polarizer.ev', metaitem('polarizer.ev'), [
-    [metaitem('wireGtQuadrupleNichrome'), metaitem('stickSteelMagnetic'), metaitem('wireGtQuadrupleNichrome')],
+    [metaitem('wireGtQuadrupleNichrome'), metaitem('stickAlnicoMagnetic'), metaitem('wireGtQuadrupleNichrome')],
     [metaitem('cableGtSingleAluminium'), metaitem('hull.ev'), metaitem('cableGtSingleAluminium')],
-    [metaitem('wireGtQuadrupleNichrome'), metaitem('stickSteelMagnetic'), metaitem('wireGtQuadrupleNichrome')]
+    [metaitem('wireGtQuadrupleNichrome'), metaitem('stickAlnicoMagnetic'), metaitem('wireGtQuadrupleNichrome')]
 ])
 
 crafting.replaceShaped('gregtech:gregtech.machine.polarizer.iv', metaitem('polarizer.iv'), [
@@ -245,27 +299,7 @@ crafting.replaceShaped('gregtech:gregtech.machine.polarizer.iv', metaitem('polar
 ])
 
 ASSEMBLER.recipeBuilder()
-    .inputs(ore('cableGtDoubleAluminium') * 2)
-    .inputs(ore('stickTitanium') * 2)
-    .inputs(ore('stickSteelMagnetic') * 1)
-    .inputs(ore('wireGtDoubleKanthal') * 4)
-    .outputs(metaitem('electric.motor.ev'))
-    .duration(100)
-    .EUt(30)
-    .buildAndRegister();
-
-ASSEMBLER.recipeBuilder()
-    .inputs(ore('cableGtDoubleTungsten') * 2)
-    .inputs(ore('stickTungstenSteel') * 2)
-    .inputs(ore('stickNeodymiumAlloyMagnetic') * 1)
-    .inputs(ore('wireGtDoubleGraphene') * 4)
-    .outputs(metaitem('electric.motor.iv'))
-    .duration(100)
-    .EUt(30)
-    .buildAndRegister();
-
-ASSEMBLER.recipeBuilder()
-    .inputs(ore('stickSteelMagnetic') * 1)
+    .inputs(ore('stickAlnicoMagnetic') * 1)
     .inputs(ore('wireFineTungstenSteel') * 16)
     .outputs(metaitem('voltage_coil.ev'))
     .duration(200)
@@ -304,82 +338,39 @@ ASSEMBLER.recipeBuilder()
     .EUt(491520)
     .buildAndRegister();
 
-ASSEMBLY_LINE.recipeBuilder()
-    .inputs(ore('stickLongSamariumAlloyMagnetic'))
-    .inputs(ore('stickLongHsss') * 2)
-    .inputs(ore('ringHsss') * 2)
-    .inputs(ore('roundHsss') * 4)
-    .inputs(ore('wireFineRuridit') * 64)
-    .inputs(ore('cableGtSingleNiobiumTitanium') * 2)
-    .fluidInputs(fluid('soldering_alloy') * 144)
-    .fluidInputs(fluid('lubricant') * 250)
-    .outputs(metaitem('electric.motor.luv'))
-    .duration(600)
-    .EUt(6000)
-    .buildAndRegister();
-
-ASSEMBLY_LINE.recipeBuilder()
-    .inputs(ore('stickLongSamariumAlloyMagnetic'))
-    .inputs(ore('stickLongOsmiridium') * 4)
-    .inputs(ore('ringOsmiridium') * 4)
-    .inputs(ore('roundOsmiridium') * 8)
-    .inputs(ore('wireFineEuropium') * 64)
-    .inputs(ore('wireFineEuropium') * 32)
-    .inputs(ore('cableGtSingleVanadiumGallium') * 2)
-    .fluidInputs(fluid('soldering_alloy') * 288)
-    .fluidInputs(fluid('lubricant') * 500)
-    .outputs(metaitem('electric.motor.zpm'))
-    .duration(600)
-    .EUt(24000)
-    .buildAndRegister();
-
-ASSEMBLY_LINE.recipeBuilder()
-    .inputs(ore('stickLongSamariumAlloyMagnetic'))
-    .inputs(ore('stickLongTritanium') * 4)
-    .inputs(ore('ringTritanium') * 4)
-    .inputs(ore('roundTritanium') * 8)
-    .inputs(ore('wireFineAmericium') * 64)
-    .inputs(ore('wireFineAmericium') * 64)
-    .inputs(ore('cableGtSingleYttriumBariumCuprate') * 2)
-    .fluidInputs(fluid('soldering_alloy') * 576)
-    .fluidInputs(fluid('lubricant') * 1000)
-    .fluidInputs(fluid('naquadria') * 576)
-    .outputs(metaitem('electric.motor.uv'))
-    .duration(600)
-    .EUt(100000)
-    .buildAndRegister();
+// Magnetization
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('stickLongTreatedSamariumAlloy'))
-    .outputs(metaitem('stickLongSamariumAlloyMagnetic'))
+    .inputs(ore('stickLongAlnico'))
+    .outputs(metaitem('stickLongAlnicoMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('stickTreatedSamariumAlloy'))
-    .outputs(metaitem('stickSamariumAlloyMagnetic'))
+    .inputs(ore('stickAlnico'))
+    .outputs(metaitem('stickAlnicoMagnetic'))
     .duration(75)
     .EUt(240)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('ringTreatedSamariumAlloy'))
-    .outputs(metaitem('ringSamariumAlloyMagnetic'))
+    .inputs(ore('ringAlnico'))
+    .outputs(metaitem('ringAlnicoMagnetic'))
     .duration(40)
     .EUt(240)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('ingotTreatedSamariumAlloy'))
-    .outputs(metaitem('ingotSamariumAlloyMagnetic'))
+    .inputs(ore('ingotAlnico'))
+    .outputs(metaitem('ingotAlnicoMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
-    .inputs(ore('plateTreatedSamariumAlloy'))
-    .outputs(metaitem('plateSamariumAlloyMagnetic'))
+    .inputs(ore('plateAlnico'))
+    .outputs(metaitem('plateAlnicoMagnetic'))
     .duration(150)
     .EUt(240)
     .buildAndRegister();
@@ -388,33 +379,68 @@ POLARIZER.recipeBuilder()
     .inputs(ore('stickLongTreatedNeodymiumAlloy'))
     .outputs(metaitem('stickLongNeodymiumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('stickTreatedNeodymiumAlloy'))
     .outputs(metaitem('stickNeodymiumAlloyMagnetic'))
     .duration(75)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('ringTreatedNeodymiumAlloy'))
     .outputs(metaitem('ringNeodymiumAlloyMagnetic'))
     .duration(40)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('ingotTreatedNeodymiumAlloy'))
     .outputs(metaitem('ingotNeodymiumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(960)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('plateTreatedNeodymiumAlloy'))
     .outputs(metaitem('plateNeodymiumAlloyMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(960)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('stickLongTreatedSamariumAlloy'))
+    .outputs(metaitem('stickLongSamariumAlloyMagnetic'))
+    .duration(150)
+    .EUt(3840)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('stickTreatedSamariumAlloy'))
+    .outputs(metaitem('stickSamariumAlloyMagnetic'))
+    .duration(75)
+    .EUt(3840)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('ringTreatedSamariumAlloy'))
+    .outputs(metaitem('ringSamariumAlloyMagnetic'))
+    .duration(40)
+    .EUt(3840)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('ingotTreatedSamariumAlloy'))
+    .outputs(metaitem('ingotSamariumAlloyMagnetic'))
+    .duration(150)
+    .EUt(3840)
+    .buildAndRegister();
+
+POLARIZER.recipeBuilder()
+    .inputs(ore('plateTreatedSamariumAlloy'))
+    .outputs(metaitem('plateSamariumAlloyMagnetic'))
+    .duration(150)
+    .EUt(3840)
     .buildAndRegister();
