@@ -2913,8 +2913,13 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0x117844)
                 .build();
+
+        BasicBerylliumCarbonateSlurry = new Material.Builder(4644, SuSyUtility.susyId('basic_beryllium_carbonate_slurry'))
+                .liquid()
+                .color(0x1d3029)
+                .build();
         
-        BerylliumCarbonateSolution = new Material.Builder(4644, SuSyUtility.susyId('beryllium_carbonate_solution'))
+        BasicBerylliumCarbonateSolution = new Material.Builder(4645, SuSyUtility.susyId('basic_beryllium_carbonate_solution'))
                 .liquid()
                 .color(0x1c382d)
                 .build();

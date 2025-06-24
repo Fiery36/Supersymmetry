@@ -721,7 +721,8 @@ class SuSyMaterials {
         public static Material BertranditeLeach;
         public static Material BerylliumExtractionMixture;
         public static Material BerylliumExtract;
-        public static Material BerylliumCarbonateSolution;
+        public static Material BasicBerylliumCarbonateSlurry;
+        public static Material BasicBerylliumCarbonateSolution;
 
         // Petrochem Materials
 
