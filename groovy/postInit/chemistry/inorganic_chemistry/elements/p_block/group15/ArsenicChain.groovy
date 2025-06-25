@@ -355,7 +355,7 @@ BATCH_REACTOR.recipeBuilder() //Cu2S + 12HNO3 → Cu(NO3)2 + CuSO4 + 10NO2 + 6H2
     .buildAndRegister()
 
 ROASTER.recipeBuilder()
-    .fluidInputs(fluid('acidic_copper_solution') * 7000)
+    .fluidInputs(fluid('acidic_copper_solution') * 6000)
     .outputs(metaitem('dustCupricOxide') * 2)
     .outputs(metaitem('dustCopperSulfate') * 6)
     .fluidOutputs(fluid('dense_steam') * 6000)
