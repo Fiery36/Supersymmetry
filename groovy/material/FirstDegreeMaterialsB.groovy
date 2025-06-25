@@ -33,7 +33,7 @@ public class FirstDegreeMaterialsB {
                 .components(HighPurityZirconium * 18, Tin * 3, Iron * 2, Chrome)
                 .color(0x566570)
                 .iconSet(METALLIC)
-                .flags(GENERATE_RING, GENERATE_RING, GENERATE_PLATE, GENERATE_FRAME, GENERATE_SPRING, GENERATE_BOLT_SCREW, CONTINUOUSLY_CAST)
+                .flags(GENERATE_RING, GENERATE_RING, GENERATE_PLATE, GENERATE_FRAME, GENERATE_SPRING, GENERATE_BOLT_SCREW)
                 .blastTemp(2200, GasTier.MID, GTValues.VA[GTValues.EV])
                 .fluidPipeProperties(1500, 1500, true, true, true, false)
                 .build()

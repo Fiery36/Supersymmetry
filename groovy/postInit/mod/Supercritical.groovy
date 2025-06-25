@@ -13,7 +13,7 @@ CANNER = recipemap('canner')
 SPENT_FUEL_POOL = recipemap('spent_fuel_pool')
 CUTTING_MACHINE = recipemap('cutter')
 
-// Zircaloy
+// Alloys
 
 MIXER.recipeBuilder()
     .inputs(ore('dustHighPurityZirconium') * 18)
@@ -24,6 +24,16 @@ MIXER.recipeBuilder()
     .duration(240)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustIron') * 64)
+    .inputs(ore('dustIron') * 49)
+    .inputs(ore('dustManganese') * 10)
+    .inputs(ore('dustMolybdenum') * 2)
+    .inputs(ore('dustNickel') * 3)
+    .outputs(metaitem('dustReactorSteel') * 128)
+    .duration(1280)
+    .EUt(Globals.voltAmps[4])
 
 // Gas Centrifuge
 
