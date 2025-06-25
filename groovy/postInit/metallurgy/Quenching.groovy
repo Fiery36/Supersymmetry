@@ -204,6 +204,7 @@ def fluidMap = [
     'molten.steel':'Steel'
     'molten.zircaloy_4':'Zircaloy4',
     'molten.reactor_steel':'ReactorSteel',
+    'molten.alnico':'Alnico'
 ]
 
 for (entry in fluidMap) {
