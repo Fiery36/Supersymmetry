@@ -21,6 +21,10 @@ AUTOCLAVE = recipemap('autoclave')
 CENTRIFUGE = recipemap('centrifuge')
 ELECTROMAGNETIC_SEPARATOR = recipemap('electromagnetic_separator')
 
+// Monazite Dust * 1
+mods.gregtech.electromagnetic_separator.removeByInput(24, [metaitem('dustPureMonazite')], null)
+
+
 /* REE Data (%mol)
 La: 23.4
 Ce: 45.5
@@ -57,7 +61,7 @@ MACERATOR.recipeBuilder()
 ELECTROMAGNETIC_SEPARATOR.recipeBuilder()
     .inputs(ore('dustMonazite'))
     .outputs(metaitem('dustConcentrateMonazite'))
-    .chancedOutput(metaitem('dustXenotime'), 2500, 0)
+    .chancedOutput(metaitem('dustXenotime'), 1000, 0)
     .chancedOutput(metaitem('dustIlmenite'), 1600, 0)
     .chancedOutput(metaitem('dustZircon'), 100, 0)
     .duration(40)

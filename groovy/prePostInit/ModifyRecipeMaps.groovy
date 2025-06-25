@@ -1,5 +1,6 @@
 package prePostInit
 
+import gregicality.multiblocks.api.recipes.GCYMRecipeMaps;
 import gregtech.api.GregTechAPI
 import gregtech.api.gui.GuiTextures
 import gregtech.api.recipes.GTRecipeHandler
@@ -29,6 +30,7 @@ GTRecipeHandler.removeAllRecipes(RecipeMaps.LASER_ENGRAVER_RECIPES)
 GTRecipeHandler.removeAllRecipes(GTFORecipeMaps.GREENHOUSE_RECIPES)
 GTRecipeHandler.removeAllRecipes(RecipeMaps.VACUUM_RECIPES)
 GTRecipeHandler.removeAllRecipes(RecipeMaps.ELECTROLYZER_RECIPES)
+GTRecipeHandler.removeAllRecipes(GCYMRecipeMaps.ALLOY_BLAST_RECIPES)
 
 GregTechAPI.materialManager.getRegisteredMaterials().forEach(material -> {
     if (material.hasProperty(PropertyKey.FLUID) && material.getProperty(PropertyKey.FLUID).getPrimaryKey() == SusyFluidStorageKeys.SLURRY) {
@@ -366,6 +368,7 @@ RecipeMaps.ELECTROLYZER_RECIPES
 RecipeMaps.ELECTROMAGNETIC_SEPARATOR_RECIPES
     .modifyMaxFluidInputs(1)
     .modifyMaxFluidOutputs(2)
+    .modifyMaxOutputs(4)
 
 GTFORecipeMaps.GREENHOUSE_RECIPES
     .modifyMaxFluidInputs(4)

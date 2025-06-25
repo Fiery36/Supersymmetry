@@ -585,6 +585,39 @@ RecyclingHelper.addShaped("gas_turbine_controller", metaitem('basic_gas_turbine'
     [metaitem('cableGtSingleCopper'), ore('circuitMv'),                   metaitem('cableGtSingleCopper')]
 ])
 
+RecyclingHelper.addShaped("titanium_hp_turbine_controller", metaitem('high_pressure_advanced_steam_turbine'), [
+    [ore('plateTitanium'),            metaitem('pipeSmallFluidTitanium'),       ore('plateTitanium')],
+    [ore('circuitEv'),             metaitem('hull.ev'), ore('circuitEv')],
+    [metaitem('cableGtHexAluminium'), ore('circuitEv'),                   metaitem('cableGtHexAluminium')]
+])
+
+RecyclingHelper.addShaped("titanium_lp_turbine_controller", metaitem('low_pressure_advanced_steam_turbine'), [
+    [ore('plateTitanium'),            metaitem('pipeHugeFluidTitanium'),       ore('plateTitanium')],
+    [ore('circuitEv'),             metaitem('hull.ev'), ore('circuitEv')],
+    [metaitem('cableGtHexAluminium'), ore('circuitEv'),                   metaitem('cableGtHexAluminium')]
+])
+
+RecyclingHelper.addShaped("hp_turbine_rotor", item('susy:turbine_rotor', 8), [
+    [ore('plateTitanium'),             ore('ringNimonic105'),     ore('plateTitanium')],
+    [ore('craftingToolHardHammer'), ore('stickLongNimonic105'), ore('craftingToolScrewdriver')],
+    [ore('plateTitanium'),             ore('rotorNimonic105'),     ore('plateTitanium')]
+])
+
+RecyclingHelper.addShaped("lp_turbine_rotor", item('susy:turbine_rotor', 4), [
+    [ore('plateTitanium'),             ore('ringIncoloy825'),     ore('plateTitanium')],
+    [ore('craftingToolHardHammer'), ore('stickLongIncoloy825'), ore('craftingToolScrewdriver')],
+    [ore('plateTitanium'),             ore('rotorIncoloy825'),     ore('plateTitanium')]
+])
+
+// Titanium Turbine Casing * 2
+mods.gregtech.assembler.removeByInput(16, [item('gregtech:turbine_casing', 5), metaitem('plateTitanium') * 6, metaitem('circuit.integrated').withNbt(['Configuration': 6])], null)
+
+RecyclingHelper.replaceShaped("gregtech:casing_titanium_turbine_casing", item('gregtech:turbine_casing', 6) * 2, [
+    [metaitem('plateTitanium'), ore('craftingToolHardHammer'), metaitem('plateTitanium')],
+    [metaitem('stickLongTitanium'), item('gregtech:stone_smooth', 4), metaitem('stickLongTitanium')],
+    [metaitem('plateTitanium'), ore('craftingToolWrench'), metaitem('plateTitanium')]
+])
+
 RecyclingHelper.addShaped("silicon_carbide_casing", item('susy:susy_multiblock_casing') * 2, [
     [metaitem('plateSiliconCarbide'), ore('craftingToolHardHammer'), metaitem('plateSiliconCarbide')],
     [metaitem('plateSiliconCarbide'), item('gregtech:metal_casing', 5), metaitem('plateSiliconCarbide')],
@@ -821,7 +854,13 @@ RecyclingHelper.addShaped("gregtech:reaction_furnace", metaitem('reaction_furnac
 RecyclingHelper.addShaped("gregtech:advanced_arc_furnace", metaitem('advanced_arc_furnace'), [
     [metaitem('cableGtHexTin'), item('susy:electrode_assembly'), metaitem('cableGtHexTin')],
     [circuits[1], hulls[1], circuits[1]],
-    [tieredPlates[1], tieredPlates[1], tieredPlates[1]]
+    [pumps[1], tieredPlates[1], robotArms[1]]
+]);
+
+RecyclingHelper.addShaped("gregtech:arc_furnace_complex", metaitem('arc_furnace_complex'), [
+    [metaitem('cableGtHexPlatinum'), item('susy:electrode_assembly'), metaitem('cableGtHexPlatinum')],
+    [circuits[4], hulls[4], circuits[4]],
+    [pumps[4], tieredPlates[4], robotArms[4]]
 ]);
 
 RecyclingHelper.addShaped("gregtech:electrode_assembly", item('susy:electrode_assembly'), [
@@ -840,7 +879,7 @@ crafting.addShaped("gregtech:evaporation_bed", item('susy:evaporation_bed') * 8,
     [item('minecraft:sand'), item('minecraft:dirt'), item('minecraft:sand')],
     [item('minecraft:dirt'), item('minecraft:gravel'), item('minecraft:dirt')],
     [item('minecraft:sand'), item('minecraft:dirt'), item('minecraft:sand')]
-    ]);
+]);
 
 RecyclingHelper.addShaped("gregtech:clarifier", metaitem('clarifier'), [
     [tieredCables[2], metaitem('rotorSteel'), tieredCables[2]],
@@ -896,8 +935,8 @@ RecyclingHelper.replaceShaped("gregtech:vacuum_freezer", metaitem('vacuum_freeze
     [metaitem('cableGtSingleGold'), circuits[3], metaitem('cableGtSingleGold')]
 ])
 
-RecyclingHelper.addShaped("gregtech:cooling_unit", metaitem('cooling_unit'), [
-    [metaitem('rotorStainlessSteel'), metaitem('rotorStainlessSteel'), metaitem('rotorStainlessSteel')],
+RecyclingHelper.addShaped("gregtech:natural_draft_cooling_tower", metaitem('natural_draft_cooling_tower'), [
+    [metaitem('pipeHugeFluidStainlessSteel'), metaitem('pipeHugeFluidStainlessSteel'), metaitem('pipeHugeFluidStainlessSteel')],
     [motors[3], metaitem('hull.hv'), motors[3]],
     [pumps[3], circuits[3], pumps[3]]
 ])

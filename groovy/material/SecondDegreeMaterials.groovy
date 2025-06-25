@@ -54,11 +54,7 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        CalciumChlorideSolution = new Material.Builder(13005, SuSyUtility.susyId('calcium_chloride_solution'))
-                .liquid()
-                .components(CalciumChloride * 1, Water * 1)
-                .colorAverage()
-                .build();
+        // FREE ID: 13005
 
         SodaAshSolution = new Material.Builder(13006, SuSyUtility.susyId('soda_ash_solution'))
                 .liquid()
