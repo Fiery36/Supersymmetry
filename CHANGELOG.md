@@ -7,7 +7,8 @@
 - StellarCore 1.5.21 -> 1.5.22
 - Universal Tweaks 1.12.2-1.15.1 -> 1.12.2-1.15.2
 ### Mod Additions
--  ModernMarkings -> 0.4.1
+- ModernMarkings -> 0.4.1
+- No Mob Friendly Fire -> 1.0
 ### Mod Removals
 - YUNG's Better Mineshafts (Forge)
 ## Changes
