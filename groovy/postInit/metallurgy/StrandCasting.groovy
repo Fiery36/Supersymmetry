@@ -72,9 +72,10 @@ RecyclingHelper.addShaped("susy:monel_500_pipe_casing", item('susy:susy_multiblo
 
 ASSEMBLER.recipeBuilder()
         .circuitMeta(6)
-        .inputs(metaitem('plateMonel500') * 6)
-        .inputs(ore('frameGtHsla980X'))
-        .outputs(item('susy:susy_multiblock_casing', 7) * 4)
+        .inputs(metaitem('plateCopper') * 4)
+        .inputs(ore('frameGtSteel'))
+        .inputs(ore('pipeNormalFluidCopper') * 4)
+        .outputs(item('susy:susy_multiblock_casing', 7) * 2)
         .EUt(16)
         .duration(50)
         .buildAndRegister()
