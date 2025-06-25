@@ -1,3 +1,40 @@
+# UPDATE 0.1.15 – TRINITY
+## Mod Changes
+### Mod Updates
+- SusyCore v0.1.61 -> v0.1.63
+- Supercritical 0.0.6 -> 0.1.1
+- ReFinedTools 7.75 -> 7.76
+- StellarCore 1.5.21 -> 1.5.22
+- Universal Tweaks 1.12.2-1.15.1 -> 1.12.2-1.15.2
+### Mod Additions
+-  ModernMarkings -> 0.4.1
+### Mod Removals
+- YUNG's Better Mineshafts (Forge)
+## Changes
+### New Features
+- Fission reactors are now available! (#1507 by @planetme)
+- SUSY has been translated into Deutsch! (#1454 by @PhoenixSk4)
+- Bertrandite ore is available for specialized beryllium processing! (#1484 by @Rick8484)
+- The quarry multiblock replaces the rock breaker! (#1514 by @h3tR)
+- [Susy-Core] Metallurgy for superalloys has been overhauled! Try out the hot isostatic press and the new continuous casting system! (#420 by @bruberu)
+- [Susy-Core] Advanced steam turbines (#454 by @h3tR)
+- [Susy-Core] There’s a new structure for you to explore… (#460 by @oliwier509)
+### Changed Features
+- Steel now requires limestone to smelt. (#420 by @bruberu)
+- New, more interesting motor recipes! (#1391 by @planetme)
+- Allow more MSFD distilled water overclocking (#1517 by @Rick8484)
+- [Susy-Core] JEI shows all rolling stock types (#452 by @MCTian-mi)
+- [Susy-Core] The cooling tower is a lot cooler (#461 by @planetme)
+### Fixes
+- The groovy cache is now automatically refreshed (#1496 by @bruberu)
+- Fix neodymium magnetization (#1490 by @WideMann)
+- Fix cobalt electrolysis (#1491 by @trainvoi)
+- Fix REE chain issues (#1492 by @Rick8484)
+- Make ethane flammable (#1495 by @Cone444)
+- Pyrotech recipe removal & GT small fluid cell craftable before LV (#1500 by @Brebexe)
+- Kevlar and Nomex polymerization fix (#1504 by @h3tR)
+- [Susy-Core] Fix in-world preview error for fluids in multiblocks. (#465 by @MCTian-mi)
+- And many more by our hardworking development team!
 # UPDATE 0.1.14.10.1
 ## Changes
 ### Fixes
