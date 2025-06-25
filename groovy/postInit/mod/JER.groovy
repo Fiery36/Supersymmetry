@@ -1,3 +1,4 @@
+// side: client
 // This registers loot tables for entities with Just Enough Resources.
 
 import net.minecraft.entity.EntityList
