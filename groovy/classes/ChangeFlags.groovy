@@ -1,5 +1,6 @@
 package classes
 
+import gregicality.multiblocks.api.unification.properties.GCYMPropertyKey;
 import gregtech.api.fluids.FluidBuilder
 import gregtech.api.fluids.attribute.FluidAttributes
 import gregtech.api.fluids.store.FluidStorageKey
@@ -12,6 +13,7 @@ import gregtech.api.unification.material.properties.OreProperty
 import gregtech.api.unification.material.properties.PropertyKey
 import supersymmetry.api.fluids.SusyFluidStorageKeys
 import supersymmetry.api.recipes.SuSyRecipeMaps
+import supersymmetry.api.unification.material.properties.DummyABSProperty;
 import supersymmetry.api.unification.material.properties.FiberProperty
 import supersymmetry.api.unification.material.properties.SuSyPropertyKey
 
@@ -124,6 +126,7 @@ class ChangeFlags {
         Cobalt.setProperty(PropertyKey.BLAST, new BlastProperty(1750, GasTier.LOW, 120, 200, -1, -1));
         Beryllium.setProperty(PropertyKey.BLAST, new BlastProperty(1560, GasTier.LOW, 120, 200, -1, -1));
         Nickel.setProperty(PropertyKey.BLAST, new BlastProperty(1728, GasTier.LOW, 120, 120, -1, -1));
+        Hafnium.setProperty(PropertyKey.BLAST, new BlastProperty(2227, GasTier.LOW, 120, 120, -1, -1));
 
         // Supercons, max amps multiplied by 4.
         ManganesePhosphide.getProperty(PropertyKey.WIRE).setAmperage(8);
@@ -141,16 +144,21 @@ class ChangeFlags {
         Polyethylene.getProperty(PropertyKey.FLUID_PIPE).setCanContain(FluidAttributes.ACID, true);
         Polytetrafluoroethylene.getProperty(PropertyKey.FLUID_PIPE).setCryoProof(true);
 
+        // Dummy properties for continuous casting
+        Copper.setProperty(GCYMPropertyKey.ALLOY_BLAST, new DummyABSProperty())
+        Steel.setProperty(GCYMPropertyKey.ALLOY_BLAST, new DummyABSProperty())
+        Aluminium.setProperty(GCYMPropertyKey.ALLOY_BLAST, new DummyABSProperty())
+
         // Flags
 
         Asbestos.addFlags("generate_foil");
         Magnesium.addFlags("generate_rod", "generate_plate");
         Tellurium.addFlags("generate_plate");
-        Steel.addFlags("generate_spring", "generate_spring_small");
+        Steel.addFlags("generate_spring", "generate_spring_small", "continuously_cast");
         Titanium.addFlags("generate_foil", "generate_spring", "generate_spring_small");
         Lead.addFlags("generate_round");
         Nickel.addFlags("generate_rod", "generate_foil");
-        Aluminium.addFlags("generate_round", "generate_rotor");
+        Aluminium.addFlags("generate_round", "generate_rotor", "continuously_cast");
         Tungsten.addFlags("generate_fine_wire");
         Molybdenum.addFlags("generate_fine_wire");
         Tantalum.addFlags("generate_rod");
@@ -171,6 +179,12 @@ class ChangeFlags {
         Tetrahedrite.addFlags("no_smelting");
         Gold.addFlags("generate_gear");
         IronMagnetic.addFlags("generate_ring");
+        SteelMagnetic.addFlags("generate_plate")
+        StainlessSteel.addFlags("generate_round");
+        Hafnium.addFlags("generate_long_rod", "generate_rod");
+        Copper.addFlags("continuously_cast");
+        VanadiumSteel.addFlags("generate_round")
+        Mica.addFlags(GENERATE_PLATE, NO_UNIFICATION)
 
         /*
         ManganesePhosphide.addFlags("no_smashing", "no_smelting")
@@ -196,6 +210,7 @@ class ChangeFlags {
         Holmium.setMaterialRGB(0xe3b16b);
         Erbium.setMaterialRGB(0xc07ede);
         Thulium.setMaterialRGB(0xe86666);
+        Mica.setMaterialRGB(0xe8e7ba);
 
         // Formulae
 
@@ -739,6 +754,9 @@ class ChangeFlags {
 
         oreProp = Carnotite.getProperty(PropertyKey.ORE);
         oreProp.setOreByProducts(LimestoneTailings, LimestoneTailings, LimestoneTailings, LimestoneTailings);
+
+        oreProp = Bertrandite.getProperty(PropertyKey.ORE);
+        oreProp.setOreByProducts(PegmatiteTailings, PegmatiteTailings, PegmatiteTailings, PegmatiteTailings);
 
         oreProp = Cerussite.getProperty(PropertyKey.ORE);
         oreProp.setDirectSmeltResult(Lead);

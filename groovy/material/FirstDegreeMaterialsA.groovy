@@ -23,8 +23,7 @@ import static gregtech.api.fluids.FluidConstants.*;
 import supercritical.api.unification.material.properties.FissionFuelProperty;
 import supercritical.api.unification.material.properties.SCPropertyKey;
 
-
-public class FirstDegreeMaterials {
+public class FirstDegreeMaterialsA {
     private static Material generatePurifiedElement(Material material, int id, boolean generateLiquid, boolean generateIngot) {
         def color = material.materialRGB
         def builder = new Material.Builder(id, SuSyUtility.susyId('high_purity_' + material.toString()))
@@ -45,11 +44,9 @@ public class FirstDegreeMaterials {
         return builder.build()
     }
 
-
-
     public static void register() {
 
-        log.infoMC('Registering First Degree Materials!');
+        log.infoMC('Registering First Degree Materials A!');
 
         // IDs 8000-8100: Pure Elements
 
@@ -432,7 +429,7 @@ public class FirstDegreeMaterials {
         BoronCarbide = new Material.Builder(8148, SuSyUtility.susyId('boron_carbide'))
                 .dust()
                 .components(Boron * 4, Carbon)
-                .flags(GENERATE_ROD)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_PLATE)
                 .colorAverage()
                 .build()
 
@@ -1031,7 +1028,7 @@ public class FirstDegreeMaterials {
                 .components(Sodium * 2, Sulfur * 2, Oxygen * 3)
                 .color(0x879e21)
                 .build()
-
+        
         AmmoniumCarbonate = new Material.Builder(8245, SuSyUtility.susyId('ammonium_carbonate'))
                 .dust()
                 .components(Nitrogen * 2, Hydrogen * 8, Oxygen * 3, Carbon)
@@ -1381,7 +1378,11 @@ public class FirstDegreeMaterials {
                 .color(0x38393b)
                 .build();
 
-        // FREE ID: 8297
+        CalciumChlorideSolution = new Material.Builder(8297, SuSyUtility.susyId('calcium_chloride_solution'))
+                .liquid()
+                .components(CalciumChloride * 1, Water * 1)
+                .colorAverage()
+                .build();
 
         PGMSolution = new Material.Builder(8298, SuSyUtility.susyId('pgm_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -1691,7 +1692,11 @@ public class FirstDegreeMaterials {
                 .color(0xb3c99)
                 .build();
 
-        // FREE ID: 8345
+        VeryDilutedCalciumChlorideSolution = new Material.Builder(8345, SuSyUtility.susyId('very_diluted_calcium_chloride_solution'))
+                .liquid()
+                .components(CalciumChloride, Water * 3)
+                .colorAverage()
+                .build();
 
         LeadFreeSolder = new Material.Builder(8346, SuSyUtility.susyId('lead_free_solder'))
                 .ingot().liquid(new FluidBuilder().temperature(411))
@@ -2073,7 +2078,7 @@ public class FirstDegreeMaterials {
         TreatedNeodymiumAlloy.getProperty(PropertyKey.INGOT).setMagneticMaterial(NeodymiumAlloyMagnetic);
 
         SamariumAlloy = new Material.Builder(8403, SuSyUtility.susyId('samarium_alloy'))
-                .dust().ingot()
+                .dust().ingot().liquid(new FluidBuilder().temperature(1600))
                 .color(0xb3d683).iconSet(METALLIC)
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
                 .components(Samarium, Cobalt * 5)
@@ -3262,6 +3267,8 @@ public class FirstDegreeMaterials {
                 .color(0x5a7b6a)
                 .build();
 
+        UraniumDioxide.setFormula("UO2", true)
+
         DepletedUraniumDioxide = new Material.Builder(8589, SuSyUtility.susyId("depleted_uranium_dioxide"))
                 .dust()
                 .iconSet(SAND)
@@ -3511,15 +3518,15 @@ public class FirstDegreeMaterials {
                 .ingot().liquid(new FluidBuilder().temperature(1675))
                 .iconSet(SHINY)
                 .components(Iron * 12, Nickel * 8, Chrome * 12, Manganese, Copper * 2, Niobium, Tantalum, Molybdenum * 2)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
                 .colorAverage()
+                .flags(GENERATE_ROD, GENERATE_PLATE, SUPERALLOY)
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
                 .build();
 
         Incoloy825 = new Material.Builder(8628, SuSyUtility.susyId("incoloy_825"))
                 .ingot().liquid(new FluidBuilder().temperature(1675))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_ROTOR, SUPERALLOY)
                 .components(Iron * 9, Nickel * 16, Chrome * 7, Manganese, Copper * 2, Aluminium, Titanium, Molybdenum * 2)
                 .colorAverage()
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
@@ -3528,7 +3535,7 @@ public class FirstDegreeMaterials {
         Incoloy908 = new Material.Builder(8629, SuSyUtility.susyId("incoloy_908"))
                 .ingot().liquid(new FluidBuilder().temperature(1685))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
+                .flags(GENERATE_PLATE, GENERATE_ROD, SUPERALLOY)
                 .components(Iron * 20, Nickel * 30, Cobalt, Chrome * 3, Aluminium, Titanium * 2, Tungsten, Niobium * 2)
                 .colorAverage()
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
@@ -3537,7 +3544,7 @@ public class FirstDegreeMaterials {
         ReneN5 = new Material.Builder(8630, SuSyUtility.susyId("rene_n_5"))
                 .ingot().liquid(new FluidBuilder().temperature(1780))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_ROTOR)
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_ROTOR, SUPERALLOY)
                 .components(Nickel * 22, Cobalt * 4, Chrome * 3, Aluminium * 3, Tungsten * 2, Hafnium, Rhenium * 2, Tantalum * 3)
                 .colorAverage()
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
@@ -3546,16 +3553,17 @@ public class FirstDegreeMaterials {
         Monel500 = new Material.Builder(8631, SuSyUtility.susyId("monel_500"))
                 .ingot().liquid(new FluidBuilder().temperature(1625))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
+                .flags(GENERATE_PLATE, GENERATE_ROD, GENERATE_FRAME)
                 .components(Nickel * 23, Manganese * 2, Copper * 10, Aluminium * 4, Titanium)
                 .colorAverage()
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .fluidPipeProperties(753, 2000, true, true, true, false)
                 .build();
 
         StelliteJ = new Material.Builder(8632, SuSyUtility.susyId("stellite_j"))
                 .ingot().liquid(new FluidBuilder().temperature(1575))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
+                .flags(GENERATE_PLATE, GENERATE_ROD, SUPERALLOY)
                 .components(Iron * 2, Nickel * 2, Cobalt * 15, Chrome * 13, Manganese, Tungsten * 7)
                 .colorAverage()
                 .blastTemp(3800, GasTier.HIGH, GTValues.VA[GTValues.EV])
@@ -3564,7 +3572,7 @@ public class FirstDegreeMaterials {
         Stellite6 = new Material.Builder(8633, SuSyUtility.susyId("stellite_6"))
                 .ingot().liquid(new FluidBuilder().temperature(1630))
                 .iconSet(SHINY)
-                .flags(GENERATE_PLATE, GENERATE_ROD)
+                .flags(GENERATE_PLATE, GENERATE_ROD, SUPERALLOY)
                 .components(Nickel, Cobalt * 24, Chrome * 10, Manganese, Tungsten * 3, Molybdenum)
                 .colorAverage()
                 .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
@@ -3596,7 +3604,15 @@ public class FirstDegreeMaterials {
                 .color(0xbb7694)
                 .build()
 
-        // FREE ID: 8637
+        Nimonic105 = new Material.Builder(8637, SuSyUtility.susyId('nimonic_105'))
+                .ingot().liquid(new FluidBuilder().temperature(1770))
+                .iconSet(SHINY)
+                .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_PLATE, GENERATE_RING, GENERATE_ROTOR, SUPERALLOY)
+                .components(Nickel * 19, Chrome * 6, Manganese * 1, Iron * 1, Aluminium * 2, Titanium * 1, Cobalt * 8)
+                .colorAverage()
+                .blastTemp(3000, GasTier.HIGH, GTValues.VA[GTValues.EV])
+                .build();
+        
         // 8638: Co3O4
 
         LithiumNitrate = new Material.Builder(8639, SuSyUtility.susyId('lithium_nitrate'))
@@ -3766,35 +3782,35 @@ public class FirstDegreeMaterials {
         
         DepletedAmmoniumDiuranate.setFormula("(NH4)2U2O7", true);
 
-        LEU235UraniumDioxide = new Material.Builder(8661, SuSyUtility.susyId('leu_235_uranium_dioxide'))
+        LEU235Dioxide = new Material.Builder(8661, SuSyUtility.susyId('leu_235_dioxide'))
                 .dust()
                 .iconSet(SAND)
                 .components(LEU235, Oxygen * 2)
                 .color(0x1d2618)
                 .build()
         
-        LEU235UraniumDioxide.setFormula("UO2", true);
-        LEU235UraniumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1500, 750, 55.0, 1.0, 2500.0, 0.0, 3.5, LEU235UraniumDioxide.getRegistryName()));
+        LEU235Dioxide.setFormula("UO2", true);
+        LEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1500, 1000, 55.0, 1.0, 2500.0, 0.0, 3.5, LEU235Dioxide.getRegistryName()));
 
-        HALEU235UraniumDioxide = new Material.Builder(8662, SuSyUtility.susyId('haleu_235_uranium_dioxide'))
+        HALEU235Dioxide = new Material.Builder(8662, SuSyUtility.susyId('haleu_235_dioxide'))
                 .dust()
                 .iconSet(SAND)
                 .components(HALEU235, Oxygen * 2)
                 .color(0x1c2617)
                 .build()
         
-        HALEU235UraniumDioxide.setFormula("UO2", true);
-        HALEU235UraniumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1600, 700, 50.0, 1.0, 2700.0, 0.0, 3, HALEU235UraniumDioxide.getRegistryName()));
+        HALEU235Dioxide.setFormula("UO2", true);
+        HALEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1600, 2000, 50.0, 1.0, 2700.0, 0.0, 3, HALEU235Dioxide.getRegistryName()));
 
-        HEU235UraniumDioxide = new Material.Builder(8663, SuSyUtility.susyId('heu_235_uranium_dioxide'))
+        HEU235Dioxide = new Material.Builder(8663, SuSyUtility.susyId('heu_235_dioxide'))
                 .dust()
                 .iconSet(SAND)
                 .components(HEU235, Oxygen * 2)
                 .color(0x273b1d)
                 .build()
         
-        HEU235UraniumDioxide.setFormula("UO2", true);
-        HEU235UraniumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1800, 600, 40.0, 1.0, 3000.0, 0.0, 2.5, HEU235UraniumDioxide.getRegistryName()));
+        HEU235Dioxide.setFormula("UO2", true);
+        HEU235Dioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1800, 4000, 40.0, 1.0, 3000.0, 0.0, 2.5, HEU235Dioxide.getRegistryName()));
 
         WeaponsGradeUraniumDioxide = new Material.Builder(8664, SuSyUtility.susyId('weapons_grade_uranium_dioxide'))
                 .dust()
@@ -4092,16 +4108,14 @@ public class FirstDegreeMaterials {
                 .color(0x00061e)
                 .build();
 
+        // ThoriumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(?, ?, ?, ?, ?, ?, ?, ThoriumDioxide.getRegistryName()));
+
         ThoriumChloride = new Material.Builder(8708, SuSyUtility.susyId('thorium_chloride'))
                 .dust()
                 .components(Thorium, Chlorine * 3)
                 .color(0x012916)
                 .build();
 
-        SodiumPhosphate = new Material.Builder(8709, SuSyUtility.susyId('sodium_phosphate'))
-                .dust()
-                .components(Sodium * 3, Phosphorus, Oxygen * 4)
-                .color(0xdae69e)
-                .build();
+        // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
     }
 }

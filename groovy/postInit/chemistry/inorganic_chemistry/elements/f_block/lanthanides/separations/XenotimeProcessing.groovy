@@ -41,19 +41,19 @@ Y: 60.8
 88.7% HREEs
 */
 
-MACERATOR.recipeBuilder()
+/*MACERATOR.recipeBuilder()
     .inputs(item('susy:resource_block', 9))
     .outputs(metaitem('dustXenotime') * 4)
     .duration(240)
     .EUt(7)
-    .buildAndRegister()
+    .buildAndRegister()*/
 
 // Xenotime beneficiation
 
 ELECTROMAGNETIC_SEPARATOR.recipeBuilder()
     .inputs(ore('dustXenotime'))
     .outputs(metaitem('dustConcentrateXenotime'))
-    .chancedOutput(metaitem('dustMonazite'), 2500, 0)
+    .chancedOutput(metaitem('dustMonazite'), 1500, 0)
     .chancedOutput(metaitem('dustIlmenite'), 1600, 0)
     .chancedOutput(metaitem('dustZircon'), 100, 0)
     .duration(40)
