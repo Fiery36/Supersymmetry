@@ -7,25 +7,10 @@
       "biomes": "biomesoplenty:shrubland"
     },
     {
-      "biomes": "biomesoplenty:wasteland"
-    },
-    {
-      "biomes": "biomesoplenty:dead_forest"
-    },
-    {
-      "biomes": "biomesoplenty:brushland"
-    },
-    {
       "biomes": "biomesoplenty:flower_field"
     },
     {
       "biomes": "biomesoplenty:steppe"
-    },
-    {
-      "biomes": "biomesoplenty:shield"
-    },
-    {
-      "biomes": "biomesoplenty:grassland"
     },
     {
       "biomes": "minecraft:savanna"
@@ -35,7 +20,13 @@
     },
     {
       "biomes": "biomesoplenty:prairie"
-    }
+    },
+    { 
+      "biomes": "biomesoplenty:outback"
+    },
+    { 
+      "biomes": "biomesoplenty:xeric_shrubland"
+    },
   ],
   "metadata": {
     "title": "MilitaryBaseBiomes",
