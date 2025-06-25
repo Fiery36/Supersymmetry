@@ -27,6 +27,9 @@
     { 
       "biomes": "biomesoplenty:xeric_shrubland"
     },
+    {
+      "biomes": "biomesoplenty:meadow"
+    }
   ],
   "metadata": {
     "title": "MilitaryBaseBiomes",
