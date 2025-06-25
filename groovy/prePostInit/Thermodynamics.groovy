@@ -878,7 +878,7 @@ for (scfluid in SupercriticalFluids) {
 
 recipemap('fluid_compressor').recipeBuilder()
         .fluidInputs(liquid('distilled_water') * 1536)
-        .fluidInputs(liquid('hp_steam') * 20)
+        .fluidInputs(fluid('hp_steam') * 20)
         .fluidOutputs(liquid('pressurized_water') * 1536)
         .duration(1)
         .EUt(480)
@@ -888,8 +888,17 @@ recipemap('heat_exchanger').recipeBuilder()
         .fluidInputs(liquid('hot_pressurized_water') * 1536)
         .fluidInputs(liquid('water') * 1640)
         .fluidOutputs(liquid('distilled_water') * 1536)
-        .fluidOutputs(liquid('hp_steam') * 1640)
+        .fluidOutputs(fluid('hp_steam') * 1640)
         .duration(1)
+        .buildAndRegister();
+
+// PWR boostrap
+
+recipemap('fluid_compressor').recipeBuilder()
+        .fluidInputs(fluid('dense_steam') * 1536)
+        .fluidOutputs(fluid('hp_steam') * 1536)
+        .duration(2000)
+        .EUt(480)
         .buildAndRegister();
 
 // BWR bootstrap
