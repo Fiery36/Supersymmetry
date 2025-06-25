@@ -13,6 +13,18 @@ CANNER = recipemap('canner')
 SPENT_FUEL_POOL = recipemap('spent_fuel_pool')
 CUTTING_MACHINE = recipemap('cutter')
 
+// Zircaloy
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustHighPurityZirconium') * 18)
+    .inputs(ore('dustTin') * 3)
+    .inputs(ore('dustIron') * 2)
+    .inputs(ore('dustChrome'))
+    .outputs(metaitem('dustZircaloy4') * 24)
+    .duration(240)
+    .EUt(Globals.voltAmps[4])
+    .buildAndRegister()
+
 // Gas Centrifuge
 
     // Gas Centrifuge Column
