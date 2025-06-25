@@ -289,6 +289,31 @@ def SupercriticalFluids = [
         PropaneSupercritical
 ]
 
+// Natural draft water cooling
+
+recipemap('natural_draft_cooling_tower').recipeBuilder()
+        .circuitMeta(1)
+        .fluidInputs(liquid('warm_water') * 1536)
+        .fluidOutputs(liquid('chilled_water') * 1536)
+        .duration(1)
+        .EUt(Globals.voltAmps[3])
+        .buildAndRegister();
+
+recipemap('natural_draft_cooling_tower').recipeBuilder()
+        .circuitMeta(2)
+        .fluidInputs(liquid('warm_water') * 1536)
+        .fluidOutputs(liquid('water') * 1536)
+        .duration(1)
+        .EUt(Globals.voltAmps[3])
+        .buildAndRegister();
+
+recipemap('natural_draft_cooling_tower').recipeBuilder()
+        .fluidInputs(liquid('water') * 1536)
+        .fluidOutputs(liquid('chilled_water') * 1536)
+        .duration(1)
+        .EUt(Globals.voltAmps[3])
+        .buildAndRegister();
+
 //Refrigerant recipes generation
 for (refrigerant in Refrigerants) {
     //Compression
@@ -314,16 +339,12 @@ for (refrigerant in Refrigerants) {
             .duration(refrigerant.duration_radiator)
             .buildAndRegister();
 
-    recipemap('natural_draft_cooling_tower').recipeBuilder()
+    //Water Secondary Loop
+    recipemap('heat_exchanger').recipeBuilder()
             .fluidInputs(liquid(refrigerant.hot_refrigerant) * refrigerant.amount_to_use)
+            .fluidInputs(liquid('chilled_water') * (int)(refrigerant.amount_to_use * 0.384))
             .fluidOutputs(liquid(refrigerant.comp_refrigerant) * refrigerant.amount_to_use)
-            .duration((int) (refrigerant.duration_radiator / 2))
-            .EUt(Globals.voltAmps[3])
-            .buildAndRegister();
-
-    recipemap('natural_draft_cooling_tower').recipeBuilder()
-            .fluidInputs(liquid(refrigerant.comp_refrigerant) * refrigerant.amount_to_use)
-            .fluidOutputs(liquid(refrigerant.cold_refrigerant) * refrigerant.amount_to_use)
+            .fluidOutputs(liquid('warm_water') * (int)(refrigerant.amount_to_use * 0.384))
             .duration((int) (refrigerant.duration_radiator / 2))
             .EUt(Globals.voltAmps[3])
             .buildAndRegister();
@@ -335,13 +356,6 @@ for (coolant in Coolants) {
             .fluidInputs(liquid(coolant.warm_coolant) * (coolant.amount_to_use / 10))
             .fluidOutputs(liquid(coolant.cold_coolant) * (coolant.amount_to_use / 10))
             .duration(coolant.duration_radiator)
-            .buildAndRegister();
-
-    recipemap('natural_draft_cooling_tower').recipeBuilder()
-            .fluidInputs(liquid(coolant.warm_coolant) * coolant.amount_to_use)
-            .fluidOutputs(liquid(coolant.cold_coolant) * coolant.amount_to_use)
-            .duration((int) (coolant.duration_radiator / 2))
-            .EUt(Globals.voltAmps[3])
             .buildAndRegister();
 }
 
@@ -822,15 +836,6 @@ for (WorkingFluid in WorkingFluids) {
                 .buildAndRegister()
     }
 
-    recipemap('natural_draft_cooling_tower').recipeBuilder()
-            .fluidInputs(liquid(WorkingFluid.leftover_fluid) * (WorkingFluid.amount_to_use * WorkingFluid.conversion_factor * 64))
-            .fluidInputs(liquid('water') * 1000)
-            .fluidOutputs(liquid(WorkingFluid.normal_fluid) * (WorkingFluid.amount_to_use * 64))
-            .fluidOutputs(liquid('water') * 750)
-            .duration(WorkingFluid.duration)
-            .EUt(8)
-            .buildAndRegister();
-
     recipemap('radiator').recipeBuilder()
             .fluidInputs(liquid(WorkingFluid.leftover_fluid) * (WorkingFluid.amount_to_use * WorkingFluid.conversion_factor * 2))
             .fluidOutputs(liquid(WorkingFluid.normal_fluid) * (WorkingFluid.amount_to_use * 2))
@@ -838,6 +843,28 @@ for (WorkingFluid in WorkingFluids) {
             .EUt(8)
             .buildAndRegister();
 }
+
+// Water WF cooling tower
+
+recipemap('natural_draft_cooling_tower').recipeBuilder()
+        .fluidInputs(liquid('exhaust_steam') * (6 * 160 * 64))
+        .fluidOutputs(liquid('water') * (6 * 64))
+        .duration(1)
+        .EUt(480)
+        .buildAndRegister();
+
+// Supercritical fluid compression
+
+for (scfluid in SupercriticalFluids) {
+        recipemap('fluid_compressor').recipeBuilder()
+            .fluidInputs(fluid(scfluid.getStartingGas()) * 1280)
+            .fluidOutputs(fluid(scfluid.getSupercriticalFluid()) * 20)
+            .EUt(scfluid.getPowerToCompress())
+            .duration(scfluid.getDurationToCompress())
+            .buildAndRegister();
+}
+
+// Misc processing
 
 recipemap('fluid_compressor').recipeBuilder()
         .fluidInputs(liquid('benzene') * 1280)
@@ -860,17 +887,6 @@ recipemap('heat_exchanger').recipeBuilder()
         .fluidOutputs(liquid('chilled_lava') * 10)
         .duration(10)
         .buildAndRegister();
-
-// Supercritical fluid compression
-
-for (scfluid in SupercriticalFluids) {
-        recipemap('fluid_compressor').recipeBuilder()
-            .fluidInputs(fluid(scfluid.getStartingGas()) * 1280)
-            .fluidOutputs(fluid(scfluid.getSupercriticalFluid()) * 20)
-            .EUt(scfluid.getPowerToCompress())
-            .duration(scfluid.getDurationToCompress())
-            .buildAndRegister();
-}
 
 // Nuclear coolant cycles
 
@@ -927,15 +943,14 @@ for (lubricant in Globals.lubricants) {
 
 recipemap('natural_draft_cooling_tower').recipeBuilder()
         .fluidInputs(liquid('hp_exhaust_steam') * 1536)
-        .fluidInputs(liquid('water') * 384)
-        .fluidOutputs(liquid('water') * 1536)
+        .fluidOutputs(liquid('water') * 1152)
         .duration(1) // prevent overclocking, should limit 1 cooling tower per steam turbine.
         .EUt(480)
         .buildAndRegister();
 
-recipemap('natural_draft_cooling_tower').recipeBuilder()
+recipemap('heat_exchanger').recipeBuilder()
         .fluidInputs(liquid('hp_wet_exhaust_steam') * 1536)
-        .fluidInputs(liquid('water') * 192)
+        .fluidInputs(liquid('chilled_water') * 192)
         .fluidOutputs(liquid('boiling_water') * 1536)
         .duration(1)
         .EUt(480)
