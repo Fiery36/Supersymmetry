@@ -2082,7 +2082,6 @@ public class FirstDegreeMaterialsA {
                 .color(0xb3d683).iconSet(METALLIC)
                 .flags(GENERATE_ROD, GENERATE_LONG_ROD, GENERATE_RING, GENERATE_PLATE, NO_UNIFICATION)
                 .components(Samarium, Cobalt * 5)
-                .blastTemp(1800, GasTier.MID)
                 .build();
 
         TreatedSamariumAlloy = new Material.Builder(8404, SuSyUtility.susyId('treated_samarium_alloy'))
