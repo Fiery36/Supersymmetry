@@ -7,10 +7,16 @@
       "biomes": "biomesoplenty:shrubland"
     },
     {
+      "biomes": "biomesoplenty:brushland"
+    },
+    {
       "biomes": "biomesoplenty:flower_field"
     },
     {
       "biomes": "biomesoplenty:steppe"
+    },
+    {
+      "biomes": "biomesoplenty:grassland"
     },
     {
       "biomes": "minecraft:savanna"
