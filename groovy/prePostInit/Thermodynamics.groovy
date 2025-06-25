@@ -47,6 +47,11 @@ WaterCoolant.setDurationRadiator(100);
 WaterCoolant.setAmountToUse(1000);
 WaterCoolant.setTimeFactor(10);
 
+def ChilledWaterCoolant = new ICoolant("chilled_water", "warm_water");
+ChilledWaterCoolant.setDurationRadiator(50);
+ChilledWaterCoolant.setAmountToUse(384);
+ChilledWaterCoolant.setTimeFactor(5);
+
 def SaltWaterCoolant = new ICoolant("salt_water", "warm_salt_water");
 SaltWaterCoolant.setDurationRadiator(100);
 SaltWaterCoolant.setAmountToUse(1000);
@@ -79,6 +84,7 @@ PolychlorinatedBiphenylCoolant.setTimeFactor(2);
 
 def Coolants = [
         WaterCoolant,
+        ChilledWaterCoolant,
         SaltWaterCoolant,
         LubricantCoolant,
         SodiumPotassiumCoolant,
@@ -419,34 +425,6 @@ for (cryogas in CryoGases) {
             .fluidOutputs(liquid(cryogas.high_pressure_gas) * (cryogas.amount_to_use / 10))
             .duration((int)(cryogas.duration_heat_exchanger * 5 / 2))
             .buildAndRegister();
-
-    recipemap('natural_draft_cooling_tower').recipeBuilder()
-            .fluidInputs(liquid(cryogas.hot_high_pressure_gas) * cryogas.amount_to_use)
-            .fluidOutputs(liquid(cryogas.high_pressure_gas) * cryogas.amount_to_use)
-            .duration(cryogas.duration_heat_exchanger)
-            .EUt(Globals.voltAmps[3])
-            .buildAndRegister();
-
-    /*if (!cryogas.needsAdvancedCooling) {
-    recipemap('natural_draft_cooling_tower').recipeBuilder()
-        .fluidInputs(liquid(cryogas.high_pressure_gas) * cryogas.amount_to_use)
-        .fluidOutputs(liquid(cryogas.cold_high_pressure_gas) * cryogas.amount_to_use)
-        .duration(cryogas.duration_heat_exchanger * 2)
-        .EUt(Globals.voltAmps[3])
-        .buildAndRegister();
-
-    } else {
-        for (CryoGas in ICryoGas.cryo_gases) {
-            recipemap('heat_exchanger').recipeBuilder()
-                    .fluidInputs(liquid(cryogas.high_pressure_gas) * (int) (cryogas.amount_to_use / 4))
-                    .fluidInputs(liquid(CryoGas.liquid_gas) * 100)              
-                    .fluidOutputs(liquid(CryoGas.normal_gas) * 6400)
-                    .fluidOutputs(liquid(cryogas.cold_high_pressure_gas) * (int) (cryogas.amount_to_use / 4))
-                    .duration(cryogas.duration_heat_exchanger * 4)
-                    .buildAndRegister();
-        }
-    }
-    */
 }
 
 //Water cooling
