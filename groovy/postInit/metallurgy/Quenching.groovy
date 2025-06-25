@@ -202,6 +202,8 @@ def fluidMap = [
     'molten.hsla_980_x':'Hsla980X',
     'molten.food_grade_stainless_steel':'FoodGradeStainlessSteel',
     'molten.steel':'Steel'
+    'molten.zircaloy_4':'Zircaloy4',
+    'molten.reactor_steel':'ReactorSteel',
 ]
 
 for (entry in fluidMap) {
