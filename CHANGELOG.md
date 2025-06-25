@@ -16,7 +16,8 @@
 - SUSY has been translated into Deutsch! (#1454 by @PhoenixSk4)
 - Bertrandite ore is available for specialized beryllium processing! (#1484 by @Rick8484)
 - The quarry multiblock replaces the rock breaker! (#1514 by @h3tR)
-- [Susy-Core] Metallurgy for superalloys has been overhauled! Try out the hot isostatic press and the new continuous casting system! (#420 by @bruberu)
+- QuestWizard’s texture pack is installed and may be enabled!
+- [Susy-Core] Metallurgy has been overhauled! Try out the hot isostatic press and the new continuous casting system! (#420 by @bruberu)
 - [Susy-Core] Advanced steam turbines (#454 by @h3tR)
 - [Susy-Core] There’s a new structure for you to explore… (#460 by @oliwier509)
 ### Changed Features
