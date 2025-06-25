@@ -717,7 +717,7 @@ public class FirstDegreeMaterialsA {
                 .flags(DISABLE_DECOMPOSITION)
                 .colorAverage()
                 .build()
-                .setFormula("(CuSO4)2(HNO3)2(H2O)4", true)
+                .setFormula("(Cu(NO3)2)2(H2SO4)(H2O)6", true)
 
         WustiteCatalyst = new Material.Builder(8195, SuSyUtility.susyId('wustite_catalyst'))
                 .dust()
