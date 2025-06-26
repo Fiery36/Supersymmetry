@@ -2331,6 +2331,7 @@ class SuSyMaterials {
         public static Material HighPressureExhaustSteam;
         public static Material HighPressureWetExhaustSteam;
         //public static Material HighPressureHeavyWater;
+        public static Material ChilledWater;
         
 
         public static void changeFormulas() {
