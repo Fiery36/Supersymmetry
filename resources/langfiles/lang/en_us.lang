@@ -1058,6 +1058,8 @@ susy.material.liquid_argon_product=Liquid Argon Product
 susy.material.liquid_oxygen_product=Liquid Oxygen Product
 susy.material.liquid_nitrogen_product=Liquid Nitrogen Product
 
+susy.material.chilled_water=Chilled Water
+
 # Ores
 
 susy.material.petalite=Petalite
