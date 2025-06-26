@@ -878,6 +878,14 @@ recipemap('fluid_compressor').recipeBuilder()
         .EUt(480)
         .buildAndRegister();
 
+recipemap('fluid_compressor').recipeBuilder()
+        .fluidInputs(liquid('distilled_water') * 1536)
+        .fluidInputs(fluid('hp_steam') * 20)
+        .fluidOutputs(liquid('pressurized_water') * 1536)
+        .duration(1)
+        .EUt(480)
+        .buildAndRegister();
+
 recipemap('heat_exchanger').recipeBuilder()
         .fluidInputs(liquid('hot_pressurized_water') * 1536)
         .fluidInputs(liquid('water') * 1640)
