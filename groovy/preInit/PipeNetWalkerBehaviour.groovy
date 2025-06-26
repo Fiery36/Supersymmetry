@@ -1,6 +1,5 @@
 package preInit
 
-import net.minecraft.client.settings.GameSettings
 import net.minecraft.util.math.MathHelper
 import preInit.PipeOperationWalker
 import gregtech.api.cover.CoverRayTracer
@@ -9,8 +8,6 @@ import gregtech.api.items.toolitem.ToolHelper
 import gregtech.api.items.toolitem.behavior.IToolBehavior
 import gregtech.api.pipenet.tile.IPipeTile
 import gregtech.api.util.input.KeyBind
-import net.minecraft.client.resources.I18n
-import net.minecraft.client.util.ITooltipFlag
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.item.ItemStack
 import net.minecraft.util.EnumActionResult
@@ -66,12 +63,13 @@ class PipeNetWalkerBehaviour implements IToolBehavior {
         return EnumActionResult.PASS
     }
 
+/* TODO: load these classes on the server too somehow
     @Override
     void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
         tooltip.add(I18n.format("item.susy.tool.behavior.pipenet_connector",
                 GameSettings.getKeyDisplayString(KeyBind.TOOL_AOE_CHANGE.toMinecraft().keyCode)))
     }
-
+*/
     static void onActionDone(ItemStack stack, EntityPlayer player, World world, EnumHand hand, int walked) {
         def tool = stack.item as IGTTool
         ToolHelper.damageItem(stack, player, walked)
