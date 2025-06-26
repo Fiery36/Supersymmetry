@@ -89,7 +89,8 @@ def ingotMap = [
     'FoodGradeStainlessSteel':2600,
     'PlatinumRhodium':2113,
     'Zircaloy4':2200,
-    'ReactorSteel':1800
+    'ReactorSteel':1800,
+    'Alnico':1800
 ]
 
 def electrodeMap = [
@@ -201,7 +202,7 @@ def fluidMap = [
     'molten.monel_500':'Monel500',
     'molten.hsla_980_x':'Hsla980X',
     'molten.food_grade_stainless_steel':'FoodGradeStainlessSteel',
-    'molten.steel':'Steel'
+    'molten.steel':'Steel',
     'molten.zircaloy_4':'Zircaloy4',
     'molten.reactor_steel':'ReactorSteel',
     'molten.alnico':'Alnico'
