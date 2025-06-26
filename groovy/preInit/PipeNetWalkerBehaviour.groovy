@@ -1,5 +1,6 @@
 package preInit
 
+import net.minecraft.client.settings.GameSettings
 import net.minecraft.util.math.MathHelper
 import preInit.PipeOperationWalker
 import gregtech.api.cover.CoverRayTracer
@@ -57,7 +58,7 @@ class PipeNetWalkerBehaviour implements IToolBehavior {
 
                 int walkedBlocks = PipeOperationWalker.collectPipeNet(world, pos, pipe, gridSide, option, maxWalks)
 
-                onActionDone(toolStack, player, world, hand, MathHelper.roundUp(MathHelper.sqrt(walkedBlocks)))
+                onActionDone(toolStack, player, world, hand, MathHelper.ceil(MathHelper.sqrt(walkedBlocks)))
 
                 return EnumActionResult.SUCCESS
             }
@@ -67,7 +68,8 @@ class PipeNetWalkerBehaviour implements IToolBehavior {
 
     @Override
     void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
-        tooltip.add(I18n.format("item.susy.tool.behavior.pipenet_connector"));
+        tooltip.add(I18n.format("item.susy.tool.behavior.pipenet_connector",
+                GameSettings.getKeyDisplayString(KeyBind.TOOL_AOE_CHANGE.toMinecraft().keyCode)))
     }
 
     static void onActionDone(ItemStack stack, EntityPlayer player, World world, EnumHand hand, int walked) {
