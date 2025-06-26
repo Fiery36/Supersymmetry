@@ -145,7 +145,6 @@ class ChangeFlags {
         Polytetrafluoroethylene.getProperty(PropertyKey.FLUID_PIPE).setCryoProof(true);
 
         // Dummy properties for continuous casting
-        Copper.setProperty(GCYMPropertyKey.ALLOY_BLAST, new DummyABSProperty())
         Steel.setProperty(GCYMPropertyKey.ALLOY_BLAST, new DummyABSProperty())
         Aluminium.setProperty(GCYMPropertyKey.ALLOY_BLAST, new DummyABSProperty())
 
