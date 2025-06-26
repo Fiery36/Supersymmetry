@@ -56,12 +56,17 @@ class PipeNetWalkerBehaviour implements IToolBehavior {
 
                 int walkedBlocks = PipeOperationWalker.collectPipeNet(world, pos, pipe, gridSide, option, maxWalks)
 
-                onActionDone(toolStack, player, world, hand, walkedBlocks)
+                onActionDone(toolStack, player, world, hand, Math.sqrt(walkedBlocks))
 
                 return EnumActionResult.SUCCESS
             }
         }
         return EnumActionResult.PASS
+    }
+
+    @Override
+    void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
+        tooltip.add(I18n.format("item.susy.tool.behavior.pipenet_connector"));
     }
 
     static void onActionDone(ItemStack stack, EntityPlayer player, World world, EnumHand hand, int walked) {
