@@ -1,3 +1,17 @@
+# UPDATE 0.1.15.0.1
+## Mod Changes
+### Mod Updates
+* SusyCore v0.1.64 -> v0.1.65
+* Supercritical 0.1.1 -> 0.1.2
+* GroovyScript 1.2.4 -> 1.2.5
+### Mod Additions
+* VisualClaiming -> 0.0.2
+## Changes
+### New Features
+- Hold V while shift-r-clicking with a wrench or right-clicking with a wirecutter to instantly direct flow/connect wires! (#1434 by @MCTian-mi)
+### Fixes
+- The questbook is more accurate and up-to-date! (#1494 by @The-ExZombie)
+- Issues with the last update have been resolved. (#1522 by @planetme) (#1524 by @oliwier509) (#1527 by @trainvoi) (#1526 by @h3tR)
 # UPDATE 0.1.15 – TRINITY
 ## Mod Changes
 ### Mod Updates
