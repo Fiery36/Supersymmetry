@@ -1,5 +1,6 @@
 package preInit
 
+import net.minecraft.util.math.MathHelper
 import preInit.PipeOperationWalker
 import gregtech.api.cover.CoverRayTracer
 import gregtech.api.items.toolitem.IGTTool
@@ -56,7 +57,7 @@ class PipeNetWalkerBehaviour implements IToolBehavior {
 
                 int walkedBlocks = PipeOperationWalker.collectPipeNet(world, pos, pipe, gridSide, option, maxWalks)
 
-                onActionDone(toolStack, player, world, hand, Math.sqrt(walkedBlocks))
+                onActionDone(toolStack, player, world, hand, MathHelper.roundUp(MathHelper.sqrt(walkedBlocks)))
 
                 return EnumActionResult.SUCCESS
             }
