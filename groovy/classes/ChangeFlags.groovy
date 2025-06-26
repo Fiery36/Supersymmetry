@@ -227,6 +227,7 @@ class ChangeFlags {
         Pitchblende.setFormula("(?)UO2", true);
         Bastnasite.setFormula("(REE)CO3F", true);
         Monazite.setFormula("(REE,Th)PO4", true);
+        Gypsum.setFormula("(CaSO4)(H2O)2", true);
 
         // Ore Processing
         
