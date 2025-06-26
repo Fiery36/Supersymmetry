@@ -2982,6 +2982,9 @@ gregtech.block_group_members.extractable_logs_2.name=Acacia and Dark Oak
 
 gregtech.block_group_members.latex_logs.name=Rubber Log
 
+# ToolBehaviors
+item.susy.tool.behavior.pipenet_connector=§6Pipeliner: §fPress [%s] to operate adjacent pipes simultaneously
+
 # Main Menu
 susy.menu.options=Options
 susy.menu.discord=Discord Server
