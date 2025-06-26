@@ -1,4 +1,3 @@
-// no_reload
 package postInit.gameplay
 
 import preInit.PipeNetWalkerBehaviour
