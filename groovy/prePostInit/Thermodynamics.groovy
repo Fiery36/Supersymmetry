@@ -878,10 +878,9 @@ recipemap('fluid_compressor').recipeBuilder()
         .EUt(480)
         .buildAndRegister();
 
-recipemap('fluid_compressor').recipeBuilder()
-        .fluidInputs(liquid('distilled_water') * 1536)
-        .fluidInputs(fluid('hp_steam') * 20)
-        .fluidOutputs(liquid('pressurized_water') * 1536)
+recipemap('fluid_heater').recipeBuilder()
+        .fluidInputs(liquid('heavy_water') * 1536)
+        .fluidOutputs(liquid('pressurized_heavy_water') * 1536)
         .duration(1)
         .EUt(480)
         .buildAndRegister();
@@ -891,6 +890,14 @@ recipemap('heat_exchanger').recipeBuilder()
         .fluidInputs(liquid('water') * 1640)
         .fluidOutputs(liquid('distilled_water') * 1536)
         .fluidOutputs(fluid('hp_steam') * 1640)
+        .duration(1)
+        .buildAndRegister();
+
+recipemap('heat_exchanger').recipeBuilder()
+        .fluidInputs(liquid('hot_pressurized_heavy_water') * 1536)
+        .fluidInputs(liquid('water') * 1490)
+        .fluidOutputs(liquid('tritiated_heavy_water') * 1536)
+        .fluidOutputs(fluid('hp_steam') * 1490)
         .duration(1)
         .buildAndRegister();
 

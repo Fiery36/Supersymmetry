@@ -1509,6 +1509,7 @@ class SuSyMaterials {
         public static Material PurifiedBerylliumHydroxide;
         public static Material PurifiedBerylliumOxide;
         public static Material PurifiedBerylliumChloride;
+        public static Material DeuteriumTritiumMixture;
 
         // HP Materials
 
@@ -2330,7 +2331,10 @@ class SuSyMaterials {
         public static Material BoilingWater;
         public static Material HighPressureExhaustSteam;
         public static Material HighPressureWetExhaustSteam;
-        //public static Material HighPressureHeavyWater;
+        public static Material PressurizedHeavyWater;
+        public static Material HotPressurizedHeavyWater;
+        public static Material TritiatedHeavyWater;
+        public static Material TritiatedSteam;
         public static Material ChilledWater;
         
 

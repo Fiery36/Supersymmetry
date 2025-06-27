@@ -1,0 +1,30 @@
+import globals.Globals
+
+PHASE_SEPARATOR = recipemap('phase_separator')
+FIXED_BED_REACTOR = recipemap('fixed_bed_reactor')
+SINGLE_COLUMN_CRYOGENIC_DISTILLATION_PLANT = recipemap('single_column_cryogenic_distillation_plant')
+
+PHASE_SEPARATOR.recipeBuilder()
+    .fluidInputs(fluid('tritiated_heavy_water') * 7680)
+    .chancedFluidOutputs(fluid('tritiated_steam'), 1, 0)
+    .fluidOutputs(fluid('pressurized_heavy_water') * 7679)
+    .duration(10)
+    .buildAndRegister()
+
+FIXED_BED_REACTOR.recipeBuilder()
+    .notConsumable(metaitem('catalystBedSupportedPlatinum'))
+    .fluidInputs(fluid('hydrogen') * 2)
+    .fluidInputs(fluid('tritiated_steam'))
+    .fluidOutputs(fluid('deutrium_tritium_mixture') * 2)
+    .fluidOutputs(fluid('dense_steam'))
+    .EUt(480)
+    .duration(100)
+    .buildAndRegister()
+
+SINGLE_COLUMN_CRYOGENIC_DISTILLATION_PLANT.recipeBuilder()
+    .fluidInputs(fluid('deutrium_tritium_mixture') * 2)
+    .fluidOutputs(fluid('tritium'))
+    .fluidOutputs(fluid('deuterium'))
+    .EUt(480)
+    .duration(100)
+    .buildAndRegister()
