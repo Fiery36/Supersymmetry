@@ -126,5 +126,42 @@ public class FirstDegreeMaterialsB {
                 .arcSmeltInto(Alnico)
                 .macerateInto(Alnico)
                 .build()
+
+        MoltenUranylNitrate = new Material.Builder(8722, SuSyUtility.susyId('molten_uranyl_nitrate'))
+                .liquid()
+                .components(NaturalUranium, Oxygen * 2, Nitrogen * 2, Oxygen * 6)
+                .colorAverage()
+                .build()
+                .setFormula("UO2(NO3)2", true)
+
+        UraniumTrioxide = new Material.Builder(8723, SuSyUtility.susyId('uranium_trioxide'))
+                .dust()
+                .liquid()
+                .components(NaturalUranium, Oxygen * 3)
+                .colorAverage()
+                .build()
+                .setFormula("UO3", true)
+
+        PlutoniumOxalate = new Material.Builder(8724, SuSyUtility.susyId('plutonium_oxalate'))
+                .dust()
+                .components(Plutonium239, Carbon * 4, Oxygen * 8)
+                .colorAverage()
+                .build()
+                .setFormula("Pu(C2O4)2", true)
+
+        PlutoniumDioxide = new Material.Builder(8725, SuSyUtility.susyId('plutonium_dioxide'))
+                .dust()
+                .components(Plutonium239, Oxygen * 2)
+                .colorAverage()
+                .build()
+                .setFormula("PuO2", true)
+
+        HydroxylammoniumNitrate = new Material.Builder(8726, SuSyUtility.susyId('hydroxylammonium_nitrate'))
+                .liquid()
+                .components(Hydroxylamine, NitricAcid)
+                .colorAverage()
+                .build();
+                
+        HydroxylammoniumNitrate.setFormula("(NH3OH)(NO3)", true)
     }
 }
