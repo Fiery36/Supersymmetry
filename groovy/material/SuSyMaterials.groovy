@@ -1526,7 +1526,6 @@ class SuSyMaterials {
         public static Material PlutoniumDioxide;
         public static Material HydroxylammoniumNitrate;
 
-
         // HP Materials
 
         public static Material HighPurityLithium;
