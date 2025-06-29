@@ -1502,6 +1502,7 @@ class SuSyMaterials {
         public static Material PPOSolution;
         public static Material PPOExtractionWaste;
         public static Material PolyphenyleneOxide;
+        public static Material PolyetherImide;
 
         // First Degree Materials B
 
@@ -1831,7 +1832,7 @@ class SuSyMaterials {
         public static Material Xylenol;
         public static Material Creosol;
         public static Material Anthracene;
-        public static Material PolyvinylideneFluorine;
+        public static Material PolyvinylideneFluoride;
         public static Material Methylenedianiline;
         public static Material MethyleneDiphenylDiisocyanate;
         public static Material Triethylenediamine;
@@ -2182,6 +2183,11 @@ class SuSyMaterials {
         public static Material PeiPolymerisationSolution;
         public static Material PolyetherImide;
         public static Material Pyrazine;
+        public static Material OneOneOneTrichloroethane;
+        public static Material OneChloroTwoTwoDifluoroethane;
+        public static Material VinylideneFluoride;
+        public static Material PVDFPreparationMixture;
+        public static Material PVDFPolymerisationMixture;
 
         // Third Degree Materials
 
@@ -2291,6 +2297,7 @@ class SuSyMaterials {
         public static Material TributylPhosphateExtractionMixture;
         public static Material Aliquat336ExtractionMixture;
         public static Material PolyvinylAlcoholBinder;
+        public static Material PVDFSurfactantMixture;
 
         // Thermodynamics Materials
 

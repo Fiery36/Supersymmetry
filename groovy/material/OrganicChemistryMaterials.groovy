@@ -82,7 +82,7 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
 
-        PolyvinylideneFluorine = new Material.Builder(15010, SuSyUtility.susyId('polyvinylidene_fluoride'))
+        PolyvinylideneFluoride = new Material.Builder(15010, SuSyUtility.susyId('polyvinylidene_fluoride'))
                 .polymer(1)
                 .liquid(new FluidBuilder().temperature(468))
                 .color(0xfde3ff)
@@ -2850,5 +2850,35 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
         PolyetherImide.setFormula('(C37H24O6N2)n', true)
+
+        OneOneOneTrichloroethane = new Material.Builder(15453, SuSyUtility.susyId('one_one_one_trichloroethane'))
+                .gas()
+                .components(Carbon * 2, Hydrogen * 3, Chlorine * 3)
+                .colorAverage()
+                .build();
+
+        OneChloroTwoTwoDifluoroethane = new Material.Builder(15454, SuSyUtility.susyId('one_chloro_two_two_difluoroethane'))
+                .gas()
+                .components(Carbon * 2, Hydrogen * 3, Chlorine, Fluorine * 2)
+                .colorAverage()
+                .build();
+
+        VinylideneFluoride = new Material.Builder(15455, SuSyUtility.susyId('vinylidene_fluoride'))
+                .gas()
+                .components(Carbon * 2, Hydrogen * 2, Fluorine * 2)
+                .colorAverage()
+                .build();
+
+        PVDFPreparationMixture = new Material.Builder(15456, SuSyUtility.susyId('pvdf_preparation_mixture'))
+                .liquid()
+                .components(Carbon * 2, Hydrogen * 2, Fluorine * 2)
+                .colorAverage()
+                .build();
+
+        PVDFPolymerisationMixture = new Material.Builder(15457, SuSyUtility.susyId('pvdf_polymerisation_mixture'))
+                .liquid()
+                .components(Carbon * 2, Hydrogen * 2, Fluorine * 2)
+                .colorAverage()
+                .build();
     }
 }

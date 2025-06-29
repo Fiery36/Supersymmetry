@@ -663,5 +663,11 @@ public class ThirdDegreeMaterials {
                 .components(PolyvinylAlcohol, Water)
                 .colorAverage()
                 .build();
+
+        PVDFSurfactantMixture = new Material.Builder(24106, SuSyUtility.susyId('pvdf_surfactant_mixture'))
+                .liquid()
+                .components(PerfluorooctanoicAcid, LithiumHydroxide, Water)
+                .colorAverage()
+                .build();
     }
 }

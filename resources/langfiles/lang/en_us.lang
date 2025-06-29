@@ -213,7 +213,7 @@ susy.material.sodium_fluoride=Sodium Fluoride
 susy.material.gallium_phosphate=Gallium Phosphate
 susy.material.lithium_niobate=Lithium Niobate
 susy.material.lead_zirconate_titanate=Lead Zirconate Titanate
-susy.material.polyvinylidene_fluoride=Polyvinylidene Fluoride
+susy.material.polyvinylidene_fluoride=Polyvinylidene Fluoride (PVDF)
 
 susy.material.pmma=Polymethyl Methacrylate (PMMA)
 susy.material.zinc_chloride=Zinc Chloride
@@ -2482,6 +2482,12 @@ susy.material.silver_indium_cadmium=Silver-Indium-Cadmium Alloy
 susy.material.high_alumina_refractory=High Alumina Refractory
 susy.material.mullitized_kyanite=Mullitized Kyanite
 susy.material.nimonic_105=Nimonic 105
+susy.material.pvdf_surfactant_mixture=PVDF Surfactant Mixture
+susy.material.one_one_one_trichloroethane=1,1,1-Trichloroethane
+susy.material.one_chloro_two_two_difluoroethane=1-Chloro-1,1-fluoroethane
+susy.material.vinylidene_fluoride=Vinylidene Fluoride
+susy.material.pvdf_preparation_mixture=PVDF Preparation Mixture
+susy.material.pvdf_polymerisation_mixture=PVDF Polymerisation Mixture
 
 # Isotopes
 
