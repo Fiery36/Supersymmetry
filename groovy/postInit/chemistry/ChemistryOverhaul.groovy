@@ -4067,12 +4067,13 @@ MIXER.recipeBuilder()
     .buildAndRegister();
 
 DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('lithiuM_hydroxide_solution') * 1000)
+    .fluidInputs(fluid('lithium_hydroxide_solution') * 1000)
     .outputs(metaitem('dustLithiumHydroxide') * 3)
     .fluidOutputs(fluid('water') * 1000)
     .duration(60)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister();
+
 MIXER.recipeBuilder()
     .inputs(ore('dustPotassiumBisulfate') * 7)
     .fluidInputs(fluid('water') * 1000)

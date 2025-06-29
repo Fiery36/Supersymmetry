@@ -126,5 +126,11 @@ public class FirstDegreeMaterialsB {
                 .arcSmeltInto(Alnico)
                 .macerateInto(Alnico)
                 .build()
+
+        SodiumEthoxide = new Material.Builder(8722, SuSyUtility.susyId('sodium_ethoxide'))
+                .dust()
+                .components(Carbon * 2, Hydrogen * 5, Oxygen, Sodium)
+                .color(0xbd4333)
+                .build();
     }
 }

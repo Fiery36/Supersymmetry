@@ -959,5 +959,11 @@ public class SecondDegreeMaterials {
                 .components(Ethylenediamine, Water)
                 .color(0x2c6147)
                 .build();
+
+        LithiumHydroxideSolution = new Material.Builder(13160, SuSyUtility.susyId('lithium_hydroxide_solution'))
+                .liquid()
+                .components(LithiumHydroxide, Water)
+                .colorAverage()
+                .build();
     }
 }

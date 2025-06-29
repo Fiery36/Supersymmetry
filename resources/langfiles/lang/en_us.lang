@@ -2484,10 +2484,12 @@ susy.material.mullitized_kyanite=Mullitized Kyanite
 susy.material.nimonic_105=Nimonic 105
 susy.material.pvdf_surfactant_mixture=PVDF Surfactant Mixture
 susy.material.one_one_one_trichloroethane=1,1,1-Trichloroethane
-susy.material.one_chloro_two_two_difluoroethane=1-Chloro-1,1-fluoroethane
+susy.material.one_chloro_two_two_difluoroethane=1-Chloro-1,1-difluoroethane
 susy.material.vinylidene_fluoride=Vinylidene Fluoride
-susy.material.pvdf_preparation_mixture=PVDF Preparation Mixture
-susy.material.pvdf_polymerisation_mixture=PVDF Polymerisation Mixture
+susy.material.pvdf_preparation_mixture=Vinylidene Fluoride Emulsion
+susy.material.pvdf_polymerisation_mixture=PVDF Solution
+susy.material.lithium_hydroxide_solution=Lithium Hydroxide Solution
+susy.material.sodium_ethoxide=Sodium Ethoxide
 
 # Isotopes
 

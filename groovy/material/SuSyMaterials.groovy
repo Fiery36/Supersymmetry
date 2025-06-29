@@ -1517,6 +1517,7 @@ class SuSyMaterials {
         public static Material PurifiedBerylliumHydroxide;
         public static Material PurifiedBerylliumOxide;
         public static Material PurifiedBerylliumChloride;
+        public static Material SodiumEthoxide;
 
         // HP Materials
 
@@ -1732,6 +1733,7 @@ class SuSyMaterials {
         public static Material ThoriumChlorideSolution;
         public static Material HydroiodicAcid;
         public static Material PotassiumChlorateSolution;
+        public static Material LithiumHydroxideSolution;
 
         // Organic Chemistry Materials
 
@@ -2181,7 +2183,6 @@ class SuSyMaterials {
         public static Material BisphenolADianhydride;
         public static Material PeiPreparationMixture;
         public static Material PeiPolymerisationSolution;
-        public static Material PolyetherImide;
         public static Material Pyrazine;
         public static Material OneOneOneTrichloroethane;
         public static Material OneChloroTwoTwoDifluoroethane;

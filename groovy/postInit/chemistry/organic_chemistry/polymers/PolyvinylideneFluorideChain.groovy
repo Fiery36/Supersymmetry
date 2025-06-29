@@ -59,15 +59,16 @@ BR.recipeBuilder()
 // Polymerization
 MIXER.recipeBuilder()
     .fluidInputs(fluid('vinylidene_fluoride') * 1000)
-    .fluidInputs(fluid('pvdf_surfactant_mixture') * 1000)
+    .fluidInputs(fluid('pvdf_surfactant_mixture') * 500)
     .fluidOutputs(fluid('pvdf_preparation_mixture') * 1000)
     .duration(160)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 POLYMERIZATION_TANK.recipeBuilder()
+    .inputs(ore('dustTinyPotassiumPersulfate'))
     .fluidInputs(fluid('pvdf_preparation_mixture') * 1000)
-    .fluidOutputs(fluid('pvdf_polymerization_mixture') * 1000)
+    .fluidOutputs(fluid('pvdf_polymerisation_mixture') * 1000)
     .duration(300)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister();
@@ -75,7 +76,7 @@ POLYMERIZATION_TANK.recipeBuilder()
 DRYER.recipeBuilder()
     .fluidInputs(fluid('pvdf_polymerisation_mixture') * 1000)
     .outputs(metaitem('dustPolyvinylideneFluoride'))
-    .fluidOutputs(fluid('pvdf_surfactant_mixture') * 1000)
+    .fluidOutputs(fluid('pvdf_surfactant_mixture') * 500)
     .duration(300)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister();
