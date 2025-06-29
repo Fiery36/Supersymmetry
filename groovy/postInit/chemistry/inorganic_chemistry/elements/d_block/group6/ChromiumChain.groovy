@@ -16,6 +16,7 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
 ROASTER = recipemap('roaster')
 CSTR = recipemap('continuous_stirred_tank_reactor')
 MIXER = recipemap('mixer')
+AUTOCLAVE = recipemap('autoclave')
 
 ADVANCED_ARC_FURNACE.recipeBuilder()
     .inputs(ore('dustChromite'))
@@ -51,12 +52,23 @@ BR.recipeBuilder()
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
 
+// H2SO4 acidification
 CSTR.recipeBuilder()
     .fluidInputs(fluid('sodium_chromate_solution') * 100)
     .fluidInputs(fluid('sulfuric_acid') * 50)
     .fluidOutputs(fluid('sodium_dichromate_solution') * 50)
     .fluidOutputs(fluid('diluted_sodium_sulfate_solution') * 100)
     .duration(5)
+    .EUt(Globals.voltAmps[2])
+    .buildAndRegister()
+
+// CO2 acidification
+AUTOCLAVE.recipeBuilder()
+    .fluidInputs(fluid('sodium_chromate_solution') * 2000)
+    .fluidInputs(fluid('carbon_dioxide') * 2000)
+    .outputs(metaitem('dustSodiumBicarbonate') * 12)
+    .fluidOutputs(fluid('sodium_dichromate_solution') * 1000)
+    .duration(100)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
 
