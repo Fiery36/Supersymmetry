@@ -64,11 +64,11 @@ CSTR.recipeBuilder()
 
 // CO2 acidification
 AUTOCLAVE.recipeBuilder()
-    .fluidInputs(fluid('sodium_chromate_solution') * 2000)
-    .fluidInputs(fluid('carbon_dioxide') * 2000)
-    .outputs(metaitem('dustSodiumBicarbonate') * 12)
-    .fluidOutputs(fluid('sodium_dichromate_solution') * 1000)
-    .duration(100)
+    .fluidInputs(fluid('sodium_chromate_solution') * 1000)
+    .fluidInputs(fluid('carbon_dioxide') * 1000)
+    .outputs(metaitem('dustSodiumBicarbonate') * 6)
+    .fluidOutputs(fluid('sodium_dichromate_solution') * 500)
+    .duration(50)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister()
 
