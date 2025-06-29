@@ -110,6 +110,7 @@ BR.recipeBuilder()
 
 ROASTER.recipeBuilder()
         .inputs(ore('dustSodiumSulfate') * 7)
+        .circuitMeta(1)
         .outputs(metaitem('dustSodiumOxide') * 3)
         .fluidOutputs(fluid('sulfur_trioxide') * 1000)
         .duration(200)
