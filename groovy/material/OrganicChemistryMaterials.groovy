@@ -2618,7 +2618,11 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
 
-        //FREE ID: 15415
+        Pyrazine = new Material.Builder(15415, SuSyUtility.susyId('pyrazine'))
+                .dust()
+                .components(Carbon * 4, Hydrogen * 4, Nitrogen * 2)
+                .color(0xfaf9f6)
+                .build();
 
         ImpureSodiumBorohydride = new Material.Builder(15416, SuSyUtility.susyId('impure_sodium_borohydride'))
                 .dust()

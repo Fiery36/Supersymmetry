@@ -190,6 +190,17 @@ susy.material.methyldichlorosilane=Methyldichlorosilane
 susy.material.methyltrichlorosilane=Methyltrichlorosilane
 susy.material.dimethyldichlorosilane=Dimethyldichlorosilane
 
+susy.material.impure_bertrandite_leach=Impure Bertrandite Leach
+susy.material.bertrandite_leach=Bertrandite Leach
+susy.material.ammonium_alum=Ammonium Alum
+susy.material.beryllium_extraction_mixture=Beryllium Extraction Mixture
+susy.material.beryllium_extract=Beryllium Extract
+susy.material.basic_beryllium_carbonate_slurry=Basic Beryllium Carbonate Slurry
+susy.material.basic_beryllium_carbonate_solution=Basic Beryllium Carbonate Solution
+susy.material.purified_beryllium_hydroxide=Purified Beryllium Hydroxide
+susy.material.purified_beryllium_oxide=Purified Beryllium Oxide
+susy.material.purified_beryllium_chloride=Purified Beryllium Chloride
+
 # Solids
 
 susy.material.pig_iron=Pig Iron
@@ -331,6 +342,7 @@ susy.material.calcium_metaphosphate=Calcium Metaphosphate
 susy.material.phosphorus=White Phosphorus
 susy.material.hydroxyapatite=Hydroxyapatite
 susy.material.calcium_metasilicate=Calcium Metasilicate
+susy.material.pyrazine=Pyrazine
 
 gregtech.material.chrome=Chromium
 
@@ -626,7 +638,14 @@ susy.material.sodium_perchlorate_solution=Sodium Perchlorate Solution
 susy.material.sodium_chlorate_solution=Sodium Chlorate Solution
 susy.material.diluted_sodium_chlorate_solution=Diluted Sodium Chlorate Solution
 susy.material.diluted_aniline=Diluted Aniline
-susy.material.hot_hp_steam=Hot High Pressure Steam
+susy.material.hp_steam=High Pressure Steam
+susy.material.lp_steam=Low Pressure Steam
+susy.material.pressurized_water=Pressurized Water
+susy.material.hot_pressurized_water=Hot Pressurized Water
+susy.material.boiling_water=Boiling Water
+susy.material.hp_wet_steam=High Pressure Wet Steam
+susy.material.hp_exhaust_steam=High Pressure Exhaust Steam
+susy.material.hp_wet_exhaust_steam=High Pressure Wet Exhaust Steam
 
 susy.material.sodium_thiosulfate_solution=Sodium Thiosulfate Solution
 susy.material.sodium_sulfite_solution=Sodium Sulfite Solution
@@ -771,7 +790,6 @@ susy.material.phosphorite_slurry=Phosphorite Slurry
 susy.material.phosphate_pulp=Phosphate Pulp
 susy.material.filtered_phosphate_pulp=Filtered Phosphate Pulp
 susy.material.phosphate_concentrate=Phosphate Concentrate
-susy.material.impure_ammonium_fluoroberyllate_solution=Impure Ammonium Fluoroberyllate Solution
 susy.material.silicon_tetrafluoride=Silicon Tetrafluoride
 susy.material.ammonium_fluoroberyllate_solution=Ammonium Fluoroberyllate Solution
 susy.material.sodium_fluoroberyllate_solution=Sodium Fluorosilicate Solution
@@ -1040,6 +1058,8 @@ susy.material.liquid_argon_product=Liquid Argon Product
 susy.material.liquid_oxygen_product=Liquid Oxygen Product
 susy.material.liquid_nitrogen_product=Liquid Nitrogen Product
 
+susy.material.chilled_water=Chilled Water
+
 # Ores
 
 susy.material.petalite=Petalite
@@ -1078,6 +1098,7 @@ susy.material.lignite_coke=Lignite Coke
 susy.material.anthracite=Anthracite
 susy.material.phosphorite=Phosphorite
 susy.material.sperrylite=Sperrylite
+susy.material.bertrandite=Bertrandite
 
 # Deposit ores for scanning
 
@@ -2105,6 +2126,9 @@ susy.material.stellite_j=Stellite J
 susy.material.stellite_6=Stellite 6
 susy.material.hsla_980_x=HSLA 980X
 susy.material.food_grade_stainless_steel=Food-Grade Stainless Steel
+susy.material.platinum_rhodium=Platinum-Rhodium
+susy.material.zircaloy_4=Zircaloy 4
+susy.material.inconel_625=Inconel 625
 susy.material.moist_argon=Moist Argon
 susy.material.argon_hydrogen_mixture=Argon Hydrogen Mixture
 susy.material.ammoniacal_argon_hydrogen_mixture=Ammoniacal Argon Hydrogen Mixture
@@ -2228,6 +2252,8 @@ susy.material.hot_nitrogen_oxide_mixture_rich_air=Hot Nitrogen Oxide Mixture-Ric
 susy.material.nitrogen_dioxide_rich_air=Nitrogen Dioxide-Rich Air
 susy.material.nitric_oxide_rich_air=Nitric Oxide-Rich Air
 susy.material.potassium_iodate=Potassium Iodate
+susy.material.alnico=Alnico
+susy.material.alnico_magnetic=Magnetic Alnico
 susy.material.uranium_tetrafluoride=Uranium Tetrafluoride
 susy.material.uranium_dioxide=Uranium Dioxide
 susy.material.potassium_chlorate=Potassium Chlorate
@@ -2424,6 +2450,9 @@ susy.material.two_ethyl_one_hexene=2-Ethyl-1-hexene
 susy.material.di_two_ethylhexylphosphine=Di(2-Ethylhexyl)phosphine
 susy.material.di_two_ethylhexylphosphinic_acid=Di(2-Ethylhexyl)phosphinic Acid
 susy.material.potassium_chlorate_solution=Potassium Chlorate Solution
+susy.material.hydraulic_fluid=Hydraulic Fluid
+susy.material.yttria_stabilized_zirconia=Yttria Stabilized Zirconia
+susy.material.polyvinyl_alcohol_binder=Polyvinyl Alcohol Binder
 susy.material.sodium_bisulfite_solution=Sodium Bisulfite Solution
 susy.material.caliche_leach=Caliche Leach
 susy.material.iodate_concentrate=Iodate Concentrate
@@ -2446,6 +2475,13 @@ susy.material.impure_bisphenol_a_dianhydride_solution=Impure Bisphenol A Dianhyd
 susy.material.pei_preparation_mixture=PEI Preparation Mixture
 susy.material.pei_polymerisation_solution=PEI Polymerisation Solution
 susy.material.polyether_imide=Polyether Imide (PEI)
+susy.material.very_diluted_calcium_chloride_solution=Very Diluted Calcium Chloride Solution
+susy.material.reactor_steel=Reactor Steel
+susy.material.inconel_718=Inconel 718
+susy.material.silver_indium_cadmium=Silver-Indium-Cadmium Alloy
+susy.material.high_alumina_refractory=High Alumina Refractory
+susy.material.mullitized_kyanite=Mullitized Kyanite
+susy.material.nimonic_105=Nimonic 105
 
 # Isotopes
 
@@ -2465,9 +2501,9 @@ susy.material.haleu_235_ammonium_diuranate=HALEU-235 Ammonium Diuranate
 susy.material.heu_235_ammonium_diuranate=HEU-235 Ammonium Diuranate
 susy.material.weapons_grade_ammonium_diuranate=Weapons Grade Ammonium Diuranate
 susy.material.depleted_ammonium_diuranate=Depleted Ammonium Diuranate
-susy.material.leu_235_uranium_dioxide=LEU-235 Uranium Dioxide
-susy.material.haleu_235_uranium_dioxide=HALEU-235 Uranium Dioxide
-susy.material.heu_235_uranium_dioxide=HEU-235 Uranium Dioxide
+susy.material.leu_235_dioxide=LEU-235 Dioxide
+susy.material.haleu_235_dioxide=HALEU-235 Dioxide
+susy.material.heu_235_dioxide=HEU-235 Dioxide
 susy.material.weapons_grade_uranium_dioxide=Weapons Grade Uranium Dioxide
 susy.material.treated_liquid_nitrogen=Treated Liquid Nitrogen
 susy.material.treated_liquid_oxygen=Treated Liquid Oxygen
@@ -2491,7 +2527,7 @@ recipemap.heat_exchanger.name=Heat Exchanger
 recipemap.radiator.name=Radiator
 recipemap.large_weapons_factory.name=Large Weapons Factory
 recipemap.ore_sorter.name=Ore Sorting
-recipemap.cooling_tower.name=Cooling Tower
+recipemap.natural_draft_cooling_tower.name=Natural Draft Cooling Tower
 recipemap.gas_turbine_new.name=Gas Turbine
 recipemap.quencher.name=Quencher
 recipemap.steam_turbine_new.name=Steam Turbine
@@ -2510,6 +2546,8 @@ recipemap.electrostatic_separator.name=Electrostatic Separation
 recipemap.single_column_cryogenic_distillation.name=Single Column Cryogenic Distillation
 recipemap.low_pressure_cryogenic_distillation.name=Low Pressure Cryogenic Distillation
 recipemap.high_pressure_cryogenic_distillation.name=High Pressure Cryogenic Distillation
+recipemap.high_pressure_advanced_steam_turbine=High Pressure Advanced Steam Turbine
+recipemap.low_pressure_advanced_steam_turbine=Low Pressure Advanced Steam Turbine
 
 # QMD Particles
 
@@ -2545,6 +2583,7 @@ metaitem.chunk.magnetite.name=Magnetite Chunk
 metaitem.hot_iron_rod.name=Hot Iron Rod
 metaitem.voltaic_pile.name=Voltaic Pile
 metaitem.electrolyte_paper.name=Electrolyte Paper
+metaitem.hot_steel_plate.name=Hot Steel Plate
 metaitem.sand.dust.name=Fine Pile of Sand
 metaitem.native_copper.name=Native Copper
 metaitem.mudbrick_mix.name=Mudbrick Mix
@@ -2899,6 +2938,13 @@ metaitem.turbojet.small.name=Small Turbojet Engine
 metaitem.wing_panel.fiber_reinforced_epoxy.name=Glass Fiber Reinforced Epoxy (GFEP) Wing Panel
 metaitem.wing.small.name=Lightweight Wing
 
+metaitem.commutator.name=Commutator
+metaitem.brush.name=Brush
+metaitem.brush.unfired.name=Unfired Brush
+
+metaitem.work_roll.unfinished.name=Unfinished Work Roll
+metaitem.nozzle.boron_nitride.name=Boron Nitride Nozzle
+
 # Vanilla MC
 tile.hellsand.name=Mineral-Rich Sand
 tile.magma.name=Magma-Infused Netherrack
@@ -2932,6 +2978,12 @@ tile.pyrotech.anvil_granite.name=Stone Anvil
 gui.pyrotech.jei.category.anvil.granite=Stone Anvil
 gregtech.universal.tooltip.terrain_resist=§eWill not explode from water, lava, fire or rain.
 gregtech.advancement.steam.14_magnetic_iron.desc=Craft a Magnetic Iron Rod
+gregtech.advancement.low_voltage.27_electric_blast_furnace.name=Electric Resistance Furnace
+gregtech.advancement.low_voltage.27_electric_blast_furnace.desc=Craft an Electric Resistance Furnace.
+gregtech.machine.electric_blast_furnace.name=Electric Resistance Furnace
+gregtech.multiblock.electric_blast_furnace.description=The Electric Resistance Furnace (ERF) is a multiblock structure used for smelting alloys, cooking metals and refining ores. It is required for obtaining high-tier alloys and metals, such as aluminium, stainless steel, titanium, and naquadah alloy.
+gregtech.advancement.medium_voltage.31_mv_energy_hatch.name=Upgrade Your ERF
+recipemap.electric_blast_furnace.name=Resistance Furnace
 
 # Material Renaming
 item.susy.material.ultra_high_molecular_weight_polyethylene.dustTiny=Tiny Pile of Ultra High Molecular Weight Polyethylene (UHMWPE) Pulp
@@ -2948,6 +3000,9 @@ gregtech.block_group_members.extractable_logs_2.name=Acacia and Dark Oak
 
 gregtech.block_group_members.latex_logs.name=Rubber Log
 
+# ToolBehaviors
+item.susy.tool.behavior.pipenet_connector=§6Pipeliner: §fPress [%s] to operate adjacent pipes simultaneously
+
 # Main Menu
 susy.menu.options=Options
 susy.menu.discord=Discord Server
@@ -2956,3 +3011,6 @@ susy.menu.openfolder=Open MC Folder
 susy.menu.refresh=Refresh Menu
 susy.menu.replayviewer=Replay Viewer
 susy.menu.quit.hover=You can never escape Greg.
+
+supersymmetry.subtitle.2=Vitals: stable. Pod fuel: 46%%.
+

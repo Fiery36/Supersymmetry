@@ -85,6 +85,7 @@ def orthomagmatic_tier_4 = [
 
 def metamorphic_tier_1 = [
     //T1
+    'gregtech:ore_graphite_0' : 5000,
     'gregtech:ore_arsenopyrite_0' : 7500,
     'gregtech:ore_cinnabar_0' : 2500,
     'gregtech:ore_cobaltite_0' : 1000,
@@ -97,7 +98,8 @@ def metamorphic_tier_1 = [
 ];
 
 def metamorphic_tier_2 = [
-        //T1
+    //T1
+    'gregtech:ore_graphite_0' : 5000,
     'gregtech:ore_arsenopyrite_0' : 7500,
     'gregtech:ore_cinnabar_0' : 2500,
     'gregtech:ore_cobaltite_0' : 1000,
@@ -114,6 +116,7 @@ def metamorphic_tier_2 = [
 
 def metamorphic_tier_3 = [
     //T1
+    'gregtech:ore_graphite_0' : 5000,
     'gregtech:ore_arsenopyrite_0' : 7500,
     'gregtech:ore_cinnabar_0' : 2500,
     'gregtech:ore_cobaltite_0' : 1000,
@@ -344,7 +347,8 @@ def hydrothermal_tier_4 = [
     //T3
     'gregtech:ore_witherite_0' : 2500,
     'gregtech:ore_bismuthinite_0' : 7500,
-    'gregtech:ore_pitchblende_0' : 1000
+    'gregtech:ore_pitchblende_0' : 1000,
+    'gregtech:ore_bertrandite_0' : 1000
     //'gregtech:ore_strontianite_0' : 10000 TODO: Fix #971
 ];
 
@@ -379,8 +383,7 @@ def alluvial_tier_4 = [
     'susy:resource_block:11' : 10000,
     //T4
     'minecraft:soul_sand' : 100,
-    'susy:resource_block:6' : 1000,
-    'susy:resource_block:9' : 500
+    'susy:resource_block:6' : 1000
 ];
 
 //FORMAT: BASE ROCK, WASHING FLUID, WASTE FLUID, ORE OUTPUT LISTS, STARTING VOLTAGE TIER
