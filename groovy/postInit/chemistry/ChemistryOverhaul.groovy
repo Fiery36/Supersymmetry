@@ -45,6 +45,8 @@ CRACKER = recipemap('cracker')
 FLUID_HEATER = recipemap('fluid_heater')
 PHASE_SEPARATOR = recipemap('phase_separator')
 CONDENSER = recipemap('condenser')
+CRYSTALLIZER = recipemap('crystallizer')
+SOLIDIFIER = recipemap('fluid_solidifier')
 
 ASSEMBLER.recipeBuilder()
     .inputs(ore('stickIron') * 4)
@@ -1346,6 +1348,7 @@ ROASTER.recipeBuilder()
 // TNT
 
 BR.recipeBuilder()
+    .circuitMeta(1)
     .fluidInputs(fluid('toluene') * 1000)
     .fluidInputs(fluid('nitration_mixture') * 6000)
     .fluidOutputs(fluid('tnt_slurry') * 3000)
@@ -2526,11 +2529,27 @@ BR.recipeBuilder()
 BR.recipeBuilder()
     .fluidInputs(fluid('phenol') * 1000)
     .fluidInputs(fluid('hydrogen_peroxide') * 1000)
-    .outputs(metaitem('dustPyrocatechol') * 14)
+    .outputs(metaitem('dustBenzenediol') * 14)
     .fluidOutputs(fluid('water') * 1000)
     .duration(300)
     .EUt(30)
     .buildAndRegister()
+
+CRYSTALLIZER.recipeBuilder()
+    .fluidInputs(fluid('benzenediol') * 144)
+    .outputs(metaitem('dustHydroquinone') * 7)
+    .fluidOutputs(fluid('pyrocatechol') * 72)
+    .duration(80)
+    .EUt(120)
+    .buildAndRegister();
+
+SOLIDIFIER.recipeBuilder()
+    .notConsumable(metaitem('shape.mold.ball'))
+    .fluidInputs(fluid('pyrocatechol') * 144)
+    .outputs(metaitem('dustPyrocatechol') * 14)
+    .duration(20)
+    .EUt(16)
+    .buildAndRegister();
 
 // Tetramethylammonium chloride
 LCR.recipeBuilder()
@@ -4102,3 +4121,22 @@ MIXER.recipeBuilder()
     .duration(100)
     .EUt(128)
     .buildAndRegister()
+
+// p-Nitrotoluene
+
+BR.recipeBuilder()
+    .circuitMeta(2)
+    .fluidInputs(fluid('toluene') * 1000)
+    .fluidInputs(fluid('nitration_mixture') * 6000)
+    .fluidOutputs(fluid('p_nitrotoluene_slurry') * 3000)
+    .duration(200)
+    .EUt(24)
+    .buildAndRegister();
+
+DISTILLERY.recipeBuilder()
+        .fluidInputs(fluid('p_nitrotoluene_slurry') * 1000)
+        .fluidOutputs(fluid('diluted_sulfuric_acid') * 1000)
+        .outputs(metaitem('dustPNitrotoluene') * 7)
+        .duration(300)
+        .EUt(30)
+        .buildAndRegister()

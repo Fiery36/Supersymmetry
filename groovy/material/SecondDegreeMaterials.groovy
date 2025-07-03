@@ -965,5 +965,11 @@ public class SecondDegreeMaterials {
                 .components(LithiumHydroxide, Water)
                 .colorAverage()
                 .build();
+
+        DilutedSodiumFluorideSolution = new Material.Builder(13161, SuSyUtility.susyId('diluted_sodium_fluoride_solution'))
+                .liquid()
+                .components(SodiumFluoride, Water * 2)
+                .colorAverage()
+                .build();
     }
 }

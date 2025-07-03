@@ -6,6 +6,7 @@ BCR = recipemap('bubble_column_reactor')
 MIXER = recipemap('mixer')
 POLYMERIZATION_TANK = recipemap('polymerization_tank')
 DRYER = recipemap('dryer')
+PYROLYSE_OVEN = recipemap('pyrolyse_oven')
 
 // Lithium Perfluorooctanoate Surfactant
 BR.recipeBuilder()
@@ -79,4 +80,38 @@ DRYER.recipeBuilder()
     .fluidOutputs(fluid('pvdf_surfactant_mixture') * 500)
     .duration(300)
     .EUt(Globals.voltAmps[3])
+    .buildAndRegister();
+
+// FKM production
+
+PYROLYSE_OVEN.recipeBuilder()
+    .fluidInputs(fluid('tetrafluoroethylene') * 1500)
+    .fluidOutputs(fluid('hexafluoropropylene') * 1000)
+    .duration(200)
+    .EUt(120)
+    .buildAndRegister();
+
+MIXER.recipeBuilder()
+    .fluidInputs(fluid('vinylidene_fluoride') * 1000)
+    .fluidInputs(fluid('hexafluoropropylene') * 1000)
+    .fluidInputs(fluid('pvdf_surfactant_mixture') * 500)
+    .fluidOutputs(fluid('fkm_emulsion') * 500)
+    .duration(100)
+    .EUt(120)
+    .buildAndRegister();
+
+POLYMERIZATION_TANK.recipeBuilder()
+    .inputs(ore('dustTinyPotassiumPersulfate'))
+    .fluidInputs(fluid('fkm_emulsion') * 500)
+    .fluidOutputs(fluid('fkm_copolymer_solution') * 500)
+    .duration(200)
+    .EUt(480)
+    .buildAndRegister();
+
+DRYER.recipeBuilder()
+    .fluidInputs(fluid('fkm_copolymer_solution') * 500)
+    .outputs(metaitem('dustFkmCopolymer'))
+    .fluidOutputs(fluid('pvdf_surfactant_mixture') * 500)
+    .duration(300)
+    .EUt(480)
     .buildAndRegister();

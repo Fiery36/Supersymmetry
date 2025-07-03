@@ -1518,6 +1518,8 @@ class SuSyMaterials {
         public static Material PurifiedBerylliumOxide;
         public static Material PurifiedBerylliumChloride;
         public static Material SodiumEthoxide;
+        public static Material PNitrotoluene;
+        public static Material PNitrotolueneSlurry;
 
         // HP Materials
 
@@ -1734,6 +1736,7 @@ class SuSyMaterials {
         public static Material HydroiodicAcid;
         public static Material PotassiumChlorateSolution;
         public static Material LithiumHydroxideSolution;
+        public static Material DilutedSodiumFluorideSolution;
 
         // Organic Chemistry Materials
 
@@ -2189,6 +2192,30 @@ class SuSyMaterials {
         public static Material VinylideneFluoride;
         public static Material PVDFPreparationMixture;
         public static Material PVDFPolymerisationMixture;
+        public static Material BenzenediazoniumFluoride;
+        public static Material Fluorobenzene;
+        public static Material PToluidene;
+        public static Material FluorinatedToluidene;
+        public static Material Fluorotoluene;
+        public static Material Fluorotoluenetrichloride;
+        public static Material FluorobenzoylChloride;
+        public static Material FourFourDifluorobenzophenone;
+        public static Material FourFourDifluorobenzophenoneSolution;
+        public static Material PDiisopropylbenzene;
+        public static Material BisHydroperoxide;
+        public static Material HydroquinoneSolution;
+        public static Material Hydroquinone;
+        public static Material BenzenesulfonicAcid;
+        public static Material DiphenylSulfone;
+        public static Material DiphenylSulfoneSolution;
+        public static Material HydroquinoneEmulsion;
+        public static Material PeekMixture;
+        public static Material PolyetherEtherKetone;
+        public static Material Hexafluoropropylene;
+        public static Material FkmEmulsion;
+        public static Material FkmCopolymer;
+        public static Material FkmCopolymerSolution;
+        public static Material Benzenediol;
 
         // Third Degree Materials
 

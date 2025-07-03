@@ -2880,5 +2880,153 @@ public class OrganicChemistryMaterials {
                 .components(Carbon * 2, Hydrogen * 2, Fluorine * 2)
                 .colorAverage()
                 .build();
+
+        BenzenediazoniumFluoride = new Material.Builder(15458, SuSyUtility.susyId('benzenediazonium_fluoride'))
+                .dust()
+                .components(Carbon * 5, Hydrogen * 5, Nitrogen * 2, Fluorine)
+                .color(0x705b3f)
+                .build();
+
+        Fluorobenzene = new Material.Builder(15459, SuSyUtility.susyId('fluorobenzene'))
+                .dust()
+                .components(Carbon * 6, Hydrogen * 5, Fluorine)
+                .colorAverage()
+                .build();
+
+        PToluidene = new Material.Builder(15460, SuSyUtility.susyId('p_toluidene'))
+                .dust().liquid(new FluidBuilder().temperature(316))
+                .components(Carbon * 7, Hydrogen * 9, Nitrogen)
+                .color(0xa8b865)
+                .build();
+
+        FluorinatedToluidene = new Material.Builder(15461, SuSyUtility.susyId('fluorinated_toluidene'))
+                .liquid()
+                .components(Carbon * 7, Hydrogen * 9, Nitrogen, HydrogenFluoride)
+                .color(0x8fb865)
+                .build();
+
+        Fluorotoluene = new Material.Builder(15462, SuSyUtility.susyId('fluorotoluene'))
+                .liquid()
+                .components(Carbon * 7, Hydrogen * 7, Fluorine)
+                .color(0x579e77)
+                .build();
+
+        Fluorotoluenetrichloride = new Material.Builder(15463, SuSyUtility.susyId('fluorotoluenetrichloride'))
+                .liquid()
+                .components(Carbon * 7, Hydrogen * 4, Fluorine, Chlorine * 3)
+                .color(0x579e8f)
+                .build();
+
+        FluorobenzoylChloride = new Material.Builder(15464, SuSyUtility.susyId('fluorobenzoyl_chloride'))
+                .dust()
+                .components(Carbon * 7, Hydrogen * 4, Chlorine, Fluorine, Oxygen)
+                .color(0x67c6cf)
+                .build();
+
+        FourFourDifluorobenzophenone = new Material.Builder(15465, SuSyUtility.susyId('four_four_difluorobenzophenone'))
+                .dust()
+                .components(Carbon * 13, Hydrogen * 8, Oxygen, Fluorine * 2)
+                .colorAverage()
+                .build();
+        FourFourDifluorobenzophenone.setFormula('(FC6H4)2CO', true)
+
+        FourFourDifluorobenzophenoneSolution = new Material.Builder(15466, SuSyUtility.susyId('four_four_difluorobenzophenone_solution'))
+                .liquid()
+                .components(FourFourDifluorobenzophenone, Hexane)
+                .colorAverage()
+                .build();
+
+        PDiisopropylbenzene = new Material.Builder(15467, SuSyUtility.susyId('p_diisopropylbenzene'))
+                .liquid()
+                .components(Carbon * 12, Hydrogen * 18)
+                .colorAverage()
+                .build();
+        PDiisopropylbenzene.setFormula('C6H4(CH(CH3)2)2', true)
+
+        BisHydroperoxide = new Material.Builder(15468, SuSyUtility.susyId('bis_hydroperoxide'))
+                .liquid()
+                .components(Carbon * 12, Hydrogen * 18, Oxygen * 2)
+                .colorAverage()
+                .build();
+
+        Hydroquinone = new Material.Builder(15469, SuSyUtility.susyId('hydroquinone'))
+                .dust()
+                .components(Carbon * 6, Hydrogen * 6, Oxygen * 2)
+                .colorAverage()
+                .build();
+
+        HydroquinoneSolution = new Material.Builder(15470, SuSyUtility.susyId('hydroquinone_solution'))
+                .liquid()
+                .components(Hydroquinone, Acetone * 2)
+                .colorAverage()
+                .build();
+
+        BenzenesulfonicAcid = new Material.Builder(15471, SuSyUtility.susyId('benzenesulfonic_acid'))
+                .liquid()
+                .components(Carbon * 6, Hydrogen * 6, Oxygen * 3, Sulfur)
+                .colorAverage()
+                .build();
+
+        DiphenylSulfone = new Material.Builder(15472, SuSyUtility.susyId('diphenyl_sulfone'))
+                .dust().liquid(new FluidBuilder().temperature(600))
+                .components(Carbon * 12, Hydrogen * 10, Sulfur, Oxygen * 2)
+                .color(0xa54a02)
+                .build();
+        DiphenylSulfone.setFormula('(C6H5)2SO2', true)
+
+        DiphenylSulfoneSolution = new Material.Builder(15473, SuSyUtility.susyId('diphenyl_sulfone_solution'))
+                .liquid()
+                .components(DiphenylSulfone, Acetone)
+                .colorAverage()
+                .build();
+
+        PolyetherEtherKetone = new Material.Builder(15474, SuSyUtility.susyId('polyether_ether_ketone'))
+                .polymer()
+                .components(Carbon * 19, Hydrogen * 12, Oxygen * 3)
+                .color(0x316d3e)
+                .build();
+        PolyetherEtherKetone.setFormula('(C19H12O3)n', true)
+
+        PeekMixture = new Material.Builder(15475, SuSyUtility.susyId('peek_mixture'))
+                .dust()
+                .components(PolyetherEtherKetone, DiphenylSulfone)
+                .colorAverage()
+                .build();
+
+        Hexafluoropropylene = new Material.Builder(15476, SuSyUtility.susyId('hexafluoropropylene'))
+                .liquid()
+                .components(Carbon * 3, Fluorine * 6)
+                .colorAverage()
+                .build();
+
+        FkmEmulsion = new Material.Builder(15477, SuSyUtility.susyId('fkm_emulsion'))
+                .liquid()
+                .components(Hexafluoropropylene, VinylideneFluoride)
+                .colorAverage()
+                .build();
+
+        FkmCopolymer = new Material.Builder(15478, SuSyUtility.susyId('fkm_copolymer'))
+                .polymer()
+                .components(Hexafluoropropylene, VinylideneFluoride)
+                .color(0xbc716d)
+                .build();
+
+        FkmCopolymerSolution = new Material.Builder(15479, SuSyUtility.susyId('fkm_copolymer_solution'))
+                .liquid()
+                .components(FkmCopolymer)
+                .color(0xbc716d)
+                .build();
+
+        Benzenediol = new Material.Builder(15480, SuSyUtility.susyId('benzenediol'))
+                .dust().liquid()
+                .components(Carbon * 6, Hydrogen * 6, Oxygen * 2)
+                .colorAverage()
+                .build();
+
+        HydroquinoneSolution = new Material.Builder(15481, SuSyUtility.susyId('hydroquinone_emulsion'))
+                .liquid()
+                .components(Hydroquinone, DiphenylSulfone, FourFourDifluorobenzophenone)
+                .colorAverage()
+                .build();
     }
 }

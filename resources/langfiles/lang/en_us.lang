@@ -2490,6 +2490,33 @@ susy.material.pvdf_preparation_mixture=Vinylidene Fluoride Emulsion
 susy.material.pvdf_polymerisation_mixture=PVDF Solution
 susy.material.lithium_hydroxide_solution=Lithium Hydroxide Solution
 susy.material.sodium_ethoxide=Sodium Ethoxide
+susy.material.p_nitrotoluene=p-Nitrotoluene
+susy.material.p_nitrotoluene_slurry=p-Nitrotoluene Slurry
+susy.material.diluted_sodium_fluoride_solution=Diluted Sodium Fluoride Solution
+susy.material.benzenediazonium_fluoride=Benzenediazonium Fluoride
+susy.material.fluorobenzene=Fluorobenzene
+susy.material.p_toluidene=p-Toluidene
+susy.material.fluorinated_toluidene=Fluorinated Toluidene
+susy.material.fluorotoluene=Fluorotoluene
+susy.material.fluorotoluenetrichloride=Fluorotoluenetrichloride
+susy.material.fluorobenzoyl_chloride=Fluorobenzoyl Chloride
+susy.material.four_four_difluorobenzophenone=4,4'-Difluorobenzophenone
+susy.material.four_four_difluorobenzophenone_solution=4,4'-Difluorobenzophenone Solution
+susy.material.p_diisopropylbenzene=p-Diisopropylbenzene
+susy.material.bis_hydroperoxide=bis(hydroperoxide)
+susy.material.hydroquinone=Hydroquinone
+susy.material.hydroquinone_solution=Hydroquinone Solution
+susy.material.benzenesulfonic_acid=Benzenesulfonic Acid
+susy.material.diphenyl_sulfone=Diphenyl Sulfone
+susy.material.diphenyl_sulfone_solution=Diphenyl Sulfone Solution
+susy.material.polyether_ether_ketone=Polyether Ether Ketone (PEEK)
+susy.material.peek_mixture=PEEK Mixture
+susy.material.hexafluoropropylene=Hexafluoropropylene
+susy.material.fkm_emulsion=FKM Emulsion
+susy.material.fkm_copolymer=FKM Copolymer
+susy.material.fkm_copolymer_solution=FKM Copolymer Solution
+susy.material.benzenediol=Benzenediol
+susy.material.hydroquinone_emulsion=Hydroquinone Emulsion
 
 # Isotopes
 
