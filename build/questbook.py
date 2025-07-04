@@ -20,6 +20,9 @@ import argparse
 import json
 import os
 
+def intlist(string):
+    return [int(i) for i in string.split(',')]
+
 def parse_args():
     parser = argparse.ArgumentParser(prog="build", description=__doc__)
     parser.add_argument("--prefix",
@@ -31,9 +34,9 @@ def parse_args():
                         default="en_us",
                         help="what language the output language file is, defaults to en_us")
     parser.add_argument("--edit",
-                        type=int,
-                        default=-1,
-                        help="the quest ID to push back into JSON for editing")
+                        type=intlist,
+                        default=[],
+                        help="the quest ID(s) to push back into JSON for editing (comma separated)")
     return parser.parse_args()
 
 # Props that BQ automatically assumes by default, thus only increasing the size of the DefaultQuests json.
@@ -171,7 +174,9 @@ def build(args):
     os.makedirs(lang, exist_ok=True)
     langFile = lang + "/" + args.lang + ".lang"
     questKeys = {}
-    editQuestId = args.edit
+    editQuestIds = args.edit
+    if len(editQuestIds) > 0:
+        print("Editing quest IDs: %s" % editQuestIds)
     
     try:
         with open(langFile, "r", errors="ignore") as file:
@@ -202,7 +207,7 @@ def build(args):
                     knowKeys += i18n(output=questKeys, id=entryid, entry=currentquest, place="ql", prefix=args.prefix)
                 else:
                     knowKeys += i18n(output=questKeys, id=entryid, entry=currentquest, place="db", prefix=args.prefix,
-                                     reverse=editQuestId == entryid)
+                                     reverse=entryid in editQuestIds)
 
             with open(os.path.join(root, filename), "w") as file:
                 json.dump(currentquest, file, indent=2)
