@@ -16,7 +16,6 @@ VACUUM_CHAMBER = recipemap('vacuum_chamber')
 ROASTER = recipemap('roaster')
 CSTR = recipemap('continuous_stirred_tank_reactor')
 MIXER = recipemap('mixer')
-AUTOCLAVE = recipemap('autoclave')
 
 ADVANCED_ARC_FURNACE.recipeBuilder()
     .inputs(ore('dustChromite'))
