@@ -99,7 +99,8 @@ def convertToLang(line: str) -> str:
     return line.replace("%", "%%").replace("\n", "%n")
 
 def convertFromLang(text: str) -> str:
-    return text.replace("%n", "\n").replace("%%", "%")
+    # i love unicode on windows :deranged:
+    return text.replace("%n", "\n").replace("%%", "%").replace('\u00c2\u00a7', '\u00a7')
 
 def nest(location: dict) -> dict:
     """navigates through a dict to delete anything undesired"""
@@ -209,14 +210,14 @@ def build(args):
                     knowKeys += i18n(output=questKeys, id=entryid, entry=currentquest, place="db", prefix=args.prefix,
                                      reverse=entryid in editQuestIds)
 
-            with open(os.path.join(root, filename), "w") as file:
+            with open(os.path.join(root, filename), "w", newline='\n') as file:
                 json.dump(currentquest, file, indent=2)
     
     
     if (knowKeys > 0):
         print("Already knew %s keys " % knowKeys)
     
-    with open(langFile, "w") as file:
+    with open(langFile, "w", newline='\n') as file:
         for i in sorted(questKeys, key=key):
             file.write(i + "=" + questKeys[i] + "\n")
 
