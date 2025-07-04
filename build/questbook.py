@@ -30,6 +30,10 @@ def parse_args():
                         type=str,
                         default="en_us",
                         help="what language the output language file is, defaults to en_us")
+    parser.add_argument("--edit",
+                        type=int,
+                        default=-1,
+                        help="the quest ID to push back into JSON for editing")
     return parser.parse_args()
 
 # Props that BQ automatically assumes by default, thus only increasing the size of the DefaultQuests json.
@@ -91,6 +95,9 @@ def convertToLang(line: str) -> str:
     """replaces any \\n or other json escape sequences with the correct escape character, %"""
     return line.replace("%", "%%").replace("\n", "%n")
 
+def convertFromLang(text: str) -> str:
+    return text.replace("%n", "\n").replace("%%", "%")
+
 def nest(location: dict) -> dict:
     """navigates through a dict to delete anything undesired"""
 
@@ -103,7 +110,7 @@ def nest(location: dict) -> dict:
     return location
 
 
-def i18n(output: dict, id: int, entry: dict, place: str, prefix: str):
+def i18n(output: dict, id: int, entry: dict, place: str, prefix: str, reverse: bool = False):
     """converts questbook title/desc into lang file"""
 
     start = "%s.quest" % prefix
@@ -115,12 +122,16 @@ def i18n(output: dict, id: int, entry: dict, place: str, prefix: str):
     desc = key + ".desc"
 
     if (entry["properties:10"]["betterquesting:10"]["name:8"].startswith(start)):
+        if reverse:
+            entry["properties:10"]["betterquesting:10"]["name:8"] = convertFromLang(output[title])
         alreadyKnownKeys.append(title)
     else:
         output[title] = convertToLang(entry["properties:10"]["betterquesting:10"]["name:8"])
         entry["properties:10"]["betterquesting:10"]["name:8"] = title.rstrip()
         
     if (entry["properties:10"]["betterquesting:10"]["desc:8"].startswith(start)):
+        if reverse:
+            entry["properties:10"]["betterquesting:10"]["desc:8"] = convertFromLang(output[desc])
         alreadyKnownKeys.append(desc)
     else:
         output[desc] = convertToLang(entry["properties:10"]["betterquesting:10"]["desc:8"])
@@ -160,6 +171,7 @@ def build(args):
     os.makedirs(lang, exist_ok=True)
     langFile = lang + "/" + args.lang + ".lang"
     questKeys = {}
+    editQuestId = args.edit
     
     try:
         with open(langFile, "r", errors="ignore") as file:
@@ -189,7 +201,8 @@ def build(args):
                 if root.endswith("QuestLines"): 
                     knowKeys += i18n(output=questKeys, id=entryid, entry=currentquest, place="ql", prefix=args.prefix)
                 else:
-                    knowKeys += i18n(output=questKeys, id=entryid, entry=currentquest, place="db", prefix=args.prefix)
+                    knowKeys += i18n(output=questKeys, id=entryid, entry=currentquest, place="db", prefix=args.prefix,
+                                     reverse=editQuestId == entryid)
 
             with open(os.path.join(root, filename), "w") as file:
                 json.dump(currentquest, file, indent=2)
