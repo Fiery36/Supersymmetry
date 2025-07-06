@@ -2961,57 +2961,92 @@ public class UnknownCompositionMaterials {
 
         SpentFuelSuspension = new Material.Builder(4650, SuSyUtility.susyId('spent_fuel_suspension'))
                 .liquid()
-                .color(0xd1b000)
-                .build()  
+                .color(0x11300e)
+                .build();
 
         SpentFuelSolution = new Material.Builder(4651, SuSyUtility.susyId('spent_fuel_solution'))
-                .liquid()
-                .color(0xd1b000)
-                .build() 
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0x13400f)
+                .build();
 
         UraniumPlutoniumExtract = new Material.Builder(4652, SuSyUtility.susyId('uranium_plutonium_extract'))
                 .liquid()
-                .color(0xd1b000)
+                .color(0x5c8511)
                 .build()
 
-        CrudeUraniumExtract = new Material.Builder(4653, SuSyUtility.susyId('crude_uranium_extract'))
+        TransuraniumSolution = new Material.Builder(4653, SuSyUtility.susyId('transuranium_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0x47629c)
+                .build()
+        
+        ReprocessedUraniumExtract = new Material.Builder(4654, SuSyUtility.susyId('reprocessed_uranium_extract'))
                 .liquid()
-                .color(0xd1b000)
+                .color(0x5f991d)
                 .build()
 
-        CrudeUraniumConcentrate = new Material.Builder(4654, SuSyUtility.susyId('crude_uranium_concentrate'))
+        ImpureReprocessedUraniumExtract = new Material.Builder(4655, SuSyUtility.susyId('impure_reprocessed_uranium_extract'))
                 .liquid()
-                .color(0xd1b000)
+                .color(0x6f8013)
                 .build()
 
-        UraniumExtract = new Material.Builder(4655, SuSyUtility.susyId('uranium_extract'))
+        RadiolyzedActinideSeparationMixture = new Material.Builder(4656, SuSyUtility.susyId('radiolyzed_actinide_separation_mixture'))
                 .liquid()
-                .color(0xd1b000)
+                .color(0x9ba843)
                 .build()
 
-        UraniumConcentrate = new Material.Builder(4656, SuSyUtility.susyId('uranium_concentrate'))
-                .liquid()
-                .color(0xd1b000)
+        ReprocessedUraniumConcentrate = new Material.Builder(4657, SuSyUtility.susyId('reprocessed_uranium_concentrate'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0x185e36)
                 .build()
 
-        CrudePlutoniumConcentrate = new Material.Builder(4657, SuSyUtility.susyId('crude_plutonium_concentrate'))
+        RadioactiveWastewater = new Material.Builder(4658, SuSyUtility.susyId('radioactive_wastewater'))
                 .liquid()
-                .color(0xd1b000)
-                .build()        
+                .color(0x2e8260)
+                .build()
 
-        AdjustedPlutoniumConcentrate = new Material.Builder(4658, SuSyUtility.susyId('adjusted_plutonium_concentrate'))
+        PurifiedReprocessedUraniumExtract = new Material.Builder(4659, SuSyUtility.susyId('purified_reprocessed_uranium_extract'))
                 .liquid()
-                .color(0xd1b000)
-                .build()            
+                .color(0x69ab1f)
+                .build()
 
-        PlutoniumExtract = new Material.Builder(4659, SuSyUtility.susyId('plutonium_extract'))
+        PurifiedReprocessedUraniumConcentrate = new Material.Builder(4660, SuSyUtility.susyId('purified_reprocessed_uranium_concentrate'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0x227847)
+                .build()
+
+        ReprocessedUranylNitrateSolution = new Material.Builder(4661, SuSyUtility.susyId('reprocessed_uranyl_nitrate_solution'))
                 .liquid()
-                .color(0xd1b000)
+                .color(0x1f7d54)
+                .build();
+
+        PlutoniumConcentrate = new Material.Builder(4662, SuSyUtility.susyId('plutonium_concentrate'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0x6e1436)
+                .build()
+
+        PurifiedPlutoniumConcentrate = new Material.Builder(4663, SuSyUtility.susyId('purified_plutonium_concentrate'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0x871641)
+                .build()
+
+        OxidizedPlutoniumConcentrate = new Material.Builder(4664, SuSyUtility.susyId('oxidized_plutonium_concentrate'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0xa1184c)
+                .build()
+
+        PlutoniumExtract = new Material.Builder(4665, SuSyUtility.susyId('plutonium_extract'))
+                .liquid()
+                .color(0xa12d18)
                 .build()  
 
-        PlutoniumConcentrate = new Material.Builder(4650, SuSyUtility.susyId('plutonium_concentrate'))
+        PlutoniumIIINitrateSolution = new Material.Builder(4666, SuSyUtility.susyId('plutonium_iii_nitrate_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .color(0xcc1842)
+                .build()
+
+        ReextractedReprocessedUraniumExtract = new Material.Builder(4667, SuSyUtility.susyId('reextracted_reprocessed_uranium_extract'))
                 .liquid()
-                .color(0xd1b000)
-                .build()  
+                .color(0x629e1c)
+                .build();
     }
 }

@@ -63,5 +63,27 @@ public class IsotopeMaterials {
             .build();
 
         WeaponsGradeUranium.setFormula("U", true)
+
+        Uranium234 = new Material.Builder(31005, SuSyUtility.susyId("uranium_234"))
+            .flags(DISABLE_DECOMPOSITION)
+            .color(0x076e18)
+            .build();
+
+        Uranium234.setFormula("U", true)
+
+        Uranium236 = new Material.Builder(31006, SuSyUtility.susyId("uranium_236"))
+            .flags(DISABLE_DECOMPOSITION)
+            .color(0x043013)
+            .build();
+
+        Uranium236.setFormula("U", true)
+        
+        ReprocessedUranium = new Material.Builder(31007, SuSyUtility.susyId("reprocessed_uranium"))
+            .components(Uranium235 * 9, Uranium236 * 5, Uranium238 * 986)
+            .flags(DISABLE_DECOMPOSITION)
+            .color(0x31bd2a)
+            .build();
+
+        ReprocessedUranium.setFormula("U", true);
     }
 }

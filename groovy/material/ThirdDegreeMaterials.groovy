@@ -663,5 +663,11 @@ public class ThirdDegreeMaterials {
                 .components(PolyvinylAlcohol, Water)
                 .colorAverage()
                 .build();
+
+        ActinideSeparationMixture = new Material.Builder(24107, SuSyUtility.susyId('actinide_separation_mixture'))
+                .liquid()
+                .components(TributylPhosphate * 3, Kerosene * 7)
+                .color(0xa89e43)
+                .build();
     }
 }

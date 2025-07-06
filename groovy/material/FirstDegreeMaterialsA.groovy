@@ -2425,6 +2425,7 @@ public class FirstDegreeMaterialsA {
         SilicaGel = new Material.Builder(8455, SuSyUtility.susyId('silica_gel'))
                 .dust()
                 .iconSet(SHINY)
+                .flags(GENERATE_CATALYST_BED)
                 .components(Silicon, Oxygen * 2)
                 .color(0x6d6e63)
                 .build();
@@ -3732,9 +3733,11 @@ public class FirstDegreeMaterialsA {
                 .color(0x1ec200)
                 .build();
 
-        WeaponsGradeUraniumHexafluoride.setFormula("UF6", true);
-
-        // FREE ID: 8655
+        Hydroxylamine = new Material.Builder(8655, SuSyUtility.susyId('hydroxylamine'))
+                .liquid(new FluidBuilder().temperature(306))
+                .components(Hydrogen * 3, Nitrogen * 1, Oxygen * 1)
+                .colorAverage()
+                .build();
 
         LEU235AmmoniumDiuranate = new Material.Builder(8656, SuSyUtility.susyId('leu_235_ammonium_diuranate'))
                 .dust()
@@ -3817,7 +3820,8 @@ public class FirstDegreeMaterialsA {
                 .components(WeaponsGradeUranium, Oxygen * 2)
                 .color(0x2c4a1e)
                 .build()
-                .setFormula("UO2", true);
+
+        WeaponsGradeUraniumDioxide.setFormula("UO2", true);
 
         PotassiumChlorate = new Material.Builder(8665, SuSyUtility.susyId('potassium_chlorate'))
                 .dust()

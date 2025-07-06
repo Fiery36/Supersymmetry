@@ -127,41 +127,80 @@ public class FirstDegreeMaterialsB {
                 .macerateInto(Alnico)
                 .build()
 
-        MoltenUranylNitrate = new Material.Builder(8722, SuSyUtility.susyId('molten_uranyl_nitrate'))
-                .liquid()
-                .components(NaturalUranium, Oxygen * 2, Nitrogen * 2, Oxygen * 6)
-                .colorAverage()
-                .build()
-                .setFormula("UO2(NO3)2", true)
-
-        UraniumTrioxide = new Material.Builder(8723, SuSyUtility.susyId('uranium_trioxide'))
+        ReprocessedUranylNitrate = new Material.Builder(8722, SuSyUtility.susyId('reprocessed_uranyl_nitrate'))
                 .dust()
-                .liquid()
-                .components(NaturalUranium, Oxygen * 3)
-                .colorAverage()
+                .components(ReprocessedUranium, Nitrogen * 2, Oxygen * 8)
+                .color(0xb7d629)
                 .build()
-                .setFormula("UO3", true)
 
-        PlutoniumOxalate = new Material.Builder(8724, SuSyUtility.susyId('plutonium_oxalate'))
+        ReprocessedUranylNitrate.setFormula("UO2(NO3)2", true)
+
+        FerrousSulfamate = new Material.Builder(8723, SuSyUtility.susyId('ferrous_sulfamate'))
                 .dust()
-                .components(Plutonium239, Carbon * 4, Oxygen * 8)
-                .colorAverage()
+                .components(Iron * 1, Nitrogen * 1, Sulfur * 1, Oxygen * 3, Hydrogen * 6)
+                .color(0x4c5b4c)
                 .build()
-                .setFormula("Pu(C2O4)2", true)
+                
+        FerrousSulfamate.setFormula("Fe(NH2SO3)2", true)
 
-        PlutoniumDioxide = new Material.Builder(8725, SuSyUtility.susyId('plutonium_dioxide'))
+        ReprocessedUraniumTrioxide = new Material.Builder(8724, SuSyUtility.susyId('reprocessed_uranium_trioxide'))
+                .dust()
+                .components(ReprocessedUranium, Oxygen * 3)
+                .color(0x8b8b00)
+                .build();
+
+        ReprocessedUraniumTrioxide.setFormula("UO3", true);
+
+        PlutoniumIIINitrate = new Material.Builder(8725, SuSyUtility.susyId('plutonium_iii_nitrate'))
+                .dust()
+                .components(Plutonium239, Nitrogen * 3, Oxygen * 9)
+                .color(0x8b0000)
+                .build()
+
+        PlutoniumIIINitrate.setFormula("Pu(NO3)3", true);
+
+        PlutoniumDioxide = new Material.Builder(8726, SuSyUtility.susyId('plutonium_dioxide'))
                 .dust()
                 .components(Plutonium239, Oxygen * 2)
                 .colorAverage()
                 .build()
-                .setFormula("PuO2", true)
+        
+        PlutoniumDioxide.setFormula("PuO2", true)
 
-        HydroxylammoniumNitrate = new Material.Builder(8726, SuSyUtility.susyId('hydroxylammonium_nitrate'))
+        HydroxylammoniumNitrateSolution = new Material.Builder(8727, SuSyUtility.susyId('hydroxylammonium_nitrate_solution'))
                 .liquid()
-                .components(Hydroxylamine, NitricAcid)
-                .colorAverage()
+                .components(Hydroxylamine, Hydrogen, Nitrogen, Oxygen * 3, Water)
+                .color(0x8b0000)
                 .build();
-                
-        HydroxylammoniumNitrate.setFormula("(NH3OH)(NO3)", true)
+
+        HydroxylammoniumNitrateSolution.setFormula("(N2H4O4)(H2O)", true);
+
+        ReprocessedUraniumDioxide = new Material.Builder(8728, SuSyUtility.susyId('reprocessed_uranium_dioxide'))
+                .dust()
+                .iconSet(SAND)
+                .components(ReprocessedUranium, Oxygen * 2)
+                .color(0x4c6e5c)
+                .build();
+
+        ReprocessedUraniumDioxide.setFormula("UO2", true);
+
+        ReprocessedUraniumTetrafluoride = new Material.Builder(8729, SuSyUtility.susyId('reprocessed_uranium_tetrafluoride'))
+                .dust()
+                .iconSet(SAND)
+                .components(ReprocessedUranium, Fluorine * 4)
+                .color(0x5d8570)
+                .build();
+
+        ReprocessedUraniumTetrafluoride.setFormula("UF4", true);
+
+        ReprocessedUraniumHexafluoride = new Material.Builder(8730, SuSyUtility.susyId('reprocessed_uranium_hexafluoride'))
+                .gas(new FluidBuilder().temperature(330))
+                .iconSet(SAND)
+                .components(ReprocessedUranium, Fluorine * 6)
+                .color(0x49c930)
+                .build();
+
+        ReprocessedUraniumHexafluoride.setFormula("UF6", true);
+
     }
 }
