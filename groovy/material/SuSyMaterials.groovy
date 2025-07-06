@@ -36,6 +36,11 @@ class SuSyMaterials {
         public static Material Uranium234;
         public static Material Uranium236;
         public static Material ReprocessedUranium;
+        public static Material Plutonium238;
+        public static Material Plutonium240;
+        public static Material Plutonium242;
+        public static Material Plutonium244;
+        public static Material ReactorGradePlutonium;
 
 
         // Ore Materials
