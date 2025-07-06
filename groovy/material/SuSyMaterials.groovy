@@ -1541,6 +1541,7 @@ class SuSyMaterials {
         public static Material ReprocessedUraniumDioxide;
         public static Material ReprocessedUraniumTetrafluoride;
         public static Material ReprocessedUraniumHexafluoride;
+        public static Material PlutoniumGallium;
 
         // HP Materials
 

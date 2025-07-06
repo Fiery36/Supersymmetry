@@ -914,9 +914,6 @@ susy.material.alkali_fused_wulfenite=Alkali Fused Wulfenite
 susy.material.lead_ii_hydroxide=Lead II Hydroxide
 susy.material.sodium_molybdate_solution=Sodium Molybdate Solution
 susy.material.zinc_oxide=Zinc Oxide
-susy.material.uranium_234=Uranium-234
-susy.material.uranium_236=Uranium-236
-susy.material.reprocessed_uranium=Reprocessed Uranium
 susy.material.spent_fuel_suspension=Spent Fuel Suspension
 susy.material.spent_fuel_solution=Spent Fuel Solution
 susy.material.uranium_plutonium_extract=Uranium-Plutonium Extract
@@ -2498,6 +2495,20 @@ susy.material.silver_indium_cadmium=Silver-Indium-Cadmium Alloy
 susy.material.high_alumina_refractory=High Alumina Refractory
 susy.material.mullitized_kyanite=Mullitized Kyanite
 susy.material.nimonic_105=Nimonic 105
+susy.material.plutonium_gallium=Plutonium-Gallium Alloy
+susy.material.treated_liquid_nitrogen=Treated Liquid Nitrogen
+susy.material.treated_liquid_oxygen=Treated Liquid Oxygen
+susy.material.helium_neon_concentrate=Helium-Neon Concentrate
+susy.material.dehydrogenated_helium_neon_concentrate=Dehydrogenated Helium-Neon Concentrate
+susy.material.demoisturized_helium_neon_concentrate=Demoisturized Helium-Neon Concentrate
+susy.material.compressed_helium_neon_concentrate=Compressed Helium-Neon Concentrate
+susy.material.helium_neon_mixture=Helium-Neon Mixture
+susy.material.krypton_xenon_rich_liquid=Krypton-Xenon Rich Liquid
+susy.material.combusted_krypton_xenon_concentrate=Combusted Krypton-Xenon Concentrate
+susy.material.purified_krypton_xenon_concentrate=Purified Krypton-Xenon Concentrate
+susy.material.liquid_crude_xenon=Liquid Crude Xenon
+susy.material.oxidized_xenon=Oxidized Xenon
+
 
 # Isotopes
 
@@ -2521,18 +2532,14 @@ susy.material.leu_235_dioxide=LEU-235 Dioxide
 susy.material.haleu_235_dioxide=HALEU-235 Dioxide
 susy.material.heu_235_dioxide=HEU-235 Dioxide
 susy.material.weapons_grade_uranium_dioxide=Weapons Grade Uranium Dioxide
-susy.material.treated_liquid_nitrogen=Treated Liquid Nitrogen
-susy.material.treated_liquid_oxygen=Treated Liquid Oxygen
-susy.material.helium_neon_concentrate=Helium-Neon Concentrate
-susy.material.dehydrogenated_helium_neon_concentrate=Dehydrogenated Helium-Neon Concentrate
-susy.material.demoisturized_helium_neon_concentrate=Demoisturized Helium-Neon Concentrate
-susy.material.compressed_helium_neon_concentrate=Compressed Helium-Neon Concentrate
-susy.material.helium_neon_mixture=Helium-Neon Mixture
-susy.material.krypton_xenon_rich_liquid=Krypton-Xenon Rich Liquid
-susy.material.combusted_krypton_xenon_concentrate=Combusted Krypton-Xenon Concentrate
-susy.material.purified_krypton_xenon_concentrate=Purified Krypton-Xenon Concentrate
-susy.material.liquid_crude_xenon=Liquid Crude Xenon
-susy.material.oxidized_xenon=Oxidized Xenon
+susy.material.uranium_234=Uranium-234
+susy.material.uranium_236=Uranium-236
+susy.material.reprocessed_uranium=Reprocessed Uranium
+susy.material.plutonium_238=Plutonium-238
+susy.material.plutonium_240=Plutonium-240
+susy.material.plutonium_242=Plutonium-242
+susy.material.plutonium_244=Plutonium-244
+susy.material.reactor_grade_plutonium=Reactor Grade Plutonium
 
 # GregTech RecipeMaps
 

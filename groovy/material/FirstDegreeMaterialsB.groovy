@@ -153,7 +153,7 @@ public class FirstDegreeMaterialsB {
 
         PlutoniumIIINitrate = new Material.Builder(8725, SuSyUtility.susyId('plutonium_iii_nitrate'))
                 .dust()
-                .components(Plutonium239, Nitrogen * 3, Oxygen * 9)
+                .components(ReactorGradePlutonium, Nitrogen * 3, Oxygen * 9)
                 .color(0x8b0000)
                 .build()
 
@@ -161,7 +161,7 @@ public class FirstDegreeMaterialsB {
 
         PlutoniumDioxide = new Material.Builder(8726, SuSyUtility.susyId('plutonium_dioxide'))
                 .dust()
-                .components(Plutonium239, Oxygen * 2)
+                .components(ReactorGradePlutonium, Oxygen * 2)
                 .colorAverage()
                 .build()
         
@@ -202,5 +202,12 @@ public class FirstDegreeMaterialsB {
 
         ReprocessedUraniumHexafluoride.setFormula("UF6", true);
 
+        PlutoniumGallium = new Material.Builder(8731, SuSyUtility.susyId('plutonium_gallium'))
+                .dust()
+                .iconSet(METALLIC)
+                .components(ReactorGradePlutonium * 29, Gallium)
+                .colorAverage()
+                .blastTemp(1100, GasTier.MID, GTValues.VA[GTValues.EV])
+                .build();
     }
 }

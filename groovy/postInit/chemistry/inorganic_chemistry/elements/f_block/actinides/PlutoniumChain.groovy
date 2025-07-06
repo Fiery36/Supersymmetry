@@ -3,6 +3,7 @@ BR = recipemap('batch_reactor')
 MIXER = recipemap('mixer')
 DT = recipemap('distillation_tower')
 ROTARY_KILN = recipemap('rotary_kiln')
+REACTION_FURNACE = recipemap('reaction_furnace')
 
 // Purification
 MIXER_SETTLER.recipeBuilder()
@@ -69,9 +70,22 @@ DT.recipeBuilder()
 
 ROTARY_KILN.recipeBuilder()
     .inputs(metaitem('dustPlutoniumIiiNitrate') * 13)
-    .outputs(metaitem('dustPlutoniumDioxide') * 4)
+    .outputs(metaitem('dustPlutoniumDioxide') * 3)
     .fluidOutputs(fluid('nitrogen_dioxide') * 3000)
     .fluidOutputs(fluid('oxygen') * 1000)
     .duration(120)
     .EUt(480)
     .buildAndRegister();
+
+// Metal production
+
+REACTION_FURNACE.recipeBuilder()
+    .notConsumable(fluid('calcium_chloride') * 576)
+    .inputs(metaitem('dustPlutoniumDioxide') * 3)
+    .fluidInputs(fluid('dustCalcium') * 2)
+    .outputs(metaitem('dustReactorGradePlutonium'))
+    .outputs(metaitem('dustQuicklime') * 4)
+    .duration(120)
+    .EUt(480)
+    .buildAndRegister();
+

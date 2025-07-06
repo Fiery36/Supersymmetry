@@ -450,7 +450,7 @@ for (fuel in fuels) {
     CUTTING_MACHINE.recipeBuilder()
         .inputs(metaitem('fuelRodDepleted' + fuel))
         .outputs(metaitem('fuelPelletDepleted' + fuel) * 16)
-        .duration(64000)
-        .EUt(Globals.voltAmps[1])
+        .duration(200)
+        .EUt(Globals.voltAmps[3])
         .buildAndRegister()
 }
