@@ -28,7 +28,7 @@ ION_EXCHANGE.recipeBuilder()
 
     // Cold tower stage 1
     SIEVE_DT.recipeBuilder()
-        .circuitMeta(3)
+        .circuitMeta(1)
         .fluidInputs(fluid('deionized_sea_water') * 128000)
         .fluidInputs(fluid('hydrogen_sulfide') * 112000)
         .fluidOutputs(fluid('lightly_enriched_water') * 128000)
@@ -39,7 +39,7 @@ ION_EXCHANGE.recipeBuilder()
 
     // Hot tower stage 1
     SIEVE_DT.recipeBuilder() 
-        .circuitMeta(3)
+        .circuitMeta(1)
         .fluidInputs(fluid('lightly_enriched_water') * 112000)
         .fluidInputs(fluid('depleted_hydrogen_sulfide') * 112000)
         .fluidOutputs(fluid('water') * 112000)
@@ -85,7 +85,7 @@ ION_EXCHANGE.recipeBuilder()
 
     // Stage 3 bootstrap
     SIEVE_DT.recipeBuilder()
-        .circuitMeta(1)
+        .circuitMeta(3)
         .fluidInputs(fluid('medium_enriched_water') * 2000)
         .fluidInputs(fluid('lightly_enriched_hydrogen_sulfide') * 1900)
         .fluidOutputs(fluid('water') * 2000)
@@ -96,7 +96,7 @@ ION_EXCHANGE.recipeBuilder()
 
     // Cold tower stage 3
     SIEVE_DT.recipeBuilder() 
-        .circuitMeta(2)
+        .circuitMeta(3)
         .fluidInputs(fluid('medium_enriched_water') * 2000)
         .fluidInputs(fluid('medium_enriched_hydrogen_sulfide') * 1900)
         .fluidOutputs(fluid('highly_enriched_water') * 2000)
