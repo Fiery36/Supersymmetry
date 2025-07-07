@@ -606,7 +606,6 @@ public class FirstDegreeMaterialsA {
 
         LightlyEnrichedHydrogenSulfide = new Material.Builder(8177, SuSyUtility.susyId('lightly_enriched_hydrogen_sulfide'))
                 .gas()
-                .components(HydrogenSulfide, SemiHeavyHydrogenSulfide)
                 .colorAverage()
                 .build();
 

@@ -2856,8 +2856,8 @@ metaitem.beads.strong_acidic_cation_exchange.name=Strong Acidic Cation Exchange 
 metaitem.beads.amberlyst_ch.name=Amberlyst CH-43 Beads
 metaitem.beads.loaded_rhenium_anion_exchange.name=Rhenium Ion Exchange Beads
 metaitem.beads.loaded_uranium_anion_exchange.name=Uranium Ion Exchange Beads
-metaitem.beads.weak_basic_anion_exchange.name=Weak Basic Cation Exchange Resin Beads
-metaitem.beads.strong_basic_anion_exchange.name=Strong Basic Cation Exchange Resin Beads
+metaitem.beads.weak_basic_anion_exchange.name=Weak Basic Anion Exchange Resin Beads
+metaitem.beads.strong_basic_anion_exchange.name=Strong Basic Anion Exchange Resin Beads
 metaitem.beads.rare_earth_cation_exchange.name=Rare Earth Cation Exchange Resin Beads
 metaitem.beads.loaded_lutetium_cation_exchange.name=Loaded Lutetium Exchange Resin Beads
 
