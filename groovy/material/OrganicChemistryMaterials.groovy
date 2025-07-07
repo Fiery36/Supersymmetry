@@ -842,7 +842,7 @@ public class OrganicChemistryMaterials {
                 .build()
 
         Pyrocatechol = new Material.Builder(15141, SuSyUtility.susyId('pyrocatechol'))
-                .dust()
+                .dust().liquid(new FluidBuilder().temperature(380))
                 .components(Carbon * 6, Hydrogen * 6, Oxygen * 2)
                 .colorAverage()
                 .build()
