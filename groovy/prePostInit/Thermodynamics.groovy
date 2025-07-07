@@ -340,6 +340,7 @@ for (refrigerant in Refrigerants) {
 
     //Radiative Cooling
     recipemap('radiator').recipeBuilder()
+            .circuitMeta(1)
             .fluidInputs(liquid(refrigerant.hot_refrigerant) * (refrigerant.amount_to_use / 10))
             .fluidOutputs(liquid(refrigerant.comp_refrigerant) * (refrigerant.amount_to_use / 10))
             .duration(refrigerant.duration_radiator)
@@ -347,6 +348,7 @@ for (refrigerant in Refrigerants) {
 
     //Water Secondary Loop
     recipemap('heat_exchanger').recipeBuilder()
+            .circuitMeta(2)
             .fluidInputs(liquid(refrigerant.hot_refrigerant) * refrigerant.amount_to_use)
             .fluidInputs(liquid('chilled_water') * (int)(refrigerant.amount_to_use * 0.384))
             .fluidOutputs(liquid(refrigerant.comp_refrigerant) * refrigerant.amount_to_use)

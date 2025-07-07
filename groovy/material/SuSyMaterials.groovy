@@ -948,6 +948,7 @@ class SuSyMaterials {
         public static Material LightlyEnrichedWater;
         public static Material PartiallyDeionizedSeawater;
         public static Material DeionizedSeawater;
+        public static Material DepletedHydrogenSulfide;
         public static Material TetrafluoroboricAcid;
         public static Material BoronTrichloride;
         public static Material ProustiteAlkalineLeachSolution;

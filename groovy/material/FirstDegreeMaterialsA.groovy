@@ -624,7 +624,11 @@ public class FirstDegreeMaterialsA {
                 .color(0x4e6fde)
                 .build();
 
-        // FREE ID: 8181
+        DepletedHydrogenSulfide = new Material.Builder(8181, SuSyUtility.susyId('depleted_hydrogen_sulfide'))
+                .liquid()
+                .components(HydrogenSulfide)
+                .colorAverage()
+                .build();
 
         TetrafluoroboricAcid = new Material.Builder(8182, SuSyUtility.susyId('tetrafluoroboric_acid'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
