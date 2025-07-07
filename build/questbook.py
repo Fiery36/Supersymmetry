@@ -20,6 +20,7 @@ import argparse
 import json
 import os
 
+
 def intlist(string):
     return [int(i) for i in string.split(',')]
 
@@ -175,7 +176,12 @@ def build(args):
     os.makedirs(lang, exist_ok=True)
     langFile = lang + "/" + args.lang + ".lang"
     questKeys = {}
-    editQuestIds = args.edit
+    # This is called via main.py without edit present
+    if hasattr(args, "edit"):
+        editQuestIds = args.edit
+    else:
+        editQuestIds = []
+
     if len(editQuestIds) > 0:
         print("Editing quest IDs: %s" % editQuestIds)
     
