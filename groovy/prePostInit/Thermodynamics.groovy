@@ -340,7 +340,6 @@ for (refrigerant in Refrigerants) {
 
     //Radiative Cooling
     recipemap('radiator').recipeBuilder()
-            .circuitMeta(1)
             .fluidInputs(liquid(refrigerant.hot_refrigerant) * (refrigerant.amount_to_use / 10))
             .fluidOutputs(liquid(refrigerant.comp_refrigerant) * (refrigerant.amount_to_use / 10))
             .duration(refrigerant.duration_radiator)
@@ -348,7 +347,6 @@ for (refrigerant in Refrigerants) {
 
     //Water Secondary Loop
     recipemap('heat_exchanger').recipeBuilder()
-            .circuitMeta(2)
             .fluidInputs(liquid(refrigerant.hot_refrigerant) * refrigerant.amount_to_use)
             .fluidInputs(liquid('chilled_water') * (int)(refrigerant.amount_to_use * 0.384))
             .fluidOutputs(liquid(refrigerant.comp_refrigerant) * refrigerant.amount_to_use)
@@ -868,6 +866,20 @@ recipemap('heat_exchanger').recipeBuilder()
         .duration(10)
         .buildAndRegister();
 
+recipemap('fluid_heater').recipeBuilder()
+    .circuitMeta(3)
+    .fluidInputs(fluid('water') * 1000)
+    .fluidOutputs(fluid('dense_steam') * 1000)
+    .duration(20)
+    .EUt(30)
+    .buildAndRegister()
+
+recipemap('condensor').recipeBuilder()
+    .fluidInputs(fluid('dense_steam') * 1000)
+    .fluidOutputs(fluid('water') * 1000)
+    .duration(5)
+    .buildAndRegister()
+
 // Nuclear coolant cycles
 
 // PWR pressurizer & steam generator
@@ -915,6 +927,7 @@ recipemap('fluid_compressor').recipeBuilder()
 // BWR bootstrap
 
 recipemap('fluid_heater').recipeBuilder()
+        .circuitMeta(4)
         .fluidInputs(liquid('water') * 1536)
         .fluidOutputs(liquid('boiling_water') * 1536)
         .duration(2000)
