@@ -366,7 +366,7 @@ for (coolant in Coolants) {
             .fluidInputs(liquid(coolant.warm_coolant) * (coolant.amount_to_use / 10))
             .fluidOutputs(liquid(coolant.cold_coolant) * (coolant.amount_to_use / 10))
             .duration(coolant.duration_radiator)
-            .circuitMeta(coolant.circuit)
+            .circuitMeta(coolant.getCircuit())
             .buildAndRegister();
     }
     else {

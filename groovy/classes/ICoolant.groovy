@@ -51,7 +51,7 @@ class ICoolant{
         return warm_coolant;
     }
 
-    public String getCircuit() {
+    public int getCircuit() {
         return circuit;
     }
 }
