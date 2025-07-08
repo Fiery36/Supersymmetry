@@ -223,6 +223,7 @@ for (blastable in blastables) {
 // Continuous casting
 
 ADVANCED_ARC_FURNACE.recipeBuilder()
+    .circuitMeta(20)
     .inputs(ore('dustSteel') * 10)
     .fluidOutputs(fluid('molten.steel') * 1440)
     .EUt(120)
