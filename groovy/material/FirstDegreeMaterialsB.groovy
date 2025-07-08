@@ -28,6 +28,22 @@ public class FirstDegreeMaterialsB {
 
         log.infoMC('Registering First Degree Materials B!');
 
+        ThoriumDioxide = new Material.Builder(8707, SuSyUtility.susyId('thorium_dioxide'))
+                .dust()
+                .components(Thorium, Oxygen * 2)
+                .color(0x00061e)
+                .build();
+
+        // ThoriumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(?, ?, ?, ?, ?, ?, ?, ThoriumDioxide.getRegistryName()));
+
+        ThoriumChloride = new Material.Builder(8708, SuSyUtility.susyId('thorium_chloride'))
+                .dust()
+                .components(Thorium, Chlorine * 3)
+                .color(0x012916)
+                .build();
+
+        // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
+
         Zircaloy4 = new Material.Builder(8710, SuSyUtility.susyId('zircaloy_4'))
                 .ingot().liquid(new FluidBuilder().temperature(2200))
                 .components(HighPurityZirconium * 18, Tin * 3, Iron * 2, Chrome)
@@ -151,21 +167,21 @@ public class FirstDegreeMaterialsB {
 
         ReprocessedUraniumTrioxide.setFormula("UO3", true);
 
-        PlutoniumIIINitrate = new Material.Builder(8725, SuSyUtility.susyId('plutonium_iii_nitrate'))
+        ReactorGradePlutoniumIIINitrate = new Material.Builder(8725, SuSyUtility.susyId('reactor_grade_plutonium_iii_nitrate'))
                 .dust()
                 .components(ReactorGradePlutonium, Nitrogen * 3, Oxygen * 9)
                 .color(0x8b0000)
                 .build()
 
-        PlutoniumIIINitrate.setFormula("Pu(NO3)3", true);
+        ReactorGradePlutoniumIIINitrate.setFormula("Pu(NO3)3", true);
 
-        PlutoniumDioxide = new Material.Builder(8726, SuSyUtility.susyId('plutonium_dioxide'))
+        ReactorGradePlutoniumDioxide = new Material.Builder(8726, SuSyUtility.susyId('reactor_grade_plutonium_dioxide'))
                 .dust()
                 .components(ReactorGradePlutonium, Oxygen * 2)
                 .colorAverage()
                 .build()
         
-        PlutoniumDioxide.setFormula("PuO2", true)
+        ReactorGradePlutoniumDioxide.setFormula("PuO2", true)
 
         HydroxylammoniumNitrateSolution = new Material.Builder(8727, SuSyUtility.susyId('hydroxylammonium_nitrate_solution'))
                 .liquid()
@@ -195,7 +211,6 @@ public class FirstDegreeMaterialsB {
 
         ReprocessedUraniumHexafluoride = new Material.Builder(8730, SuSyUtility.susyId('reprocessed_uranium_hexafluoride'))
                 .gas(new FluidBuilder().temperature(330))
-                .iconSet(SAND)
                 .components(ReprocessedUranium, Fluorine * 6)
                 .color(0x49c930)
                 .build();
@@ -209,5 +224,28 @@ public class FirstDegreeMaterialsB {
                 .colorAverage()
                 .blastTemp(1100, GasTier.MID, GTValues.VA[GTValues.EV])
                 .build();
+
+        MixedOxideFuel = new Material.Builder(8732, SuSyUtility.susyId('mixed_oxide_fuel'))
+                .dust()
+                .color(0x62C032).iconSet(METALLIC)
+                .components(ReprocessedUraniumDioxide * 19, ReactorGradePlutoniumDioxide)
+                .build();
+
+        MixedOxideFuel.setFormula("(U,Pu)O2", true);
+        MixedOxideFuel.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1600, 1000, 50.0, 10.0, 4000.0, 10.0, 1.5, MixedOxideFuel.getRegistryName()));
+
+        DilutedAcetone = new Material.Builder(8733, SuSyUtility.susyId('diluted_acetone'))
+                .liquid()
+                .components(Acetone, Water)
+                .colorAverage()
+                .build();
+
+        BariumNitrate = new Material.Builder(8734, SuSyUtility.susyId('barium_nitrate'))
+                .dust()
+                .components(Barium, Nitrogen * 2, Oxygen * 6)
+                .colorAverage()
+                .build();
+
+        BariumNitrate.setFormula("Ba(NO3)2", true);
     }
 }

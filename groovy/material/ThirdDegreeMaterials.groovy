@@ -669,5 +669,23 @@ public class ThirdDegreeMaterials {
                 .components(TributylPhosphate * 3, Kerosene * 7)
                 .color(0xa89e43)
                 .build();
+
+        HexamethylenetetramineSolution = new Material.Builder(24108, SuSyUtility.susyId('hexamethylenetetramine_solution'))
+                .liquid()
+                .components(Hexamethylenetetramine, Water * 4)
+                .colorAverage()
+                .build()
+
+        CompositionB = new Material.Builder(24109, SuSyUtility.susyId('composition_b'))
+                .dust()
+                .components(RDX * 6, TNT * 4)
+                .colorAverage()
+                .build();
+        
+        Baratol = new Material.Builder(24110, SuSyUtility.susyId('baratol'))
+                .dust()
+                .components(TNT, BariumNitrate * 3)
+                .colorAverage()
+                .build();
     }
 }

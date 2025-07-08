@@ -1317,24 +1317,6 @@ ROASTER.recipeBuilder()
     .EUt(7)
     .buildAndRegister()
 
-// TNT
-
-BR.recipeBuilder()
-    .fluidInputs(fluid('toluene') * 1000)
-    .fluidInputs(fluid('nitration_mixture') * 6000)
-    .fluidOutputs(fluid('tnt_slurry') * 3000)
-    .duration(200)
-    .EUt(24)
-    .buildAndRegister()
-
-DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('tnt_slurry') * 1000)
-    .fluidOutputs(fluid('diluted_sulfuric_acid') * 1000)
-    .outputs(metaitem('dustTnt') * 7)
-    .duration(300)
-    .EUt(30)
-    .buildAndRegister()
-
 // Sulfur Trioxide
 
 ROASTER.recipeBuilder()
@@ -1460,17 +1442,6 @@ DISTILLERY.recipeBuilder()
     .fluidOutputs(fluid('salt_water') * 1000)
     .outputs(metaitem('dustSaltpeter') * 5)
     .duration(300)
-    .EUt(30)
-    .buildAndRegister()
-
-//Glyceryl Trinitrate
-
-BR.recipeBuilder()
-    .fluidInputs(fluid('glycerol') * 1000)
-    .fluidInputs(fluid('nitration_mixture') * 6000)
-    .fluidOutputs(fluid('glyceryl_trinitrate') * 1000)
-    .fluidOutputs(fluid('diluted_sulfuric_acid') * 6000)
-    .duration(100)
     .EUt(30)
     .buildAndRegister()
 
@@ -3110,26 +3081,6 @@ BR.recipeBuilder()
     .fluidOutputs(fluid('phosphoric_acid') * 4000)
     .EUt(30)
     .duration(40)
-    .buildAndRegister()
-
-//PICRIC ACID
-
-BR.recipeBuilder()
-
-BR.recipeBuilder()
-    .fluidInputs(fluid('phenol') * 1000)
-    .fluidInputs(fluid('nitration_mixture') * 6000)
-    .fluidOutputs(fluid('tnp_slurry') * 3000)
-    .duration(200)
-    .EUt(24)
-    .buildAndRegister()
-
-DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('tnp_slurry') * 1000)
-    .fluidOutputs(fluid('diluted_sulfuric_acid') * 1000)
-    .outputs(metaitem('dustPicricAcid') * 7)
-    .duration(300)
-    .EUt(30)
     .buildAndRegister()
 
 //AMMONIUM THIOCYANATE

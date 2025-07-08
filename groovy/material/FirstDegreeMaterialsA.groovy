@@ -4104,21 +4104,5 @@ public class FirstDegreeMaterialsA {
                 .build();
 
         ThoriumNitrateSolution.setFormula("(Th(NO3)4)(H2O)", true)
-
-        ThoriumDioxide = new Material.Builder(8707, SuSyUtility.susyId('thorium_dioxide'))
-                .dust()
-                .components(Thorium, Oxygen * 2)
-                .color(0x00061e)
-                .build();
-
-        // ThoriumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(?, ?, ?, ?, ?, ?, ?, ThoriumDioxide.getRegistryName()));
-
-        ThoriumChloride = new Material.Builder(8708, SuSyUtility.susyId('thorium_chloride'))
-                .dust()
-                .components(Thorium, Chlorine * 3)
-                .color(0x012916)
-                .build();
-
-        // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
     }
 }

@@ -965,5 +965,11 @@ public class SecondDegreeMaterials {
                 .components(FerrousSulfamate, DilutedNitricAcid)
                 .colorAverage()
                 .build();
+
+        BariumNitrateSolution = new Material.Builder(13161, SuSyUtility.susyId('barium_nitrate_solution'))
+                .liquid()
+                .components(BariumNitrate, Water)
+                .colorAverage()
+                .build();
     }
 }

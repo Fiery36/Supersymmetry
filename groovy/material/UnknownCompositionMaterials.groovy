@@ -3048,5 +3048,15 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0x629e1c)
                 .build();
+
+        PentaerythritolSolution = new Material.Builder(4668, SuSyUtility.susyId('pentaerythritol_solution'))
+                .liquid()
+                .color(0x5c0c38)
+                .build();
+
+        CrudePentaerythritolTetranitrate = new Material.Builder(4669, SuSyUtility.susyId('crude_pentaerythritol_tetranitrate'))
+                .dust()
+                .color(0x870c2f)
+                .build();
     }
 }

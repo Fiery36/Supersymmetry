@@ -754,6 +754,8 @@ class SuSyMaterials {
         public static Material PlutoniumExtract;
         public static Material PlutoniumIIINitrateSolution;
         public static Material ReextractedReprocessedUraniumExtract;
+        public static Material PentaerythritolSolution;
+        public static Material CrudePentaerythritolTetranitrate;
 
         // Petrochem Materials
 
@@ -1540,13 +1542,16 @@ class SuSyMaterials {
         public static Material ReprocessedUranylNitrate;
         public static Material FerrousSulfamate;
         public static Material ReprocessedUraniumTrioxide;
-        public static Material PlutoniumIIINitrate;
-        public static Material PlutoniumDioxide;
+        public static Material ReactorGradePlutoniumIIINitrate;
+        public static Material ReactorGradePlutoniumDioxide;
         public static Material HydroxylammoniumNitrateSolution;
         public static Material ReprocessedUraniumDioxide;
         public static Material ReprocessedUraniumTetrafluoride;
         public static Material ReprocessedUraniumHexafluoride;
         public static Material PlutoniumGallium;
+        public static Material MixedOxideFuel;
+        public static Material DilutedAcetone;
+        public static Material BariumNitrate;
 
         // HP Materials
 
@@ -1765,6 +1770,7 @@ class SuSyMaterials {
         public static Material FerrousSulfamateSolution;
         public static Material SodiumNitriteSolution;
         public static Material PlutoniumReductionSolution;
+        public static Material BariumNitrateSolution;
 
         // Organic Chemistry Materials
 
@@ -1982,7 +1988,7 @@ class SuSyMaterials {
         public static Material IsoOctane;
         public static Material PurifiedIsoprene;
         public static Material Cyclopentadiene;
-        public static Material HexamethylenetetramineSolution;
+        public static Material Hexamethylenetetramine;
         public static Material Ferrocene;
         public static Material Polyisoprene;
         public static Material Chloroethane;
@@ -2202,6 +2208,9 @@ class SuSyMaterials {
         public static Material NHydroxyethylEthylenediamine;
         public static Material NHydroxyethylEthylenediaminetriaceticAcid;
         public static Material Pyrazine;
+        public static Material Pentaerythritol;
+        public static Material PentaerythritolTetranitrate;
+        public static Material RDX;
 
         // Third Degree Materials
 
@@ -2312,6 +2321,9 @@ class SuSyMaterials {
         public static Material Aliquat336ExtractionMixture;
         public static Material PolyvinylAlcoholBinder;
         public static Material ActinideSeparationMixture;
+        public static Material HexamethylenetetramineSolution;
+        public static Material CompositionB;
+        public static Material Baratol;
 
         // Thermodynamics Materials
 

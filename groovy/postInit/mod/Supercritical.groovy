@@ -89,7 +89,8 @@ def fuels = [
     //'ThoriumDioxide',
     'Leu235Dioxide',
     'Haleu235Dioxide',
-    'Heu235Dioxide'
+    'Heu235Dioxide',
+    'MixedOxideFuel'
 ]
 
     // Fuel Cladding

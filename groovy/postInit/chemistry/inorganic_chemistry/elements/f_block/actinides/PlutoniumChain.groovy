@@ -61,7 +61,7 @@ MIXER_SETTLER.recipeBuilder()
 
 DT.recipeBuilder()
     .fluidInputs(fluid('plutonium_iii_nitrate_solution') * 8000)
-    .outputs(metaitem('dustPlutoniumIiiNitrate') * 13)
+    .outputs(metaitem('dustReactorGradePlutoniumIiiNitrate') * 13)
     .fluidOutputs(fluid('nitric_acid') * 1000)
     .fluidOutputs(fluid('water') * 2000)
     .duration(120)
@@ -69,8 +69,8 @@ DT.recipeBuilder()
     .buildAndRegister();
 
 ROTARY_KILN.recipeBuilder()
-    .inputs(metaitem('dustPlutoniumIiiNitrate') * 13)
-    .outputs(metaitem('dustPlutoniumDioxide') * 3)
+    .inputs(metaitem('dustReactorGradePlutoniumIiiNitrate') * 13)
+    .outputs(metaitem('dustReactorGradePlutoniumDioxide') * 3)
     .fluidOutputs(fluid('nitrogen_dioxide') * 3000)
     .fluidOutputs(fluid('oxygen') * 1000)
     .duration(120)
@@ -81,11 +81,20 @@ ROTARY_KILN.recipeBuilder()
 
 REACTION_FURNACE.recipeBuilder()
     .notConsumable(fluid('calcium_chloride') * 576)
-    .inputs(metaitem('dustPlutoniumDioxide') * 3)
-    .fluidInputs(fluid('dustCalcium') * 2)
+    .inputs(metaitem('dustReactorGradePlutoniumDioxide') * 3)
+    .inputs(ore('dustCalcium') * 2)
     .outputs(metaitem('dustReactorGradePlutonium'))
     .outputs(metaitem('dustQuicklime') * 4)
     .duration(120)
     .EUt(480)
     .buildAndRegister();
 
+// MOX
+
+BLENDER.recipeBuilder()
+    .inputs(metaitem('dustReactorGradePlutoniumDioxide'))
+    .inputs(metaitem('dustUraniumDioxide') * 19)
+    .outputs(metaitem('dustMixedOxideFuel') * 20)
+    .duration(200)
+    .EUt(1920)
+    .buildAndRegister();
