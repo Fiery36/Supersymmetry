@@ -42,8 +42,6 @@ public class FirstDegreeMaterialsB {
                 .color(0x012916)
                 .build();
 
-        // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
-
         Zircaloy4 = new Material.Builder(8710, SuSyUtility.susyId('zircaloy_4'))
                 .ingot().liquid(new FluidBuilder().temperature(2200))
                 .components(HighPurityZirconium * 18, Tin * 3, Iron * 2, Chrome)

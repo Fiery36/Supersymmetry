@@ -272,7 +272,7 @@ FBR.recipeBuilder()
     .notConsumable(ore('catalystBedSilicaGel'))
     .fluidInputs(fluid('purified_reprocessed_uranium_concentrate') * 2000)
     .fluidOutputs(fluid('reprocessed_uranyl_nitrate_solution') * 2000)
-    .duration(6)
+    .duration(60)
     .EUt(480)
     .buildAndRegister();
 

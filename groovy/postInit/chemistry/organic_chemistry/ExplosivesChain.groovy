@@ -158,7 +158,7 @@ BLENDER.recipeBuilder()
 // Detonator
 
 // Slapper detonator
-WEAPONS_FACTORY.recipeBuilder()
+/*WEAPONS_FACTORY.recipeBuilder()
 	.inputs(metaitem('metallized_plastic_film'))
 	.inputs(ore('wireFineAluminium'))
 	.inputs(ore('componentCapacitor'))
@@ -167,4 +167,4 @@ WEAPONS_FACTORY.recipeBuilder()
 	.outputs(metaitem('slapper_detonator'))
 	.duration(200)
 	.EUt(1920)
-	.buildAndRegister()
+	.buildAndRegister()*/

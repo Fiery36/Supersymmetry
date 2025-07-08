@@ -4104,5 +4104,7 @@ public class FirstDegreeMaterialsA {
                 .build();
 
         ThoriumNitrateSolution.setFormula("(Th(NO3)4)(H2O)", true)
+
+        // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
     }
 }
