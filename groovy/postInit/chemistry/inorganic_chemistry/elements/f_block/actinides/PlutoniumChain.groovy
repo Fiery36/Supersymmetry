@@ -25,8 +25,8 @@ BR.recipeBuilder()
     .fluidOutputs(fluid('oxidized_plutonium_concentrate') * 960)
     .fluidOutputs(fluid('nitrogen') * 240)
     .fluidOutputs(fluid('nitric_oxide') * 120)
-    .duration(1)
-    .EUt(1)
+    .duration(120)
+    .EUt(480)
     .buildAndRegister();
 
 // Reextraction
