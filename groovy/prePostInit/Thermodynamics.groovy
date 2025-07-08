@@ -874,7 +874,7 @@ recipemap('fluid_heater').recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
-recipemap('condensor').recipeBuilder()
+recipemap('condenser').recipeBuilder()
     .fluidInputs(fluid('dense_steam') * 1000)
     .fluidOutputs(fluid('water') * 1000)
     .duration(5)
