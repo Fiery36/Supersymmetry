@@ -971,6 +971,12 @@ RecyclingHelper.addShaped("gregtech:high_temperature_distillation_tower", metait
     [circuits[3], item('gregtech:wire_coil'), circuits[3]]
 ]);
 
+RecyclingHelper.addShaped("susy:mixer_settler", metaitem('susy:mixer_settler'), [
+    [motors[3], circuits[3], motors[3]],
+    [rotors[3], hulls[3], rotors[3]],
+    [pumps[3], tieredCables[3], pumps[3]]
+])
+
 //ION EXCHANGE COLUMN
 
 for (i = 1; i <= 8; i++) {
