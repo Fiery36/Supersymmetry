@@ -151,14 +151,6 @@ for (blastable in blastables) {
         .EUt(Globals.voltAmps[0])
         .buildAndRegister()
 
-    FORGE_HAMMER.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(ore('ingotWroughtIron'))
-        .outputs(item('minecraft:iron_ingot'))
-        .duration(60)
-        .EUt(Globals.voltAmps[0])
-        .buildAndRegister()
-
     // Puddling
     for (combustible in combustibles) {
         REVERBERATORY_FURNACE.recipeBuilder()
@@ -223,6 +215,7 @@ for (blastable in blastables) {
 // Continuous casting
 
 ADVANCED_ARC_FURNACE.recipeBuilder()
+    .circuitMeta(20)
     .inputs(ore('dustSteel') * 10)
     .fluidOutputs(fluid('molten.steel') * 1440)
     .EUt(120)
@@ -314,8 +307,6 @@ ROASTER.recipeBuilder()
     .buildAndRegister()
 
 // Iron chloride processing
-
-    // Iron(II) chloride
 
     BR.recipeBuilder()
         .inputs(ore('dustIron'))
