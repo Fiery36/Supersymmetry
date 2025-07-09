@@ -3,7 +3,7 @@
 ### Mod Updates
 - Inventory Bogo Sorter 1.4.10 -> 1.4.11
 - ReFined Tools 7.76 -> 7.77
-- SusyCore v0.1.65 -> v0.1.67
+- SusyCore v0.1.65 -> v0.1.68
 - Supercritical 0.1.2 -> 0.1.3
 ## Changes
 ### New Features
