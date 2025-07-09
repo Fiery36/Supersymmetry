@@ -151,25 +151,6 @@ for (blastable in blastables) {
         .EUt(Globals.voltAmps[0])
         .buildAndRegister()
 
-    // Wrought Iron Plate * 2
-    mods.gregtech.forge_hammer.removeByInput(16, [metaitem('ingotWroughtIron') * 3], null)
-
-    FORGE_HAMMER.recipeBuilder()
-        .circuitMeta(1)
-        .inputs(ore('ingotWroughtIron'))
-        .outputs(item('minecraft:iron_ingot'))
-        .duration(60)
-        .EUt(Globals.voltAmps[0])
-        .buildAndRegister()
-
-    FORGE_HAMMER.recipeBuilder()
-        .circuitMeta(2)
-        .inputs(ore('ingotWroughtIron') * 3)
-        .outputs(metaitem('plateWroughtIron') * 2)
-        .duration(60)
-        .EUt(Globals.voltAmps[0])
-        .buildAndRegister()
-
     // Puddling
     for (combustible in combustibles) {
         REVERBERATORY_FURNACE.recipeBuilder()

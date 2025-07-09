@@ -251,7 +251,7 @@ for (anItem in electric) {
 MIXER.recipeBuilder()
     .inputs(ore('dyeWhite') * 2)
     .fluidInputs(fluid('gtfo_raw_soybean_oil') * 50)
-    .circuitMeta(2)
+    .circuitMeta(3)
     .outputs(item('ags_modernmarkings:wall_marking_voltage_eu') * 8)
     .EUt(8)
     .duration(30)
