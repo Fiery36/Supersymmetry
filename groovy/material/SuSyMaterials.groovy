@@ -33,6 +33,15 @@ class SuSyMaterials {
         public static Material HALEU235;
         public static Material HEU235;
         public static Material WeaponsGradeUranium;
+        public static Material Uranium234;
+        public static Material Uranium236;
+        public static Material ReprocessedUranium;
+        public static Material Plutonium238;
+        public static Material Plutonium240;
+        public static Material Plutonium242;
+        public static Material Plutonium244;
+        public static Material ReactorGradePlutonium;
+
 
         // Ore Materials
 
@@ -727,6 +736,26 @@ class SuSyMaterials {
         public static Material HydraulicFluid;
         public static Material YttriaStabilizedZirconia;
         public static Material HighAluminaRefractory;
+        public static Material SpentFuelSuspension;
+        public static Material SpentFuelSolution;
+        public static Material UraniumPlutoniumExtract;
+        public static Material TransuraniumSolution;
+        public static Material ReprocessedUraniumExtract;
+        public static Material ImpureReprocessedUraniumExtract;
+        public static Material RadiolyzedActinideSeparationMixture;
+        public static Material ReprocessedUraniumConcentrate;
+        public static Material RadioactiveWastewater;
+        public static Material PurifiedReprocessedUraniumExtract;
+        public static Material PurifiedReprocessedUraniumConcentrate;
+        public static Material ReprocessedUranylNitrateSolution;
+        public static Material PlutoniumConcentrate;
+        public static Material PurifiedPlutoniumConcentrate;
+        public static Material OxidizedPlutoniumConcentrate;
+        public static Material PlutoniumExtract;
+        public static Material PlutoniumIIINitrateSolution;
+        public static Material ReextractedReprocessedUraniumExtract;
+        public static Material PentaerythritolSolution;
+        public static Material CrudePentaerythritolTetranitrate;
 
         // Petrochem Materials
 
@@ -1495,6 +1524,7 @@ class SuSyMaterials {
         public static Material CalicheLeach;
         public static Material IodateConcentrate;
         public static Material IodideConcentrate;
+        public static Material Hydroxylamine;
 
         // First Degree Materials B
 
@@ -1509,6 +1539,19 @@ class SuSyMaterials {
         public static Material PurifiedBerylliumHydroxide;
         public static Material PurifiedBerylliumOxide;
         public static Material PurifiedBerylliumChloride;
+        public static Material ReprocessedUranylNitrate;
+        public static Material FerrousSulfamate;
+        public static Material ReprocessedUraniumTrioxide;
+        public static Material ReactorGradePlutoniumIIINitrate;
+        public static Material ReactorGradePlutoniumDioxide;
+        public static Material HydroxylammoniumNitrateSolution;
+        public static Material ReprocessedUraniumDioxide;
+        public static Material ReprocessedUraniumTetrafluoride;
+        public static Material ReprocessedUraniumHexafluoride;
+        public static Material PlutoniumGallium;
+        public static Material MixedOxideFuel;
+        public static Material DilutedAcetone;
+        public static Material BariumNitrate;
 
         // HP Materials
 
@@ -1724,6 +1767,10 @@ class SuSyMaterials {
         public static Material ThoriumChlorideSolution;
         public static Material HydroiodicAcid;
         public static Material PotassiumChlorateSolution;
+        public static Material FerrousSulfamateSolution;
+        public static Material SodiumNitriteSolution;
+        public static Material PlutoniumReductionSolution;
+        public static Material BariumNitrateSolution;
 
         // Organic Chemistry Materials
 
@@ -1774,7 +1821,6 @@ class SuSyMaterials {
         public static Material PBIPrepolymer;
         public static Material PBISolution;
         public static Material PBIWaste;
-        public static Material Hydroxylamine;
         public static Material Cyclohexanone;
         public static Material CaprolactamSolution;
         public static Material CrackedOneTwoDichloroethaneMix;
@@ -1942,7 +1988,7 @@ class SuSyMaterials {
         public static Material IsoOctane;
         public static Material PurifiedIsoprene;
         public static Material Cyclopentadiene;
-        public static Material HexamethylenetetramineSolution;
+        public static Material Hexamethylenetetramine;
         public static Material Ferrocene;
         public static Material Polyisoprene;
         public static Material Chloroethane;
@@ -2162,7 +2208,9 @@ class SuSyMaterials {
         public static Material NHydroxyethylEthylenediamine;
         public static Material NHydroxyethylEthylenediaminetriaceticAcid;
         public static Material Pyrazine;
-
+        public static Material Pentaerythritol;
+        public static Material PentaerythritolTetranitrate;
+        public static Material RDX;
 
         // Third Degree Materials
 
@@ -2272,6 +2320,10 @@ class SuSyMaterials {
         public static Material TributylPhosphateExtractionMixture;
         public static Material Aliquat336ExtractionMixture;
         public static Material PolyvinylAlcoholBinder;
+        public static Material ActinideSeparationMixture;
+        public static Material HexamethylenetetramineSolution;
+        public static Material CompositionB;
+        public static Material Baratol;
 
         // Thermodynamics Materials
 
