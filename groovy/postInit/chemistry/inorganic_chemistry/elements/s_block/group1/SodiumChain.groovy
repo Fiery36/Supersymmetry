@@ -3,6 +3,7 @@ import globals.Globals
 ROASTER = recipemap('roaster')
 ELECTROLYTIC_CELL = recipemap('electrolytic_cell')
 BR = recipemap('batch_reactor')
+MIXER = recipemap('mixer')
 
 //TRONA
 ROASTER.recipeBuilder()
@@ -97,6 +98,14 @@ ROASTER.recipeBuilder()
         .fluidOutputs(fluid('nitric_oxide') * 1000)
         .fluidOutputs(fluid('nitrogen_dioxide') * 1000)
         .duration(60)
+        .EUt(30)
+        .buildAndRegister()
+
+MIXER.recipeBuilder()
+        .inputs(ore('dustSodiumNitrite') * 4)
+        .fluidInputs(fluid('water') * 1000)
+        .fluidOutputs(fluid('sodium_nitrite_solution') * 1000)
+        .duration(20)
         .EUt(30)
         .buildAndRegister()
 
