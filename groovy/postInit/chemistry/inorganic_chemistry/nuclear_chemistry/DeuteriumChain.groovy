@@ -108,7 +108,7 @@ ION_EXCHANGE.recipeBuilder()
     // Hot tower stage 3
     SIEVE_DT.recipeBuilder() 
         .circuitMeta(3)
-        .fluidInputs(fluid('medium_enriched_water') * 1900)
+        .fluidInputs(fluid('highly_enriched_water') * 1900)
         .fluidInputs(fluid('lightly_enriched_hydrogen_sulfide') * 1900)
         .fluidOutputs(fluid('water') * 1900)
         .fluidOutputs(fluid('medium_enriched_hydrogen_sulfide') * 1900)
