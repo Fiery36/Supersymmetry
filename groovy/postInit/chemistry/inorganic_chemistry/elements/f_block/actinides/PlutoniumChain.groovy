@@ -50,17 +50,17 @@ MIXER.recipeBuilder()
     .buildAndRegister();
 
 MIXER_SETTLER.recipeBuilder()
-    .fluidInputs(fluid('plutonium_extract') * 7500)
-    .fluidInputs(fluid('hydroxylammonium_nitrate_solution') * 1000)
-    .fluidOutputs(fluid('radiolyzed_actinide_separation_mixture') * 7500)
-    .fluidOutputs(fluid('plutonium_iii_nitrate_solution') * 3000)
+    .fluidInputs(fluid('plutonium_extract') * 20000)
+    .fluidInputs(fluid('hydroxylammonium_nitrate_solution') * 3000)
+    .fluidOutputs(fluid('radiolyzed_actinide_separation_mixture') * 20000)
+    .fluidOutputs(fluid('plutonium_iii_nitrate_solution') * 9000)
     .requiredCells(4)
     .duration(120)
     .EUt(480)
     .buildAndRegister();
 
 DT.recipeBuilder()
-    .fluidInputs(fluid('plutonium_iii_nitrate_solution') * 8000)
+    .fluidInputs(fluid('plutonium_iii_nitrate_solution') * 3000)
     .outputs(metaitem('dustReactorGradePlutoniumIiiNitrate') * 13)
     .fluidOutputs(fluid('nitric_acid') * 1000)
     .fluidOutputs(fluid('water') * 2000)
