@@ -180,7 +180,7 @@ FF.recipeBuilder() // Columbite Slurry
     .duration(80)
     .buildAndRegister()
 
-MIXER_SETTLER.recipeBuilder() // Flotated Columbite
+CLARIFIER.recipeBuilder() // Flotated Columbite
     .fluidInputs(fluid('columbite_slurry') * 1000)
     .outputs(metaitem('dustFlotatedColumbite') * 16)
     .fluidOutputs(fluid('wastewater') * 1000)
