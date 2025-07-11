@@ -36,8 +36,8 @@ ROASTER.recipeBuilder()
         .outputs(metaitem('dustHafniumDioxide') * 3)
         .fluidOutputs(fluid('dense_steam') * 2000)
         .fluidOutputs(fluid('sulfur_trioxide') * 2000)
-        .EUt(Globals.voltAmps[1])
-        .duration(20)
+        .EUt(Globals.voltAmps[3])
+        .duration(100)
         .buildAndRegister()
 
 for (highPurityCombustible in highPurityCombustibles()) {
