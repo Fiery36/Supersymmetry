@@ -186,7 +186,6 @@ CLARIFIER.recipeBuilder() // Flotated Columbite
     .fluidOutputs(fluid('wastewater') * 1000)
     .duration(20)
     .EUt(Globals.voltAmps[1])
-    .requiredCells(1)
     .buildAndRegister()
 
 AUTOCLAVE.recipeBuilder() // Impure Fluoroniobic Acid Solution
@@ -209,20 +208,20 @@ MIXER_SETTLER.recipeBuilder() // Niobium-rich Extract
     .buildAndRegister()
 
 MIXER_SETTLER.recipeBuilder() // Scrubbed Niobium-rich Extract
-    .fluidInputs(fluid('niobium_rich_extract') * 500)
-    .notConsumable(fluid('sulfuric_acid') * 500)
-    .fluidOutputs(fluid('scrubbed_niobium_rich_extract') * 500)
-    .duration(5)
+    .fluidInputs(fluid('niobium_rich_extract') * 1000)
+    .notConsumable(fluid('sulfuric_acid') * 1000)
+    .fluidOutputs(fluid('scrubbed_niobium_rich_extract') * 1000)
+    .duration(20)
     .EUt(Globals.voltAmps[3])
     .requiredCells(1)
     .buildAndRegister()
 
 MIXER_SETTLER.recipeBuilder() // Fluoroniobic Acid Solution
-    .fluidInputs(fluid('scrubbed_niobium_rich_extract') * 500)
-    .fluidInputs(fluid('distilled_water') * 500)
-    .fluidOutputs(fluid('diluted_tantalum_extract') * 500)
-    .fluidOutputs(fluid('fluoroniobic_acid_solution') * 500)
-    .duration(5)
+    .fluidInputs(fluid('scrubbed_niobium_rich_extract') * 1000)
+    .fluidInputs(fluid('distilled_water') * 1000)
+    .fluidOutputs(fluid('diluted_tantalum_extract') * 1000)
+    .fluidOutputs(fluid('fluoroniobic_acid_solution') * 1000)
+    .duration(20)
     .EUt(Globals.voltAmps[3])
     .requiredCells(1)
     .buildAndRegister()
