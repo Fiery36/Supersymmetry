@@ -118,7 +118,7 @@ BR.recipeBuilder()
     .buildAndRegister()
 
 //SEPARATION OF SODIUM FLUOROBERYLLATE
-CENTRIFUGE.recipeBuilder()
+BR.recipeBuilder()
     .inputs(ore('dustFluorideFusedBeryl') * 23)
     .fluidInputs(fluid('distilled_water') * 6000)
     .outputs(metaitem('dustAlumina') * 10)
