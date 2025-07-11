@@ -4,7 +4,6 @@ import static globals.CarbonGlobals.*
 MIXER = recipemap('mixer')
 FF = recipemap('froth_flotation')
 CLARIFIER = recipemap('clarifier')
-CENTRIFUGE = recipemap('centrifuge')
 ELECTROSTATIC_SEPARATOR = recipemap('electrostatic_separator')
 BR = recipemap('batch_reactor')
 CSTR = recipemap('continuous_stirred_tank_reactor')
@@ -21,6 +20,7 @@ GRAVITY_SEPARATOR = recipemap('gravity_separator')
 ADVANCED_ARC_FURNACE = recipemap('advanced_arc_furnace')
 ROASTER = recipemap('roaster')
 TUBE_FURNACE = recipemap('tube_furnace')
+MIXER_SETTLER = recipemap('mixer_settler')
 
 // Benefication
 
@@ -176,12 +176,13 @@ MIXER.recipeBuilder()
         .duration(200)
         .buildAndRegister()
 
-CENTRIFUGE.recipeBuilder()
+MIXER_SETTLER.recipeBuilder()
         .fluidInputs(fluid('zirconyl_chloride_solution') * 2000)
         .fluidInputs(fluid('hafnium_extraction_mixture') * 1000)
         .fluidOutputs(fluid('purified_zirconyl_chloride_solution') * 2000)
         .fluidOutputs(fluid('hafnium_extract') * 1000)
         .EUt(Globals.voltAmps[3])
+        .requiredCells(1)
         .duration(20)
         .buildAndRegister()
 
