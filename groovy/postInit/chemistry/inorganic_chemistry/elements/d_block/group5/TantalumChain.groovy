@@ -86,10 +86,10 @@ MIXER_SETTLER.recipeBuilder() // Tantalum-rich Extract
     .buildAndRegister()
 
 MIXER_SETTLER.recipeBuilder() // Scrubbed Tantalum-rich Extract
-    .fluidInputs(fluid('tantalum_rich_extract') * 500)
-    .notConsumable(fluid('sulfuric_acid') * 500)
-    .fluidOutputs(fluid('scrubbed_tantalum_rich_extract') * 500)
-    .duration(5)
+    .fluidInputs(fluid('tantalum_rich_extract') * 1000)
+    .notConsumable(fluid('sulfuric_acid') * 1000)
+    .fluidOutputs(fluid('scrubbed_tantalum_rich_extract') * 1000)
+    .duration(10)
     .EUt(Globals.voltAmps[3])
     .requiredCells(1)
     .buildAndRegister()
