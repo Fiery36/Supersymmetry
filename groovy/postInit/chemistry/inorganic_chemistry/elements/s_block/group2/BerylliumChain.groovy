@@ -345,8 +345,8 @@ MIXER_SETTLER.recipeBuilder()
     .fluidOutputs(fluid('beryllium_extract') * 8000)
     .fluidOutputs(fluid('wastewater') * 2500) //contains other impurites from bertrandite
     .EUt(Globals.voltAmps[2])
-    .requiredCells(1)
-    .duration(50)
+    .requiredCells(6)
+    .duration(120)
     .buildAndRegister()
 
 // (NH4)2CO3 + H2O -> 2NH4OH + CO2
@@ -359,8 +359,8 @@ MIXER_SETTLER.recipeBuilder()
     .fluidOutputs(fluid('basic_beryllium_carbonate_slurry') * 2000) //Idk what else to call it
     .fluidOutputs(fluid('beryllium_extraction_mixture') * 8000) 
     .EUt(Globals.voltAmps[2])
-    .requiredCells(1)
-    .duration(50)
+    .requiredCells(4)
+    .duration(120)
     .buildAndRegister()
 
 SIFTER.recipeBuilder()

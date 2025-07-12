@@ -82,7 +82,7 @@ MIXER_SETTLER.recipeBuilder() // Tantalum-rich Extract
     .fluidOutputs(fluid('metal_sulfate_waste') * 1000)
     .duration(80)
     .EUt(Globals.voltAmps[3])
-    .requiredCells(1)
+    .requiredCells(6)
     .buildAndRegister()
 
 MIXER_SETTLER.recipeBuilder() // Scrubbed Tantalum-rich Extract
@@ -91,7 +91,7 @@ MIXER_SETTLER.recipeBuilder() // Scrubbed Tantalum-rich Extract
     .fluidOutputs(fluid('scrubbed_tantalum_rich_extract') * 1000)
     .duration(10)
     .EUt(Globals.voltAmps[3])
-    .requiredCells(1)
+    .requiredCells(2)
     .buildAndRegister()
 
 MIXER_SETTLER.recipeBuilder() // Tantalum Extract
@@ -101,7 +101,7 @@ MIXER_SETTLER.recipeBuilder() // Tantalum Extract
     .fluidOutputs(fluid('purified_fluoroniobic_acid_solution') * 1000)
     .duration(90)
     .EUt(Globals.voltAmps[3])
-    .requiredCells(1)
+    .requiredCells(4)
     .buildAndRegister()
 
 MIXER_SETTLER.recipeBuilder() // Fluorotantalic Acid Solution
@@ -111,7 +111,7 @@ MIXER_SETTLER.recipeBuilder() // Fluorotantalic Acid Solution
     .fluidOutputs(fluid('fluorotantalic_acid_solution') * 2000) // 9/5 mol Ta
     .duration(80)
     .EUt(Globals.voltAmps[3])
-    .requiredCells(1)
+    .requiredCells(2)
     .buildAndRegister()
 
 CRYSTALLIZER.recipeBuilder() // Potassium Heptafluorotantalate
@@ -150,7 +150,7 @@ MIXER_SETTLER.recipeBuilder() // Fluorotantalic Acid Solution
     .fluidOutputs(fluid('fluorotantalic_acid_solution') * 250) //0.2 mol of Ta per 8000L of dil. Ta ext.
     .duration(80)
     .EUt(Globals.voltAmps[3])
-    .requiredCells(1)
+    .requiredCells(2)
     .buildAndRegister()
 
 // From pyrochlore
