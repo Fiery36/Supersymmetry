@@ -82,14 +82,14 @@ MIXER_SETTLER.recipeBuilder() // Tantalum-rich Extract
     .fluidOutputs(fluid('metal_sulfate_waste') * 1000)
     .duration(80)
     .EUt(Globals.voltAmps[3])
-    .requiredCells(6)
+    .requiredCells(4)
     .buildAndRegister()
 
 MIXER_SETTLER.recipeBuilder() // Scrubbed Tantalum-rich Extract
-    .fluidInputs(fluid('tantalum_rich_extract') * 1000)
-    .notConsumable(fluid('sulfuric_acid') * 1000)
-    .fluidOutputs(fluid('scrubbed_tantalum_rich_extract') * 1000)
-    .duration(10)
+    .fluidInputs(fluid('tantalum_rich_extract') * 8000)
+    .notConsumable(fluid('sulfuric_acid') * 8000)
+    .fluidOutputs(fluid('scrubbed_tantalum_rich_extract') * 8000)
+    .duration(80)
     .EUt(Globals.voltAmps[3])
     .requiredCells(2)
     .buildAndRegister()
@@ -101,7 +101,7 @@ MIXER_SETTLER.recipeBuilder() // Tantalum Extract
     .fluidOutputs(fluid('purified_fluoroniobic_acid_solution') * 1000)
     .duration(90)
     .EUt(Globals.voltAmps[3])
-    .requiredCells(4)
+    .requiredCells(2)
     .buildAndRegister()
 
 MIXER_SETTLER.recipeBuilder() // Fluorotantalic Acid Solution

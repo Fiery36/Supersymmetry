@@ -138,7 +138,7 @@ BLENDER.recipeBuilder()
         .fluidOutputs(fluid('impure_uranyl_carbonate_solution') * 1000)
         .EUt(720)
         .duration(160)
-        .requiredCells(4)
+        .requiredCells(2)
         .buildAndRegister()
 
     SIFTER.recipeBuilder()
