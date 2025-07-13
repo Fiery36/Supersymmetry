@@ -2,13 +2,13 @@ import globals.Globals
 
 BR = recipemap('batch_reactor')
 REACTION_FURNACE = recipemap('reaction_furnace')
-CENTRIFUGE = recipemap('centrifuge')
 ROASTER = recipemap('roaster')
 DISTILLERY = recipemap('distillery')
+MIXER_SETTLER = recipemap('mixer_settler')
 
 // Cerium reductive stripping
 // 2Ce(NO3)4 + H2O2 -> 2Ce(NO3)3 + O2 + 2HNO3
-CENTRIFUGE.recipeBuilder()
+MIXER_SETTLER.recipeBuilder()
     .fluidInputs(fluid('cerium_extract') * 20000)
     .fluidInputs(fluid('hydrogen_peroxide_solution') * 500)
     .fluidOutputs(fluid('cerium_iii_nitrate_solution') * 1500)
@@ -16,6 +16,7 @@ CENTRIFUGE.recipeBuilder()
     .fluidOutputs(fluid('oxygen') * 1000)
     .duration(80)
     .EUt(30)
+    .requiredCells(2)
     .buildAndRegister()
 
 BR.recipeBuilder()

@@ -3941,6 +3941,8 @@ public class FirstDegreeMaterialsA {
                 .color(0x4cab37)
                 .build()
 
+        PraseodymiumIIINitrate.setFormula("Pr(NO3)3", true)
+
         NeodymiumChlorideSolution = new Material.Builder(8682, SuSyUtility.susyId('neodymium_chloride_solution'))
                 .liquid()
                 .components(Neodymium, Chlorine * 3, Water * 3)
