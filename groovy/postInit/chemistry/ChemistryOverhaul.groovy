@@ -3736,22 +3736,6 @@ DISTILLERY.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
-// Dense steam processing
-
-FLUID_HEATER.recipeBuilder()
-    .circuitMeta(3)
-    .fluidInputs(fluid('water') * 1000)
-    .fluidOutputs(fluid('dense_steam') * 1000)
-    .duration(20)
-    .EUt(30)
-    .buildAndRegister()
-
-CONDENSER.recipeBuilder()
-    .fluidInputs(fluid('dense_steam') * 1000)
-    .fluidOutputs(fluid('water') * 1000)
-    .duration(5)
-    .buildAndRegister()
-
 // Nitration Mixture * 2000
 mods.gregtech.mixer.removeByInput(2, null, [fluid('nitric_acid') * 1000, fluid('sulfuric_acid') * 1000])
 mods.gregtech.blender.removeByInput(2, null, [fluid('nitric_acid') * 1000, fluid('sulfuric_acid') * 1000])

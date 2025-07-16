@@ -245,5 +245,11 @@ public class FirstDegreeMaterialsB {
                 .build();
 
         BariumNitrate.setFormula("Ba(NO3)2", true);
+
+        DeuteriumTritiumMixture = new Material.Builder(8735, SuSyUtility.susyId('deuterium_tritium_mixture'))
+                .gas()
+                .components(Deuterium * 99, Tritium * 1)
+                .colorAverage()
+                .build();
     }
 }
