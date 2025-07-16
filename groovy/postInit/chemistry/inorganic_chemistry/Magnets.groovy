@@ -79,7 +79,7 @@ crafting.addShapeless('MagneticSteelMagnetite',metaitem('stickSteelMagnetic'), [
     metaitem('chunk.magnetite')
 ])
 
-crafting.addShapeless('MagneticSteelMagnetite',metaitem('plateSteelMagnetic'), [
+crafting.addShapeless('SteelPlateMagnetite',metaitem('plateSteelMagnetic'), [
     metaitem('hot_steel_plate'),
     metaitem('chunk.magnetite')
 ])
