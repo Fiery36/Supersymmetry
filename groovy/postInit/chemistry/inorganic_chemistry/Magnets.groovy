@@ -84,7 +84,7 @@ crafting.addShapeless('MagneticSteelMagnetite',metaitem('plateSteelMagnetic'), [
     metaitem('chunk.magnetite')
 ])
 
-crafting.addShaped('MagneticRodVoltaic',metaitem('stickIronMagnetic'), magnetic_rod_ingredients)
+crafting.addShaped('MagneticIronRodVoltaic',metaitem('stickIronMagnetic'), iron_magnetic_rod_ingredients)
 crafting.addShaped('MagneticPlateVoltaic',metaitem('plateSteelMagnetic'), magnetic_plate_ingredients)
 crafting.addShaped('MagneticSteelRodVoltaic',metaitem('stickSteelMagnetic'), steel_magnetic_rod_ingredients)
 crafting.addShaped('VoltaicPileCrafting',metaitem('voltaic_pile'), voltaic_pile_ingredients)
