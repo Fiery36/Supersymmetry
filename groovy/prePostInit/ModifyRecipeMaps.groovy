@@ -348,6 +348,7 @@ RecipeMaps.SIFTER_RECIPES
     .modifyMaxFluidInputs(1)
     .modifyMaxFluidOutputs(1)
     .modifyMaxInputs(2)
+    .modifyMaxOutputs(8)
 
 RecipeMaps.CENTRIFUGE_RECIPES
     .modifyMaxFluidInputs(3)
