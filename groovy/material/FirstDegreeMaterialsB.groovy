@@ -125,24 +125,6 @@ public class FirstDegreeMaterialsB {
                 .ingotSmeltInto(Alnico)
                 .arcSmeltInto(Alnico)
                 .macerateInto(Alnico)
-                .build()
-
-        SodiumEthoxide = new Material.Builder(8722, SuSyUtility.susyId('sodium_ethoxide'))
-                .dust()
-                .components(Carbon * 2, Hydrogen * 5, Oxygen, Sodium)
-                .color(0xbd4333)
-                .build();
-
-        PNitrotoluene = new Material.Builder(8723, SuSyUtility.susyId('p_nitrotoluene'))
-                .dust().liquid(new FluidBuilder().temperature(325))
-                .components(Carbon * 7, Hydrogen * 7, Nitrogen, Oxygen * 2 )
-                .color(0xdbca7b)
-                .build();
-
-        PNitrotolueneSlurry = new Material.Builder(8724, SuSyUtility.susyId('p_nitrotoluene_slurry'))
-                .liquid()
-                .components(PNitrotoluene, SulfuricAcid)
-                .colorAverage()
                 .build();
     }
 }

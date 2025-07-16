@@ -10,68 +10,95 @@ POLYMERIZATION_TANK = recipemap('polymerization_tank')
 DT = recipemap('distillation_tower')
 SOLIDIFIER = recipemap('fluid_solidifier')
 EXTRACTOR = recipemap('extractor')
+PHASE_SEPARATOR = recipemap('phase_separator')
 
-CSTR.recipeBuilder()
-    .fluidInputs(fluid('ammonia') * 100)
-    .fluidInputs(fluid('phthalic_anhydride') * 50)
-    .fluidOutputs(fluid('ammoniacal_phthalimide') * 100)
-    .duration(1)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister();
+// Ultem
 
-CRYSTALLIZER.recipeBuilder()
-    .fluidInputs(fluid('ammoniacal_phthalimide') * 2000)
-    .outputs(metaitem('dustPhthalimide'))
+BR.recipeBuilder()
+    .inputs(ore('dustPhthalicAnhydride') * 15)
+    .fluidInputs(fluid('ammonia') * 2000)
+    .outputs(metaitem('dustPhthalimide') * 16)
     .fluidOutputs(fluid('ammonia_solution') * 1000)
-    .duration(160)
+    .duration(120)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 BR.recipeBuilder()
     .inputs(ore('dustPhthalimide'))
-    .fluidInputs(fluid('methanol') * 1000)
-    .outputs(metaitem('dustNMethylPhthalimide'))
-    .fluidOutputs(fluid('water') * 1000)
-    .duration(120)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister();
-
-BR.recipeBuilder()
-    .inputs(ore('dustNMethylPhthalimide'))
-    .fluidInputs(fluid('nitric_acid') * 1000)
-    .fluidOutputs(fluid('four_nitro_n_methyl_phthalimide_solution') * 2000)
+    .inputs(ore('dustPotassiumHydroxide') * 2)
+    .fluidInputs(fluid('ethanol') * 1000)
+    .fluidOutputs(fluid('potassium_phthalimide_solution') * 1000)
     .duration(120)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('potassium_phthalimide_solution') * 1000)
+    .outputs(metaitem('dustPotassiumPhthalimide') * 16)
+    .fluidOutputs(fluid('ethanol') * 1000)
+    .duration(20)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister();
+
+BR.recipeBuilder()
+    .inputs(ore('dustPotassiumPhthalimide') * 16)
+    .fluidInputs(fluid('chloromethane') * 1000)
+    .fluidInputs(fluid('dimethylformamide') * 1000)
+    .fluidOutputs(fluid('n_methyl_phthalimide_solution') * 1000)
+    .duration(120)
+    .EUt(Globals.voltAmps[2])
+    .buildAndRegister();
+
+DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('n_methyl_phthalimide_solution') * 1000)
+    .outputs(metaitem('dustNMethylPhthalimide') * 19)
+    .fluidOutputs(fluid('dimethylformamide') * 1000)
+    .duration(20)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister();
+
+BR.recipeBuilder()
+    .inputs(ore('dustNMethylPhthalimide'))
+    .fluidInputs(fluid('nitration_mixture') * 2000)
+    .fluidOutputs(fluid('four_nitro_n_methyl_phthalimide_solution') * 2000)
+    .duration(120)
+    .EUt(Globals.voltAmps[2])
+    .buildAndRegister();
+
+PHASE_SEPARATOR.recipeBuilder()
     .fluidInputs(fluid('four_nitro_n_methyl_phthalimide_solution') * 2000)
-    .outputs(metaitem('dustFourNitroNMethylPhthalimide'))
+    .outputs(metaitem('dustFourNitroNMethylPhthalimide') * 21)
+    .fluidOutputs(fluid('diluted_sulfuric_acid') * 2000)
+    .duration(40)
+    .buildAndRegister();
+
+DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('sodium_bisphenolate_solution') * 2000)
+    .outputs(metaitem('dustSodiumBisphenolate') * 33)
     .fluidOutputs(fluid('water') * 2000)
-    .duration(100)
+    .duration(60)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister();
 
 LCR.recipeBuilder()
-    .inputs(ore('dustFourNitroNMethylPhthalimide') * 2)
-    .inputs(ore('dustSodiumBisphenolate'))
+    .inputs(ore('dustFourNitroNMethylPhthalimide') * 42)
+    .inputs(ore('dustSodiumBisphenolate') * 33)
     .fluidInputs(fluid('n_methyl_two_pyrrolidone') * 1000)
-    .outputs(metaitem('dustSodiumNitrite') * 8)
     .fluidOutputs(fluid('bisphenol_a_diimide_solution') * 1000)
     .duration(200)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister();
 
 LCR.recipeBuilder()
-    .inputs(ore('dustPhthalicAnhydride') * 2)
+    .inputs(ore('dustPhthalicAnhydride') * 30)
     .fluidInputs(fluid('bisphenol_a_diimide_solution') * 1000)
-    .fluidOutputs(fluid('impure_bisphenol_a_dianhydride_solution') * 1000)
+    .fluidOutputs(fluid('bisphenol_a_dianhydride_solution') * 1000)
     .duration(200)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister();
 
 DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('impure_bisphenol_a_dianhydride_solution') * 1000)
+    .fluidInputs(fluid('bisphenol_a_dianhydride_solution') * 1000)
     .outputs(metaitem('dustImpureBisphenolADianhydride') * 3)
     .fluidOutputs(fluid('n_methyl_two_pyrrolidone') * 1000)
     .duration(120)
@@ -79,98 +106,87 @@ DISTILLERY.recipeBuilder()
     .buildAndRegister();
 
 CRYSTALLIZER.recipeBuilder()
-    .fluidInputs(fluid('impure_bisphenol_a_dianhydride') * 3000)
+    .fluidInputs(fluid('impure_bisphenol_a_dianhydride') * 432)
     .outputs(metaitem('dustBisphenolADianhydride'))
-    .fluidOutputs(fluid('phthalimide') * 2000)
+    .fluidOutputs(fluid('phthalimide') * 288)
     .duration(160)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister();
-
-MIXER.recipeBuilder()
-    .inputs(ore('dustMetaPhenylenediamine'))
-    .inputs(ore('dustBisphenolADianhydride'))
-    .fluidInputs(fluid('dichlorobenzene') * 1000)
-    .fluidOutputs(fluid('pei_preparation_mixture') * 1000)
-    .duration(200)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 POLYMERIZATION_TANK.recipeBuilder()
     .notConsumable(fluid('nitrogen') * 8000)
-    .fluidInputs(fluid('pei_preparation_mixture') * 1000)
-    .fluidInputs(fluid('gtfo_aniline') * 200)
-    .fluidOutputs(fluid('pei_polymerisation_solution') * 1200)
+    .fluidInputs(fluid('bisphenol_a_dianhydride') * 144)
+    .fluidInputs(fluid('m_phenylenediamine') * 144)
+    .outputs(metaitem('dustUltem'))
+    .fluidOutputs(fluid('dense_steam') * 2000)
     .duration(300)
-    .EUt(Globals.voltAmps[3])
+    .EUt(1920)
     .buildAndRegister();
 
-DT.recipeBuilder()
-    .fluidInputs(fluid('pei_polymerisation_solution') * 1200)
-    .outputs(metaitem('dustPolyetherImide'))
-    .fluidOutputs(fluid('dichlorobenzene') * 1000)
-    .fluidOutputs(fluid('gtfo_aniline') * 200)
-    .duration(100)
-    .EUt(60)
+// Pyromellitic Dianhydride
+
+BR.recipeBuilder()
+    .notConsumable(ore('dustAluminiumChloride'))
+    .fluidInputs(fluid('para_xylene') * 1000)
+    .fluidInputs(fluid('chloromethane') * 2000)
+    .outputs(metaitem('dustDurene') * 24)
+    .fluidOutputs(fluid('hydrogen_chloride') * 2000)
+    .duration(300)
+    .EUt(30)
+    .buildAndRegister()
+
+ROASTER.recipeBuilder()
+    .inputs(ore('dustDurene') * 4)
+    .fluidInputs(fluid('oxygen') * 2000)
+    .outputs(metaitem('dustPyromelliticDianhydride') * 3)
+    .fluidOutputs(fluid('dense_steam') * 1000)
+    .duration(200)
+    .EUt(Globals.voltAmps[1])
     .buildAndRegister();
 
-// Liquid susy.material.phthalimide * 144
-mods.gregtech.extractor.removeByInput(30, [metaitem('dustPhthalimide')], null)
+// Kapton K
 
-EXTRACTOR.recipeBuilder()
-    .inputs(ore('dustPhthalimide'))
-    .fluidOutputs(fluid('phthalimide') * 1000)
-    .duration(20)
-    .EUt(16)
+POLYMERIZATION.recipeBuilder()
+    .inputs(ore('dustPyromelliticDianhydride'))
+    .inputs(ore('dustFourFourOxydianiline'))
+    .fluidInputs(fluid('acetone') * 2000)
+    .fluidOutputs(fluid('impure_kapton_k') * 2000)
+    .duration(400) 
+    .EUt(Globals.voltAmps[3] * 2)
     .buildAndRegister();
-
-// Liquid susy.material.impure_bisphenol_a_dianhydride * 144
-mods.gregtech.extractor.removeByInput(30, [metaitem('dustImpureBisphenolADianhydride')], null)
-
-EXTRACTOR.recipeBuilder()
-    .inputs(ore('dustImpureBisphenolADianhydride'))
-    .fluidOutputs(fluid('impure_bisphenol_a_dianhydride') * 1000)
-    .duration(20)
-    .EUt(16)
-    .buildAndRegister();
-
-// Liquid Phthalic Anhydride * 144
-mods.gregtech.extractor.removeByInput(30, [metaitem('dustPhthalicAnhydride')], null)
-
-EXTRACTOR.recipeBuilder()
-        .inputs(ore('dustPhthalicAnhydride'))
-        .fluidOutputs(fluid('phthalic_anhydride') * 1000)
-        .duration(20)
-        .EUt(16)
-        .buildAndRegister();
-
-SOLIDIFIER.recipeBuilder()
-        .notConsumable(metaitem('shape.mold.ball'))
-        .fluidInputs(fluid('phthalimide') * 1000)
-        .outputs(metaitem('dustPhthalimide'))
-        .duration(20)
-        .EUt(16)
-        .buildAndRegister();
-
-SOLIDIFIER.recipeBuilder()
-        .notConsumable(metaitem('shape.mold.ball'))
-        .fluidInputs(fluid('impure_bisphenol_a_dianhydride') * 1000)
-        .outputs(metaitem('dustImpureBisphenolADianhydride'))
-        .duration(20)
-        .EUt(16)
-        .buildAndRegister();
-
-SOLIDIFIER.recipeBuilder()
-        .notConsumable(metaitem('shape.mold.ball'))
-        .fluidInputs(fluid('phthalic_anhydride') * 1000)
-        .outputs(metaitem('dustPhthalicAnhydride'))
-        .duration(20)
-        .EUt(16)
-        .buildAndRegister();
 
 DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('sodium_bisphenolate_solution') * 2000)
-    .outputs(metaitem('dustSodiumBisphenolate'))
-    .fluidOutputs(fluid('water') * 2000)
-    .duration(60)
+    .fluidInputs(fluid('impure_kapton_k') * 1000)
+    .fluidOutputs(fluid('acetone') * 1000)
+    .outputs(metaitem('dustKaptonK'))
+    .duration(200)
+    .EUt(Globals.voltAmps[2])
+    .buildAndRegister();
+
+// Kapton E
+
+MIXER.recipeBuilder()
+    .inputs(ore('dustPyromelliticDianhydride'))
+    .inputs(ore('dustFourFourOxydianiline'))
+    .inputs(ore('dustBiphenylTetracarboxylicAcidDianhydride'))
+    .inputs(ore('dustParaPhenylenediamine'))
+    .fluidInputs(fluid('acetone') * 4000)
+    .fluidOutputs(fluid('kapton_e_preparation') * 4000)
+    .duration(800)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister();
+
+POLYMERIZATION.recipeBuilder()
+    .fluidInputs(fluid('kapton_e_preparation') * 1000)
+    .fluidOutputs(fluid('impure_kapton_e') * 1000)
+    .duration(200)
+    .EUt(Globals.voltAmps[2] * 2)
+    .buildAndRegister();
+
+DRYER.recipeBuilder()
+    .fluidInputs(fluid('impure_kapton_e') * 1000)
+    .fluidOutputs(fluid('acetone') * 1000)
+    .outputs(metaitem('dustKaptonE'))
+    .duration(200)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister();

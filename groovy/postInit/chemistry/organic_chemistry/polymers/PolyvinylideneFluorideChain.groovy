@@ -12,14 +12,14 @@ PYROLYSE_OVEN = recipemap('pyrolyse_oven')
 BR.recipeBuilder()
     .inputs(ore('dustPerfluorooctanoicAcid') * 13)
     .fluidInputs(fluid('lithium_hydroxide_solution') * 1000)
-    .fluidOutputs(fluid('pvdf_surfactant_mixture') * 1000)
+    .fluidOutputs(fluid('vinylidene_fluoride_surfactant_mixture') * 2000)
     .duration(200)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 // Vinylidene Fluoride
 BCR.recipeBuilder()
-    .notConsumable(metaitem('catalystBedIronIiiChloride'))
+    .notConsumable(metaitem('dustIronIiiChloride'))
     .fluidInputs(fluid('vinyl_chloride') * 50)
     .fluidInputs(fluid('hydrogen_chloride') * 50)
     .fluidOutputs(fluid('one_one_dichloroethane') * 50)
@@ -28,7 +28,7 @@ BCR.recipeBuilder()
     .buildAndRegister()
 
 BCR.recipeBuilder()
-    .notConsumable(metaitem('carbon_arc_lamp'))
+    .notConsumable(metaitem('emitter.lv'))
     .fluidInputs(fluid('one_one_dichloroethane') * 50)
     .fluidInputs(fluid('hydrogen_chloride') * 50)
     .fluidOutputs(fluid('one_one_one_trichloroethane') * 50)
@@ -47,42 +47,41 @@ ROASTER.recipeBuilder()
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
-BR.recipeBuilder()
+PYROLYSE_OVEN.recipeBuilder()
+    .fluidInputs(fluid('dense_steam') * 1000)
     .fluidInputs(fluid('one_chloro_two_two_difluoroethane') * 1000)
-    .fluidInputs(fluid('sodium_ethoxide_solution') * 1000)
     .fluidOutputs(fluid('vinylidene_fluoride') * 1000)
-    .fluidOutputs(fluid('ethanol') * 1000)
-    .fluidOutputs(fluid('salt_water') * 1000)
+    .fluidOutputs(fluid('hydrochloric_acid') * 1000)
     .duration(200)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 // Polymerization
 MIXER.recipeBuilder()
-    .fluidInputs(fluid('vinylidene_fluoride') * 1000)
-    .fluidInputs(fluid('pvdf_surfactant_mixture') * 500)
+    
     .fluidOutputs(fluid('pvdf_preparation_mixture') * 1000)
     .duration(160)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 POLYMERIZATION_TANK.recipeBuilder()
-    .inputs(ore('dustTinyPotassiumPersulfate'))
-    .fluidInputs(fluid('pvdf_preparation_mixture') * 1000)
-    .fluidOutputs(fluid('pvdf_polymerisation_mixture') * 1000)
+    .fluidInputs(fluid('di_tert_butyl_peroxide') * 50)
+    .fluidInputs(fluid('vinylidene_fluoride') * 1000)
+    .fluidInputs(fluid('polyvinylidene_fluoride_surfactant_mixture') * 500)
+    .fluidOutputs(fluid('polyvinylidene_fluoride_solution') * 500)
     .duration(300)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister();
 
 DRYER.recipeBuilder()
-    .fluidInputs(fluid('pvdf_polymerisation_mixture') * 1000)
+    .fluidInputs(fluid('polyvinylidene_fluoride_solution') * 500)
     .outputs(metaitem('dustPolyvinylideneFluoride'))
-    .fluidOutputs(fluid('pvdf_surfactant_mixture') * 500)
+    .fluidOutputs(fluid('polyvinylidene_fluoride_surfactant_mixture') * 500)
     .duration(300)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister();
 
-// FKM production
+// FKM/Viton production
 
 PYROLYSE_OVEN.recipeBuilder()
     .fluidInputs(fluid('tetrafluoroethylene') * 1500)
@@ -91,27 +90,20 @@ PYROLYSE_OVEN.recipeBuilder()
     .EUt(120)
     .buildAndRegister();
 
-MIXER.recipeBuilder()
+POLYMERIZATION_TANK.recipeBuilder()
+    .inputs(ore('dustTinyAmmoniumPersulfate'))
     .fluidInputs(fluid('vinylidene_fluoride') * 1000)
     .fluidInputs(fluid('hexafluoropropylene') * 1000)
-    .fluidInputs(fluid('pvdf_surfactant_mixture') * 500)
-    .fluidOutputs(fluid('fkm_emulsion') * 500)
-    .duration(100)
-    .EUt(120)
-    .buildAndRegister();
-
-POLYMERIZATION_TANK.recipeBuilder()
-    .inputs(ore('dustTinyPotassiumPersulfate'))
-    .fluidInputs(fluid('fkm_emulsion') * 500)
-    .fluidOutputs(fluid('fkm_copolymer_solution') * 500)
+    .fluidInputs(fluid('polyvinylidene_fluoride_surfactant_mixture') * 500)
+    .fluidOutputs(fluid('viton_solution') * 500)
     .duration(200)
     .EUt(480)
     .buildAndRegister();
 
 DRYER.recipeBuilder()
-    .fluidInputs(fluid('fkm_copolymer_solution') * 500)
+    .fluidInputs(fluid('viton_solution') * 500)
     .outputs(metaitem('dustFkmCopolymer'))
-    .fluidOutputs(fluid('pvdf_surfactant_mixture') * 500)
+    .fluidOutputs(fluid('vinylidene_fluoride_surfactant_mixture') * 500)
     .duration(300)
     .EUt(480)
     .buildAndRegister();

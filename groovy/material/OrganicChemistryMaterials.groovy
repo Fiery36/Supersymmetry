@@ -269,7 +269,7 @@ public class OrganicChemistryMaterials {
                 .color(0xc7c944)
                 .build();
 
-        MixedChloronitrobenzene = new Material.Builder(15041, SuSyUtility.susyId('mixed_chloronitrobenzene'))
+        ChloronitrobenzeneMixture = new Material.Builder(15041, SuSyUtility.susyId('chloronitrobenzene_mixture'))
                 .dust().liquid(new FluidBuilder().temperature(330))
                 .color(0xa4a644)
                 .build();
@@ -1277,13 +1277,7 @@ public class OrganicChemistryMaterials {
                 .color(0xb37834)
                 .build();
 
-        SodiumEthoxideSolution = new Material.Builder(15209, SuSyUtility.susyId('sodium_ethoxide_solution'))
-                .liquid()
-                .components(Carbon * 2, Hydrogen * 5, Oxygen * 1, Sodium * 1, Ethanol * 1)
-                .color(0xcc5050)
-                .build();
-
-        SodiumEthoxideSolution.setFormula('(CH3CH2ONa)(H2O)', true)
+        // FREE ID: 15209
 
         SodiumEthylXanthate = new Material.Builder(15210, SuSyUtility.susyId('sodium_ethyl_xanthate'))
                 .dust()
@@ -2893,7 +2887,7 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
 
-        PToluidene = new Material.Builder(15460, SuSyUtility.susyId('p_toluidene'))
+        ParaToluidene = new Material.Builder(15460, SuSyUtility.susyId('para_toluidene'))
                 .dust().liquid(new FluidBuilder().temperature(316))
                 .components(Carbon * 7, Hydrogen * 9, Nitrogen)
                 .color(0xa8b865)
@@ -3017,7 +3011,7 @@ public class OrganicChemistryMaterials {
                 .color(0xbc716d)
                 .build();
 
-        Benzenediol = new Material.Builder(15480, SuSyUtility.susyId('benzenediol'))
+        BenzenediolMixture = new Material.Builder(15480, SuSyUtility.susyId('benzenediol_mixture'))
                 .dust().liquid()
                 .components(Carbon * 6, Hydrogen * 6, Oxygen * 2)
                 .colorAverage()
@@ -3027,6 +3021,18 @@ public class OrganicChemistryMaterials {
                 .liquid()
                 .components(Hydroquinone, DiphenylSulfone, FourFourDifluorobenzophenone)
                 .colorAverage()
+                .build();
+
+        SodiumEthoxide = new Material.Builder(15482, SuSyUtility.susyId('sodium_ethoxide'))
+                .dust()
+                .components(Carbon * 2, Hydrogen * 5, Oxygen, Sodium)
+                .color(0xbd4333)
+                .build();
+
+        ParaNitrotoluene = new Material.Builder(15483, SuSyUtility.susyId('para_nitrotoluene'))
+                .dust().liquid(new FluidBuilder().temperature(325))
+                .components(Carbon * 7, Hydrogen * 7, Nitrogen, Oxygen * 2 )
+                .color(0xdbca7b)
                 .build();
     }
 }

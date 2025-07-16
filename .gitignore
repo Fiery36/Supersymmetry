@@ -9,6 +9,7 @@ journeymap/
 logs/
 saves/
 mods/*.jar
+.idea/
 
 .curseclient
 usercache.json

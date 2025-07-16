@@ -16,20 +16,15 @@ MIXER.recipeBuilder()
     .buildAndRegister();
 
 POLYMERIZATION_TANK.recipeBuilder()
-    .inputs(ore('dustTinyCopperIiChloride'))
-    .inputs(ore('dustTinyPotassiumHydroxide'))
+    .inputs(ore('dustSmallCopperIiChloride'))
+    .inputs(ore('dustSmallPotassiumHydroxide'))
+    .fluidInputs(fluid('pyridine') * 50)
     .fluidInputs(fluid('xylenol_solution') * 2000)
-    .fluidOutputs(fluid('polymerised_xylenol_solution') * 2000)
+    .fluidInputs(fluid('oxygen') * 1000)
+    .fluidOutputs(fluid('impure_ppo_solution') * 2000)
+    .fluidOutputs(fluid('wastewater') * 1000)
     .duration(180)
     .EUt(Globals.voltAmps[3])
-    .buildAndRegister();
-
-BCR.recipeBuilder()
-    .fluidInputs(fluid('oxygen') * 50)
-    .fluidInputs(fluid('polymerised_xylenol_solution') * 100)
-    .fluidOutputs(fluid('diluted_ppo_solution') * 100)
-    .duration(2)
-    .EUt(16)
     .buildAndRegister();
 
 MIXER.recipeBuilder()
@@ -41,27 +36,28 @@ MIXER.recipeBuilder()
     .buildAndRegister();
 
 CENTRIFUGE.recipeBuilder()
-    .fluidInputs(fluid('ethylenediamine_solution') * 20)
-    .fluidInputs(fluid('diluted_ppo_solution') * 2000)
+    .fluidInputs(fluid('ethylenediamine_solution') * 50)
+    .fluidInputs(fluid('impure_ppo_solution') * 2000)
     .fluidOutputs(fluid('ppo_solution') * 2000)
-    .fluidOutputs(fluid('wastewater') * 20)
+    .fluidOutputs(fluid('wastewater') * 50)
     .duration(120)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 BR.recipeBuilder()
+    .inputs(ore('dustPolystyrene'))
     .fluidInputs(fluid('methanol') * 1000)
     .fluidInputs(fluid('ppo_solution') * 2000)
-    .outputs(metaitem('dustPolyphenyleneOxide'))
-    .fluidOutputs(fluid('ppo_extraction_waste') * 2000)
+    .outputs(metaitem('dustPolyphenyleneOxideBlend') * 2)
+    .fluidOutputs(fluid('ppo_waste') * 2000)
     .duration(120)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();
 
 SIEVE_DT.recipeBuilder()
     .notConsumable(fluid('distilled_water') * 1000)
-    .fluidInputs(fluid('ppo_extraction_waste') * 3000)
-    .fluidOutputs(fluid('phenol') * 1000)
+    .fluidInputs(fluid('ppo_waste') * 2000)
+    .fluidOutputs(fluid('toluene') * 1000)
     .fluidOutputs(fluid('methanol') * 1000)
     .duration(40)
     .EUt(Globals.voltAmps[2])

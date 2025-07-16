@@ -1517,9 +1517,6 @@ class SuSyMaterials {
         public static Material PurifiedBerylliumHydroxide;
         public static Material PurifiedBerylliumOxide;
         public static Material PurifiedBerylliumChloride;
-        public static Material SodiumEthoxide;
-        public static Material PNitrotoluene;
-        public static Material PNitrotolueneSlurry;
 
         // HP Materials
 
@@ -1772,7 +1769,7 @@ class SuSyMaterials {
         public static Material MethylAcetateSolution;
         public static Material TrimethylBorate;
         public static Material TwoChloronitrobenzene;
-        public static Material MixedChloronitrobenzene;
+        public static Material ChloronitrobenzeneMixture;
         public static Material FourNitroanilineSolution;
         public static Material ParaPhenylenediamineSolution;
         public static Material TrimethylBorateSolution;
@@ -2194,7 +2191,7 @@ class SuSyMaterials {
         public static Material PVDFPolymerisationMixture;
         public static Material BenzenediazoniumFluoride;
         public static Material Fluorobenzene;
-        public static Material PToluidene;
+        public static Material ParaToluidene;
         public static Material FluorinatedToluidene;
         public static Material Fluorotoluene;
         public static Material Fluorotoluenetrichloride;
@@ -2215,7 +2212,10 @@ class SuSyMaterials {
         public static Material FkmEmulsion;
         public static Material FkmCopolymer;
         public static Material FkmCopolymerSolution;
-        public static Material Benzenediol;
+        public static Material BenzenediolMixture;
+        public static Material SodiumEthoxide;
+        public static Material ParaNitrotoluene;
+        public static Material ParaNitrotolueneSlurry;
 
         // Third Degree Materials
 

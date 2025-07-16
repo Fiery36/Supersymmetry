@@ -85,7 +85,13 @@ public class ThirdDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        // FREE ID: 24011
+        SodiumEthoxideSolution = new Material.Builder(24011, SuSyUtility.susyId('sodium_ethoxide_solution'))
+                .liquid()
+                .components(SodiumEthoxide, Ethanol)
+                .color(0xcc5050)
+                .build();
+
+        SodiumEthoxideSolution.setFormula('(CH3CH2ONa)(CH3CH2OH)', true)
 
         UreaSolution = new Material.Builder(24012, SuSyUtility.susyId('urea_solution'))
                 .liquid()
@@ -667,6 +673,12 @@ public class ThirdDegreeMaterials {
         PVDFSurfactantMixture = new Material.Builder(24107, SuSyUtility.susyId('pvdf_surfactant_mixture'))
                 .liquid()
                 .components(PerfluorooctanoicAcid, LithiumHydroxide, Water)
+                .colorAverage()
+                .build();
+
+        ParaNitrotolueneSlurry = new Material.Builder(24108, SuSyUtility.susyId('para_nitrotoluene_slurry'))
+                .liquid()
+                .components(ParaNitrotoluene, SulfuricAcid)
                 .colorAverage()
                 .build();
     }
