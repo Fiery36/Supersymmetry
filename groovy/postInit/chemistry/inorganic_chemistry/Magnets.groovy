@@ -16,7 +16,7 @@ def voltaic_pile_ingredients = [
     [null, metaitem('plateCopper'), null]
 ]
 
-def magnetic_rod_ingredients = [
+def iron_magnetic_rod_ingredients = [
     [metaitem('voltaic_pile').reuse(), metaitem('wireGtSingleCopper').reuse(), metaitem('springCopper').reuse()],
     [null, null, metaitem('hot_iron_rod')],
     [null, null, null]
@@ -28,7 +28,7 @@ def magnetic_plate_ingredients = [
     [null, null, null]
 ]
 
-def magnetic_rod_ingredients = [
+def steel_magnetic_rod_ingredients = [
     [metaitem('voltaic_pile').reuse(), metaitem('wireGtSingleCopper').reuse(), metaitem('springCopper').reuse()],
     [null, null, metaitem('hot_steel_rod')],
     [null, null, null]
@@ -61,7 +61,7 @@ crafting.addShapeless('MagneticIronDuplication',metaitem('stickIronMagnetic') * 
 
 crafting.addShapeless('MagneticSteelDuplication',metaitem('stickSteelMagnetic') * 2, [
     metaitem('hot_steel_rod'), 
-    metaitem('sticksteelMagnetic')
+    metaitem('stickSteelMagnetic')
 ])
 
 crafting.addShapeless('SteelPlateDuplication',metaitem('plateSteelMagnetic') * 2, [
@@ -86,6 +86,7 @@ crafting.addShapeless('MagneticSteelMagnetite',metaitem('plateSteelMagnetic'), [
 
 crafting.addShaped('MagneticRodVoltaic',metaitem('stickIronMagnetic'), magnetic_rod_ingredients)
 crafting.addShaped('MagneticPlateVoltaic',metaitem('plateSteelMagnetic'), magnetic_plate_ingredients)
+crafting.addShaped('MagneticSteelRodVoltaic',metaitem('stickSteelMagnetic'), steel_magnetic_rod_ingredients)
 crafting.addShaped('VoltaicPileCrafting',metaitem('voltaic_pile'), voltaic_pile_ingredients)
 
 // Alnico (HV-EV)
