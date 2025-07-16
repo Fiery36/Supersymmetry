@@ -3577,14 +3577,6 @@ DISTILLATION_TOWER.recipeBuilder()
 
 // gamma-Butyrolactone
 
-CSTR.recipeBuilder()
-    .fluidInputs(fluid('acetylene') * 50)
-    .fluidInputs(fluid('formaldehyde') * 100)
-    .fluidOutputs(fluid('butanediol') * 50)
-    .EUt(120)
-    .duration(4)
-    .buildAndRegister()
-
 FBR.recipeBuilder()
     .fluidInputs(fluid('butanediol') * 50)
     .notConsumable(ore('catalystBedCopper'))
