@@ -1042,6 +1042,35 @@ BLENDER = recipemap('blender')
         .EUt(Globals.voltAmps[5] * 2)
         .buildAndRegister()
 
+    // Dibutyl butyl phosphonate (DBBP)
+
+    CSTR.recipeBuilder()
+        .fluidInputs(fluid('trimethyl_phosphite') * 50)
+        .fluidInputs(fluid('n_butanol') * 150)
+        .fluidOutputs(fluid('methanol') * 150)
+        .fluidOutputs(fluid('tributyl_phosphite') * 50)
+        .duration(5)
+        .EUt(120)
+        .buildAndRegister()
+
+    CSTR.recipeBuilder()
+        .fluidInputs(fluid('hydroiodic_acid') * 50)
+        .fluidInputs(fluid('n_butanol') * 50)
+        .fluidOutputs(fluid('water') * 50)
+        .fluidOutputs(fluid('n_butyl_iodide') * 50)
+        .duration(5)
+        .EUt(120)
+        .buildAndRegister()
+
+    CSTR.recipeBuilder()
+        .notConsumable(fluid('n_butyl_iodide') * 1000)
+        .fluidInputs(fluid('tributyl_phosphite') * 50)
+        .fluidOutputs(fluid('dibutyl_butylphosphonate') * 50)
+        .duration(5)
+        .EUt(120)
+        .buildAndRegister()
+
+
 //ION EXCHANGE RESINS
 
     //ACIDIC RESINS
