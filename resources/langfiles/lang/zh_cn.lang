@@ -3027,10 +3027,10 @@ item.gregtech.material.polytetrafluoroethylene.thread=膨体聚四氟乙烯（eP
 # gregtech.material.chrome=铬 // 中文无需重命名
 
 # Resin Logs
-gregtech.block_group_members.extractable_logs_1.name=白桦木，丛林木，橡木或云杉木
-gregtech.block_group_members.extractable_logs_2.name=金合欢木或深色橡木
+susy.block_group_members.extractable_logs_1.name=白桦木，丛林木，橡木或云杉木
+susy.block_group_members.extractable_logs_2.name=金合欢木或深色橡木
 
-gregtech.block_group_members.latex_logs.name=橡胶木
+susy.block_group_members.latex_logs.name=橡胶木
 
 # Main Menu
 susy.menu.options=选项
