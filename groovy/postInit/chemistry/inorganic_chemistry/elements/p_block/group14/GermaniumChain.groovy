@@ -115,7 +115,7 @@ ROASTER.recipeBuilder()
     .buildAndRegister()
 
 BLENDER.recipeBuilder()
-    .circuitMeta(3)
+    .circuitMeta(1)
     .fluidInputs(fluid('kerosene') * 700)
     .fluidInputs(fluid('sulfuric_acid') * 200)
     .fluidInputs(fluid('tri_octyl_decyl_amine') * 200)
