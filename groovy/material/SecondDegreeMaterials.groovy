@@ -900,6 +900,8 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
+        PraseodymiumIIINitrateSolution.setFormula("Pr(NO3)3(H2O)", true)
+
         GadoliniumChlorideSolution = new Material.Builder(13150, SuSyUtility.susyId('gadolinium_chloride_solution'))
                 .liquid()
                 .components(GadoliniumChloride * 8, Water * 29)
