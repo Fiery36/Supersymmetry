@@ -27,7 +27,9 @@ eventManager.listen {
         customMetaItems.addItem(100, "cement.clinker")
         customMetaItems.addItem(101, "hot.cement.clinker")
         customMetaItems.addItem(102, "cement.dust")
-        customMetaItems.addItem(103, "limestone.dust")
+
+        // Free ID: 103
+
         customMetaItems.addItem(104, "shape.mold.rod")
         customMetaItems.addItem(105, "shape.mold.crucible")
         customMetaItems.addItem(106, "crucible.boron.nitride")
