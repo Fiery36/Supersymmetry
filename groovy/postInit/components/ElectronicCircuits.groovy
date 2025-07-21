@@ -190,6 +190,7 @@ mods.gregtech.assembler.recipeBuilder()
         .inputs(ore('wireFineGold') * 8)
         .inputs(metaitem('circuit_board.good'))
         .outputs(metaitem('code_breacher'))
+        .fluidInputs(fluid('soldering_alloy') * 144)
         .duration(400)
         .EUt(2048)
         .buildAndRegister();
