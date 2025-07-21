@@ -2990,7 +2990,7 @@ metaitem.brush.unfired.name=Unfired Brush
 
 metaitem.work_roll.unfinished.name=Unfinished Work Roll
 metaitem.nozzle.boron_nitride.name=Boron Nitride Nozzle
-metaitem.code_breacher=Code Breacher
+metaitem.code_breacher.name=Code Breacher
 # Vanilla MC
 tile.hellsand.name=Mineral-Rich Sand
 tile.magma.name=Magma-Infused Netherrack
