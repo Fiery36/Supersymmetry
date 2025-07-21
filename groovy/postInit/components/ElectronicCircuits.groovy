@@ -191,6 +191,6 @@ mods.gregtech.assembler.recipeBuilder()
         .inputs(metaitem('circuit_board.good'))
         .outputs(metaitem('code_breacher'))
         .duration(400)
-        .EUt(512)
+        .EUt(2048)
         .buildAndRegister();
         
