@@ -71,7 +71,7 @@ BR.recipeBuilder()
 
 ROASTER.recipeBuilder()
     .inputs(ore('dustParaDiazoniobenzylEthylEsterFluoride') * 23)
-    .outputs(metaitem('dustFluorobenzoicAcidEthylEster') * 21)
+    .outputs(metaitem('dustParaFluorobenzoicAcidEthylEster') * 21)
     .fluidOutputs(fluid('nitrogen') * 2000)
     .duration(100)
     .EUt(120)
@@ -126,16 +126,6 @@ DISTILLERY.recipeBuilder()
 
 // Hydroquinone
 
-DISTILLATION_TOWER.recipeBuilder()
-    .fluidInputs(fluid('rearranged_cumene_mixture') * 2200)
-    .fluidOutputs(fluid('sulfuric_acid') * 200)
-    .fluidOutputs(fluid('phenol') * 1000)
-    .fluidOutputs(fluid('acetone') * 1000)
-    .disableDistilleryRecipes()
-    .duration(10)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
-
 BR.recipeBuilder()
     .notConsumable(fluid('sodium_hydroxide_solution') * 1000)
     .fluidInputs(fluid('air') * 10000)
@@ -184,19 +174,12 @@ BR.recipeBuilder()
 
 // Polymerisation
 
-MIXER.recipeBuilder()
-    .inputs(ore('dustHydroquinone') * 14)
-    .inputs(ore('dustFourFourDifluorobenzophenone'))
-    .fluidInputs(fluid('diphenyl_sulfone') * 3600)
-    .fluidOutputs(fluid('hydroquinone_emulsion'))
-    .duration(200)
-    .EUt(480)
-    .buildAndRegister();
-
 POLYMERIZATION_TANK.recipeBuilder()
     .notConsumable(fluid('nitrogen') * 8000)
     .inputs(ore('dustSodaAsh') * 5)
-    .fluidInputs(fluid('hydroquinone_emulsion') * 1000)
+    .inputs(ore('dustHydroquinone') * 14)
+    .inputs(ore('dustFourFourDifluorobenzophenone'))
+    .fluidInputs(fluid('diphenyl_sulfone') * 3600)
     .outputs(metaitem('dustPeekMixture') * 2)
     .fluidOutputs(fluid('carbon_dioxide') * 1000)
     .duration(300)

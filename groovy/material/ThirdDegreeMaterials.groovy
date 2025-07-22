@@ -670,16 +670,85 @@ public class ThirdDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        PVDFSurfactantMixture = new Material.Builder(24107, SuSyUtility.susyId('pvdf_surfactant_mixture'))
+        VinylideneFluorideSurfactantMixture = new Material.Builder(24107, SuSyUtility.susyId('vinylidene_fluoride_surfactant_mixture'))
                 .liquid()
                 .components(PerfluorooctanoicAcid, LithiumHydroxide, Water)
                 .colorAverage()
                 .build();
 
-        ParaNitrotolueneSlurry = new Material.Builder(24108, SuSyUtility.susyId('para_nitrotoluene_slurry'))
+        AcidicNitrotolueneMixture = new Material.Builder(24108, SuSyUtility.susyId('acidic_nitrotoluene_mixture'))
                 .liquid()
-                .components(ParaNitrotoluene, SulfuricAcid)
+                .components(ParaNitrotoluene, OrthoNitrotoluene, DilutedSulfuricAcid)
                 .colorAverage()
                 .build();
+
+        DiisopropylbenzeneMixture = new Material.Builder(24109, SuSyUtility.susyId('diisopropylbenzene_mixture'))
+                .liquid()
+                .components(ParaDiisopropylbenzene, MetaDiisopropylbenzene)
+                .colorAverage()
+                .build();
+        
+        FourNitroNMethylPhthalimideSolution = new Material.Builder(24110, SuSyUtility.susyId('four_nitro_n_methyl_phthalimide_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(FourNitroNMethylPhthalimide, SulfuricAcid, Water)
+                .colorAverage()
+                .build();
+
+        SodiumBisphenolateSolution = new Material.Builder(24111, SuSyUtility.susyId('sodium_bisphenolate_solution'))
+                .liquid()
+                .components(SodiumBisphenolate, Water * 2)
+                .colorAverage()
+                .build();
+
+        PeekMixture = new Material.Builder(24112, SuSyUtility.susyId('peek_mixture'))
+                .dust()
+                .components(PolyetherEtherKetone, DiphenylSulfone)
+                .colorAverage()
+                .build();
+
+        BisphenolADiimideSolution = new Material.Builder(24113, SuSyUtility.susyId('bisphenol_a_diimide_solution'))
+                .liquid()
+                .components(Carbon * 33, Hydrogen * 26, Oxygen * 6, Nitrogen * 2, NMethylTwoPyrrolidone)
+                .colorAverage()
+                .build();
+
+        BisphenolADianhydrideSolution = new Material.Builder(24114, SuSyUtility.susyId('bisphenol_a_dianhydride_solution'))
+                .liquid()
+                .components(BisphenolADianhydride, Phthalimide * 2, NMethylTwoPyrrolidone)
+                .colorAverage()
+                .build();
+
+        ImpureBisphenolADianhydride = new Material.Builder(24115, SuSyUtility.susyId('impure_bisphenol_a_dianhydride'))
+                .dust().liquid(new FluidBuilder().temperature(510))
+                .components(BisphenolADianhydride, Phthalimide * 2)
+                .colorAverage()
+                .build();
+
+        PPOSolution = new Material.Builder(24116, SuSyUtility.susyId('ppo_solution'))
+                .liquid()
+                .components(PolyphenyleneOxide, Toluene)
+                .color(0x395270)
+                .build()
+        
+        PolyvinylideneFluorideSolution = new Material.Builder(24117, SuSyUtility.susyId('polyvinylidene_fluoride_solution'))
+                .liquid()
+                .components(PolyvinylideneFluoride * 2, VinylideneFluorideSurfactantMixture)
+                .colorAverage()
+                .build();
+
+        VitonSolution = new Material.Builder(24118, SuSyUtility.susyId('viton_solution'))
+                .liquid()
+                .components(Viton * 2, VinylideneFluorideSurfactantMixture)
+                .color(0xbc716d)
+                .build();
+        
+        BenzenediolMixture
+        BenzenediolSolution
+        NitrotolueneMixture
+        CleavedParaDiisopropylbenzeneMixture
+        PotassiumPhthalamideSolution
+        NMethylPhthalimideSolution
+        
+        
     }
 }

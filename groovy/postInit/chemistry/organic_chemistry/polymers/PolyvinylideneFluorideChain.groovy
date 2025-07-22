@@ -9,6 +9,7 @@ DRYER = recipemap('dryer')
 PYROLYSE_OVEN = recipemap('pyrolyse_oven')
 
 // Lithium Perfluorooctanoate Surfactant
+
 BR.recipeBuilder()
     .inputs(ore('dustPerfluorooctanoicAcid') * 13)
     .fluidInputs(fluid('lithium_hydroxide_solution') * 1000)
@@ -18,6 +19,7 @@ BR.recipeBuilder()
     .buildAndRegister();
 
 // Vinylidene Fluoride
+
 BCR.recipeBuilder()
     .notConsumable(metaitem('dustIronIiiChloride'))
     .fluidInputs(fluid('vinyl_chloride') * 50)
@@ -57,17 +59,11 @@ PYROLYSE_OVEN.recipeBuilder()
     .buildAndRegister();
 
 // Polymerization
-MIXER.recipeBuilder()
-    
-    .fluidOutputs(fluid('pvdf_preparation_mixture') * 1000)
-    .duration(160)
-    .EUt(Globals.voltAmps[2])
-    .buildAndRegister();
 
 POLYMERIZATION_TANK.recipeBuilder()
     .fluidInputs(fluid('di_tert_butyl_peroxide') * 50)
     .fluidInputs(fluid('vinylidene_fluoride') * 1000)
-    .fluidInputs(fluid('polyvinylidene_fluoride_surfactant_mixture') * 500)
+    .fluidInputs(fluid('vinylidene_fluoride_surfactant_mixture') * 500)
     .fluidOutputs(fluid('polyvinylidene_fluoride_solution') * 500)
     .duration(300)
     .EUt(Globals.voltAmps[3])
@@ -76,7 +72,7 @@ POLYMERIZATION_TANK.recipeBuilder()
 DRYER.recipeBuilder()
     .fluidInputs(fluid('polyvinylidene_fluoride_solution') * 500)
     .outputs(metaitem('dustPolyvinylideneFluoride'))
-    .fluidOutputs(fluid('polyvinylidene_fluoride_surfactant_mixture') * 500)
+    .fluidOutputs(fluid('vinylidene_fluoride_surfactant_mixture') * 500)
     .duration(300)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister();
@@ -94,7 +90,7 @@ POLYMERIZATION_TANK.recipeBuilder()
     .inputs(ore('dustTinyAmmoniumPersulfate'))
     .fluidInputs(fluid('vinylidene_fluoride') * 1000)
     .fluidInputs(fluid('hexafluoropropylene') * 1000)
-    .fluidInputs(fluid('polyvinylidene_fluoride_surfactant_mixture') * 500)
+    .fluidInputs(fluid('vinylidene_fluoride_surfactant_mixture') * 500)
     .fluidOutputs(fluid('viton_solution') * 500)
     .duration(200)
     .EUt(480)
@@ -102,7 +98,7 @@ POLYMERIZATION_TANK.recipeBuilder()
 
 DRYER.recipeBuilder()
     .fluidInputs(fluid('viton_solution') * 500)
-    .outputs(metaitem('dustFkmCopolymer'))
+    .outputs(metaitem('dustViton'))
     .fluidOutputs(fluid('vinylidene_fluoride_surfactant_mixture') * 500)
     .duration(300)
     .EUt(480)

@@ -126,5 +126,20 @@ public class FirstDegreeMaterialsB {
                 .arcSmeltInto(Alnico)
                 .macerateInto(Alnico)
                 .build();
+
+        CleavedCumeneMixture = new Material.Builder(4031, SuSyUtility.susyId('cleaved_cumene_mixture'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(SulfuricAcid * 1, Phenol * 5, Acetone * 5)
+                .colorAverage()
+                .build();
+
+        PPOWaste = new Material.Builder(4653, SuSyUtility.susyId('ppo_waste'))
+                .liquid()
+                .components(Toluene, Methanol)
+                .color(0x47260e)
+                .build()
+
+        BenzenediolCatalysisMixture
+
     }
 }

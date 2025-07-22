@@ -170,8 +170,7 @@ class SuSyMaterials {
         public static Material ImpureAcetaldehyde;
         public static Material CativaCatalystPreparation;
         public static Material CativaCatalystSolution;
-        public static Material AcidicCumene;
-        public static Material RearrangedCumene;
+        public static Material CrudeCumene;
         public static Material SulfatedMetalOxide;
         public static Material ImpureKaptonK;
         public static Material KaptonEPreparation;
@@ -727,6 +726,7 @@ class SuSyMaterials {
         public static Material HydraulicFluid;
         public static Material YttriaStabilizedZirconia;
         public static Material HighAluminaRefractory;
+        public static Material ImpurePPOSolution;
 
         // Petrochem Materials
 
@@ -1498,11 +1498,7 @@ class SuSyMaterials {
         public static Material XylenolSolution;
         public static Material EthylenediamineSolution;
         public static Material PolymerisedXylenolSolution;
-        public static Material DilutedPPOSolution;
-        public static Material PPOSolution;
-        public static Material PPOExtractionWaste;
-        public static Material PolyphenyleneOxide;
-        public static Material PolyetherImide;
+        public static Material PPOWaste;
 
         // First Degree Materials B
 
@@ -1517,6 +1513,7 @@ class SuSyMaterials {
         public static Material PurifiedBerylliumHydroxide;
         public static Material PurifiedBerylliumOxide;
         public static Material PurifiedBerylliumChloride;
+        public static Material CleavedCumeneMixture;
 
         // HP Materials
 
@@ -2129,7 +2126,6 @@ class SuSyMaterials {
         public static Material DiTertButylPeroxide;
         public static Material TwoEthylhexylNitrate;
         public static Material Nitromethane;
-        public static Material SodiumBisphenolateSolution;
         public static Material Polycarbonate;
         public static Material Trichlorofluoromethane;
         public static Material Dichlorodifluoromethane;
@@ -2171,51 +2167,37 @@ class SuSyMaterials {
         public static Material PenteticAcid;
         public static Material NHydroxyethylEthylenediamine;
         public static Material NHydroxyethylEthylenediaminetriaceticAcid;
-        public static Material AmmoniacalPhthalimide;
         public static Material Phthalimide;
         public static Material NMethylPhthalimide;
         public static Material FourNitroNMethylPhthalimide;
-        public static Material FourNitroNMethylPhthalimideSolution;
         public static Material SodiumBisphenolate;
-        public static Material BisphenolADiimideSolution;
-        public static Material ImpureBisphenolADianhydride;
-        public static Material ImpureBisphenolADianhydrideSolution;
         public static Material BisphenolADianhydride;
-        public static Material PeiPreparationMixture;
-        public static Material PeiPolymerisationSolution;
         public static Material Pyrazine;
         public static Material OneOneOneTrichloroethane;
         public static Material OneChloroTwoTwoDifluoroethane;
         public static Material VinylideneFluoride;
-        public static Material PVDFPreparationMixture;
-        public static Material PVDFPolymerisationMixture;
         public static Material BenzenediazoniumFluoride;
         public static Material Fluorobenzene;
-        public static Material ParaToluidene;
-        public static Material FluorinatedToluidene;
-        public static Material Fluorotoluene;
-        public static Material Fluorotoluenetrichloride;
-        public static Material FluorobenzoylChloride;
+        public static Material ParaFluorobenzoylChloride;
         public static Material FourFourDifluorobenzophenone;
         public static Material FourFourDifluorobenzophenoneSolution;
-        public static Material PDiisopropylbenzene;
+        public static Material ParaDiisopropylbenzene;
         public static Material BisHydroperoxide;
         public static Material HydroquinoneSolution;
         public static Material Hydroquinone;
         public static Material BenzenesulfonicAcid;
         public static Material DiphenylSulfone;
         public static Material DiphenylSulfoneSolution;
-        public static Material HydroquinoneEmulsion;
-        public static Material PeekMixture;
         public static Material PolyetherEtherKetone;
         public static Material Hexafluoropropylene;
-        public static Material FkmEmulsion;
-        public static Material FkmCopolymer;
-        public static Material FkmCopolymerSolution;
+        public static Material Viton;
         public static Material BenzenediolMixture;
         public static Material SodiumEthoxide;
         public static Material ParaNitrotoluene;
         public static Material ParaNitrotolueneSlurry;
+        public static Material CumeneHydroperoxide;
+        public static Material PolyphenyleneOxide;
+        public static Material Ultem;
 
         // Third Degree Materials
 
@@ -2325,7 +2307,19 @@ class SuSyMaterials {
         public static Material TributylPhosphateExtractionMixture;
         public static Material Aliquat336ExtractionMixture;
         public static Material PolyvinylAlcoholBinder;
-        public static Material PVDFSurfactantMixture;
+        public static Material VinylideneFluorideSurfactantMixture;
+        public static Material PeekMixture;
+        public static Material SodiumBisphenolateSolution;
+        public static Material FourNitroNMethylPhthalimideSolution;
+        public static Material AcidicNitrotolueneMixture;
+        public static Material DiisopropylbenzeneMixture;
+        public static Material BisphenolADiimideSolution;
+        public static Material ImpureBisphenolADianhydride;
+        public static Material BisphenolADianhydrideSolution;
+        public static Material PPOSolution;
+        public static Material VitonSolution;
+
+
 
         // Thermodynamics Materials
 

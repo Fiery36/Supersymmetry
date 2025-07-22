@@ -46,7 +46,7 @@ def polymers = [
 
         new ExtrudablePolymers('Polybenzimidazole', 7680, 8, true, true, true, false),
         new ExtrudablePolymers('PolyetherEtherKetone', 7680, 8, false, false, false, false),
-        new ExtrudablePolymers('FkmCopolymer', 7680, 8, false, false, false, false),
+        new ExtrudablePolymers('Viton', 7680, 8, false, false, false, false),
         new ExtrudablePolymers('KaptonE', 7680, 8, false, false, false, false),
         new ExtrudablePolymers('KaptonK', 7680, 8, false, false, false, false)
 ]

@@ -174,15 +174,12 @@ public class UnknownCompositionMaterials {
                 .color(0x75665e)
                 .build();
 
-        AcidicCumene = new Material.Builder(4030, SuSyUtility.susyId('acidic_cumene'))
+        CrudeCumene = new Material.Builder(4030, SuSyUtility.susyId('crude_cumene'))
                 .liquid()
                 .color(0x571a0b)
                 .build()
 
-        RearrangedCumene = new Material.Builder(4031, SuSyUtility.susyId('rearranged_cumene'))
-                .liquid()
-                .color(0x4f2f27)
-                .build();
+        // FREE ID: 4031
 
         SulfatedMetalOxide = new Material.Builder(4032, SuSyUtility.susyId('sulfated_metal_oxide'))
                 .dust()
@@ -2920,7 +2917,7 @@ public class UnknownCompositionMaterials {
                 .color(0xe3ecff)
                 .build();
 
-        // FREE ID: 4643
+        // FREE ID: 4642
 
         HighAluminaRefractory = new Material.Builder(4643, SuSyUtility.susyId('high_alumina_refractory'))
                 .dust().ingot()
@@ -2964,19 +2961,12 @@ public class UnknownCompositionMaterials {
                 .color(0x382f4d)
                 .build()
 
-        DilutedPPOSolution = new Material.Builder(4651, SuSyUtility.susyId('diluted_ppo_solution'))
+        ImpurePPOSolution = new Material.Builder(4651, SuSyUtility.susyId('impure_ppo_solution'))
                 .fluid()
                 .color(0x302a52)
                 .build()
 
-        PPOSolution = new Material.Builder(4652, SuSyUtility.susyId('ppo_solution'))
-                .fluid()
-                .color(0x395270)
-                .build()
-
-        PPOExtractionWaste = new Material.Builder(4653, SuSyUtility.susyId('ppo_extraction_waste'))
-                .fluid()
-                .color(0x47260e)
-                .build()
+        PolyphosphoricAcid
+        SupportedPolyphosphoricAcid
     }
 }
