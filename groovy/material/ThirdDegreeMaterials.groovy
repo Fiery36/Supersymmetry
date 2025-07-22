@@ -742,13 +742,46 @@ public class ThirdDegreeMaterials {
                 .color(0xbc716d)
                 .build();
         
-        BenzenediolMixture
-        BenzenediolSolution
-        NitrotolueneMixture
-        CleavedParaDiisopropylbenzeneMixture
-        PotassiumPhthalamideSolution
-        NMethylPhthalimideSolution
-        
-        
+        DiphenylSulfoneSolution = new Material.Builder(24119, SuSyUtility.susyId('diphenyl_sulfone_solution'))
+                .liquid()
+                .components(DiphenylSulfone, Acetone)
+                .colorAverage()
+                .build();
+
+        BenzenediolMixture = new Material.Builder(24120, SuSyUtility.susyId('benzenediol_mixture'))
+                .dust().liquid(new FluidBuilder().temperature(445))
+                .components(Hydroquinone * 2, Pyrocatechol * 3)
+                .colorAverage()
+                .build();
+
+        BenzenediolSolution = new Material.Builder(24121, SuSyUtility.susyId('benzenediol_solution'))
+                .liquid()
+                .components(BenzenediolMixture, Phenol * 3)
+                .colorAverage()
+                .build();
+
+        NitrotolueneMixture = new Material.Builder(24122, SuSyUtility.susyId('nitrotoluene_mixture'))
+                .liquid()
+                .components(ParaNitrotoluene, OrthoNitrotoluene * 2)
+                .colorAverage()
+                .build();
+
+        CleavedParaDiisopropylbenzeneMixture = new Material.Builder(24123, SuSyUtility.susyId('cleaved_para_diisopropylbenzene_mixture'))
+                .liquid()
+                .components(SulfuricAcid, Hydroquinone * 5, Acetone * 10)
+                .colorAverage()
+                .build();
+
+        PotassiumPhthalimideSolution = new Material.Builder(24124, SuSyUtility.susyId('potassium_phthalimide_solution'))
+                .liquid()
+                .components(PotassiumPhthalimide, Ethanol)
+                .colorAverage()
+                .build();
+
+        NMethylPhthalimideSolution = new Material.Builder(24125, SuSyUtility.susyId('n_methyl_phthalimide_solution'))
+                .liquid()
+                .components(NMethylPhthalimide, Dimethylformamide)
+                .colorAverage()
+                .build();
     }
 }

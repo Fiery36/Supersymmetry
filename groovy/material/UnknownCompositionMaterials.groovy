@@ -2956,17 +2956,21 @@ public class UnknownCompositionMaterials {
                 .color(0x1c382d)
                 .build();
       
-        PolymerisedXylenolSolution = new Material.Builder(4650, SuSyUtility.susyId('polymerised_xylenol_solution'))
-                .fluid()
-                .color(0x382f4d)
-                .build()
+        // FREE ID: 4650
 
         ImpurePPOSolution = new Material.Builder(4651, SuSyUtility.susyId('impure_ppo_solution'))
                 .fluid()
                 .color(0x302a52)
                 .build()
 
-        PolyphosphoricAcid
-        SupportedPolyphosphoricAcid
+        PolyphosphoricAcid = new Material.Builder(4652, SuSyUtility.susyId('polyphosphoric_acid'))
+                .dust()
+                .color(0xdea740)
+                .build();
+        
+        SupportedPolyphosphoricAcid = new Material.Builder(4653, SuSyUtility.susyId('supported_polyphosphoric_acid'))
+                .dust()
+                .color(0xd6b465)
+                .build();
     }
 }

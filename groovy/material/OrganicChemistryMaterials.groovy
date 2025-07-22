@@ -2760,7 +2760,7 @@ public class OrganicChemistryMaterials {
 
         PolyphenyleneOxide = new Material.Builder(15439, SuSyUtility.susyId('polyphenylene_oxide'))
                 .polymer()
-                .components(Carbon * 8, Hydrogen * 8, Oxygen * 1)
+                .components(Carbon * 8, Hydrogen * 8, Oxygen, Polycarbonate)
                 .color(0x4a567d)
                 .build();
 
@@ -2871,13 +2871,9 @@ public class OrganicChemistryMaterials {
                 .color(0x20613f)
                 .build();
 
-        ParaDiisopropylbenzene.setFormula('C6H4(CH(CH3)2)2', true)
+        ParaDiisopropylbenzene.setFormula('C6H4(C3H7)2', true)
 
-        BisHydroperoxide = new Material.Builder(15468, SuSyUtility.susyId('bis_hydroperoxide'))
-                .liquid()
-                .components(Carbon * 12, Hydrogen * 18, Oxygen * 2)
-                .colorAverage()
-                .build();
+        // FREE ID: 15468
 
         Hydroquinone = new Material.Builder(15469, SuSyUtility.susyId('hydroquinone'))
                 .dust()
@@ -2885,11 +2881,7 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
 
-        HydroquinoneSolution = new Material.Builder(15470, SuSyUtility.susyId('hydroquinone_solution'))
-                .liquid()
-                .components(Hydroquinone, Acetone * 2)
-                .colorAverage()
-                .build();
+        // FREE ID: 15470
 
         BenzenesulfonicAcid = new Material.Builder(15471, SuSyUtility.susyId('benzenesulfonic_acid'))
                 .liquid()
@@ -2905,11 +2897,7 @@ public class OrganicChemistryMaterials {
 
         DiphenylSulfone.setFormula('(C6H5)2SO2', true)
 
-        DiphenylSulfoneSolution = new Material.Builder(15473, SuSyUtility.susyId('diphenyl_sulfone_solution'))
-                .liquid()
-                .components(DiphenylSulfone, Acetone)
-                .colorAverage()
-                .build();
+        // FREE ID: 15473
 
         PolyetherEtherKetone = new Material.Builder(15474, SuSyUtility.susyId('polyether_ether_ketone'))
                 .polymer()
@@ -2965,14 +2953,58 @@ public class OrganicChemistryMaterials {
                 .color(0x22553a)
                 .build();
 
-        OrthoNitrotoluene
-        ParaNitrobenzoicAcid
-        ParaAminobenzoicAcid
-        ParaAminobenzylEthylEster
-        ParaDiazoniobenzylEthylEsterFluoride
-        ParaFluorobenzoicAcidEthylEster
-        ParaFluorobenzoicAcid
-        ParaDiisopropylbenzeneDihydroperoxide
-        PotassiumPhthalamide
+        OrthoNitrotoluene = new Material.Builder(15485, SuSyUtility.susyId('ortho_nitrotoluene'))
+                .liquid()
+                .components(Carbon * 7, Hydrogen * 7, Nitrogen, Oxygen * 2)
+                .color(0xc2af59)
+                .build();
+
+        ParaNitrobenzoicAcid = new Material.Builder(15486, SuSyUtility.susyId('para_nitrobenzoic_acid'))
+                .dust()
+                .components(Carbon * 7, Hydrogen * 5, Nitrogen, Oxygen * 4)
+                .color(0xedebb7)
+                .build();
+
+        ParaAminobenzoicAcid = new Material.Builder(15487, SuSyUtility.susyId('para_aminobenzoic_acid'))
+                .dust()
+                .components(Carbon * 7, Hydrogen * 7, Nitrogen, Oxygen * 2)
+                .color(0xe0e0da)
+                .build();
+
+        ParaAminobenzylEthylEster = new Material.Builder(15488, SuSyUtility.susyId('para_aminobenzyl_ethyl_ester'))
+                .dust()
+                .components(Carbon * 9, Hydrogen * 11, Nitrogen, Oxygen * 2)
+                .color(0xd9bfb8)
+                .build();
+
+        ParaDiazoniobenzylEthylEsterFluoride = new Material.Builder(15489, SuSyUtility.susyId('para_diazoniobenzyl_ethyl_ester_fluoride'))
+                .dust()
+                .components(Carbon * 9, Hydrogen * 9, Nitrogen * 2, Oxygen * 2, Fluorine)
+                .color(0x9db1c9)
+                .build();
+
+        ParaFluorobenzoicAcidEthylEster = new Material.Builder(15490, SuSyUtility.susyId('para_fluorobenzoic_acid_ethyl_ester'))
+                .dust()
+                .components(Carbon * 9, Hydrogen * 9, Fluorine, Oxygen * 2)
+                .color(0x9dc9c7)
+                .build();
+
+        ParaFluorobenzoicAcid = new Material.Builder(15491, SuSyUtility.susyId('para_fluorobenzoic_acid'))
+                .dust()
+                .components(Carbon * 7, Hydrogen * 5, Fluorine, Oxygen * 2)
+                .color(0x9dc9b2)
+                .build();
+
+        ParaDiisopropylbenzeneDihydroperoxide = new Material.Builder(15492, SuSyUtility.susyId('para_diisopropylbenzene_dihydroperoxide'))
+                .dust()
+                .components(Carbon * 12, Hydrogen * 18, Oxygen * 4)
+                .color(0x206152)
+                .build();
+
+        PotassiumPhthalimide = new Material.Builder(15493, SuSyUtility.susyId('potassium_phthalimide'))
+                .dust()
+                .components(Carbon * 8, Hydrogen * 4, Nitrogen, Oxygen * 2, Potassium)
+                .colorAverage()
+                .build();
     }
 }

@@ -2528,26 +2528,18 @@ DT.recipeBuilder()
 
 DT.recipeBuilder()
     .fluidInputs(fluid('benzenediol_solution') * 4000)
-    .outputs(metaitem('dustBenzenediolMixture'))
+    .outputs(metaitem('dustBenzenediolMixture') * 14)
     .fluidOutputs(fluid('phenol') * 3000)
     .duration(50)
     .EUt(30)
     .buildAndRegister()
 
 CRYSTALLIZER.recipeBuilder()
-    .fluidInputs(fluid('benzenediol_mixture') * 720)
+    .fluidInputs(fluid('benzenediol_mixture') * 10080)
     .outputs(metaitem('dustHydroquinone') * 28)
-    .fluidOutputs(fluid('pyrocatechol') * 432)
+    .fluidOutputs(fluid('pyrocatechol') * 6048)
     .duration(80)
     .EUt(120)
-    .buildAndRegister();
-
-SOLIDIFIER.recipeBuilder()
-    .notConsumable(metaitem('shape.mold.ball'))
-    .fluidInputs(fluid('pyrocatechol') * 144)
-    .outputs(metaitem('dustPyrocatechol') * 14)
-    .duration(20)
-    .EUt(16)
     .buildAndRegister();
 
 // Tetramethylammonium chloride

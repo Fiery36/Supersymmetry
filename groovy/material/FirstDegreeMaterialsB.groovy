@@ -17,6 +17,7 @@ import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.Materials.*;
 import gregtech.api.unification.material.properties.BlastProperty.GasTier;
+import static gregtechfoodoption.GTFOMaterialHandler.*;
 import static supersymmetry.api.unification.material.info.SuSyMaterialFlags.*;
 import static gregtech.api.fluids.FluidConstants.*;
 
@@ -129,7 +130,7 @@ public class FirstDegreeMaterialsB {
 
         CleavedCumeneMixture = new Material.Builder(4031, SuSyUtility.susyId('cleaved_cumene_mixture'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(SulfuricAcid * 1, Phenol * 5, Acetone * 5)
+                .components(SulfuricAcid, Phenol * 5, Acetone * 5)
                 .colorAverage()
                 .build();
 
@@ -139,7 +140,10 @@ public class FirstDegreeMaterialsB {
                 .color(0x47260e)
                 .build()
 
-        BenzenediolCatalysisMixture
-
+        BenzenediolCatalysisMixture = new Material.Builder(4654, SuSyUtility.susyId('benzenediol_catalysis_mixture'))
+                .liquid()
+                .components(PhosphoricAcid * 10, PerchloricAcid)
+                .color(0x5c4d3a)
+                .build();
     }
 }

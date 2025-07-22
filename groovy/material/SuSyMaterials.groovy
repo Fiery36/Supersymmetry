@@ -727,6 +727,8 @@ class SuSyMaterials {
         public static Material YttriaStabilizedZirconia;
         public static Material HighAluminaRefractory;
         public static Material ImpurePPOSolution;
+        public static Material PolyphosphoricAcid;
+        public static Material SupportedPolyphosphoricAcid;
 
         // Petrochem Materials
 
@@ -1497,7 +1499,6 @@ class SuSyMaterials {
         public static Material IodideConcentrate;
         public static Material XylenolSolution;
         public static Material EthylenediamineSolution;
-        public static Material PolymerisedXylenolSolution;
         public static Material PPOWaste;
 
         // First Degree Materials B
@@ -2182,12 +2183,9 @@ class SuSyMaterials {
         public static Material FourFourDifluorobenzophenone;
         public static Material FourFourDifluorobenzophenoneSolution;
         public static Material ParaDiisopropylbenzene;
-        public static Material BisHydroperoxide;
-        public static Material HydroquinoneSolution;
         public static Material Hydroquinone;
         public static Material BenzenesulfonicAcid;
         public static Material DiphenylSulfone;
-        public static Material DiphenylSulfoneSolution;
         public static Material PolyetherEtherKetone;
         public static Material Hexafluoropropylene;
         public static Material Viton;
@@ -2198,6 +2196,15 @@ class SuSyMaterials {
         public static Material CumeneHydroperoxide;
         public static Material PolyphenyleneOxide;
         public static Material Ultem;
+        public static Material OrthoNitrotoluene;
+        public static Material ParaNitrobenzoicAcid;
+        public static Material ParaAminobenzoicAcid;
+        public static Material ParaAminobenzylEthylEster;
+        public static Material ParaDiazoniobenzylEthylEsterFluoride;
+        public static Material ParaFluorobenzoicAcidEthylEster;
+        public static Material ParaFluorobenzoicAcid;
+        public static Material ParaDiisopropylbenzeneDihydroperoxide;
+        public static Material PotassiumPhthalimide;
 
         // Third Degree Materials
 
@@ -2318,8 +2325,13 @@ class SuSyMaterials {
         public static Material BisphenolADianhydrideSolution;
         public static Material PPOSolution;
         public static Material VitonSolution;
-
-
+        public static Material DiphenylSulfoneSolution;
+        public static Material BenzenediolMixture;
+        public static Material BenzenediolSolution;
+        public static Material NitrotolueneMixture;
+        public static Material CleavedParaDiisopropylbenzeneMixture;
+        public static Material PotassiumPhthalimideSolution;
+        public static Material NMethylPhthalimideSolution;
 
         // Thermodynamics Materials
 
