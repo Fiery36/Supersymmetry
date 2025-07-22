@@ -77,6 +77,7 @@ class ChangeFlags {
         Asbestos.setProperty(PropertyKey.INGOT, new IngotProperty());
 
         BisphenolA.setProperty(PropertyKey.DUST, new DustProperty());
+        Polonium.setProperty(PropertyKey.DUST, new DustProperty());
 
         Silver.setProperty(PropertyKey.FLUID_PIPE, new FluidPipeProperties(1234, 50, false, false, true, false));
         Rubber.setProperty(PropertyKey.FLUID_PIPE, new FluidPipeProperties(593, 50, true, false, false, false));

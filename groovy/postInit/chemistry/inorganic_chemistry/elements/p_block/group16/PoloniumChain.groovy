@@ -78,7 +78,7 @@ MIXER_SETTLER.recipeBuilder()
 
 ROASTER.recipeBuilder()
     .fluidInputs(fluid('polonium_iv_nitrate_solution') * 1000)
-    .inputs(ore('dustPolonium'))
+    .outputs(metaitem('dustPolonium'))
     .fluidOutputs(fluid('dense_steam') * 1000)
     .fluidOutputs(fluid('nitrogen_dioxide') * 4000)
     .fluidOutputs(fluid('oxygen') * 4000)    
