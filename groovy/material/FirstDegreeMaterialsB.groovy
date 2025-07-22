@@ -230,7 +230,18 @@ public class FirstDegreeMaterialsB {
                 .build();
 
         MixedOxideFuel.setFormula("(U,Pu)O2", true);
-        MixedOxideFuel.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(1600, 1000, 50.0, 10.0, 4000.0, 10.0, 1.5, MixedOxideFuel.getRegistryName()));
+
+        MixedOxideFuel.setProperty(SCPropertyKey.FISSION_FUEL,
+                FissionFuelProperty.builder(MixedOxideFuel.getRegistryName(), 1600, 60000, 1.5)
+                        .fastNeutronCaptureCrossSection(0.5)
+                        .fastNeutronFissionCrossSection(0.25)
+                        .slowNeutronCaptureCrossSection(2.2)
+                        .slowNeutronFissionCrossSection(2.2)
+                        .requiredNeutrons(1)
+                        .releasedNeutrons(2.60)
+                        .releasedHeatEnergy(0.02)
+                        .decayRate(0.1)
+                        .build());
 
         DilutedAcetone = new Material.Builder(8733, SuSyUtility.susyId('diluted_acetone'))
                 .liquid()
