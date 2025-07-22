@@ -33,6 +33,15 @@ class SuSyMaterials {
         public static Material HALEU235;
         public static Material HEU235;
         public static Material WeaponsGradeUranium;
+        public static Material Uranium234;
+        public static Material Uranium236;
+        public static Material ReprocessedUranium;
+        public static Material Plutonium238;
+        public static Material Plutonium240;
+        public static Material Plutonium242;
+        public static Material Plutonium244;
+        public static Material ReactorGradePlutonium;
+
 
         // Ore Materials
 
@@ -729,6 +738,26 @@ class SuSyMaterials {
         public static Material ImpurePPOSolution;
         public static Material PolyphosphoricAcid;
         public static Material SupportedPolyphosphoricAcid;
+        public static Material SpentFuelSuspension;
+        public static Material SpentFuelSolution;
+        public static Material UraniumPlutoniumExtract;
+        public static Material TransuraniumSolution;
+        public static Material ReprocessedUraniumExtract;
+        public static Material ImpureReprocessedUraniumExtract;
+        public static Material RadiolyzedActinideSeparationMixture;
+        public static Material ReprocessedUraniumConcentrate;
+        public static Material RadioactiveWastewater;
+        public static Material PurifiedReprocessedUraniumExtract;
+        public static Material PurifiedReprocessedUraniumConcentrate;
+        public static Material ReprocessedUranylNitrateSolution;
+        public static Material PlutoniumConcentrate;
+        public static Material PurifiedPlutoniumConcentrate;
+        public static Material OxidizedPlutoniumConcentrate;
+        public static Material PlutoniumExtract;
+        public static Material PlutoniumIIINitrateSolution;
+        public static Material ReextractedReprocessedUraniumExtract;
+        public static Material PentaerythritolSolution;
+        public static Material CrudePentaerythritolTetranitrate;
 
         // Petrochem Materials
 
@@ -942,14 +971,15 @@ class SuSyMaterials {
         public static Material Cryolite;
         public static Material EthanolSolution;
         public static Material HeavyWater;
-        public static Material HeavyHydrogenSulfide;
-        public static Material SemiHeavyHydrogenSulfide;
-        public static Material SemiHeavyWater;
-        public static Material ImpureSemiheavyWater;
-        public static Material IsotopicallyPureHydrogenSulfide;
-        public static Material ImpureSemiheavyHydrogenSulfide;
-        public static Material ImpureHeavyHydrogenSulfide;
-        public static Material SeaWater;
+        public static Material HighlyEnrichedHydrogenSulfide;
+        public static Material HighlyEnrichedWater;
+        public static Material MediumEnrichedHydrogenSulfide;
+        public static Material MediumEnrichedWater;
+        public static Material LightlyEnrichedHydrogenSulfide;
+        public static Material LightlyEnrichedWater;
+        public static Material PartiallyDeionizedSeawater;
+        public static Material DeionizedSeawater;
+        public static Material DepletedHydrogenSulfide;
         public static Material TetrafluoroboricAcid;
         public static Material BoronTrichloride;
         public static Material ProustiteAlkalineLeachSolution;
@@ -1497,9 +1527,8 @@ class SuSyMaterials {
         public static Material CalicheLeach;
         public static Material IodateConcentrate;
         public static Material IodideConcentrate;
-        public static Material XylenolSolution;
-        public static Material EthylenediamineSolution;
         public static Material PPOWaste;
+        public static Material Hydroxylamine;
 
         // First Degree Materials B
 
@@ -1517,6 +1546,20 @@ class SuSyMaterials {
         public static Material CleavedCumeneMixture;
         public static Material BenzenediolCatalysisMixture;
         public static Material DilutedBenzenediolCatalysisMixture;
+        public static Material DeuteriumTritiumMixture;
+        public static Material ReprocessedUranylNitrate;
+        public static Material FerrousSulfamate;
+        public static Material ReprocessedUraniumTrioxide;
+        public static Material ReactorGradePlutoniumIIINitrate;
+        public static Material ReactorGradePlutoniumDioxide;
+        public static Material HydroxylammoniumNitrateSolution;
+        public static Material ReprocessedUraniumDioxide;
+        public static Material ReprocessedUraniumTetrafluoride;
+        public static Material ReprocessedUraniumHexafluoride;
+        public static Material PlutoniumGallium;
+        public static Material MixedOxideFuel;
+        public static Material DilutedAcetone;
+        public static Material BariumNitrate;
 
         // HP Materials
 
@@ -1737,6 +1780,10 @@ class SuSyMaterials {
         public static Material AcidicEthanolSolution;
         public static Material LithiumHydroxideMotherLiquor;
         public static Material LithiumHydroxideMonohydrate;
+        public static Material FerrousSulfamateSolution;
+        public static Material SodiumNitriteSolution;
+        public static Material PlutoniumReductionSolution;
+        public static Material BariumNitrateSolution;
 
         // Organic Chemistry Materials
 
@@ -1787,7 +1834,6 @@ class SuSyMaterials {
         public static Material PBIPrepolymer;
         public static Material PBISolution;
         public static Material PBIWaste;
-        public static Material Hydroxylamine;
         public static Material Cyclohexanone;
         public static Material CaprolactamSolution;
         public static Material CrackedOneTwoDichloroethaneMix;
@@ -1955,7 +2001,7 @@ class SuSyMaterials {
         public static Material IsoOctane;
         public static Material PurifiedIsoprene;
         public static Material Cyclopentadiene;
-        public static Material HexamethylenetetramineSolution;
+        public static Material Hexamethylenetetramine;
         public static Material Ferrocene;
         public static Material Polyisoprene;
         public static Material Chloroethane;
@@ -2186,7 +2232,6 @@ class SuSyMaterials {
         public static Material Fluorobenzene;
         public static Material ParaFluorobenzoylChloride;
         public static Material FourFourDifluorobenzophenone;
-        public static Material FourFourDifluorobenzophenoneSolution;
         public static Material ParaDiisopropylbenzene;
         public static Material Hydroquinone;
         public static Material BenzenesulfonicAcid;
@@ -2209,6 +2254,9 @@ class SuSyMaterials {
         public static Material ParaFluorobenzoicAcid;
         public static Material ParaDiisopropylbenzeneDihydroperoxide;
         public static Material PotassiumPhthalimide;
+        public static Material Pentaerythritol;
+        public static Material PentaerythritolTetranitrate;
+        public static Material RDX;
 
         // Third Degree Materials
 
@@ -2335,6 +2383,13 @@ class SuSyMaterials {
         public static Material CleavedParaDiisopropylbenzeneMixture;
         public static Material PotassiumPhthalimideSolution;
         public static Material NMethylPhthalimideSolution;
+        public static Material EthylenediamineSolution;
+        public static Material XylenolSolution;
+        public static Material FourFourDifluorobenzophenoneSolution;
+        public static Material ActinideSeparationMixture;
+        public static Material HexamethylenetetramineSolution;
+        public static Material CompositionB;
+        public static Material Baratol;
 
         // Thermodynamics Materials
 
@@ -2393,7 +2448,10 @@ class SuSyMaterials {
         public static Material BoilingWater;
         public static Material HighPressureExhaustSteam;
         public static Material HighPressureWetExhaustSteam;
-        //public static Material HighPressureHeavyWater;
+        public static Material PressurizedHeavyWater;
+        public static Material HotPressurizedHeavyWater;
+        public static Material TritiatedHeavyWater;
+        public static Material TritiatedSteam;
         public static Material ChilledWater;
         
 

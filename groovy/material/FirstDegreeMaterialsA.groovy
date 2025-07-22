@@ -578,51 +578,55 @@ public class FirstDegreeMaterialsA {
                 .color(0x2497a6)
                 .build();
 
-        HeavyWater = new Material.Builder(8173, SuSyUtility.susyId('heavy_water'))
+        HeavyWater = new Material.Builder(8172, SuSyUtility.susyId('heavy_water'))
                 .liquid()
                 .components(Deuterium * 2, Oxygen)
-                .color(0x2c37b0)
+                .color(0x3047b8)
                 .build();
 
-        HeavyHydrogenSulfide = new Material.Builder(8174, SuSyUtility.susyId('heavy_hydrogen_sulfide'))
+        HighlyEnrichedHydrogenSulfide = new Material.Builder(8173, SuSyUtility.susyId('highly_enriched_hydrogen_sulfide'))
                 .gas()
-                .components(Deuterium * 2, Sulfur)
                 .color(0xb09a2c)
                 .build();
 
-        SemiHeavyHydrogenSulfide = new Material.Builder(8175, SuSyUtility.susyId('semiheavy_hydrogen_sulfide'))
+        HighlyEnrichedWater = new Material.Builder(8174, SuSyUtility.susyId('highly_enriched_water'))
+                .liquid()
+                .color(0x3047b8)
+                .build();
+
+        MediumEnrichedHydrogenSulfide = new Material.Builder(8175, SuSyUtility.susyId('medium_enriched_hydrogen_sulfide'))
                 .gas()
-                .components(Hydrogen, Deuterium, Sulfur)
                 .color(0xc29836)
                 .build();
 
-        SemiHeavyWater = new Material.Builder(8176, SuSyUtility.susyId('semiheavy_water'))
+        MediumEnrichedWater = new Material.Builder(8176, SuSyUtility.susyId('medium_enriched_water'))
                 .liquid()
-                .components(Hydrogen, Deuterium, Oxygen)
                 .color(0x364ec2)
                 .build();
 
-        ImpureSemiheavyWater = new Material.Builder(8177, SuSyUtility.susyId('impure_semiheavy_water'))
+        LightlyEnrichedHydrogenSulfide = new Material.Builder(8177, SuSyUtility.susyId('lightly_enriched_hydrogen_sulfide'))
+                .gas()
+                .colorAverage()
+                .build();
+
+        LightlyEnrichedWater = new Material.Builder(8178, SuSyUtility.susyId('lightly_enriched_water'))
                 .liquid()
-                .components(SemiHeavyWater, Water)
-                .colorAverage()
+                .color(0x3957bd)
                 .build();
 
-        IsotopicallyPureHydrogenSulfide = new Material.Builder(8178, SuSyUtility.susyId('isotopically_pure_hydrogen_sulfide'))
-                .gas()
+        PartiallyDeionizedSeawater = new Material.Builder(8179, SuSyUtility.susyId('partially_deionized_sea_water'))
+                .liquid()
+                .color(0x4565d1)
+                .build();
+
+        DeionizedSeawater = new Material.Builder(8180, SuSyUtility.susyId('deionized_sea_water'))
+                .liquid()
+                .color(0x4e6fde)
+                .build();
+
+        DepletedHydrogenSulfide = new Material.Builder(8181, SuSyUtility.susyId('depleted_hydrogen_sulfide'))
+                .liquid()
                 .components(HydrogenSulfide)
-                .color(0xffab66)
-                .build();
-
-        ImpureSemiheavyHydrogenSulfide = new Material.Builder(8179, SuSyUtility.susyId('impure_semiheavy_hydrogen_sulfide'))
-                .gas()
-                .components(HydrogenSulfide, SemiHeavyHydrogenSulfide)
-                .colorAverage()
-                .build();
-
-        ImpureHeavyHydrogenSulfide = new Material.Builder(8180, SuSyUtility.susyId('impure_heavy_hydrogen_sulfide'))
-                .gas()
-                .components(HydrogenSulfide, HeavyHydrogenSulfide)
                 .colorAverage()
                 .build();
 
@@ -2425,6 +2429,7 @@ public class FirstDegreeMaterialsA {
         SilicaGel = new Material.Builder(8455, SuSyUtility.susyId('silica_gel'))
                 .dust()
                 .iconSet(SHINY)
+                .flags(GENERATE_CATALYST_BED)
                 .components(Silicon, Oxygen * 2)
                 .color(0x6d6e63)
                 .build();
@@ -2444,15 +2449,17 @@ public class FirstDegreeMaterialsA {
 
         SodiumChromateMixture = new Material.Builder(8458, SuSyUtility.susyId('sodium_chromate_mixture'))
                 .dust()
-                .components(Sodium, Chrome, Oxygen * 4, SodaAsh)
+                .components(Sodium * 8, Chrome * 4, Iron * 2, Oxygen * 19)
                 .color(0xfaff7d)
                 .build();
+        SodiumChromateMixture.setFormula("(Fe2O3)(Na2CrO4)4", true);
 
         SodiumChromateSolution = new Material.Builder(8459, SuSyUtility.susyId('sodium_chromate_solution'))
                 .liquid()
-                .components(Sodium, Chrome, Oxygen * 4, Water)
+                .components(Sodium * 2, Chrome, Oxygen * 4, Water)
                 .color(0xa4a839)
                 .build();
+        SodiumChromateSolution.setFormula("(Na2CrO4)(H2O)", true);
 
         LeadChloride = new Material.Builder(8460, SuSyUtility.susyId('lead_chloride'))
                 .dust().liquid(new FluidBuilder().temperature(774))
@@ -3732,9 +3739,11 @@ public class FirstDegreeMaterialsA {
                 .color(0x1ec200)
                 .build();
 
-        WeaponsGradeUraniumHexafluoride.setFormula("UF6", true);
-
-        // FREE ID: 8655
+        Hydroxylamine = new Material.Builder(8655, SuSyUtility.susyId('hydroxylamine'))
+                .liquid(new FluidBuilder().temperature(306))
+                .components(Hydrogen * 3, Nitrogen * 1, Oxygen * 1)
+                .colorAverage()
+                .build();
 
         LEU235AmmoniumDiuranate = new Material.Builder(8656, SuSyUtility.susyId('leu_235_ammonium_diuranate'))
                 .dust()
@@ -3817,7 +3826,8 @@ public class FirstDegreeMaterialsA {
                 .components(WeaponsGradeUranium, Oxygen * 2)
                 .color(0x2c4a1e)
                 .build()
-                .setFormula("UO2", true);
+
+        WeaponsGradeUraniumDioxide.setFormula("UO2", true);
 
         PotassiumChlorate = new Material.Builder(8665, SuSyUtility.susyId('potassium_chlorate'))
                 .dust()
@@ -3934,6 +3944,8 @@ public class FirstDegreeMaterialsA {
                 .components(Praseodymium, Nitrogen * 3, Oxygen * 9)
                 .color(0x4cab37)
                 .build()
+
+        PraseodymiumIIINitrate.setFormula("Pr(NO3)3", true)
 
         NeodymiumChlorideSolution = new Material.Builder(8682, SuSyUtility.susyId('neodymium_chloride_solution'))
                 .liquid()
@@ -4100,20 +4112,6 @@ public class FirstDegreeMaterialsA {
                 .build();
 
         ThoriumNitrateSolution.setFormula("(Th(NO3)4)(H2O)", true)
-
-        ThoriumDioxide = new Material.Builder(8707, SuSyUtility.susyId('thorium_dioxide'))
-                .dust()
-                .components(Thorium, Oxygen * 2)
-                .color(0x00061e)
-                .build();
-
-        // ThoriumDioxide.setProperty(SCPropertyKey.FISSION_FUEL, new FissionFuelProperty(?, ?, ?, ?, ?, ?, ?, ThoriumDioxide.getRegistryName()));
-
-        ThoriumChloride = new Material.Builder(8708, SuSyUtility.susyId('thorium_chloride'))
-                .dust()
-                .components(Thorium, Chlorine * 3)
-                .color(0x012916)
-                .build();
 
         // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
     }

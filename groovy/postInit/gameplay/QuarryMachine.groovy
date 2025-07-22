@@ -3,7 +3,7 @@ import globals.Globals
 QUARRY = recipemap('quarry')
 
 
-crafting.addShaped("susy:quarry_controller", metaitem('quarry'), [
+crafting.addShaped("susy:quarry_controller", metaitem('susy:quarry'), [
         [ore('plateSteel'), metaitem('electric.motor.lv'), ore('plateSteel')],
         [ore('circuitLv'), metaitem('hull.lv'), ore('circuitLv')],
         [ore('cableGtSingleTin'), metaitem('component.grinder.diamond'), ore('cableGtSingleTin')]
@@ -46,6 +46,14 @@ for(entry in overworld_ores){
 }
 
 QUARRY.recipeBuilder()
+            .notConsumable(ore('dustMica'))
+            .chancedOutputs(metaitem('dustMica'), 1000, 500)
+            .dimension(Globals.dimensions["Beneath"])
+            .duration(240)
+            .EUt(64)
+            .buildAndRegister();
+
+QUARRY.recipeBuilder()
             .circuitMeta(1)
             .chancedOutput(item('minecraft:stone'), 1667, 500)
             .chancedOutput(item('minecraft:stone', 1), 1667, 500)
@@ -82,7 +90,6 @@ for(entry in beneath_ores){
             .duration(100)
             .EUt(64)
             .buildAndRegister();
-    
 }
 
 QUARRY.recipeBuilder()

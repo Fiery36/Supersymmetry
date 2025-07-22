@@ -952,12 +952,12 @@ BCR.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
-CENTRIFUGE.recipeBuilder()
-    .fluidInputs(fluid('acidic_chlorodifluoromethane') * 3000)
-    .fluidInputs(fluid('water') * 2000)
-    .fluidOutputs(fluid('chlorodifluoromethane') * 1000)
-    .fluidOutputs(fluid('hydrochloric_acid') * 2000)
-    .duration(200)
+BCR.recipeBuilder()
+    .fluidInputs(fluid('acidic_chlorodifluoromethane') * 150)
+    .fluidInputs(fluid('water') * 100)
+    .fluidOutputs(fluid('chlorodifluoromethane') * 50)
+    .fluidOutputs(fluid('hydrochloric_acid') * 100)
+    .duration(5)
     .EUt(30)
     .buildAndRegister()
 
@@ -968,12 +968,12 @@ PYROLYSE.recipeBuilder()
     .EUt(120)
     .buildAndRegister()
 
-CENTRIFUGE.recipeBuilder()
-    .fluidInputs(fluid('acidic_tetrafluoroethylene') * 5000)
-    .fluidInputs(fluid('water') * 6000)
-    .fluidOutputs(fluid('tetrafluoroethylene') * 1000)
-    .fluidOutputs(fluid('hydrochloric_acid') * 6000)
-    .duration(200)
+BCR.recipeBuilder()
+    .fluidInputs(fluid('acidic_tetrafluoroethylene') * 125)
+    .fluidInputs(fluid('water') * 150)
+    .fluidOutputs(fluid('tetrafluoroethylene') * 25)
+    .fluidOutputs(fluid('hydrochloric_acid') * 150)
+    .duration(5)
     .EUt(30)
     .buildAndRegister()
 
@@ -1114,32 +1114,6 @@ TBR.recipeBuilder()
     .fluidOutputs(fluid('cyclohexane') * 50)
     .duration(20)
     .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
-
-// Iron(III)-chloride
-
-ROASTER.recipeBuilder()
-    .fluidInputs(fluid('chlorine') * 1000)
-    .inputs(ore('dustIronIiChloride') * 3)
-    .outputs(metaitem('dustIronIiiChloride') * 4)
-    .duration(160)
-    .EUt(30)
-    .buildAndRegister()
-
-ROASTER.recipeBuilder()
-    .fluidInputs(fluid('chlorine') * 6000)
-    .inputs(ore('dustAnyPurityIron') * 2)
-    .outputs(metaitem('dustIronIiiChloride') * 8)
-    .duration(160)
-    .EUt(30)
-    .buildAndRegister()
-
-MIXER.recipeBuilder()
-    .fluidInputs(fluid('water') * 1000)
-    .inputs(ore('dustIronIiiChloride') * 4)
-    .fluidOutputs(fluid('iron_iii_chloride_solution') * 1000)
-    .duration(160)
-    .EUt(30)
     .buildAndRegister()
 
 // Fluoroantimonic Acid
@@ -1345,25 +1319,6 @@ ROASTER.recipeBuilder()
     .EUt(7)
     .buildAndRegister()
 
-// TNT
-
-BR.recipeBuilder()
-    .circuitMeta(1)
-    .fluidInputs(fluid('toluene') * 1000)
-    .fluidInputs(fluid('nitration_mixture') * 6000)
-    .fluidOutputs(fluid('tnt_slurry') * 3000)
-    .duration(200)
-    .EUt(24)
-    .buildAndRegister()
-
-DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('tnt_slurry') * 1000)
-    .fluidOutputs(fluid('diluted_sulfuric_acid') * 1000)
-    .outputs(metaitem('dustTnt') * 7)
-    .duration(300)
-    .EUt(30)
-    .buildAndRegister()
-
 // Sulfur Trioxide
 
 ROASTER.recipeBuilder()
@@ -1489,17 +1444,6 @@ DISTILLERY.recipeBuilder()
     .fluidOutputs(fluid('salt_water') * 1000)
     .outputs(metaitem('dustSaltpeter') * 5)
     .duration(300)
-    .EUt(30)
-    .buildAndRegister()
-
-//Glyceryl Trinitrate
-
-BR.recipeBuilder()
-    .fluidInputs(fluid('glycerol') * 1000)
-    .fluidInputs(fluid('nitration_mixture') * 6000)
-    .fluidOutputs(fluid('glyceryl_trinitrate') * 1000)
-    .fluidOutputs(fluid('diluted_sulfuric_acid') * 6000)
-    .duration(100)
     .EUt(30)
     .buildAndRegister()
 
@@ -3139,26 +3083,6 @@ BR.recipeBuilder()
     .duration(40)
     .buildAndRegister()
 
-//PICRIC ACID
-
-BR.recipeBuilder()
-
-BR.recipeBuilder()
-    .fluidInputs(fluid('phenol') * 1000)
-    .fluidInputs(fluid('nitration_mixture') * 6000)
-    .fluidOutputs(fluid('tnp_slurry') * 3000)
-    .duration(200)
-    .EUt(24)
-    .buildAndRegister()
-
-DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('tnp_slurry') * 1000)
-    .fluidOutputs(fluid('diluted_sulfuric_acid') * 1000)
-    .outputs(metaitem('dustPicricAcid') * 7)
-    .duration(300)
-    .EUt(30)
-    .buildAndRegister()
-
 //AMMONIUM THIOCYANATE
 
 CSTR.recipeBuilder()
@@ -3653,14 +3577,6 @@ DISTILLATION_TOWER.recipeBuilder()
 
 // gamma-Butyrolactone
 
-CSTR.recipeBuilder()
-    .fluidInputs(fluid('acetylene') * 50)
-    .fluidInputs(fluid('formaldehyde') * 100)
-    .fluidOutputs(fluid('butanediol') * 50)
-    .EUt(120)
-    .duration(4)
-    .buildAndRegister()
-
 FBR.recipeBuilder()
     .fluidInputs(fluid('butanediol') * 50)
     .notConsumable(ore('catalystBedCopper'))
@@ -3808,24 +3724,8 @@ DISTILLERY.recipeBuilder()
     .fluidInputs(fluid('diluted_sodium_sulfate_solution') * 2000)
     .fluidOutputs(fluid('water') * 2000)
     .outputs(metaitem('dustSodiumSulfate') * 7)
-    .duration(30)
-    .EUt(200)
-    .buildAndRegister()
-
-// Dense steam processing
-
-FLUID_HEATER.recipeBuilder()
-    .circuitMeta(3)
-    .fluidInputs(fluid('water') * 1000)
-    .fluidOutputs(fluid('dense_steam') * 1000)
-    .duration(20)
-    .EUt(30)
-    .buildAndRegister()
-
-CONDENSER.recipeBuilder()
-    .fluidInputs(fluid('dense_steam') * 1000)
-    .fluidOutputs(fluid('water') * 1000)
-    .duration(5)
+    .duration(200)
+    .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
 // Nitration Mixture * 2000
@@ -3905,26 +3805,6 @@ DISTILLATION_TOWER.recipeBuilder()
     .EUt(30)
     .duration(80)
     .buildAndRegister()
-
-// Iron(II) Chloride
-
-BR.recipeBuilder()
-    .inputs(ore('dustIron'))
-    .fluidInputs(fluid('hydrochloric_acid') * 2000)
-    .fluidOutputs(fluid('iron_ii_chloride_solution') * 2000)
-    .fluidOutputs(fluid('hydrogen') * 2000)
-    .duration(100)
-    .EUt(16)
-    .buildAndRegister()
-
-MIXER.recipeBuilder()
-    .inputs(ore('dustIronIiChloride') * 3)
-    .fluidInputs(fluid('water') * 2000)
-    .fluidOutputs(fluid('iron_ii_chloride_solution') * 2000)
-    .duration(20)
-    .EUt(30)
-    .buildAndRegister()
-
 
 // Ammonium Carbonate
 

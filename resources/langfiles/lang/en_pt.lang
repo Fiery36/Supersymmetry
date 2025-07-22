@@ -2109,6 +2109,8 @@ metaitem.drone.lv.name=Basic Drone
 metaitem.glass_fibers.name=Glass Fibers
 metaitem.epoxy_lamina.name=Epoxy Lamina
 
+metaitem.code_breacher=Code Breacher
+
 # Vanilla MC
 tile.hellsand.name=Mineral-Rich Sand
 tile.magma.name=Magma-Infused Netherrack
@@ -2142,7 +2144,7 @@ tooltip.computronics.waila.tape.notapeinserted=No Tape Inserted
 tooltip.computronics.waila.tape.tapeinserted=Tape Inserted
 
 # Resin Logs
-gregtech.block_group_members.extractable_logs_1.name=Birch, Jungle, Oak, and Spruce Log
-gregtech.block_group_members.extractable_logs_2.name=Acacia and Dark Oak
+susy.block_group_members.extractable_logs_1.name=Birch, Jungle, Oak, and Spruce Log
+susy.block_group_members.extractable_logs_2.name=Acacia and Dark Oak
 
-gregtech.block_group_members.latex_logs.name=Rubber Log
+susy.block_group_members.latex_logs.name=Rubber Log

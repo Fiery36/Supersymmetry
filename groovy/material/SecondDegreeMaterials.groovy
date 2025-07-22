@@ -404,7 +404,7 @@ public class SecondDegreeMaterials {
 
         SodiumDichromateSolution = new Material.Builder(13063, SuSyUtility.susyId('sodium_dichromate_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(SodiumDichromate * 1, Water * 1, SulfuricAcid * 1)
+                .components(SodiumDichromate * 1, SodiumSulfate * 1, Water * 2)
                 .color(0xe0912f)
                 .build();
 
@@ -900,6 +900,8 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
+        PraseodymiumIIINitrateSolution.setFormula("Pr(NO3)3(H2O)", true)
+
         GadoliniumChlorideSolution = new Material.Builder(13150, SuSyUtility.susyId('gadolinium_chloride_solution'))
                 .liquid()
                 .components(GadoliniumChloride * 8, Water * 29)
@@ -948,43 +950,55 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        XylenolSolution = new Material.Builder(13158, SuSyUtility.susyId('xylenol_solution'))
-                .liquid()
-                .components(Toluene, TwoSixXylenol)
-                .color(0x4f301e)
+        FerrousSulfamateSolution = new Material.Builder(13158, SuSyUtility.susyId('ferrous_sulfamate_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(FerrousSulfamate, SulfuricAcid * 2, Water * 9)
+                .colorAverage()
                 .build();
 
-        EthylenediamineSolution = new Material.Builder(13159, SuSyUtility.susyId('ethylenediamine_solution'))
+        SodiumNitriteSolution = new Material.Builder(13159, SuSyUtility.susyId('sodium_nitrite_solution'))
                 .liquid()
-                .components(Ethylenediamine, Water)
-                .color(0x2c6147)
+                .components(SodiumNitrite, Water)
+                .colorAverage()
                 .build();
 
-        LithiumHydroxideSolution = new Material.Builder(13160, SuSyUtility.susyId('lithium_hydroxide_solution'))
+        PlutoniumReductionSolution = new Material.Builder(13160, SuSyUtility.susyId('plutonium_reduction_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(FerrousSulfamate, DilutedNitricAcid)
+                .colorAverage()
+                .build();
+
+        BariumNitrateSolution = new Material.Builder(13161, SuSyUtility.susyId('barium_nitrate_solution'))
+                .liquid()
+                .components(BariumNitrate, Water)
+                .colorAverage()
+                .build();
+
+        LithiumHydroxideSolution = new Material.Builder(13162, SuSyUtility.susyId('lithium_hydroxide_solution'))
                 .liquid()
                 .components(LithiumHydroxide, Water)
                 .colorAverage()
                 .build();
 
-        DilutedSodiumFluorideSolution = new Material.Builder(13161, SuSyUtility.susyId('diluted_sodium_fluoride_solution'))
+        DilutedSodiumFluorideSolution = new Material.Builder(13163, SuSyUtility.susyId('diluted_sodium_fluoride_solution'))
                 .liquid()
                 .components(SodiumFluoride, Water * 2)
                 .colorAverage()
                 .build();
 
-        AcidicEthanolSolution = new Material.Builder(13162, SuSyUtility.susyId('acidic_ethanol_solution'))
+        AcidicEthanolSolution = new Material.Builder(13164, SuSyUtility.susyId('acidic_ethanol_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .components(Ethanol, HydrogenChloride, Water)
                 .colorAverage()
                 .build();
 
-        LithiumHydroxideMotherLiquor = new Material.Builder(13163, SuSyUtility.susyId('lithium_hydroxide_mother_liquor'))
+        LithiumHydroxideMotherLiquor = new Material.Builder(13165, SuSyUtility.susyId('lithium_hydroxide_mother_liquor'))
                 .liquid()
                 .components(LithiumHydroxide, Water * 8)
                 .colorAverage()
                 .build();
 
-        LithiumHydroxideMonohydrate = new Material.Builder(13164, SuSyUtility.susyId('lithium_hydroxide_monohydrate'))
+        LithiumHydroxideMonohydrate = new Material.Builder(13166, SuSyUtility.susyId('lithium_hydroxide_monohydrate'))
                 .dust()
                 .components(LithiumHydroxide, Water)
                 .colorAverage()

@@ -660,27 +660,27 @@ public class ThirdDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        VinylideneFluorideSurfactantMixture = new Material.Builder(24107, SuSyUtility.susyId('vinylidene_fluoride_surfactant_mixture'))
+        ActinideSeparationMixture = new Material.Builder(24107, SuSyUtility.susyId('actinide_separation_mixture'))
                 .liquid()
-                .components(PerfluorooctanoicAcid, LithiumHydroxide, Water)
-                .colorAverage()
+                .components(TributylPhosphate * 3, Kerosene * 7)
+                .color(0xa89e43)
                 .build();
 
-        AcidicNitrotolueneMixture = new Material.Builder(24108, SuSyUtility.susyId('acidic_nitrotoluene_mixture'))
+        HexamethylenetetramineSolution = new Material.Builder(24108, SuSyUtility.susyId('hexamethylenetetramine_solution'))
                 .liquid()
-                .components(ParaNitrotoluene, OrthoNitrotoluene, DilutedSulfuricAcid)
+                .components(Hexamethylenetetramine, Water * 4)
                 .colorAverage()
-                .build();
+                .build()
 
-        DiisopropylbenzeneMixture = new Material.Builder(24109, SuSyUtility.susyId('diisopropylbenzene_mixture'))
-                .liquid()
-                .components(ParaDiisopropylbenzene, MetaDiisopropylbenzene)
+        CompositionB = new Material.Builder(24109, SuSyUtility.susyId('composition_b'))
+                .dust()
+                .components(RDX * 6, TNT * 4)
                 .colorAverage()
                 .build();
         
-        FourNitroNMethylPhthalimideSolution = new Material.Builder(24110, SuSyUtility.susyId('four_nitro_n_methyl_phthalimide_solution'))
-                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(FourNitroNMethylPhthalimide, SulfuricAcid, Water)
+        Baratol = new Material.Builder(24110, SuSyUtility.susyId('baratol'))
+                .dust()
+                .components(TNT, BariumNitrate * 3)
                 .colorAverage()
                 .build();
 
@@ -771,6 +771,48 @@ public class ThirdDegreeMaterials {
         NMethylPhthalimideSolution = new Material.Builder(24125, SuSyUtility.susyId('n_methyl_phthalimide_solution'))
                 .liquid()
                 .components(NMethylPhthalimide, Dimethylformamide)
+                .colorAverage()
+                .build();
+
+        EthylenediamineSolution = new Material.Builder(24126, SuSyUtility.susyId('ethylenediamine_solution'))
+                .liquid()
+                .components(Ethylenediamine, Water)
+                .color(0x2c6147)
+                .build();
+
+        XylenolSolution = new Material.Builder(24127, SuSyUtility.susyId('xylenol_solution'))
+                .liquid()
+                .components(Toluene, TwoSixXylenol)
+                .color(0x4f301e)
+                .build();
+
+        FourFourDifluorobenzophenoneSolution = new Material.Builder(24128, SuSyUtility.susyId('four_four_difluorobenzophenone_solution'))
+                .liquid()
+                .components(FourFourDifluorobenzophenone, Hexane)
+                .colorAverage()
+                .build();
+
+        VinylideneFluorideSurfactantMixture = new Material.Builder(24129, SuSyUtility.susyId('vinylidene_fluoride_surfactant_mixture'))
+                .liquid()
+                .components(PerfluorooctanoicAcid, LithiumHydroxide, Water)
+                .colorAverage()
+                .build();
+
+        AcidicNitrotolueneMixture = new Material.Builder(24130, SuSyUtility.susyId('acidic_nitrotoluene_mixture'))
+                .liquid()
+                .components(ParaNitrotoluene, OrthoNitrotoluene, DilutedSulfuricAcid)
+                .colorAverage()
+                .build();
+
+        DiisopropylbenzeneMixture = new Material.Builder(24131, SuSyUtility.susyId('diisopropylbenzene_mixture'))
+                .liquid()
+                .components(ParaDiisopropylbenzene, MetaDiisopropylbenzene)
+                .colorAverage()
+                .build();
+        
+        FourNitroNMethylPhthalimideSolution = new Material.Builder(24132, SuSyUtility.susyId('four_nitro_n_methyl_phthalimide_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(FourNitroNMethylPhthalimide, SulfuricAcid, Water)
                 .colorAverage()
                 .build();
     }
