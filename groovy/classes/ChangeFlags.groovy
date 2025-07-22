@@ -21,6 +21,9 @@ import static gregtech.api.unification.material.Materials.*
 import static gregtech.api.unification.material.info.MaterialFlags.*
 import static material.SuSyMaterials.*
 
+import supercritical.api.unification.material.properties.FissionFuelProperty
+import supercritical.api.unification.material.properties.SCPropertyKey
+
 //eventManager.listen(EventPriority.LOWEST)
 class ChangeFlags {
     private static void setupSlurries(Material mat) {
@@ -831,5 +834,14 @@ class ChangeFlags {
         Methanol.addFlags("flammable");
         Ethanol.addFlags("flammable");
         log.infoMC("Finished modifying flags")
+
+        // Nuclear
+
+        Bismuth.setProperty(SCPropertyKey.FISSION_FUEL, FissionFuelProperty.builder(Bismuth.getRegistryName(), 1500, 5000, 5)
+                .slowNeutronCaptureCrossSection(0.2)
+                .requiredNeutrons(1)
+                .releasedNeutrons(0)
+                .releasedHeatEnergy(0.005)
+                .build())
     }
 }

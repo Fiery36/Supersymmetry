@@ -4134,14 +4134,6 @@ public class FirstDegreeMaterialsA {
                 .color(0xbfbe7c)
                 .build();
 
-        ThoriumNitrateSolution = new Material.Builder(8706, SuSyUtility.susyId('thorium_nitrate_solution'))
-                .liquid()
-                .components(Thorium, Nitrogen * 3, Oxygen * 9, Water)
-                .color(0x001e13)
-                .build();
-
-        ThoriumNitrateSolution.setFormula("(Th(NO3)4)(H2O)", true)
-
         // THE METHOD HAS BECOME TOO LARGE. PLEASE ADD FUTURE MATERIALS TO FirstDegreeMaterialsB.groovy INSTEAD
     }
 }

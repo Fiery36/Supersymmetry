@@ -122,7 +122,10 @@ public class UnknownCompositionMaterials {
                 .color(0x345691)
                 .build();
 
-        // FREE ID: 4019
+        PoloniumRichSodiumHydroxide = new Material.Builder(4019, SuSyUtility.susyId('polonium_rich_sodium_hydroxide'))
+                .liquid(new FluidBuilder().temperature(591))
+                .color(0x374027)
+                .build();
 
         Mash = new Material.Builder(4020, SuSyUtility.susyId('mash'))
                 .liquid()
@@ -1194,7 +1197,10 @@ public class UnknownCompositionMaterials {
                 .color(0x2a2e1c)
                 .build();
 
-        //FREE ID: 4231
+        PoloniumConcentrate = new Material.Builder(4231, SuSyUtility.susyId('polonium_concentrate'))
+                .liquid()
+                .color(0x999e5f)
+                .build();
 
         TitanylSulfateSolution = new Material.Builder(4232, SuSyUtility.susyId('titanyl_sulfate_solution'))
                 .liquid()
@@ -1247,7 +1253,10 @@ public class UnknownCompositionMaterials {
                 .iconSet(DULL)
                 .build();
 
-        //FREE ID: 4241
+        PoloniumExtractionMixture = new Material.Builder(4241, SuSyUtility.susyId('polonium_extraction_mixture'))
+                .liquid()
+                .color(0xcde835)
+                .build();
 
         GraniteTailingSlurry = new Material.Builder(4242, SuSyUtility.susyId('granite_tailing_slurry'))
                 .liquid()
@@ -1262,6 +1271,11 @@ public class UnknownCompositionMaterials {
         SphaleriteByproductSlurry = new Material.Builder(4244, SuSyUtility.susyId('sphalerite_byproduct_slurry'))
                 .liquid()
                 .color(0x9f97a1)
+                .build();
+
+        PoloniumExtract = new Material.Builder(4245, SuSyUtility.susyId('polonium_extract'))
+                .fluid()
+                .color(0xb3bf6b)
                 .build();
 
         //FREE IDs: 4245-4250
@@ -2920,7 +2934,11 @@ public class UnknownCompositionMaterials {
                 .color(0xe3ecff)
                 .build();
 
-        // FREE ID: 4643
+        IrradiatedBismuth = new Material.Builder(4642, SuSyUtility.susyId('irradiated_bismuth'))
+                .liquid(new FluidBuilder().temperature(545))
+                .color(0x558a8a)
+                .flags(NO_UNIFICATION)
+                .build();
 
         HighAluminaRefractory = new Material.Builder(4643, SuSyUtility.susyId('high_alumina_refractory'))
                 .dust().ingot()

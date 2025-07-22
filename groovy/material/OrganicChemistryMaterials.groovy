@@ -373,7 +373,11 @@ public class OrganicChemistryMaterials {
                 .color(0x202226)
                 .build();
 
-        // FREE ID: 15059
+        DibutylButylphosphonate = new Material.Builder(15059, SuSyUtility.susyId('dibutyl_butylphosphonate'))
+                .liquid()
+                .components(Carbon * 12, Hydrogen * 27, Oxygen * 3, Phosphorus * 1)
+                .color(0xf5e3b3)
+                .build();
 
         Cyclohexanone = new Material.Builder(15060, SuSyUtility.susyId('cyclohexanone'))
                 .liquid()
@@ -2775,6 +2779,18 @@ public class OrganicChemistryMaterials {
                 .dust()
                 .components(Carbon * 3, Hydrogen * 6, Nitrogen * 6, Oxygen * 6)
                 .color(0xb019ad)
+                .build();
+
+        NButylIodide = new Material.Builder(15442, SuSyUtility.susyId('n_butyl_iodide'))
+                .liquid()
+                .components(Carbon * 4, Hydrogen * 9, Iodine * 1)
+                .color(0x8b0000)
+                .build();
+
+        TributylPhosphite = new Material.Builder(15443, SuSyUtility.susyId('tributyl_phosphite'))
+                .liquid()
+                .components(Carbon * 12, Hydrogen * 27, Oxygen * 3, Phosphorus * 1)
+                .color(0xc3bec4)
                 .build();
     }
 }

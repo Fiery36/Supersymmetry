@@ -756,6 +756,11 @@ class SuSyMaterials {
         public static Material ReextractedReprocessedUraniumExtract;
         public static Material PentaerythritolSolution;
         public static Material CrudePentaerythritolTetranitrate;
+        public static Material IrradiatedBismuth;
+        public static Material PoloniumRichSodiumHydroxide;
+        public static Material PoloniumConcentrate;
+        public static Material PoloniumExtractionMixture;
+        public static Material PoloniumExtract;
 
         // Petrochem Materials
 
@@ -1773,6 +1778,7 @@ class SuSyMaterials {
         public static Material SodiumNitriteSolution;
         public static Material PlutoniumReductionSolution;
         public static Material BariumNitrateSolution;
+        public static Material PoloniumIVNitrateSolution;
 
         // Organic Chemistry Materials
 
@@ -2213,6 +2219,9 @@ class SuSyMaterials {
         public static Material Pentaerythritol;
         public static Material PentaerythritolTetranitrate;
         public static Material RDX;
+        public static Material DibutylButylphosphonate;
+        public static Material TributylPhosphite;
+        public static Material NButylIodide;
 
         // Third Degree Materials
 

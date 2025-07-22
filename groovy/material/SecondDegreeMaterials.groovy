@@ -54,7 +54,11 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        // FREE ID: 13005
+        PoloniumIVNitrateSolution = new Material.Builder(13005, SuSyUtility.susyId('polonium_iv_nitrate_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(Polonium * 1, Nitrogen * 4, Oxygen * 12, Water * 1)
+                .colorAverage()
+                .build();
 
         SodaAshSolution = new Material.Builder(13006, SuSyUtility.susyId('soda_ash_solution'))
                 .liquid()

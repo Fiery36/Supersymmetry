@@ -28,6 +28,14 @@ public class FirstDegreeMaterialsB {
 
         log.infoMC('Registering First Degree Materials B!');
 
+        ThoriumNitrateSolution = new Material.Builder(8706, SuSyUtility.susyId('thorium_nitrate_solution'))
+                .liquid()
+                .components(Thorium, Nitrogen * 3, Oxygen * 9, Water)
+                .color(0x001e13)
+                .build();
+
+        ThoriumNitrateSolution.setFormula("(Th(NO3)4)(H2O)", true)
+
         ThoriumDioxide = new Material.Builder(8707, SuSyUtility.susyId('thorium_dioxide'))
                 .dust()
                 .components(Thorium, Oxygen * 2)
