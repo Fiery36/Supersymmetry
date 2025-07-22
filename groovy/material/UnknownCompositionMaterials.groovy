@@ -2970,6 +2970,7 @@ public class UnknownCompositionMaterials {
         
         SupportedPolyphosphoricAcid = new Material.Builder(4653, SuSyUtility.susyId('supported_polyphosphoric_acid'))
                 .dust()
+                .flags(GENERATE_CATALYST_BED)
                 .color(0xd6b465)
                 .build();
     }

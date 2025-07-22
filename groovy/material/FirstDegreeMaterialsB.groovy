@@ -128,22 +128,30 @@ public class FirstDegreeMaterialsB {
                 .macerateInto(Alnico)
                 .build();
 
-        CleavedCumeneMixture = new Material.Builder(4031, SuSyUtility.susyId('cleaved_cumene_mixture'))
+        CleavedCumeneMixture = new Material.Builder(8722, SuSyUtility.susyId('cleaved_cumene_mixture'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .components(SulfuricAcid, Phenol * 5, Acetone * 5)
                 .colorAverage()
                 .build();
 
-        PPOWaste = new Material.Builder(4653, SuSyUtility.susyId('ppo_waste'))
+        PPOWaste = new Material.Builder(8723, SuSyUtility.susyId('ppo_waste'))
                 .liquid()
                 .components(Toluene, Methanol)
                 .color(0x47260e)
                 .build()
 
-        BenzenediolCatalysisMixture = new Material.Builder(4654, SuSyUtility.susyId('benzenediol_catalysis_mixture'))
+        BenzenediolCatalysisMixture = new Material.Builder(8724, SuSyUtility.susyId('benzenediol_catalysis_mixture'))
                 .liquid()
-                .components(PhosphoricAcid * 10, PerchloricAcid)
                 .color(0x5c4d3a)
                 .build();
+
+        BenzenediolCatalysisMixture.setFormula('(H3PO4)10(HClO4)', true);
+
+        DilutedBenzenediolCatalysisMixture = new Material.Builder(8725, SuSyUtility.susyId('diluted_benzenediol_catalysis_mixture'))
+                .liquid()
+                .color(0x6e5c54)
+                .build();
+
+        DilutedBenzenediolCatalysisMixture.setFormula('(H3PO4)10(HClO4)(H2O)5', true);
     }
 }

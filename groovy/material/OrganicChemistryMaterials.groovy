@@ -2370,7 +2370,7 @@ public class OrganicChemistryMaterials {
         OneThreeDinitrobenzene.setFormula("C6H4(NO2)2", true)
 
         MetaPhenylenediamine = new Material.Builder(15378, SuSyUtility.susyId('meta_phenylenediamine'))
-                .dust()
+                .dust().liquid(new FluidBuilder().temperature(339))
                 .components(Carbon * 6, Hydrogen * 8, Nitrogen * 2)
                 .color(0x1e89a8)
                 .build();
@@ -2760,7 +2760,7 @@ public class OrganicChemistryMaterials {
 
         PolyphenyleneOxide = new Material.Builder(15439, SuSyUtility.susyId('polyphenylene_oxide'))
                 .polymer()
-                .components(Carbon * 8, Hydrogen * 8, Oxygen, Polycarbonate)
+                .components(Carbon * 8, Hydrogen * 8, Oxygen, Polystyrene)
                 .color(0x4a567d)
                 .build();
 
@@ -2797,7 +2797,7 @@ public class OrganicChemistryMaterials {
         // FREE ID: 15446
 
         BisphenolADianhydride = new Material.Builder(15447, SuSyUtility.susyId('bisphenol_a_dianhydride'))
-                .dust()
+                .dust().liquid(new FluidBuilder().temperature(460))
                 .components(Carbon * 31, Hydrogen * 20, Oxygen * 8)
                 .colorAverage()
                 .build();
@@ -2847,7 +2847,7 @@ public class OrganicChemistryMaterials {
         // FREE IDs: 15460-15463
 
         ParaFluorobenzoylChloride = new Material.Builder(15464, SuSyUtility.susyId('para_fluorobenzoyl_chloride'))
-                .dust()
+                .liquid()
                 .components(Carbon * 7, Hydrogen * 4, Chlorine, Fluorine, Oxygen)
                 .color(0x67c6cf)
                 .build();
@@ -2857,6 +2857,7 @@ public class OrganicChemistryMaterials {
                 .components(Carbon * 13, Hydrogen * 8, Oxygen, Fluorine * 2)
                 .colorAverage()
                 .build();
+
         FourFourDifluorobenzophenone.setFormula('(FC6H4)2CO', true)
 
         FourFourDifluorobenzophenoneSolution = new Material.Builder(15466, SuSyUtility.susyId('four_four_difluorobenzophenone_solution'))

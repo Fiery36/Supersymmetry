@@ -227,21 +227,24 @@ public class SecondDegreeMaterials {
 
         SodiumPerchlorateSolution = new Material.Builder(13035, SuSyUtility.susyId('sodium_perchlorate_solution'))
                 .liquid()
-                .components(SodiumPerchlorate, Water)
                 .color(0x5880c7)
                 .build()
 
+        SodiumPerchlorateSolution.setFormula('(NaClO4)(H2O)', true);
+
         SodiumChlorateSolution = new Material.Builder(13036, SuSyUtility.susyId('sodium_chlorate_solution'))
                 .liquid()
-                .components(SodiumChlorate, Water)
                 .color(0x315fe8)
                 .build()
 
+        SodiumChlorateSolution.setFormula('(NaClO3)(H2O)', true);
+
         DilutedAniline = new Material.Builder(13037, SuSyUtility.susyId('diluted_aniline'))
                 .liquid()
-                .components(Aniline, Water * 2)
                 .color(0x5fb36e)
                 .build()
+
+        DilutedAniline.setFormula('(C6H5NH2)(H2O)2', true);
         
         DilutedIronIIIChlorideSolution = new Material.Builder(13038, SuSyUtility.susyId('diluted_iron_iii_chloride_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -461,9 +464,10 @@ public class SecondDegreeMaterials {
 
         DilutedSodiumChlorateSolution = new Material.Builder(13074, SuSyUtility.susyId('diluted_sodium_chlorate_solution'))
                 .liquid()
-                .components(SodiumChlorate, Water * 2)
                 .color(0x5f81e8)
                 .build()
+
+        DilutedSodiumChlorateSolution.setFormula('(NaClO3)(H2O)2', true);
 
         DilutedAmmoniumSulfateSolution = new Material.Builder(13075, SuSyUtility.susyId('diluted_ammonium_sulfate_solution'))
                 .liquid()
@@ -968,6 +972,22 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        DilutedBenzenediolCatalysisMixture 
+        AcidicEthanolSolution = new Material.Builder(13162, SuSyUtility.susyId('acidic_ethanol_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(Ethanol, HydrogenChloride, Water)
+                .colorAverage()
+                .build();
+
+        LithiumHydroxideMotherLiquor = new Material.Builder(13163, SuSyUtility.susyId('lithium_hydroxide_mother_liquor'))
+                .liquid()
+                .components(LithiumHydroxide, Water * 8)
+                .colorAverage()
+                .build();
+
+        LithiumHydroxideMonohydrate = new Material.Builder(13164, SuSyUtility.susyId('lithium_hydroxide_monohydrate'))
+                .dust()
+                .components(LithiumHydroxide, Water)
+                .colorAverage()
+                .build();
     }
 }

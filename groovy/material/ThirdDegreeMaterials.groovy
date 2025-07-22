@@ -634,17 +634,7 @@ public class ThirdDegreeMaterials {
                 .colorAverage()
                 .build();
       
-        LithiumHydroxideMotherLiquor = new Material.Builder(24101, SuSyUtility.susyId('lithium_hydroxide_mother_liquor'))
-                .liquid()
-                .components(LithiumHydroxide * 1, Water * 8)
-                .colorAverage()
-                .build();
-
-        LithiumHydroxideMonohydrate = new Material.Builder(24102, SuSyUtility.susyId('lithium_hydroxide_monohydrate'))
-                .dust()
-                .components(LithiumHydroxide * 1, Water * 1)
-                .colorAverage()
-                .build();
+        // FREE IDs: 24101-24102
 
         IsopropylamineSolution = new Material.Builder(24103, SuSyUtility.susyId('isopropylamine_solution'))
                 .liquid()

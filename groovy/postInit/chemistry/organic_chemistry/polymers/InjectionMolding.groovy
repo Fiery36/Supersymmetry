@@ -40,7 +40,7 @@ def polymers = [
         new ExtrudablePolymers('PolyphenyleneOxide', 1920, 8, false, false, false, false),
         new ExtrudablePolymers('PolyphenyleneSulfide', 1920, 8, true, false, false, false),
         new ExtrudablePolymers('PolyvinylideneFluoride', 1920, 8, true, false, false, false),
-        new ExtrudablePolymers('PolyetherImide', 1920, 8, false, false, false, false),
+        new ExtrudablePolymers('Ultem', 1920, 8, false, false, false, false),
         new ExtrudablePolymers('Epoxy', 1920, 8, false, false, false, false),
         new ExtrudablePolymers('Pmma', 1920, 8, true, false, false, false),
 

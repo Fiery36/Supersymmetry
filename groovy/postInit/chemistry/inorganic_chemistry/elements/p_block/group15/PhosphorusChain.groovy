@@ -353,7 +353,7 @@ DISTILLATION_TOWER.recipeBuilder()
 // Polyphosphoric Acid
 ROASTER.recipeBuilder()
     .fluidInputs(fluid('phosphoric_acid') * 6000)
-    .outputs(ore('dustPolyphosphoricAcid'))
+    .outputs(metaitem('dustPolyphosphoricAcid'))
     .fluidOutputs(fluid('dense_steam') * 5000)
     .duration(200)
     .EUt(Globals.voltAmps[2])

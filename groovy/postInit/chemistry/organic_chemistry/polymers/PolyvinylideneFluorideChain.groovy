@@ -50,7 +50,7 @@ ROASTER.recipeBuilder()
     .buildAndRegister();
 
 PYROLYSE_OVEN.recipeBuilder()
-    .fluidInputs(fluid('dense_steam') * 1000)
+    //.fluidInputs(fluid('dense_steam') * 1000)
     .fluidInputs(fluid('one_chloro_two_two_difluoroethane') * 1000)
     .fluidOutputs(fluid('vinylidene_fluoride') * 1000)
     .fluidOutputs(fluid('hydrochloric_acid') * 1000)

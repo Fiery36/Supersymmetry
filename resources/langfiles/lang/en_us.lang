@@ -2487,7 +2487,7 @@ susy.material.vinylidene_fluoride=Vinylidene Fluoride
 susy.material.lithium_hydroxide_solution=Lithium Hydroxide Solution
 susy.material.sodium_ethoxide=Sodium Ethoxide
 susy.material.para_nitrotoluene=p-Nitrotoluene
-susy.material.para_nitrotoluene_slurry=p-Nitrotoluene Slurry
+susy.material.meta_diisopropylbenzene=m-Diisopropylbenzene
 susy.material.diluted_sodium_fluoride_solution=Diluted Sodium Fluoride Solution
 susy.material.benzenediazonium_fluoride=Benzenediazonium Fluoride
 susy.material.fluorobenzene=Fluorobenzene
@@ -2505,6 +2505,7 @@ susy.material.diphenyl_sulfone=Diphenyl Sulfone
 susy.material.diphenyl_sulfone_solution=Diphenyl Sulfone Solution
 susy.material.polyether_ether_ketone=Polyether Ether Ketone (PEEK)
 susy.material.peek_mixture=PEEK Mixture
+susy.material.polyvinylidene_fluoride_solution=Polyvinylidene Fluoride Solution
 susy.material.hexafluoropropylene=Hexafluoropropylene
 susy.material.viton=Viton
 susy.material.viton_solution=Viton Solution
@@ -2528,6 +2529,8 @@ susy.material.nitrotoluene_mixture=Nitrotoluene Mixture
 susy.material.cleaved_para_diisopropylbenzene_mixture=Cleaved p-Diisopropylbenzene Mixture
 susy.material.potassium_phthalimide_solution=Potassium Phthalimide Solution
 susy.material.n_methyl_phthalimide_solution=N-Methyl Phthalimide Solution
+susy.material.benzenediol_catalysis_mixture=Benzenediol Catalysis Mixture
+susy.material.diluted_benzenediol_catalysis_mixture=Diluted Benzenediol Catalysis Mixture
 
 # Isotopes
 

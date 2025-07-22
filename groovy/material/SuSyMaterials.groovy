@@ -1515,6 +1515,8 @@ class SuSyMaterials {
         public static Material PurifiedBerylliumOxide;
         public static Material PurifiedBerylliumChloride;
         public static Material CleavedCumeneMixture;
+        public static Material BenzenediolCatalysisMixture;
+        public static Material DilutedBenzenediolCatalysisMixture;
 
         // HP Materials
 
@@ -1732,6 +1734,9 @@ class SuSyMaterials {
         public static Material PotassiumChlorateSolution;
         public static Material LithiumHydroxideSolution;
         public static Material DilutedSodiumFluorideSolution;
+        public static Material AcidicEthanolSolution;
+        public static Material LithiumHydroxideMotherLiquor;
+        public static Material LithiumHydroxideMonohydrate;
 
         // Organic Chemistry Materials
 
@@ -2189,10 +2194,9 @@ class SuSyMaterials {
         public static Material PolyetherEtherKetone;
         public static Material Hexafluoropropylene;
         public static Material Viton;
-        public static Material BenzenediolMixture;
         public static Material SodiumEthoxide;
         public static Material ParaNitrotoluene;
-        public static Material ParaNitrotolueneSlurry;
+        public static Material MetaDiisopropylbenzene;
         public static Material CumeneHydroperoxide;
         public static Material PolyphenyleneOxide;
         public static Material Ultem;
@@ -2308,8 +2312,6 @@ class SuSyMaterials {
         public static Material OxalicAcidSolution;
         public static Material GalliumSulfateSolution;
         public static Material FormicAcidWaterAzeotrope;
-        public static Material LithiumHydroxideMotherLiquor;
-        public static Material LithiumHydroxideMonohydrate;
         public static Material IsopropylamineSolution;
         public static Material TributylPhosphateExtractionMixture;
         public static Material Aliquat336ExtractionMixture;
@@ -2324,6 +2326,7 @@ class SuSyMaterials {
         public static Material ImpureBisphenolADianhydride;
         public static Material BisphenolADianhydrideSolution;
         public static Material PPOSolution;
+        public static Material PolyvinylideneFluorideSolution;
         public static Material VitonSolution;
         public static Material DiphenylSulfoneSolution;
         public static Material BenzenediolMixture;
