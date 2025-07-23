@@ -590,7 +590,7 @@ susy.material.cativa_catalyst_preparation=Cativa Catalyst Preparation
 susy.material.cativa_catalyst_solution=Cativa Catalyst Solution
 susy.material.crude_cumene=Crude 
 susy.material.cumene_hydroperoxide=Cumene Hydroperoxide
-susy.material.cleaaved_cumene_mixture=Cleaved Cumene Mixture
+susy.material.cleaved_cumene_mixture=Cleaved Cumene Mixture
 susy.material.impure_kapton_k=Impure Kapton K
 susy.material.impure_kapton_e=Impure Kapton E
 susy.material.kapton_e_preparation=Kapton E Preparation Solution
@@ -2663,6 +2663,7 @@ recipemap.low_pressure_cryogenic_distillation.name=Low Pressure Cryogenic Distil
 recipemap.high_pressure_cryogenic_distillation.name=High Pressure Cryogenic Distillation
 recipemap.high_pressure_advanced_steam_turbine=High Pressure Advanced Steam Turbine
 recipemap.low_pressure_advanced_steam_turbine=Low Pressure Advanced Steam Turbine
+recipemap.injection_molder.name=Injection Molding
 
 # QMD Particles
 
