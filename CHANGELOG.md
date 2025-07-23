@@ -1,6 +1,7 @@
 # UPDATE 0.1.15.2
 ## Mod Changes
 ### Mod Updates
+- Supercritical 0.1.3 -> 0.2.0
 - SusyCore v0.1.69 → v0.1.71
 ### Mod Additions
 - FluxLoading → 1.3.5
