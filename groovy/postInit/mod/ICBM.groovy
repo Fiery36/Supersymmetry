@@ -281,6 +281,11 @@ def cryoLiquids = [
         'liquid_natural_gas': 80
 ];
 
+def reflectors = [
+    'plateDoubleBeryllium',
+    'plateDoubleTungstenCarbide'
+]
+
 Globals.solders.each { key, val ->
     cryoLiquids.each { liquid, temp ->
         if(HV_SC_CriticalTemp > temp) {
@@ -328,7 +333,30 @@ Globals.solders.each { key, val ->
             .EUt(300)
             .buildAndRegister();
     }
+
+    for (reflector in reflectors) {
+        //Explosives tier 4
+        //Nuclear explosive
+        LARGE_WEAPON_FACTORY.recipeBuilder()
+            .inputs([
+                ore('dustCompositionB') * 8,
+                metaitem('large_fluid_cell.tungstensteel'),
+                ore(reflector) * 4,
+                metaitem('dustWeaponsGradeUranium') * 32,
+                ore('dustUranium238') * 16,
+                ore('componentCapacitor') * 4,
+                ore('fineWirePlatinum') * 8
+            ])
+            .fluidInputs(fluid(key) * val)
+            .outputs(item('icbmclassic:explosives:15'))
+            .duration(200)
+            .EUt(1200)
+            .buildAndRegister();
+    }
+
 }
+
+
 
 //Concrete
 ASSEMBLER.recipeBuilder()
@@ -380,6 +408,7 @@ ASSEMBLER.recipeBuilder()
     .duration(160)
     .EUt(384)
     .buildAndRegister();
+
 
 
 //Launchers
