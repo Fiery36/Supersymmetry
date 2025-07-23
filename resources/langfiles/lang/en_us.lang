@@ -2613,6 +2613,9 @@ susy.material.barium_nitrate_solution=Barium Nitrate Solution
 susy.material.barium_nitrate=Barium Nitrate
 susy.material.baratol=Baratol
 susy.material.pentaerythritol_solution=Pentaerythritol Solution
+susy.material.ethylenediamine_solution=Ethylenediamine Solution
+susy.material.xylenol_solution=Xylenol Solution
+susy.material.acidic_ethanol_solution=Acidic Ethanol Solution
 
 # Isotopes
 

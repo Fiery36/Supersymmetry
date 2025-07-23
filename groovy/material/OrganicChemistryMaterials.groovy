@@ -2945,11 +2945,7 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
 
-        BenzenediolMixture = new Material.Builder(15470, SuSyUtility.susyId('benzenediol_mixture'))
-                .dust().liquid()
-                .components(Carbon * 6, Hydrogen * 6, Oxygen * 2)
-                .colorAverage()
-                .build();
+        // FREE ID: 15470
 
         BenzenesulfonicAcid = new Material.Builder(15471, SuSyUtility.susyId('benzenesulfonic_acid'))
                 .liquid()

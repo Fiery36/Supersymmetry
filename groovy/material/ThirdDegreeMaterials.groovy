@@ -720,9 +720,9 @@ public class ThirdDegreeMaterials {
                 .color(0x395270)
                 .build()
         
-        PolyvinylideneFluorideSolution = new Material.Builder(24117, SuSyUtility.susyId('polyvinylidene_fluoride_solution'))
+        VinylideneFluorideSurfactantMixture = new Material.Builder(24117, SuSyUtility.susyId('vinylidene_fluoride_surfactant_mixture'))
                 .liquid()
-                .components(PolyvinylideneFluoride * 2, VinylideneFluorideSurfactantMixture)
+                .components(PerfluorooctanoicAcid, LithiumHydroxide, Water)
                 .colorAverage()
                 .build();
 
@@ -792,9 +792,9 @@ public class ThirdDegreeMaterials {
                 .colorAverage()
                 .build();
 
-        VinylideneFluorideSurfactantMixture = new Material.Builder(24129, SuSyUtility.susyId('vinylidene_fluoride_surfactant_mixture'))
+        PolyvinylideneFluorideSolution = new Material.Builder(24129, SuSyUtility.susyId('polyvinylidene_fluoride_solution'))
                 .liquid()
-                .components(PerfluorooctanoicAcid, LithiumHydroxide, Water)
+                .components(PolyvinylideneFluoride * 2, VinylideneFluorideSurfactantMixture)
                 .colorAverage()
                 .build();
 

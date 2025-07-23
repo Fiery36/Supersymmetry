@@ -80,7 +80,7 @@ DISTILLERY.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister();
 
-LCR.recipeBuilder()
+BR.recipeBuilder()
     .inputs(ore('dustFourNitroNMethylPhthalimide') * 42)
     .inputs(ore('dustSodiumBisphenolate') * 33)
     .fluidInputs(fluid('n_methyl_two_pyrrolidone') * 1000)
@@ -89,7 +89,7 @@ LCR.recipeBuilder()
     .EUt(Globals.voltAmps[3])
     .buildAndRegister();
 
-LCR.recipeBuilder()
+BR.recipeBuilder()
     .inputs(ore('dustPhthalicAnhydride') * 30)
     .fluidInputs(fluid('bisphenol_a_diimide_solution') * 1000)
     .fluidOutputs(fluid('bisphenol_a_dianhydride_solution') * 1000)
