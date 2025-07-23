@@ -166,7 +166,7 @@ CSTR.recipeBuilder()
 
 BR.recipeBuilder()
     .fluidInputs(fluid('benzenesulfonic_acid') * 1000)
-    .fluidInputs(fluid('benzene'))
+    .fluidInputs(fluid('benzene') * 1000)
     .outputs(metaitem('dustDiphenylSulfone') * 25)
     .fluidOutputs(fluid('sulfuric_acid') * 1000)
     .duration(100)

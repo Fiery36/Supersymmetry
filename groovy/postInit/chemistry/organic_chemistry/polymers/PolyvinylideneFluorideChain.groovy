@@ -34,7 +34,7 @@ BCR.recipeBuilder()
     .fluidInputs(fluid('one_one_dichloroethane') * 50)
     .fluidInputs(fluid('hydrogen_chloride') * 50)
     .fluidOutputs(fluid('one_one_one_trichloroethane') * 50)
-    .fluidOutputs(fluid('hydrogen') * 1000)
+    .fluidOutputs(fluid('hydrogen') * 100)
     .duration(4)
     .EUt(Globals.voltAmps[2])
     .buildAndRegister();

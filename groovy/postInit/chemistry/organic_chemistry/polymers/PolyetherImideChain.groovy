@@ -25,7 +25,7 @@ BR.recipeBuilder()
 
 BR.recipeBuilder()
     .inputs(ore('dustPhthalimide'))
-    .inputs(ore('dustPotassiumHydroxide') * 2)
+    .inputs(ore('dustPotassiumHydroxide') * 3)
     .fluidInputs(fluid('ethanol') * 1000)
     .fluidOutputs(fluid('potassium_phthalimide_solution') * 1000)
     .duration(120)
@@ -58,7 +58,7 @@ DISTILLERY.recipeBuilder()
     .buildAndRegister();
 
 BR.recipeBuilder()
-    .inputs(ore('dustNMethylPhthalimide'))
+    .inputs(ore('dustNMethylPhthalimide') * 19)
     .fluidInputs(fluid('nitration_mixture') * 2000)
     .fluidOutputs(fluid('four_nitro_n_methyl_phthalimide_solution') * 2000)
     .duration(120)
