@@ -142,18 +142,6 @@ public class FirstDegreeMaterialsB {
                 .macerateInto(Alnico)
                 .build();
 
-        CleavedCumeneMixture = new Material.Builder(8722, SuSyUtility.susyId('cleaved_cumene_mixture'))
-                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(SulfuricAcid, Phenol * 5, Acetone * 5)
-                .colorAverage()
-                .build();
-
-        PPOWaste = new Material.Builder(8723, SuSyUtility.susyId('ppo_waste'))
-                .liquid()
-                .components(Toluene, Methanol)
-                .color(0x47260e)
-                .build()
-
         ReprocessedUranylNitrate = new Material.Builder(8722, SuSyUtility.susyId('reprocessed_uranyl_nitrate'))
                 .dust()
                 .components(ReprocessedUranium, Nitrogen * 2, Oxygen * 8)
@@ -278,5 +266,17 @@ public class FirstDegreeMaterialsB {
                 .build();
 
         DilutedBenzenediolCatalysisMixture.setFormula('(H3PO4)10(HClO4)(H2O)5', true);
+
+        CleavedCumeneMixture = new Material.Builder(8738, SuSyUtility.susyId('cleaved_cumene_mixture'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(SulfuricAcid, Phenol * 5, Acetone * 5)
+                .colorAverage()
+                .build();
+
+        PPOWaste = new Material.Builder(8739, SuSyUtility.susyId('ppo_waste'))
+                .liquid()
+                .components(Toluene, Methanol)
+                .color(0x47260e)
+                .build()
     }
 }

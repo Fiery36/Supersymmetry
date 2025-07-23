@@ -2771,14 +2771,6 @@ public class OrganicChemistryMaterials {
                 .color(0xb019ad)
                 .build();
 
-                PolyphenyleneOxide = new Material.Builder(15439, SuSyUtility.susyId('polyphenylene_oxide'))
-                .polymer()
-                .components(Carbon * 8, Hydrogen * 8, Oxygen, Polystyrene)
-                .color(0x4a567d)
-                .build();
-
-        PolyphenyleneOxide.setFormula('(C8H8O)n(C8H8)n', true)
-
         Phthalimide = new Material.Builder(15442, SuSyUtility.susyId('phthalimide'))
                 .dust().liquid(new FluidBuilder().temperature(511))
                 .components(Carbon * 8, Hydrogen * 5, Oxygen * 2, Nitrogen)
@@ -2841,7 +2833,7 @@ public class OrganicChemistryMaterials {
                 .color(0x9db1c9)
                 .build();
 
-        ParaFluorobenzoicAcidEthylEster = new Material.Builder(15452 SuSyUtility.susyId('para_fluorobenzoic_acid_ethyl_ester'))
+        ParaFluorobenzoicAcidEthylEster = new Material.Builder(15452, SuSyUtility.susyId('para_fluorobenzoic_acid_ethyl_ester'))
                 .dust()
                 .components(Carbon * 9, Hydrogen * 9, Fluorine, Oxygen * 2)
                 .color(0x9dc9c7)
@@ -2988,5 +2980,13 @@ public class OrganicChemistryMaterials {
                 .build();
 
         PolyetherEtherKetone.setFormula('(C19H12O3)n', true)
+
+        PolyphenyleneOxide = new Material.Builder(15475, SuSyUtility.susyId('polyphenylene_oxide'))
+                .polymer()
+                .components(Carbon * 8, Hydrogen * 8, Oxygen, Polystyrene)
+                .color(0x4a567d)
+                .build();
+
+        PolyphenyleneOxide.setFormula('(C8H8O)n(C8H8)n', true)
     }
 }

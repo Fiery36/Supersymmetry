@@ -3235,7 +3235,7 @@ DISTILLERY.recipeBuilder()
 
 //ZIEGLER-ALFOL PROCESS
 CSTR.recipeBuilder()
-    .fluidInputs(fluid('triethylaluminium') * 50)
+    .fluidInputs(fluid('triethylaluminium') * 25)
     .fluidInputs(fluid('ethylene') * 300)
     .fluidInputs(fluid('diethyl_ether') * 50)
     .fluidOutputs(fluid('alfol_trialkylaluminium_mixture') * 50)
