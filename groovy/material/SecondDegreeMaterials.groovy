@@ -219,13 +219,13 @@ public class SecondDegreeMaterials {
 
         BrominatedSulfurDioxide = new Material.Builder(13032, SuSyUtility.susyId('brominated_sulfur_dioxide'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(SulfuricAcid * 1, HydrobromicAcid * 2)
+                .components(SulfuricAcid, HydrobromicAcid * 2)
                 .colorAverage()
                 .build()
 
         SodiumThiosulfateSolution = new Material.Builder(13033, SuSyUtility.susyId('sodium_thiosulfate_solution'))
                 .liquid()
-                .components(SodiumThiosulfate * 1, Water * 1)
+                .components(SodiumThiosulfate, Water)
                 .colorAverage()
                 .build()
 
@@ -248,35 +248,35 @@ public class SecondDegreeMaterials {
                 .color(0x5fb36e)
                 .build()
 
-        DilutedAniline.setFormula('(H2O)2(C6H5NH2)', true);
-
+        DilutedAniline.setFormula('(C6H5NH2)(H2O)2', true);
+        
         DilutedIronIIIChlorideSolution = new Material.Builder(13038, SuSyUtility.susyId('diluted_iron_iii_chloride_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(Iron3Chloride * 1, Water * 3)
+                .components(Iron3Chloride, Water * 3)
                 .colorAverage()
                 .build()
 
         ChloroauricAcidSolution = new Material.Builder(13039, SuSyUtility.susyId('chloroauric_acid_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(ChloroauricAcid * 3, NitricAcid * 1, Water * 6)
+                .components(ChloroauricAcid * 3, NitricAcid, Water * 6)
                 .color(0xd69129)
                 .build();
 
         ZincChlorideSolution = new Material.Builder(13040, SuSyUtility.susyId('zinc_chloride_solution'))
                 .liquid()
-                .components(ZincChloride * 1, Water * 1)
+                .components(ZincChloride, Water)
                 .colorAverage()
                 .build();
 
         WohlwillElectrolyte = new Material.Builder(13041, SuSyUtility.susyId('wohlwill_electrolyte'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(ChloroauricAcid * 1, Water * 1, HydrogenChloride * 2)
+                .components(ChloroauricAcid, Water, HydrogenChloride * 2)
                 .color(0xe8b833)
                 .build();
 
         SpentWohlwilElectrolyte = new Material.Builder(13042, SuSyUtility.susyId('spent_wohlwill_electrolyte'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(ChloroauricAcid * 1, Water * 1, HydrogenChloride * 2)
+                .components(ChloroauricAcid, Water, HydrogenChloride * 2)
                 .color(0xfacd50)
                 .build();
 
@@ -290,7 +290,7 @@ public class SecondDegreeMaterials {
 
         GoldEluent = new Material.Builder(13044, SuSyUtility.susyId('gold_eluent'))
                 .liquid()
-                .components(SodiumCyanide * 1, SodiumHydroxide * 1, Water * 27)
+                .components(SodiumCyanide, SodiumHydroxide, Water * 27)
                 .colorAverage()
                 .build();
 
@@ -475,13 +475,13 @@ public class SecondDegreeMaterials {
 
         DilutedAmmoniumSulfateSolution = new Material.Builder(13075, SuSyUtility.susyId('diluted_ammonium_sulfate_solution'))
                 .liquid()
-                .components(AmmoniumSulfate * 1, Water * 2)
+                .components(AmmoniumSulfate, Water * 2)
                 .colorAverage()
                 .build();
 
         AlluvialPlatinumMotherLiquor = new Material.Builder(13076, SuSyUtility.susyId('alluvial_platinum_mother_liquor'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(Hydrogen * 2, Palladium * 1, Chlorine * 4, ZincChloride * 1, HydrogenChloride * 4, Water * 14)
+                .components(Hydrogen * 2, Palladium, Chlorine * 4, ZincChloride, HydrogenChloride * 4, Water * 14)
                 .colorAverage()
                 .build();
 
@@ -489,19 +489,19 @@ public class SecondDegreeMaterials {
 
         AmmoniacalSodiumBicarbonateSolution = new Material.Builder(13077, SuSyUtility.susyId('ammoniacal_sodium_bicarbonate_solution'))
                 .liquid()
-                .components(AmmoniumChloride * 1, SodiumBicarbonate * 1, Water * 1)
+                .components(AmmoniumChloride, SodiumBicarbonate, Water)
                 .colorAverage()
                 .build();
 
         VeryDilutedSodiumSulfateSolution = new Material.Builder(13078, SuSyUtility.susyId('very_diluted_sodium_sulfate_solution'))
                 .liquid()
-                .components(SodiumSulfate * 1, Water * 9)
+                .components(SodiumSulfate, Water * 9)
                 .colorAverage()
                 .build()
 
         MolybdicAcidSolution = new Material.Builder(13079, SuSyUtility.susyId('molybdic_acid_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(Hydrogen * 2, Molybdenum * 1, Oxygen * 4, HydrogenChloride * 1, Water * 1)
+                .components(Hydrogen * 2, Molybdenum, Oxygen * 4, HydrogenChloride, Water)
                 .colorAverage()
                 .build()
 
@@ -509,7 +509,7 @@ public class SecondDegreeMaterials {
 
         NeutralizedAmmoniumMolybdateSolution = new Material.Builder(13080, SuSyUtility.susyId('neutralized_ammonium_molybdate_solution'))
                 .liquid()
-                .components(Nitrogen * 2, Hydrogen * 8, Molybdenum * 1, Oxygen * 4, AmmoniumChloride * 1, Water * 4)
+                .components(Nitrogen * 2, Hydrogen * 8, Molybdenum, Oxygen * 4, AmmoniumChloride, Water * 4)
                 .colorAverage()
                 .build()
 
@@ -517,55 +517,55 @@ public class SecondDegreeMaterials {
 
         SublimatedMolybdenumTrioxide = new Material.Builder(13081, SuSyUtility.susyId('sublimated_molybdenum_trioxide'))
                 .liquid()
-                .components(PurifiedMolybdenumTrioxide * 1, Air * 1)
+                .components(PurifiedMolybdenumTrioxide, Air)
                 .colorAverage()
                 .build()
 
         AmmoniumThiocyanateSolution = new Material.Builder(13082, SuSyUtility.susyId('ammonium_thiocyanate_solution'))
                 .liquid()
-                .components(AmmoniumThiocyanate * 1, Water * 1)
+                .components(AmmoniumThiocyanate, Water)
                 .colorAverage()
                 .build();
 
         TantalumFluorideSolution = new Material.Builder(13083, SuSyUtility.susyId('tantalum_fluoride_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(TantalumFluoride * 1, Water * 2)
+                .components(TantalumFluoride, Water * 2)
                 .colorAverage()
                 .build();
 
         AmmoniumPerrhenateSolution = new Material.Builder(13084, SuSyUtility.susyId('ammonium_perrhenate_solution'))
                 .liquid()
-                .components(AmmoniumPerrhenate * 1, Water * 1)
+                .components(AmmoniumPerrhenate, Water)
                 .colorAverage()
                 .build();
         
         AluminiumChlorideSolution = new Material.Builder(13085, SuSyUtility.susyId('aluminium_chloride_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(AluminiumChloride * 1, Water * 3)
+                .components(AluminiumChloride, Water * 3)
                 .colorAverage()
                 .build();
 
         DilutedSodiumSulfiteSolution = new Material.Builder(13086, SuSyUtility.susyId('diluted_sodium_sulfite_solution'))
                 .liquid()
-                .components(SodiumSulfite * 1, Water * 14)
+                .components(SodiumSulfite, Water * 14)
                 .color(0x75745a)
                 .build();
 
         EGlass = new Material.Builder(13088, SuSyUtility.susyId('e_glass'))
                 .dust().liquid(new FluidBuilder().temperature(2300))
-                .components(SiliconDioxide * 6, Alumina * 1, BoronTrioxide * 1, Quicklime * 2)
+                .components(SiliconDioxide * 6, Alumina, BoronTrioxide, Quicklime * 2)
                 .color(0x778f8b)
                 .build();
 
         AlluvialPalladiumMotherLiquor = new Material.Builder(13089, SuSyUtility.susyId('alluvial_palladium_mother_liquor'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(AmmoniumChloride * 2, ZincChloride * 1, HydrogenChloride * 4, Water * 16)
+                .components(AmmoniumChloride * 2, ZincChloride, HydrogenChloride * 4, Water * 16)
                 .colorAverage()
                 .build();
 
         AlluvialDivalentPalladiumSolution = new Material.Builder(13090, SuSyUtility.susyId('alluvial_divalent_palladium_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(Hydrogen * 2, Palladium * 1, Chlorine * 4, ZincChloride * 1, HydrogenChloride * 4, Water * 14)
+                .components(Hydrogen * 2, Palladium, Chlorine * 4, ZincChloride, HydrogenChloride * 4, Water * 14)
                 .colorAverage()
                 .build();
 
@@ -573,13 +573,13 @@ public class SecondDegreeMaterials {
 
         PlatinumPrecursorSolution = new Material.Builder(13091, SuSyUtility.susyId('platinum_precursor_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(AmmoniumHexachloroplatinate * 1, PhosphoricAcid * 1)
+                .components(AmmoniumHexachloroplatinate, PhosphoricAcid * 1)
                 .colorAverage()
                 .build();
 
         SupportedPlatinum = new Material.Builder(13092, SuSyUtility.susyId('supported_platinum'))
                 .dust()
-                .components(Alumina * 1, Platinum * 1, Chlorine * 4)
+                .components(Alumina, Platinum, Chlorine * 4)
                 .colorAverage()
                 .flags(GENERATE_CATALYST_BED)
                 .build()
@@ -587,82 +587,82 @@ public class SecondDegreeMaterials {
 
         CrudeManganeseIISulfateSolution = new Material.Builder(13093, SuSyUtility.susyId('crude_manganese_ii_sulfate_solution'))
                 .liquid()
-                .components(ManganeseIISulfate * 1, Water * 1)
+                .components(ManganeseIISulfate, Water)
                 .colorAverage()
                 .build()
                 .setFormula('(?)(MnSO4)(H2O)', true)
 
         ManganeseIISulfateSolution = new Material.Builder(13094, SuSyUtility.susyId('manganese_ii_sulfate_solution'))
                 .liquid()
-                .components(ManganeseIISulfate * 1, Water * 1)
+                .components(ManganeseIISulfate, Water)
                 .colorAverage()
                 .build()
                 .setFormula('(MnSO4)(H2O)', true)
 
         DilutedZincChlorideSolution = new Material.Builder(13095, SuSyUtility.susyId("diluted_zinc_chloride_solution"))
                 .liquid()
-                .components(ZincChloride * 1, Water * 3)
+                .components(ZincChloride, Water * 3)
                 .colorAverage()
                 .build();
 
         TrichlorosilaneSolution = new Material.Builder(13096, SuSyUtility.susyId("trichlorosilane_solution"))
                 .liquid()
-                .components(Trichlorosilane * 1, Toluene * 6)
+                .components(Trichlorosilane, Toluene * 6)
                 .colorAverage()
                 .build();
 
         ImpureBariumSulfideSolution = new Material.Builder(13097, SuSyUtility.susyId("impure_barium_sulfide_solution"))
                 .liquid()
-                .components(ImpureBariumSulfide * 1, Water * 1)
+                .components(ImpureBariumSulfide, Water)
                 .colorAverage()
                 .build();
 
         ImpureStrontiumSulfideSlurry = new Material.Builder(13098, SuSyUtility.susyId("impure_strontium_sulfide_slurry"))
                 .liquid()
-                .components(ImpureStrontiumSulfide * 1, Water * 1, SiliconDioxide * 1)
+                .components(ImpureStrontiumSulfide, Water, SiliconDioxide)
                 .colorAverage()
                 .build();
 
         DilutedSodiumCarbonateSolution = new Material.Builder(13099, SuSyUtility.susyId("diluted_sodium_carbonate_solution"))
                 .liquid()
-                .components(SodaAsh * 1, Water * 3)
+                .components(SodaAsh, Water * 3)
                 .colorAverage()
                 .build();
 
         PalladiumOnCarbon = new Material.Builder(13100, SuSyUtility.susyId("palladium_on_carbon"))
                 .dust()
-                .components(Palladium * 1, ActivatedCarbon * 4)
+                .components(Palladium, ActivatedCarbon * 4)
                 .colorAverage()
                 .build();
 
         ManganeseIIChlorideSolution = new Material.Builder(13101, SuSyUtility.susyId("manganese_ii_chloride_solution"))
                 .liquid()
-                .components(ManganeseIIChloride * 1, Water * 3)
+                .components(ManganeseIIChloride, Water * 3)
                 .colorAverage()
                 .build();
 
         DilutedManganeseIIChlorideSolution = new Material.Builder(13102, SuSyUtility.susyId("diluted_manganese_ii_chloride_solution"))
                 .liquid()
-                .components(ManganeseIIChloride * 1, Water * 6)
+                .components(ManganeseIIChloride, Water * 6)
                 .colorAverage()
                 .build();
 
         PalladiumPrecursorSolution = new Material.Builder(13103, SuSyUtility.susyId("palladium_precursor_solution"))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
-                .components(PalladiumChloride * 1, PhosphoricAcid * 1)
+                .components(PalladiumChloride, PhosphoricAcid)
                 .colorAverage()
                 .build();
 
         SupportedPalladium = new Material.Builder(13104, SuSyUtility.susyId("supported_palladium"))
                 .dust()
-                .components(PalladiumChloride * 1, Alumina * 1)
+                .components(PalladiumChloride, Alumina)
                 .flags(GENERATE_CATALYST_BED)
                 .colorAverage()
                 .build();
 
         MixedCyanideSolution = new Material.Builder(13105, SuSyUtility.susyId("mixed_cyanide_solution"))
                 .liquid()
-                .components(SodiumCyanide * 2, Hydrogen * 2, Carbon * 2, Nitrogen * 2, Water * 1)
+                .components(SodiumCyanide * 2, Hydrogen * 2, Carbon * 2, Nitrogen * 2, Water)
                 .colorAverage()
                 .build();
 
@@ -677,7 +677,7 @@ public class SecondDegreeMaterials {
         SupportedMolybdenumVanadium = new Material.Builder(13107, SuSyUtility.susyId("supported_molybdenum_vanadium"))
                 .dust()
                 .flags(GENERATE_CATALYST_BED)
-                .components(MolybdenumTrioxide * 1, VanadiumPentoxide * 1, Alumina * 1)
+                .components(MolybdenumTrioxide, VanadiumPentoxide, Alumina)
                 .colorAverage()
                 .build();
 
@@ -904,6 +904,8 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build();
 
+        PraseodymiumIIINitrateSolution.setFormula("Pr(NO3)3(H2O)", true)
+
         GadoliniumChlorideSolution = new Material.Builder(13150, SuSyUtility.susyId('gadolinium_chloride_solution'))
                 .liquid()
                 .components(GadoliniumChloride * 8, Water * 29)
@@ -973,6 +975,36 @@ public class SecondDegreeMaterials {
         BariumNitrateSolution = new Material.Builder(13161, SuSyUtility.susyId('barium_nitrate_solution'))
                 .liquid()
                 .components(BariumNitrate, Water)
+                .colorAverage()
+                .build();
+
+        LithiumHydroxideSolution = new Material.Builder(13162, SuSyUtility.susyId('lithium_hydroxide_solution'))
+                .liquid()
+                .components(LithiumHydroxide, Water)
+                .colorAverage()
+                .build();
+
+        DilutedSodiumFluorideSolution = new Material.Builder(13163, SuSyUtility.susyId('diluted_sodium_fluoride_solution'))
+                .liquid()
+                .components(SodiumFluoride, Water * 2)
+                .colorAverage()
+                .build();
+
+        AcidicEthanolSolution = new Material.Builder(13164, SuSyUtility.susyId('acidic_ethanol_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(Ethanol, HydrogenChloride, Water)
+                .colorAverage()
+                .build();
+
+        LithiumHydroxideMotherLiquor = new Material.Builder(13165, SuSyUtility.susyId('lithium_hydroxide_mother_liquor'))
+                .liquid()
+                .components(LithiumHydroxide, Water * 8)
+                .colorAverage()
+                .build();
+
+        LithiumHydroxideMonohydrate = new Material.Builder(13166, SuSyUtility.susyId('lithium_hydroxide_monohydrate'))
+                .dust()
+                .components(LithiumHydroxide, Water)
                 .colorAverage()
                 .build();
     }

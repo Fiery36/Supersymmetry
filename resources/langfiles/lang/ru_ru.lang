@@ -34,7 +34,7 @@ susy.material.salty_n_methyl_two_pyrrolidone=Соленый N-метил-2-пи�
 susy.material.trimethyl_borate=Триметилборат 
 susy.material.methyl_acetate_solution=Раствор метилацетата
 susy.material.two_chloronitrobenzene=2-хлорнитробензол
-susy.material.mixed_chloronitrobenzene=Смешанный хлорнитробензол
+susy.material.chloronitrobenzene_mixture=Смешанный хлорнитробензол
 susy.material.four_nitroaniline_solution=Раствор 4-нитроанилина
 susy.material.para_phenylenediamine_solution=П-Фенилендиамин
 susy.material.four_dichlorohydrazobenzene_solution=4-дихлоргидразобензол
@@ -574,8 +574,7 @@ susy.material.terephthalic_acid_slurry=Суспензия терефталево
 susy.material.impure_acetaldehyde=Нечистый ацетальдегид
 susy.material.cativa_catalyst_preparation=Катализатор Cativa
 susy.material.cativa_catalyst_solution=Раствор Катализатора Cativa
-susy.material.acidic_cumene=Кислый кумол
-susy.material.rearranged_cumene=Перегруппированный кумол
+susy.material.crude_cumene=Сырой кумол
 susy.material.impure_kapton_k=Нечистый каптон К
 susy.material.impure_kapton_e=Нечистый каптон E
 susy.material.kapton_e_preparation=Раствор для приготовления каптона E
@@ -2668,10 +2667,10 @@ item.gregtech.material.polytetrafluoroethylene.fiber=Расширенное по
 item.gregtech.material.polytetrafluoroethylene.thread=Расширенная политетрафторэтиленовая нить
 
 # Resin Logs
-gregtech.block_group_members.extractable_logs_1.name=Бревно из березы, джунглей, дуба и ели
-gregtech.block_group_members.extractable_logs_2.name=Акация и темный дуб
+susy.block_group_members.extractable_logs_1.name=Бревно из березы, джунглей, дуба и ели
+susy.block_group_members.extractable_logs_2.name=Акация и темный дуб
 
-gregtech.block_group_members.latex_logs.name=Резиновое бревно
+susy.block_group_members.latex_logs.name=Резиновое бревно
 
 # Main Menu
 susy.menu.options=Параметры

@@ -33,7 +33,7 @@ susy.material.n_methyl_two_pyrrolidone=N-metylo-2-pirolidon
 susy.material.salty_n_methyl_two_pyrrolidone=Słony N-metylo-2-pirolidon
 susy.material.methyl_acetate_solution=Roztwór Octanu Metylu
 susy.material.two_chloronitrobenzene=2-Chloronitrobenzen
-susy.material.mixed_chloronitrobenzene=Zmieszany Chloronitrobenzen
+susy.material.chloronitrobenzene_mixture=Zmieszany Chloronitrobenzen
 susy.material.four_nitroaniline_solution=Roztwór 4-Nitroaniliny
 susy.material.para_phenylenediamine_solution=Roztwór p-Fenylenodiaminy
 susy.material.four_dichlorohydrazobenzene_solution=Roztwór 4-Dichlorohydrazobenzenu
@@ -583,8 +583,7 @@ susy.material.terephthalic_acid_slurry=Zawiesina Kwas Tereftalowego
 susy.material.impure_acetaldehyde=Zanieczyszcony Aldehyd Octowy
 susy.material.cativa_catalyst_preparation=Preparat Katalizator Cativa
 susy.material.cativa_catalyst_solution=Roztwór Katalizator Cativa
-susy.material.acidic_cumene=Kwasowy Kumen
-susy.material.rearranged_cumene=Przestawiony Kumen
+susy.material.crude_cumene=Surowy Kumen
 susy.material.impure_kapton_k=Zanieczyszcony Kapton K
 susy.material.impure_kapton_e=Zanieczyszcony Kapton E
 susy.material.kapton_e_preparation=Roztwór Preparatu Kaptonu E
@@ -2292,7 +2291,7 @@ item.gregtech.material.polytetrafluoroethylene.fiber=Expanded Polytetrafluoroeth
 item.gregtech.material.polytetrafluoroethylene.thread=Expanded Polytetrafluoroethylene Thread
 
 # Resin Logs
-gregtech.block_group_members.extractable_logs_1.name=Kłody Brzozy, Dżunglowe, Dębu, i Świerku
-gregtech.block_group_members.extractable_logs_2.name=Akacja i Ciemny Dąb
+susy.block_group_members.extractable_logs_1.name=Kłody Brzozy, Dżunglowe, Dębu, i Świerku
+susy.block_group_members.extractable_logs_2.name=Akacja i Ciemny Dąb
 
-gregtech.block_group_members.latex_logs.name=Kłoda Kauczukowca
+susy.block_group_members.latex_logs.name=Kłoda Kauczukowca

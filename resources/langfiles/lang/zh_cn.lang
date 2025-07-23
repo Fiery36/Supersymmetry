@@ -35,7 +35,7 @@ susy.material.salty_n_methyl_two_pyrrolidone=含盐N-甲基吡咯烷酮
 susy.material.trimethyl_borate=硼酸三甲酯
 susy.material.methyl_acetate_solution=乙酸溶液
 susy.material.two_chloronitrobenzene=邻硝基氯苯
-susy.material.mixed_chloronitrobenzene=硝基氯苯混合物
+susy.material.chloronitrobenzene_mixture=硝基氯苯混合物
 susy.material.four_nitroaniline_solution=对硝基苯胺溶液
 susy.material.para_phenylenediamine_solution=对苯二胺溶液
 susy.material.four_dichlorohydrazobenzene_solution=4-二氯氢化偶氮苯溶液
@@ -587,8 +587,7 @@ susy.material.terephthalic_acid_slurry=对苯二甲酸浆液
 susy.material.impure_acetaldehyde=含杂乙醛
 susy.material.cativa_catalyst_preparation=Cativa催化剂制备液
 susy.material.cativa_catalyst_solution=Cativa催化剂溶液
-susy.material.acidic_cumene=酸性异丙苯
-susy.material.rearranged_cumene=重排异丙苯
+susy.material.crude_cumene=粗异丙苯
 susy.material.impure_kapton_k=含杂Kapton K
 susy.material.impure_kapton_e=含杂Kapton E
 susy.material.kapton_e_preparation=Kapton E制备液
@@ -3027,10 +3026,10 @@ item.gregtech.material.polytetrafluoroethylene.thread=膨体聚四氟乙烯（eP
 # gregtech.material.chrome=铬 // 中文无需重命名
 
 # Resin Logs
-gregtech.block_group_members.extractable_logs_1.name=白桦木，丛林木，橡木或云杉木
-gregtech.block_group_members.extractable_logs_2.name=金合欢木或深色橡木
+susy.block_group_members.extractable_logs_1.name=白桦木，丛林木，橡木或云杉木
+susy.block_group_members.extractable_logs_2.name=金合欢木或深色橡木
 
-gregtech.block_group_members.latex_logs.name=橡胶木
+susy.block_group_members.latex_logs.name=橡胶木
 
 # Main Menu
 susy.menu.options=选项

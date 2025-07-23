@@ -1354,3 +1354,9 @@ RecyclingHelper.addShaped("gregtech:locomotive_controller", metaitem('susy:stock
 		[ore('pipeSmallItemNickel'), metaitem('hull.lv'), ore('pipeSmallItemNickel')],
 		[metaitem('emitter.lv'), ore('circuitLv'), metaitem('sensor.lv')]
 ])
+
+RecyclingHelper.addShaped("gregtech:injection_molder", metaitem('susy:injection_molder'), [
+        [metaitem('springKanthal'), ore('circuitHv'), metaitem('cableGtSingleGold')],
+        [ore('pipeLargeFluidStainlessSteel'), metaitem('hull.hv'), metaitem('electric.motor.hv')],
+        [metaitem('springKanthal'), ore('circuitHv'), metaitem('cableGtSingleGold')],
+])

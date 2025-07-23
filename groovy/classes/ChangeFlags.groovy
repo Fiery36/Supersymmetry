@@ -65,6 +65,7 @@ class ChangeFlags {
         log.infoMC("Modifying flags...")
 
         RecipeMaps.BLAST_RECIPES.setMaxFluidInputs(2);
+        RecipeMaps.PYROLYSE_RECIPES.setMaxFluidInputs(2);
         SuSyRecipeMaps.RAILROAD_ENGINEERING_STATION_RECIPES.setMaxFluidInputs(3);
         SuSyRecipeMaps.RAILROAD_ENGINEERING_STATION_RECIPES.setMaxInputs(12);
 
