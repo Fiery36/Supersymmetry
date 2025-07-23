@@ -2160,7 +2160,7 @@ class OrganicChemistryMaterials {
                 .color(0x57103a)
                 .build()
 
-        StyreneIsopreneRubber.setFormula('[???]n', true)
+        StyreneIsopreneRubber.setFormula('[(C5H8)3(C8H8)]n', true)
 
         HydrogenatedStyreneIsopreneRubber = new Material.Builder(15342, SuSyUtility.susyId('hydrogenated_styrene_isoprene_rubber'))
                 .dust()
@@ -2168,7 +2168,7 @@ class OrganicChemistryMaterials {
                 .color(0x70186c)
                 .build()
 
-        HydrogenatedStyreneIsopreneRubber.setFormula('(C5H10)3C8H8', true)
+        HydrogenatedStyreneIsopreneRubber.setFormula('(C5H10)3(C8H8)', true)
 
         HydrogenatedStyreneButadieneRubber = new Material.Builder(15343, SuSyUtility.susyId('hydrogenated_styrene_butadiene_rubber'))
                 .dust()
