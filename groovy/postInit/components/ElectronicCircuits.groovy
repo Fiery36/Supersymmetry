@@ -185,7 +185,7 @@ mods.gregtech.mixer.recipeBuilder()
         .buildAndRegister();
 
 mods.gregtech.assembler.recipeBuilder()
-        .inputs(ore('circuitEv') * 4)
+        .inputs(ore('circuitIv') * 4)
         .inputs(metaitem('cover.screen'))
         .inputs(ore('wireFineGold') * 8)
         .inputs(metaitem('circuit_board.plastic'))
