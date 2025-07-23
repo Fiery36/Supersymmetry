@@ -333,13 +333,13 @@ Globals.solders.each { key, val ->
     //Nuclear explosive
     LARGE_WEAPON_FACTORY.recipeBuilder()
         .inputs([
-            ore('componentCapacitor') * 4,
-            ore('fineWirePlatinum') * 8,
-            ore('dustCompositionB') * 8,
-            metaitem('large_fluid_cell.tungstensteel'),
+            ore('componentCapacitor') * 8,
+            ore('fineWirePlatinum') * 32,
+            ore('dustCompositionB') * 64,
+            ore('dustBaratol') * 64,
             ore('plateDoubleBeryllium') * 4,
             metaitem('dustWeaponsGradeUranium') * 32,
-            ore('dustUranium238') * 16,
+            ore('dustUranium238') * 64,
             ore('dustPolonium'),
             ore('plateBeryllium')
         ])
@@ -349,6 +349,23 @@ Globals.solders.each { key, val ->
         .EUt(1200)
         .buildAndRegister();
 
+    LARGE_WEAPON_FACTORY.recipeBuilder()
+        .inputs([
+            ore('componentCapacitor') * 8,
+            ore('fineWirePlatinum') * 8,
+            ore('dustCompositionB') * 16,
+            ore('dustBaratol') * 16,
+            ore('plateDoubleBeryllium') * 4,
+            metaitem('dustPlutoniumGallium') * 8,
+            ore('dustUranium238') * 16,
+            ore('dustPolonium'),
+            ore('plateBeryllium')
+        ])
+        .fluidInputs(fluid(key) * val)
+        .outputs(item('icbmclassic:explosives:15'))
+        .duration(200)
+        .EUt(1200)
+        .buildAndRegister();
 }
 
 
