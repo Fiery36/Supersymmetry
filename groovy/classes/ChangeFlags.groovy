@@ -839,7 +839,7 @@ class ChangeFlags {
 
         // Nuclear
 
-        Bismuth.setProperty(SCPropertyKey.FISSION_FUEL, FissionFuelProperty.builder(Bismuth.getRegistryName(), 1500, 5000, 5)
+        Bismuth.setProperty(SCPropertyKey.FISSION_FUEL, FissionFuelProperty.builder(Bismuth.getRegistryName(), 560, 5000, 5)
                 .slowNeutronCaptureCrossSection(0.2)
                 .requiredNeutrons(1)
                 .releasedNeutrons(0)
