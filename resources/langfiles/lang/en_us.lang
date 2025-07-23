@@ -2577,6 +2577,15 @@ susy.material.combusted_krypton_xenon_concentrate=Combusted Krypton-Xenon Concen
 susy.material.purified_krypton_xenon_concentrate=Purified Krypton-Xenon Concentrate
 susy.material.liquid_crude_xenon=Liquid Crude Xenon
 susy.material.oxidized_xenon=Oxidized Xenon
+susy.material.polonium_rich_sodium_hydroxide=Polonium Rich Sodium Hydroxide
+susy.material.polonium_concentrate=Polonium Concentrate
+susy.material.polonium_extraction_mixture=Polonium Extraction Mixture
+susy.material.polonium_extract=Polonium Extract
+susy.material.irradiated_bismuth=Irradiated Bismuth
+susy.material.polonium_iv_nitrate_solution=Polonium (IV) Nitrate Solution
+susy.material.dibutyl_butylphosphonate=Dibutyl Butylphosphonate
+susy.material.n_butyl_iodide=n-Butyl Iodide
+susy.material.tributyl_phosphite=Tributyl Phosphite
 
 # Isotopes
 

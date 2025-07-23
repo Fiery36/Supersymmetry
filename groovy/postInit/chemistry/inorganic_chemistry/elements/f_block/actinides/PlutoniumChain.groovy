@@ -98,3 +98,13 @@ BLENDER.recipeBuilder()
     .duration(200)
     .EUt(1920)
     .buildAndRegister();
+
+// Pu-Ga
+
+MIXER.recipeBuilder()
+    .inputs(metaitem('dustReactorGradePlutonium') * 29)
+    .inputs(metaitem('dustGallium'))
+    .outputs(metaitem('dustPlutoniumGallium') * 30)
+    .duration(200)
+    .EUt(1920)
+    .buildAndRegister();
