@@ -1965,7 +1965,7 @@ class OrganicChemistryMaterials {
                 .iconSet(DULL)
                 .build()
         
-        EthyleneVinylAcetate.setFormula('[C2H2]n[C4H6O2]n', true)
+        EthyleneVinylAcetate.setFormula('[C2H4]n[C4H6O2]n', true)
 
         EthyleneIsobutyleneVinylAcetate = new Material.Builder(15312, SuSyUtility.susyId('ethylene_isobutylene_vinyl_acetate'))
                 .dust()
