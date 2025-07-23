@@ -185,10 +185,10 @@ mods.gregtech.mixer.recipeBuilder()
         .buildAndRegister();
 
 mods.gregtech.assembler.recipeBuilder()
-        .inputs(ore('circuitEv') * 2)
+        .inputs(ore('circuitEv') * 4)
         .inputs(metaitem('cover.screen'))
         .inputs(ore('wireFineGold') * 8)
-        .inputs(metaitem('circuit_board.good'))
+        .inputs(metaitem('circuit_board.plastic'))
         .outputs(metaitem('susy:code_breacher'))
         .fluidInputs(fluid('soldering_alloy') * 144)
         .duration(400)
