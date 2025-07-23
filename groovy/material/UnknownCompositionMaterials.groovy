@@ -174,15 +174,12 @@ public class UnknownCompositionMaterials {
                 .color(0x75665e)
                 .build();
 
-        AcidicCumene = new Material.Builder(4030, SuSyUtility.susyId('acidic_cumene'))
+        CrudeCumene = new Material.Builder(4030, SuSyUtility.susyId('crude_cumene'))
                 .liquid()
                 .color(0x571a0b)
                 .build()
 
-        RearrangedCumene = new Material.Builder(4031, SuSyUtility.susyId('rearranged_cumene'))
-                .liquid()
-                .color(0x4f2f27)
-                .build();
+        // FREE ID: 4031
 
         SulfatedMetalOxide = new Material.Builder(4032, SuSyUtility.susyId('sulfated_metal_oxide'))
                 .dust()
@@ -2908,7 +2905,7 @@ public class UnknownCompositionMaterials {
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
                 .color(0x6d1ddb)
                 .build();
-
+      
         HydraulicFluid = new Material.Builder(4640, SuSyUtility.susyId('hydraulic_fluid'))
                 .liquid()
                 .color(0xebd64d)
@@ -2920,7 +2917,7 @@ public class UnknownCompositionMaterials {
                 .color(0xe3ecff)
                 .build();
 
-        // FREE ID: 4643
+        // FREE ID: 4642
 
         HighAluminaRefractory = new Material.Builder(4643, SuSyUtility.susyId('high_alumina_refractory'))
                 .dust().ingot()
@@ -3057,6 +3054,22 @@ public class UnknownCompositionMaterials {
         CrudePentaerythritolTetranitrate = new Material.Builder(4669, SuSyUtility.susyId('crude_pentaerythritol_tetranitrate'))
                 .dust()
                 .color(0x870c2f)
+                .build();
+
+        ImpurePPOSolution = new Material.Builder(4670, SuSyUtility.susyId('impure_ppo_solution'))
+                .fluid()
+                .color(0x302a52)
+                .build()
+
+        PolyphosphoricAcid = new Material.Builder(4671, SuSyUtility.susyId('polyphosphoric_acid'))
+                .dust()
+                .color(0xdea740)
+                .build();
+        
+        SupportedPolyphosphoricAcid = new Material.Builder(4672, SuSyUtility.susyId('supported_polyphosphoric_acid'))
+                .dust()
+                .flags(GENERATE_CATALYST_BED)
+                .color(0xd6b465)
                 .build();
     }
 }

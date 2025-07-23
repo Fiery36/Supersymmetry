@@ -214,6 +214,22 @@ BLENDER = recipemap('blender')
             .duration(80)
             .buildAndRegister()
 
+        MIXER.recipeBuilder()
+            .inputs(ore('dustSodiumEthoxide') * 9)
+            .fluidInputs(fluid('ethanol') * 1000)
+            .fluidOutputs(fluid('sodium_ethoxide_solution') * 1000)
+            .duration(60)
+            .EUt(30)
+            .buildAndRegister();
+
+        DISTILLERY.recipeBuilder()
+            .fluidInputs(fluid('sodium_ethoxide_solution') * 1000)
+            .outputs(metaitem('dustSodiumEthoxide') * 9)
+            .fluidOutputs(fluid('ethanol') * 1000)
+            .duration(60)
+            .EUt(30)
+            .buildAndRegister();
+
         CSTR.recipeBuilder()
             .fluidInputs(fluid('sodium_ethoxide_solution') * 50)
             .fluidInputs(fluid('carbon_disulfide') * 50)

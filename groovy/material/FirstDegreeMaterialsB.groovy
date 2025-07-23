@@ -17,6 +17,7 @@ import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.Materials.*;
 import gregtech.api.unification.material.properties.BlastProperty.GasTier;
+import static gregtechfoodoption.GTFOMaterialHandler.*;
 import static supersymmetry.api.unification.material.info.SuSyMaterialFlags.*;
 import static gregtech.api.fluids.FluidConstants.*;
 
@@ -139,7 +140,7 @@ public class FirstDegreeMaterialsB {
                 .ingotSmeltInto(Alnico)
                 .arcSmeltInto(Alnico)
                 .macerateInto(Alnico)
-                .build()
+                .build();
 
         ReprocessedUranylNitrate = new Material.Builder(8722, SuSyUtility.susyId('reprocessed_uranyl_nitrate'))
                 .dust()
@@ -251,5 +252,31 @@ public class FirstDegreeMaterialsB {
                 .components(Deuterium * 99, Tritium * 1)
                 .colorAverage()
                 .build();
+
+        BenzenediolCatalysisMixture = new Material.Builder(8736, SuSyUtility.susyId('benzenediol_catalysis_mixture'))
+                .liquid()
+                .color(0x5c4d3a)
+                .build();
+
+        BenzenediolCatalysisMixture.setFormula('(H3PO4)10(HClO4)', true);
+
+        DilutedBenzenediolCatalysisMixture = new Material.Builder(8737, SuSyUtility.susyId('diluted_benzenediol_catalysis_mixture'))
+                .liquid()
+                .color(0x6e5c54)
+                .build();
+
+        DilutedBenzenediolCatalysisMixture.setFormula('(H3PO4)10(HClO4)(H2O)5', true);
+
+        CleavedCumeneMixture = new Material.Builder(8738, SuSyUtility.susyId('cleaved_cumene_mixture'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(SulfuricAcid, Phenol * 5, Acetone * 5)
+                .colorAverage()
+                .build();
+
+        PPOWaste = new Material.Builder(8739, SuSyUtility.susyId('ppo_waste'))
+                .liquid()
+                .components(Toluene, Methanol)
+                .color(0x47260e)
+                .build()
     }
 }

@@ -47,7 +47,7 @@ for(entry in overworld_ores){
 
 QUARRY.recipeBuilder()
             .notConsumable(ore('dustMica'))
-            .chancedOutputs(metaitem('dustMica'), 1000, 500)
+            .chancedOutput(metaitem('dustMica'), 1000, 500)
             .dimension(Globals.dimensions["Beneath"])
             .duration(240)
             .EUt(64)
