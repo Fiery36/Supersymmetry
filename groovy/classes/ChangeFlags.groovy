@@ -240,7 +240,9 @@ class ChangeFlags {
         StyreneButadieneRubber.setFormula("[C40H44]n", true);
         PolyphenyleneSulfide.setFormula("[C6H4S]n", true);
         Polybenzimidazole.setFormula("[C20H12N4]n", true);
-        
+        PolyvinylAcetate.setFormula("[C4H6O2]n", true);
+        PolyvinylButyral.setFormula("[C8H14O2]n", true);
+
         // Ore Processing
         
         Pitchblende.addFlags("disable_decomposition")
