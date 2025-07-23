@@ -1,3 +1,26 @@
+# UPDATE 0.1.15.2
+## Mod Changes
+### Mod Updates
+- Supercritical 0.1.3 -> 0.2.0
+- SusyCore v0.1.69 → v0.1.71
+### Mod Additions
+- FluxLoading → 1.3.5
+### Mod Removals
+- BiomeTweakerCore
+- Yet Another Recipe Conflict Fixer (YARCF) 
+## Changes
+### New Features
+- Tritium, polonium, and nuclear weapons are now available! (#1532 by @planetme)
+- Code Breachers are now required for Federation-locked structures. (#1571 by @Rick8484)
+- [Susy-Core] Thermoplastics are now available! (#483 by @WideMann)
+### Changed Features
+- IMPORTANT: Nuclear reactor values have been modified. **Please turn off your reactors before updating!!!!!!**
+- Many recipes now use the Mixer Settler. Check your lines! (#1559 by @Rick8484)
+- The main menu images have been updated! (#1570 by @MCTian-mi)
+- Graphite and Mica are now more accessible. (#1573 by @planetme)
+### Fixes
+- [Susy-Core] Now you can turn off command blocks on the server, there's a workaround to made our structures still generate. (#505 by @oliwier509)
+- Thanks to @Oganesson897, @MCTian-mi, @Crindigo, @trainvoi, @Rick8484, @loxoDev, and @oliwier509 for continuing to stabillize the pack!
 # UPDATE 0.1.15.1
 ## Mod Changes
 ### Mod Updates
