@@ -2610,6 +2610,8 @@ class OrganicChemistryMaterials {
                 .color(0xd4984e)
                 .build()
 
+        PolyvinylAlcohol.setFormula("[C2H4O]n", true)
+
         CompoundedPolyisoprene = new Material.Builder(15411, SuSyUtility.susyId('compounded_polyisoprene'))
                 .dust()
                 .components(Isoprene)
