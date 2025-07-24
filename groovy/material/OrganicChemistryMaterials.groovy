@@ -75,6 +75,8 @@ class OrganicChemistryMaterials {
                 .components(Carbon * 8, Hydrogen * 8)
                 .color(0xa2a389)
                 .build()
+        
+        Polystyrene.setFormula('[C8H8]n', true)
 
         OneTwoDichlorobenzene = new Material.Builder(15009, SuSyUtility.susyId('one_two_dichlorobenzene'))
                 .dust()
@@ -89,6 +91,8 @@ class OrganicChemistryMaterials {
                 .flags(GENERATE_FOIL)
                 .components(Carbon * 2, Hydrogen * 2, Fluorine * 2)
                 .build()
+        
+        PolyvinylideneFluoride.setFormula('[C2H2F2]n', true)
 
         Methylenedianiline = new Material.Builder(15011, SuSyUtility.susyId('methylenedianiline'))
                 .dust()
@@ -135,6 +139,8 @@ class OrganicChemistryMaterials {
                 .flags(GENERATE_FOIL)
                 .components(Carbon * 5, Oxygen * 2, Hydrogen * 8)
                 .build()
+
+        PMMA.setFormula('[C5H8O2]n', true)
 
         PhthalicAnhydride = new Material.Builder(15018, SuSyUtility.susyId('phthalic_anhydride'))
                 .dust().liquid(new FluidBuilder().temperature(405))
@@ -758,6 +764,8 @@ class OrganicChemistryMaterials {
                 .flags(GENERATE_FOIL)
                 .build()
 
+        Polypropylene.setFormula('[C3H6]n', true)
+
         Dimethylformamide = new Material.Builder(15127, SuSyUtility.susyId('dimethylformamide'))
                 .liquid()
                 .components(Carbon * 3, Hydrogen * 7, Nitrogen * 1)
@@ -814,12 +822,16 @@ class OrganicChemistryMaterials {
                 .components(Carbon * 22, Hydrogen * 10, Nitrogen * 2, Oxygen * 5)
                 .color(0xfabe19)
                 .build()
+        
+        KaptonK.setFormula('[C22H10N2O5]n', true)
 
         KaptonE = new Material.Builder(15136, SuSyUtility.susyId('kapton_e'))
                 .polymer(1)
                 .components(Carbon * 22, Hydrogen * 10, Nitrogen * 2, Oxygen * 5)
                 .color(0xdcfa19)
                 .build()
+        
+        KaptonE.setFormula('[C22H10N2O5]n', true)
 
         TwoButanol = new Material.Builder(15137, SuSyUtility.susyId('two_butanol'))
                 .liquid()
@@ -879,7 +891,7 @@ class OrganicChemistryMaterials {
                 .color(0x8f795e)
                 .build()
 
-        PolystyreneSulfonate.setFormula('(CH2CHC6H4SO3H)', true)
+        PolystyreneSulfonate.setFormula('[C8H7SO3]n', true)
 
         EthylenediaminetetraaceticAcid = new Material.Builder(15147, SuSyUtility.susyId('ethylenediaminetetraacetic_acid'))
                 .dust()
@@ -1799,10 +1811,11 @@ class OrganicChemistryMaterials {
         PolyethyleneTerephthalate = new Material.Builder(15289, SuSyUtility.susyId('polyethylene_terephthalate'))
                 .polymer().liquid(new FluidBuilder().temperature(533))
                 .flags(GENERATE_FOIL)
-                .components(Carbon * 10, Hydrogen * 6, Oxygen * 4)
+                .components(Carbon * 10, Hydrogen * 8, Oxygen * 4)
                 .color(0x7e9e8e)
                 .build()
-
+        
+        PolyethyleneTerephthalate.setFormula('[C10H8O4]n', true)
         PolyethyleneTerephthalate.setProperty(SuSyPropertyKey.FIBER, new FiberProperty(false, true, false))
 
         AmocoTerephthalicAcid = new Material.Builder(15290, SuSyUtility.susyId('amoco_terephthalic_acid'))
@@ -1951,6 +1964,8 @@ class OrganicChemistryMaterials {
                 .fluidPipeProperties(363, 100, true)
                 .iconSet(DULL)
                 .build()
+        
+        EthyleneVinylAcetate.setFormula('[C2H4]n[C4H6O2]n', true)
 
         EthyleneIsobutyleneVinylAcetate = new Material.Builder(15312, SuSyUtility.susyId('ethylene_isobutylene_vinyl_acetate'))
                 .dust()
@@ -2145,13 +2160,15 @@ class OrganicChemistryMaterials {
                 .color(0x57103a)
                 .build()
 
+        StyreneIsopreneRubber.setFormula('[(C5H8)3(C8H8)]n', true)
+
         HydrogenatedStyreneIsopreneRubber = new Material.Builder(15342, SuSyUtility.susyId('hydrogenated_styrene_isoprene_rubber'))
                 .dust()
                 .components(Carbon * 23, Hydrogen * 38)
                 .color(0x70186c)
                 .build()
 
-        HydrogenatedStyreneIsopreneRubber.setFormula('(C5H10)3C8H8', true)
+        HydrogenatedStyreneIsopreneRubber.setFormula('(C5H10)3(C8H8)', true)
 
         HydrogenatedStyreneButadieneRubber = new Material.Builder(15343, SuSyUtility.susyId('hydrogenated_styrene_butadiene_rubber'))
                 .dust()
@@ -2516,7 +2533,7 @@ class OrganicChemistryMaterials {
                 .iconSet(SHINY)
                 .build()
 
-        Polycarbonate.setFormula("C16H14O3", true)
+        Polycarbonate.setFormula("[C16H14O3]n", true)
 
         Trichlorofluoromethane = new Material.Builder(15398, SuSyUtility.susyId('trichlorofluoromethane'))
                 .gas()
@@ -2592,6 +2609,8 @@ class OrganicChemistryMaterials {
                 .components(Carbon * 2, Hydrogen * 4, Oxygen * 1)
                 .color(0xd4984e)
                 .build()
+
+        PolyvinylAlcohol.setFormula("[C2H4O]n", true)
 
         CompoundedPolyisoprene = new Material.Builder(15411, SuSyUtility.susyId('compounded_polyisoprene'))
                 .dust()
