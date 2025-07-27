@@ -813,7 +813,16 @@ class ThirdDegreeMaterials {
                 .colorAverage()
                 .build()
 
-        PerfluorovinylSulfonylEtherSolution
-        NafionSolution
+        PerfluorovinylSulfonylEtherSolution = new Material.Builder(24133, SuSyUtility.susyId('perfluorovinyl_sulfonyl_ether_solution'))
+                .liquid()
+                .components(PerfluorovinylSulfonylEther * 1, SodiumFluoride * 2, Dimethylformamide * 2)
+                .colorAverage()
+                .build()
+
+        NafionSolution = new Material.Builder(24134, SuSyUtility.susyId('nafion_solution'))
+                .liquid()
+                .components(Nafion * 2, FluorinatedSurfactantMixture)
+                .colorAverage()
+                .build()
     }
 }

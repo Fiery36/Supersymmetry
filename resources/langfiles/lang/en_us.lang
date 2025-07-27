@@ -2597,9 +2597,12 @@ susy.material.aluminium_isopropoxide=Aluminium Isopropoxide
 susy.material.hexafluoropropylene_oxide=Hexafluoropropylene Oxide
 susy.material.fluorosulfonyl_difluoroacetyl_fluoride=Fluorosulfonyl Difluoroacetyl Fluoride
 susy.material.perfluorovinyl_sulfonyl_ether=Perfluorovinyl Sulfonyl Ether (PVSE)
+susy.material.raw_nafion=Raw Nafion
 susy.material.nafion=Nafion
 susy.material.perfluorovinyl_sulfonyl_ether_solution=Perfluorovinyl Sulfonyl Ether Solution
 susy.material.nafion_solution=Nafion Solution
+susy.material.partially_deionized_water=Partially Deionized Water
+susy.material.stabilized_sodium_silicate_solution=Stabilized Sodium Silicate Solution
 
 # Isotopes
 

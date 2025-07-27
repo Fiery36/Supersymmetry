@@ -68,7 +68,7 @@ DT.recipeBuilder()
 
 ION_EXCHANGE.recipeBuilder()
     .notConsumable(metaitem('beads.strong_acidic_cation_exchange'))
-    .fluidInputs(fluid('diluted_sodium_silicate_solution') * 5000)
+    .fluidInputs(fluid('stabilized_sodium_silicate_solution') * 5000)
     .fluidInputs(fluid('hydrochloric_acid') * 2000) 
     .fluidOutputs(fluid('colloidal_silica') * 5000)
     .fluidOutputs(fluid('salt_water') * 2000)

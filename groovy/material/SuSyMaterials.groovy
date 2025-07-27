@@ -544,8 +544,8 @@ class SuSyMaterials {
     public static Material NetherMolecularSieveX
     public static Material HydrotreatingCatalyst
     public static Material SourWater
-    public static Material TypeYZeoliteSolution
-    public static Material TypeYZeolite
+    public static Material SodiumYZeoliteSolution
+    public static Material SodiumYZeolite
     public static Material GreenMatte
     public static Material WhiteMatte
     public static Material OxidizedPGMLeach
@@ -1198,6 +1198,7 @@ class SuSyMaterials {
     public static Material SaltyArsenicPentoxide
     public static Material TinIVOxide
     public static Material AntimonyVOxide
+    public static Material PartiallyDeionizedWater
     public static Material CrudeTin
     public static Material LeachedCassiteriteConcentrate
     public static Material AmmoniumTungstateSolution
@@ -1801,6 +1802,7 @@ class SuSyMaterials {
     public static Material PoloniumIVNitrateSolution
     public static Material AmmoniumDihydrogenPhosphateSolution
     public static Material DiammoniumHydrogenPhosphateSolution
+    public static Material StabilizedSodiumSilicateSolution
 
     // Organic Chemistry Materials
 
@@ -2281,6 +2283,7 @@ class SuSyMaterials {
     public static Material HexafluoropropyleneOxide
     public static Material FluorosulfonylDifluoroacetylFluoride
     public static Material PerfluorovinylSulfonylEther
+    public static Material RawNafion
     public static Material Nafion
 
     // Third Degree Materials

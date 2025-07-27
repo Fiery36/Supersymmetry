@@ -787,7 +787,13 @@ class SecondDegreeMaterials {
                 .colorAverage()
                 .build()
 
-        // FREE ID: 13129
+        StabilizedSodiumSilicateSolution = new Material.Builder(13123, SuSyUtility.susyId('stabilized_sodium_silicate_solution'))
+                .liquid()
+                .components(SodiumSilicate, Ammonia, Water * 5)
+                .colorAverage()
+                .build()
+
+        // FREE ID: 13124-13129
 
         HexachloroiridicAcidSolution = new Material.Builder(13130, SuSyUtility.susyId('hexachloroiridic_acid_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
