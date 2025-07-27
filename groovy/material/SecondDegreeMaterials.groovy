@@ -1030,5 +1030,11 @@ class SecondDegreeMaterials {
                 .components(DiammoniumHydrogenPhosphate, Water * 2)
                 .colorAverage()
                 .build()
+
+        MagnesiumNitrateSolution = new Material.Builder(13169, SuSyUtility.susyId('magnesium_nitrate_solution'))
+                .liquid()
+                .components(MagnesiumNitrate, Water * 2)
+                .colorAverage()
+                .build()
     }
 }

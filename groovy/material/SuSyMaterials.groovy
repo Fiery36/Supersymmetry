@@ -1803,6 +1803,7 @@ class SuSyMaterials {
     public static Material AmmoniumDihydrogenPhosphateSolution
     public static Material DiammoniumHydrogenPhosphateSolution
     public static Material StabilizedSodiumSilicateSolution
+    public static Material MagnesiumNitrateSolution
 
     // Organic Chemistry Materials
 

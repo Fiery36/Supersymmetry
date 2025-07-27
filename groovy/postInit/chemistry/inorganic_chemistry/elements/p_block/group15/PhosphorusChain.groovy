@@ -353,6 +353,7 @@ ROASTER.recipeBuilder()
 // Ammonium phosphates
 
 CSTR.recipeBuilder()
+    .circuitMeta(1)
     .fluidInputs(fluid('phosphoric_acid') * 50)
     .fluidInputs(fluid('ammonia_solution') * 50)
     .fluidOutputs(fluid('ammonium_dihydrogen_phosphate_solution') * 50)
@@ -369,6 +370,7 @@ DISTILLERY.recipeBuilder()
     .buildAndRegister();
 
 CSTR.recipeBuilder()
+    .circuitMeta(2)
     .fluidInputs(fluid('phosphoric_acid') * 50)
     .fluidInputs(fluid('ammonia_solution') * 100)
     .fluidOutputs(fluid('diammonium_hydrogen_phosphate_solution') * 100)

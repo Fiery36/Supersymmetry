@@ -535,7 +535,7 @@ BLENDER = recipemap('blender')
         .buildAndRegister()
 
     MIXER.recipeBuilder()
-        .circuitMeta(2)
+        .circuitMeta(1)
         .fluidInputs(fluid('tributyl_phosphate') * 1000)
         .fluidInputs(fluid('kerosene') * 9000)
         .fluidOutputs(fluid('tributyl_phosphate_extraction_mixture') * 10000)

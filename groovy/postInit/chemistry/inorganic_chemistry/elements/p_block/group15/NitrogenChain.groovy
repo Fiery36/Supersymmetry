@@ -20,7 +20,7 @@ ASSEMBLER.recipeBuilder()
 
 AUTOCLAVE.recipeBuilder()
     .fluidInputs(fluid('distilled_water') * 1000)
-    .inputs(ore('dustMolecularSieveX') * 4)
+    .inputs(ore('dustSodiumXZeolite') * 4)
     .inputs(metaitem('zeolite_membrane_support'))
     .outputs(metaitem('zeolite_membrane'))
     .duration(180)
