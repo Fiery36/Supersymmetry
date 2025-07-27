@@ -2278,6 +2278,10 @@ class SuSyMaterials {
     public static Material TributylPhosphite
     public static Material NButylIodide
     public static Material AluminiumIsopropoxide
+    public static Material HexafluoropropyleneOxide
+    public static Material FluorosulfonylDifluoroacetylFluoride
+    public static Material PerfluorovinylSulfonylEther
+    public static Material Nafion
 
     // Third Degree Materials
 
@@ -2411,6 +2415,8 @@ class SuSyMaterials {
     public static Material HexamethylenetetramineSolution
     public static Material CompositionB
     public static Material Baratol
+    public static Material PerfluorovinylSulfonylEtherSolution
+    public static Material NafionSolution
 
     // Thermodynamics Materials
 

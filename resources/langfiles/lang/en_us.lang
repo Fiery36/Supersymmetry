@@ -2594,6 +2594,12 @@ susy.material.boehmite=Boehmite
 susy.material.ammonium_dihydrogen_phosphate_solution=Ammonium Dihydrogen Phosphate Solution
 susy.material.diammonium_hydrogen_phosphate_solution=Diammonium Hydrogen Phosphate Solution
 susy.material.aluminium_isopropoxide=Aluminium Isopropoxide
+susy.material.hexafluoropropylene_oxide=Hexafluoropropylene Oxide
+susy.material.fluorosulfonyl_difluoroacetyl_fluoride=Fluorosulfonyl Difluoroacetyl Fluoride
+susy.material.perfluorovinyl_sulfonyl_ether=Perfluorovinyl Sulfonyl Ether (PVSE)
+susy.material.nafion=Nafion
+susy.material.perfluorovinyl_sulfonyl_ether_solution=Perfluorovinyl Sulfonyl Ether Solution
+susy.material.nafion_solution=Nafion Solution
 
 # Isotopes
 

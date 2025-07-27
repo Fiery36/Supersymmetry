@@ -3013,6 +3013,40 @@ class OrganicChemistryMaterials {
                 .color(0x5a799e)
                 .build()
 
-        AluminiumIsopropoxide.setFormula('Al(C3H7O)3')
+        AluminiumIsopropoxide.setFormula('Al(C3H7O)3', true)
+
+        HexafluoropropyleneOxide = new Material.Builder(15479, SuSyUtility.susyId('hexafluoropropylene_oxide'))
+                .gas()
+                .components(Carbon * 3, Fluorine * 6, Oxygen)
+                .color(0x5c8fb5)
+                .build()
+
+        FluorosulfonylDifluoroacetylFluoride = new Material.Builder(15480, SuSyUtility.susyId('fluorosulfonyl_difluoroacetyl_fluoride'))
+                .liquid()
+                .components(Carbon * 2, Fluorine * 4, Oxygen * 3, Sulfur)
+                .color(0x37877f)
+                .build()
+
+        PerfluorovinylSulfonylEther = new Material.Builder(15481, SuSyUtility.susyId('perfluorovinyl_sulfonyl_ether'))
+                .liquid()
+                .components(Carbon * 7, Fluorine * 14, Oxygen * 4, Sulfur)
+                .color(0x2c7d5f)
+                .build()
+
+        RawNafion = new Material.Builder(15482, SuSyUtility.susyId('raw_nafion'))
+                .dust()
+                .components(Carbon * 9, Fluorine * 18, Oxygen * 4, Sulfur)
+                .color(0x8bb5b1)
+                .build()
+
+        RawNafion.setFormula('[(C2F4)(C7F14O4S)]n', true)
+
+        Nafion = new Material.Builder(15483, SuSyUtility.susyId('nafion'))
+                .dust()
+                .components(Carbon * 9, Hydrogen, Fluorine * 17, Oxygen * 5, Sulfur)
+                .color(0xcfccb0)
+                .build()
+
+        Nafion.setFormula('[(C2F4)(C7HF13O5S)]n', true)
     }
 }

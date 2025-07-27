@@ -812,5 +812,8 @@ class ThirdDegreeMaterials {
                 .components(FourNitroNMethylPhthalimide, SulfuricAcid, Water)
                 .colorAverage()
                 .build()
+
+        PerfluorovinylSulfonylEtherSolution
+        NafionSolution
     }
 }

@@ -170,7 +170,7 @@ MIXER.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
-// Type Y zeolite (FAU structure, FCC catalyst, REE catalyst)
+// Type Y zeolite (FAU structure, FCC catalyst)
 
 AUTOCLAVE.recipeBuilder()
     .circuitMeta(2)
@@ -222,7 +222,7 @@ ION_EXHANGE.recipeBuilder()
     .EUt(480)
     .buildAndRegister()
 
-// ZSM-5 (pentasil high SAR zeolite, methanol to gasoline)
+// ZSM-5 (pentasil high SAR zeolite, methanol to gasoline, various catalysts)
 
 FBR.recipeBuilder()
     .notConsumable(metaitem('catalystBedAlumina'))
