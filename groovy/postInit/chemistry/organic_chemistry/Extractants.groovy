@@ -1193,7 +1193,7 @@ BLENDER = recipemap('blender')
     //BASIC ANION EXCHANGE RESINS
 
     FBR.recipeBuilder()
-        .notConsumable(ore('catalystBedHzsmFive'))
+        .notConsumable(ore('catalystBedModifiedZsmFive'))
         .fluidInputs(fluid('toluene') * 50)
         .fluidInputs(fluid('ethylene') * 50)
         .fluidOutputs(fluid('ethyltoluene') * 50)

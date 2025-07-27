@@ -79,11 +79,7 @@ class ThirdDegreeMaterials {
                 .colorAverage()
                 .build()
 
-        DilutedDiTertButylPeroxide = new Material.Builder(24010, SuSyUtility.susyId('diluted_di_tert_butyl_peroxide'))
-                .liquid()
-                .components(DiTertButylPeroxide * 1, Water * 1)
-                .colorAverage()
-                .build()
+        // FREE ID: 24010
 
         SodiumEthoxideSolution = new Material.Builder(24011, SuSyUtility.susyId('sodium_ethoxide_solution'))
                 .liquid()

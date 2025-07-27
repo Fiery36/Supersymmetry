@@ -495,5 +495,21 @@ class FirstDegreeMaterialsB {
                 .components(Toluene, Methanol)
                 .color(0x47260e)
                 .build()
+
+        DiammoniumHydrogenPhosphate = new Material.Builder(8740, SuSyUtility.susyId('diammonium_hydrogen_phosphate'))
+                .dust()
+                .components(Nitrogen * 2, Hydrogen * 9, Phosphorus, Oxygen * 4)
+                .colorAverage()
+                .build()
+
+        DiammoniumHydrogenPhosphate.setFormula('(NH4)2HPO4', true)
+
+        Boehmite = new Material.Builder(8741, SuSyUtility.susyId('boehmite'))
+                .dust()
+                .components(Aluminium, Oxygen * 2, Hydrogen)
+                .color(0x545e3d)
+                .build()
+
+        Boehmite.setFormula('AlO(OH)', true)
     }
 }

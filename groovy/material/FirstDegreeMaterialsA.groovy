@@ -1277,7 +1277,7 @@ class FirstDegreeMaterialsA {
 
         AluminiumSulfate.setFormula("Al2(SO4)3", true)
 
-        DemineralizedWater = new Material.Builder(8277, SuSyUtility.susyId('demineralized_water'))
+        DeionizedWater = new Material.Builder(8277, SuSyUtility.susyId('deionized_water'))
                 .liquid()
                 .components(Hydrogen * 2, Oxygen)
                 .color(0x4761a8)

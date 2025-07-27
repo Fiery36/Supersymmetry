@@ -1012,5 +1012,17 @@ class SecondDegreeMaterials {
                 .components(LithiumHydroxide, Water)
                 .colorAverage()
                 .build()
+
+        AmmoniumDihydrogenPhosphateSolution = new Material.Builder(13167, SuSyUtility.susyId('ammonium_dihydrogen_phosphate_solution'))
+                .liquid()
+                .components(AmmoniumDihydrogenPhosphate, Water)
+                .colorAverage()
+                .build()
+
+        DiammoniumHydrogenPhosphateSolution = new Material.Builder(13168, SuSyUtility.susyId('diammonium_hydrogen_phosphate_solution'))
+                .liquid()
+                .components(DiammoniumHydrogenPhosphate, Water * 2)
+                .colorAverage()
+                .build()
     }
 }

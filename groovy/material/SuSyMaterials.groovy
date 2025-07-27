@@ -149,9 +149,8 @@ class SuSyMaterials {
     // Unknown Composition Materials
 
     public static Material EarthGreenhouseGas
-    public static Material RawMolecularSieve
-    public static Material MolecularSieve
-    public static Material WetMolecularSieve
+    public static Material MolecularSieveA
+    public static Material WetMolecularSieveA
     public static Material ChloridedAlumina
     public static Material FlueGas
     public static Material ExhaustSteam
@@ -238,8 +237,8 @@ class SuSyMaterials {
     public static Material PolyhaliteLeach
     public static Material CarnalliteLeach
     public static Material KainiteLeach
-    public static Material TypeXZeoliteSolution
-    public static Material TypeXZeolite
+    public static Material SodiumXZeoliteSolution
+    public static Material SodiumXZeolite
     public static Material LTSCatalyst
     public static Material HTSCatalyst
     public static Material SpentBismuthCatalyst
@@ -387,7 +386,7 @@ class SuSyMaterials {
     public static Material GaseousIronIIIChloride
     public static Material GaseousTitaniumTetrachloride
     public static Material GaseousAluminiumChloride
-    public static Material CarbonatedMolecularSieve
+    public static Material CarbonatedMolecularSieveX
     public static Material OligomericBisphenolSolution
     public static Material GraniteTailingSlurry
     public static Material SphaleriteByproductSlurry
@@ -414,7 +413,7 @@ class SuSyMaterials {
     public static Material HafniumExtractionMixture
     public static Material HafniumExtract
     public static Material PropanalMixture
-    public static Material ZSMFive
+    public static Material SodiumZSMFive
     public static Material AminatedEthyleneMixture
     public static Material NeutralizedAminatedEthyleneMixture
     public static Material RoastedPyrochlore
@@ -443,7 +442,7 @@ class SuSyMaterials {
     public static Material TungstenExtract
     public static Material ScrubbedTungstenExtract
     public static Material CopperMolybdeniteSlurry
-    public static Material HZSMFive
+    public static Material HydrogenZSMFive
     public static Material FunctionalizableCrosslinkedPolystyrene
     public static Material TantalumExtract
     public static Material HydrodealkylatedTolueneMixture
@@ -542,7 +541,7 @@ class SuSyMaterials {
     public static Material PolluciteLeach
     public static Material CaesiumRubidiumAlumMixture
     public static Material HydratedTriethyleneGlycol
-    public static Material NetherMolecularSieve
+    public static Material NetherMolecularSieveX
     public static Material HydrotreatingCatalyst
     public static Material SourWater
     public static Material TypeYZeoliteSolution
@@ -763,6 +762,14 @@ class SuSyMaterials {
     public static Material PoloniumConcentrate
     public static Material PoloniumExtractionMixture
     public static Material PoloniumExtract
+    public static Material ColloidalSilica
+    public static Material SodiumAZeoliteSolution
+    public static Material SodiumAZeolite
+    public static Material SodiumPotassiumAZeolite
+    public static Material MolecularSieveX
+    public static Material AmmoniumYZeolite
+    public static Material DealuminizedYZeolite
+    public static Material ModifiedZsmFive
 
     // Petrochem Materials
 
@@ -1110,7 +1117,7 @@ class SuSyMaterials {
     public static Material MonocalciumPhosphate
     public static Material CalciumMetaphosphate
     public static Material AluminiumSulfate
-    public static Material DemineralizedWater
+    public static Material DeionizedWater
     public static Material DeaeratedWater
     public static Material FilteredWater
     public static Material SterilizedWater
@@ -1565,6 +1572,8 @@ class SuSyMaterials {
     public static Material MixedOxideFuel
     public static Material DilutedAcetone
     public static Material BariumNitrate
+    public static Material DiammoniumHydrogenPhosphate
+    public static Material Boehmite
 
     // HP Materials
 
@@ -1790,6 +1799,8 @@ class SuSyMaterials {
     public static Material PlutoniumReductionSolution
     public static Material BariumNitrateSolution
     public static Material PoloniumIVNitrateSolution
+    public static Material AmmoniumDihydrogenPhosphateSolution
+    public static Material DiammoniumHydrogenPhosphateSolution
 
     // Organic Chemistry Materials
 
@@ -2049,7 +2060,7 @@ class SuSyMaterials {
     public static Material Isodecanal
     public static Material Isodecanol
     public static Material Trioctylamine
-    public static Material NButylamine
+    //public static Material NButylamine
     public static Material Ethyltoluene
     public static Material VinylbenzylChloride
     public static Material Cyclohexylamine
@@ -2266,6 +2277,7 @@ class SuSyMaterials {
     public static Material DibutylButylphosphonate
     public static Material TributylPhosphite
     public static Material NButylIodide
+    public static Material AluminiumIsopropoxide
 
     // Third Degree Materials
 

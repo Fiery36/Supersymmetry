@@ -1673,11 +1673,11 @@ class OrganicChemistryMaterials {
                 .color(0x2274a3)
                 .build()
 
-        NButylamine = new Material.Builder(15269, SuSyUtility.susyId('n_butylamine'))
+        /*NButylamine = new Material.Builder(15269, SuSyUtility.susyId('n_butylamine'))
                 .liquid()
                 .components(Carbon * 4, Hydrogen * 11, Nitrogen * 1)
                 .color(0x43576e)
-                .build()
+                .build()*/
 
         Ethyltoluene = new Material.Builder(15270, SuSyUtility.susyId('ethyltoluene'))
                 .liquid()
@@ -3006,5 +3006,13 @@ class OrganicChemistryMaterials {
                 .components(Carbon * 12, Hydrogen * 27, Oxygen * 3, Phosphorus * 1)
                 .color(0xc3bec4)
                 .build()
+
+        AluminiumIsopropoxide = new Material.Builder(15478, SuSyUtility.susyId('aluminium_isopropoxide'))
+                .dust()
+                .components(Aluminium, Carbon * 9, Hydrogen * 21, Oxygen * 3)
+                .color(0x5a799e)
+                .build()
+
+        AluminiumIsopropoxide.setFormula('Al(C3H7O)3')
     }
 }
