@@ -433,6 +433,8 @@ susy.material.creosol=Creosol
 susy.material.anthracene=Antraceno
 susy.material.weed_killer=Herbicida
 susy.material.pesticide=Pesticida
+susy.material.vanillylmandelic_acid_mixture=Mistura de Vanillylmandelic Acid
+susy.material.vanilglycolic_acid_mixture=Mistura de Vanilglycolic Acid
 
 susy.material.greenhouse_gases=Gases de Estufa
 susy.material.warm_greenhouse_gases=Gases de Estufa Quentes

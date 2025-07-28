@@ -763,6 +763,8 @@ class SuSyMaterials {
     public static Material PoloniumConcentrate
     public static Material PoloniumExtractionMixture
     public static Material PoloniumExtract
+    public static Material VanillylmandelicAcidMixture
+    public static Material VanilglycolicAcidMixture
 
     // Petrochem Materials
 
