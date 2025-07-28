@@ -408,3 +408,16 @@ ALLOY_SMELTER.recipeBuilder()
     .duration(200)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
+
+// Bismuth phosphomolybdate catalyst
+
+LCR.recipeBuilder()
+    .fluidInputs(fluid('phosphoric_acid') * 1000)
+    .fluidInputs(fluid('ammonium_molybdate_solution') * 12000)
+    .fluidInputs(fluid('bismuth_nitrate_solution') * 1500)
+    .fluidInputs(fluid('colloidal_silica') * 5000)
+    .outputs(metaitem('dustAmmoxidationCatalyst'))
+    .fluidOutputs(fluid('wastewater') * 18500)
+    .duration(200)
+    .EUt(Globals.voltAmps[4])
+    .buildAndRegister()
