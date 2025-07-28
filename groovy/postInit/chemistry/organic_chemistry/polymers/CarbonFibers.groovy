@@ -6,6 +6,7 @@ DT = recipemap('distillation_tower')
 POLYMERIZATION = recipemap('polymerization_tank')
 SIFTER = recipemap('sifter')
 CHEMICAL_BATH = recipemap('chemical_bath')
+TUBE_FURNACE = recipemap('tube_furnace')
 
 // Acrylonitrile production via ammoxidation of propylene
 
@@ -70,4 +71,22 @@ CHEMICAL_BATH.recipeBuilder()
     .fluidOutputs(fluid('wastewater') * 100)
     .duration(300)
     .EUt(480)
+    .buildAndRegister()
+
+// Conversion to carbon fibers
+
+TUBE_FURNACE.recipeBuilder()
+    .inputs(ore('fiberPolyacrylonitrile') * 16)
+    .fluidInputs(fluid('oxygen') * 2000)
+    .outputs(metaitem('fiber.oxidized_polyacrylonitrile') * 16)
+    .duration(300)
+    .EUt(480)
+    .buildAndRegister()
+
+TUBE_FURNACE.recipeBuilder()
+    .fluidInputs(fluid('argon') * 50)
+    .inputs(metaitem('fiber.oxidized_polyacrylonitrile') * 16)
+    .outputs(metaitem('carbon.fiber') * 16)
+    .duration(300)
+    .EUt(1920)
     .buildAndRegister()
