@@ -3090,14 +3090,5 @@ class UnknownCompositionMaterials {
                 .color(0xd6b465)
                 .build()
 
-        VanillylmandelicAcidMixture = new Material.Builder(4673, SuSyUtility.susyId('vanillylmandelic_acid_mixture'))
-                .liquid(new FluidBuilder().temperature(300).attribute(FluidAttributes.ACID))
-                .color(0xc2c099)
-                .build()
-
-        VanilglycolicAcidMixture = new Material.Builder(4674, SuSyUtility.susyId('vanilglycolic_acid_mixture'))
-                .liquid(new FluidBuilder().temperature(300).attribute(FluidAttributes.ACID))
-                .color(0x82805b)
-                .build()
     }
 }

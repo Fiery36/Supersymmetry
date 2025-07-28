@@ -3025,5 +3025,17 @@ class OrganicChemistryMaterials {
                 .components(Carbon * 12, Hydrogen * 27, Oxygen * 3, Phosphorus * 1)
                 .color(0xc3bec4)
                 .build()
+
+        SodiumVanillylmandelateSolution = new Material.Builder(4673, SuSyUtility.susyId('sodium_vanillylmandelate_solution'))
+                .liquid()
+                .setFormula('(NaC9H9O5)(NaOH)(H2O)3', true)
+                .color(0xc2c099)
+                .build()
+
+        SodiumVanilglycolateSolution = new Material.Builder(4674, SuSyUtility.susyId('sodium_vanilglycolate_solution'))
+                .liquid()
+                .setFormula('(NaC9H7O5)(NaOH)(H2O)3', true)
+                .color(0x82805b)
+                .build()
     }
 }

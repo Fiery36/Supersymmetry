@@ -763,8 +763,6 @@ class SuSyMaterials {
     public static Material PoloniumConcentrate
     public static Material PoloniumExtractionMixture
     public static Material PoloniumExtract
-    public static Material VanillylmandelicAcidMixture
-    public static Material VanilglycolicAcidMixture
 
     // Petrochem Materials
 
@@ -2268,6 +2266,8 @@ class SuSyMaterials {
     public static Material DibutylButylphosphonate
     public static Material TributylPhosphite
     public static Material NButylIodide
+    public static Material SodiumVanillylmandelateSolution
+    public static Material SodiumVanilglycolateSolution
 
     // Third Degree Materials
 
