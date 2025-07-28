@@ -2836,7 +2836,7 @@ class OrganicChemistryMaterials {
                 .colorAverage()
                 .build()
 
-        Ultem.setFormula('(C37H24O6N2)n', true)
+        Ultem.setFormula('[C37H24O6N2]n', true)
 
         PotassiumPhthalimide = new Material.Builder(15448, SuSyUtility.susyId('potassium_phthalimide'))
                 .dust()
@@ -2996,7 +2996,7 @@ class OrganicChemistryMaterials {
                 .color(0xbc716d)
                 .build()
 
-        Viton.setFormula('[(C3F6)(C2H2F2)]n', true)
+        Viton.setFormula('[C3F6]n[C2H2F2]n', true)
 
         PolyetherEtherKetone = new Material.Builder(15474, SuSyUtility.susyId('polyether_ether_ketone'))
                 .polymer()
@@ -3004,7 +3004,7 @@ class OrganicChemistryMaterials {
                 .color(0x316d3e)
                 .build()
 
-        PolyetherEtherKetone.setFormula('(C19H12O3)n', true)
+        PolyetherEtherKetone.setFormula('[C19H12O3]n', true)
 
         PolyphenyleneOxide = new Material.Builder(15475, SuSyUtility.susyId('polyphenylene_oxide'))
                 .polymer()
@@ -3012,7 +3012,7 @@ class OrganicChemistryMaterials {
                 .color(0x4a567d)
                 .build()
 
-        PolyphenyleneOxide.setFormula('(C8H8O)n(C8H8)n', true)
+        PolyphenyleneOxide.setFormula('[C8H8O]n[C8H8]n', true)
 
         NButylIodide = new Material.Builder(15476, SuSyUtility.susyId('n_butyl_iodide'))
                 .liquid()
