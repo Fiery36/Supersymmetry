@@ -238,3 +238,21 @@ REACTION_FURNACE.recipeBuilder()
         .duration(100)
         .EUt(Globals.voltAmps[4])
         .buildAndRegister()
+
+// Tungsten sources for catalysis
+
+ROASTER.recipeBuilder()
+    .inputs(ore('dustAmmoniumParatungstate'))
+    .fluidInputs(fluid('distilled_water') * 2000)
+    .fluidOutputs(fluid('ammonium_metatungstate_solution') * 4000)
+    .duration(100)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()
+
+DISTILLERY.recipeBuilder()
+    .fluidInputs(fluid('ammonium_metatungstate_solution') * 4000)
+    .outputs(metaitem('dustAmmoniumMetatungstate'))
+    .fluidOutputs(fluid('ammonia_solution') * 4000)
+    .duration(100)
+    .EUt(Globals.voltAmps[1])
+    .buildAndRegister()

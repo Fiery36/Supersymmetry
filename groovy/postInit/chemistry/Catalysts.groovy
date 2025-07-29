@@ -68,23 +68,34 @@ ROASTER.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
-// Tungsten source
+// Activated carbon supports
 
-ROASTER.recipeBuilder()
-    .inputs(ore('dustAmmoniumParatungstate'))
-    .fluidInputs(fluid('distilled_water') * 2000)
-    .fluidOutputs(fluid('ammonium_metatungstate_solution') * 4000)
-    .duration(100)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
+    // Pd/C
 
-DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('ammonium_metatungstate_solution') * 4000)
-    .outputs(metaitem('dustAmmoniumMetatungstate'))
-    .fluidOutputs(fluid('ammonia_solution') * 4000)
-    .duration(100)
-    .EUt(Globals.voltAmps[1])
-    .buildAndRegister()
+    BR.recipeBuilder()
+        .inputs(ore('dustPalladiumChloride'))
+        .inputs(ore('dustActivatedCarbon') * 4)
+        .fluidInputs(fluid('deionized_water') * 250)
+        .fluidInputs(fluid('formaldehyde') * 50)
+        .outputs(metaitem('dustPalladiumOnCarbon') * 5)
+        .fluidOutputs(fluid('acidic_wastewater') * 300)
+        .duration(120)
+        .EUt(30)
+        .buildAndRegister()
+
+    // Pt/C
+
+    BR.recipeBuilder()
+        .inputs(ore('dustActivatedCarbon') * 10)
+        .inputs(ore('dustSodiumCarbonate') * 5)
+        .fluidInputs(fluid('chloroplatinic_acid_solution') * 4000)
+        .fluidInputs(fluid('hydrazine') * 1000)
+        .fluidOutputs(fluid('carbon_dioxide') * 1000)
+        .fluidOutputs(fluid('acidic_wastewater') * 4000)
+        .duration(120)
+        .EUt(30)
+        .buildAndRegister()
+
 
 // Isomerization catalysts
 

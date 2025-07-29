@@ -1030,7 +1030,7 @@ class SuSyMaterials {
     public static Material LithiumHydroxide
     public static Material CalciumCarbide
     public static Material IronIIChloride
-    public static Material CuprousOxide
+    public static Material CopperIOxide
     public static Material LithiumBromide
     public static Material IronIIIOxide
     public static Material CopperIIChloride
