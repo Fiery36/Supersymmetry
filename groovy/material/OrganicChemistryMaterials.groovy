@@ -3028,7 +3028,7 @@ class OrganicChemistryMaterials {
 
         SodiumVanillylmandelateSolution = new Material.Builder(4673, SuSyUtility.susyId('sodium_vanillylmandelate_solution'))
                 .liquid()
-                .components(SodiumHydroxideSolution)
+                .components(Sodium, Carbon * 9, Hydrogen * 9, Oxygen * 5, SodiumHydroxide, Water * 3)
                 .color(0xc2c099)
                 .build()
 
@@ -3036,6 +3036,7 @@ class OrganicChemistryMaterials {
 
         SodiumVanilglycolateSolution = new Material.Builder(4674, SuSyUtility.susyId('sodium_vanilglycolate_solution'))
                 .liquid()
+                .components(Sodium, Carbon * 9, Hydrogen * 7, Oxygen * 5, SodiumHydroxide, Water * 4)
                 .color(0x82805b)
                 .build()
         
