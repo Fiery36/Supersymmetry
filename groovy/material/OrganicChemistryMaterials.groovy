@@ -3039,6 +3039,6 @@ class OrganicChemistryMaterials {
                 .color(0x82805b)
                 .build()
         
-        SodiumVanillylmandelateSolution.setFormula('(NaC9H7O5)(NaOH)(H2O)3', true)
+        SodiumVanillylmandelateSolution.setFormula('(NaC9H7O5)(NaOH)(H2O)4', true)
     }
 }
