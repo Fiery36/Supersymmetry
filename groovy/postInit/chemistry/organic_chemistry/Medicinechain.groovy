@@ -35,7 +35,7 @@ CRYSTALLIZER.recipeBuilder()
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
-mods.gregtech.fluid_solidifier.recipeBuilder()
+FLUID_SOLIDIFIER.recipeBuilder()
     .fluidInputs(fluid('susy_two_nitrophenol') * 144)
     .outputs(metaitem('dustSusyTwoNitrophenol') * 1)
     .duration(100)
