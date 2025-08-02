@@ -3025,6 +3025,7 @@ class OrganicChemistryMaterials {
                 .components(Carbon * 12, Hydrogen * 27, Oxygen * 3, Phosphorus * 1)
                 .color(0xc3bec4)
                 .build()
+
         SusyFourNitrophenol = new Material.Builder(15478, SuSyUtility.susyId('susy_four_nitrophenol'))
                 .dust()
                 .components(Carbon * 6, Hydrogen * 5, Nitrogen, Oxygen * 3)
