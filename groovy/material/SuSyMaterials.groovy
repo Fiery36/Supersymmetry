@@ -2266,7 +2266,13 @@ class SuSyMaterials {
     public static Material DibutylButylphosphonate
     public static Material TributylPhosphite
     public static Material NButylIodide
-
+    public static Material OrthoParaNitrophenolSolution
+    public static Material OrthoParaNitrophenolMixture
+    public static Material SusyFourNitrophenol
+    public static Material SusyTwonitrophenol
+    public static Material FourAminophenolSolution
+    public static Material SusyFourAminophenol
+    
     // Third Degree Materials
 
     public static Material FurfuralSolution

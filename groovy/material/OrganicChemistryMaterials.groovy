@@ -3025,5 +3025,30 @@ class OrganicChemistryMaterials {
                 .components(Carbon * 12, Hydrogen * 27, Oxygen * 3, Phosphorus * 1)
                 .color(0xc3bec4)
                 .build()
+        SusyFourNitrophenol = new Material.Builder(15478, SuSyUtility.susyId('susy_four_nitrophenol'))
+                .dust()
+                .components(Carbon * 6, Hydrogen * 5, Nitrogen, Oxygen * 3)
+                .color(0xe0e314)
+                .build()
+
+        SusyTwonitrophenol = new Material.Builder(15479, SuSyUtility.susyId('susy_two_nitrophenol'))
+                .dust().liquid(new FluidBuilder().temperature(317))
+                .components(Carbon * 6, Hydrogen * 5, Nitrogen, Oxygen * 3)
+                .color(0xd4c413)
+                .build()
+        
+        FourAminophenolSolution = new Material.Builder(15480, SuSyUtility.susyId('four_aminophenol_solution'))
+                .liquid()
+                .components(Carbon * 6, Hydrogen * 7, Nitrogen, Oxygen, Water * 2)
+                .color(0xd9560b)
+                .build()
+
+        FourAminophenolSolution.setFormula('(C6H7NO)(H2O)2', true)
+
+        SusyFourAminophenol = new Material.Builder(15481, SuSyUtility.susyId('susy_four_aminophenol'))
+                .dust()
+                .components(Carbon * 6, Hydrogen * 7, Nitrogen, Oxygen)
+                .color(0xd9560b)
+                .build()
     }
 }
