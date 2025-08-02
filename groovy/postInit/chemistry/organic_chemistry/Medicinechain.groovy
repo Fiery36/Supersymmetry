@@ -16,7 +16,7 @@ CSTR.recipeBuilder()
     .fluidInputs(fluid('phenol') * 50)
     .fluidOutputs(fluid('ortho_para_nitrophenol_solution') * 100)
     .duration(5)
-    .EUt(Globals.voltAmps[3])
+    .EUt(Globals.voltAmps[5])
     .buildAndRegister()
 
 DRYER.recipeBuilder()
