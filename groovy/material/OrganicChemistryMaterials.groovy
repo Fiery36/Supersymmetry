@@ -3032,7 +3032,7 @@ class OrganicChemistryMaterials {
                 .color(0xe0e314)
                 .build()
 
-        SusyTwonitrophenol = new Material.Builder(15479, SuSyUtility.susyId('susy_two_nitrophenol'))
+        SusyTwoNitrophenol = new Material.Builder(15479, SuSyUtility.susyId('susy_two_nitrophenol'))
                 .dust().liquid(new FluidBuilder().temperature(317))
                 .components(Carbon * 6, Hydrogen * 5, Nitrogen, Oxygen * 3)
                 .color(0xd4c413)
