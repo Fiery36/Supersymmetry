@@ -28,16 +28,6 @@ HOT_ISOSTATIC_PRESS.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
-// Zirconia
-
-HOT_ISOSTATIC_PRESS.recipeBuilder()
-    .inputs(ore('dustBoronNitride') * 12)
-    .fluidInputs(fluid('polyvinyl_alcohol_binder') * 400)
-    .outputs(metaitem('nozzle.boron_nitride'))
-    .duration(600)
-    .EUt(Globals.voltAmps[3])
-    .buildAndRegister()
-
 // Boron carbide
 
 ARC_FURNACE.recipeBuilder()
@@ -95,4 +85,11 @@ FORMING_PRESS.recipeBuilder()
     .outputs(metaitem('crucible.boron.nitride'))
     .duration(2000)
     .EUt(Globals.voltAmps[2])
+    .buildAndRegister()
+
+HOT_ISOSTATIC_PRESS.recipeBuilder()
+    .inputs(ore('dustBoronNitride') * 12)
+    .outputs(metaitem('nozzle.boron_nitride'))
+    .duration(600)
+    .EUt(Globals.voltAmps[3])
     .buildAndRegister()

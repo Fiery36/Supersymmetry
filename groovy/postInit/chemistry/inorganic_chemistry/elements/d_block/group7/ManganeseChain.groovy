@@ -335,3 +335,14 @@ CRYSTALLIZER.recipeBuilder()
     .duration(200)
     .EUt(30)
     .buildAndRegister()
+
+// Manganese carbonate
+
+BR.recipeBuilder()
+    .inputs(ore('dustSodaAsh') * 5)
+    .fluidInputs(fluid('manganese_ii_nitrate_solution') * 1000)
+    .outputs(metaitem('dustManganeseIiCarbonate') * 5)
+    .fluidOutputs(fluid('sodium_nitrate_solution') * 1000)
+    .duration(100)
+    .EUt(120)
+    .buildAndRegister()

@@ -115,5 +115,13 @@ REACTION_FURNACE.recipeBuilder()
     .duration(100)
     .buildAndRegister()
 
+// Strontium nitrate
 
+BR.recipeBuilder()
+    .inputs(ore('dustStrontiumOxide') * 2)
+    .fluidInputs(fluid('nitric_acid') * 2000)
+    .fluidOutputs(fluid('strontium_nitrate_solution') * 1000)
+    .EUt(Globals.voltAmps[1])
+    .duration(100)
+    .buildAndRegister()
 

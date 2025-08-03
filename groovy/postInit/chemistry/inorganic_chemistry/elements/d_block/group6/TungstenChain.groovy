@@ -186,7 +186,7 @@ DISTILLERY.recipeBuilder()
         .fluidInputs(fluid('very_diluted_sodium_sulfate_solution') * 9000)
         .outputs(metaitem('dustSodiumSulfate') * 7)
         .fluidOutputs(fluid('water') * 9000)
-        .EUt(Globals.voltAmps[1])
+        .EUt(Globals.voltAmps[2])
         .duration(20)
         .buildAndRegister()
 
