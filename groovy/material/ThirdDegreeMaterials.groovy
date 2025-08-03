@@ -816,15 +816,5 @@ class ThirdDegreeMaterials {
                 .components(FourNitroNMethylPhthalimide, SulfuricAcid, Water)
                 .colorAverage()
                 .build()
-        
-        OrthoParaNitrophenolSolution = new Material.Builder(4673, SuSyUtility.susyId('ortho_para_nitrophenol_solution'))
-                .liquid()
-                .color(0xacc21f)
-                .build()
-        
-        OrthoParaNitrophenolMixture = new Material.Builder(4674, SuSyUtility.susyId('ortho_para_nitrophenol_mixture'))
-                .dust().liquid(new FluidBuilder().temperature(388))
-                .color(0xc7af12)
-                .build()
     }
 }
