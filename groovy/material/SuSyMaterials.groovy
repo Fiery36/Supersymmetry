@@ -2272,7 +2272,7 @@ class SuSyMaterials {
     public static Material OrthoParaNitrophenolSolution
     public static Material OrthoParaNitrophenolMixture
     public static Material SusyFourNitrophenol
-    public static Material SusyTwonitrophenol
+    public static Material SusyTwoNitrophenol
     public static Material FourAminophenolSolution
     public static Material SusyFourAminophenol
     
