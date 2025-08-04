@@ -641,7 +641,7 @@ class ThirdDegreeMaterials {
                 .color(0xd9560b)
                 .build()
 
-        FourAminophenolSolution.setFormula('(C6H7NO)(H2O)2', true)
+        FourAminophenolSolution.setFormula('(C6H7NO)(C3H8O)(H2O)2', true)
 
         // FREE ID: 24102
 
