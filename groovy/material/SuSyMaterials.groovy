@@ -2270,7 +2270,7 @@ class SuSyMaterials {
     public static Material NButylIodide
     public static Material SodiumVanillylmandelateSolution
     public static Material SodiumVanilglycolateSolution
-    public static Material ParaNitrophenol
+    public static Material FourNitrophenol
     public static Material FourAminophenol
     
     // Third Degree Materials

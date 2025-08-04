@@ -40,7 +40,7 @@ LCR.recipeBuilder()
     .buildAndRegister()
 
 DT.recipeBuilder()
-    .fluidInputs(fluid('four_aminophenol_solution') * 2000)
+    .fluidInputs(fluid('four_aminophenol_solution') * 3000)
     .outputs(metaitem('dustFourAminophenol') * 15)
     .fluidOutputs(fluid('water') * 2000)
     .fluidOutputs(fluid('isopropyl_alcohol') * 1000)

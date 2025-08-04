@@ -3089,16 +3089,5 @@ class UnknownCompositionMaterials {
                 .flags(GENERATE_CATALYST_BED)
                 .color(0xd6b465)
                 .build()
-
-        // 4673-4674 are used in OrganicChemistryMaterials
-        OrthoParaNitrophenolSolution = new Material.Builder(4675, SuSyUtility.susyId('ortho_para_nitrophenol_solution'))
-                .liquid()
-                .color(0xacc21f)
-                .build()
-        
-        OrthoParaNitrophenolMixture = new Material.Builder(4676, SuSyUtility.susyId('ortho_para_nitrophenol_mixture'))
-                .dust().liquid(new FluidBuilder().temperature(388))
-                .color(0xc7af12)
-                .build()
     }
 }

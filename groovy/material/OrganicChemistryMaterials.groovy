@@ -3032,6 +3032,8 @@ class OrganicChemistryMaterials {
                 .color(0xe0e314)
                 .build()
 
+        // FREE IDs: 15479-15480
+
         FourAminophenol = new Material.Builder(15481, SuSyUtility.susyId('four_aminophenol'))
                 .dust()
                 .components(Carbon * 6, Hydrogen * 7, Nitrogen, Oxygen)
