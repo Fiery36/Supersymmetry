@@ -1585,52 +1585,6 @@ CENTRIFUGE.recipeBuilder()
     .EUt(6)
     .buildAndRegister();
 
-// Add more semi fluid fuel options
-mods.gregtech.semi_fluid_generator.removeByInput(32, null, [fluid('sulfuric_heavy_fuel') * 16])
-mods.gregtech.semi_fluid_generator.removeByInput(32, null, [fluid('heavy_fuel') * 8])
-
-SEMI_FLUID_GENERATOR.recipeBuilder()
-    .fluidInputs(fluid('diesel') * 8)
-    .duration(15)
-    .EUt(-32)
-    .buildAndRegister();
-
-SEMI_FLUID_GENERATOR.recipeBuilder()
-    .fluidInputs(fluid('sulfuric_heavy_gas_oil') * 16)
-    .duration(7)
-    .EUt(-32)
-    .buildAndRegister();
-
-SEMI_FLUID_GENERATOR.recipeBuilder()
-    .fluidInputs(fluid('heavy_gas_oil') * 8)
-    .duration(21)
-    .EUt(-32)
-    .buildAndRegister();
-
-SEMI_FLUID_GENERATOR.recipeBuilder()
-    .fluidInputs(fluid('sulfuric_natural_gas') * 16)
-    .duration(4)
-    .EUt(-32)
-    .buildAndRegister();
-
-SEMI_FLUID_GENERATOR.recipeBuilder()
-    .fluidInputs(fluid('natural_gas') * 8)
-    .duration(12)
-    .EUt(-32)
-    .buildAndRegister();
-
-SEMI_FLUID_GENERATOR.recipeBuilder()
-    .fluidInputs(fluid('propane') * 8)
-    .duration(15)
-    .EUt(-32)
-    .buildAndRegister();
-
-SEMI_FLUID_GENERATOR.recipeBuilder()
-    .fluidInputs(fluid('gtfo_stearin') * 8)
-    .duration(15)
-    .EUt(-32)
-    .buildAndRegister();
-
 // Light Concrete * 1
 mods.gregtech.fluid_solidifier.removeByInput(7, [metaitem('shape.mold.block')], [fluid('concrete') * 144])
 
