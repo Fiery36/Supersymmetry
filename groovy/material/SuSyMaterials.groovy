@@ -1534,6 +1534,8 @@ class SuSyMaterials {
     public static Material IodideConcentrate
     public static Material PPOWaste
     public static Material Hydroxylamine
+    public static Material RaneyCopper
+    public static Material ActivatedRaneyCopper
 
     // First Degree Materials B
 
@@ -2268,15 +2270,8 @@ class SuSyMaterials {
     public static Material NButylIodide
     public static Material SodiumVanillylmandelateSolution
     public static Material SodiumVanilglycolateSolution
-
-
-
-    public static Material OrthoParaNitrophenolSolution
-    public static Material OrthoParaNitrophenolMixture
-    public static Material SusyFourNitrophenol
-    public static Material SusyTwoNitrophenol
-    public static Material FourAminophenolSolution
-    public static Material SusyFourAminophenol
+    public static Material ParaNitrophenol
+    public static Material FourAminophenol
     
     // Third Degree Materials
 
@@ -2410,6 +2405,8 @@ class SuSyMaterials {
     public static Material HexamethylenetetramineSolution
     public static Material CompositionB
     public static Material Baratol
+    public static Material FourAminophenolSolution
+
 
     // Thermodynamics Materials
 

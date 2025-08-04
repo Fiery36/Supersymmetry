@@ -495,5 +495,20 @@ class FirstDegreeMaterialsB {
                 .components(Toluene, Methanol)
                 .color(0x47260e)
                 .build()
+
+        RaneyCopper = new Material.Builder(8206, SuSyUtility.susyId('raney_copper'))
+                .dust()
+                .flags(DISABLE_DECOMPOSITION)
+                .components(Copper, Aluminium)
+                .color(0xdb6d25)
+                .build()
+
+        ActivatedRaneyCopper = new Material.Builder(8207, SuSyUtility.susyId('activated_raney_copper'))
+                .dust()
+                .iconSet(SHINY)
+                .flags(DISABLE_DECOMPOSITION)
+                .components(Copper)
+                .color(0xbd6c37)
+                .build()
     }
 }
