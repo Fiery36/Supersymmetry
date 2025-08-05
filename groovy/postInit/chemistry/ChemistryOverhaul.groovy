@@ -3503,6 +3503,7 @@ ROASTER.recipeBuilder()
 // Ethylbenzene
 
 CSTR.recipeBuilder()
+    .circuitMeta(1)
     .fluidInputs(fluid('benzene') * 50)
     .fluidInputs(fluid('ethylene') * 50)
     .notConsumable(fluid('sulfuric_acid') * 50)
