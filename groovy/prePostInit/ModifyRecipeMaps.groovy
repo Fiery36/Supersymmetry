@@ -31,6 +31,7 @@ GTRecipeHandler.removeAllRecipes(GTFORecipeMaps.GREENHOUSE_RECIPES)
 GTRecipeHandler.removeAllRecipes(RecipeMaps.VACUUM_RECIPES)
 GTRecipeHandler.removeAllRecipes(RecipeMaps.ELECTROLYZER_RECIPES)
 GTRecipeHandler.removeAllRecipes(GCYMRecipeMaps.ALLOY_BLAST_RECIPES)
+GTRecipeHandler.removeAllRecipes(RecipeMaps.SEMI_FLUID_GENERATOR_FUELS)
 
 GregTechAPI.materialManager.getRegisteredMaterials().forEach(material -> {
     if (material.hasProperty(PropertyKey.FLUID) && material.getProperty(PropertyKey.FLUID).getPrimaryKey() == SusyFluidStorageKeys.SLURRY) {
