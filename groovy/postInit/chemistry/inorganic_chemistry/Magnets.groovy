@@ -362,35 +362,35 @@ POLARIZER.recipeBuilder()
     .inputs(ore('stickLongAlnico'))
     .outputs(metaitem('stickLongAlnicoMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(120)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('stickAlnico'))
     .outputs(metaitem('stickAlnicoMagnetic'))
     .duration(75)
-    .EUt(240)
+    .EUt(120)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('ringAlnico'))
     .outputs(metaitem('ringAlnicoMagnetic'))
     .duration(40)
-    .EUt(240)
+    .EUt(120)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('ingotAlnico'))
     .outputs(metaitem('ingotAlnicoMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(120)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()
     .inputs(ore('plateAlnico'))
     .outputs(metaitem('plateAlnicoMagnetic'))
     .duration(150)
-    .EUt(240)
+    .EUt(120)
     .buildAndRegister();
 
 POLARIZER.recipeBuilder()

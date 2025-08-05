@@ -1542,6 +1542,8 @@ class SuSyMaterials {
     public static Material IodideConcentrate
     public static Material PPOWaste
     public static Material Hydroxylamine
+    public static Material RaneyCopper
+    public static Material ActivatedRaneyCopper
 
     // First Degree Materials B
 
@@ -2286,7 +2288,11 @@ class SuSyMaterials {
     public static Material PerfluorovinylSulfonylEther
     public static Material RawNafion
     public static Material Nafion
-
+    public static Material SodiumVanillylmandelateSolution
+    public static Material SodiumVanilglycolateSolution
+    public static Material FourNitrophenol
+    public static Material FourAminophenol
+    
     // Third Degree Materials
 
     public static Material FurfuralSolution
@@ -2421,6 +2427,8 @@ class SuSyMaterials {
     public static Material Baratol
     public static Material PerfluorovinylSulfonylEtherSolution
     public static Material NafionSolution
+    public static Material FourAminophenolSolution
+
 
     // Thermodynamics Materials
 

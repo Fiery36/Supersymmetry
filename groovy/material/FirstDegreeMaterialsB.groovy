@@ -511,5 +511,20 @@ class FirstDegreeMaterialsB {
                 .build()
 
         Boehmite.setFormula('AlO(OH)', true)
+        
+        RaneyCopper = new Material.Builder(8742, SuSyUtility.susyId('raney_copper'))
+                .dust()
+                .flags(DISABLE_DECOMPOSITION)
+                .components(Copper, Aluminium)
+                .color(0xdb6d25)
+                .build()
+
+        ActivatedRaneyCopper = new Material.Builder(8743, SuSyUtility.susyId('activated_raney_copper'))
+                .dust()
+                .iconSet(SHINY)
+                .flags(DISABLE_DECOMPOSITION)
+                .components(Copper)
+                .color(0xbd6c37)
+                .build()
     }
 }
