@@ -231,6 +231,17 @@ class ChangeFlags {
         Bastnasite.setFormula("(REE)CO3F", true);
         Monazite.setFormula("(REE,Th)PO4", true);
         Gypsum.setFormula("(CaSO4)(H2O)2", true);
+        Polyethylene.setFormula("[C2H4]n", true);
+        PolyvinylChloride.setFormula("[C2H3Cl]n", true);
+        Rubber.setFormula("[C5H8]n", true);
+        Polycaprolactam.setFormula("[C6H11NO]n", true);
+        Polytetrafluoroethylene.setFormula("[C2F4]n", true);
+        SiliconeRubber.setFormula("[SiC2H6O]n", true);
+        StyreneButadieneRubber.setFormula("[C40H44]n", true);
+        PolyphenyleneSulfide.setFormula("[C6H4S]n", true);
+        Polybenzimidazole.setFormula("[C20H12N4]n", true);
+        PolyvinylAcetate.setFormula("[C4H6O2]n", true);
+        PolyvinylButyral.setFormula("[C8H14O2]n", true);
 
         // Ore Processing
         

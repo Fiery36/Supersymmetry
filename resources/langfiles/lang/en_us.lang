@@ -122,6 +122,9 @@ susy.material.acidic_chloronitrobenzene_mixture=Acidic Chloronitrobenzene Mixtur
 susy.material.mixed_dichlorobenzene_solution=Mixed Dichlorobenzene Solution
 susy.material.two_butanol_solution=2-Butanol Solution
 susy.material.DilutedSodiumCarbonateSolution=Diluted Sodium Carbonate Solution
+susy.material.four_nitrophenol=4-Nitrophenol
+susy.material.four_aminophenol_solution=4-Aminophenol Solution
+susy.material.four_aminophenol=4-Aminophenol
 
 susy.material.iron_ii_sulfide=Iron II Sulfide
 susy.material.potassium_bisulfate=Potassium Bisulfate
@@ -426,6 +429,9 @@ susy.material.creosol=Creosol
 susy.material.anthracene=Anthracene
 susy.material.weed_killer=Weed Killer
 susy.material.pesticide=Pesticide
+
+susy.material.sodium_vanillylmandelate_solution=Sodium Vanillylmandelate Solution
+susy.material.sodium_vanilglycolate_solution=Sodium Vanilglycolate Solution
 
 susy.material.greenhouse_gases=Greenhouse Gas
 susy.material.warm_greenhouse_gases=Warm Greenhouse Gas
@@ -1581,7 +1587,7 @@ susy.material.scrubbed_tungsten_extract=Scrubbed Tungsten Extract
 susy.material.molybdenum_trisulfide=Molybdenum Trisulfide
 susy.material.ammonium_isopolytungstate_solution=Ammonium Isopolytungstate Solution
 susy.material.ammonium_paratungstate=Ammonium Paratungstate
-susy.material.very_diluted_sodium_sulfate_solution=Diluted Sodium Sulfate Solution
+susy.material.very_diluted_sodium_sulfate_solution=Very Diluted Sodium Sulfate Solution
 susy.material.tripropylene=Tripropylene
 susy.material.isodecanal=Isodecanal
 susy.material.isodecanol=Isodecanol
@@ -2643,6 +2649,8 @@ susy.material.ethylenediamine_solution=Ethylenediamine Solution
 susy.material.xylenol_solution=Xylenol Solution
 susy.material.acidic_ethanol_solution=Acidic Ethanol Solution
 susy.material.magnesium_nitrate_solution=Magnesium Nitrate Solution
+susy.material.raney_copper=Raney Copper
+susy.material.activated_raney_copper=Activated Raney Copper
 
 # Isotopes
 
