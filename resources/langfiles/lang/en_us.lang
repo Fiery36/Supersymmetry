@@ -122,6 +122,9 @@ susy.material.acidic_chloronitrobenzene_mixture=Acidic Chloronitrobenzene Mixtur
 susy.material.mixed_dichlorobenzene_solution=Mixed Dichlorobenzene Solution
 susy.material.two_butanol_solution=2-Butanol Solution
 susy.material.DilutedSodiumCarbonateSolution=Diluted Sodium Carbonate Solution
+susy.material.four_nitrophenol=4-Nitrophenol
+susy.material.four_aminophenol_solution=4-Aminophenol Solution
+susy.material.four_aminophenol=4-Aminophenol
 
 susy.material.iron_ii_sulfide=Iron II Sulfide
 susy.material.potassium_bisulfate=Potassium Bisulfate
@@ -2628,6 +2631,8 @@ susy.material.pentaerythritol_solution=Pentaerythritol Solution
 susy.material.ethylenediamine_solution=Ethylenediamine Solution
 susy.material.xylenol_solution=Xylenol Solution
 susy.material.acidic_ethanol_solution=Acidic Ethanol Solution
+susy.material.raney_copper=Raney Copper
+susy.material.activated_raney_copper=Activated Raney Copper
 
 # Isotopes
 
