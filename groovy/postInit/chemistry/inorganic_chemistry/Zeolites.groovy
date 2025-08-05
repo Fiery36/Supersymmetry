@@ -88,7 +88,7 @@ BR.recipeBuilder()
 AUTOCLAVE.recipeBuilder() // Al(OH)3 -> AlO(OH) + H2O
     .inputs(ore('dustAluminiumHydroxide') * 7)
     .outputs(metaitem('dustBoehmite') * 4)
-    .fluidOutputs(fluid('wastewater') * 1000)
+    .fluidOutputs(fluid('water') * 1000)
     .duration(200)
     .EUt(30)
     .buildAndRegister()
