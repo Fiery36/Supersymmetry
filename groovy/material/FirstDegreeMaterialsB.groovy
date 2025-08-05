@@ -526,5 +526,11 @@ class FirstDegreeMaterialsB {
                 .components(Copper)
                 .color(0xbd6c37)
                 .build()
+
+        ReverseOsmosisWater = new Material.Builder(8744, SuSyUtility.susyId('ro_water'))
+                .liquid()
+                .components(Hydrogen * 2, Oxygen)
+                .color(0x53a4c9)
+                .build()
     }
 }

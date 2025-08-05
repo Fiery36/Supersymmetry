@@ -2651,6 +2651,7 @@ susy.material.acidic_ethanol_solution=Acidic Ethanol Solution
 susy.material.magnesium_nitrate_solution=Magnesium Nitrate Solution
 susy.material.raney_copper=Raney Copper
 susy.material.activated_raney_copper=Activated Raney Copper
+susy.material.ro_water=Reverse Osmosis Water
 
 # Isotopes
 
