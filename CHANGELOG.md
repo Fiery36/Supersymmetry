@@ -1,10 +1,11 @@
 # UPDATE 0.1.15.3
 ## Mod Changes
 ### Mod Updates
-- SusyCore v0.1.71 → v0.1.72
+- SusyCore v0.1.71 → v0.1.73
 - Supercritical 0.1.7 → 0.2.0
 ## Changes
 ### New Features
+- Water purification has been made more accurate! Make sure to reconfigure your chains, and you may need to replace your zeolites and molecular sieves. (#1602 by @planetme)
 - Paracetamol caplets are now craftable with IV energy! Use them to heal yourself rapidly in battle. (#1598 by @Rick8484)
 - [Susy-Core] The great LT loot overhaul (#510 by @oliwier509)
 - [Susy-Core] Spray cans now have the Pipeliner trait. (#511 by @MCTian-mi)
