@@ -407,7 +407,7 @@ RecipeMaps.GAS_TURBINE_FUELS
     .modifyMaxFluidOutputs(1)
 
 RecipeMaps.AUTOCLAVE_RECIPES
-    .modifyMaxFluidInputs(2)
+    .modifyMaxFluidInputs(4)
     .modifyMaxFluidOutputs(2)
 
 RecipeMaps.CHEMICAL_BATH_RECIPES
