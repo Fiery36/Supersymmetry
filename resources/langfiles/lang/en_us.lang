@@ -2967,8 +2967,8 @@ metaitem.unrefined_boule.silicon.name=Unrefined Silicon Boule
 metaitem.boule.gallium_arsenide.name=Gallium Arsenide Boule
 metaitem.unrefined_boule.gallium_arsenide.name=Unrefined Gallium Arsenide Boule
 
-metaitem.zeolite_membrane_support.name=Zeolite Membrane Support
-metaitem.zeolite_membrane.name=Zeolite Membrane
+metaitem.membrane.support.alumina.name=Zeolite Membrane Support
+metaitem.membrane.zeolite.name=Zeolite Membrane
 
 metaitem.anode_slime.silver.name=Silver Anode Slime
 metaitem.anode_slime.gold.name=Gold Anode Slime
