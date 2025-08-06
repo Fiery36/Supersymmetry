@@ -2956,7 +2956,7 @@ metaitem.baserutheniumtriniumamericiumneutronate.name=Base Ruthenium Trinium Ame
 metaitem.alternator.stator.name=Alternator Stator
 metaitem.alternator.rotor.name=Alternator Rotor
 metaitem.raw_diamond.name=Raw Diamond
-metaitem.mesh.cellulose_acetate.name=Cellulose Acetate Mesh
+metaitem.membrane.cellulose_acetate.name=Cellulose Acetate Membrane
 metaitem.mesh.platinum.name=Platinum Mesh
 metaitem.mesh.platinum_rhodium.name=Platinum-Rhodium Mesh
 

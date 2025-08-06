@@ -170,6 +170,18 @@ MIXER.recipeBuilder()
     .EUt(30)
     .buildAndRegister()
 
+AUTOCLAVE.recipeBuilder()
+    .inputs(ore('dustSodiumHydroxide') * 36)
+    .inputs(metaitem('membrane.support.alumina'))
+    .fluidInputs(fluid('distilled_water') * 1000)
+    .fluidInputs(fluid('sodium_aluminate_solution') * 750)
+    .fluidInputs(fluid('sodium_silicate_solution') * 1500)
+    .fluidInputs(fluid('distilled_water') * 3750)
+    .outputs(metaitem('membrane.zeolite'))
+    .duration(180)
+    .EUt(30)
+    .buildAndRegister()
+
 // Type Y zeolite (FAU structure, FCC catalyst)
 
 AUTOCLAVE.recipeBuilder()

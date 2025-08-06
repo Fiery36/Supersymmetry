@@ -15,7 +15,7 @@ def EVAPORATION_POOL = recipemap('evaporation_pool');
 def FLUID_HEATER = recipemap('fluid_heater');
 def ION_EXCHANGE = recipemap('ion_exchange_column');
 def VACUUM_CHAMBER = recipemap('vacuum_chamber');
-def COMPRESSOR = recipemap('compressor');
+def FLUID_COMPRESSOR = recipemap('fluid_compressor');
 def UV_LIGHT_BOX = recipemap('uv_light_box');
 def BR = recipemap('batch_reactor');
 def BCR = recipemap('bubble_column_reactor');
@@ -184,28 +184,19 @@ MSFD.recipeBuilder()
     .EUt(120)
     .buildAndRegister()
 
-PSA.recipeBuilder()
-    .notConsumable(metaitem('mesh.cellulose_acetate'))
+FLUID_COMPRESSOR.recipeBuilder()
+    .notConsumable(metaitem('membrane.cellulose_acetate'))
     .fluidInputs(fluid('salt_water') * 10000)
-    .outputs(metaitem('dustSalt') * 20)
-    .fluidOutputs(fluid('water') * 10000)
-    .duration(80)
+    .fluidOutputs(fluid('hypersaline_water') * 2500)
+    .fluidOutputs(fluid('water') * 7500)
+    .duration(40)
     .EUt(480)
     .buildAndRegister()
 
-PSA.recipeBuilder()
-    .notConsumable(metaitem('mesh.cellulose_acetate'))
+FLUID_COMPRESSOR.recipeBuilder()
+    .notConsumable(metaitem('membrane.cellulose_acetate'))
     .fluidInputs(fluid('concentrated_salt_water') * 10000)
-    .outputs(metaitem('dustSalt') * 40)
-    .fluidOutputs(fluid('water') * 10000)
-    .duration(80)
-    .EUt(480)
-    .buildAndRegister()
-
-PSA.recipeBuilder()
-    .notConsumable(metaitem('mesh.cellulose_acetate'))
-    .fluidInputs(fluid('hypersaline_water') * 5000)
-    .outputs(metaitem('dustSalt') * 40)
+    .fluidOutputs(fluid('hypersaline_water') * 5000)
     .fluidOutputs(fluid('water') * 5000)
     .duration(40)
     .EUt(480)
@@ -295,9 +286,9 @@ VACUUM_CHAMBER.recipeBuilder()
     .buildAndRegister()
 
 // Reverse osmosis
-COMPRESSOR.recipeBuilder()
+FLUID_COMPRESSOR.recipeBuilder()
     .fluidInputs(fluid('deaerated_water') * 1000)
-    .notConsumable(metaitem('mesh.cellulose_acetate'))
+    .notConsumable(metaitem('membrane.cellulose_acetate'))
     .fluidOutputs(fluid('ro_water') * 800)
     .fluidOutputs(fluid('wastewater') * 200)
     .duration(100)
