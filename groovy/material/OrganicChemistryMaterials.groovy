@@ -959,6 +959,7 @@ class OrganicChemistryMaterials {
                 .build()
 
         CelluloseAcetate = new Material.Builder(15157, SuSyUtility.susyId('cellulose_acetate'))
+                .dust()
                 .components(Carbon * 76, Hydrogen * 114, Oxygen * 49)
                 .color(0xd4c9ab)
                 .build()

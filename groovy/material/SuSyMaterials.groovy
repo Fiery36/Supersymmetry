@@ -1577,6 +1577,7 @@ class SuSyMaterials {
     public static Material BariumNitrate
     public static Material DiammoniumHydrogenPhosphate
     public static Material Boehmite
+    public static Material ReverseOsmosisWater
 
     // HP Materials
 

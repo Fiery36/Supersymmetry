@@ -2552,7 +2552,7 @@ metaitem.baserutheniumtriniumamericiumneutronate.name=Basis-Ruthenium-Trinium-Am
 metaitem.alternator.stator.name=Generatorstator
 metaitem.alternator.rotor.name=Generatorrotor
 metaitem.raw_diamond.name=Roher Diamant
-metaitem.mesh.cellulose_acetate.name=Celluloseacetat-Gewebe
+metaitem.membrane.cellulose_acetate.name=Celluloseacetat-Membran
 metaitem.mesh.platinum.name=Platingewebe
 metaitem.mesh.platinum_rhodium.name=Platin-Rhodium-Gewebe
 

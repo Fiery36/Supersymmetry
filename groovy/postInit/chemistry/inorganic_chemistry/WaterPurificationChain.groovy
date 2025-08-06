@@ -15,7 +15,7 @@ def EVAPORATION_POOL = recipemap('evaporation_pool');
 def FLUID_HEATER = recipemap('fluid_heater');
 def ION_EXCHANGE = recipemap('ion_exchange_column');
 def VACUUM_CHAMBER = recipemap('vacuum_chamber');
-def COMPRESSOR = recipemap('compressor');
+def FLUID_COMPRESSOR = recipemap('fluid_compressor');
 def UV_LIGHT_BOX = recipemap('uv_light_box');
 def BR = recipemap('batch_reactor');
 def BCR = recipemap('bubble_column_reactor');
@@ -184,28 +184,19 @@ MSFD.recipeBuilder()
     .EUt(120)
     .buildAndRegister()
 
-PSA.recipeBuilder()
-    .notConsumable(metaitem('mesh.cellulose_acetate'))
+FLUID_COMPRESSOR.recipeBuilder()
+    .notConsumable(metaitem('membrane.cellulose_acetate'))
     .fluidInputs(fluid('salt_water') * 10000)
-    .outputs(metaitem('dustSalt') * 20)
-    .fluidOutputs(fluid('water') * 10000)
-    .duration(80)
+    .fluidOutputs(fluid('hypersaline_water') * 2500)
+    .fluidOutputs(fluid('water') * 7500)
+    .duration(40)
     .EUt(480)
     .buildAndRegister()
 
-PSA.recipeBuilder()
-    .notConsumable(metaitem('mesh.cellulose_acetate'))
+FLUID_COMPRESSOR.recipeBuilder()
+    .notConsumable(metaitem('membrane.cellulose_acetate'))
     .fluidInputs(fluid('concentrated_salt_water') * 10000)
-    .outputs(metaitem('dustSalt') * 40)
-    .fluidOutputs(fluid('water') * 10000)
-    .duration(80)
-    .EUt(480)
-    .buildAndRegister()
-
-PSA.recipeBuilder()
-    .notConsumable(metaitem('mesh.cellulose_acetate'))
-    .fluidInputs(fluid('hypersaline_water') * 5000)
-    .outputs(metaitem('dustSalt') * 40)
+    .fluidOutputs(fluid('hypersaline_water') * 5000)
     .fluidOutputs(fluid('water') * 5000)
     .duration(40)
     .EUt(480)
@@ -239,7 +230,7 @@ CLARIFIER.recipeBuilder()
 // Deionized water
 ION_EXCHANGE.recipeBuilder()
     .notConsumable(metaitem('beads.strong_acidic_cation_exchange'))
-    .fluidInputs(fluid('water') * 12800)
+    .fluidInputs(fluid('ro_water') * 12800)
     .fluidInputs(fluid('diluted_sulfuric_acid') * 20)
     .fluidOutputs(fluid('partially_deionized_water') * 12800)
     .fluidOutputs(fluid('wastewater') * 10)
@@ -278,38 +269,43 @@ ION_EXCHANGE.recipeBuilder()
     .buildAndRegister()
 
 // Ultrapure water for semiconductors
+SIFTER.recipeBuilder()
+    .fluidInputs(fluid('water') * 1000)
+    .notConsumable(ore('dustActivatedCarbon') * 4)
+    .fluidOutputs(fluid('filtered_water') * 1000)
+    .duration(100)
+    .EUt(30)
+    .buildAndRegister()
+
 VACUUM_CHAMBER.recipeBuilder()
-    .fluidInputs(fluid('deionized_water') * 1000)
+    .fluidInputs(fluid('filtered_water') * 1000)
     .fluidInputs(fluid('steam') * 100)
     .fluidOutputs(fluid('deaerated_water') * 1100)
     .duration(110)
     .EUt(30)
     .buildAndRegister()
 
-COMPRESSOR.recipeBuilder()
+// Reverse osmosis
+FLUID_COMPRESSOR.recipeBuilder()
     .fluidInputs(fluid('deaerated_water') * 1000)
-    .notConsumable(metaitem('mesh.cellulose_acetate'))
-    .fluidOutputs(fluid('filtered_water') * 1000)
+    .notConsumable(metaitem('membrane.cellulose_acetate'))
+    .fluidOutputs(fluid('ro_water') * 800)
+    .fluidOutputs(fluid('wastewater') * 200)
     .duration(100)
     .EUt(30)
     .buildAndRegister()
 
+// Deionization occurs between these two steps
+
 UV_LIGHT_BOX.recipeBuilder()
-    .fluidInputs(fluid('filtered_water') * 1000)
+    .fluidInputs(fluid('deionized_water') * 1000)
     .fluidOutputs(fluid('sterilized_water') * 1000)
     .duration(100)
     .EUt(30)
     .buildAndRegister()
 
 DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('deaerated_water') * 100)
-    .fluidOutputs(fluid('ultrapure_water') * 15)
-    .duration(10)
-    .EUt(50)
-    .buildAndRegister()
-
-DISTILLERY.recipeBuilder()
-    .fluidInputs(fluid('filtered_water') * 100)
+    .fluidInputs(fluid('ro_water') * 100)
     .fluidOutputs(fluid('ultrapure_water') * 30)
     .duration(10)
     .EUt(40)
@@ -317,7 +313,7 @@ DISTILLERY.recipeBuilder()
 
 DISTILLERY.recipeBuilder()
     .fluidInputs(fluid('deionized_water') * 100)
-    .fluidOutputs(fluid('ultrapure_water') * 5)
+    .fluidOutputs(fluid('ultrapure_water') * 60)
     .duration(10)
     .EUt(60)
     .buildAndRegister()

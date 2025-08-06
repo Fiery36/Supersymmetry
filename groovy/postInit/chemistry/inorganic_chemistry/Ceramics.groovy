@@ -28,6 +28,20 @@ HOT_ISOSTATIC_PRESS.recipeBuilder()
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
+for (blanket in sintering_blankets) {
+    SINTERING_OVEN.recipeBuilder()
+        .inputs(ore('dustAlumina') * 5)
+        .inputs(ore('dustSmallGraphite'))    
+        .notConsumable(metaitem('shape.mold.plate'))
+        .fluidInputs(fluid(blanket.name) * blanket.amountRequired)
+        .outputs(metaitem('membrane.support.alumina'))
+        .circuitMeta(2)
+        .duration(blanket.duration)
+        .EUt(Globals.voltAmps[2])
+        .buildAndRegister()
+}
+
+
 // Boron carbide
 
 ARC_FURNACE.recipeBuilder()
