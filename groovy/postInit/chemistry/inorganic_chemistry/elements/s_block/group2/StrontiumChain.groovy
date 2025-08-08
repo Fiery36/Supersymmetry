@@ -125,3 +125,15 @@ BR.recipeBuilder()
     .duration(100)
     .buildAndRegister()
 
+// Strontium carbonate
+
+BR.recipeBuilder()
+    .inputs(ore('dustSodaAsh') * 6)
+    .fluidInputs(fluid('strontium_nitrate_solution') * 1000)
+    .fluidInputs(fluid('distilled_water') * 1000)
+    .outputs(metaitem('dustStrontiumCarbonate') * 5)
+    .fluidOutputs(fluid('sodium_nitrate_solution') * 2000)
+    .EUt(Globals.voltAmps[1])
+    .duration(100)
+    .buildAndRegister()
+

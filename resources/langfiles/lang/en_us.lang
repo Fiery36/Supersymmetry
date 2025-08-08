@@ -2142,7 +2142,6 @@ susy.material.hp_fuel_gas=High Pressure Fuel Gas
 susy.material.cold_hp_fuel_gas=Cold High Pressure Fuel Gas
 susy.material.rp_one=RP-1
 susy.material.ammonium_metatungstate=Ammonium Metatungstate (AMT)
-susy.material.ammonium_metatungstate_solution=Ammonium Metatungstate Solution
 susy.material.clarified_slurry_oil=Clarified Slurry Oil
 susy.material.pyrolysis_raffinate=Pyrolysis Raffinate
 susy.material.carbon_black=Carbon Black
@@ -2652,6 +2651,34 @@ susy.material.magnesium_nitrate_solution=Magnesium Nitrate Solution
 susy.material.raney_copper=Raney Copper
 susy.material.activated_raney_copper=Activated Raney Copper
 susy.material.ro_water=Reverse Osmosis Water
+susy.material.ammoxidation_catalyst=Ammoxidation Catalyst
+susy.material.propylene_ammoxidation_mixture=Propylene Ammoxidation Mixture
+susy.material.crude_acrylonitrile=Crude Acrylonitrile
+susy.material.chromium_iii_nitrate_solution=Chromium III Nitrate Solution
+susy.material.chromium_iii_carbonate=Chromium III Carbonate
+susy.material.manganese_ii_carbonate=Manganese II Carbonate
+susy.material.cerium_iii_carbonate=Cerium III Carbonate
+susy.material.gadolinium_carbonate=Gadolinium Carbonate
+susy.material.strontium_nitrate_solution=Strontium Nitrate Solution
+susy.material.lanthanum_strontium_manganite=Lanthanum Strontium Manganite (LSM)
+susy.material.gadolinium_doped_ceria=Gadolinium Doped Ceria (GDC)
+susy.material.nickel_gadolinium_doped_ceria=Nickel Gadolinium Doped Ceria
+susy.material.nickel_yttria_stabilized_zirconia=Nickel Yttria Stabilized Zirconia
+susy.material.lanthanum_strontium_chromite=Lanthanum Strontium Chromite (LSC)
+susy.material.bismuth_iii_nitrate_solution=Bismuth III Nitrate Solution
+susy.material.platinum_on_carbon=Platinum On Carbon
+susy.material.acrylonitrile=Acrylonitrile
+susy.material.polyacrylonitrile=Polyacrylonitrile (PAN)
+susy.material.dimethyl_sulfide=Dimethyl Sulfide (DMS)
+susy.material.dimethyl_sulfoxide=Dimethyl Sulfoxide (DMSO)
+susy.material.diethyl_sulfate=Diethyl Sulfate
+susy.material.dichlorodiphenyl_sulfone=Dichlorodiphenyl Sulfone
+susy.material.polysulfone=Polysulfone
+susy.material.polyacrylonitrile_solution=Polyacrylonitrile Solution
+susy.material.dichlorodiphenyl_sulfone_solution=Dichlorodiphenyl Sulfone Solution
+susy.material.fuel_cell_catalyst_solution=Fuel Cell Catalyst Solution
+susy.material.polytetrafluoroethylene_coating_solution=Polytetrafluoroethylene Coating Solution
+susy.material.acetonitrile=Acetonitrile
 
 # Isotopes
 
@@ -2700,6 +2727,7 @@ recipemap.high_pressure_cryogenic_distillation.name=High Pressure Cryogenic Dist
 recipemap.high_pressure_advanced_steam_turbine=High Pressure Advanced Steam Turbine
 recipemap.low_pressure_advanced_steam_turbine=Low Pressure Advanced Steam Turbine
 recipemap.injection_molder.name=Injection Molding
+recipemap.fuel_cell=Fuel Cell
 
 # QMD Particles
 
@@ -3097,6 +3125,10 @@ metaitem.brush.unfired.name=Unfired Brush
 
 metaitem.work_roll.unfinished.name=Unfinished Work Roll
 metaitem.nozzle.boron_nitride.name=Boron Nitride Nozzle
+
+metaitem.fiber.oxidized_polyacrylonitrile.name=Oxidized Polyacrylonitrile Fiber
+metaitem.carbon.mesh.treated.name=Treated Carbon Mesh
+metaitem.proton_exchange_membrane_fuel_cell.name=Proton Exchange Membrane Fuel Cell (PEMFC)
 
 # Vanilla MC
 tile.hellsand.name=Mineral-Rich Sand

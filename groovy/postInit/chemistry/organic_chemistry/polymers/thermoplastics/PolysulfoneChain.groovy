@@ -34,7 +34,7 @@ DISTILLERY.recipeBuilder()
     .buildAndRegister()
 
 POLYMERIZATION.recipeBuilder()
-    .notConsumable(fluid('dimethyl_sulfone') * 1000)
+    .notConsumable(fluid('dimethyl_sulfoxide') * 1000)
     .inputs(ore('dustDichlorodiphenylSulfone') * 25)
     .inputs(ore('dustSodiumBisphenolate') * 33)
     .outputs(metaitem('dustPolysulfone'))

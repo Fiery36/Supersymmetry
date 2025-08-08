@@ -65,7 +65,7 @@ DISTILLERY.recipeBuilder()
 
 BR.recipeBuilder()
     .inputs(ore('dustRawNafion'))
-    .fluidInputs(fluid('deionized_water') * 2000)
+    .fluidInputs(fluid('distilled_water') * 2000)
     .outputs(metaitem('dustNafion'))
     .fluidOutputs(fluid('hydrofluoric_acid') * 1000)
     .duration(40)
