@@ -581,7 +581,7 @@ class FirstDegreeMaterialsB {
 
         LanthanumStrontiumManganite = new Material.Builder(8751, SuSyUtility.susyId('lanthanum_strontium_manganite'))
                 .components(Lanthanum, Strontium, Manganese, Oxygen * 3)
-                .flags(GENERATE_PLATE)
+                .flags(GENERATE_PLATE, DISABLE_DECOMPOSITION)
                 .colorAverage()
                 .build()
 
@@ -589,7 +589,7 @@ class FirstDegreeMaterialsB {
 
         GadoliniumDopedCeria = new Material.Builder(8752, SuSyUtility.susyId('gadolinium_doped_ceria'))
                 .components(Cerium, Gadolinium, Oxygen * 2)
-                .flags(GENERATE_PLATE)
+                .flags(GENERATE_PLATE, DISABLE_DECOMPOSITION)
                 .colorAverage()
                 .build()
 
@@ -597,7 +597,7 @@ class FirstDegreeMaterialsB {
 
         NickelGadoliniumDopedCeria = new Material.Builder(8753, SuSyUtility.susyId('nickel_gadolinium_doped_ceria'))
                 .components(Nickel, Gadolinium, Cerium, Oxygen * 3)
-                .flags(GENERATE_PLATE)
+                .flags(GENERATE_PLATE, DISABLE_DECOMPOSITION)
                 .colorAverage()
                 .build()
 
@@ -605,7 +605,7 @@ class FirstDegreeMaterialsB {
 
         NickelYttriaStabilizedZirconia = new Material.Builder(8754, SuSyUtility.susyId('nickel_yttria_stabilized_zirconia'))
                 .components(Nickel, Yttrium, Zirconium, Oxygen * 3)
-                .flags(GENERATE_PLATE)
+                .flags(GENERATE_PLATE, DISABLE_DECOMPOSITION)
                 .colorAverage()
                 .build()
 
@@ -613,15 +613,16 @@ class FirstDegreeMaterialsB {
 
         LanthanumStrontiumChromite = new Material.Builder(8755, SuSyUtility.susyId('lanthanum_strontium_chromite'))
                 .components(Lanthanum, Strontium, Chrome, Oxygen * 3)
-                .flags(GENERATE_PLATE)
+                .flags(GENERATE_PLATE, DISABLE_DECOMPOSITION)
                 .colorAverage()
                 .build()
 
         LanthanumStrontiumChromite.setFormula("(La,Sr)CrO3", true)
 
         YttriaStabilizedZirconia = new Material.Builder(8756, SuSyUtility.susyId('yttria_stabilized_zirconia'))
+                .dust()
                 .components(Yttrium, Zirconium, Oxygen * 2)
-                .flags(GENERATE_PLATE)
+                .flags(GENERATE_PLATE, DISABLE_DECOMPOSITION)
                 .color(0xe3ecff)
                 .build()
 

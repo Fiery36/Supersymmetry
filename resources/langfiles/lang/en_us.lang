@@ -2727,7 +2727,6 @@ recipemap.high_pressure_cryogenic_distillation.name=High Pressure Cryogenic Dist
 recipemap.high_pressure_advanced_steam_turbine=High Pressure Advanced Steam Turbine
 recipemap.low_pressure_advanced_steam_turbine=Low Pressure Advanced Steam Turbine
 recipemap.injection_molder.name=Injection Molding
-recipemap.fuel_cell=Fuel Cell
 
 # QMD Particles
 
