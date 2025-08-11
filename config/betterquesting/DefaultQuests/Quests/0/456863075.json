@@ -32,11 +32,11 @@
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
-          "id:8": "pyrotech:tinder"
+          "id:8": "pyrotech:bow_drill_durable_spindle"
         },
         "1:10": {
           "Count:3": 1,
-          "id:8": "pyrotech:bow_drill_durable_spindle"
+          "id:8": "pyrotech:tinder"
         }
       },
       "taskID:8": "bq_standard:optional_retrieval"
