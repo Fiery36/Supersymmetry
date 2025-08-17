@@ -1628,25 +1628,12 @@ mods.gregtech.arc_furnace.removeByInput(30, [item('gregtech:turbine_casing', 8)]
 // Solid Steel Machine Casing * 2
 mods.gregtech.assembler.removeByInput(16, [metaitem('plateSteel') * 6, metaitem('frameSteel'), metaitem('circuit.integrated').withNbt(["Configuration": 6])], null)
 
-RecyclingHelper.replaceShaped("gregtech:casing_steel_solid", item('gregtech:metal_casing', 4) * 4, [
+//Steel Casing * 4
+crafting.replaceShaped("gregtech:casing_steel_solid", item('gregtech:metal_casing', 4) * 4, [
     [ore('plateSteel'), ore('craftingToolHardHammer'), ore('plateSteel')],
     [ore('plateSteel'), ore('frameGtSteel'), ore('plateSteel')],
     [ore('plateSteel'), ore('craftingToolWrench'), ore('plateSteel')]
 ])
-
-for (i in 0..15) {
-RecyclingHelper.removeRecyclingRecipes(item('gregtech:warning_sign', i))
-RecyclingHelper.handleRecycling(item('gregtech:warning_sign', i), [
-    metaitem('ingotSteel') * 2
-])
-}
-
-for (i in 0..8) {
-RecyclingHelper.removeRecyclingRecipes(item('gregtech:warning_sign_1', i))
-RecyclingHelper.handleRecycling(item('gregtech:warning_sign_1', i), [
-    metaitem('ingotSteel') * 2
-])
-}
 
 ASSEMBLER.recipeBuilder()
     .circuitMeta(6)
@@ -1657,15 +1644,21 @@ ASSEMBLER.recipeBuilder()
     .duration(50)
     .buildAndRegister()
 
-//Steel Pipe Casing
-RecyclingHelper.replaceShaped("gregtech:casing_steel_pipe", item('gregtech:boiler_casing', 1) * 4, [
+RecyclingHelper.removeRecyclingRecipes(item('gregtech:metal_casing', 9))
+RecyclingHelper.handleRecycling(item('gregtech:metal_casing', 9), [
+    ore('ingotSteel') * 2,
+    ore('stickPolytetrafluoroethylene') * 3
+])
+
+//Steel Pipe Casing * 4
+crafting.replaceShaped("gregtech:casing_steel_pipe", item('gregtech:boiler_casing', 1) * 4, [
     [ore('plateSteel'), ore('pipeNormalFluidSteel'), ore('plateSteel')],
     [ore('pipeNormalFluidSteel'), ore('frameGtSteel'), ore('pipeNormalFluidSteel')],
     [ore('plateSteel'), ore('pipeNormalFluidSteel'), ore('plateSteel')]
 ])
 
-//Steel Firebox Casing
-RecyclingHelper.replaceShaped("gregtech:casing_steel_firebox", item('gregtech:boiler_firebox_casing', 1) * 4, [
+//Steel Firebox Casing * 4
+crafting.replaceShaped("gregtech:casing_steel_firebox", item('gregtech:boiler_firebox_casing', 1) * 4, [
     [ore('plateSteel'), ore('stickSteel'), ore('plateSteel')],
     [ore('stickSteel'), ore('frameGtSteel'), ore('stickSteel')],
     [ore('plateSteel'), ore('stickSteel'), ore('plateSteel')]
