@@ -56,10 +56,6 @@ mods.gregtech.fluid_solidifier.removeByInput(7, [metaitem('shape.mold.plate')], 
 mods.gregtech.compressor.removeByInput(2, [metaitem('dustBerylliumOxide')], null)
 // Laminated Glass * 1
 mods.gregtech.forming_press.removeByInput(480, [item('gregtech:transparent_casing') * 2, metaitem('platePolyvinylButyral')], null)
-// Magnalium Ingot * 3
-mods.gregtech.arc_furnace.removeByInput(30, [item('gregtech:turbine_casing', 5)], [fluid('oxygen') * 150])
-// Magnalium Dust * 3
-mods.gregtech.macerator.removeByInput(8, [item('gregtech:turbine_casing', 5)], null)
 // Gelatin Mixture * 4000
 mods.gregtech.mixer.removeByInput(480, [metaitem('dustCollagen') * 4], [fluid('phosphoric_acid') * 1000, fluid('water') * 3000])
 mods.gregtech.blender.removeByInput(480, [metaitem('dustCollagen') * 4], [fluid('phosphoric_acid') * 1000, fluid('water') * 3000])
@@ -1561,19 +1557,6 @@ CENTRIFUGE.recipeBuilder()
     .EUt(30)
     .buildAndRegister();2
 
-// Steel Turbine Casing * 2
-mods.gregtech.assembler.removeByInput(16, [metaitem('plateMagnalium') * 6, metaitem('frameBlueSteel'), metaitem('circuit.integrated').withNbt(["Configuration": 6])], null)
-
-ASSEMBLER.recipeBuilder()
-    .circuitMeta(6)
-    .inputs(ore('stickLongSteel') * 2)
-    .inputs(ore('plateSteel') * 4)
-    .inputs(item('gregtech:stone_smooth', 4))
-    .outputs(item('gregtech:turbine_casing', 5) * 4)
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
-
 // Ashes * 1
 mods.gregtech.centrifuge.removeByInput(6, [metaitem('dustDarkAsh')], null)
 
@@ -1596,32 +1579,8 @@ FLUID_SOLIDIFIER.recipeBuilder()
     .EUt(7)
     .buildAndRegister();
 
-mods.gregtech.arc_furnace.recipeBuilder()
-    .fluidInputs(fluid('oxygen') * 150)
-    .inputs(item('gregtech:turbine_casing', 5) * 4)
-    .outputs(metaitem('ingotSteel') * 6)
-    .outputs(item('gregtech:stone_smooth', 4))
-    .duration(150)
-    .EUt(30)
-    .buildAndRegister();
-
-MACERATOR.recipeBuilder()
-    .inputs(item('gregtech:turbine_casing', 5) * 4)
-    .outputs(metaitem('dustSteel') * 6)
-    .outputs(metaitem('dustConcrete'))
-    .duration(150)
-    .EUt(7)
-    .buildAndRegister();
-
 // Wireless Digital Interface * 1
 mods.gregtech.assembler.removeByInput(480, [metaitem('cover.digital'), metaitem('wireless')], [fluid('plastic') * 144])
-
-// Stainless Steel Ingot * 3
-mods.gregtech.arc_furnace.removeByInput(30, [item('gregtech:turbine_casing', 7)], [fluid('oxygen') * 234])
-// Titanium Ingot * 3
-mods.gregtech.arc_furnace.removeByInput(30, [item('gregtech:turbine_casing', 6)], [fluid('oxygen') * 213])
-// Tungstensteel Ingot * 3
-mods.gregtech.arc_furnace.removeByInput(30, [item('gregtech:turbine_casing', 8)], [fluid('oxygen') * 426])
 
 // ---------- Multiblock components rebalance ----------
 
