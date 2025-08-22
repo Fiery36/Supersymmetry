@@ -356,6 +356,20 @@ mods.gregtech.blender.removeByInput(120, null, [fluid('light_fuel') * 5000 * 500
 mods.gregtech.blender.removeByInput(1920, [metaitem('dustTungsten'), metaitem('dustSteel'), metaitem('circuit.integrated').withNbt(['Configuration': 1])], null)
 // Tempered Glass * 1
 mods.gregtech.arc_furnace.removeByInput(30, [item('minecraft:glass')], [fluid('oxygen') * 60 * 60])
+// Yttria Stabilized Zirconia Plate * 1
+mods.gregtech.compressor.removeByInput(2, [metaitem('dustYttriaStabilizedZirconia')], null)
+// Small Ethylene-Vinyl Acetate (EVA) Fluid Pipe * 1
+mods.gregtech.extruder.removeByInput(42, [metaitem('ingotEthyleneVinylAcetate'), metaitem('shape.extruder.pipe.small')], null)
+// Small Ethylene-Vinyl Acetate (EVA) Fluid Pipe * 1
+mods.gregtech.extruder.removeByInput(42, [metaitem('dustEthyleneVinylAcetate'), metaitem('shape.extruder.pipe.small')], null)
+// Polysulfone Rod * 2
+mods.gregtech.extruder.removeByInput(42, [metaitem('ingotPolysulfone'), metaitem('shape.extruder.rod')], null)
+// Viton Ring * 4
+mods.gregtech.extruder.removeByInput(42, [metaitem('ingotViton'), metaitem('shape.extruder.ring')], null)
+// Viton Ring * 4
+mods.gregtech.extruder.removeByInput(42, [metaitem('dustViton'), metaitem('shape.extruder.ring')], null)
+
+
 
 RecipeMaps.SIFTER_RECIPES
     .modifyMaxFluidInputs(1)
