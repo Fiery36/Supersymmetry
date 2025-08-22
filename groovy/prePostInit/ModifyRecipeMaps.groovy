@@ -368,7 +368,18 @@ mods.gregtech.extruder.removeByInput(42, [metaitem('ingotPolysulfone'), metaitem
 mods.gregtech.extruder.removeByInput(42, [metaitem('ingotViton'), metaitem('shape.extruder.ring')], null)
 // Viton Ring * 4
 mods.gregtech.extruder.removeByInput(42, [metaitem('dustViton'), metaitem('shape.extruder.ring')], null)
-
+// Polyvinylidene Fluoride (PVDF) Sheet * 1
+mods.gregtech.extruder.removeByInput(56, [metaitem('ingotPolyvinylideneFluoride'), metaitem('shape.extruder.plate')], null)
+// Polyvinylidene Fluoride (PVDF) Sheet * 1
+mods.gregtech.extruder.removeByInput(56, [metaitem('dustPolyvinylideneFluoride'), metaitem('shape.extruder.plate')], null)
+// Thin Polyphenylene Sulfide Sheet * 4
+mods.gregtech.extruder.removeByInput(24, [metaitem('ingotPolyphenyleneSulfide'), metaitem('shape.extruder.foil')], null)
+// Thin Polyphenylene Sulfide Sheet * 4
+mods.gregtech.extruder.removeByInput(24, [metaitem('dustPolyphenyleneSulfide'), metaitem('shape.extruder.foil')], null)
+// Thin Polyphenylene Sulfide Sheet * 4
+mods.gregtech.bender.removeByInput(24, [metaitem('platePolyphenyleneSulfide'), metaitem('circuit.integrated').withNbt(['Configuration': 1])], null)
+// Thin Polyphenylene Sulfide Sheet * 4
+mods.gregtech.bender.removeByInput(24, [metaitem('ingotPolyphenyleneSulfide'), metaitem('circuit.integrated').withNbt(['Configuration': 10])], null)
 
 
 RecipeMaps.SIFTER_RECIPES
