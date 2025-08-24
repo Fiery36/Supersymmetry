@@ -974,7 +974,8 @@ crafting.replaceShaped("pyrotech:tech/machine/stone_kiln", item('pyrotech:stone_
 // Controller
 crafting.addShaped("susy:primitive_smelter", metaitem('susy:primitive_smelter'), [
         [ore('craftingToolHardHammer')],
-        [item('pyrotech:masonry_brick_block')]
+        [item('pyrotech:masonry_brick_block')],
+        [metaitem('blowpipe')]
 ])
 
 // Export

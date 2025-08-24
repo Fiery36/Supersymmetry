@@ -346,7 +346,7 @@ crafting.addShapeless('gregtech:salt_water_bucket', item('forge:bucketfilled').w
 
 RecyclingHelper.replaceShaped('gregtech:bronze_primitive_blast_furnace', metaitem('primitive_blast_furnace.bronze'), [
     [ore('craftingToolHardHammer'), ore('stickBronze'), ore('screwBronze')],
-    [ore('plateBronze'), item('gregtech:metal_casing:1'), ore('stickBronze')],
+    [ore('plateBronze'), item('gregtech:metal_casing:1'), metaitem('bellows')],
     [ore('craftingToolScrewdriver'), ore('stickBronze'), ore('screwBronze')]
 ])
 
