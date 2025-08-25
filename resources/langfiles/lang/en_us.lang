@@ -2783,9 +2783,6 @@ metaitem.native_copper.name=Native Copper
 metaitem.mudbrick_mix.name=Mudbrick Mix
 metaitem.slaked_lime.name=Slaked Lime
 
-metaitem.blowpipe.name=Blowpipe
-metaitem.bellows.name=Bellows
-
 metaitem.spaceship.me.scrap.name=Orbital Scrap
 metaitem.wafer.pattern.processor.name=Pattern CPU Wafer
 metaitem.wafer.pattern.memory.name=Pattern RAM Wafer
@@ -3185,7 +3182,6 @@ gregtech.machine.electric_blast_furnace.name=Electric Resistance Furnace
 gregtech.multiblock.electric_blast_furnace.description=The Electric Resistance Furnace (ERF) is a multiblock structure used for smelting alloys, cooking metals and refining ores. It is required for obtaining high-tier alloys and metals, such as aluminium, stainless steel, titanium, and naquadah alloy.
 gregtech.advancement.medium_voltage.31_mv_energy_hatch.name=Upgrade Your ERF
 recipemap.electric_blast_furnace.name=Resistance Furnace
-gregtech.machine.primitive_blast_furnace.bronze.name=Blast Furnace
 
 # Material Renaming
 item.susy.material.ultra_high_molecular_weight_polyethylene.dustTiny=Tiny Pile of Ultra High Molecular Weight Polyethylene (UHMWPE) Pulp

@@ -130,15 +130,6 @@ crafting.replaceShaped("appliedenergistics2:misc/grindstone", item('appliedenerg
         [ore('cobblestone'), ore('cobblestone'), ore('cobblestone')]
 ])
 
-// Blowpipes And Bellows
-crafting.addShaped("bellows", metaitem('bellows'), [
-[null,ore('stickTreatedWood'),ore('plankTreatedWood')],
-[item('minecraft:leather'),ore('boltBronze'),ore('stickTreatedWood')],
-[item('minecraft:leather'),item('minecraft:leather'),null]
-])
-
-crafting.addShapeless("blowpipe", metaitem('blowpipe'), [ore('craftingToolKnife'), item('gregtech:meta_stick_long', 1617)])
-
 // AE2 Grindstone Ore Processing 
 def GrindstoneOreList = [
         'acanthite',
