@@ -519,17 +519,6 @@ RecyclingHelper.replaceShaped("gregtech:gregtech.machine.electrolyzer.mv", metai
 ])
 
 // Steam machine recipes (due to furnace removal)
-RecyclingHelper.replaceShaped("gregtech:steam_boiler_coal_bronze", item('gregtech:machine', 1), [
-    [ore('plateBronze'), ore('plateBronze'), ore('plateBronze')],
-    [ore('plateBronze'), ore('toolWrench'), ore('plateBronze')],
-    [ore('blockBrick'), ore('blockBrick'), ore('blockBrick')]
-])
-
-RecyclingHelper.replaceShaped("gregtech:steam_boiler_coal_steel", item('gregtech:machine', 2), [
-        [ore('plateSteel'), ore('plateSteel'), ore('plateSteel')],
-        [ore('plateSteel'), ore('toolWrench'), ore('plateSteel')],
-        [ore('blockBrick'), ore('blockBrick'), ore('blockBrick')]
-])
 
 RecyclingHelper.replaceShaped("gregtech:steam_furnace_bronze", item('gregtech:machine', 15), [
     [ore('pipeSmallFluidBronze'), ore('pipeSmallFluidBronze'), ore('pipeSmallFluidBronze')],
