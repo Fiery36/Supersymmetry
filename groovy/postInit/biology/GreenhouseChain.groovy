@@ -540,7 +540,7 @@ GREENHOUSE.recipeBuilder()
 
 GREENHOUSE.recipeBuilder()
 	.notConsumable(item('gregtechfoodoption:gtfo_sapling_0', 14))
-	.inputs(metaitem('circuit.integrated'))
+	.circuitMeta(1)
 	.fluidInputs(fluid('greenhouse_gases') * 10000)
 	.fluidInputs(fluid('water') * 5000)
         .inputs(metaitem('fertilizer') * 4)
