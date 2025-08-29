@@ -380,6 +380,8 @@ mods.gregtech.extruder.removeByInput(24, [metaitem('dustPolyphenyleneSulfide'), 
 mods.gregtech.bender.removeByInput(24, [metaitem('platePolyphenyleneSulfide'), metaitem('circuit.integrated').withNbt(['Configuration': 1])], null)
 // Thin Polyphenylene Sulfide Sheet * 4
 mods.gregtech.bender.removeByInput(24, [metaitem('ingotPolyphenyleneSulfide'), metaitem('circuit.integrated').withNbt(['Configuration': 10])], null)
+// Ethenone * 100
+mods.gregtech.fluid_heater.removeByInput(30, [metaitem('circuit.integrated').withNbt(['Configuration': 1])], [fluid('acetone') * 100])
 
 
 RecipeMaps.SIFTER_RECIPES
