@@ -10,13 +10,13 @@ mods.gregtech.circuit_assembler.removeByInput(16, [metaitem('circuit_board.basic
 
 
 // NAND Chip * 8
-mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.good'), metaitem('plate.simple_system_on_chip'), metaitem('boltRedAlloy') * 2, metaitem('wireFineTin') * 2], [fluid('soldering_alloy') * 72])
+mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.good'), metaitem('plate.simple_system_on_chip'), metaitem('boltAnnealedCopper') * 2, metaitem('wireFineTin') * 2], [fluid('soldering_alloy') * 72])
 // NAND Chip * 8
-mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.good'), metaitem('plate.simple_system_on_chip'), metaitem('boltRedAlloy') * 2, metaitem('wireFineTin') * 2], [fluid('tin') * 144])
+mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.good'), metaitem('plate.simple_system_on_chip'), metaitem('boltAnnealedCopper') * 2, metaitem('wireFineTin') * 2], [fluid('tin') * 144])
 // NAND Chip * 12
-mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.plastic'), metaitem('plate.simple_system_on_chip'), metaitem('boltRedAlloy') * 2, metaitem('wireFineTin') * 2], [fluid('soldering_alloy') * 72])
+mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.plastic'), metaitem('plate.simple_system_on_chip'), metaitem('boltAnnealedCopper') * 2, metaitem('wireFineTin') * 2], [fluid('soldering_alloy') * 72])
 // NAND Chip * 12
-mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.plastic'), metaitem('plate.simple_system_on_chip'), metaitem('boltRedAlloy') * 2, metaitem('wireFineTin') * 2], [fluid('tin') * 144])
+mods.gregtech.circuit_assembler.removeByInput(120, [metaitem('circuit_board.plastic'), metaitem('plate.simple_system_on_chip'), metaitem('boltAnnealedCopper') * 2, metaitem('wireFineTin') * 2], [fluid('tin') * 144])
 // Microprocessor * 6
 mods.gregtech.circuit_assembler.removeByInput(600, [metaitem('circuit_board.plastic'), metaitem('plate.system_on_chip'), metaitem('wireFineCopper') * 2, metaitem('boltTin') * 2], [fluid('soldering_alloy') * 72])
 // Microprocessor * 6
@@ -48,7 +48,7 @@ Globals.solders.each { key, val ->
        CIRCUIT_ASSEMBLER.recipeBuilder()
                 .inputs(metaitem('circuit_board.good'))
                 .inputs(metaitem('plate.integrated_logic_circuit'))
-                .inputs(ore('boltRedAlloy') * 2)
+                .inputs(ore('boltAnnealedCopper') * 2)
                 .inputs(ore('wireFineTin') * 2)
                 .fluidInputs(fluid(key) * val)
                 .outputs(metaitem('circuit.nand_chip') * 16)
@@ -59,7 +59,7 @@ Globals.solders.each { key, val ->
         CIRCUIT_ASSEMBLER.recipeBuilder()
                 .inputs(metaitem('circuit_board.plastic'))
                 .inputs(metaitem('plate.integrated_logic_circuit'))
-                .inputs(ore('boltRedAlloy') * 2)
+                .inputs(ore('boltAnnealedCopper') * 2)
                 .inputs(ore('wireFineTin') * 2)
                 .fluidInputs(fluid(key) * val)
                 .outputs(metaitem('circuit.nand_chip') * 24)
