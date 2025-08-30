@@ -11,3 +11,15 @@ ADVANCED_ARC_FURNACE.recipeBuilder()
     .EUt(Globals.voltAmps[4])
     .duration(31200) 
     .buildAndRegister()
+
+ADVANCED_ARC_FURNACE.recipeBuilder()
+    .fluidInputs(fluid('molten.steel') * 8640) //equal to 60 Steel dust
+    .fluidInputs(fluid('argon') * 6000)
+    .inputs(ore('dustTungsten') * 8)
+    .inputs(ore('dustChrome') * 3)
+    .inputs(ore('dustMolybdenum') * 2)  
+    .inputs(ore('dustVanadium') * 1) 
+    .fluidOutputs(fluid('molten.tungsten_steel') * 10656) // 74 ingot 
+    .EUt(Globals.voltAmps[4])
+    .duration(23200) 
+    .buildAndRegister()
