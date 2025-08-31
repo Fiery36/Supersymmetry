@@ -103,7 +103,7 @@ EBF.recipeBuilder()
 // Electrolysis
 
 ELECTROLYTIC_CELL.recipeBuilder()
-    .notConsumable(fluid('cryolite') * 2592)
+    .notConsumable(fluid('cryolite') * 2880)
     .inputs(ore('dustAlumina') * 10)
     .notConsumable(ore('dustAluminiumTrifluoride') * 4)
     .inputs(ore('dustCoke') * 3)
@@ -114,7 +114,7 @@ ELECTROLYTIC_CELL.recipeBuilder()
     .buildAndRegister()
 
 ELECTROLYTIC_CELL.recipeBuilder()
-    .notConsumable(fluid('cryolite') * 2592)
+    .notConsumable(fluid('cryolite') * 2880)
     .inputs(ore('dustAlumina') * 10)
     .notConsumable(ore('dustAluminiumTrifluoride') * 4)
     .inputs(ore('dustAnyPurityCarbon') * 3)
