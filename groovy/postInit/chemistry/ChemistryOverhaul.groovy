@@ -84,7 +84,7 @@ DT.recipeBuilder()
 
 DISTILLERY.recipeBuilder()
     .circuitMeta(3)
-    .fluidInputs(fluid('diluted_ammonium_chloride_solution') * 1000)
+    .fluidInputs(fluid('diluted_ammonium_chloride_solution') * 2000)
     .outputs(metaitem('dustAmmoniumChloride') * 6)
     .fluidOutputs(fluid('water') * 2000)
     .duration(120)
