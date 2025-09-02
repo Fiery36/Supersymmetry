@@ -173,6 +173,7 @@ ingotMap['Steel'] = 1500
 def fluidMap = [
     'molten.kanthal':'Kanthal',
     'molten.nichrome':'Nichrome',
+    'molten.rtm_alloy':'RtmAlloy',
     'molten.niobium_nitride':'NiobiumNitride',
     'molten.niobium_titanium':'NiobiumTitanium',
     'molten.black_bronze':'BlackBronze',
