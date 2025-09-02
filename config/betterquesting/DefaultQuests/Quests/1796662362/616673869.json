@@ -1,27 +1,23 @@
 {
   "preRequisites:11": [
-    12
+    1110551649
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "susy.quest.db.5.desc",
-      "frame:8": "GATE",
+      "desc:8": "susy.quest.db.616673869.desc",
       "icon:10": {
-        "Damage:2": 2,
-        "id:8": "susy:susy_stone_smooth"
+        "id:8": "rs_ctr:counter"
       },
-      "ismain:1": 1,
-      "name:8": "susy.quest.db.5.title"
+      "name:8": "susy.quest.db.616673869.title"
     }
   },
-  "questID:3": 5,
+  "questID:3": 616673869,
   "tasks:9": {
     "0:10": {
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
-          "Damage:2": 2,
-          "id:8": "susy:susy_stone_cobble"
+          "id:8": "rs_ctr:counter"
         }
       },
       "taskID:8": "bq_standard:retrieval"

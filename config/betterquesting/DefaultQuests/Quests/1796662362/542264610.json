@@ -1,28 +1,31 @@
 {
   "preRequisites:11": [
-    744003683
+    1532373030
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "susy.quest.db.2081939483.desc",
+      "desc:8": "susy.quest.db.542264610.desc",
       "icon:10": {
-        "id:8": "minecraft:brick"
+        "id:8": "rs_ctr:trigger"
       },
-      "name:8": "susy.quest.db.2081939483.title"
+      "name:8": "susy.quest.db.542264610.title"
     }
   },
-  "questID:3": 2081939483,
+  "questID:3": 542264610,
   "tasks:9": {
     "0:10": {
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
-          "Damage:2": 349,
-          "id:8": "gregtech:meta_item_1"
+          "id:8": "rs_ctr:offset"
         },
         "1:10": {
           "Count:3": 1,
-          "id:8": "minecraft:brick"
+          "id:8": "rs_ctr:scale"
+        },
+        "2:10": {
+          "Count:3": 1,
+          "id:8": "rs_ctr:trigger"
         }
       },
       "taskID:8": "bq_standard:retrieval"

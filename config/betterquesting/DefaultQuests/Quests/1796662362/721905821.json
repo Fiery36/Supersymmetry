@@ -1,40 +1,40 @@
 {
   "preRequisites:11": [
-    440
+    2053239479
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "susy.quest.db.441.desc",
+      "autoclaim:1": 1,
+      "desc:8": "susy.quest.db.721905821.desc",
       "icon:10": {
-        "Damage:2": 2,
-        "id:8": "susy:resource_block"
+        "id:8": "rs_ctr:lamp"
       },
-      "name:8": "susy.quest.db.441.title"
+      "name:8": "susy.quest.db.721905821.title"
     }
   },
-  "questID:3": 441,
+  "questID:3": 721905821,
   "tasks:9": {
     "0:10": {
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
-          "Damage:2": 5,
-          "id:8": "susy:resource_block"
+          "id:8": "rs_ctr:lamp"
         },
         "1:10": {
           "Count:3": 1,
-          "Damage:2": 4,
-          "id:8": "susy:resource_block"
+          "id:8": "rs_ctr:constant"
         },
         "2:10": {
           "Count:3": 1,
-          "Damage:2": 3,
-          "id:8": "susy:resource_block"
+          "id:8": "rs_ctr:clock"
         },
         "3:10": {
           "Count:3": 1,
-          "Damage:2": 2,
-          "id:8": "susy:resource_block"
+          "id:8": "rs_ctr:edge_trigger"
+        },
+        "4:10": {
+          "Count:3": 1,
+          "id:8": "rs_ctr:pulse_gen"
         }
       },
       "taskID:8": "bq_standard:retrieval"
