@@ -362,6 +362,8 @@ mods.gregtech.compressor.removeByInput(2, [metaitem('dustYttriaStabilizedZirconi
 mods.gregtech.extruder.removeByInput(42, [metaitem('ingotEthyleneVinylAcetate'), metaitem('shape.extruder.pipe.small')], null)
 // Small Ethylene-Vinyl Acetate (EVA) Fluid Pipe * 1
 mods.gregtech.extruder.removeByInput(42, [metaitem('dustEthyleneVinylAcetate'), metaitem('shape.extruder.pipe.small')], null)
+// Polysulfone Bar * 1
+mods.gregtech.extruder.removeByInput(28, [metaitem('dustPolysulfone'), metaitem('shape.extruder.ingot')], null)
 // Polysulfone Rod * 2
 mods.gregtech.extruder.removeByInput(42, [metaitem('ingotPolysulfone'), metaitem('shape.extruder.rod')], null)
 // Viton Ring * 4
