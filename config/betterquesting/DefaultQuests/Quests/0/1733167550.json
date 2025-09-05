@@ -15,6 +15,7 @@
   "questID:3": 1733167550,
   "tasks:9": {
     "0:10": {
+      "index:3": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,

@@ -1,0 +1,31 @@
+{
+  "preRequisites:11": [
+    38
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "susy.quest.db.337772541.desc",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "appliedenergistics2:dummy_fluid_item",
+        "tag:10": {
+          "FluidName:8": "hydrogen_chloride"
+        }
+      },
+      "name:8": "susy.quest.db.337772541.title"
+    }
+  },
+  "questID:3": 337772541,
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "requiredFluids:9": {
+        "0:10": {
+          "Amount:3": 1000,
+          "FluidName:8": "hydrogen_chloride"
+        }
+      },
+      "taskID:8": "bq_standard:fluid"
+    }
+  }
+}

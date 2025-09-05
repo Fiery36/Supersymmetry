@@ -1,0 +1,18 @@
+{
+  "preRequisites:11": [
+    416
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "No Description",
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 366,
+        "id:8": "gregtech:meta_dust"
+      },
+      "name:8": "New Quest"
+    }
+  },
+  "questID:3": 2048308025,
+  "tasks:9": {}
+}

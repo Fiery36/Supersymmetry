@@ -1,0 +1,31 @@
+{
+  "preRequisites:11": [
+    443
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "susy.quest.db.106756820.desc",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "appliedenergistics2:dummy_fluid_item",
+        "tag:10": {
+          "FluidName:8": "acetic_acid"
+        }
+      },
+      "name:8": "susy.quest.db.106756820.title"
+    }
+  },
+  "questID:3": 106756820,
+  "tasks:9": {
+    "0:10": {
+      "index:3": 0,
+      "requiredFluids:9": {
+        "0:10": {
+          "Amount:3": 1000,
+          "FluidName:8": "acetic_acid"
+        }
+      },
+      "taskID:8": "bq_standard:fluid"
+    }
+  }
+}

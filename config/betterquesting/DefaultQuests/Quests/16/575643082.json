@@ -1,0 +1,18 @@
+{
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "No Description",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "forge:bucketfilled",
+        "tag:10": {
+          "Amount:3": 1000,
+          "FluidName:8": "cellulose_acetate_solution"
+        }
+      },
+      "name:8": "New Quest"
+    }
+  },
+  "questID:3": 575643082,
+  "tasks:9": {}
+}

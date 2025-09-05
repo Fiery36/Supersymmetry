@@ -1,0 +1,19 @@
+{
+  "preRequisites:11": [
+    101
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "susy.quest.db.1468101582.desc",
+      "frame:8": "GATE",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "betterquesting:quest_book"
+      },
+      "ismain:1": 1,
+      "name:8": "susy.quest.db.1468101582.title"
+    }
+  },
+  "questID:3": 1468101582,
+  "tasks:9": {}
+}
