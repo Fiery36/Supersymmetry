@@ -1,3 +1,5 @@
+import prePostInit.Recipemaps
+
 import static prePostInit.Recipemaps.*
 import globals.Globals
 import postInit.utils.RecyclingHelper
@@ -75,7 +77,7 @@ RecyclingHelper.replaceShaped('gcym:casing_large_macerator', item('gcym:large_mu
     [ore('plateStelliteJ'), ore('frameGtHsla980X'), ore('plateStelliteJ')],
     [ore('plateStelliteJ'), ore('craftingToolWrench'), ore('plateStelliteJ')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(6)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateStelliteJ') * 6)
@@ -90,7 +92,7 @@ RecyclingHelper.replaceShaped('gcym:casing_high_temperature', item('gcym:large_m
     [ore('plateTitaniumCarbide'), metaitem('frameTungstenCarbide'), ore('plateTitaniumCarbide')],
     [ore('plateTitanium'), ore('craftingToolWrench'), ore('plateTitanium')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(7)
     .inputs(ore('frameGtTungstenCarbide'))
     .inputs(ore('plateTitanium') * 4)
@@ -106,7 +108,7 @@ RecyclingHelper.replaceShaped('gcym:casing_large_assembler', item('gcym:large_mu
     [ore('plateHsla980X'), ore('frameGtHsla980X'), ore('plateHsla980X')],
     [ore('plateHsla980X'), ore('craftingToolWrench'), ore('plateHsla980X')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(6)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateHsla980X') * 6)
@@ -121,7 +123,7 @@ RecyclingHelper.replaceShaped('gcym:casing_stress_proof', item('gcym:large_multi
     [ore('plateIncoloy908'), ore('frameGtHsla980X'), ore('plateIncoloy908')],
     [ore('plateIncoloy908'), ore('craftingToolWrench'), ore('plateIncoloy908')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(6)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateIncoloy908') * 6)
@@ -136,7 +138,7 @@ RecyclingHelper.replaceShaped('gcym:casing_corrosion_proof', item('gcym:large_mu
     [ore('plateReneN5'), ore('frameGtHsla980X'), ore('plateReneN5')],
     [ore('plateIncoloy825'), ore('craftingToolWrench'), ore('plateIncoloy825')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(7)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateIncoloy825') * 4)
@@ -152,7 +154,7 @@ RecyclingHelper.replaceShaped('gcym:casing_vibration_safe', item('gcym:large_mul
     [ore('plateIncoloy825'), ore('frameGtHsla980X'), ore('plateIncoloy825')],
     [ore('plateStelliteJ'), ore('craftingToolWrench'), ore('plateStelliteJ')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(8)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateStelliteJ') * 4)
@@ -168,7 +170,7 @@ RecyclingHelper.replaceShaped('gcym:casing_watertight', item('gcym:large_multibl
     [ore('plateIncoloy825'), ore('frameGtHsla980X'), ore('plateIncoloy825')],
     [ore('plateIncoloy825'), ore('craftingToolWrench'), ore('plateIncoloy825')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(6)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateIncoloy825') * 6)
@@ -183,7 +185,7 @@ RecyclingHelper.replaceShaped('gcym:casing_large_cutter', item('gcym:large_multi
     [ore('plateIncoloy908'), ore('frameGtHsla980X'), ore('plateIncoloy908')],
     [ore('plateStelliteJ'), ore('craftingToolWrench'), ore('plateStelliteJ')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(7)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateStelliteJ') * 4)
@@ -199,7 +201,7 @@ RecyclingHelper.replaceShaped('gcym:casing_nonconducting', item('gcym:large_mult
     [ore('plateStellite6'), ore('frameGtHsla980X'), ore('plateStellite6')],
     [ore('plateStellite6'), ore('craftingToolWrench'), ore('plateStellite6')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(6)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateStellite6') * 6)
@@ -214,7 +216,7 @@ RecyclingHelper.replaceShaped('gcym:casing_large_mixer', item('gcym:large_multib
     [ore('plateIncoloy20'), ore('frameGtHsla980X'), ore('plateIncoloy20')],
     [ore('plateIncoloy20'), ore('craftingToolWrench'), ore('plateIncoloy20')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(6)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateIncoloy20') * 6)
@@ -229,7 +231,7 @@ RecyclingHelper.replaceShaped('gcym:casing_large_engraver', item('gcym:large_mul
     [ore('plateHsla980X'), ore('frameGtHsla980X'), ore('plateHsla980X')],
     [ore('plateReneN5'), ore('craftingToolWrench'), ore('plateReneN5')]])
 
-ASSEMBLER.recipeBuilder()
+Recipemaps.ASSEMBLER.recipeBuilder()
     .circuitMeta(7)
     .inputs(ore('frameGtHsla980X'))
     .inputs(ore('plateReneN5') * 4)

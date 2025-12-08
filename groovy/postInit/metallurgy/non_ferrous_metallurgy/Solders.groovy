@@ -1,7 +1,9 @@
+import prePostInit.Recipemaps
+
 import static prePostInit.Recipemaps.*
 import static gregtech.api.GTValues.*
 
-ALLOY_SMELTER.recipeBuilder()
+Recipemaps.ALLOY_SMELTER.recipeBuilder()
     .inputs(ore('dustBismuth') * 6)
     .inputs(ore('dustTin') * 4)
     .outputs(metaitem('ingotLeadFreeSolder') * 10)
@@ -9,7 +11,7 @@ ALLOY_SMELTER.recipeBuilder()
     .EUt(VA[MV])
     .buildAndRegister()
 
-ALLOY_SMELTER.recipeBuilder()
+Recipemaps.ALLOY_SMELTER.recipeBuilder()
     .inputs(ore('dustBismuth') * 6)
     .inputs(ore('ingotTin') * 4)
     .outputs(metaitem('ingotLeadFreeSolder') * 10)
@@ -17,7 +19,7 @@ ALLOY_SMELTER.recipeBuilder()
     .EUt(VA[MV])
     .buildAndRegister()
 
-ALLOY_SMELTER.recipeBuilder()
+Recipemaps.ALLOY_SMELTER.recipeBuilder()
     .inputs(ore('ingotBismuth') * 6)
     .inputs(ore('dustTin') * 4)
     .outputs(metaitem('ingotLeadFreeSolder') * 10)
@@ -25,7 +27,7 @@ ALLOY_SMELTER.recipeBuilder()
     .EUt(VA[MV])
     .buildAndRegister()
 
-ALLOY_SMELTER.recipeBuilder()
+Recipemaps.ALLOY_SMELTER.recipeBuilder()
     .inputs(ore('ingotBismuth') * 6)
     .inputs(ore('ingotTin') * 4)
     .outputs(metaitem('ingotLeadFreeSolder') * 10)
@@ -33,7 +35,7 @@ ALLOY_SMELTER.recipeBuilder()
     .EUt(VA[MV])
     .buildAndRegister()
 
-MIXER.recipeBuilder()
+Recipemaps.MIXER.recipeBuilder()
     .inputs(ore('dustIndium') * 3)
     .inputs(ore('dustTinySilver'))
     .outputs(metaitem('dustCryogenicSolder') * 3)

@@ -94,3 +94,15 @@ mods.gregtech.electric_blast_furnace.removeByInput(480, [metaitem('dustPlatinum'
 mods.gregtech.electric_blast_furnace.removeByInput(480, [metaitem('dustPalladium'), metaitem('circuit.integrated').withNbt(['Configuration': 1])], null)
 // Hot Palladium Ingot * 1
 mods.gregtech.electric_blast_furnace.removeByInput(480, [metaitem('dustPalladium'), metaitem('circuit.integrated').withNbt(['Configuration': 2])], [fluid('nitrogen') * 1000])
+// Kanthal Dust * 5
+mods.gregtech.mixer.removeByInput(120, [metaitem('dustNickel') * 4, metaitem('dustChrome'), metaitem('circuit.integrated').withNbt(['Configuration': 2])], null)
+// Molten Kanthal * 720
+mods.gregtech.advanced_arc_furnace.removeByInput(1920, [metaitem('dustNickel') * 4, metaitem('dustChrome'), metaitem('circuit.integrated').withNbt(['Configuration': 12])], [fluid('refractory_gunning_mixture') * 200, fluid('nitrogen') * 5000])
+// Molten Kanthal * 720
+mods.gregtech.advanced_arc_furnace.removeByInput(1920, [metaitem('dustNickel') * 4, metaitem('dustChrome'), metaitem('circuit.integrated').withNbt(['Configuration': 2])], [fluid('refractory_gunning_mixture') * 350])
+// Nichrome Dust * 3
+mods.gregtech.mixer.removeByInput(120, [metaitem('dustIron'), metaitem('dustAluminium'), metaitem('dustChrome'), metaitem('circuit.integrated').withNbt(['Configuration': 1])], null)
+// Molten Nichrome * 432
+mods.gregtech.advanced_arc_furnace.removeByInput(480, [metaitem('dustIron'), metaitem('dustAluminium'), metaitem('dustChrome'), metaitem('circuit.integrated').withNbt(['Configuration': 13])], [fluid('refractory_gunning_mixture') * 50, fluid('nitrogen') * 3000])
+// Molten Nichrome * 432
+mods.gregtech.advanced_arc_furnace.removeByInput(480, [metaitem('dustIron'), metaitem('dustAluminium'), metaitem('dustChrome'), metaitem('circuit.integrated').withNbt(['Configuration': 3])], [fluid('refractory_gunning_mixture') * 150])

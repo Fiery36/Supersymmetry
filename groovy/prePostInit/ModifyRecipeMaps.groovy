@@ -389,6 +389,7 @@ mods.gregtech.bender.removeByInput(24, [metaitem('ingotPolyphenyleneSulfide'), m
 // Ethenone * 100
 mods.gregtech.fluid_heater.removeByInput(30, [metaitem('circuit.integrated').withNbt(['Configuration': 1])], [fluid('acetone') * 100])
 
+
 RecipeMaps.SIFTER_RECIPES
     .modifyMaxFluidInputs(1)
     .modifyMaxFluidOutputs(1)

@@ -249,7 +249,9 @@ class ChangeFlags {
         PolyvinylButyral.setFormula("[C8H14O2]n", true);
         TungstenSteel.setFormula("Fe60W8Cr3Mo2V", true);
         StainlessSteel.setFormula("Fe28Cr8Ni4Si2Mn", true);
-        
+        Kanthal.setFormula("Ni4Cr", true);
+        Nichrome.setFormula("FeAlCr", true);
+
         // Ore Processing
         
         Pitchblende.addFlags("disable_decomposition")

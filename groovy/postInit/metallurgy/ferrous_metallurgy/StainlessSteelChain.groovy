@@ -1,3 +1,5 @@
+import prePostInit.Recipemaps
+
 import static prePostInit.Recipemaps.*
 import globals.Carbons
 
@@ -28,7 +30,7 @@ def iron_sources = [
 ]
 
 iron_sources.each { iron, amount ->
-    ERF.recipeBuilder()
+    Recipemaps.ERF.recipeBuilder()
         .inputs(ore(iron) * amount)
         .inputs(ore('dustNickel') * 4)
         .inputs(ore('dustManganese'))
@@ -40,7 +42,7 @@ iron_sources.each { iron, amount ->
 }
 
 for (highPurityCombustible in Carbons.highPurityCombustibles()) {
-    ERF.recipeBuilder()
+    Recipemaps.ERF.recipeBuilder()
     .inputs(ore('dustSiliconDioxide') * 9)
     .inputs(ore('dustIron'))
     .inputs(ore(highPurityCombustible.name) * highPurityCombustible.equivalent(6))
@@ -52,7 +54,7 @@ for (highPurityCombustible in Carbons.highPurityCombustibles()) {
     .buildAndRegister()
 }
 
-MIXER.recipeBuilder()
+Recipemaps.MIXER.recipeBuilder()
     .circuitMeta(2)
     .inputs(ore('dustIron'))
     .inputs(ore('dustChrome') * 2)
@@ -69,7 +71,7 @@ def gases = [
 ]
 
 gases.each { gas, data ->
-    ADVANCED_ARC_FURNACE.recipeBuilder()
+    Recipemaps.ADVANCED_ARC_FURNACE.recipeBuilder()
         .fluidInputs(fluid('oxygen') * 8000)
         .fluidInputs(fluid(gas) * data.amount)
         .fluidInputs(fluid('carburized_stainless_steel') * 5760)

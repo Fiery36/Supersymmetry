@@ -1,7 +1,9 @@
+import prePostInit.Recipemaps
+
 import static prePostInit.Recipemaps.*
 import static gregtech.api.GTValues.*
 
-INDUCTION_FURNACE.recipeBuilder()
+Recipemaps.INDUCTION_FURNACE.recipeBuilder()
         .inputs(metaitem('dustAluminium'))
         .fluidOutputs(fluid('molten.aluminium') * 144)
         .EUt(VA[MV])
@@ -9,7 +11,7 @@ INDUCTION_FURNACE.recipeBuilder()
         .buildAndRegister()
 
 // 97.6% Al 1.1% Mg 0.64% Si 0.36% Cu 0.30% Cr
-INDUCTION_FURNACE.recipeBuilder()
+Recipemaps.INDUCTION_FURNACE.recipeBuilder()
         .fluidInputs(fluid('molten.aluminium') * 10144)
         .inputs(ore('dustTinyMagnesium') * 8)
         .inputs(ore('dustTinySilicon') * 4)
@@ -21,7 +23,7 @@ INDUCTION_FURNACE.recipeBuilder()
         .buildAndRegister()
 
 // 90.6% Al 5.5% Zn 2.4% Mg 1.3% Cu 0.26% Cr
-INDUCTION_FURNACE.recipeBuilder()
+Recipemaps.INDUCTION_FURNACE.recipeBuilder()
         .fluidInputs(fluid('molten.aluminium') * 10848)
         .inputs(ore('dustTinyZinc') * 17)
         .inputs(ore('dustTinyMagnesium') * 20)
