@@ -1,16 +1,11 @@
 {
   "lineID:3": 26,
-  "order:3": 26,
+  "order:3": 29,
   "properties:10": {
     "betterquesting:10": {
       "desc:8": "susy.quest.ql.26.desc",
       "icon:10": {
-        "id:8": "minecraft:spawn_egg",
-        "tag:10": {
-          "EntityTag:10": {
-            "id:8": "minecraft:pig"
-          }
-        }
+        "id:8": "minecraft:compass"
       },
       "name:8": "susy.quest.ql.26.title"
     }

@@ -1,16 +1,50 @@
 {
   "lineID:3": 22,
-  "order:3": 22,
+  "order:3": 16,
   "properties:10": {
     "betterquesting:10": {
       "desc:8": "susy.quest.ql.22.desc",
       "icon:10": {
-        "Damage:2": 465,
-        "id:8": "gregtech:meta_item_1",
+        "id:8": "opencomputers:misc",
         "tag:10": {
-          "terminal:10": {
-            "_creative:1": 1
-          }
+          "oc:component:10": {
+            "node:10": {
+              "address:8": "598bb3c7-9141-4708-8d3c-8d62ec9a8577",
+              "buffer:6": 0.0,
+              "visibility:3": 2
+            }
+          },
+          "oc:data:10": {
+            "chunkX:3": 41,
+            "chunkZ:3": 7,
+            "components:9": {
+              "0:10": {
+                "address:8": "0e1cd596-b3c8-41dd-8d32-d0dbb07ac79b",
+                "name:8": "computer"
+              },
+              "1:10": {
+                "address:8": "598bb3c7-9141-4708-8d3c-8d62ec9a8577",
+                "name:8": "tablet"
+              },
+              "2:10": {
+                "address:8": "5bf021f3-a087-4450-982d-de03b9f19c5e",
+                "name:8": "filesystem"
+              }
+            },
+            "dimension:3": 0,
+            "node:10": {
+              "address:8": "0e1cd596-b3c8-41dd-8d32-d0dbb07ac79b",
+              "buffer:6": 0.0,
+              "visibility:3": 1
+            },
+            "users:9": {}
+          },
+          "oc:energy:6": 0.0,
+          "oc:isRunning:1": 0,
+          "oc:items:9": {},
+          "oc:maxEnergy:6": 0.0,
+          "oc:tablet:8": "269d22d7-52b2-4417-8149-eafea44d4137",
+          "oc:tier:3": 0
         }
       },
       "name:8": "susy.quest.ql.22.title"

@@ -1,12 +1,11 @@
 {
   "lineID:3": 17,
-  "order:3": 17,
+  "order:3": 28,
   "properties:10": {
     "betterquesting:10": {
       "desc:8": "susy.quest.ql.17.desc",
       "icon:10": {
-        "Damage:2": 4,
-        "id:8": "openmodularturrets:ammo_meta"
+        "id:8": "biomesoplenty:earth"
       },
       "name:8": "susy.quest.ql.17.title"
     }

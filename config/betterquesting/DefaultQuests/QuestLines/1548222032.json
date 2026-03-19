@@ -1,12 +1,11 @@
 {
   "lineID:3": 1548222032,
-  "order:3": 29,
+  "order:3": 30,
   "properties:10": {
     "betterquesting:10": {
       "desc:8": "susy.quest.ql.1548222032.desc",
       "icon:10": {
-        "Damage:2": 114,
-        "id:8": "gregtech:machine"
+        "id:8": "ags_modernmarkings:wall_marking_symbol_gears"
       },
       "name:8": "susy.quest.ql.1548222032.title"
     }
