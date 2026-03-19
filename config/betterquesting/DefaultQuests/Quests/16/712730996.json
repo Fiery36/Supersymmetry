@@ -1,0 +1,16 @@
+{
+  "preRequisites:11": [
+    69015135
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "susy.quest.db.712730996.desc",
+      "icon:10": {
+        "id:8": "ags_modernmarkings:wall_marking_number_2"
+      },
+      "name:8": "susy.quest.db.712730996.title"
+    }
+  },
+  "questID:3": 712730996,
+  "tasks:9": {}
+}
