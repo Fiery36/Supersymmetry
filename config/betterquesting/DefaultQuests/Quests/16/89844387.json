@@ -12,7 +12,8 @@
           "FluidName:8": "phosphoric_acid"
         }
       },
-      "name:8": "susy.quest.db.89844387.title"
+      "name:8": "susy.quest.db.89844387.title",
+      "questlogic:8": "OR"
     }
   },
   "questID:3": 89844387,

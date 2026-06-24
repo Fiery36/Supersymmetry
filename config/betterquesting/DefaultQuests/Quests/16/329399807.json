@@ -12,7 +12,8 @@
           "FluidName:8": "nitric_acid"
         }
       },
-      "name:8": "susy.quest.db.329399807.title"
+      "name:8": "susy.quest.db.329399807.title",
+      "questlogic:8": "OR"
     }
   },
   "questID:3": 329399807,

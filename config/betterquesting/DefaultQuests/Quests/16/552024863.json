@@ -13,7 +13,8 @@
           "FluidName:8": "hydrogen_chloride"
         }
       },
-      "name:8": "susy.quest.db.552024863.title"
+      "name:8": "susy.quest.db.552024863.title",
+      "questlogic:8": "OR"
     }
   },
   "questID:3": 552024863,

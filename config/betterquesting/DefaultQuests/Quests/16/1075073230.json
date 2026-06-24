@@ -11,7 +11,8 @@
         "Damage:2": 353,
         "id:8": "gregtech:meta_dust"
       },
-      "name:8": "susy.quest.db.1075073230.title"
+      "name:8": "susy.quest.db.1075073230.title",
+      "questlogic:8": "OR"
     }
   },
   "questID:3": 1075073230,
