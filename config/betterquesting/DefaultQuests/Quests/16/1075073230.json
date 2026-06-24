@@ -6,13 +6,13 @@
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.1075073230.desc",
       "icon:10": {
-        "Count:3": 1,
         "Damage:2": 353,
         "id:8": "gregtech:meta_dust"
       },
-      "name:8": "Soda Ash"
+      "name:8": "susy.quest.db.1075073230.title",
+      "questlogic:8": "OR"
     }
   },
   "questID:3": 1075073230,

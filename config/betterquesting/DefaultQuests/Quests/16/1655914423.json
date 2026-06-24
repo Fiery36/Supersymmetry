@@ -1,15 +1,17 @@
 {
+  "preRequisites:11": [
+    479
+  ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.1655914423.desc",
       "icon:10": {
-        "Count:3": 1,
         "id:8": "appliedenergistics2:dummy_fluid_item",
         "tag:10": {
           "FluidName:8": "toluene"
         }
       },
-      "name:8": "Toluene Hydrodealkylation"
+      "name:8": "susy.quest.db.1655914423.title"
     }
   },
   "questID:3": 1655914423,

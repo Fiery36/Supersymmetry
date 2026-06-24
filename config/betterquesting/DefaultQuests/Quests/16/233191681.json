@@ -1,13 +1,15 @@
 {
+  "preRequisites:11": [
+    104
+  ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.233191681.desc",
       "icon:10": {
-        "Count:3": 1,
         "Damage:2": 366,
         "id:8": "gregtech:meta_dust"
       },
-      "name:8": "Solvay Process"
+      "name:8": "susy.quest.db.233191681.title"
     }
   },
   "questID:3": 233191681,

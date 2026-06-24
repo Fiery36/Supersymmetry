@@ -1,13 +1,15 @@
 {
+  "preRequisites:11": [
+    31
+  ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.539094700.desc",
       "icon:10": {
-        "Count:3": 1,
         "Damage:2": 312,
         "id:8": "gregtech:meta_gem"
       },
-      "name:8": "Mannheim Process"
+      "name:8": "susy.quest.db.539094700.title"
     }
   },
   "questID:3": 539094700,

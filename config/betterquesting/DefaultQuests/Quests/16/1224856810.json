@@ -5,15 +5,14 @@
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.1224856810.desc",
       "icon:10": {
-        "Count:3": 1,
         "id:8": "appliedenergistics2:dummy_fluid_item",
         "tag:10": {
           "FluidName:8": "acetylene"
         }
       },
-      "name:8": "Acetylene",
+      "name:8": "susy.quest.db.1224856810.title",
       "questlogic:8": "OR"
     }
   },
