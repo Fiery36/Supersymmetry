@@ -1,13 +1,12 @@
 {
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.1887961376.desc",
       "icon:10": {
-        "Count:3": 1,
         "Damage:2": 8565,
         "id:8": "gregtech:meta_dust"
       },
-      "name:8": "Frank-Caro Process"
+      "name:8": "susy.quest.db.1887961376.title"
     }
   },
   "questID:3": 1887961376,

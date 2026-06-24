@@ -5,15 +5,14 @@
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.329399807.desc",
       "icon:10": {
-        "Count:3": 1,
         "id:8": "appliedenergistics2:dummy_fluid_item",
         "tag:10": {
           "FluidName:8": "nitric_acid"
         }
       },
-      "name:8": "Nitric Acid"
+      "name:8": "susy.quest.db.329399807.title"
     }
   },
   "questID:3": 329399807,

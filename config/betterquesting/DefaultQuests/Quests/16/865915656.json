@@ -1,12 +1,11 @@
 {
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.865915656.desc",
       "icon:10": {
-        "Count:3": 1,
         "id:8": "minecraft:coal"
       },
-      "name:8": "Coal Tar Distillation"
+      "name:8": "susy.quest.db.865915656.title"
     }
   },
   "questID:3": 865915656,

@@ -1,13 +1,12 @@
 {
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "",
+      "desc:8": "susy.quest.db.53991095.desc",
       "icon:10": {
-        "Count:3": 1,
         "Damage:2": 8139,
         "id:8": "gregtech:meta_dust"
       },
-      "name:8": "Calcium Carbide Process"
+      "name:8": "susy.quest.db.53991095.title"
     }
   },
   "questID:3": 53991095,
