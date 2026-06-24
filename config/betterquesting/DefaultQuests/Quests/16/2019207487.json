@@ -1,0 +1,22 @@
+{
+  "preRequisites:11": [
+    64799157,
+    798403261
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "appliedenergistics2:dummy_fluid_item",
+        "tag:10": {
+          "FluidName:8": "methanol"
+        }
+      },
+      "name:8": "Methanol",
+      "questlogic:8": "OR"
+    }
+  },
+  "questID:3": 2019207487,
+  "tasks:9": {}
+}

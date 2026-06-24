@@ -1,0 +1,17 @@
+{
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "appliedenergistics2:dummy_fluid_item",
+        "tag:10": {
+          "FluidName:8": "gtfo_acetaldehyde"
+        }
+      },
+      "name:8": "Acetaldehyde Oxidation"
+    }
+  },
+  "questID:3": 1309366627,
+  "tasks:9": {}
+}

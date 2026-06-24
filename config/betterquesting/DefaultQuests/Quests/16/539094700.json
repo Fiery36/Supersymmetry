@@ -1,0 +1,15 @@
+{
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "",
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 312,
+        "id:8": "gregtech:meta_gem"
+      },
+      "name:8": "Mannheim Process"
+    }
+  },
+  "questID:3": 539094700,
+  "tasks:9": {}
+}

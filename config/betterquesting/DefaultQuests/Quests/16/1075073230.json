@@ -1,0 +1,20 @@
+{
+  "preRequisites:11": [
+    361494579,
+    233191681,
+    1722895674
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "",
+      "icon:10": {
+        "Count:3": 1,
+        "Damage:2": 353,
+        "id:8": "gregtech:meta_dust"
+      },
+      "name:8": "Soda Ash"
+    }
+  },
+  "questID:3": 1075073230,
+  "tasks:9": {}
+}

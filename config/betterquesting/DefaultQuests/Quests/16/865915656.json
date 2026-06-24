@@ -1,0 +1,14 @@
+{
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "minecraft:coal"
+      },
+      "name:8": "Coal Tar Distillation"
+    }
+  },
+  "questID:3": 865915656,
+  "tasks:9": {}
+}

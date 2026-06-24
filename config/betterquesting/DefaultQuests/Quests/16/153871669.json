@@ -1,0 +1,23 @@
+{
+  "preRequisites:11": [
+    1655914423,
+    865915656,
+    1979409467
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "appliedenergistics2:dummy_fluid_item",
+        "tag:10": {
+          "FluidName:8": "benzene"
+        }
+      },
+      "name:8": "Benzene",
+      "questlogic:8": "OR"
+    }
+  },
+  "questID:3": 153871669,
+  "tasks:9": {}
+}

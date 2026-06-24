@@ -1,0 +1,23 @@
+{
+  "preRequisites:11": [
+    1767436824,
+    1518218763,
+    1309366627
+  ],
+  "properties:10": {
+    "betterquesting:10": {
+      "desc:8": "",
+      "icon:10": {
+        "Count:3": 1,
+        "id:8": "appliedenergistics2:dummy_fluid_item",
+        "tag:10": {
+          "FluidName:8": "acetic_acid"
+        }
+      },
+      "name:8": "Acetic Acid",
+      "questlogic:8": "OR"
+    }
+  },
+  "questID:3": 379147457,
+  "tasks:9": {}
+}
