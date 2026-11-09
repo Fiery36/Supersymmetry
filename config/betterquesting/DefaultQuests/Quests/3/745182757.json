@@ -1,15 +1,6 @@
 {
-  "preRequisiteTypes:7": [
-    0,
-    0,
-    0,
-    1
-  ],
   "preRequisites:11": [
-    393,
-    395,
-    123835459,
-    881
+    2097328808
   ],
   "properties:10": {
     "betterquesting:10": {
@@ -22,9 +13,8 @@
           "FluidName:8": "acetic_acid"
         }
       },
-      "name:8": "susy.quest.db.745182757.title",
-      "questlogic:8": "OR",
-      "tasklogic:8": "OR"
+      "ismain:1": 1,
+      "name:8": "susy.quest.db.745182757.title"
     }
   },
   "questID:3": 745182757,
